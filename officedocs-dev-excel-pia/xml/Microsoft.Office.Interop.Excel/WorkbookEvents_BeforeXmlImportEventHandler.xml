@@ -1,0 +1,51 @@
+<Type Name="WorkbookEvents_BeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="52cb33b3c4364f6d81cce3321fd2dcdfbca546f7" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20578470" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkbookEvents_BeforeXmlImportEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WorkbookEvents_BeforeXmlImportEventHandler(Map As XmlMap, Url As String, IsRefresh As Boolean, ByRef Cancel As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap ^ Map, System::String ^ Url, bool IsRefresh, [Runtime::InteropServices::Out] bool % Cancel);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Map" Type="Microsoft.Office.Interop.Excel.XmlMap" />
+    <Parameter Name="Url" Type="System.String" />
+    <Parameter Name="IsRefresh" Type="System.Boolean" />
+    <Parameter Name="Cancel" Type="System.Boolean&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Map">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> Objekt. Die XML-Zuordnung, die zum Importieren der Daten verwendet wird.</param>
+    <param name="Url">
+      <b>String</b> erforderlich. Der Speicherort der zu importierenden XML-Datei.</param>
+    <param name="IsRefresh">Erforderlicher <b>boolescher Wert</b>. <b>True</b>, wenn das Ereignis durch Aktualisieren einer bestehenden Verbindung auf XML-Daten ausgelöst wurde. <b>False</b>, wenn das Ereignis durch Importieren aus einer anderen Datenquelle ausgelöst wurde.</param>
+    <param name="Cancel">Erforderlicher <b>boolescher Wert</b>. Kann auf <b>True</b> festgelegt werden, um den Import- oder Aktualisierungsvorgang abzubrechen.</param>
+    <summary>Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> Ereignis. Das <b>BeforeXmlImport</b> -Ereignis tritt auf, bevor eine bestehende XML-Datenverbindung aktualisiert wird oder bevor neue XML Daten in eine Microsoft Excel-Arbeitsmappe importiert.</summary>
+    <remarks>
+      <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
+      <para />
+    </remarks>
+  </Docs>
+</Type>

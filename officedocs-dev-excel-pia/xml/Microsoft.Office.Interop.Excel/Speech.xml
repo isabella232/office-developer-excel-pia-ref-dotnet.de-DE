@@ -1,0 +1,142 @@
+<Type Name="Speech" FullName="Microsoft.Office.Interop.Excel.Speech">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="22837717535384f6c1e41513e3e32b7efde41769" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20576223" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Speech" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Speech" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Speech" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Speech" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Speech" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024466-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enthält Methoden und Eigenschaften, die auf die Sprache bezogen sind.</summary>
+    <remarks>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekts, um ein <b>Speech</b> -Objekt zurückzugeben.</para>
+      <para>Nachdem ein <b>Speech</b> -Objekt zurückgegeben wurde, können Sie mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> -Methode des <b>Speech</b> -Objekt, um den Inhalt einer Zeichenfolge wiederzugeben.</para>
+      <para>
+        <b>Hinweis</b>: in der Struktur, die zum Dictation und Befehl bezieht sich eine Sprachausgabefunktion besteht &amp; Steuerelement an, die nicht installiert werden.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSpeakDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSpeakDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Speech.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As XlSpeakDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSpeakDirection Direction { Microsoft::Office::Interop::Excel::XlSpeakDirection get(); void set(Microsoft::Office::Interop::Excel::XlSpeakDirection value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSpeakDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Reihenfolge, in der die Zellen vorgelesen werden.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der Wert der <b>Direction</b> -Eigenschaft ist ein <see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" /> Konstante.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public void Speak (string Text, object SpeakAsync, object SpeakXML, object Purge);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Speak([in]string Text, [in]object SpeakAsync, [in]object SpeakXML, [in]object Purge) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Speak (Text As String, Optional SpeakAsync As Object, Optional SpeakXML As Object, Optional Purge As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2017)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="SpeakAsync" Type="System.Object" />
+        <Parameter Name="SpeakXML" Type="System.Object" />
+        <Parameter Name="Purge" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Text">
+          <b>String</b> erforderlich. Der wiederzugebende Text.</param>
+        <param name="SpeakAsync">Optionales- <b>Objekt</b>. <b>True</b> bewirkt, dass die <paramref name="Text" /> asynchron wiederzugebende (die Methode wartet nicht für die <paramref name="Text" /> vorgelesen werden). <b>False</b> bewirkt, dass die <paramref name="Text" /> synchron vorgelesen werden (die Methode wartet die <paramref name="Text" /> vor dem Fortfahren vorgelesen werden). Der Standardwert ist <b>False</b>.</param>
+        <param name="SpeakXML">Optionaler <b>Boolean</b>-Wert. <b>True</b> bewirkt, dass die <paramref name="Text" /> als XML interpretiert werden. <b>False</b> bewirkt, dass die <paramref name="Text" /> , nicht als XML interpretiert werden, damit alle XML-Tags gelesen und nicht interpretiert werden. Der Standardwert ist <b>False</b>.</param>
+        <param name="Purge">Optionales- <b>Objekt</b>. <b>True</b> bewirkt, dass aktuelle Ansage abgebrochen und sämtlicher gepufferter Text geleert werden, bevor Sie <paramref name="Text" /> gesprochen. <b>"False"</b> wird die aktuelle Ansage nicht beendet werden und nicht den zwischengespeicherten Text vor geleert <paramref name="Text" /> gesprochen. Der Standardwert ist <b>False</b>.</param>
+        <summary>Microsoft Excel gibt wieder die angegebene Textzeichenfolge.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakCellOnEnter">
+      <MemberSignature Language="C#" Value="public bool SpeakCellOnEnter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SpeakCellOnEnter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Speech.SpeakCellOnEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeakCellOnEnter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SpeakCellOnEnter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Microsoft Excel unterstützt einen Modus, in dem die aktive Zelle wiederzugebende wird oder wenn die EINGABETASTE gedrückt wird nach Abschluss die aktive Zelle, gerade bearbeitet wird. Dieser Modus wird die <b>SpeakCellOnEnter</b> -Eigenschaft auf <b>True</b> festlegen aktiviert. <b>"False"</b> wird in diesem Modus deaktiviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

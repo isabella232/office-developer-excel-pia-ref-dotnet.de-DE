@@ -1,0 +1,765 @@
+<Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1bb92fb327f4b105c6f89b685f7776df03148a7f" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20579835" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WebOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WebOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WebOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024449-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enthält Attribute auf Arbeitsmappenebene, die von Microsoft Excel verwendet werden, wenn Sie ein Dokument als Webseite speichern oder eine Webseite öffnen.</summary>
+    <remarks>
+      <para>Sie können zurück, oder legen Sie Attribute auf Anwendungsebene (global) oder auf der Arbeitsmappenebene. (Beachten Sie, dass Attributwerte sich von einer Arbeitsmappe zur anderen unterscheiden können, hängt vom Attributwert zum Zeitpunkt die Arbeitsmappe gespeichert wurde). Attribute auf Arbeitsmappenebene Einstellungen haben Vorrang vor Einstellungen auf Anwendungsebene-Attribut. Attribute auf Anwendungsebene befinden sich der <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> -Objekt.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> -Eigenschaft auf das <b>WebOptions</b> -Objekt zurückzugeben.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowPNG">
+      <MemberSignature Language="C#" Value="public bool AllowPNG { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPNG" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.AllowPNG" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowPNG As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPNG { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> wenn PNG (Portable Network Graphics) als Bildformat, beim Speichern von Dokumenten als Webseite zulässig ist. <b>False,</b> wenn PNG als Ausgabeformat nicht zulässig ist. Der Standardwert lautet <b>False</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn Sie Bilder im PNG-Format im Gegensatz zu einem beliebigen anderen Dateiformat speichern, Sie möglicherweise die Bildqualität erhöhen oder verringern Sie die Größe der betreffenden Bilddateien und daher Zeitaufwand für das Herunterladen, unter der Annahme, dass die Zielwebbrowser sind die Unterstützung PNG-Format.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadComponents">
+      <MemberSignature Language="C#" Value="public bool DownloadComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DownloadComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadComponents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DownloadComponents { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn die erforderlichen Microsoft Office Web Components heruntergeladen werden, bei der Anzeige des gespeicherten Dokuments in einem Webbrowser, aber nur wenn die Komponenten noch nicht installiert. <b>False,</b> Wenn die Komponenten nicht heruntergeladen werden. Der Standardwert lautet <b>False</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> -Eigenschaft auf einen zentralen URL (im Intranet oder Web) oder Pfad (lokale oder im Netzwerk) an einen Speicherort aus der autorisierte Benutzer beim Anzeigen des gespeicherten Dokuments Komponenten herunterladen können. Der Pfad muss gültig sein muss zeigen Sie auf einen Speicherort, der die erforderlichen Komponenten enthält, und der Benutzer muss eine gültige Microsoft Office-Lizenz verfügen.</para>
+          <para>Office Web-Komponenten hinzufügen Interaktivität für Dokumente, die Sie als Webseiten speichern. Wenn Sie eine Webseite in einem Browser auf einem Computer, für die nicht die Komponenten installiert ist anzeigen, werden die interaktiven Teile der Seite statisch sein.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoEncoding Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoEncoding Encoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As MsoEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEncoding Encoding { Microsoft::Office::Core::MsoEncoding get(); void set(Microsoft::Office::Core::MsoEncoding value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen des Dokuments Codierung (Codepage oder Zeichensatz) vom Webbrowser verwendet werden soll, wenn Sie das gespeicherte Dokument anzeigen. Der Standardwert ist die Codepage des Systems.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Sie können keinen mit das Suffix <b>Automatische Erkennung</b>verwendet werden. Diese Konstanten werden verwendet, indem die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> Methode.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSuffix">
+      <MemberSignature Language="C#" Value="public string FolderSuffix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FolderSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FolderSuffix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FolderSuffix { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das Ordnersuffix, die Microsoft Excel verwendet wird, wenn Sie ein Dokument als Webseite speichern, langen Dateinamen verwendet und die unterstützenden Dateien in einem separaten Ordner speichern (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> und <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> Eigenschaften auf <b>True</b>festgelegt sind).</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Neu erstellte Dokumente verwenden das Suffix zurückgegeben wird durch die <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> Objekt. Der Wert der <b>FolderSuffix</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> Objekt kann aus dem des <b>DefaultWebOptions</b> -Objekts unterscheiden, wenn das Dokument zuvor in einer anderen Sprachversion von Microsoft Excel bearbeitet wurde. Sie können die <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> -Methode, um das Suffix in die Sprache ändern, die aktuell in Microsoft Office.</para>
+          <para>Wird standardmäßig der Name des unterstützenden Ordners ist der Name der Webseite plus einem Unterstrich (_), einem Punkt (.), oder ein Bindestrich (-) und das Wort "Files" (in der Sprache der Version von Excel in dem die Datei als Webseite gespeichert wurde). Nehmen wir beispielsweise an, dass Sie die Sprache Niederländisch Version von Excel verwenden, um eine Datei namens "Page1" als Webseite speichern. Der Standardname des unterstützenden Ordners ist Page1_bestanden.</para>
+          <para>Die folgende Tabelle listet alle Sprachversionen von Office und dem jeweiligen <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> Eigenschaft und das Ordnersuffix. Für Sprachen, die in der Tabelle nicht aufgeführt sind, wird das Suffix "Files" verwendet.</para>
+          <list type="table">
+            <item>
+              <term>Arabisch</term>
+              <description>1025</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Baskisch</term>
+              <description>1069</description>
+              <description>_fitxategiak</description>
+            </item>
+            <item>
+              <term>Portugiesisch (Brasilien)</term>
+              <description>1046</description>
+              <description>_arquivos</description>
+            </item>
+            <item>
+              <term>Bulgarisch</term>
+              <description>1026</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Katalanisch</term>
+              <description>1027</description>
+              <description>_fitxers</description>
+            </item>
+            <item>
+              <term>Chinesisch - vereinfacht</term>
+              <description>2052</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Chinesisch - traditionell</term>
+              <description>1028</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Kroatisch</term>
+              <description>1050</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>Tschechisch</term>
+              <description>1029</description>
+              <description>_soubory</description>
+            </item>
+            <item>
+              <term>Dänische</term>
+              <description>1030</description>
+              <description>-File-Server</description>
+            </item>
+            <item>
+              <term>Niederländische</term>
+              <description>1043</description>
+              <description>_bestanden</description>
+            </item>
+            <item>
+              <term>Englische</term>
+              <description>1033</description>
+              <description>_files</description>
+            </item>
+            <item>
+              <term>Estnisch</term>
+              <description>1061</description>
+              <description>_failid</description>
+            </item>
+            <item>
+              <term>Finnisch</term>
+              <description>1035</description>
+              <description>_tiedostot</description>
+            </item>
+            <item>
+              <term>Französisch</term>
+              <description>1036</description>
+              <description>_fichiers</description>
+            </item>
+            <item>
+              <term>Deutsch</term>
+              <description>1031</description>
+              <description>Erfahren Sie mehr über</description>
+            </item>
+            <item>
+              <term>Griechisch</term>
+              <description>1032</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Hebräisch</term>
+              <description>1037</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Ungarisch</term>
+              <description>1038</description>
+              <description>_elemei</description>
+            </item>
+            <item>
+              <term>Italienisch</term>
+              <description>1040</description>
+              <description>-Datei</description>
+            </item>
+            <item>
+              <term>Japanische</term>
+              <description>1041</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Koreanisch</term>
+              <description>1042</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Lettisch</term>
+              <description>1062</description>
+              <description>_fails</description>
+            </item>
+            <item>
+              <term>Litauisch</term>
+              <description>1063</description>
+              <description>_bylos</description>
+            </item>
+            <item>
+              <term>Norwegisch</term>
+              <description>1044</description>
+              <description>-File-Server</description>
+            </item>
+            <item>
+              <term>Polnisch</term>
+              <description>1045</description>
+              <description>_pliki</description>
+            </item>
+            <item>
+              <term>Portugiesisch</term>
+              <description>2070</description>
+              <description>_ficheiros</description>
+            </item>
+            <item>
+              <term>Rumänisch</term>
+              <description>1048</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Russische</term>
+              <description>1049</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Serbisch (Kyrillisch)</term>
+              <description>3098</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Serbisch (Lateinisch)</term>
+              <description>2074</description>
+              <description>_fajlovi</description>
+            </item>
+            <item>
+              <term>Slowakische</term>
+              <description>1051</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Slowenisch</term>
+              <description>1060</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>Spanisch</term>
+              <description>3082</description>
+              <description>_archivos</description>
+            </item>
+            <item>
+              <term>Schwedisch</term>
+              <description>1053</description>
+              <description>-File-Server</description>
+            </item>
+            <item>
+              <term>Thailändische</term>
+              <description>1054</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Türkisch</term>
+              <description>1055</description>
+              <description>_dosyalar</description>
+            </item>
+            <item>
+              <term>Ukrainisch</term>
+              <description>1058</description>
+              <description>Files</description>
+            </item>
+            <item>
+              <term>Vietnamesisch</term>
+              <description>1066</description>
+              <description>Files</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationOfComponents">
+      <MemberSignature Language="C#" Value="public string LocationOfComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocationOfComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocationOfComponents As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocationOfComponents { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen der zentralen URL (im Intranet oder Web) oder Pfad (lokale oder Netzwerk) zu dem Speicherort, von dem autorisierte Benutzer beim Anzeigen des gespeicherten Dokuments Microsoft Office Web Components herunterladen können. Der Standardwert ist der lokale oder Netzwerk-Installationspfad für Microsoft Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Office Web Components werden automatisch mit der angegebenen Webseite heruntergeladen, wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> -Eigenschaft auf <b>True</b>festgelegt ist, die Komponenten nicht bereits installiert sind, der Pfad ist gültig und verweist auf einen Speicherort, der die erforderlichen Komponenten enthält und die Benutzer verfügt über eine gültige Microsoft Office-Lizenz.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrganizeInFolder">
+      <MemberSignature Language="C#" Value="public bool OrganizeInFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OrganizeInFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrganizeInFolder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OrganizeInFolder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn alle werden Hilfsdateien, wie Hintergrundbilder und Grafiken, beim Speichern des angegebenen Dokuments als Webseite in einem separaten Ordner zusammengefasst. <b>False,</b> Wenn Hilfsdateien in demselben Ordner wie die Webseite gespeichert werden. Der Standardwert ist <b>True</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der neue Ordner wird erstellt, in dem Ordner, in dem Sie die Webseite gespeichert haben, und nach dem Dokument benannt wird. Wenn langen Dateinamen verwendet werden, wird der Name des Ordners ein Suffix hinzugefügt. Die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> -Eigenschaft gibt das Ordnersuffix für die Unterstützung von Sprachen ausgewählt oder installiert oder das Standardsuffix Ordner zurück.</para>
+          <para>, Wenn Sie ein Dokument, zuvor mit der <b>OrganizeInFolder</b> -Eigenschaft auf einen anderen Wert festgelegt wurde speichern, die Hilfsdateien in oder aus dem Ordner Microsoft Excel automatisch verschiebt.</para>
+          <para>, Wenn Sie keine langen Dateinamen verwenden (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> -Eigenschaft auf <b>False</b>festgelegt ist), speichert Microsoft Excel alle unterstützenden Dateien in einem separaten Ordner. Die Dateien können nicht im gleichen Ordner wie die Webseite gespeichert werden.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerInch">
+      <MemberSignature Language="C#" Value="public int PixelsPerInch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelsPerInch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.PixelsPerInch" />
+      <MemberSignature Language="VB.NET" Value="Public Property PixelsPerInch As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelsPerInch { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Dichte (Pixel pro Zoll) von Grafiken und Tabellenzellen auf einer Webseite. Bereich von Einstellungen liegt normalerweise zwischen 19 und 480 und gemeinsame Einstellungen für beliebte Screen Größen sind 72, 96 und 120. Die Standardeinstellung ist 96.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Bestimmt diese Eigenschaft die Größe von Bildern und Zellen auf der angegebenen Webseite relativ zu der Größe des Texts, wenn Sie das gespeicherte Dokument in einem Webbrowser anzeigen. Die physischen Dimensionen der das resultierende Bild oder die Zelle sind das Ergebnis der ursprünglichen Dimensionen (in Zoll) und der Anzahl der Pixel pro Zoll.</para>
+          <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> Eigenschaft, um die optimale Bildschirmgröße für die Zielwebbrowser festlegen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnCSS">
+      <MemberSignature Language="C#" Value="public bool RelyOnCSS { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnCSS" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.RelyOnCSS" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnCSS As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnCSS { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn für die Schriftart, die Formatierung beim Anzeigen eines gespeicherten Dokuments in einem Webbrowser cascading Stylesheets (CSS) verwendet werden. <b>False,</b> wenn HTML &lt;Schriftart&gt; Tags und cascading Stylesheets verwendet werden. Der Standardwert ist <b>True</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Excel erstellt eine CSS-Datei und speichert sie in den angegebenen Ordner oder im gleichen Ordner wie die Webseite, je nach Wert der <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> -Eigenschaft.</para>
+          <para>Sollten Sie diese Eigenschaft auf <b>true fest,</b> Wenn Ihr Webbrowser cascading Stylesheets, unterstützt, da Sie dies wird eine genauere Kontrolle über Layout und Formatierung auf Ihrer Webseite und mehr wie Ihrem Dokument darstellen (wie in Microsoft Excel angezeigt) festlegen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnVML">
+      <MemberSignature Language="C#" Value="public bool RelyOnVML { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnVML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.RelyOnVML" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnVML As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnVML { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn Bilddateien aus Zeichnungsobjekten beim Speichern eines Dokuments als Webseite nicht generiert werden. <b>False,</b> Wenn Bilder generiert werden. Der Standardwert lautet <b>False</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Können Sie Dateigrößen reduzieren, indem keine Bilder für Zeichnungsobjekte, wenn Ihr Webbrowser Vector Markup Language (VML) unterstützt generieren. Sie sollten die <b>RelyOnVML</b> -Eigenschaft auf <b>True</b> festgelegt, wenn Sie einen Browser verwenden möchten, der VML unterstützt. Für Browser, die nicht VML unterstützen, wird das Bild nicht angezeigt, wenn Sie eine Webseite gespeichert mit dieser Eigenschaft aktiviert anzeigen.</para>
+          <para>Angenommen, Sie sollten nicht generieren Bilder, wenn Ihre Webseite Bilddateien verwendet, die Sie zuvor erstellt haben und der Speicherort, in dem Sie das Dokument speichern, von Ihren endgültigen Speicherort der Seite auf dem Webserver unterscheidet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScreenSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoScreenSize ScreenSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoScreenSize ScreenSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScreenSize As MsoScreenSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScreenSize ScreenSize { Microsoft::Office::Core::MsoScreenSize get(); void set(Microsoft::Office::Core::MsoScreenSize value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen eines <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> -Konstante, die die ideale minimale Bildschirmgröße (Breite x Höhe in Pixel), die Sie beim Anzeigen des gespeicherten Dokuments in einem Webbrowser verwenden sollten. Die Standardkonstante ist <b>msoScreenSize800x600</b>.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetBrowser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTargetBrowser TargetBrowser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTargetBrowser TargetBrowser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.TargetBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetBrowser As MsoTargetBrowser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTargetBrowser TargetBrowser { Microsoft::Office::Core::MsoTargetBrowser get(); void set(Microsoft::Office::Core::MsoTargetBrowser value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen eines <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" /> -Konstanten, die die Version des Browsers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultFolderSuffix">
+      <MemberSignature Language="C#" Value="public void UseDefaultFolderSuffix ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UseDefaultFolderSuffix() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UseDefaultFolderSuffix ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UseDefaultFolderSuffix();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1915)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Legt das Ordnersuffix für das angegebene Dokument auf das Standardsuffix für die ausgewählte oder installierte Sprachunterstützung fest.</summary>
+        <remarks>
+          <para>Microsoft Excel verwendet das Ordnersuffix, wenn Sie ein Dokument als Webseite speichern, langen Dateinamen verwendet, und wählen Sie zum Speichern von Hilfsdateien in einem separaten Ordner (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> und <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> Eigenschaften auf <b>True</b>festgelegt sind).</para>
+          <para>Wird das Suffix im Namen Ordners nach den Namen des Dokuments angezeigt. Wenn das Dokument "Mappe1" aufgerufen wird und die Sprache Englisch ist, lautet der Ordnername Book1_files. Die verfügbaren Ordnersuffixe der <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> Thema-Eigenschaft.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLongFileNames">
+      <MemberSignature Language="C#" Value="public bool UseLongFileNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLongFileNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLongFileNames As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLongFileNames { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn langen Dateinamen verwendet werden, wenn Sie das Dokument als Webseite speichern. <b>False,</b> Wenn keine langen Dateinamen verwendet werden und das DOS-Dateinamenformat (8.3) wird verwendet. Der Standardwert ist <b>True</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn Sie keine langen Dateinamen verwenden, und das Dokument über Unterstützungsdateien verfügt, speichert Microsoft Excel diese Dateien in einem separaten Ordner automatisch aus. Verwenden Sie andernfalls die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> Eigenschaft, um zu bestimmen, ob Hilfsdateien in einem separaten Ordner gespeichert sind.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

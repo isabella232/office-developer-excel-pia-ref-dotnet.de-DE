@@ -1,0 +1,103 @@
+<Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c8e55ec1ec9ea610add3c7ccb937797796fc156c" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575348" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlFileValidationPivotMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XlFileValidationPivotMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XlFileValidationPivotMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Gibt an, wie die Datencaches für PivotTable-Berichte überprüft werden.</summary>
+    <remarks>
+      <para>Diese Enumeration wird verwendet, um die Einstellung der angeben der <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt.</para>
+      <para>Die Auswirkung der <b>XlFileValidationPivotDefault</b> Einstellung wird gesteuert, durch den Registrierungswert PivotOptions, die in den folgenden Registrierungsunterschlüssel festgelegt ist: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation. PivotOptions-Wert ist ein DWORD-Wert, der festgelegt werden kann, wie in der folgenden Tabelle aufgeführt.</para>
+      <list type="table">
+        <item>
+          <term>0</term>
+          <description>Überprüfen nie Datencaches von PivotTable-Bericht. (Nicht empfohlen)</description>
+        </item>
+        <item>
+          <term>1</term>
+          <description>Überprüfen PivotTable-Berichtdaten speichert, in den folgenden Fällen (Standardeinstellung): die Datei geöffnet wurde aus der Internet.The Datei E-mail-Anlage ist. Die Datei wurde mithilfe des Befehls in geschützter Ansicht des Dialogfelds Öffnen geöffnet. Die Datei wurde aus einem bekanntermaßen unsicheren Speicherort, in dem Internetinhalte lokal zwischengespeichert ist, oder aus einem benutzerdefinierten nicht vertrauenswürdigen Speicherort geöffnet. Der Datencache wird beim Laden beim Öffnen der Datei analysiert.</description>
+        </item>
+        <item>
+          <term>2</term>
+          <description>Überprüfen aller Datencaches von PivotTable-Bericht.</description>
+        </item>
+      </list>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="xlFileValidationPivotDefault">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotDefault" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotDefault" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Die Inhalte von Datencaches werden wie in der Registrierungseinstellung PivotOptions festgelegt überprüft (Standardeinstellung).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlFileValidationPivotRun">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotRun" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotRun = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotRun" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotRun" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotRun" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Die Inhalte aller Datencaches werden unabhängig von der Registrierungseinstellung überprüft.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlFileValidationPivotSkip">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotSkip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotSkip = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotSkip" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotSkip" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotSkip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Die Inhalte von Datencaches werden nicht überprüft.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
