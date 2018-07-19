@@ -1,0 +1,860 @@
+<Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="eacfd0890002beb17c916870ea77d7aa5ba1db4b" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20587668" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Slicer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Slicer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Slicer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244C8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt einen Datenschnitt in einer Arbeitsmappe dar.</summary>
+    <remarks>
+      <para>Jede <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt stellt einen Datenschnitt in einer Arbeitsmappe dar. Datenschnitte dienen zum Filtern von Daten im PivotTable-Berichten oder in OLAP-Datenquellen.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> -Methode zum Hinzufügen einer <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt wird an die <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung. Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die aktuell ausgewählte Schaltfläche in einem Datenschnitt, Verwendung stellt die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerItem ActiveItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerItem ActiveItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveItem As SlicerItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerItem ^ ActiveItem { Microsoft::Office::Interop::Excel::SlicerItem ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2988)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2988)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die Schaltfläche Datenschnitt darstellt, die derzeit im Fokus für den angegebenen Datenschnitt ist. Schreibgeschützt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <b>ActiveItem</b> -Eigenschaft gibt ein <b>SlicerItem</b> -Objekt zurück, wenn der angegebene Datenschnitt den Fokus hat, und das aktive Steuerelement eine Schaltfläche innerhalb der Datenschnitt ist (beispielsweise der Benutzer kann die Schaltflächen innerhalb der Datenschnitt mit der Tastatur in diesem Status navigieren).</para>
+          <para>Die <b>ActiveItem</b> -Eigenschaft gibt <b>Nothing</b> (ein Nullverweis (Nothing in Visual Basic) in c#) unter folgenden Umständen zurück:</para>
+          <list type="bullet">
+            <item>
+              <description>Der angegebene Datenschnitt hat keinen Fokus (ist nicht ausgewählt oder aktiv).</description>
+            </item>
+            <item>
+              <description>Der angegebene Datenschnitt hat den Fokus und der gesamte Datenschnitt aktiviert ist (beispielsweise der Benutzer kann verschieben den gesamten Datenschnitt mithilfe der Tastatur in diesem Status).</description>
+            </item>
+            <item>
+              <description>Der angegebene Datenschnitt hat den Fokus, und das aktive Steuerelement ist die Schaltfläche <b>Filter löschen</b> in der Kopfzeile des Datenschnitts.</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder die Beschriftung des angegebenen Datenschnitts festgelegt.</summary>
+        <value>Die Beschriftung des angegebenen Datenschnitts.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>Für angegebene Wert der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> -Eigenschaft in der Kopfzeile des Datenschnitts angezeigt wird. Wenn die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> nicht angegeben wird, Excel verwendet den Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> -Eigenschaft des zugrunde liegenden <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnWidth">
+      <MemberSignature Language="C#" Value="public double ColumnWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ColumnWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder Festlegen der Breite in Punkt, der einzelnen Spalten im Datenschnitt.</summary>
+        <value>Die Breite in Punkt, der einzelnen Spalten im Datenschnitt.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt wird automatisch angepasst, basierend auf dem Wert von der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> Eigenschaft und die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> -Eigenschaft.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(551)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Kopiert den angegebenen Datenschnitt in die Zwischenablage.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <value>Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</value>
+        <remarks>
+          <para>Nur-Lese- <b>long</b>.</para>
+          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public void Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(565)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Schneidet den angegebenen Datenschnitt aus und kopiert sie in die Zwischenablage.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löscht den Datenschnitt und entfernt ihn aus der zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableMoveResizeUI">
+      <MemberSignature Language="C#" Value="public bool DisableMoveResizeUI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableMoveResizeUI" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableMoveResizeUI As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableMoveResizeUI { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt fest, ob der angegebene Datenschnitt verschoben oder über die Benutzeroberfläche geändert werden kann.</summary>
+        <value>
+          <b>true,</b> Wenn der angegebene Datenschnitt verschoben oder über die Benutzeroberfläche geändert werden kann. anderenfalls <b>false</b>. Der Standardwert ist <b>false</b>.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>
+            <b>true,</b> Wenn der Datenschnitt kann nicht verschoben oder durch Auswählen von Rahmen oder Handles in der Benutzeroberfläche angepasst werden soll, andernfalls <b>false</b>. Der Standardwert ist <b>false</b>. Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> -Eigenschaft auf <b>true</b> wirkt sich nur auf die Benutzeroberfläche. Verschieben oder Ändern der Größe des Datenschnitts durch Festlegen von Eigenschaften wie die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, oder <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt von Code nicht deaktiviert ist.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHeader">
+      <MemberSignature Language="C#" Value="public bool DisplayHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.DisplayHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHeader As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHeader { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt fest, ob der Kopfzeile, die angezeigt den Datenschnitt <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> sichtbar ist.</summary>
+        <value>
+          <b>true,</b> Wenn die Kopfzeile angezeigt wird, die den Datenschnitt <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> sichtbar ist; anderenfalls <b>false</b>. Der Standardwert ist <b>true</b>.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>
+            <b>true,</b> Wenn die Kopfzeile angezeigt wird, andernfalls <b>false</b>. Der Standardwert ist <b>true</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder festlegen die Höhe für die angegebene Datenschnitt in Punkt.</summary>
+        <value>Die Höhe des angegebenen Datenschnitts, die in Punkt.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder wird die horizontale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</summary>
+        <value>Die horizontale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt fest, ob der angegebene Datenschnitt geändert werden kann, wenn das Blatt, das es enthält geschützt ist.</summary>
+        <value>
+          <b>true,</b> Wenn der angegebene Datenschnitt geändert werden kann, wenn das Blatt, in dem es enthält geschützt ist; anderenfalls <b>false</b>. Der Standardwert ist <b>true</b></value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>
+            <b>true,</b> Wenn der Datenschnitt gesperrt ist, wenn das Blatt geschützt ist. <b>false,</b> Wenn der Datenschnitt geändert werden kann, wenn das Blatt geschützt ist. Der Standardwert ist <b>true</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder Festlegen des Namens der angegebene Datenschnitt.</summary>
+        <value>Der Name der der angegebene Datenschnitt.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>Muss der Namen über alle Datenschnitte in einer Arbeitsmappe eindeutig sein. Der Standardname verwendet den Text, der den Namen des PivotFields auf dem der Datenschnitt basiert, und, falls erforderlich, fügt ein Leerzeichen und der Zahl und der Name eindeutig ist.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfColumns">
+      <MemberSignature Language="C#" Value="public int NumberOfColumns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfColumns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfColumns As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfColumns { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Anzahl der Spalten im angegebenen Datenschnitt.</summary>
+        <value>Die Anzahl der Spalten in den angegebenen Datenschnitt. Der Standardwert ist 1.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>Der Standardwert ist 1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</summary>
+        <value>Die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeight">
+      <MemberSignature Language="C#" Value="public double RowHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RowHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.RowHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RowHeight { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Höhe des jede Zeile im angegebenen Datenschnitt in Punkt.</summary>
+        <value>Die Höhe des jede Zeile im angegebenen Datenschnitt in Punkt.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para>Diese Eigenschaft wirkt sich nicht auf die Höhe des Datenschnitts. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt zurückgeben oder Festlegen der Höhe des Datenschnitts.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape Shape { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Shape Shape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Shape" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Shape ^ Shape { Microsoft::Office::Interop::Excel::Shape ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1582)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1582)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</summary>
+        <value>Die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</value>
+        <remarks>
+          <para>Read-only.</para>
+          <para>Einige Eigenschaften des Datenschnitts, wie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> -Eigenschaft kann nur aus zugegriffen werden die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt der Datenschnitt zugeordnet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCache">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerCache SlicerCache { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerCache SlicerCache" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCache" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCache As SlicerCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerCache ^ SlicerCache { Microsoft::Office::Interop::Excel::SlicerCache ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2986)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2986)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerCache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</summary>
+        <value>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerCacheLevel SlicerCacheLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerCacheLevel SlicerCacheLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCacheLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheLevel As SlicerCacheLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerCacheLevel ^ SlicerCacheLevel { Microsoft::Office::Interop::Excel::SlicerCacheLevel ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2987)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2987)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</summary>
+        <value>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</value>
+        <remarks>
+          <para>Read-only.</para>
+          <para>Diese Eigenschaft gilt nur für OLAP-Datenquellen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCacheType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheType As XlSlicerCacheType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSlicerCacheType SlicerCacheType { Microsoft::Office::Interop::Excel::XlSlicerCacheType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Typ des datenschnittcaches – Datenschnitt oder Zeitachse. <b>XlSlicerCacheType</b> Schreibgeschützt</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public object Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Style { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Formatvorlage, die derzeit auf den angegebenen Datenschnitt angewendet.</summary>
+        <value>Die Formatvorlage, die derzeit auf den angegebenen Datenschnitt angewendet.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimelineViewState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TimelineViewState TimelineViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TimelineViewState TimelineViewState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.TimelineViewState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimelineViewState As TimelineViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TimelineViewState ^ TimelineViewState { Microsoft::Office::Interop::Excel::TimelineViewState ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3116)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TimelineViewState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Der Zeitachse-spezifischen Zustand des Datenschnitts. <b>TimelineViewState</b> Schreibgeschützt</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder Festlegen der vertikalen Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</summary>
+        <value>Die vertikale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder festlegen die Breite des angegebenen Datenschnitts in Punkt.</summary>
+        <value>Die Breite des angegebenen Datenschnitts, die in Punkt.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
