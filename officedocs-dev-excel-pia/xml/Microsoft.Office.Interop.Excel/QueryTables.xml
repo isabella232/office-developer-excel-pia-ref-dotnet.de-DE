@@ -1,0 +1,482 @@
+<Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="dca19c730db3c359bc26e265f3af266c406db4a5" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20586940" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract QueryTables implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.QueryTables" />
+  <TypeSignature Language="VB.NET" Value="Public Interface QueryTables&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class QueryTables : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024429-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="a55ba-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> Objekte.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="a55ba-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objects.</span>
+      </span>
+      <span data-ttu-id="a55ba-102">Jedes  <b>QueryTable</b> -Objekt stellt eine Tabelle eines Arbeitsblatts dar, deren Daten aus einer externen Datenquelle zurückgegeben werden.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="a55ba-102">Each <b>QueryTable</b> object represents a worksheet table built from data returned from an external data source.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="a55ba-103">
+        <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> -Eigenschaft auf die <b>QueryTables</b> -Auflistung zurückzugeben.</para>
+        <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> -Methode, um eine neue Abfragetabelle zu erstellen und zu der <b>QueryTables</b> -Auflistung hinzufügen.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="a55ba-103">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> property to return the <b>QueryTables</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> method to create a new query table and add it to the <b>QueryTables</b> collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.QueryTable _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As QueryTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::QueryTable ^ default[System::Object ^] { Microsoft::Office::Interop::Excel::QueryTable ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>
+          <span data-ttu-id="a55ba-104">Für die interne Verwendung reserviert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-104">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable Add (object Connection, Microsoft.Office.Interop.Excel.Range Destination, object Sql);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.QueryTable Add([in]object Connection, [in]class Microsoft.Office.Interop.Excel.Range Destination, [in]object Sql) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Connection As Object, Destination As Range, Optional Sql As Object) As QueryTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Connection" Type="System.Object" />
+        <Parameter Name="Destination" Type="Microsoft.Office.Interop.Excel.Range" />
+        <Parameter Name="Sql" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Connection">
+          <span data-ttu-id="a55ba-105">
+            <b>Objekt</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-105">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="a55ba-106">Die Datenquelle für die Abfragetabelle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-106">The data source for the query table.</span>
+          </span>
+          <span data-ttu-id="a55ba-107">Eine der, die ein OLE DB- oder ODBC-Verbindungszeichenfolge enthält Folgendes: eine Zeichenfolge kann sein.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-107">Can be one of the following:A string containing an OLE DB or ODBC connection string.</span>
+          </span>
+          <span data-ttu-id="a55ba-108">Die ODBC-Verbindungszeichenfolge hat das Format "ODBC; &lt;Verbindungszeichenfolge&gt;". Ein <b>QueryTable</b> -Objekt aus der Abfrage Daten zunächst haben, kopiert ist, einschließlich der Verbindungszeichenfolge und den SQL-Text, jedoch ohne die <paramref name="Destination" /> Bereich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-108">The ODBC connection string has the form "ODBC;&lt;connection string&gt;".A <b>QueryTable</b> object from which the query information is initially copied, including the connection string and the SQL text, but not including the <paramref name="Destination" /> range.</span>
+          </span>
+          <span data-ttu-id="a55ba-109">Ein <b>QueryTable</b> -Objekt angegeben, wird die <paramref name="Sql" /> Argument ignoriert werden. Ein ADO oder DAO- <b>Recordset</b> -Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-109">Specifying a <b>QueryTable</b> object causes the <paramref name="Sql" /> argument to be ignored.An ADO or DAO <b>Recordset</b> object.</span>
+          </span>
+          <span data-ttu-id="a55ba-110">Daten werden aus der ADO- oder DAO-Recordset-Objekt gelesen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-110">Data is read from the ADO or DAO recordset.</span>
+          </span>
+          <span data-ttu-id="a55ba-111">Microsoft Excel behält das Recordset-Objekt an, bis die Abfragetabelle gelöscht oder die Verbindung geändert wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-111">Microsoft Excel retains the recordset until the query table is deleted or the connection is changed.</span>
+          </span>
+          <span data-ttu-id="a55ba-112">Die sich ergebende Abfragetabelle kann nicht bearbeitet werden. Eine Webabfrage.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-112">The resulting query table cannot be edited.A Web query.</span>
+          </span>
+          <span data-ttu-id="a55ba-113">Eine Zeichenfolge in der Form "URL; &lt;Url&gt;", wobei"URL"; erforderlich, aber nicht lokalisiert und der Rest der Zeichenfolge für die URL der Webabfrage verwendet wird. Datensuche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-113">A string in the form "URL;&lt;url&gt;", where "URL;" is required but not localized and the rest of the string is used for the URL of the Web query.Data Finder.</span>
+          </span>
+          <span data-ttu-id="a55ba-114">Eine Zeichenfolge in der Form "FINDER; &lt;Finder Datendateipfad&gt;"wobei"FINDER;"erforderlich, aber nicht lokalisiert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-114">A string in the form "FINDER;&lt;data finder file path&gt;" where "FINDER;" is required but not localized.</span>
+          </span>
+          <span data-ttu-id="a55ba-115">Der Rest der Zeichenfolge ist der Pfad und Dateiname einer Datensuche-Datei (*.DQY oder *.iqy).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-115">The rest of the string is the path and file name of a Data Finder file (*.dqy or *.iqy).</span>
+          </span>
+          <span data-ttu-id="a55ba-116">Die Datei wird gelesen, wenn die <b>Add</b> -Methode ausgeführt wird; nachfolgende Aufrufe der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> -Eigenschaft der Abfragetabelle geben Zeichenfolgen zurück, beginnend mit "ODBC;" oder "URL;" als Antwort. Eine Textdatei.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-116">The file is read when the <b>Add</b> method is run; subsequent calls to the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> property of the query table will return strings beginning with "ODBC;" or "URL;" as appropriate.A text file.</span>
+          </span>
+          <span data-ttu-id="a55ba-117">Eine Zeichenfolge in der Form "TEXT; &lt;Textdateipfad und Namen&gt;", wobei der TEXT ist erforderlich, aber nicht lokalisiert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-117">A string in the form "TEXT;&lt;text file path and name&gt;", where TEXT is required but not localized.</span>
+          </span>
+        </param>
+        <param name="Destination">
+          <span data-ttu-id="a55ba-118">
+            <b>Range</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-118">Required <b>Range</b>.</span>
+          </span>
+          <span data-ttu-id="a55ba-119">Die Zelle in der oberen linken Ecke des Zielbereichs der Abfragetabelle (der Bereich, in dem die sich ergebende Abfragetabelle platziert wird).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-119">The cell in the upper-left corner of the query table destination range (the range where the resulting query table will be placed).</span>
+          </span>
+          <span data-ttu-id="a55ba-120">Der Zielbereich muss sich auf dem Arbeitsblatt, enthält die <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-120">The destination range must be on the worksheet that contains the <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> object.</span>
+          </span>
+        </param>
+        <param name="Sql">
+          <span data-ttu-id="a55ba-121">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-121">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="a55ba-122">Die SQL-Abfragezeichenfolge auf die ODBC-Datenquelle ausgeführt werden.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-122">The SQL query string to be run on the ODBC data source.</span>
+          </span>
+          <span data-ttu-id="a55ba-123">Dieses Argument ist optional, bei Verwendung eine ODBC-Datenquelle dieses Argument beim ein <b>QueryTable</b> -Objekt, eine Textdatei oder ein ADO- oder DAO- <b>Recordset</b> -Objekts, als Datenquelle angegeben ist verwendet werden können.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-123">This argument is optional when you're using an ODBC data source You cannot use this argument when a <b>QueryTable</b> object, text file, or ADO or DAO <b>Recordset</b> object is specified as the data source.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="a55ba-124">Erstellt eine neue Abfragetabelle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-124">Creates a new query table.</span>
+          </span>
+          <span data-ttu-id="a55ba-125">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> -Objekt, das die neue Abfragetabelle darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-125">Returns a <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> object that represents the new query table.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="a55ba-126">
+            <para>Eine durch diese Methode erstellte Abfrage wird erst ausgeführt, die <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> -Methode aufgerufen wird.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-126">
+              <para>A query created by this method isn't run until the <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> method is called.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a55ba-127">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-127">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+          <span data-ttu-id="a55ba-128">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-128">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a55ba-129">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-129">Returns the number of objects in the collection.</span>
+          </span>
+          <span data-ttu-id="a55ba-130">Schreibgeschützter <b>Integer</b>-Wert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-130">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a55ba-131">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-131">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="a55ba-132">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-132">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+          </span>
+          <span data-ttu-id="a55ba-133">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-133">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a55ba-134">
+            <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-134">
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.QueryTable Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As QueryTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::QueryTable ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="a55ba-135">
+            <b>Objekt</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-135">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="a55ba-136">Der Name oder die Indexnummer für das Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-136">The name or index number for the object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="a55ba-137">Gibt ein einzelnes Objekt aus einer Auflistung zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-137">Returns a single object from a collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="a55ba-138">
+            <para>Der Textname des Objekts entspricht der Wert der der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> Eigenschaft.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-138">
+              <para>The text name of the object is the value of the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a55ba-p110">Gibt das übergeordnete Objekt für das angegebene Objekt zurück. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a55ba-p110">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
