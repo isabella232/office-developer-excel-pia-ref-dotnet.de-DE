@@ -1,0 +1,183 @@
+<Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="24fc2abe615803db23b08c339fdd812ffa384856" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580542" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriterion" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriterion" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ColorScaleCriterion" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024495-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt die Kriterien für den niedrigsten, mittleren und höchsten Schwellenwert für eine Regel zur bedingten Formatierung von Farbformaten dar.</summary>
+    <remarks>
+      <para>Jede <b>ColorScaleCriterion</b> ist Teil der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> Auflistung. Verwenden Sie <b>ColorScaleCriteria</b>(<paramref name="index" />), um ein einzelnes Kriterium zurückzugeben.</para>
+      <para>Lassen sich die <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />, <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />, und <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> für die einzelnen Schwellenwerte für die Farbskala.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>Im folgenden Codebeispiel wird erstellt einen Nummernbereich, und klicken Sie dann gilt Regel zur bedingten Formatierung einer Farbskala mit zwei Farben für diesen Bereich. Die Farbe für den kleinsten Schwellenwert wird anschließend zugewiesen Rot und der maximalen Schwellenwerts auf Blau festgelegt, indem ein Index in der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />-Auflistung, um einzelne Kriterien festgelegt.</para>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="FormatColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.FormatColor FormatColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.FormatColor FormatColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatColor As FormatColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::FormatColor ^ FormatColor { Microsoft::Office::Interop::Excel::FormatColor ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2717)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2717)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> Objekt, das die Farbe des Schwellenwerts für einen bedingten Formatierung von Farbskalen zugewiesenen angibt. Schreibgeschützt.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />
+        </value>
+        <remarks>
+          <para>Sie können die Farbe der Minimum, Mittelpunkt oder maximale Schwellenwerte auf eine beliebige benutzerdefinierte Farbe festlegen, mit der <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> -Eigenschaft; oder verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> Eigenschaft.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen <b>ganzzahligen</b> Wert, der angibt, welche Schwellenwert die Kriterien darstellen. Schreibgeschützt.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Für die Regel zur bedingten Formatierung einer Farbskala mit zwei Farben gibt diese Eigenschaft einen Wert von "1" für den kleinsten Schwellenwert und "2" für den höchsten Schwellenwert zurück. Wenn Sie eine Regel Farbskala verwenden, werden die Werte "1" für das minimum, "2" für den mittleren und "3" für den höchsten Wert.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConditionValueTypes Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConditionValueTypes Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As XlConditionValueTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConditionValueTypes Type { Microsoft::Office::Interop::Excel::XlConditionValueTypes get(); void set(Microsoft::Office::Interop::Excel::XlConditionValueTypes value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine der Konstanten von der <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> -Aufzählung, die angibt, wie die Schwellenwerte für einer Datenleiste oder einer bedingten Formatierung skaliert werden festgelegt. Schreibgeschützt.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
+        </value>
+        <remarks>
+          <para>Der Typ des Schwellenwerts für einen Datenbalken oder Farbe Skalierung Anzahl, Prozent, Formel oder Quantil sein kann. Festlegen des Typs auf Perzentil wird Quantil-Funktion in Excel verwenden, um den Schwellenwert bestimmen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen des minimalen, der Mittelpunkt oder der maximalen Schwellenwert für einen bedingten Formatierung von Farbskalen. Lese-/Schreibzugriff.</summary>
+        <value>
+          <b>Objekt</b>
+        </value>
+        <remarks>
+          <para>Sie können festlegen, den Wert nur, wenn die <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> -Eigenschaft für die bedingte Formatierung auf eine der folgenden Konstanten festgelegt ist: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, oder <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
+          <para>, Wenn der Schwellenwert für eine Formel ist, können Sie die Formel als <b>Zeichenfolge</b>festlegen. Die Formel muss eine einzelne Zahl zurückgeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
