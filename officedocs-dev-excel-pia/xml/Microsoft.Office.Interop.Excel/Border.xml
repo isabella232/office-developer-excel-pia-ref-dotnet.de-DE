@@ -1,0 +1,569 @@
+<Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="30183a3a980c964f6c89cba76995fed1732880ce" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20576783" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Border" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Border" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Border" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Border" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020854-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="44db5-101">Stellt den Rahmen eines Objekts dar.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="44db5-101">Represents the border of an object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="44db5-102">
+        <para>Die meisten Objekte mit Rahmen (alle außer für die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> und <see cref="T:Microsoft.Office.Interop.Excel.Style" /> Objekte) haben einen Rahmen, der als einzelne Einheit behandelt wird, unabhängig davon, wie viele Seiten besitzt. Der gesamte Rahmen muss als Einheit zurückgegeben werden. <b>Border</b> -Eigenschaft verwenden, um das <b>Border</b> -Objekt für diese Art des Objekts zurückzugeben.</para>
+        <para>
+          <b>Range</b> und <b>Style</b> -Objekte haben vier einzelne Rahmen – links, rechts, oben und unten –, die einzeln oder als Gruppe zurückgegeben werden. Verwenden Sie die <b>Borders</b> -Eigenschaft eines <b>Bereichs</b> oder <b>Style</b> -Objekts, um die <b>Borders</b> -Auflistung zurückzugeben, die alle vier Rahmen und behandelt die Rahmen als Einheit</para>
+        <para>Verwendung <b>Rahmen</b>(<paramref name="index" />), wobei <paramref name="index" /> identifiziert den Rahmen, um ein einzelnes <b>Border</b> -Objekt zurückzugeben.</para>
+        <para>
+          <paramref name="Index" /> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> -Konstanten sein: <b>XlDiagonalDown</b>, <b>XlDiagonalUp</b>, <b>XlEdgeBottom</b>, <b>XlEdgeLeft</b>, <b>XlEdgeRight</b>, <b>XlEdgeTop</b>, XlInsideHorizontal <b></b>, oder <b>XlInsideVertical</b>.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="44db5-102">
+          <para>Most bordered objects (all except for the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> and <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objects) have a border that’s treated as a single entity, regardless of how many sides it has. The entire border must be returned as a unit. Use the <b>Border</b> property to return the <b>Border</b> object for this kind of object.</para>
+          <para>
+            <b>Range</b> and <b>Style</b> objects have four discrete borders — left, right, top, and bottom — that can be returned individually or as a group. Use the <b>Borders</b> property of a <b>Range</b> or <b>Style</b> object to return the <b>Borders</b> collection, which contains all four borders and treats the borders as a unit.</para>
+          <para>Use <b>Borders</b>(<paramref name="index" />), where <paramref name="index" /> identifies the border, to return a single <b>Border</b> object.</para>
+          <para>
+            <paramref name="Index" /> can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constants: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>, or <b>xlInsideVertical</b>.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-103">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public object Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Color" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Color { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(99)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(99)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(99)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-104">Zurückgeben oder Festlegen der primären Farbe des Rahmens.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-104">Returns or sets the primary color of the border.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="44db5-105">
+            <para>Verwenden Sie die <b>RGB-</b> Funktion, um ein RGB-Wert erstellen.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-105">
+              <para>Use the <b>RGB</b> function to create a color value.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorIndex">
+      <MemberSignature Language="C#" Value="public object ColorIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ColorIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.ColorIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColorIndex As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ColorIndex { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(97)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(97)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(97)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-106">Zurück oder legt die Farbe des Rahmens.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-106">Returns or sets the color of the border.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="44db5-107">
+            <para>Die Farbe wird als Indexwert in der aktuellen Farbpalette oder als eine der folgenden angegeben <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> Konstanten:</para>
+            <para>
+              <b>XlColorIndexAutomatic</b>
+            </para>
+            <para>
+              <b>XlColorIndexNone</b>
+            </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-107">
+              <para>The color is specified as an index value into the current color palette, or as one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constants:</para>
+              <para>
+                <b>xlColorIndexAutomatic</b>
+              </para>
+              <para>
+                <b>xlColorIndexNone</b>
+              </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-108">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-108">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="44db5-109">
+            <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-109">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineStyle">
+      <MemberSignature Language="C#" Value="public object LineStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LineStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.LineStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineStyle As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LineStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-110">Gibt die Linienart für den Rahmen zurück oder legt sie fest.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-110">Returns or sets the line style for the border.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="44db5-111">
+            <para>
+              <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />kann eine der folgenden <b>XlLineStyle</b> -Konstanten sein:</para>
+            <para>
+              <b>XlContinuous</b>
+            </para>
+            <para>
+              <b>XlDash</b>
+            </para>
+            <para>
+              <b>XlDashDot</b>
+            </para>
+            <para>
+              <b>XlDashDotDot</b>
+            </para>
+            <para>
+              <b>XlDot</b>
+            </para>
+            <para>
+              <b>XlDouble</b>
+            </para>
+            <para>
+              <b>XlSlantDashDot</b>
+            </para>
+            <para>
+              <b>XlLineStyleNone</b>
+            </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-111">
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> can be one of these <b>XlLineStyle</b> constants:</para>
+              <para>
+                <b>xlContinuous</b>
+              </para>
+              <para>
+                <b>xlDash</b>
+              </para>
+              <para>
+                <b>xlDashDot</b>
+              </para>
+              <para>
+                <b>xlDashDotDot</b>
+              </para>
+              <para>
+                <b>xlDot</b>
+              </para>
+              <para>
+                <b>xlDouble</b>
+              </para>
+              <para>
+                <b>xlSlantDashDot</b>
+              </para>
+              <para>
+                <b>xlLineStyleNone</b>
+              </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-112">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-112">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThemeColor">
+      <MemberSignature Language="C#" Value="public object ThemeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ThemeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.ThemeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThemeColor As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ThemeColor { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2365)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2365)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2365)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-113">Zurückgeben oder festlegen die Designfarbe in die zugewiesenen Farbschemas an, die dem angegebenen Objekt zugeordnet ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-113">Returns or sets the theme color in the applied color scheme that is associated with the specified object.</span>
+          </span>
+          <span data-ttu-id="44db5-114">Lese-Schreib- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-114">Read/write <b>Object</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="44db5-115">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-115">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="44db5-116">
+            <para>Versucht, auf eine Designfarbe für ein Objekt zuzugreifen, dessen Farbe nicht aktuell entsprechendes mit Design versehenes ist, führt zu einem Laufzeitfehler ungültige Anforderung.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-116">
+              <para>Attempting to access a theme color for an object whose color is not currently themed will result in an invalid request run-time error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TintAndShade">
+      <MemberSignature Language="C#" Value="public object TintAndShade { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TintAndShade" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" />
+      <MemberSignature Language="VB.NET" Value="Public Property TintAndShade As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TintAndShade { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2366)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2366)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2366)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-117">Zurückgeben oder Festlegen einer <b>einzelnen</b> , der eine Farbe aufhellt oder abdunkelt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-117">Returns or sets a <b>Single</b> that lightens or darkens a color.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="44db5-118">
+            <b>Single</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-118">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="44db5-119">
+            <para>Sie können Geben Sie eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für die <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> Eigenschaft. 0 (null) ist neutral.</para>
+            <para>Versuch, diese Eigenschaft auf einen Wert kleiner als 1 oder größer als 1 führt einen Laufzeitfehler festgelegt: "der angegebene Wert liegt außerhalb des Bereichs".  Diese Eigenschaft funktioniert für Designfarben und designfremde Farben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-119">
+              <para>You can enter a number from -1 (darkest) to 1 (lightest) for the <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> property. Zero (0) is neutral.</para>
+              <para>Attempting to set this property to a value less than -1 or more than 1 results in a run-time error: "The specified value is out of range."  This property works for both theme colors and nontheme colors.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Weight">
+      <MemberSignature Language="C#" Value="public object Weight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Weight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Border.Weight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Weight As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Weight { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="44db5-120">Gibt die Stärke des Rahmens zurück oder legt sie fest.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-120">Returns or sets the weight of the border.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="44db5-121">
+            <para>
+              <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />kann eine der folgenden <b>XlBorderWeight</b> -Konstanten sein:</para>
+            <para>
+              <b>XlHairline</b>
+            </para>
+            <para>
+              <b>XlThin</b>
+            </para>
+            <para>
+              <b>XlMedium</b>
+            </para>
+            <para>
+              <b>XlThick</b>
+            </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="44db5-121">
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> can be one of these <b>XlBorderWeight</b> constants:</para>
+              <para>
+                <b>xlHairline</b>
+              </para>
+              <para>
+                <b>xlThin</b>
+              </para>
+              <para>
+                <b>xlMedium</b>
+              </para>
+              <para>
+                <b>xlThick</b>
+              </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
