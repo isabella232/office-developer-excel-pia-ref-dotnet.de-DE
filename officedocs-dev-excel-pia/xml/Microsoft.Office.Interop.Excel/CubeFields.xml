@@ -1,0 +1,333 @@
+<Type Name="CubeFields" FullName="Microsoft.Office.Interop.Excel.CubeFields">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4f88d867148057cb495ff350a393ab29f603f5d5" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20572751" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CubeFields : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CubeFields implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CubeFields" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CubeFields&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CubeFields : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002444D-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> -Objekte in einem PivotTable-Bericht, die auf einen OLAP-Cube basieren.</summary>
+    <remarks>
+      <para>Jedes <b>CubeField</b> -Objekt stellt ein Hierarchie- oder Datenfeld aus dem Cube.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" /> -Eigenschaft auf die <b>CubeFields</b> -Auflistung zurückzugeben.</para>
+      <para>Verwendung <b>CubeFields</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Cube-Felds Indexzahl darstellt, um ein einzelnes <b>CubeField</b> -Objekt zurückzugeben.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CubeField this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.CubeField _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeFields._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As CubeField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::CubeField ^ default[System::Object ^] { Microsoft::Office::Interop::Excel::CubeField ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSet">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CubeField AddSet (string Name, string Caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.CubeField AddSet([in]string Name, [in]string Caption) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSet (Name As String, Caption As String) As CubeField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::CubeField ^ AddSet(System::String ^ Name, System::String ^ Caption);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2186)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="Caption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Name">
+          <b>String</b> erforderlich. Ein gültiger Name im SETS-Schemarowset.</param>
+        <param name="Caption">
+          <b>String</b> erforderlich. Eine Zeichenfolge, die das Feld darstellt, das in der PivotTable-Ansicht angezeigt wird.</param>
+        <summary>Fügt ein neues <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> -Objekt wird an die <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>CubeField</b> -Objekt entspricht einem Satz für die Verarbeitung von OLAP (Online Analytical) definiert einen Anbieter für den Cube.</para>
+          <para>Wenn eine Gruppe mit dem Namen in das Argument angegebenen <paramref name="Name" /> nicht vorhanden ist, gibt die <b>AddSet</b> -Methode einen Laufzeitfehler zurück.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeFields.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeFields.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeFields.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeFields.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMeasure">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CubeField GetMeasure (object AttributeHierarchy, Microsoft.Office.Interop.Excel.XlConsolidationFunction Function, object Caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.CubeField GetMeasure([in]object AttributeHierarchy, [in]valuetype Microsoft.Office.Interop.Excel.XlConsolidationFunction Function, [in]object Caption) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeFields.GetMeasure(System.Object,Microsoft.Office.Interop.Excel.XlConsolidationFunction,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMeasure (AttributeHierarchy As Object, Function As XlConsolidationFunction, Optional Caption As Object) As CubeField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AttributeHierarchy" Type="System.Object" />
+        <Parameter Name="Function" Type="Microsoft.Office.Interop.Excel.XlConsolidationFunction" />
+        <Parameter Name="Caption" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="AttributeHierarchy">Die eindeutige Cube-Felds, das ein Attributhierarchie ist (XlCubeFieldType = XlHierarchy und XlCubeFieldSubType = XlCubeAttribute).</param>
+        <param name="Function">Die im hinzugefügten Datenfeld durchgeführte Funktion.</param>
+        <param name="Caption">Die Bezeichnung des PivotTable-Berichts verwendet wird, um diese Maßnahme zu identifizieren. Wenn das Measure bereits vorhanden ist, überschreibt Beschriftung die vorhandene Bezeichnung dieses Measures.</param>
+        <summary>Gibt bei Angabe eines Attributs Hierarchie, eine implizite Measure für die gegebene Funktion, die entspricht, die diesem Attribut. Wenn "implizite Measure" nicht vorhanden ist, wird ein neues Measure implizites erstellt und hinzugefügt der <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>Wichtig</b>: Abrufen eines Measures mithilfe der Funktion <b>GetMeasure</b> für diese Funktionen nur funktionieren: <b>Anzahl</b>, <b>Summe</b>, <b>Durchschnitt</b>, <b>Max</b> und <b>Min</b>. Beispiel: werden WorkGet CubeField0 = modelPivotTable.CubeFields.GetMeasure ("[Kunden]. [ Num_cars_owned] ", XlCount"NumCarsOwnedCount") festgelegt CubeField1 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlSum"NumCarsOwnedSum") festgelegt CubeField2 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlAverage"NumCarsOwnedAverage") festgelegt CubeField4 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlMax"NumCarsOwnedMax") festgelegt CubeField5 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlMin"NumCarsOwnedMin") werden nicht Arbeitssatz CubeField3 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlCountNums"NumCarsOwnedCountNums") festgelegt CubeField6 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlProduct"NumCarsOwnedProduct") festgelegt CubeField7 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlStDev"NumCarsOwnedStDev") festgelegt CubeField8 = modelPivotTable.CubeFields.GetMeasure (" [Kunden]. [[ Num_cars_owned] ", XlStDevP"NumCarsOwnedStDevP")</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CubeField Item[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.CubeField Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeFields.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item(Index As Object) As CubeField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::CubeField ^ Item[System::Object ^] { Microsoft::Office::Interop::Excel::CubeField ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer des Objekts.</param>
+        <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeFields.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
