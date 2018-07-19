@@ -1,0 +1,459 @@
+<Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="52961e7c7c0430d4ed8f7d76b64787b55ef124c0" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20586905" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Pane" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Pane" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Pane" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020895-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt einen Ausschnitt eines Fensters dar.</summary>
+    <remarks>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />Objekte sind nur für Arbeitsblätter und Microsoft Excel 4.0-Makrovorlagen vorhanden. Die <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> -Auflistung enthält alle in einem einzelnen Fenster gezeigten Ausschnitte.</para>
+      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> (<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer Bereich zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> -Objekt.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public bool Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Activate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Pane.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Activate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aktiviert den Bereich.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Wenn Sie nicht der Bereich in das aktive Fenster ist, wird das Fenster, dem der Bereich gehört auch aktiviert. Fixierte Ausschnitte kann nicht aktiviert werden.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Pane.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Pane.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Pane.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Indexnummer des Objekts in einer Auflistung ähnlicher Objekte zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeScroll">
+      <MemberSignature Language="C#" Value="public object LargeScroll (object Down, object Up, object ToRight, object ToLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object LargeScroll([in]object Down, [in]object Up, [in]object ToRight, [in]object ToLeft) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Pane.LargeScroll(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LargeScroll (Optional Down As Object, Optional Up As Object, Optional ToRight As Object, Optional ToLeft As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(547)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Down" Type="System.Object" />
+        <Parameter Name="Up" Type="System.Object" />
+        <Parameter Name="ToRight" Type="System.Object" />
+        <Parameter Name="ToLeft" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Down">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach unten ausgeführt werden soll.</param>
+        <param name="Up">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach oben ausgeführt werden soll.</param>
+        <param name="ToRight">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
+        <param name="ToLeft">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach links ausgeführt werden soll.</param>
+        <summary>Führt seitenweise einen Bildlauf durch den Fensterinhalt aus.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Seiten nach oben.</para>
+          <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, Bildlauf zu der drei Seiten nach rechts.</para>
+          <para>Eines der Argumente kann auch eine negative Zahl sein.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Pane.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointsToScreenPixelsX">
+      <MemberSignature Language="C#" Value="public int PointsToScreenPixelsX (int Points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 PointsToScreenPixelsX([in]int32 Points) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Pane.PointsToScreenPixelsX(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PointsToScreenPixelsX (Points As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int PointsToScreenPixelsX(int Points);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1776)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Points" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Points">Position des Pixels auf dem Bildschirm.</param>
+        <summary>Gibt einen Pixelpunkt auf dem Bildschirm zurück oder legt diesen fest.</summary>
+        <returns>
+          <b>Integer</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointsToScreenPixelsY">
+      <MemberSignature Language="C#" Value="public int PointsToScreenPixelsY (int Points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 PointsToScreenPixelsY([in]int32 Points) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Pane.PointsToScreenPixelsY(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PointsToScreenPixelsY (Points As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int PointsToScreenPixelsY(int Points);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1777)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Points" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Points">Position des Ausgangspunkts.</param>
+        <summary>Gibt die Position des Pixels auf dem Bildschirm zurück oder legt diese fest.</summary>
+        <returns>
+          <b>Integer</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollColumn">
+      <MemberSignature Language="C#" Value="public int ScrollColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Pane.ScrollColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollColumn { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt die Anzahl der am weitesten links stehende Spalte im Bereich.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollIntoView">
+      <MemberSignature Language="C#" Value="public void ScrollIntoView (int Left, int Top, int Width, int Height, object Start);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollIntoView([in]int32 Left, [in]int32 Top, [in]int32 Width, [in]int32 Height, [in]object Start) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Pane.ScrollIntoView(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (Left As Integer, Top As Integer, Width As Integer, Height As Integer, Optional Start As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1781)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Int32" />
+        <Parameter Name="Top" Type="System.Int32" />
+        <Parameter Name="Width" Type="System.Int32" />
+        <Parameter Name="Height" Type="System.Int32" />
+        <Parameter Name="Start" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <b>Integer</b>erforderlich. Die horizontale Position des Rechtecks (in Punkt) vom linken Rand des Bereichs.</param>
+        <param name="Top">
+          <b>Integer</b>erforderlich. Die vertikale Position des Rechtecks (in Punkt) vom oberen Rand des Bereichs.</param>
+        <param name="Width">
+          <b>Integer</b>erforderlich. Die Breite des Rechtecks in Punkt.</param>
+        <param name="Height">
+          <b>Integer</b>erforderlich. Die Höhe des Rechtecks in Punkt.</param>
+        <param name="Start">Optionales- <b>Objekt</b>. <b>True</b> , wenn die linke obere Ecke des Rechtecks in der oberen linken Ecke des Bereichs angezeigt werden. <b>False</b> , wenn der unteren rechten Ecke des Rechtecks in der unteren rechten Ecke des Bereichs angezeigt werden. Der Standardwert ist <b>True</b>.</param>
+        <summary>Führt einen Bildlauf im Bereich, sodass der Inhalt eines angegebenen rechteckigen Bereichs in der linken oberen oder unteren rechten Ecke des Bereichs angezeigt wird.</summary>
+        <remarks>
+          <para>Die <paramref name="Start" /> Argument eignet sich zum Ausrichten der Bildschirmanzeige, wenn das Rechteck größer als der Bereich ist.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollRow">
+      <MemberSignature Language="C#" Value="public int ScrollRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Pane.ScrollRow" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollRow As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollRow { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Anzahl der Zeilen, die angezeigt wird am oberen Rand des Bereichs.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallScroll">
+      <MemberSignature Language="C#" Value="public object SmallScroll (object Down, object Up, object ToRight, object ToLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SmallScroll([in]object Down, [in]object Up, [in]object ToRight, [in]object ToLeft) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Pane.SmallScroll(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SmallScroll (Optional Down As Object, Optional Up As Object, Optional ToRight As Object, Optional ToLeft As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(548)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Down" Type="System.Object" />
+        <Parameter Name="Up" Type="System.Object" />
+        <Parameter Name="ToRight" Type="System.Object" />
+        <Parameter Name="ToLeft" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Down">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach unten ausgeführt werden soll.</param>
+        <param name="Up">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach oben ausgeführt werden soll.</param>
+        <param name="ToRight">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
+        <param name="ToLeft">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach links ausgeführt werden soll.</param>
+        <summary>Führt einen zeilen- oder spaltenweisen Bildlauf für Fensterinhalte aus.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Zeilen.</para>
+          <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, Bildlauf zu den drei Spalten nach rechts.</para>
+          <para>Jedes dieser Argumente kann auch eine negative Zahl sein.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range VisibleRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range VisibleRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Pane.VisibleRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleRange As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ VisibleRange { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das den Zellbereich darstellt, klicken Sie im Bereich sichtbar sind. Wenn eine Spalte oder Zeile teilweise angezeigt wird, ist es im Bereich enthalten.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
