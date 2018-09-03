@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586289" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ValueChange" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Die <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung enthält <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekten, die Änderungen darstellen hat ein Benutzer an Wertzellen in einem PivotTable-Bericht vorgenommen.</para>
       <para>Die Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt angeben, Details über die Änderung, wie der Wert der Änderung, wurde der Zelle, die geändert wurde die Reihenfolge, in dem die Änderung relativ zu anderen Änderungen vorgenommen wurde, und gibt an, ob die Zelle ist, zugeordnete Tupel in der PivotTable sichtbar. Die <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt stellt auch die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> Eigenschaft, die zurückgibt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> -Objekt, das die Zelle, die geändert wurde darstellt, und stellt zusätzliche Informationen zu den geänderten Zelle.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -65,7 +65,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" /> -Eigenschaft entspricht der Einstellung Zuweisungsmethode im Dialogfeld wäre Analysis-Einstellungen für einen PivotTable-Bericht basierend auf einer OLAP-Datenquelle, wie er zum Zeitpunkt festgelegt wurde, das diese Änderung ursprünglich zugewiesen wurde. Wenn das angegebene <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt erstellt wurde, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung und die entsprechenden <paramref name="AllocationMethod" /> Parameter wurde nicht angegeben, wird die Standardmethode für die Zuweisung von OLAP-Server zurückgegeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -97,7 +97,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" /> Eigenschaft entspricht dem Wert zuordnen-Einstellung im Dialogfeld wäre Analysis-Einstellungen für einen PivotTable-Bericht basierend auf einer OLAP-Datenquelle, wie er zum Zeitpunkt festgelegt wurde, das diese Änderung ursprünglich zugewiesen wurde. Wenn das angegebene <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt erstellt wurde, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung und die entsprechenden <paramref name="AllocationValue" /> Parameter wurde nicht angegeben, wird der Standardwert für die Zuordnung der OLAP-Server zurückgegeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -129,7 +129,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" /> -Eigenschaft entspricht der Einstellung Gewichtungsausdruck im Dialogfeld wäre Analysis-Einstellungen für einen PivotTable-Bericht basierend auf einer OLAP-Datenquelle, wie er zum Zeitpunkt festgelegt wurde, das diese Änderung ursprünglich zugewiesen wurde. Wenn das angegebene <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt erstellt wurde, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung und die entsprechenden <paramref name="AllocationWeightExpression" /> Parameter wurde nicht angegeben, wird die standardmäßige Gewichtungsausdruck zum OLAP-Server zurückgegeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -159,8 +159,8 @@
         <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -192,7 +192,7 @@
         <remarks>
           <para>Nur-Lese- <b>long</b>.</para>
           <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -220,7 +220,7 @@
         <summary>Löscht das angegebene <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt aus der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</summary>
         <remarks>
           <para>Sie können auch Löschen einer <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> Objekt mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Delete" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -252,7 +252,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Der Wert von der <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> -Eigenschaft wird automatisch von Excel basierend auf der Reihenfolge, in der Benutzer die Änderungen an Wertzellen in der PivotTable-Bericht angewendet zugewiesen. Wenn mehrere Änderungen in einem Vorgang angewendet wurden, weisen Excel willkürlich die Reihenfolge in dieser Reihe von Änderungen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -282,8 +282,8 @@
         <summary>Ruft ab, der übergeordnete Objekt des angegebenen Objekts.</summary>
         <value>Das übergeordnete Objekt des angegebenen Objekts.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -315,7 +315,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Wenn der Wert der der <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> -Eigenschaft des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt ist <b>true</b>, die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> -Eigenschaft gibt eine <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> -Objekt für die Zelle (Tupel), die geändert wurde. Wenn der Wert der der <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> -Eigenschaft des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekt ist <b>"false"</b>, die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> -Eigenschaft gibt ein Nullverweis (Nothing in Visual Basic) zurück.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -345,8 +345,8 @@
         <summary>Ruft ab, die das MDX-Tupel des Werts in der OLAP-Datenquelle geändert wurde.</summary>
         <value>Das MDX-Tupel des Werts wurde in der OLAP-Datenquelle geändert.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -376,8 +376,8 @@
         <summary>Ruft den Wert, der der Benutzer in die Zelle eingegeben oder, die die Formel in der Zelle wurde auf ausgewertet, wenn UPDATE CUBE-Anweisung für die OLAP-Datenquelle zuletzt ausgeführt wurde.</summary>
         <value>Der Wert.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -410,7 +410,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Zurückgeben <b>true,</b> Wenn die Zelle (Tupel) aktuell im PivotTable-Bericht sichtbar ist, andernfalls <b>false</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587416" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Databar" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Alle Objekte für bedingte Formatierung enthaltenen ein <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> -Auflistungsobjekt, das ein untergeordnetes Element von einer <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Auflistung. Sie können eine Regel mithilfe einer Formatierung für Datenbalken Erstellen der <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistung.</para>
       <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> und <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> Objekt, das die Werte der kürzeste Balken und längste Balken eines Bereichs von Daten festgelegt. Diese Eigenschaften zurückgeben einer <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> -Objekt, in dem Sie angeben können, wie die Schwellenwerte ausgewertet werden.</para>
-      <para />
+      <para></para>
     </remarks>
     <example>
       <para>Das folgende Beispiel erstellt einen Bereich von Daten und ein Datenbalkens klicken Sie dann auf den Bereich angewendet. Beachten Sie, dass, da ein sehr niedriger und hoher-Wert im Bereich vorhanden ist, die mittlere Werte Datenbalken mit gleicher Länge stehen. Die mittlere Werte eindeutig machen können, der Beispielcode verwendet die <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> Objekt zu ändern, wie die Schwellenwerte in Perzentile ausgewertet werden.</para>
@@ -68,7 +68,7 @@
           <b>Anwendung</b> (siehe oben)</value>
         <remarks>
           <para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -128,8 +128,8 @@
         <summary>Ruft die Farbe der Achse für Zellen mit bedingter Formatierung als Datenbalken ab.</summary>
         <value>Die Farbe der Achse für Zellen mit bedingter Formatierung als Datenbalken.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -164,7 +164,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Der Achse für Datenbalken angezeigt wird nur, wenn die <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> -Eigenschaft ist entweder <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> oder <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" />, und wenn vorhanden negative Werte im Bereich von Werten, die mit einer Regel zur bedingten Formatierung für Datenbalken angegeben sind. Der Standardwert für die <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> -Eigenschaft ist <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -194,8 +194,8 @@
         <summary>Ruft ein Objekt, das den Rahmen eines Datenbalkens angibt.</summary>
         <value>Ein Objekt, das den Rahmen eines Datenbalkens an.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -260,7 +260,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Den Standardwert der <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> -Eigenschaft ist <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -292,8 +292,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para />
+          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -353,7 +353,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.Constants" />: <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" />, <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> (von links nach rechts) oder <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" /> (rechts-nach-links).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -388,8 +388,8 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Diese Eigenschaft ist hilfreich, den Bereich von Werten zu begrenzen, die die bedingte Formatierung angezeigt wird. Ein herkömmliches Szenario ist, wenn Sie einen Bereich von Zahlen, positive und negative Werte enthält. Sie möchten mehr als ein bedingtes Format für diesen Bereich Nummern zu erstellen – eines für positive Werte und ein weiteres für negative Werte.</para>
-          <para />
+          <para>Eignet sich diese Eigenschaft Beschränken des Bereichs der Werte, die die bedingte Formatierung angezeigt werden. Ein herkömmliches Szenario ist, wenn Sie einen Bereich von Zahlen, positive und negative Werte enthält. Sie möchten mehr als ein bedingtes Format für diesen Bereich Nummern zu erstellen – eines für positive Werte und ein weiteres für negative Werte.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -421,8 +421,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />
         </value>
         <remarks>
-          <para>Sie können den Typ und den Wert der Auswertung angeben, mit der <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> und <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> Eigenschaften.</para>
-          <para />
+          <para>Den Typ und den Wert der Auswertung Geben Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> und <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> Eigenschaften.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -454,8 +454,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />
         </value>
         <remarks>
-          <para>Sie können den Typ und den Wert der Auswertung angeben, mit der <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> und <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> Eigenschaften.</para>
-          <para />
+          <para>Den Typ und den Wert der Auswertung Geben Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> und <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> Eigenschaften.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
         <remarks>
           <para>Der Bereich muss in der A1-Bezugsart und werden vollständig in das Blatt, das das übergeordnete Objekt des ist enthalten die <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistung. Sie können den Bereichsoperator (Doppelpunkt), der Schnittmengenoperator (ein Leerzeichen) oder der union-Operator (Komma) enthalten. Dollarzeichen kann auch verwendet werden, aber sie werden ignoriert.</para>
           <para>Sie können auch einen lokalen, definierten Namen in einem beliebigen Teil des Bereichs verwenden, aber der Name muss sich in der Sprache des Makros.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -516,8 +516,8 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> einer Regel zur bedingten Formatierung für Datenbalken zugeordnete-Objekt.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> einer Regel zur bedingten Formatierung für Datenbalken zugeordnete-Objekt.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -583,7 +583,7 @@
         </value>
         <remarks>
           <para>Der Wert muss eine ganze Zahl zwischen 0 und 100.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -619,7 +619,7 @@
         </value>
         <remarks>
           <para>Der Wert muss eine ganze Zahl zwischen 0 und 100.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -654,8 +654,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Beim Festlegen der Priorität muss der Wert eine positive ganze Zahl zwischen 1 und der Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt. Die Priorität muss einen eindeutigen Wert für alle Regeln im Arbeitsblatt so ändern die Priorität für die angegebene Regel zur bedingten Formatierung den Prioritätswert anderen Regeln im Arbeitsblatt verschoben werden sollen führen kann.</para>
-          <para />
+          <para>Beim Festlegen der Priorität, die der Wert muss eine positive ganze Zahl zwischen 1 und der Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt. Die Priorität muss einen eindeutigen Wert für alle Regeln im Arbeitsblatt, so ändern die Priorität für die angegebene Regel zur bedingten Formatierung kann dazu führen, dass den Prioritätswert anderen Regeln im Arbeitsblatt verschoben werden sollen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -720,8 +720,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />Eigenschaft.</para>
-          <para />
+          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />-Eigenschaft.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -751,7 +751,7 @@
           <para>Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt vorhanden sind, wenn die Regel nicht zuvor Priorität "1" festgelegt wurde, verursacht diese Methode die Priorität aller anderen vorhandenen Regeln auf dem Arbeitsblatt um 1 erhöht.</para>
           <para>
             <b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -781,7 +781,7 @@
           <para>Den tatsächlichen Wert der Priorität wird die Gesamtanzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt entsprechen. Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt haben, verursacht diese Methode die Priorität der Regeln, die einen Prioritätswert größer als dieser Regel um 1 erhöht werden hatte.</para>
           <para>
             <b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -847,7 +847,7 @@
         </value>
         <remarks>
           <para>Zur Unterstützung der Abwärtskompatibilität ist der Standardwert für diese Eigenschaft <b>False</b>das Gegenteil des Verhaltens einer Formatierungsregel ist Regel in der Benutzeroberfläche erstellt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -880,7 +880,7 @@
         </value>
         <remarks>
           <para>Diese Eigenschaft gibt immer einen <b>Integer</b> -Wert der "4", was entspricht zurück <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlDatabar" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

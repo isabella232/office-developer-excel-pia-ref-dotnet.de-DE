@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587787" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Application" />
@@ -404,8 +404,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die aktive Zelle im aktiven Fenster (das Fenster im Vordergrund) darstellt oder im angegebenen Fenster. Das Fenster kein Arbeitsblatt angezeigt, schlägt diese Eigenschaft fehl.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Achten Sie darauf, dass der aktiven Zelle und der Markierung unterscheiden. Die aktive Zelle ist eine einzelne Zelle innerhalb der aktuellen Markierung. Die Markierung kann mehrere Zellen enthalten, aber nur eine wird die aktive Zelle.</para>
-          <para />
+          <para>Achten Sie darauf, dass Sie zwischen der aktiven Zelle und der Markierung zu unterscheiden. Die aktive Zelle ist eine einzelne Zelle innerhalb der aktuellen Markierung. Die Markierung kann mehrere Zellen enthalten, aber nur eine die aktive Zelle.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -592,8 +592,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekt, das aktive Fenster geschützte Ansicht (das Fenster im Vordergrund) darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekt, das aktive Fenster geschützte Ansicht (das Fenster im Vordergrund) darstellt.</value>
         <remarks>
-          <para>Gibt ein Nullverweis (Nothing in Visual Basic) zurück, wenn keine geschützte Ansicht-Fenster geöffnet sind. Schreibgeschützt.</para>
-          <para />
+          <para>Gibt ein Nullverweis (Nothing in Visual Basic) zurück, wenn keine geschützte Ansicht-Fenster geöffnet sind. Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -623,8 +623,8 @@
         <summary>Gibt ein Objekt, das aktive Blatt (das Blatt im Vordergrund) darstellt, in der aktiven Arbeitsmappe oder im angegebenen Fenster oder Arbeitsmappe. Gibt <b>Nothing</b> zurück, wenn kein Blatt aktiv ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn eine Arbeitsmappe in mehreren Fenstern angezeigt wird, kann die <b>ActiveSheet</b> -Eigenschaft in verschiedenen Fenstern anders lauten.</para>
-          <para />
+          <para>, Wenn eine Arbeitsmappe in mehreren Fenstern angezeigt wird, die <b>ActiveSheet</b> -Eigenschaft ist möglicherweise unterschiedliche in unterschiedlichen Fenstern.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -754,8 +754,8 @@
         <param name="ByRow">Optionales- <b>Objekt</b>. Nur verwendet, wenn <paramref name="ListArray" /> wird ein <b>Range</b> -Objekt. <b>True</b> , wenn eine benutzerdefinierte Liste aus jeder Zeile im Bereich zu erstellen. <b>False</b> , wenn eine benutzerdefinierte Liste aus jeder Spalte im Bereich zu erstellen. Wenn dieses Argument ausgelassen wird und mehr Zeilen als Spalten (oder eine gleiche Anzahl von Zeilen und Spalten) im Bereich vorhanden sind, erstellt Microsoft Excel eine benutzerdefinierte Liste aus jeder Spalte im Bereich. Wenn dieses Argument nicht angegeben ist, und es mehr Spalten als Zeilen im Bereich sind, erstellt Microsoft Excel eine benutzerdefinierte Liste aus jeder Zeile im Bereich.</param>
         <summary>Fügt eine benutzerdefinierte Liste für benutzerdefiniertes AutoAusfüllen bzw. benutzerdefiniertes Sortieren hinzu.</summary>
         <remarks>
-          <para>Wenn die Liste, den, die Sie versuchen, bereits, vorhanden ist, hat diese Methode Nothing zurück.</para>
-          <para />
+          <para>Wenn die Liste, die Sie versuchen, bereits vorhanden ist, diese Methode hat keine Auswirkung.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -816,8 +816,8 @@
         <summary>Ruft eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> -Objekten, die alle Add-Ins darstellen, die derzeit verfügbar in Excel oder geöffnet, unabhängig davon, ob sie installiert sind.</summary>
         <value>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> -Objekten, die alle Add-Ins darstellen, die aktuell in Excel verfügbar oder geöffnet sind.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -927,8 +927,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Selbst wenn die Microsoft Windows-Einstellung für ClearType deaktiviert ist, durch Festlegen dieser Eigenschaft auf <b>true fest,</b> überschreibt die Einstellung Windows und verwendet ClearType in allen Microsoft Office-Clientanwendungen.</para>
-          <para />
+          <para>, Auch wenn die Microsoft Windows-Einstellung für ClearType deaktiviert ist, überschreibt die Windows-Einstellung und verwendet ClearType in allen Microsoft Office-Clientanwendungen durch Festlegen dieser Eigenschaft auf <b>True</b> .</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1018,7 +1018,7 @@
         <value>To be added.</value>
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1088,8 +1088,8 @@
           <b>IAssistance</b>
         </value>
         <remarks>
-          <para>Das <b>IAssistance</b> -Objekt ermöglicht Entwicklern, eine benutzerdefinierte Hilfe sowie Hilfe, die mit Office in Office Help Viewer installiert wird.</para>
-          <para />
+          <para>Das <b>IAssistance</b> -Objekt ermöglicht es Entwicklern, benutzerdefinierte Hilfe sowie Hilfe, die mit Office in Office Help Viewer installiert wird.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1219,19 +1219,19 @@
           <list type="bullet">
             <item>
               <description>
-                <b>MsoAutomationSecurityByUI</b>  wird verwendet, die im Dialogfeld <b>Sicherheit</b> angegebene sicherheitseinstellung.</description>
+                <b>MsoAutomationSecurityByUI</b> verwendet, die im Dialogfeld <b>Sicherheit</b> angegebene sicherheitseinstellung.</description>
             </item>
             <item>
               <description>
-                <b>MsoAutomationSecurityForceDisable</b>  deaktiviert alle Makros in allen Dateien programmgesteuert geöffnet, ohne Sicherheitswarnungen.</description>
+                <b>MsoAutomationSecurityForceDisable</b> deaktiviert alle Makros in allen programmgesteuert geöffneten ohne Sicherheitswarnungen Dateien.</description>
             </item>
             <item>
               <description>
-                <b>Msoautomationsecuritylowmsoautomationsecuritylow</b>  aktiviert alle Makros. Dies ist der Standardwert, wenn die Anwendung gestartet wird.</description>
+                <b>Msoautomationsecuritylowmsoautomationsecuritylow</b> aktiviert alle Makros. Dies ist der Standardwert, wenn die Anwendung gestartet wird.</description>
             </item>
           </list>
           <para>Einstellung <see cref="P:Microsoft.Office.Interop.Excel._Application.ScreenUpdating" /> auf <b>False</b> nicht Einfluss auf Benachrichtigungen und Sicherheitswarnungen nicht beeinflusst wird. Die <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> Einstellung gilt nicht für Sicherheitswarnungen. Angenommen, wenn der Benutzer <b>DisplayAlerts</b> gleich <b>False</b> und <b>AutomationSecurity</b><b>MsoAutomationSecurityByUI</b>, festlegt während der Benutzer auf Mittel festgelegt ist, wird Klicken Sie dann Sicherheitswarnungen während das Makro ist ausgeführt. Dadurch wird das Makro open Dateifehler, während ein die Warnung, wenn die Öffnen der Datei ist erfolgreich Sicherheit auffangen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1293,8 +1293,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" /> -Objekt, das in festgelegten Intervallen alle Dateiformate sichert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Gültige Zeitintervalle sind ganze Zahlen von 1 bis 120.</para>
-          <para />
+          <para>Gültige Zeitintervalle umfassen ganze Zahlen von 1 bis 120.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1328,7 +1328,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Normalerweise ist es sicherer zum Testen der <see cref="P:Microsoft.Office.Interop.Excel._Application.Version" /> -Eigenschaft, es sei denn, Sie sind sicher, dass Sie die Buildnummer wissen müssen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1446,8 +1446,8 @@
       <Docs>
         <summary>Erzwingt für alle geöffneten Arbeitsmappen eine vollständige Berechnung der Daten und erstellt die Abhängigkeiten erneut.</summary>
         <remarks>
-          <para>Abhängigkeiten werden die Formeln, die von anderen Zellen abhängen. Beispielsweise hängt von der Formel "= A1" Zelle A1. <b>CalculateFullRebuild</b> -Methode ähnelt der erneuten Eingabe aller Formeln.</para>
-          <para />
+          <para>Abhängigkeiten werden die Formeln, die von anderen Zellen abhängen. Beispielsweise hängt von der Formel "= A1" Zelle A1. <b>CalculateFullRebuild</b> -Methode ist vergleichbar mit der erneuten Eingabe aller Formeln.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1523,7 +1523,7 @@
           <para>
             <b>xlCalculationSemiautomatic</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1567,7 +1567,7 @@
           <para>
             <b>XlNoKey</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1608,7 +1608,7 @@
           <para>
             <b>XlPending</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1638,8 +1638,8 @@
         <summary>Gibt eine Zahl, deren vier rechts stehende Ziffern die Nummer der Nebenversion des Berechnungsmoduls und deren andere Ziffern (links) die Hauptversion von Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn die Arbeitsmappe in einer früheren Version von Excel und wenn die Arbeitsmappe vollständig neu berechnet wurde noch nicht gespeichert wurde, gibt diese Eigenschaft 0 zurück.</para>
-          <para />
+          <para>Wenn die Arbeitsmappe in einer früheren Version von Excel gespeichert wurde, und wenn die Arbeitsmappe vollständig neu berechnet wurde noch nicht, diese Eigenschaft 0 gibt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1699,7 +1699,7 @@
               <description>der #REF! Fehlerwert</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1860,8 +1860,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das alle Zellen im aktiven Arbeitsblatt darstellt. Wenn das aktive Dokument kein Arbeitsblatt ist, schlägt diese Eigenschaft fehl.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Da die <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> -Eigenschaft die Standardeigenschaft für das <b>Range</b> -Objekt ist, können Sie den Zeile und Spalte Index unmittelbar nach dem Schlüsselwort <b>Zellen</b> angeben. Weitere Informationen finden Sie unter der <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> Eigenschaft.</para>
-          <para />
+          <para>, Da die <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> -Eigenschaft die Standardeigenschaft für das <b>Range</b> -Objekt ist, können Sie den Zeile und Spalte Index unmittelbar nach dem Schlüsselwort <b>Zellen</b> angeben. Weitere Informationen finden Sie unter der <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> -Eigenschaft.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2154,7 +2154,7 @@
           <para>
             <b>xlClipboardFormatWK1</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2192,7 +2192,7 @@
           <para>
             <b>Hinweis</b>: Angeben der <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> Eigenschaft müssen Sie einen Clusterconnector High Performance Computing (HPC) installieren. Einen Clusterconnector können Sie clustersichere XLL-Funktionen Remote auf einem HPC-Cluster zur Verbesserung der Leistung ausgeführt.</para>
           <para>Bevor Sie angeben können die <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> -Eigenschaft, müssen Sie verwenden die <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> -Eigenschaft auf Zulassen von Microsoft Excel 2010 zur Ausführung von benutzerdefinierten Funktionen in XLL-add-ins</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2318,8 +2318,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Core.CommandBars" /> -Objekt, die Excel-Befehlsleisten darstellt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft gibt die integrierten und benutzerdefinierten Befehlsleisten verfügbar an die Anwendung zurück.</para>
-          <para />
+          <para>Diese Eigenschaft gibt den Satz von integrierten und benutzerdefinierten Befehlsleisten verfügbar an die Anwendung zurück.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2370,7 +2370,7 @@
             <b>XlCommandUnderlinesAutomatic</b>
           </para>
           <para>In Microsoft Excel für Windows, lesen diese Eigenschaft immer gibt <b>zurück. Wert XlCommandUnderlinesOn</b>, und ein Fehler wird durch Festlegen dieser Eigenschaft auf einen anderen Wert als <b>Wert XlCommandUnderlinesOn</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2411,7 +2411,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft ist nur verfügbar, wenn Sie Microsoft Windows für Pen Computing verwenden. Wenn Sie versuchen, diese Eigenschaft unter einem anderen Betriebssystem festzulegen, tritt ein Fehler auf.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2451,8 +2451,8 @@
           <b>True,</b> Wenn Microsoft Excel Steuerzeichen für rechts-nach-links-Sprachen angezeigt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft kann festgelegt werden, nur, wenn rechts nach links sprachunterstützung installiert und aktiviert wurde.</para>
-          <para />
+          <para>Diese Eigenschaft kann festgelegt werden, nur, wenn von rechts nach links Language Support installiert und aktiviert wurde.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2560,8 +2560,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para />
+          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2611,7 +2611,7 @@
           <para>
             <b>XlWait</b> der Sanduhrzeiger.</para>
           <para>Der <b>Cursor</b> -Eigenschaft wird nicht automatisch zurückgesetzt, wenn das Makro beendet. Sie sollten den Mauszeiger auf <b>XlDefault</b> zurücksetzen, bevor das Makro beendet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2651,7 +2651,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Konstanten möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2757,7 +2757,7 @@
               <description>Ausschneiden abbricht oder Kopiermodus und entfernt das Verschieben border.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2799,7 +2799,7 @@
           <list type="table">
             <item>
               <term>
-                <b>xlOn</b>
+                <b>XlOn</b>
               </term>
               <description>Dateneingabemodus ist aktiviert.</description>
             </item>
@@ -2816,7 +2816,7 @@
               <description>Dateneingabemodus ist aktiviert, und Drücken von ESC wird nicht aktiviert, ausgeschaltet</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2994,7 +2994,7 @@
               <description>% (Prozentzeichen)</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3032,8 +3032,8 @@
         <summary>Öffnet einen DDE-Kanal (Dynamic Data Exchange) zu einer Anwendung.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Bei erfolgreicher gibt die <b>DDEInitiate</b> -Methode die Anzahl der geöffneten Kanals zurück. Alle nachfolgende DDE-Funktionen verwenden diese Nummer zum Angeben des Kanals.</para>
-          <para />
+          <para>, Wenn erfolgreich, gibt die <b>DDEInitiate</b> -Methode die Anzahl der geöffneten Kanals zurück. Alle nachfolgenden DDE-Funktionen verwenden diese Nummer zum Angeben des Kanals.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3073,8 +3073,8 @@
           <b>Objekt</b>erforderlich. Die Daten, die an die Anwendung gesendet werden sollen.</param>
         <summary>Diese Methode sendet Daten an eine Anwendung.</summary>
         <remarks>
-          <para>Ein Fehler tritt auf, wenn der Methodenaufruf nicht erfolgreich.</para>
-          <para />
+          <para>Tritt ein Fehler auf, wenn der Methodenaufruf nicht erfolgreich.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3280,8 +3280,8 @@
         <summary>Zurückgeben oder festlegen die standardrichtung in der Microsoft Excel neue Fenster und Arbeitsblätter anzeigt. Kann eine der folgenden Konstanten sein: <b>XlRTL</b> (von rechts nach links) oder <b>XlLTR</b> (von links nach rechts).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Einige der folgenden Konstanten haben möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise).</para>
-          <para />
+          <para>Einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3345,7 +3345,7 @@
         </value>
         <remarks>
           <para>Festlegen der <b>DeferAsyncQueries</b> -Eigenschaft auf <b>True</b> wird verhindert, dass alle asynchrone Abfragen ausgeführt werden, bis die <see cref="M:Microsoft.Office.Interop.Excel._Application.CalculateUntilAsyncQueriesDone" /> -Methode aufgerufen wird.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3415,7 +3415,7 @@
         <summary>Löscht eine benutzerdefinierte Liste.</summary>
         <remarks>
           <para>Diese Methode generiert einen Fehler, wenn die Listennummer kleiner 5 ist oder wenn die entsprechende benutzerdefinierte Liste nicht vorhanden ist.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3517,7 +3517,7 @@
           <para>Der Standardwert ist <b>True</b>. Legen Sie diese Eigenschaft auf <b>false fest</b> , wenn Sie nicht während der Ausführung eines Programms von Anweisungen und Warnhinweise gestört werden möchten; jedes Mal eine Nachricht eine Antwort erfordert, Microsoft Excel wählt die Standardantwort.</para>
           <para>Wenn Sie diese Eigenschaft auf <b>False</b>festlegen, Microsoft Excel wird diese Eigenschaft auf <b>true fest,</b> Wenn der Code abgeschlossen ist, es sei denn, Sie Cross ausführen prozessüberschreitenden Code.</para>
           <para>Bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode für Arbeitsmappen in eine vorhandene Datei überschreiben, die Benachrichtigung "Überschreiben" weist den Standardwert "Nein", während die Antwort "Ja" von Excel ausgewählt ist, wenn die <b>DisplayAlerts</b> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3618,8 +3618,8 @@
         <summary>Festgelegt auf <b>True</b> im Aufgabenbereich Dokumentaktionen angezeigt. Legen Sie auf <b>false fest</b> , um den Aufgabenbereich ' Dokumentaktionen ' auszublenden.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>True</b> führt zu einem Laufzeitfehler, wenn die aktive Arbeitsmappe nicht um ein SmartDocument handelt.</para>
-          <para />
+          <para>Durch Festlegen dieser Eigenschaft auf <b>True</b> führt zu einem Laufzeitfehler Wenn die aktive Arbeitsmappe nicht um ein SmartDocument handelt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3801,8 +3801,8 @@
           <b>True,</b> Wenn Microsoft Excel im Vollbildmodus befindet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Im Vollbildmodus wird das Anwendungsfenster maximiert, so, dass er den ganzen Bildschirm ausfüllt und Titelleiste der Anwendung Blendet. Symbolleisten, der Statusleiste und die Bearbeitungsleiste verdeckt für Vollbildmodus und den normalen Modus.</para>
-          <para />
+          <para>Vollbild-Modus wird das Anwendungsfenster maximiert, so, dass er den ganzen Bildschirm ausfüllt und Titelleiste der Anwendung Blendet. Symbolleisten, der Statusleiste und die Bearbeitungsleiste verdeckt für Vollbildmodus und den normalen Modus.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3969,8 +3969,8 @@
           <b>True,</b> Wenn die Schaltfläche Einfügen-Optionen angezeigt werden kann.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Dies ist eine Microsoft Office-Einstellung. Diese Einstellung wirkt sich auf alle anderen Office-Anwendung. Festlegen der <b>DisplayPasteOptions</b> wird die Schaltfläche Auto-Ausfülloptionen in Microsoft Excel-Eigenschaft auf <b>True</b> deaktiviert. Die Schaltfläche <b>AutoAusfüllen-Optionen</b> ist nur in Excel die Schaltfläche Einfügen-Optionen wird in allen anderen Microsoft Office-Programmen.</para>
-          <para />
+          <para>Dies ist eine Microsoft Office-Einstellung. Diese Einstellung wirkt sich auf alle anderen Office-Anwendung. Festlegen der <b>DisplayPasteOptions</b> wird die Schaltfläche Auto-Ausfülloptionen in Microsoft Excel-Eigenschaft auf <b>True</b> deaktiviert. Die Schaltfläche <b>Auto-Ausfülloptionen</b> ist nur in Excel, aber die Schaltfläche Einfügen-Optionen wird in allen anderen Microsoft Office-Clientanwendungen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4108,7 +4108,7 @@
         <summary>Öffnet den Aufgabenbereich XML-Quelle und zeigt die durch angegebene XML-Zuordnung der <paramref name="XmlMap" /> Argument.</summary>
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4984,20 +4984,20 @@
           <list type="bullet">
             <item>
               <description>
-                <b>XlDisabled</b>  Abbrechen wichtige Trapping vollständig deaktiviert.</description>
+                <b>XlDisabled</b> Abbrechen wichtige Trapping vollständig deaktiviert.</description>
             </item>
             <item>
               <description>
-                <b>XlErrorHandler</b>  die Unterbrechung der ausgeführten Prozedur als Fehler durch einen Fehlerhandler einrichten, die mit einer On Error GoTo-Anweisung auffangbarer gesendet wird. Der auffangbarer Fehlercode ist 18.</description>
+                <b>XlErrorHandler</b> ist die Unterbrechung der ausgeführten Prozedur als Fehler durch einen Fehlerhandler einrichten, die mit einer On Error GoTo-Anweisung auffangbarer gesendet. Der auffangbarer Fehlercode ist 18.</description>
             </item>
             <item>
               <description>
-                <b>XlInterrupt</b>  in die aktuelle Prozedur wird unterbrochen, und der Benutzer kann testen oder beenden Sie die Prozedur.</description>
+                <b>XlInterrupt</b> in der aktuellen Prozedur wird unterbrochen, und der Benutzer kann testen oder beenden Sie die Prozedur.</description>
             </item>
           </list>
           <para>Verwenden Sie diese Eigenschaft sehr sorgfältig. Wenn Sie <b>XlDisabled</b>verwenden, gibt es keine Möglichkeit, eine Endlosschleife oder anderen Code, der nicht, sich selbst beendet wird zu unterbrechen. Dienstanbieter entscheidet auch, wenn Sie <b>XlErrorHandler</b> verwenden, aber die Fehlerbehandlungsroutine immer mit der <b>Resume</b> -Anweisung, es ist nicht möglich, Limit für Code beenden.</para>
           <para>Die <b>EnableCancelKey</b> -Eigenschaft wird immer auf <b>XlInterrupt</b> zurückgesetzt, sobald Microsoft Excel zurückgegeben wird, in den Leerlauf, und es wird kein Code ausgeführt. Zum Auffangen oder Abbruch in der Prozedur zu deaktivieren, müssen Sie explizit die <b>EnableCancelKey</b> -Eigenschaft ändern, jedes Mal, wenn die Prozedur aufgerufen wird.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5096,7 +5096,7 @@
         </value>
         <remarks>
           <para>Der Standardwert dieser Eigenschaft ist <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5132,7 +5132,7 @@
         </value>
         <remarks>
           <para>Diese Eigenschaft entspricht dem Kontrollkästchen Livevorschau aktivieren im Dialogfeld Excel-Optionen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5318,7 +5318,7 @@
           </list>
           <para>
             <b>Hinweis</b>: Verwenden von Klammern (beispielsweise "[a1: C5]") ist identisch mit Aufrufen der <b>Evaluate</b> -Methode mit einem Zeichenfolgenargument. Die Vorteile der Verwendung von Klammern ist, dass der Code kürzer ist. Die Vorteile der Verwendung von <b>Evaluate</b> besteht darin, dass das Argument eine Zeichenfolge ist, damit können Sie die Zeichenfolge in Ihrem Code erstellen oder eine Variablen verwenden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5408,8 +5408,8 @@
         <summary>Führt eine Microsoft Excel 4.0-Makros-Funktion, und klicken Sie dann das Ergebnis der Funktion zurückgegeben. Der Rückgabetyp hängt von der Funktion ab.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Microsoft Excel 4.0-Makros im Zusammenhang mit der aktuellen Arbeitsmappe oder Blatt wird nicht ausgewertet. Dies bedeutet, dass alle Verweise externe und sollten Arbeitsmappenname ausdrücklich angeben. Beispielsweise müssen zum Ausführen des Microsoft Excel 4.0-Makros "Makro_3" in Mappe1, Sie "Mappe1! verwenden My_Macro() ". Wenn Sie den Namen der Arbeitsmappe nicht angeben, schlägt diese Methode fehl.</para>
-          <para />
+          <para>Der Microsoft Excel 4.0-Makros im Zusammenhang mit der aktuellen Arbeitsmappe oder Blatt wird nicht ausgewertet. Dies bedeutet, dass alle Verweise externe und sollten Arbeitsmappenname ausdrücklich angeben. Beispielsweise müssen zum Ausführen des Microsoft Excel 4.0-Makros "Makro_3" in Mappe1, Sie "Mappe1! verwenden My_Macro() ". Wenn Sie den Namen der Arbeitsmappe nicht angeben, schlägt diese Methode fehl.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5443,8 +5443,8 @@
           <b>True,</b> Wenn Microsoft Excel automatisch Formatierung und Formeln für neue Daten, die erweitert wird zu einer Liste hinzugefügt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Erweitert, formatiert und Formeln müssen in mindestens drei der ersten fünf Zeilen oder Spalten vor der neuen Zeile oder Spalte angezeigt werden, und Sie müssen die Daten an den unteren Rand oder an der rechten Seite der Liste hinzufügen.</para>
-          <para />
+          <para>Erweitert werden, formatiert und Formeln müssen in mindestens drei der ersten fünf Zeilen oder Spalten vor der neuen Zeile oder Spalte angezeigt werden, und Sie müssen die Daten an den unteren Rand oder an der rechten Seite der Liste hinzufügen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5482,20 +5482,20 @@
           <list type="bullet">
             <item>
               <description>
-                <b>MsoFeatureInstallNone</b>  generiert einen generischen Automatisierungsfehler zur Laufzeit, wenn nicht installierte Features aufgerufen werden. Dies ist die Standardkonstante.</description>
+                <b>MsoFeatureInstallNone</b> generiert einen generischen Automatisierungsfehler zur Laufzeit, wenn nicht installierte Features aufgerufen werden. Dies ist die Standardkonstante.</description>
             </item>
             <item>
               <description>
-                <b>MsoFeatureInstallOnDemand</b>  fordert den Benutzer zur Installation neuer Features.</description>
+                <b>MsoFeatureInstallOnDemand</b> der Benutzer zum Installieren neuer Features aufgefordert.</description>
             </item>
             <item>
               <description>
-                <b>MsoFeatureInstallOnDemandWithUI</b>  eine Statusanzeige während der Installation angezeigt; nicht der Benutzer zum Installieren neuer Features aufgefordert.</description>
+                <b>MsoFeatureInstallOnDemandWithUI</b> eine Statusanzeige während der Installation angezeigt; nicht der Benutzer zum Installieren neuer Features aufgefordert.</description>
             </item>
           </list>
           <para>Die <b>MsoFeatureInstallOnDemandWithUI</b> -Konstante können Sie verhindern, dass die Benutzer denken, die die Anwendung nicht mehr reagiert nicht zur Verfügung, während ein Feature installiert wird. Verwenden Sie die <b>MsoFeatureInstallNone</b> -Konstante, wenn den Entwickler die einzige sein, die Features installieren können soll.</para>
           <para>, Wenn Sie haben die <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft auf <b>False</b>festgelegt Benutzer nicht aufgefordert, neue Features zu installieren, auch wenn die <b>FeatureInstall</b> -Eigenschaft auf <b>MsoFeatureInstallOnDemand</b>festgelegt ist. Wenn die <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft auf <b>True</b>festgelegt ist, eine Statusanzeige wird angezeigt, wenn die <b>FeatureInstall</b> -Eigenschaft auf <b>MsoFeatureInstallOnDemand</b>festgelegt ist.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5549,7 +5549,7 @@
               <description>der Suchzeichenfolge Erweiterung</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5706,7 +5706,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>-Dateien, die nicht Validierung werden in einem Fenster geschützte Ansicht geöffnet werden. Wenn Sie festlegen, die <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidation" /> -Eigenschaft, wird diese Einstellung in Kraft für die gesamte Sitzung bleibt die Anwendung geöffnet wird.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5741,7 +5741,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>-Dateien, die Datencaches enthalten, die nicht überprüft werden, werden in einem Fenster geschützte Ansicht geöffnet werden. Wenn Sie festlegen, die <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> -Eigenschaft, wird diese Einstellung in Kraft für die gesamte Sitzung bleibt die Anwendung geöffnet wird.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5773,7 +5773,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Diese Methode zeigt das Dialogfeld Öffnen an und ermöglicht es dem Benutzer, eine Datei zu öffnen. Diese Methode gibt <b>True</b>zurück, wenn eine neue Datei erfolgreich geöffnet wird. Wenn der Benutzer das Dialogfeld abbricht, gibt diese Methode <b>False</b>zurück.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5912,8 +5912,8 @@
           <b>TRUE</b> gibt an, dass das Feature Excel Flash füllen und aktiviert wurde. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Flash Füllung erkennt, wenn Sie Daten ändern, die ein Muster entspricht, die nach unten gefüllt und auf zusätzliche Daten in der Arbeitsmappe angewendet werden können, und füllt dann automatisch die Spalte mit den Ergebnissen.</para>
-          <para />
+          <para>Füllen flash erkennt, wenn Sie Daten ändern, der ein Muster entspricht, die nach unten gefüllt und auf zusätzliche Daten in der Arbeitsmappe angewendet werden können, und füllt dann automatisch die Spalte mit den Ergebnissen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5980,8 +5980,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Wenn der angegebene Wert von <b>FormulaBarHeight</b> größer als das angezeigte Fenster Platz ist, wird die Bearbeitungsleiste Größe Fensterhöhe entsprechen.</para>
-          <para />
+          <para>Ist der angegebene Wert von <b>FormulaBarHeight</b> größer als das angezeigte Fenster Platz, der ist Größe der Bearbeitungsleiste entspricht der Fensterhöhe.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -6120,7 +6120,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Diese Methode generiert einen Fehler, wenn keine entsprechende Liste vorhanden ist.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -6161,9 +6161,9 @@
         <summary>Zeigt das standardmäßige Dialogfeld Öffnen an und ruft einen Dateinamen vom Benutzer ab, ohne Dateien versehentlich zu öffnen.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Gibt diese Methode den ausgewählten Dateinamen oder den Namen, die vom Benutzer eingegebene zurück. Der zurückgegebene Name kann eine Pfadangabe enthalten. Wenn <paramref name="MultiSelect" /> ist <b>True</b>, der Rückgabewert ist ein Array mit den Namen der ausgewählten Datei (selbst wenn nur ein Dateiname ausgewählt wurde). Gibt <b>False</b> zurück, wenn der Benutzer das Dialogfeld abbricht.</para>
+          <para>Diese Methode gibt den ausgewählten Dateinamen oder den Namen, die vom Benutzer eingegebene zurück. Der zurückgegebene Name kann eine Pfadangabe enthalten. Wenn <paramref name="MultiSelect" /> ist <b>True</b>, der Rückgabewert ist ein Array mit den Namen der ausgewählten Datei (selbst wenn nur ein Dateiname ausgewählt wurde). Gibt <b>False</b> zurück, wenn der Benutzer das Dialogfeld abbricht.</para>
           <para>Diese Methode kann das aktuelle Laufwerk oder Ordner ändern.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -6232,9 +6232,9 @@
         <summary>Zeigt das Standarddialogfeld Speichern unter an und ruft einen Dateinamen vom Benutzer ab, ohne jedoch Dateien zu speichern.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Gibt diese Methode den ausgewählten Dateinamen oder den Namen, die vom Benutzer eingegebene zurück. Der zurückgegebene Name kann eine Pfadangabe enthalten. Gibt <b>False</b> zurück, wenn der Benutzer das Dialogfeld abbricht.</para>
+          <para>Diese Methode gibt den ausgewählten Dateinamen oder den Namen, die vom Benutzer eingegebene zurück. Der zurückgegebene Name kann eine Pfadangabe enthalten. Gibt <b>False</b> zurück, wenn der Benutzer das Dialogfeld abbricht.</para>
           <para>Diese Methode kann das aktuelle Laufwerk oder Ordner ändern.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -6283,7 +6283,7 @@
               <description>Die <b>Select</b> -Methode hat eine <paramref name="Replace" /> Argument; die <b>Goto</b> -Methode nicht.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -6388,7 +6388,7 @@
         </value>
         <remarks>
           <para>Diese Eigenschaft entspricht der Einstellung des Modus für hohe Qualität für Grafiken Kontrollkästchen im Bereich Drucken der Kategorie erweitert im Dialogfeld Excel-Optionen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -6448,7 +6448,7 @@
         <remarks>
           <para>Read-only <b>Variant</b>.</para>
           <para>Gibt diese Eigenschaft einen richtigen Handle in beiden die 32- und 64-Bit-Versionen von Excel. Es erweitert die Funktionalität von der <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das nur in der 32-Bit-Version von Excel ordnungsgemäß funktioniert.</para> Die idealen Daten 
-          <para>für Formular zu verwendender mit dieser Eigenschaft ist der <b>LongPtr</b> -Datentyp. Zuweisen des Werts einer Variablen <b>LongPtr</b> von dieser Eigenschaft zurückgegebene funktioniert wie erwartet in beiden 32- und 64-Bit-Versionen von Excel. Die Eigenschaft ist als <b>Variant</b> aus Gründen der interne Implementierung definiert. Jedoch immer ein 32-Bit-Wert zurückgegeben auf 32-Bit-Systeme und 64-Bit-Wert auf 64-Bit-Systeme.</para><para>Diese Eigenschaft nur funktioniert, beginnend mit Excel 2010 und ist nur erforderlich, mit der 64-Bit-Version von Excel. Wenn Sie Code schreiben müssen, die auch mit früheren Versionen von Excel, eingesetzt werden kann, um die Kompilierungsfehler zu vermeiden lesen Sie diese Eigenschaft auf eine Direktive für die bedingte Kompilierung #if Win64, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> -Eigenschaft unter der #else-Direktive.</para><para><b>Hinweis</b>: Diese Eigenschaft funktioniert in beiden 32- und 64-Bit-Umgebungen, beginnend mit Excel 2010. Aus diesem Grund Code nur mit Excel 2010 oder höher verwendet werden soll, entweder 32- oder 64-Bit, es kann Lesen dieser Eigenschaft ohne bedingte Kompilierung.</para><para /></remarks>
+          <para>für Formular zu verwendender mit dieser Eigenschaft ist der <b>LongPtr</b> -Datentyp. Zuweisen des Werts einer Variablen <b>LongPtr</b> von dieser Eigenschaft zurückgegebene funktioniert wie erwartet in beiden 32- und 64-Bit-Versionen von Excel. Die Eigenschaft ist als <b>Variant</b> aus Gründen der interne Implementierung definiert. Jedoch immer ein 32-Bit-Wert zurückgegeben auf 32-Bit-Systeme und 64-Bit-Wert auf 64-Bit-Systeme.</para><para>Diese Eigenschaft nur funktioniert, beginnend mit Excel 2010 und ist nur erforderlich, mit der 64-Bit-Version von Excel. Wenn Sie Code schreiben müssen, die auch mit früheren Versionen von Excel, eingesetzt werden kann, um die Kompilierungsfehler zu vermeiden lesen Sie diese Eigenschaft auf eine Direktive für die bedingte Kompilierung #if Win64, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> -Eigenschaft unter der #else-Direktive.</para><para><b>Hinweis</b>: Diese Eigenschaft funktioniert in beiden 32- und 64-Bit-Umgebungen, beginnend mit Excel 2010. Aus diesem Grund Code nur mit Excel 2010 oder höher verwendet werden soll, entweder 32- oder 64-Bit, es kann Lesen dieser Eigenschaft ohne bedingte Kompilierung.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -6599,7 +6599,7 @@
           <para>Wenn <paramref name="Type" /> 8 ist, gibt <b>InputBox</b> ein <b>Range</b> -Objekt zurück.</para>
           <para>, Wenn Sie die <b>InputBox</b> -Methode verwenden, um dem Benutzer eine Formel abzufragen, müssen Sie verwenden die <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaLocal" /> Eigenschaft, um die Formel ein <b>Range</b> -Objekt zuweisen. Die Eingabe der Formel kann in der Sprache des Benutzers.</para>
           <para>Der <b>InputBox</b> -Methode unterscheidet sich von der <b>InputBox</b> -Funktion, dass es möglich ist, der die Eingabe des Benutzers und mit Microsoft Excel-Objekte, Fehlerwerte und Formeln verwendet werden. Beachten Sie, dass ohne einen Objektbezeichner <b>InputBox</b> -Funktion aufruft.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -6641,7 +6641,7 @@
         <remarks>
           <para>Diese Eigenschaft ist nützlich, wenn Sie Code zur Kommunikation mit Microsoft Excel aus einer anderen Anwendung schreiben.</para>
           <para>Wenn Sie diese Eigenschaft auf <b>False</b>festlegen, vergessen Sie nicht, sie wieder auf <b>True</b>festgelegt. Microsoft Excel nicht diese Eigenschaft automatisch auf <b>True</b> gesetzt werden, wenn der Code beendet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7115,7 +7115,7 @@
             </item>
           </list>
           <para>Symbole, Trennzeichen und in der obigen Tabelle aufgeführten Währungsformate möglicherweise unterscheiden sich von denen in Ihrer Sprache oder geografischen Standort und möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt haben oder installiert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7267,7 +7267,7 @@
         <remarks>
           <para>Read-only</para>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.IsSandboxed" /> Eigenschaft, um zu bestimmen, ob eine Arbeitsmappe in einem geschützten Ansichtsfenster geöffnet ist.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7442,8 +7442,8 @@
         <summary>Der Abstand in Punkt vom linken Rand des Bildschirms zum linken Rand des Hauptfensters von Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft die Breite des Fensterrahmens eine negative Zahl, die variiert, entsprechend. Durch Festlegen dieser Eigenschaft auf 0 (null) wird, das Fenster ein wenig kleiner, als wäre, wenn das Anwendungsfenster maximiert wurden. Anders ausgedrückt, wenn diese Eigenschaft 0 (null) ist, ist der linke Rand des Hauptfensters von Microsoft Excel auf dem Bildschirm kaum sichtbar.</para>
-          <para />
+          <para>, Wenn das Fenster maximiert ist, gibt diese Eigenschaft die Breite des Fensterrahmens eine negative Zahl, die variiert, entsprechend. Durch Festlegen dieser Eigenschaft auf 0 (null) wird, das Fenster ein wenig kleiner, als wäre, wenn das Anwendungsfenster maximiert wurden. Anders ausgedrückt, wenn diese Eigenschaft 0 (null) ist, der linke Rand des Hauptfensters von Microsoft Excel kaum werden auf dem Bildschirm angezeigt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7682,7 +7682,7 @@
               <description>achtzehnte benutzerdefinierte Kategorie</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7798,7 +7798,7 @@
         <remarks>
           <para>Microsoft Excel abmeldet Mail-Sitzungen zuvor, nachgewiesen bevor Sie versuchen, eine neue Sitzung herzustellen.</para>
           <para>, Um auf das System Default Mail-Sitzung standardsitzung, den Namen und das Kennwort Parameter weglassen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7833,7 +7833,7 @@
         <remarks>
           <para>Diese Eigenschaft gilt nur für Mail-Sitzungen, die von Microsoft Excel (er wird nicht die Nummer einer Mail-Sitzung für Microsoft Mail zurückgegeben) erstellt.</para>
           <para>Dieser Eigenschaft wird nicht auf PowerTalk-Mail-Systemen verwendet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7877,7 +7877,7 @@
           <para>
             <b>XlPowerTalk</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -7980,8 +7980,8 @@
         <summary>Zurückgeben oder Festlegen der maximalen Änderung zwischen jeder Iteration wie Microsoft Excel Zirkelbezüge aufgelöst wird.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxIterations" /> -Eigenschaft festgelegt wird, die maximale Anzahl von Iterationen, die Microsoft Excel beim Auflösen von Zirkularbezügen verwenden können.</para>
-          <para />
+          <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxIterations" /> -Eigenschaft festgelegt wird, die maximale Anzahl von Iterationen, die Microsoft Excel beim Auflösen von Zirkularbezügen verwenden können.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -8020,8 +8020,8 @@
         <summary>Gibt zurück oder legt die maximale Anzahl von Iterationen, die Microsoft Excel verwenden können, um einen Zirkelverweis zu beheben.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxChange" /> -Eigenschaft festgelegt wird, das maximale Ausmaß der Änderung zwischen beim Microsoft Excel Auflösen von Zirkularbezügen für jede Iteration.</para>
-          <para />
+          <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxChange" /> -Eigenschaft festgelegt wird, das maximale Ausmaß der Änderung zwischen beim Microsoft Excel Auflösen von Zirkularbezügen für jede Iteration.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -8322,7 +8322,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturnDirection" /> Eigenschaft, um anzugeben, in dem die Richtung die aktive Zelle verschoben werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -8376,7 +8376,7 @@
             <b>XlUp</b>
           </para>
           <para>Wenn das <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturn" /> -Eigenschaft ist <b>"false"</b>, die Markierung nicht verschoben, unabhängig davon, wie <b>MoveAfterReturnDirection</b> -Eigenschaft ist festgelegt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -8580,8 +8580,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" /> -Auflistung, die alle ODBC-Fehler durch die neuesten Abfragetabelle oder den PivotTable-Bericht Vorgang enthält.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn es mehrere Abfragen gleichzeitig, ausgeführt wird die <see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" /> -Auflistung enthält die ODBC-Fehler der Abfrage, die zuletzt beendet wurde.</para>
-          <para />
+          <para>Befindet sich mehrere Abfragen gleichzeitig, mit der <see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" /> -Auflistung enthält die ODBC-Fehler der Abfrage, die zuletzt beendet wurde.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -8614,8 +8614,8 @@
         <summary>Zurückgeben oder Festlegen der ODBC-Abfrage eine zeitliche Begrenzung in Sekunden. Der Standardwert ist 45 Sekunden.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der Wert 0 (null) gibt zeitliche Begrenzung auf unendlich.</para>
-          <para />
+          <para>Der Wert 0 (null) gibt an, zeitliche Begrenzung auf unendlich.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -8961,7 +8961,7 @@
             </item>
           </list>
           <para>Zuweisen eine Prozedur zu eines der Sonderzeichen (+, ^, % usw.), schließen Sie das Zeichen in geschweifte Klammern gesetzt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9000,7 +9000,7 @@
         <remarks>
           <para>Falls eine Prozedur die <b>OnRepeat</b> -Methode nicht verwendet, wiederholt der Befehl wiederholen die Prozedur, die zuletzt ausgeführt wurde.</para>
           <para>Muss die Prozedur die <b>OnRepeat</b> verwenden und <see cref="M:Microsoft.Office.Interop.Excel._Application.OnUndo(System.String,System.String)" /> Methoden Nachname, um zu verhindern, dass wiederholen oder Rückgängigmachen Verfahren durch nachfolgende Aktionen in der Prozedur überschrieben werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9126,8 +9126,8 @@
         <param name="Schedule">Optionales- <b>Objekt</b>. <b>True</b> , wenn eine neue <b>OnTime</b> -Prozedur zu planen. <b>False</b> , wenn ein zuvor festgelegter deaktivieren Verfahren. Der Standardwert ist <b>True</b>.</param>
         <summary>Bewirkt, dass eine Prozedur zu einem bestimmten Zeitpunkt in der Zukunft (entweder zu einer bestimmten Zeit oder nachdem eine bestimmte Zeitspanne vergangen ist) ausgeführt wird.</summary>
         <remarks>
-          <para>Verwenden Sie Now+TimeValue(time) so planen Sie etwas ausgeführt werden, wenn eine bestimmte Zeitspanne (von jetzt an gezählt) abgelaufen ist. Verwenden Sie TimeValue(time) so planen Sie etwas zu einem bestimmten Zeitpunkt ausgeführt werden.</para>
-          <para />
+          <para>Now+TimeValue(time) Verwendung zum Planen von etwas ausgeführt werden, wenn eine bestimmte Zeitspanne (von jetzt an gezählt) abgelaufen ist. Verwenden Sie TimeValue(time) zum Planen von einem bestimmten Zeitpunkt ausführen werden.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9166,7 +9166,7 @@
         <remarks>
           <para>Falls eine Prozedur die <b>OnUndo</b> -Methode nicht verwendet, wird der Befehl Rückgängig deaktiviert.</para>
           <para>Das Verfahren verwenden, muss die <see cref="M:Microsoft.Office.Interop.Excel._Application.OnRepeat(System.String,System.String)" /> und <b>OnUndo am Schluss aufrufen</b> Methoden letzten, um zu verhindern, dass wiederholen oder Rückgängigmachen Verfahren durch nachfolgende Aktionen in der Prozedur überschrieben werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9207,7 +9207,7 @@
         <remarks>
           <para>Von dieser Eigenschaft angegebene Prozedur wird nicht ausgeführt werden, wenn andere Prozeduren wechseln, um das Fenster oder ein Befehl So wechseln Sie zu einem Fenster über einen DDE-Kanal empfangen wird. Stattdessen das Verfahren reagiert auf Benutzeraktionen, wie das Klicken auf ein Fenster mit der Maus aus, klicken auf Gehe zu im Menü Bearbeiten usw..</para>
           <para>Weist ein Arbeitsblatt oder eine Makrovorlage ein Auto_aktivieren- oder Auto_deaktivieren-Makro festgelegt, werden diese Makros von der <b>OnWindow</b> -Eigenschaft angegebene Prozedur ausgeführt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9429,7 +9429,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Jedes Mal Sie zu einem Bereich oder einer Zelle mit dem Feld Name oder den Befehl Gehe zu (Menü Bearbeiten), oder jedes Mal ein Makro ruft die <see cref="M:Microsoft.Office.Interop.Excel._Application.Goto(System.Object,System.Object)" /> -Methode, der zuvor markierte Bereich dieses Array als Elementnummer 1 hinzugefügt wird und die anderen Elemente im Array nach unten verschoben werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9466,7 +9466,7 @@
           <para>
             <b>Boolean</b> Lese-/Schreibzugriff.</para>
           <para>Set der <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> -Eigenschaft auf <b>false</b> , um die Ausführung des Codes zu beschleunigen, mit dem PageSetup-Eigenschaften festgelegt. Legen Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> -Eigenschaft auf <b>true fest,</b> nachdem Eigenschaften festlegen, die alle commit PageSetup Befehle zwischengespeichert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9562,8 +9562,8 @@
         <summary>Dient zum Abrufen einer <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> Auflistung, die alle Fenster mit geschützter Ansicht darstellen, die in der Anwendung geöffnet sind.</summary>
         <value>Eine <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> Auflistung, die alle Fenster mit geschützter Ansicht darstellen, die in der Anwendung geöffnet sind.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9620,7 +9620,7 @@
         <remarks>
           <para>Wenn noch nicht gespeicherte Arbeitsmappen geöffnet sind, wenn Sie diese Methode verwenden, zeigt Microsoft Excel einem Dialogfeld gefragt, ob Sie die Änderungen zu speichern möchten. Sie können verhindern, dass dies vor dem Verwenden der <b>Quit</b> -Methode alle Arbeitsmappen speichern oder durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft auf <b>false festgelegt</b>. Wenn diese Eigenschaft auf <b>False</b>festgelegt ist, nicht Microsoft Excel das Dialogfeld angezeigt wird, wenn Sie mit nicht gespeicherten Arbeitsmappen beenden; Es wird beendet, ohne sie zu speichern.</para>
           <para>Wenn Sie festlegen, die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> -Eigenschaft einer Arbeitsmappe auf <b>true fest,</b> ohne die Arbeitsmappe zu speichern, auf den Datenträger, Microsoft Excel ohne Aufforderung zum Speichern der Arbeitsmappe beendet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9688,8 +9688,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das eine Zelle oder einen Zellbereich darstellt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die Eigenschaft ist relativ zu der <b>Range</b> -Objekt. Beispielsweise, wenn die Auswahl Zelle C3 befindet, klicken Sie dann Selection.Range("B1") Zelle D3 zurück, da es relativ zur das zurückgegebene <b>Range</b> -Objekt ist die <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> Eigenschaft. Andererseits, gibt der Code ActiveSheet.Range("B1") immer die Zelle B1 zurück.</para>
-          <para />
+          <para>Ist relativ zu der <b>Range</b> -Objekt. Beispielsweise, wenn die Auswahl Zelle C3 befindet, klicken Sie dann Selection.Range("B1") Zelle D3 zurück, da es relativ zur das zurückgegebene <b>Range</b> -Objekt ist die <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> Eigenschaft. Andererseits, der Code ActiveSheet.Range("B1") gibt immer Zelle B1.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9781,7 +9781,7 @@
         <remarks>
           <para>Die <b>RecordMacro</b> -Methode kann nicht in das aktive Modul aufzeichnen (das Modul, in dem die <b>RecordMacro</b> -Methode befindet).</para>
           <para>Können die Aufzeichnung verhindern (z. B., wenn der Benutzer den Dialog abbricht), rufen Sie diese Funktion mit zwei leeren Zeichenfolgen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9860,7 +9860,7 @@
           <para>
             <b>xlR1C1</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9915,7 +9915,7 @@
             </item>
           </list>
           <para>Wenn keine registrierten Funktionen vorhanden sind, gibt diese Eigenschaft <b>Null</b>zurück.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9950,8 +9950,8 @@
         <summary>Lädt eine XLL-Coderessource und registriert automatisch die darin enthaltenen Funktionen und Befehle.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Diese Methode gibt zurück <b>true,</b> Falls die Coderessource erfolgreich geladen wird. die Methode andernfalls zurückgibt <b>"false"</b>.</para>
-          <para />
+          <para>Diese Methode gibt <b>True</b> zurück, falls die Coderessource erfolgreich geladen wird; andernfalls die Methode gibt <b>False</b>zurück.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -9981,8 +9981,8 @@
       <Docs>
         <summary>Wiederholt die letzte Aktion des Benutzers-Schnittstelle.</summary>
         <remarks>
-          <para>Diese Methode wird nur die letzte Aktion des Benutzers vor dem Ausführen der Prozedur wiederholt. Es muss die erste Zeile in der Prozedur.</para>
-          <para />
+          <para>Wird diese Methode nur die letzte Aktion des Benutzers vor dem Ausführen der Prozedur wiederholt. Es muss sich auf der ersten Zeile in der Prozedur.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -10127,8 +10127,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das alle Zeilen des aktiven Arbeitsblatts darstellt. Wenn das aktive Dokument kein Arbeitsblatt ist, schlägt die <b>Rows</b> -Eigenschaft.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn ein <b>Range</b> -Objekt zugewiesen, die eine Mehrfachauswahl ist, gibt diese Eigenschaft Zeilen aus dem ersten Bereich des Bereichs. Das <b>Range</b> -Objekt besitzt zwei Bereiche beispielsweise – a1: B2 und C3: D4 – Selection.Rows.Count 2, nicht 4 zurück. Testen Sie zur Verwendung dieser Eigenschaft für einen Bereich, die möglicherweise eine Mehrfachauswahl enthalten, <b>Areas.Count</b> , um festzustellen, ob der Bereich eine Mehrfachauswahl ist. Wenn dies der Fall, Schleife auf jeden Teil des Bereichs.</para>
-          <para />
+          <para>, Wenn Sie auf ein <b>Range</b> -Objekt angewendet wird, die eine Mehrfachauswahl ist, gibt diese Eigenschaft Zeilen aus nur den ersten Bereich des Bereichs zurück. Das <b>Range</b> -Objekt besitzt zwei Bereiche beispielsweise – a1: B2 und C3: D4 – Selection.Rows.Count 2, nicht 4 zurück. Testen Sie zur Verwendung dieser Eigenschaft für einen Bereich, die möglicherweise eine Mehrfachauswahl enthalten, <b>Areas.Count</b> , um festzustellen, ob der Bereich eine Mehrfachauswahl ist. Wenn dies der Fall, Schleife auf jeden Teil des Bereichs.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -10249,7 +10249,7 @@
           <para>Sie diese Methode benannte Argumenten verwendet werden können. Argumente müssen nach Position übergeben werden.</para>
           <b>Ausführen</b>
           <para>-Methode gibt den Rückgabewert des aufgerufenen Makros zurück. Objekte, die als Argumente an das Makro übergeben werden in Werte konvertiert (durch Anwenden der <see cref="P:Microsoft.Office.Interop.Excel._Application.Value" /> -Eigenschaft auf das Objekt). Dies bedeutet, dass Sie Objekte an Makros weiterzuleiten können nicht mithilfe der Methode <b>ausgeführt</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -10285,11 +10285,11 @@
         <summary>Speichert Änderungen in der angegebenen Arbeitsmappe.</summary>
         <remarks>
           <para>Verwenden, um eine Arbeitsmappendatei zu öffnen, die <see cref="&quot;M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String" /> -Methode.</para>
-          <para />
+          <para></para>
           <para>Festlegen, um eine Arbeitsmappe als gespeichert zu markieren ohne diese auf einen Datenträger geschrieben wird, dessen <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.SaveData" /> -Eigenschaft auf <b>True</b>.</para>
-          <para />
+          <para></para>
           <para>Beim ersten einer Arbeitsmappe speichern verwenden Sie die <see cref="&quot;M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object" /> -Methode, um einen Namen für die Datei anzugeben.</para>
-          <para />
+          <para></para>
         </remarks>
         <example>
           <para>In diesem Beispiel wird die aktive Arbeitsmappe gespeichert.</para>
@@ -10428,7 +10428,7 @@
         <remarks>
           <para>Turn-Bildschirm aktualisieren aus, um den Code zu beschleunigen. Nicht möglich, finden Sie unter was vom Code ausgeführt wird, jedoch werden schneller ausgeführt werden kann.</para>
           <para>Denken Sie daran, die <b>ScreenUpdating</b> -Eigenschaft auf <b>True</b> festgelegt, der Code am Ende des.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -10460,10 +10460,7 @@
       <Docs>
         <summary>Gibt das ausgewählte Objekt im aktiven Fenster zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Typ des zurückgegebenen Objekts hängt von der aktuellen Auswahl (beispielsweise, wenn eine Zelle ausgewählt ist, gibt diese Eigenschaft eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt). Die <b>Selection</b> -Eigenschaft gibt <b>Nothing zurück</b> , wenn nichts markiert ist.</para>
-          <para />
-        </remarks>
+        <remarks>Das zurückgegebene <para>Objekttyp hängt von der aktuellen Auswahl (beispielsweise, wenn eine Zelle ausgewählt ist, gibt diese Eigenschaft eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt). Die <b>Selection</b> -Eigenschaft gibt <b>Nothing zurück</b> , wenn nichts markiert ist.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SendKeys">
@@ -10608,7 +10605,7 @@
               <description>% (Prozentzeichen)</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -10871,7 +10868,7 @@
         </value>
         <remarks>
           <para>Diese Eigenschaft entspricht der Registerkarte "Entwicklertools" in das Menüband-Kontrollkästchen im Dialogfeld Excel-Optionen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -10971,7 +10968,7 @@
         </value>
         <remarks>
           <para>Entspricht dem Minisymbolleiste für die Kontrollkästchen für die Auswahl im Dialogfeld Excel-Optionen anzeigen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11101,8 +11098,8 @@
         <summary>Dient zum Abrufen des Satz von Formatvorlagen Farbe, die derzeit in der Anwendung geladen werden.</summary>
         <value>Der Satz von farbformatvorlagen, die derzeit in der Anwendung geladen werden.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11132,8 +11129,8 @@
         <summary>Ruft den Satz von SmartArt-Layouts, die derzeit in der Anwendung geladen werden.</summary>
         <value>Der Satz von SmartArt-Layouts, die derzeit in der Anwendung geladen werden.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11163,8 +11160,8 @@
         <summary>Ruft den Satz von SmartArt-Schnellformatvorlagen die derzeit in der Anwendung geladen werden.</summary>
         <value>Der Satz von SmartArt-Schnellformatvorlagen die derzeit in der Anwendung geladen werden.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11290,8 +11287,8 @@
         <summary>Gibt zurück oder legt den Namen der Standardschriftart.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie die Standardschriftart mit dieser Eigenschaft ändern, wird nicht die Änderung wirksam, bis Sie Microsoft Excel erneut starten.</para>
-          <para />
+          <para>Wenn Sie die Standardschriftart mit dieser Eigenschaft ändern, diese Änderung nicht wirksam, bis Sie Microsoft Excel erneut starten.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11330,8 +11327,8 @@
         <summary>Gibt zurück oder legt den Schriftgrad in Punkt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie den Schriftgrad mit dieser Eigenschaft ändern, wird nicht die Änderung wirksam, bis Sie Microsoft Excel erneut starten.</para>
-          <para />
+          <para>Wenn Sie den Schriftgrad mit dieser Eigenschaft ändern, diese Änderung nicht wirksam, bis Sie Microsoft Excel erneut starten.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11401,8 +11398,8 @@
         <summary>Gibt zurück oder legt den Text in der Statusleiste angezeigt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft gibt <b>False</b> zurück, wenn Microsoft Excel die Steuerung der Statusleiste angezeigt wird. Zum Wiederherstellen des Standard-Statusleistentext die-Eigenschaft auf <b>False</b>festgelegt; Dies funktioniert, auch wenn die Statusleiste ausgeblendet ist.</para>
-          <para />
+          <para>Gibt diese Eigenschaft <b>False</b> zurück, wenn Microsoft Excel die Steuerung der Statusleiste angezeigt wird. Zum Wiederherstellen des Standard-Statusleistentext die-Eigenschaft auf <b>False</b>festgelegt; Dies funktioniert auch, wenn die Statusleiste ausgeblendet ist.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11497,8 +11494,8 @@
         <summary>Gibt die Zelle die benutzerdefinierte Funktion aus als aufgerufen wird eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Benutzer sollten nicht auf Eigenschaften oder Methoden auf das <b>Range</b> -Objekt in der benutzerdefinierten Funktion zugreifen. Benutzer können das <b>Range</b> -Objekt zur späteren Verwendung zwischenspeichern und zusätzliche Aktionen auszuführen, wenn die erneute Berechnung abgeschlossen ist.</para>
-          <para />
+          <para>Sollten keine Benutzer Eigenschaften oder Methoden auf das <b>Range</b> -Objekt in der benutzerdefinierten Funktion zugreifen. Benutzer können das <b>Range</b> -Objekt zur späteren Verwendung zwischenspeichern und zusätzliche Aktionen auszuführen, wenn die erneute Berechnung abgeschlossen ist.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11531,9 +11528,9 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> -Objekt, das die Arbeitsmappe darstellt, in dem das aktuelle Makro ausgeführt wird.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwenden Sie diese Eigenschaft verweisen auf die Arbeitsmappe, die den Makrocode enthält. <b>ThisWorkbook</b> ist die einzige Möglichkeit, eine Arbeitsmappe-Add-in von innerhalb des Add-ins selbst zu verweisen. Die <b>ActiveWorkbook</b> -Eigenschaft zurück nicht die Add-in Arbeitsmappe. Es gibt die Arbeitsmappe, die das Add-in aufruft. Die <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> -Eigenschaft kann fehlschlagen, da den Namen der Arbeitsmappe wahrscheinlich geändert, wenn Sie das Add-in erstellt gibt <b>ThisWorkbook</b> immer die Arbeitsmappe, in dem der Code ausgeführt wird.</para>
+          <para>Verwenden Sie diese Eigenschaft, um auf die Arbeitsmappe zu verweisen, das den Makrocode enthält. <b>ThisWorkbook</b> ist die einzige Möglichkeit, eine Arbeitsmappe-Add-in von innerhalb des Add-ins selbst zu verweisen. Die <b>ActiveWorkbook</b> -Eigenschaft zurück nicht die Add-in Arbeitsmappe. Es gibt die Arbeitsmappe, die das Add-in aufruft. Die <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> -Eigenschaft kann fehlschlagen, da den Namen der Arbeitsmappe wahrscheinlich geändert, wenn Sie das Add-in erstellt gibt <b>ThisWorkbook</b> immer die Arbeitsmappe, in dem der Code ausgeführt wird.</para>
           <para>Diese Eigenschaft kann nur aus verwendet werden in Excel. Sie können sie eine Arbeitsmappe aus einer anderen Anwendung zuzugreifen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -11817,8 +11814,8 @@
       <Docs>
         <summary>Hebt die letzte Aktion des Benutzers-Schnittstelle.</summary>
         <remarks>
-          <para>Diese Methode macht nur die letzte Aktion des Benutzers vor dem Ausführen der Prozedur. Es muss die erste Zeile in der Prozedur.</para>
-          <para />
+          <para>Diese Methode macht nur die letzte Aktion des Benutzers vor dem Ausführen der Prozedur. Es muss sich auf der ersten Zeile in der Prozedur.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -12039,7 +12036,7 @@
           <para>
             <b>Hinweis</b>: zum Aktivieren der <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> Eigenschaft müssen Sie einen Clusterconnector High Performance Computing (HPC) installieren. Einen Clusterconnector können Sie clustersichere XLL-Funktionen Remote auf einem HPC-Cluster zur Verbesserung der Leistung ausgeführt.</para>
           <para>Nach dem Festlegen der <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> -Eigenschaft der <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> -Eigenschaft an der HPC-Cluster zu verwendende Verbinder.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -12101,8 +12098,8 @@
           <b>True,</b> Wenn die Anwendung sichtbar ist oder wenn erstellt oder vom Benutzer gestartet wurde. <b>False,</b> Wenn Sie erstellt oder die Anwendung programmgesteuert mithilfe der <b>CreateObject</b> oder <b>GetObject</b> -Funktionen und die Anwendung gestartet wird ausgeblendet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn für ein Objekt die <b>UserControl</b> -Eigenschaft <b>False</b> ist, wird dieses Objekt freigegeben, wenn der letzte programmtechnische Bezug auf das Objekt freigegeben wird. Wenn diese Eigenschaft auf <b>False</b>festgelegt ist, beendet Microsoft Excel, wenn das letzte Objekt in der Sitzung freigegeben wird.</para>
-          <para />
+          <para>, Wenn die <b>UserControl</b> -Eigenschaft <b>False</b> , für ein Objekt, das Objekt ist wird freigegeben, wenn der letzte programmtechnische Bezug auf das Objekt freigegeben wird. Wenn diese Eigenschaft auf <b>False</b>festgelegt ist, wird Microsoft Excel beendet, wenn das letzte Objekt in der Sitzung freigegeben wird.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -12389,8 +12386,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>Wichtig</b>: die <b>Wait</b> -Methode hält alle Aktivitäten zu Microsoft Excel und möglicherweise verhindern, dass Sie Ausführen anderer Vorgänge auf Ihrem Computer, während <b>Warten</b> ausgeführt wird. Allerdings Hintergrundprozesse, z. B. Drucken und Neuberechnen fortgesetzt.</para>
-          <para />
+            <b>Wichtig</b>: <b>Wait</b> -Methode hält alle Aktivitäten zu Microsoft Excel und möglicherweise verhindern, dass Sie Ausführen anderer Vorgänge auf Ihrem Computer, während <b>Warten</b> ausgeführt wird. Hintergrund verarbeitet jedoch wie Drucken und Neuberechnen fortfahren.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -12519,7 +12516,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gibt eine Auflistung sichtbarer und ausgeblendeter Fenster zurück.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -12601,7 +12598,7 @@
           <para>
             <b>XlMinimized</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -12631,8 +12628,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> -Auflistung, die alle geöffneten Arbeitsmappen darstellt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die von der <b>Arbeitsmappen</b> -Eigenschaft zurückgegebene Auflistung schließt open-add-ins, da es sich eine Art ausgeblendete Arbeitsmappe handelt. Sie können, jedoch eine einzelne geöffnete Add-in zurückgeben, wenn Sie den Dateinamen kennen. Workbooks("OSCAR.xla") gibt gibt beispielsweise das geöffnete Add-in "Oscar.xla" als ein <b>Workbook</b> -Objekt namens zurück.</para>
-          <para />
+          <para>Von <b>Workbooks</b> -Eigenschaft zurückgegebene Auflistung umfasst nicht open-add-ins, die einen besonderen Typ von ausgeblendeten Arbeitsmappe sind. Sie können, jedoch eine einzelne geöffnete Add-in zurückgeben, wenn Sie den Dateinamen kennen. Workbooks("OSCAR.xla") gibt gibt beispielsweise das geöffnete Add-in "Oscar.xla" als ein <b>Workbook</b> -Objekt namens zurück.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -12690,8 +12687,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> -Auflistung, die alle Arbeitsblätter in der aktiven Arbeitsmappe darstellt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft gibt keine Makrovorlagen zurück; Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" /> Eigenschaft, um diese Blätter zurückzugeben.</para>
-          <para />
+          <para>Diese Eigenschaft nicht Makrovorlagen zurück; verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" /> Eigenschaft, um diese Blätter zurückzugeben.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

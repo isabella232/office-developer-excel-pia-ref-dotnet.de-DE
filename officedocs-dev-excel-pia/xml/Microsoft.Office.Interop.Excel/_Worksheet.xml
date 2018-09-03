@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20583132" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Worksheet" />
@@ -482,8 +482,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> Objekt, wenn die Filterung aktiviert ist. Wenn die Filterung deaktiviert ist, wird <b>Nothing</b> zurückgegeben. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>So erstellen Sie ein <b>AutoFilter</b> -Objekt für ein Arbeitsblatt, schalten Sie automatische Filterung für einen Bereich im Arbeitsblatt entweder manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt.</para>
-          <para />
+          <para>Um ein <b>AutoFilter</b> -Objekt für ein Arbeitsblatt erstellen, schalten Sie automatische Filterung für einen Bereich im Arbeitsblatt entweder manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -529,8 +529,8 @@
           <b>True,</b> Wenn die AutoFilter-Dropdownpfeile aktuell auf dem Blatt angezeigt werden. Diese Eigenschaft ist unabhängig von der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.FilterMode" /> Eigenschaft. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn die Dropdownpfeile momentan angezeigt werden. Legen Sie diese Eigenschaft auf <b>False,</b> um die Pfeile zu entfernen, aber Sie können nicht auf <b>True</b>festgelegt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> -Methode, um eine Liste filtern und Anzeigen von der Dropdownpfeile.</para>
-          <para />
+          <para>Gibt diese Eigenschaft <b>True</b> zurück, wenn die Dropdownpfeile momentan angezeigt werden. Legen Sie diese Eigenschaft auf <b>False,</b> um die Pfeile zu entfernen, aber Sie können nicht auf <b>True</b>festgelegt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> -Methode, um eine Liste filtern und Anzeigen von der Dropdownpfeile.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -594,19 +594,17 @@
       <Docs>
         <summary>Diese Methode berechnet alle geöffneten Arbeitsmappen, ein bestimmtes Arbeitsblatt einer Arbeitsmappe oder einen bestimmten Zellbereich in einem Arbeitsblatt (siehe Tabelle unten).</summary>
         <remarks>
-          <list type="table">
-            <item>
-              <term>Alle geöffneten Arbeitsmappen</term>
-              <description>Application.Calculate</description>
-            </item>
-            <term>Ein bestimmtes Arbeitsblatt</term>
-            <description>Worksheets(1) 
-            <item>. Berechnen
-            </item></description>
+          <item>
+            <term>Alle geöffneten Arbeitsmappen</term>
+            <description>Application.Calculate</description>
+          </item>
+          <item>
+            <term>ein bestimmtes Arbeitsblatt</term>
+            <description>Worksheets(1) <list type="table">. Berechnen
             <item>in
-              <term>einem angegebenen Bereich</term><description>Worksheets(1). Rows(2). Berechnen</description></item>
-          </list>
-          <para />
+              <term>einem angegebenen Bereich</term><description>Worksheets(1). Rows(2). Berechnen</description></item></list></description>
+          </item>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -638,7 +636,7 @@
         <remarks>
           <para>Da die <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" /> -Eigenschaft die Standardeigenschaft für das <b>Range</b> -Objekt ist, können Sie den Zeile und Spalte Index unmittelbar nach dem Schlüsselwort <b>Zellen</b> angeben. Weitere Informationen finden Sie unter der <b>Item</b> -Eigenschaft.</para>
           <para>Verwendung dieser Eigenschaft ohne ein Objektbezeichner gibt ein <b>Range</b> -Objekt zurück, das alle Zellen im aktiven Arbeitsblatt darstellt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -672,7 +670,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Diese Methode entspricht nicht der <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> Eigenschaft. Diese Methode gibt eingebettete Diagramme zurück. die <b>Charts</b> -Eigenschaft gibt Diagrammblätter zurück. Verwendung der <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> -Objekt für ein eingebettetes Diagramm.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -744,8 +742,8 @@
         <param name="SpellLang">Optionales- <b>Objekt</b>. Die Sprache des verwendeten Wörterbuchs an. Kann eine der <b>MsoLanguageID</b> -Werte verwendet werden, indem die <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> Eigenschaft.</param>
         <summary>Prüft die Rechtschreibung eines Objekts. Dieses Format wird kein Wert zurückgegeben; Microsoft Excel das Dialogfeld Rechtschreibung angezeigt.</summary>
         <remarks>
-          <para>Verwenden Sie diese Methode, um die Kopf- und Fußzeilen sowie Objekte auf einem Arbeitsblatt überprüfen.</para>
-          <para />
+          <para>Mit dieser Methode können Sie Kopf- und Fußzeilen sowie Objekte auf einem Arbeitsblatt überprüfen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -857,7 +855,7 @@
         <summary>Löscht Kreise von ungültigen Einträgen auf dem Arbeitsblatt.</summary>
         <remarks>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> -Methode, um Kreis um Zellen, die ungültige Daten enthalten.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -890,7 +888,7 @@
           <para>Der Wert, den Sie in der Zelle rechts neben <b>(Name)</b> im Fenster Eigenschaften finden Sie unter wird der Codename des ausgewählten Objekts an. Zur Entwurfszeit können Sie den Namen eines Objekts Code durch Ändern dieses Werts ändern. Sie können diese Eigenschaft nicht programmgesteuert zur Laufzeit ändern.</para>
           <para>Der Codename für ein Objekt kann verwendet werden, an der Stelle ein Ausdruck, der das Objekt zurückgibt.</para>
           <para>Ist es möglich, dass der Name des Arbeitsblatts aus der Codename des ersten unterschiedlich sein. Beim Erstellen Sie ein Arbeitsblatt, das Blatt und Codename identisch sind, aber ändern den Namen des Arbeitsblatts wird der Codename nicht geändert und Ändern des Codenamens (Eigenschaftenfenster in Visual Basic-Editor) nicht der Name des Arbeitsblatts.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1027,7 +1025,7 @@
               <description>Verknüpfungen zu Quelldaten erstellen.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1093,7 +1091,7 @@
         <summary>Kopiert das Blatt an eine andere Position in der Arbeitsmappe.</summary>
         <remarks>
           <para>Wenn Sie entweder nicht angeben <paramref name="Before" /> oder <paramref name="After" />, erstellt Microsoft Excel eine neue Arbeitsmappe, die das kopierte Blatt enthält.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1125,8 +1123,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para />
+          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1157,7 +1155,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Für die <b>CustomProperties</b> -Eigenschaft kann Bezeichnerinformationen für ein Arbeitsblatt Metadaten für XML darstellen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1188,7 +1186,7 @@
         <summary>Löscht das Objekt.</summary>
         <remarks>
           <para>Beim Löschen einer <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />, diese Methode zeigt ein Dialogfeld an, die der Benutzer zum Bestätigen des Löschvorgangs aufgefordert wird. In diesem Dialogfeld wird standardmäßig angezeigt. Die <b>Delete</b> -Methode gibt einen <b>booleschen</b> Wert, der <b>False</b> ist, wenn der Benutzer im Dialogfeld auf Abbrechen oder <b>True</b> klickt, wenn der Benutzer geklickt löschen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1265,8 +1263,8 @@
           <b>True</b>, wenn Seitenumbrüche (automatische und manuelle) auf dem angegebenen Arbeitsblatt angezeigt werden. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft kann nicht festgelegt werden, wenn einen Drucker installiert ist.</para>
-          <para />
+          <para>Sie können diese Eigenschaft nicht festlegen, wenn einen Drucker installiert ist.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1447,7 +1445,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gilt für jedes Arbeitsblatt und wird nicht mit dem Arbeitsblatt oder der Sitzung gespeichert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1480,10 +1478,7 @@
         <summary>
           <b>True</b>, falls Microsoft Excel, wenn notwendig, das Arbeitsblatt automatisch neu berechnet. <b>False</b>, falls Excel das Arbeitsblatt nicht neu berechnet. <b>Boolean</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn der Wert dieser Eigenschaft <b>False</b>ist, können nicht Sie eine neuberechnung anfordern. Wenn Sie den Wert von <b>False</b> auf <b>True</b>ändern, berechnet Excel das Arbeitsblatt neu.</para>
-          <para />
-        </remarks>
+        <remarks>Sie können keine <para>, wenn der Wert dieser Eigenschaft auf <b>false festgelegt</b>ist, eine neuberechnung anfordern. Wenn Sie den Wert von <b>False</b> auf <b>true fest,</b>ändern, Excel das Arbeitsblatt neu berechnet.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFormatConditionsCalculation">
@@ -1517,9 +1512,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Bei Festlegung auf <b>True</b> (Standard), Auswertung von bedingten Formaten automatisch nach Bedarf durchgeführt wird.  Bei Festlegung auf <b>"false"</b>, werden bedingte Formate nicht erneut ausgewertet.  Alle zuvor angewendeten bedingten Formatierung werden sichtbar, aber nicht als Zellwerte aktualisiert oder <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> Bereiche geändert werden.  </para>
+          <para>Bei Festlegung auf <b>True</b> (Standard), wird die Auswertung von bedingten Formaten automatisch nach Bedarf durchgeführt.  Bei Festlegung auf <b>"false"</b>, werden bedingte Formate nicht erneut ausgewertet.  Alle zuvor angewendeten bedingten Formatierung werden sichtbar, aber nicht als Zellwerte aktualisiert oder <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> Bereiche geändert werden.  </para>
           <para>Der Zweck dieses Flag besteht darin, Programmierer so konfigurieren Sie eine Regel vor der Auswertung vollständig zu ermöglichen.  Dies ist besonders nützlich, wenn Bedingung auf einen großen Bereich angewendet wird, wie die Leistung in diesen Fällen langsam sein kann.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1560,7 +1555,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gilt für jedes Arbeitsblatt und wird nicht mit dem Arbeitsblatt oder der Sitzung gespeichert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1601,7 +1596,7 @@
         <remarks>
           <para>Diese Eigenschaft gilt für jedes Arbeitsblatt und wird nicht mit dem Arbeitsblatt oder der Sitzung gespeichert.</para>
           <para>Muss eine ausreichende Anzahl an ungesperrten Zellen unten und rechts des PivotTable-Berichts für Microsoft Excel neu berechnen und Anzeigen des PivotTable-Berichts.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1634,8 +1629,8 @@
         <summary>Gibt zurück oder legt fest, was auf dem Blatt ausgewählt werden kann. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft wirkt sich nur, wenn das Arbeitsblatt geschützt ist: <b>XlNoSelection</b> verhindert jegliche Markierung auf dem Blatt, <b>XlUnlockedCells</b> gestattet nur den Zellen ausgewählt werden, dessen <b>Locked</b> -Eigenschaft <b>False</b> ist, und <b> XlNoRestrictions</b> eine beliebige Zelle ausgewählt werden können.</para>
-          <para />
+          <para>Nur, wenn das Arbeitsblatt geschützt ist, wird diese Eigenschaft wirksam: <b>XlNoSelection</b> verhindert jegliche Markierung auf dem Blatt, <b>XlUnlockedCells</b> gestattet nur den Zellen ausgewählt werden, dessen <b>Locked</b> -Eigenschaft <b>False</b> ist, und <b> XlNoRestrictions</b> eine beliebige Zelle ausgewählt werden können.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1671,7 +1666,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Mit dieser Methode können die folgenden Typen von Namen in Microsoft Excel verwendet werden:</para> Namen der 
-          <list type="bullet"><item><description>definiert. Sie können einen beliebigen Namen angeben.</description></item><item><description>Externe Verweise. Sie können die! Operator verweisen auf ein Arbeitsblatt in einer anderen Arbeitsmappe definiert.</description></item></list><para /></remarks>
+          <list type="bullet"><item><description>definiert. Sie können einen beliebigen Namen angeben.</description></item><item><description>Externe Verweise. Sie können die! Operator verweisen auf ein Arbeitsblatt in einer anderen Arbeitsmappe definiert.</description></item></list><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1718,8 +1713,8 @@
         <param name="FixedFormatExtClassPtr">Zeiger auf die <b>FixedFormatExt</b> -Klasse.</param>
         <summary>Exportiert in eine Datei mit dem angegebenen Format.</summary>
         <remarks>
-          <para>Diese Methode unterstützt auch die Initialisierung ein Add-in, um eine Datei in eine Datei mit festem Format zu exportieren. Beispielsweise führt Excel Datei Format konvertieren, wenn der Konverter vorhanden sind. Die Konvertierung wird normalerweise vom Benutzer initiiert.</para>
-          <para />
+          <para>Unterstützt diese Methode auch die Initialisierung eines Add-Ins zum Exportieren einer Datei in eine Datei mit festem Format. Beispielsweise führt Excel Datei Format konvertieren, wenn der Konverter vorhanden sind. Die Konvertierung wird normalerweise vom Benutzer initiiert.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1754,7 +1749,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft ist <b>True</b> , wenn das Arbeitsblatt eine gefilterte Liste enthält in der ausgeblendete Zeilen vorhanden sind.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1853,7 +1848,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Es besteht ein Grenzwert von 1,026 horizontalen Seitenumbrüche pro Blatt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2105,7 +2100,7 @@
         <summary>Verschiebt das Blatt an eine andere Position in der Arbeitsmappe</summary>
         <remarks>
           <para>Wenn Sie entweder nicht angeben <paramref name="Before" /> oder <paramref name="After" />, erstellt Microsoft Excel eine neue Arbeitsmappe, die das verschobene Blatt enthält.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2196,7 +2191,7 @@
         <remarks>
           <para>Wenn das Objekt einen Bereich ist diese Eigenschaft emuliert die TAB-Taste, obwohl die-Eigenschaft, das die nächste Zelle zurückgibt ohne vorherige darauf verweisen</para>
           <para>Auf einem geschützten Arbeitsblatt gibt diese Eigenschaft die nächste nicht gesperrte Zelle zurück. In einem ungeschützten Blatt, gibt diese Eigenschaft immer die Zelle unmittelbar rechts von der angegebenen Zelle.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2673,7 +2668,7 @@
         <remarks>
           <para>Wenn Sie keinen der <paramref name="Destination" /> Argument, müssen Sie den Zielbereich markieren, bevor Sie diese Methode verwenden.</para>
           <para>Diese Methode ändert gegebenenfalls in Abhängigkeit vom Inhalt der Zwischenablage die Markierung des Blatts.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2721,7 +2716,7 @@
             <paramref name="NoHTMLFormatting" />ist nur von Bedeutung beim <paramref name="Format" /> = "HTML". In allen anderen Fällen <paramref name="NoHTMLFormatting" /> wird ignoriert.</para>
           <para>Sie müssen den Zielbereich markieren, bevor Sie diese Methode verwenden.</para>
           <para>Diese Methode ändert gegebenenfalls in Abhängigkeit vom Inhalt der Zwischenablage die Markierung des Blatts.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2879,7 +2874,7 @@
         <remarks>
           <para>Wenn das Objekt einen Bereich ist diese Eigenschaft emuliert Drücken von UMSCHALT + TAB, im Gegensatz zu der Tastenkombination jedoch die-Eigenschaft gibt die vorherige Zelle ohne vorherige darauf verweisen</para>
           <para>Auf einem geschützten Arbeitsblatt gibt diese Eigenschaft die vorhergehende nicht gesperrte Zelle zurück. In einem ungeschützten Blatt, gibt diese Eigenschaft immer die Zelle unmittelbar links von der angegebenen Zelle.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2911,7 +2906,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> -Eigenschaft gibt nur zurück einer Zahl größer als NULL, wenn die Kommentare festlegen auf der Seite einrichten auf der Registerkarte Tabelle im Dialogfeld auf am Ende des Blattes festgelegt ist. Diese Eigenschaft gibt 0 (null) zurück, wenn das Blatt ein Diagrammblatt oder ein MS Excel 5.0 Dialogblatt ist.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2961,7 +2956,7 @@
         <summary>Druckt das Objekt.</summary>
         <remarks>
           <para>"Seiten" in den Beschreibungen des <paramref name="From" /> und <paramref name="To" /> bezieht sich auf gedruckte Seiten, nicht insgesamt Seiten des Arbeitsblatts oder der Arbeitsmappe.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3100,7 +3095,7 @@
           <para>, Wenn Sie eine Änderung an einem geschützten Arbeitsblatt vornehmen möchten, ist es möglich, in einem geschützten Arbeitsblatt die <b>Protect</b> -Methode verwenden, wenn das Kennwort bereitgestellt wird. Eine andere Methode wäre, heben Sie den Schutz des Arbeitsblatts, stellen Sie die erforderlichen Änderungen und schützen Sie das Arbeitsblatt erneut.</para>
           <para>
             <b>Hinweis</b>: "Ungeschützt" bedeutet, dass die Zelle möglicherweise gesperrt (Dialogfeld Zellen formatieren) aber in einem Bereich in die Benutzerberechtigungen zum Bearbeiten von Bereichen im Dialogfeld definierten enthalten ist und der Benutzer hat nicht den Bereich mit einem Kennwort geschützt oder Benutzerberechtigungen bestätigt wurde.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3550,7 +3545,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Legen Sie diese Eigenschaft auf eine leere Zeichenfolge ("") um die zellmarkierung für das gesamte Blatt zu aktivieren.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3616,8 +3611,8 @@
         <param name="Replace">Optionales- <b>Objekt</b>. Das Objekt zu ersetzen.</param>
         <summary>Markiert das Objekt.</summary>
         <remarks>
-          <para>Um eine Zelle oder einen Zellbereich ausgewählt haben, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> Methode.</para>
-          <para />
+          <para>Wählen Sie eine Zelle oder einen Zellbereich, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> -Methode.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3732,9 +3727,9 @@
       <Docs>
         <summary>Zeigt das mit dem Arbeitsblatt verknüpfte Datenformular an.</summary>
         <remarks>
-          <para>Ausführung wird angehalten, solange Sie das Datenformular verwenden. Wenn Sie das Datenformular schließen, Ausführung wird in der Zeile der <b>ShowDataForm</b> -Methode.</para>
+          <para>Die Ausführung wird angehalten, solange Sie das Datenformular verwenden. Wenn Sie das Datenformular schließen, Ausführung wird in der Zeile der <b>ShowDataForm</b> -Methode.</para>
           <para>Diese Methode führt das benutzerdefinierte Datenformular, sofern vorhanden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3900,7 +3895,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens in der Standardformatvorlage. Für proportionale Schriftarten wird die Breite des Zeichens 0 (null) verwendet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4113,8 +4108,8 @@
         <param name="Password">Optionales- <b>Objekt</b>. Eine Zeichenfolge, die das Groß-/Kleinschreibung beachtet Kennwort für das Blatt oder die Arbeitsmappe aufheben angibt. Wenn das Blatt oder die Arbeitsmappe mit einem Kennwort geschützt ist, wird dieses Argument ignoriert. Wenn Sie dieses Argument für ein Blatt, die mit einem Kennwort geschützt sind auslassen, werden Sie aufgefordert, das Kennwort aufgefordert. Wenn Sie dieses Argument für eine Arbeitsmappe, die mit einem Kennwort geschützt ist auslassen, schlägt die Methode fehl.</param>
         <summary>Hebt den Schutz eines Blatts oder einer Arbeitsmappe auf. Diese Methode hat keine Wirkung, wenn das Blatt oder die Arbeitsmappe nicht geschützt ist.</summary>
         <remarks>
-          <para>Wenn Sie das Kennwort vergessen, Schutz kann nicht das Blatt oder die Arbeitsmappe aufgehoben. Es ist ratsam, eine Liste Ihrer Kennwörter und der entsprechenden Dokumentnamen an einem sicheren Ort zu behalten.</para>
-          <para />
+          <para>, Wenn Sie das Kennwort vergessen haben, kann nicht das Blatt oder die Arbeitsmappe aufzuheben. Es ist eine gute Idee, eine Liste Ihrer Kennwörter und der entsprechenden Dokumentnamen an einem sicheren Ort.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4186,7 +4181,7 @@
         <remarks>
           <para>Die <b>Visible</b> -Eigenschaft für ein PivotTable-Element ist <b>True</b> , wenn das Element derzeit in der Tabelle angezeigt wird.</para>
           <para>Wenn Sie die <b>Visible</b> -Eigenschaft für einen Namen auf <b>False</b>festlegen, wird nicht der Name im Dialogfeld Namen definieren angezeigt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4251,7 +4246,7 @@
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para>Wenn der XPath in einer Spalte einer XML-Liste vorhanden ist, das <b>Range</b> -Objekt zurückgegeben umfasst nicht die Kopfzeile und die Einfügezeile.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4288,7 +4283,7 @@
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para>Im Gegensatz zu den <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> -Methode gibt die <b>XmlMapQuery</b> -Methode die gesamte Spalte einer XML-Liste, einschließlich der Überschrift und die Einfügezeile zurück.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

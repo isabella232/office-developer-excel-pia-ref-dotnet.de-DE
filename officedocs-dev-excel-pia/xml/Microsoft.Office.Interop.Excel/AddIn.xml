@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584147" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -38,7 +38,7 @@
       <para>Der <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> Methode fügt ein Add-in zur Liste der verfügbaren Add-Ins jedoch nicht die Add-in-Gruppe der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> -Eigenschaft des des Add-Ins auf <b>true fest,</b> um das Add-in zu installieren. Um ein Add-in, die angezeigt werden, nicht in der Liste der verfügbaren Add-Ins zu installieren, müssen Sie zunächst mithilfe der <b>Add</b> -Methode, und legen Sie die <b>Installed</b> -Eigenschaft. Dies kann in einem einzigen Schritt</para>
       <para>Verwendung <b>Arbeitsmappen</b>(<paramref name="index" />), in dem <paramref name="index" /> wird die Add-in-Filename (nicht Titel) um einen Verweis auf die Arbeitsmappe entsprechend der geladenen Add-in zurückzugeben. Sie müssen den Dateinamen verwenden, da geladenen Add-Ins in normalerweise angezeigt werden, nicht die <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> Auflistung.</para>
       <para>, Wenn die <b>Installed</b> -Eigenschaft gibt <b>True</b>zurück, aber dennoch fehlschlagen, Aufrufe von Funktionen in das Add-in, das Add-in möglicherweise nicht richtig geladen. Dies ist, da das <b>Addin</b> -Objekt, das Vorhandensein darstellt und Installationsstatus des Add-Ins jedoch nicht die tatsächlichen Inhalte der Add-in-Arbeitsmappe darstellen. Um sicherzustellen, dass ein installiertes Add-In geladen wird, öffnen Sie die Add-in Arbeitsmappe.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -188,7 +188,7 @@
         <remarks>
           <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
           <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -218,8 +218,8 @@
         <summary>Gibt den Namen des Objekts, einschließlich des Pfads auf dem Datenträger, als Zeichenfolge zurück.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> -Eigenschaft, gefolgt von der aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> Eigenschaft.</para>
-          <para />
+          <para>Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> -Eigenschaft, gefolgt von der aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> -Eigenschaft.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -253,8 +253,8 @@
           <b>True,</b> Wenn das Add-in installiert ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>true fest,</b> das Add-in installiert und seine Auto_installieren-Funktionen. Durch Festlegen dieser Eigenschaft auf <b>false festgelegt</b> , das Add-In entfernt und seine Auto_entfernen-Funktionen.</para>
-          <para />
+          <para>Durch Festlegen dieser Eigenschaft auf <b>true fest,</b> das Add-in installiert und seine Auto_installieren-Funktionen. Das Add-In entfernt und seine Auto_entfernen-Funktionen durch Festlegen dieser Eigenschaft auf <b>false festgelegt</b> .</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -286,8 +286,8 @@
           <b>true,</b> Wenn das Add-in derzeit geöffnet ist. anderenfalls <b>false</b>.</value>
         <remarks>
           <para>
-            <b>Boolean</b> Schreibgeschützt.</para>
-          <para />
+            <b>boolean</b> schreibgeschützt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
