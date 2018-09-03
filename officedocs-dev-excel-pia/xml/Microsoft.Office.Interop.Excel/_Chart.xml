@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20580325" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Chart" />
@@ -386,8 +386,8 @@
         <param name="Filename">Der Dateiname für eine Diagrammvorlage.</param>
         <summary>Weist einem Diagramm einen Standarddiagrammtyp oder einen benutzerdefinierten Diagrammtyp zu.</summary>
         <remarks>
-          <para>Diese Methode unterstützt das Annehmen von Konstanten für systemeigene oder Verbunddiagramme nicht.</para>
-          <para />
+          <para>Diese Methode unterstützt keine annehmen von Konstanten für systemeigene oder Verbunddiagramme.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -497,10 +497,7 @@
         <param name="Layout">Gibt den Layouttyp an. Der Layouttyp wird mit einer Zahl zwischen 1 und 10 angegeben.</param>
         <param name="ChartType">Der Typ des Diagramms.</param>
         <summary>Wendet die im Band angezeigten Layouts an.</summary>
-        <remarks>
-          <para>Wenn Sie ein Layout für den aktuellen Diagrammtyp verwenden, wird eine Zahl zwischen 1 und 10 auf den Diagrammtyp angewendet.  Sie können das Layout eines Diagrammtyps auch auf einen anderen Diagrammtyp anwenden.  Beispielsweise können Sie die Layouts anwenden, die von einem Liniendiagramm auf ein Säulendiagramm verfügbar sind.  Das Layout fügt nur Diagrammelemente, die für den jeweiligen Diagrammtyp verfügbar sind.</para>
-          <para />
-        </remarks>
+        <remarks>Bei Verwendung ein Layouts auf den aktuellen Diagrammtyp, eine Zahl zwischen 1 und 10 <para>wird auf den Diagrammtyp angewendet.  Sie können das Layout eines Diagrammtyps auch auf einen anderen Diagrammtyp anwenden.  Beispielsweise können Sie die Layouts anwenden, die von einem Liniendiagramm auf ein Säulendiagramm verfügbar sind.  Das Layout fügt nur Diagrammelemente, die für den jeweiligen Diagrammtyp verfügbar sind.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Arcs">
@@ -900,8 +897,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.XlCategoryLabelLevel" /> Konstanten in Bezug auf die Ebene der, in dem die Kategorie Beschriftungen aus einer Führungslinie basieren wird sind. <b>Ganze Zahl</b> (<b>Int</b> in c#) Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Ist eine Hierarchie, 0 bezieht sich auf die meisten übergeordneten Ebene, 1 bezieht sich auf die untergeordneten Elemente und So weiter. Damit die erste Ebene, gleich 0 ist gleich 1 ist der zweiten Ebene, 2 entspricht den dritten Ebene, und so weiter.</para>
-          <para />
+          <para>, Wenn es eine Hierarchie, 0 bezieht sich auf die meisten übergeordneten Ebene, 1 bezieht sich auf die untergeordneten Elemente und So weiter. Damit die erste Ebene, gleich 0 ist gleich 1 ist der zweiten Ebene, 2 entspricht den dritten Ebene usw..</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1027,8 +1024,8 @@
         <summary>Gibt ein Objekt, das entweder stellt ein einzelnes eingebettetes Diagramm (ein <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> Objekt) oder eine Auflistung aller eingebetteten Diagramme (ein <see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" /> Object) auf dem Blatt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Diese Methode entspricht nicht der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> Eigenschaft. Diese Methode gibt eingebettete Diagramme zurück. die <b>Charts</b> -Eigenschaft gibt Diagrammblätter zurück. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> -Eigenschaft auf das <b>Chart</b> -Objekt für ein eingebettetes Diagramm zurück.</para>
-          <para />
+          <para>Diese Methode entspricht nicht der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> Eigenschaft. Diese Methode gibt eingebettete Diagramme zurück. die <b>Charts</b> -Eigenschaft gibt Diagrammblätter zurück. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> -Eigenschaft auf das <b>Chart</b> -Objekt für ein eingebettetes Diagramm zurückzugeben.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1063,8 +1060,8 @@
           <b>Objekt</b>
         </value>
         <remarks>
-          <para>Sie können zum Festlegen des Diagrammformats eine Zahl zwischen 1 und 48 verwenden.</para>
-          <para />
+          <para>Können Sie zum Festlegen des Diagrammformats eine Zahl zwischen 1 und 48.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1129,7 +1126,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Einige Diagrammtypen sind für PivotChart-Berichte nicht.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1182,7 +1179,7 @@
         <summary>Ändert die Eigenschaften für ein bestimmtes Diagramm. Ermöglicht die schnelle Formatierung eines Diagramms, ohne jede einzelne Eigenschaft festzulegen. Diese Methode ist nicht interaktiv, und es wird nur die angegebenen Eigenschaften geändert.</summary>
         <remarks>
           <para>Wenn <paramref name="Source" /> ausgelassen wird und entweder der Auswahl nicht um ein eingebettetes Diagramm im aktiven Arbeitsblatt oder das aktive Blatt kein Diagramm, schlägt diese Methode fehl und ein Fehler auftritt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1279,8 +1276,8 @@
       <Docs>
         <summary>Löscht alle Farben im angegebenen Diagramm, die nicht die Farbe Formatvorlage von im Diagramm folgen.</summary>
         <remarks>
-          <para>Verwenden Sie diese Methode, um alle Formatierung auf die Farbe Formatvorlage dem Diagramm Diagramm Farbe zurückzusetzen.</para>
-          <para />
+          <para>Mit dieser Methode können Sie alle die Formatierung auf die Farbe Formatvorlage dem Diagramm Diagramm-Farbe zurückgesetzt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1306,10 +1303,7 @@
       <Parameters />
       <Docs>
         <summary>Deaktiviert die Formatierung der Diagrammelemente und legt die automatische Formatierung fest.</summary>
-        <remarks>
-          <para>Verwenden Sie diese Methode, um auf automatische Formatierung der Diagrammelemente zurückzusetzen.    Wenn Sie diese Methode in einem Diagramm verwenden, werden alle Formatierungen im Bereich (einschließlich Außerkraftsetzungen) zurückgesetzt.</para>
-          <para />
-        </remarks>
+        <remarks>Verwenden Sie diese Methode auf automatische Formatierung der Diagrammelemente zurücksetzen <para>.    Wenn Sie diese Methode in einem Diagramm verwenden, alle Formatierungen im Bereich (einschließlich Außerkraftsetzungen) wird zurückgesetzt.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CodeName">
@@ -1337,7 +1331,7 @@
       <Docs>
         <summary>Gibt den Namen der Code für das Objekt zurück.</summary>
         <value>To be added.</value>
-        <remarks>Der Wert, den Sie in der Zelle rechts neben (Name) im Fenster Eigenschaften finden Sie unter <para>wird der Codename des ausgewählten Objekts. Zur Entwurfszeit können Sie den Namen eines Objekts Code durch Ändern dieses Werts ändern. Sie können diese Eigenschaft nicht programmgesteuert zur Laufzeit ändern.</para><para>Der Codename für ein Objekt kann anstelle eines Ausdrucks verwendet werden, der das Objekt zurückgibt. Es ist möglich, dass der Name des Arbeitsblatts aus der Codename des ersten unterschiedlich sein. Beim Erstellen Sie ein Arbeitsblatt, das Blatt und Codename identisch sind, aber ändern den Namen des Arbeitsblatts wird der Codename nicht geändert und Ändern der Codename nicht der Name des Arbeitsblatts.</para><para /></remarks>
+        <remarks>Der Wert, den Sie in der Zelle rechts neben (Name) im Fenster Eigenschaften finden Sie unter <para>wird der Codename des ausgewählten Objekts. Zur Entwurfszeit können Sie den Namen eines Objekts Code durch Ändern dieses Werts ändern. Sie können diese Eigenschaft nicht programmgesteuert zur Laufzeit ändern.</para><para>Der Codename für ein Objekt kann anstelle eines Ausdrucks verwendet werden, der das Objekt zurückgibt. Es ist möglich, dass der Name des Arbeitsblatts aus der Codename des ersten unterschiedlich sein. Beim Erstellen Sie ein Arbeitsblatt, das Blatt und Codename identisch sind, aber ändern den Namen des Arbeitsblatts wird der Codename nicht geändert und Ändern der Codename nicht der Name des Arbeitsblatts.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column3DGroup">
@@ -1439,7 +1433,7 @@
         <summary>Kopiert das Blatt an eine andere Position in der Arbeitsmappe.</summary>
         <remarks>
           <para>Wenn Sie entweder nicht angeben <paramref name="Before" /> oder <paramref name="After" />, erstellt Microsoft Excel eine neue Arbeitsmappe, die das kopierte Blatt enthält.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1612,8 +1606,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para />
+          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1942,9 +1936,9 @@
         <remarks>
           <para>Dieser Abstand wird vom oberen Rand des gemessen, es sei denn, die <b>AutoAttach</b> -Eigenschaft auf <b>True</b> festgelegt ist und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, die die Legende zeigt), in der Fall der Abstand des Ansatzes t gemessen wird IE unteren Rand des Textfelds. </para>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> -Methode, um den Wert dieser Eigenschaft festzulegen.</para>
-          <para />
+          <para></para>
           <para>Der Wert dieser Eigenschaft zeigt die Position der die Legendenlinie mit dem Textfeld nur dann, wenn die Legende einen explizit festgelegten drop Wert – d. h., wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /><b>-Eigenschaft ist</b>.</para>
-          <para />
+          <para></para>
         </remarks>
         <example>
           <para>In diesem Beispiel wird der benutzerdefinierte Ansatz für Form 1 in MyDocument durch einen von zwei voreingestellten Ansätzen, je nachdem, ob der benutzerdefinierten Wert größer oder kleiner als die Hälfte der Höhe des Legendentextfelds ersetzt. Für das Beispiel funktioniert muss Form 1 eine Legende sein.</para>
@@ -2220,7 +2214,7 @@ With myDocument.Shapes(1).Callout
         <value>To be added.</value>
         <remarks>
           <para>Die Erhöhung Diagramm ist die Höhe, an der Sie das Diagramm in Grad anzeigen. Der Standardwert ist 15 für die meisten Diagrammtypen. Der Wert dieser Eigenschaft muss zwischen-90 und 90 3D-Diagramme Leiste, in dem sie zwischen 0 und 44 muss.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2334,8 +2328,8 @@ With myDocument.Shapes(1).Callout
         <param name="FixedFormatExtClassPtr">Zeiger auf die FixedFormatExt-Klasse.</param>
         <summary>Exportiert in eine Datei mit dem angegebenen Format.</summary>
         <remarks>
-          <para>Diese Methode unterstützt auch die Initialisierung ein Add-in, um eine Datei in eine Datei mit festem Format zu exportieren. Beispielsweise führt Excel Datei Format konvertieren, wenn der Konverter vorhanden sind. Die Konvertierung wird normalerweise vom Benutzer initiiert.</para>
-          <para />
+          <para>Unterstützt diese Methode auch die Initialisierung eines Add-Ins zum Exportieren einer Datei in eine Datei mit festem Format. Beispielsweise führt Excel Datei Format konvertieren, wenn der Konverter vorhanden sind. Die Konvertierung wird normalerweise vom Benutzer initiiert.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2401,7 +2395,7 @@ With myDocument.Shapes(1).Callout
         <remarks>
           <para>
             <b>Series</b> -Objekte in ausgeblendeten Zeilen oder Spalten werden nicht in der aktuellen Series-Auflistung angezeigt, es sei denn, der Benutzer die Option <b>Anzeigen von Daten in ausgeblendeten Zeilen und Spalten</b> in das Dialogfeld Wählen Sie aktiviert hat.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2740,7 +2734,7 @@ With myDocument.Shapes(1).Callout
               <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> -Auflistung einer bestimmten Trendlinie in einer Datenreihe.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2853,8 +2847,8 @@ With myDocument.Shapes(1).Callout
         <summary>Gibt zurück oder legt fest, welche Achsen im Diagramm vorhanden sind.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel möglicherweise Achsen erstellt oder gelöscht, wenn Sie den Diagrammtyp ändern oder die <see cref="P:Microsoft.Office.Interop.Excel.Axis.AxisGroup" /> Eigenschaft.</para>
-          <para />
+          <para>Microsoft Excel möglicherweise Achsen erstellt oder gelöscht, wenn Sie den Diagrammtyp ändern oder die <see cref="P:Microsoft.Office.Interop.Excel.Axis.AxisGroup" /> -Eigenschaft.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3035,7 +3029,7 @@ With myDocument.Shapes(1).Callout
         <remarks>
           <para>Ein Achsentitel wird durch dargestellt ein <see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" /> -Objekt.</para>
           <para>Ein Diagrammtitel wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Excel.ChartTitle" /> -Objekt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3334,8 +3328,8 @@ With myDocument.Shapes(1).Callout
         <summary>Gibt die Texteinträge des angegebenen Listenfelds oder des Kombinationsfelds als Matrix von Zeichenfolgen zurück oder legt die Einträge fest. Gibt auch einen einzelnen Texteintrag zurück oder legt ihn fest. Befinden sich keine Einträge in der Liste, so tritt ein Fehler auf.</summary>
         <returns>Variant</returns>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft werden alle festgelegten durch die <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> Eigenschaft.</para>
-          <para />
+          <para>Durch Festlegen dieser Eigenschaft werden alle festgelegten durch die <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> -Eigenschaft.</para>
+          <para></para>
         </remarks>
         <example>
           <para>In diesem Beispiel werden die Einträge in einem Listenfeld in Arbeitsblatt 1 festgelegt. Wenn Shapes(2) ein Listenfeld darstellt, in diesem Beispiel wird ein Fehler auftritt.</para>
@@ -3458,7 +3452,7 @@ With myDocument.Shapes(1).Callout
         <summary>Verschiebt das Blatt an eine andere Position in der Arbeitsmappe.</summary>
         <remarks>
           <para>Wenn Sie entweder nicht angeben <paramref name="Before" /> oder <paramref name="After" />, erstellt Microsoft Excel eine neue Arbeitsmappe, die das verschobene Blatt enthält.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3834,7 +3828,7 @@ With myDocument.Shapes(1).Callout
         <summary>Fügt Diagrammdaten aus der Zwischenablage in das angegebene Diagramm ein.</summary>
         <remarks>
           <para>Diese Methode ändert die aktuelle Auswahl.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4003,8 +3997,8 @@ With myDocument.Shapes(1).Callout
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotLayout" /> -Objekt, das die Positionierung von Feldern in einem PivotTable-Bericht und die Positionierung der Achsen in einem PivotChart-Bericht darstellt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn die von Ihnen angegebenen einem PivotChart-Bericht handelt, ist der Wert dieser Eigenschaft <b>Nothing zurück</b>.</para>
-          <para />
+          <para>Wenn das Diagramm, das Sie angeben, keinem PivotChart-Bericht handelt, wird der Wert dieser Eigenschaft <b>Nothing zurück</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4164,7 +4158,7 @@ With myDocument.Shapes(1).Callout
         <remarks>
           <para>Read-only.</para>
           <para>, Da Diagramme und Diagrammblätter keine Kommentare unterstützen die <see cref="P:Microsoft.Office.Interop.Excel._Chart.PrintedCommentPages" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> Objekt gibt immer NULL zurück.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4214,7 +4208,7 @@ With myDocument.Shapes(1).Callout
         <summary>Druckt das Objekt.</summary>
         <remarks>
           <para>"Seiten" in den Beschreibungen des <paramref name="From" /> und <paramref name="To" /> bezieht sich auf gedruckte Seiten – nicht auf sämtliche Seiten des Arbeitsblatts oder der Arbeitsmappe.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4325,8 +4319,8 @@ With myDocument.Shapes(1).Callout
         <param name="UserInterfaceOnly">Optionales- <b>Objekt</b>. <b>True</b> , wenn die Benutzeroberfläche, jedoch keine Makros geschützt. Wenn dieses Argument ausgelassen wird, gilt der Schutz für Makros und die Benutzeroberfläche.</param>
         <summary>Schützt ein Diagramm, damit es nicht verändert werden kann.</summary>
         <remarks>
-          <para>Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Zahlen und Symbole kombinieren. Schwache Kennwörter Kombination keine dieser Elemente. Sicheres Kennwort: Y6dh! et5. Schwache Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie behalten können, damit Sie nicht notieren.</para>
-          <para />
+          <para>Verwenden Sie starke Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbole. Schwache Kennwörter Kombination keine dieser Elemente. Sicheres Kennwort: Y6dh! et5. Schwache Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie behalten können, damit Sie nicht notieren.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4456,8 +4450,8 @@ With myDocument.Shapes(1).Callout
           <b>True,</b> Wenn der Formatierung nicht vom Benutzer geändert werden kann.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn diese Eigenschaft auf <b>True</b>festgelegt ist, der Befehl Objekt im Menü Format ist deaktiviert, und Diagrammelemente können nicht hinzugefügt, verschoben, geändert, oder gelöscht werden.</para>
-          <para />
+          <para>, Wenn diese Eigenschaft <b>True ist</b>, der Befehl Objekt im Menü Format ist deaktiviert, und Diagrammelemente können nicht hinzugefügt, verschoben, geändert, oder gelöscht werden.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4561,8 +4555,8 @@ With myDocument.Shapes(1).Callout
           <b>True,</b> wenn Diagrammelemente nicht ausgewählt werden können.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn diese Eigenschaft auf <b>True</b>festgelegt ist, keine Formen zum Diagramm hinzugefügt werden, und die klicken und DoubleClick-Ereignisse für Diagrammelemente nicht auftreten.</para>
-          <para />
+          <para>, Wenn diese Eigenschaft <b>True ist</b>, Shapes können nicht zum Diagramm hinzugefügt werden und die klicken und DoubleClick-Ereignisse für Diagrammelemente nicht auftreten.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4696,7 +4690,7 @@ With myDocument.Shapes(1).Callout
         <value>To be added.</value>
         <remarks>
           <para>Wenn diese Eigenschaft <b>True</b>ist, die <see cref="P:Microsoft.Office.Interop.Excel._Chart.Perspective" /> -Eigenschaft wird ignoriert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4808,8 +4802,8 @@ With myDocument.Shapes(1).Callout
         <param name="Filename">Der Name der Diagrammvorlage.</param>
         <summary>Speichert eine benutzerdefinierte Diagrammvorlage in der Liste der verfügbaren Diagrammvorlagen.</summary>
         <remarks>
-          <para>Diese Methode speichert standardmäßig das aktive Diagramm zu Diagramm Vorlage-Verzeichnis des Benutzers.  Wenn ein UNC- oder URL angegeben ist, wird das Diagramm stattdessen am angegebenen Speicherort gespeichert werden.</para>
-          <para />
+          <para>Diese Methode speichert standardmäßig das aktive Diagramm zu Diagramm Vorlage-Verzeichnis des Benutzers.  Wenn ein UNC- oder URL angegeben ist, wird das Diagramm stattdessen am angegebenen Speicherort gespeichert werden. </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5068,10 +5062,10 @@ With myDocument.Shapes(1).Callout
               <description>Schaltflächen PlotArea, Diagrammwand und Diagrammboden.</description>
             </item>
           </list>
-          <para />
+          <para></para>
           <para>
             <b>MsoChartElementType</b> ist eine Enumeration von Konstanten, die auf alle oben genannten Befehle verweisen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5165,7 +5159,7 @@ With myDocument.Shapes(1).Callout
           <para>Lese-/Schreibzugriff.</para>
           <para>Set der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> -Eigenschaft auf <b>true</b> alle Feldschaltflächen auf der angegebenen PivotChart-Bericht angezeigt. Legen Sie die Eigenschaft auf <b>false,</b> um alle Feldschaltflächen auszublenden.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> -Eigenschaft entspricht dem Befehl Alle ausblenden auf der Registerkarte Analyse, die bei ausgewähltem PivotChart verfügbar ist in der Dropdownliste Feldschaltflächen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5202,7 +5196,7 @@ With myDocument.Shapes(1).Callout
           <para>Lese-/Schreibzugriff.</para>
           <para>Set der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> -Eigenschaft auf <b>true</b> Achsenfelder-Schaltflächen auf der angegebenen PivotChart-Bericht angezeigt. Legen Sie die Eigenschaft auf <b>false,</b> um die Schaltflächen auszublenden.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> -Eigenschaft entspricht dem Befehl Achsenfelder-Schaltflächen anzeigen auf der Registerkarte Analyse, die bei ausgewähltem PivotChart verfügbar ist in der Dropdownliste Feldschaltflächen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5237,8 +5231,8 @@ With myDocument.Shapes(1).Callout
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Wenn Sie die Größenachse in einer Weise ändern, dass die Größe der Datenpunkte kleiner geworden ist, können Sie diese Eigenschaft verwenden, um festzulegen, ob für die datenbeschriftungen angezeigt. Diese Eigenschaft betrifft nur 2D-Diagramme.</para>
-          <para />
+          <para>, Wenn Sie die Größenachse in einer Weise ändern, dass die Größe der Datenpunkte kleiner geworden ist, können Sie diese Eigenschaft verwenden, um festzulegen, ob für die datenbeschriftungen angezeigt. Diese Eigenschaft betrifft nur 2D-Diagramme.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5275,7 +5269,7 @@ With myDocument.Shapes(1).Callout
           <para>Lese-/Schreibzugriff.</para>
           <para>Set der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> -Eigenschaft auf <b>true</b> Legendenfelder-Schaltflächen auf der angegebenen PivotChart-Bericht angezeigt. Legen Sie die Eigenschaft auf <b>false,</b> um die Schaltflächen auszublenden.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> -Eigenschaft entspricht dem Befehl Legendenfelder-Schaltflächen anzeigen auf der Registerkarte Analyse, die bei ausgewähltem PivotChart verfügbar ist in der Dropdownliste Feldschaltflächen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5312,7 +5306,7 @@ With myDocument.Shapes(1).Callout
           <para>Lese-/Schreibzugriff.</para>
           <para>Set der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> -Eigenschaft auf <b>true fest,</b> um die Berichtsfilter-Feldschaltflächen im angegebenen PivotChart-Bericht anzuzeigen. Legen Sie die Eigenschaft auf <b>false,</b> um die Schaltflächen auszublenden.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> -Eigenschaft entspricht dem Befehl anzeigen Berichtsfilter-Feldschaltflächen auf der Registerkarte Analyse, die bei ausgewähltem PivotChart verfügbar ist in der Dropdownliste Feldschaltflächen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5349,7 +5343,7 @@ With myDocument.Shapes(1).Callout
           <para>Lese-/Schreibzugriff.</para>
           <para>Set der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> -Eigenschaft auf <b>true</b> , wenn der Wert der angegebenen PivotChart-Bericht angezeigt werden sollen. Legen Sie die Eigenschaft auf <b>false,</b> um die Schaltfläche auszublenden.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> -Eigenschaft entspricht dem Befehl Anzeigen aller Wertfelder-Schaltflächen auf der Registerkarte Analyse, die bei ausgewähltem PivotChart verfügbar ist in der Dropdownliste Feldschaltflächen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5709,8 +5703,8 @@ With myDocument.Shapes(1).Callout
         <param name="Password">Optionales- <b>Objekt</b>. Eine Zeichenfolge, die das Groß-/Kleinschreibung beachtet Kennwort für das Blatt oder die Arbeitsmappe aufheben angibt. Wenn das Blatt oder die Arbeitsmappe mit einem Kennwort geschützt ist, wird dieses Argument ignoriert. Wenn Sie dieses Argument für ein Blatt, die mit einem Kennwort geschützt sind auslassen, werden Sie aufgefordert, das Kennwort aufgefordert. Wenn Sie dieses Argument für eine Arbeitsmappe, die mit einem Kennwort geschützt ist auslassen, schlägt die Methode fehl.</param>
         <summary>Hebt den Schutz eines Blatts oder einer Arbeitsmappe auf. Diese Methode hat keine Wirkung, wenn das Blatt oder die Arbeitsmappe nicht geschützt ist.</summary>
         <remarks>
-          <para>Wenn Sie das Kennwort vergessen, Schutz kann nicht das Blatt oder die Arbeitsmappe aufgehoben. Es ist ratsam, eine Liste Ihrer Kennwörter und der entsprechenden Dokumentnamen an einem sicheren Ort zu behalten.</para>
-          <para />
+          <para>, Wenn Sie das Kennwort vergessen haben, kann nicht das Blatt oder die Arbeitsmappe aufzuheben. Es ist eine gute Idee, eine Liste Ihrer Kennwörter und der entsprechenden Dokumentnamen an einem sicheren Ort.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -5780,8 +5774,8 @@ With myDocument.Shapes(1).Callout
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Walls" /> -Objekt, das die Wände eines 3D-Diagramms darstellt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft anwenden nicht auf 3D-Kreisdiagramme.</para>
-          <para />
+          <para>Diese Eigenschaft nicht auf 3D-Kreisdiagramme anwenden.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

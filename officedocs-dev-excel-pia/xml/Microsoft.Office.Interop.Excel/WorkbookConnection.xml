@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581067" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
@@ -36,7 +36,7 @@
         <b>Hinweis</b>: die genaue Form der Verbindung hängt vom Mechanismus, die zum Abrufen von Daten – ODBC-Verbindungen, OLEDB-Verbindungen verwendet wird und Webabfragen werden unterschiedliche Informationen enthalten.</para>
       <para>Eine Verbindung möglicherweise auch in einer separaten Verbindungsdatei gespeichert werden.  Die meisten Verbindungen in einer Excel-Arbeitsmappe enthalten einen Zeiger auf einen externen Verbindungsdatei.  Verbindungsdateien haben Erweiterungen, die sie eindeutig als Verbindungsdateien bezeichnen (*. ODC, *. IQY usw.) Möglicherweise befinden, auf dem lokalen Computer des Benutzers oder in anderen bekannten oder vertrauenswürdigen Speicherorten wie WSS (Data Connection Library) oder anderen Firmenserver.  Verbindungsdateien haben mehrere Benutzer innerhalb derselben Organisation Verbindungen erneut verwenden.  Netzwerkadministratoren können das Erscheinungsbild ändern, die die gesamte Organisation durch Ändern einer einzelnen Verbindungsdatei stellt eine Verbindung mit einer Back-End-Datenquelle her.  Eine Connection-Datei ist nicht immer erforderlich beim Herstellen einer Verbindung zu einer externen Datenquelle.</para>
       <para>Verbindungsnamen sind Zeichenfolgen, die Verbindungen in der Arbeitsmappe eindeutig zu identifizieren, in denen sie verwendet werden.     Es gibt andere Eigenschaften für eine Verbindung, die nicht eindeutig sind.  Wenn eine Formel in Excel ein Argument, die eine Verbindung ist verwendet, werden ausreichend, um auf den Namen dieser Verbindung, entweder direkt (als Zeichenfolge) verweisen oder indirekt (durch Verweisen auf eine Zelle, die den Verbindungsnamen als Zeichenfolge enthält.)</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -104,7 +104,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para />
+          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -193,7 +193,7 @@
           <para>Verwenden Sie diese Methode, um eine externe Datenverbindung zu löschen. Diese Methode gilt nicht für Links zu anderen Arbeitsmappen. </para>
           <para>Löschen einer Verbindung nicht löschen oder entfernen Sie alle Objekte, die diese Verbindung verwendet haben.  Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelöscht werden soll nicht verursacht.  Wenn Sie eines dieser Objekte mit einer anderen Verbindung bearbeiten, startet Alles erneut arbeiten.</para>
           <para>Verhalten-Objekten, die eine gelöschte Verbindung verwenden, als die Verbindung konnte nicht hergestellt werden.  </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -226,7 +226,7 @@
         <summary>Gibt zurück oder legt eine kurze Beschreibung für eine <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt. Lese-/Schreibzugriff <b>String</b>.</summary>
         <value>To be added.</value>
         <remarks>Klicken Sie im Dialogfeld <para>der Verbindungseigenschaften kann der Benutzer den Namen der Verbindung und/oder die Beschreibung bearbeiten.  Ändern des Namens und der Beschreibung in diesem Dialogfeld diese Felder nur innerhalb des Excel-Connection-Objekts ändert.</para> Die maximale Größe einer Beschreibung 
-          <para>beträgt 255 Zeichen.  Wenn der Benutzer eine Beschreibung in einer Verbindungsdatei, das länger als 255 Zeichen ist angibt, wird die Beschreibung truncate maximal 255 Zeichen angepasst.</para><para /></remarks>
+          <para>beträgt 255 Zeichen.  Wenn der Benutzer eine Beschreibung in einer Verbindungsdatei, das länger als 255 Zeichen ist angibt, wird die Beschreibung truncate maximal 255 Zeichen angepasst.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -255,8 +255,8 @@
         <summary>Gibt an, ob das Modell <b>WorkbookConnection</b> -Objekt hinzugefügt wurde. <b>Boolean</b> (<b>Bool</b> in c#) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Muss für legacy-Verbindungen false sein.</para>
-          <para />
+          <para>Muss false für legacy-Verbindungen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -482,9 +482,9 @@
       <Docs>
         <summary>Aktualisiert eine Arbeitsmappenverbindung.</summary>
         <remarks>
-          <para>Wenn das <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft <b>False</b>ist, werden keine Dialogfelder angezeigt, und die <b>Refresh</b> -Methode schlägt fehl, mit dem Ausnahmefehler "Ungenügende Informationen zur Verbindung" ab.</para>
+          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft <b>False</b>ist, werden keine Dialogfelder angezeigt, und die <b>Refresh</b> -Methode schlägt fehl, mit dem Ausnahmefehler "Ungenügende Informationen zur Verbindung" ab.</para>
           <para>Ein Aktualisierungsfehler für eine Verbindung haben keinen Einfluss auf die Aktualisierungsvorgänge für die anderen Verbindungen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

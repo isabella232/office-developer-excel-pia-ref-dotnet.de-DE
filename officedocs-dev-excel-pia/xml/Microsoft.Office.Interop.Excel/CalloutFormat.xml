@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20582075" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Enthält Eigenschaften und Methoden, die für Legenden mit Linien gelten.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> Eigenschaft, um ein <b>CalloutFormat</b> -Objekt zurückzugeben.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -82,7 +82,7 @@
           </para>
           <para>
             <b>MsoTrue</b> eine vertikale Markierungsleiste trennt den Legendentext von die Legendenlinie.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
             <b>msoCalloutAngleMixed</b>
           </para>
           <para>Wenn Sie den Wert dieser Eigenschaft auf einen anderen Wert als <b>MsoCalloutAngleAutomatic</b>festlegen, behält die Legendenlinie einen festen Winkel bei, wenn Sie die Legende ziehen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -220,7 +220,7 @@
             <b>MsoTrue</b> die Stelle, wo die Legendenlinie mit der Legende, Text im Feld ändert sich je nachdem, ob der Ursprung der Legendenlinie (wobei die Legende verweist auf) links oder rechts vom Textfeld Legende.</para>
           <para>, Wenn der Wert dieser Eigenschaft <b>True</b>, der Wert (der vertikale Abstand vom Rand des Legendentextfelds an die Stelle, an die Legendenlinie verbunden, ist) ist gemessen im oberen Bereich des Textfelds, wenn das Textfeld rechts des Ursprungs ist , und des Textfelds gemessen, wenn das Textfeld links vom Ursprung befindet. Wenn der Wert dieser Eigenschaft auf <b>False</b>festgelegt ist, wird der Wert von im oberen Bereich des Textfelds, unabhängig von den relativen Positionen im Textfeld und Ursprung gemessen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> -Methode, um den Wert festzulegen, und Verwenden der <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> -Eigenschaft auf den Drop-Wert zurück.</para>
           <para>Durch Festlegen dieser Eigenschaft wirkt sich auf eine Legende nur dann, wenn sie einen explizit festgelegten Wert drop – d. h., wenn der Wert der der <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /><b>-Eigenschaft ist</b>. In der Standardeinstellung Legenden explizit festgelegt haben Drop Werte Wenn sie erstellt werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -266,7 +266,7 @@
           <para>
             <b>MsoTrue</b> das erste Segment der Legendenlinie (das Segment, das Text am Legendentextfeld ansetzt) automatisch skaliert, wenn die Legende verschoben wird.</para>
           <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> -Methode, um diese Eigenschaft auf <b>MsoTrue</b>festlegen, und verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> -Methode, um diese Eigenschaft auf <b>MsoFalse</b>festgelegt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -296,7 +296,7 @@
           <para>Die <b>AutomaticLength</b> -Methode gilt nur für Legenden, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> Methode, um anzugeben, dass das erste Segment der Legendenlinie die feste Länge beibehält, die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> Eigenschaft, wenn die Legende verschoben wird.</para>
           <para>Anwenden dieser Methode wird die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> -Eigenschaft auf <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -341,7 +341,7 @@
             <b>MsoTriStateToggle</b> ermöglicht es dem Benutzer des Rahmens von sichtbar auf unsichtbar und umgekehrt zu wechseln.</para>
           <para>
             <b>MsoTrue</b> Standard. Legt den Rahmen sichtbar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -376,7 +376,7 @@
         <remarks>
           <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
           <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -406,10 +406,7 @@
         <param name="Drop">
           <b>Single</b>erforderlich. Der Abstand in Punkten.</param>
         <summary>Legt den vertikalen Abstand (in Punkt) vom Rand des Textbereichs und der Stelle, an die Legendenlinie mit dem Textfeld verbunden.</summary>
-        <remarks>
-          <para>Dieser Abstand wird vom oberen des Textfelds gemessen, es sei denn, die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> -Eigenschaft auf <b>True</b> festgelegt ist und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, die die Legende zeigt), in dem Fall der Abstand vom unteren gemessen wird Klicken Sie im Textfeld.</para>
-          <para />
-        </remarks>
+        <remarks>Wird vom oberen Rand des <para>dieser Abstand gemessen, es sei denn, die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> -Eigenschaft auf <b>True</b> festgelegt ist und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, die die Legende zeigt), in dem Fall der Abstand des Ansatzes aus den Robot gemessen wird Tom des Textfelds.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLength">
@@ -442,7 +439,7 @@
           <para>Die <b>CustomLength</b> -Methode gilt nur für Legenden, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> -Methode, um anzugeben, dass das erste Segment der Legendenlinie automatisch skaliert wird, wenn die Legende verschoben wird.</para>
           <para>Anwenden dieser Methode wird die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> -Eigenschaft auf <b>False</b> festgelegt und die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> -Eigenschaft auf den für das Argument <b>Length</b> angegebenen Wert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -475,7 +472,7 @@
           <para>Der Abstand wird vom oberen Rand des gemessen, es sei denn, die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> -Eigenschaft auf <b>True</b> festgelegt ist und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, die die Legende zeigt), in dem Fall der Abstand des Ansatzes von der unteren o gemessen wird das Textfeld f.</para>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> -Methode, um den Wert dieser Eigenschaft festzulegen.</para>
           <para>Der Wert dieser Eigenschaft zeigt die Position der die Legendenlinie mit dem Textfeld nur dann, wenn die Legende einen explizit festgelegten drop Wert – d. h., wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /><b>-Eigenschaft ist</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -524,7 +521,7 @@
           </para>
           <para>Ist der Drop Legendentyp <b>MsoCalloutDropCustom</b>, die Werte von der <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> und <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> Eigenschaften und die relativen Positionen des Legendentextfelds und der Legendenlinie (der Stelle, die die Legende zeigt) verwendet werden bestimmen, in die Legendenlinie mit dem Textfeld verbunden.</para>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> -Methode, um den Wert dieser Eigenschaft festzulegen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -587,7 +584,7 @@
         <remarks>
           <para>Die <b>Length</b> -Eigenschaft gilt nur für Legenden, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> -Methode zum Festlegen des Werts dieser Eigenschaft für ein <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> Objekt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -693,7 +690,7 @@
           <para>
             <b>MsoCalloutTwo</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574725" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCell" />
@@ -34,7 +34,7 @@
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Auflistung, um ein <b>PivotCell</b> -Objekt zurückzugeben.</para>
       <para>Nachdem ein <b>PivotCell</b> -Objekt zurückgegeben wurde, können Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> Eigenschaft, um zu bestimmen, geben einen bestimmten Bereich Inseln</para>
       <para>Können Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> oder <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> -Eigenschaft bestimmt die <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung, die den Elementen auf der Achse Zeile oder Spalte entspricht, die die ausgewählte Nummer darstellt.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -63,7 +63,7 @@
         <remarks>
           <para>Diese Methode führt eine UPDATE CUBE-Anweisung, um nur die Änderung in dieser bestimmten Zelle hinzuzufügen, jedoch enthält außerdem alle vorherigen Änderungen angewendet. Nachdem die CUBE UPDATE-Anweisung ausgeführt wird, ein PivotTable-Update wird ausgeführt, und klicken Sie dann eine ROLLBACK TRANSACTION-Anweisung ausgeführt wird.</para>
           <para>Mit der <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> -Methode für eine Zelle in einem PivotTable-Bericht basierend auf einer nicht-OLAP-Datenquelle generiert einen Laufzeitfehler.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -186,7 +186,7 @@
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> für alle bearbeiten Zellen mit Formel.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -246,7 +246,7 @@
         <remarks>
           <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
           <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -299,7 +299,7 @@
           <para>
             <b>XlStDev</b>
           </para>,
-          <para><b>XlStDevP</b></para><para><b>XlSum </b></para><para><b>XlUnknown</b></para><para><b>XlVar</b></para><para><b>XlVarP</b></para><para><b>CustomSubtotalFunction</b> -Eigenschaft gibt einen Fehler zurück, wenn der <b>PivotCell</b> -Objekttyp nicht um ein benutzerdefiniertes Teilergebnis darstellt. Diese Eigenschaft gilt nur für nicht-OLAP-Quelldaten.</para><para /></remarks>
+          <para><b>XlStDevP</b></para><para><b>XlSum </b></para><para><b>XlUnknown</b></para><para><b>XlVar</b></para><para><b>XlVarP</b></para><para><b>CustomSubtotalFunction</b> -Eigenschaft gibt einen Fehler zurück, wenn der <b>PivotCell</b> -Objekttyp nicht um ein benutzerdefiniertes Teilergebnis darstellt. Diese Eigenschaft gilt nur für nicht-OLAP-Quelldaten.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -329,7 +329,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gibt einen Fehler zurück, wenn das <b>PivotCell</b> -Objekt nicht den zulässigen Typen ist: <b>XlPivotCellTypeValue</b>, <b>XlPivotCellTypeDataField</b>, <b>XlPivotCellTypeSubtotal</b>oder <b>XlPivotCellTypeGrandTotal</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -360,7 +360,7 @@
         <value>Der Wert aus der Datenquelle für den bearbeiteten Zellen in einem PivotTable-Bericht zuletzt abgerufen.</value>
         <remarks>
           <para>Read-only.</para> Wenn eine Zelle in einem PivotTable-Bericht des Wertebereichs bearbeitet wird, 
-          <para>der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft enthält den Wert, die zuletzt aus der Datenquelle abgerufen wurde, bevor die Bearbeitung vorgenommen wurde. Für PivotTable-Bericht Wertzellen, die nicht bearbeitet wurde, oder für die der Quelle Datenwert nicht explizit abgerufen wurden gibt diese Eigenschaft ein Nullverweis (Nothing in Visual Basic) zurück. Für PivotTable-Berichte mit OLAP-Datenquellen ist der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> Eigenschaft wird von einer separaten Verbindung, um sicherzustellen, dass es nicht den Wert der Rückschreiben Vorgänge enthält, die der Benutzer vorgenommen haben möglicherweise abgerufen.</para><para>Beim Lesen der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft für Zellen, die außerhalb des Wertebereichs eines PivotTable-Berichts sind generiert einen Laufzeitfehler.</para><para /></remarks>
+          <para>der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft enthält den Wert, die zuletzt aus der Datenquelle abgerufen wurde, bevor die Bearbeitung vorgenommen wurde. Für PivotTable-Bericht Wertzellen, die nicht bearbeitet wurde, oder für die der Quelle Datenwert nicht explizit abgerufen wurden gibt diese Eigenschaft ein Nullverweis (Nothing in Visual Basic) zurück. Für PivotTable-Berichte mit OLAP-Datenquellen ist der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> Eigenschaft wird von einer separaten Verbindung, um sicherzustellen, dass es nicht den Wert der Rückschreiben Vorgänge enthält, die der Benutzer vorgenommen haben möglicherweise abgerufen.</para><para>Beim Lesen der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft für Zellen, die außerhalb des Wertebereichs eines PivotTable-Berichts sind generiert einen Laufzeitfehler.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DiscardChange">
@@ -386,8 +386,8 @@
       <Docs>
         <summary>Verwirft Änderungen an der angegebenen Zelle in einem PivotTable-Bericht.</summary>
         <remarks>
-          <para>Für eine Zelle in einer PivotTable auf einer OLAP-Datenquelle basiert die <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> -Methode den Wert oder die Formel in der angegebenen Zelle eingegebene entfernt und anschließend wird ein PivotTable-Update aus, um den letzten Wert aus der Datenquelle abrufen. Der Datenwert Quelle wird durch diese Methode für die angegebene Zelle mit einem Nullverweis (Nothing in Visual Basic) festgelegt. Außerdem werden die-Methode entfernt alle Änderungen an dieser Zelle aus Excel Änderungsliste, damit es nicht mehr in UPDATE CUBE-Anweisung für die Datenquelle eingeschlossen werden sollen. Diese Methode stellt auch den Sitzungsstatus für alle Änderungen, die in der Transaktion vorgenommen. Dazu gehören eine ROLLBACK TRANSACTION-Anweisung ausgeführt, und klicken Sie dann Ausführen einer UPDATE CUBE-Anweisung mit allen Änderungen, mit Ausnahme der angegebenen Zelle. Für eine Zelle in einer PivotTable basierend auf einer nicht-OLAP-Datenquelle löscht diese Methode einfach die bearbeitete Zelle.</para>
-          <para />
+          <para>Für eine Zelle in einer PivotTable auf einer OLAP-Datenquelle basiert die <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> -Methode den Wert oder die Formel in der angegebenen Zelle eingegebene entfernt und anschließend wird ein PivotTable-Update aus, um den letzten Wert aus der Datenquelle abrufen. Der Datenwert Quelle wird durch diese Methode für die angegebene Zelle mit einem Nullverweis (Nothing in Visual Basic) festgelegt. Außerdem werden die-Methode entfernt alle Änderungen an dieser Zelle aus Excel Änderungsliste, damit es nicht mehr in UPDATE CUBE-Anweisung für die Datenquelle eingeschlossen werden sollen. Diese Methode stellt auch den Sitzungsstatus für alle Änderungen, die in der Transaktion vorgenommen. Dazu gehören eine ROLLBACK TRANSACTION-Anweisung ausgeführt, und klicken Sie dann Ausführen einer UPDATE CUBE-Anweisung mit allen Änderungen, mit Ausnahme der angegebenen Zelle. Für eine Zelle in einer PivotTable auf einer nicht-OLAP-Datenquelle basiert, löscht diese Methode einfach die bearbeitete Zelle.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -450,7 +450,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Die Dimensionen, die in das Tupel durch zurückgegeben der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> Eigenschaft Zeile und Spalte Koordinaten als auch Report Filter Koordinaten enthalten. Bei Zellen, die außerhalb des Wertebereichs der PivotTable und außerhalb einer PivotTable Zugriff auf diese Eigenschaft einen Laufzeitfehler generiert. Bei PivotTables mit mehreren Elementauswahl in einem Berichtsfilterfeld, Zugriff auf diese Eigenschaft auch generiert einen Laufzeitfehler.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -530,7 +530,7 @@
             <b>XlPivotCellSubtotal</b> eine Zelle in der Zeilen- oder Spaltenbereich, die ein Teilergebnis darstellt.</para>
           <para>
             <b>xlPivotCellValue eine</b> eine im Datenbereich (mit Ausnahme einer leeren Zeile Zelle).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -565,7 +565,7 @@
           <para>Wenn sich <b>PivotCell</b> auf Zeilen bezieht, gibt die <b>PivotColumnLine</b> -Eigenschaft einen Laufzeitfehler zurück.</para>
           <para>Wenn sich <b>PivotCell</b> auf Spalten bezieht, gibt die <b>PivotColumnLine</b> -Eigenschaft das Spalte <b>PivotLine</b> -Objekt zurück.</para>
           <para>Wenn das <b>PivotCell</b> im Datenbereich befindet, gibt die <b>PivotColumnLine</b> -Eigenschaft das entsprechende Spalte <b>PivotLine</b> -Objekt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -656,7 +656,7 @@
           <para>Wenn sich <b>PivotCell</b> auf Zeilen bezieht, gibt <b>PivotRowLine</b> das <b>PivotLine</b> -Objekt der Zeile zurück.</para>
           <para>Wenn sich <b>PivotCell</b> auf Spalten bezieht, gibt <b>PivotRowLine</b> einen Laufzeitfehler zurück.</para>
           <para>Wenn das <b>PivotCell</b> im Datenbereich befindet, gibt <b>PivotRowLine</b><b>PivotLine</b> -Objekt der entsprechenden Zeile zurück.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -771,7 +771,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Eine Serveraktion ist eine optionale Funktion, die ein OLAP-Cube-Administrator auf einem Server, die ein Cube-Element oder Measure als Parameter in einer Abfrage verwendet definieren können, um Details im Cube abzurufen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

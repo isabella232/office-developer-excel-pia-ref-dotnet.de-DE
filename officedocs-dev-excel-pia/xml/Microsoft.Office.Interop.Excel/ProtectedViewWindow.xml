@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574760" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
@@ -52,7 +52,7 @@
       <para>Können nicht bearbeitet werden und von aktiven Inhalte ausführen wie Visual Basic für Applikationen-Makros und datenverbindungen dürfen keine Arbeitsmappen in einem geschützten Ansichtsfenster angezeigt.</para>
       <para>Zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekt aus der <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> -Auflistung verwenden Sie ProtectedViewWindows(Index), wobei Index die Indexnummer des zu öffnenden Fenster ist. Sie können auch zugreifen, die <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekt, das das aktive Fenster geschützte Ansicht, mithilfe darstellt der <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</para>
       <para>, Nachdem Sie den Zugriff auf eine <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekts, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> Eigenschaft für den Zugriff auf die <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> -Objekt, das die Arbeitsmappendatei darstellt, die in das Fenster geschützte Ansicht geöffnet ist. Da ein Fenster geschützte Ansicht ausgelegt ist, um den Benutzer potenziell schädlichen Code zu schützen, die Vorgänge bei der Durchführung mithilfe von einer <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> von zurückgegebene Objekt einer <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekt eingeschränkt. Die meisten Vorgänge, die nicht werden dürfen zurückgeben "Laufzeitfehler 1004: mit diesem Befehl ist nicht verfügbar, wenn Excel sandboxed ist."</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -142,7 +142,7 @@
         <value>Der Name, der in der Titelleiste des Fensters geschützte Ansicht angezeigt wird.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -214,7 +214,7 @@
               <description>externe Verweise (Verknüpfungen) werden aktualisiert, wenn die Arbeitsmappe geöffnet wird.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -249,7 +249,7 @@
           <b>true,</b> Wenn das Fenster geschützte Ansicht angepasst werden kann. anderenfalls <b>false</b>.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -284,7 +284,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Können nicht Sie diese Eigenschaft nicht festlegen, wenn das Fenster geschützte Ansicht maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -318,7 +318,7 @@
         <value>Der Abstand in Punkt vom linken Rand des Clientbereichs zum linken Rand des Fensters geschützte Ansicht.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -348,8 +348,8 @@
         <summary>Ruft den Namen der Quelldatei, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</summary>
         <value>Der Name der Quelldatei, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -381,7 +381,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Den Pfad enthält kein nachfolgendes Zeichen (z. B. "C:\MSOffice"). Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> von der <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekts, um den Namen der Quelldatei ohne den Pfad zurückzugeben</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -416,7 +416,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Kann nicht Festlegen dieser Eigenschaft für ein maximiertes Fenster geschützte Ansicht. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zurückgeben oder festlegen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -451,7 +451,7 @@
           <b>true,</b> Wenn das angegebene Fenster geschützte Ansicht angezeigt wird. anderenfalls <b>false</b>.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Können nicht Sie diese Eigenschaft nicht festlegen, wenn das Fenster geschützte Ansicht maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -520,7 +520,7 @@
         <value>Der Zustand des angegebenen geschützte Ansicht-Fensters.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -552,7 +552,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>, Da ein Fenster geschützte Ansicht entwickelt wurde, um dem Benutzer potenziell schädlichen Code zu schützen, die Vorgänge bei der Durchführung mithilfe einer <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> von zurückgegebene Objekt die <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Methode eingeschränkt. Alle Vorgänge, die nicht zulässig ist, gibt zurück "Laufzeitfehler 1004: mit diesem Befehl ist nicht verfügbar, wenn Excel sandboxed ist."</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

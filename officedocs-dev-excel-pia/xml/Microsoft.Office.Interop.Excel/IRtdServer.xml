@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579128" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IRtdServer" />
@@ -28,8 +28,8 @@
   <Docs>
     <summary>Stellt eine Schnittstelle für einen Echtzeitdatenserver dar.</summary>
     <remarks>
-      <para>Das <b>IRTDServer</b> -Objekt instanziiert oder nur durch das Implementieren der <b>IRTDServer</b> -Schnittstelle mithilfe des <b>Implements</b> -Schlüsselworts erstellt werden.</para>
-      <para />
+      <para>Das <b>IRTDServer</b> -Objekt instanziiert oder nur durch das Implementieren der <b>IRTDServer</b> -Schnittstelle mithilfe des <b>Implements</b> -Schlüsselworts erstellt werden kann.</para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -121,8 +121,8 @@
         <summary>Bestimmt, ob der Echtzeitdatenserver weiterhin aktiv ist. 0 (null) oder eine negative Zahl gibt Fehler an. eine positive Zahl gibt an, dass der Server aktiv ist.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Die Heartbeat-Methode wird von Microsoft Excel aufgerufen, wenn die <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> Eigenschaft abgelaufen seit dem letzten Aufruf von Excel mit den <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> Methode.</para>
-          <para />
+          <para>Die Heartbeat-Methode wird von Microsoft Excel aufgerufen, wenn die <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> Eigenschaft abgelaufen seit dem letzten Aufruf von Excel mit den <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> -Methode.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
         <summary>Diese Methode wird von Microsoft Excel zum Abrufen neuer Daten aufgerufen.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Die zurückgegebenen Daten in Excel werden ein <b>Objekt</b> , das ein zweidimensionales Array enthält. Die erste Dimension stellt die Liste der Themen-IDs. Die zweite Dimension stellt die Werte im Thema IDs zugeordnet.</para>
-          <para />
+          <para>Zurückgegebenen Daten in Excel wird ein <b>Objekt</b> , das ein zweidimensionales Array enthält. Die erste Dimension stellt die Liste der Themen-IDs. Die zweite Dimension stellt die Werte im Thema IDs zugeordnet.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

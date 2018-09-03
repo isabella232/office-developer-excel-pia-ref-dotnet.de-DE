@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20580542" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Jede <b>ColorScaleCriterion</b> ist Teil der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> Auflistung. Verwenden Sie <b>ColorScaleCriteria</b>(<paramref name="index" />), um ein einzelnes Kriterium zurückzugeben.</para>
       <para>Lassen sich die <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />, <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />, und <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> für die einzelnen Schwellenwerte für die Farbskala.</para>
-      <para />
+      <para></para>
     </remarks>
     <example>
       <para>Im folgenden Codebeispiel wird erstellt einen Nummernbereich, und klicken Sie dann gilt Regel zur bedingten Formatierung einer Farbskala mit zwei Farben für diesen Bereich. Die Farbe für den kleinsten Schwellenwert wird anschließend zugewiesen Rot und der maximalen Schwellenwerts auf Blau festgelegt, indem ein Index in der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />-Auflistung, um einzelne Kriterien festgelegt.</para>
@@ -68,8 +68,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />
         </value>
         <remarks>
-          <para>Sie können die Farbe der Minimum, Mittelpunkt oder maximale Schwellenwerte auf eine beliebige benutzerdefinierte Farbe festlegen, mit der <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> -Eigenschaft; oder verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> Eigenschaft.</para>
-          <para />
+          <para>Sie können die Farbe der Minimum, Mittelpunkt oder maximale Schwellenwerte auf eine beliebige benutzerdefinierte Farbe festlegen, mit der <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> Eigenschaft; oder die Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> -Eigenschaft.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Für die Regel zur bedingten Formatierung einer Farbskala mit zwei Farben gibt diese Eigenschaft einen Wert von "1" für den kleinsten Schwellenwert und "2" für den höchsten Schwellenwert zurück. Wenn Sie eine Regel Farbskala verwenden, werden die Werte "1" für das minimum, "2" für den mittleren und "3" für den höchsten Wert.</para>
-          <para />
+          <para>Für eine Regel zur bedingten Formatierung zweifarbigen Skalierung, diese Eigenschaft gibt einen Wert von "1" für den kleinsten Schwellenwert und "2" für den höchsten Schwellenwert zurück. Wenn Sie eine Regel Farbskala verwenden, werden die Werte "1" für das minimum, "2" für den mittleren und "3" für die maximale Schwellenwerte.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -137,8 +137,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
         </value>
         <remarks>
-          <para>Der Typ des Schwellenwerts für einen Datenbalken oder Farbe Skalierung Anzahl, Prozent, Formel oder Quantil sein kann. Festlegen des Typs auf Perzentil wird Quantil-Funktion in Excel verwenden, um den Schwellenwert bestimmen.</para>
-          <para />
+          <para>Den Typ des Schwellenwerts für einen Datenbalken oder Farbe Skalierung kann eine Zahl, Prozent, Formel oder Quantil sein. Festlegen des Typs auf Perzentil wird verwenden Quantil-Funktion in Excel zu den Schwellenwert bestimmen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -175,7 +175,7 @@
         <remarks>
           <para>Sie können festlegen, den Wert nur, wenn die <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> -Eigenschaft für die bedingte Formatierung auf eine der folgenden Konstanten festgelegt ist: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, oder <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
           <para>, Wenn der Schwellenwert für eine Formel ist, können Sie die Formel als <b>Zeichenfolge</b>festlegen. Die Formel muss eine einzelne Zahl zurückgeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

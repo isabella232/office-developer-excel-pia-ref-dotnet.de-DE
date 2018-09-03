@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20577770" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Window" />
@@ -35,7 +35,7 @@
       <para>Mithilfe von <b>Windows</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Fenstername oder die Indexzahl darstellt, um ein einzelnes <b>Window</b> -Objekt zurückzugeben.</para>
       <para>Beachten Sie, dass das aktive Fenster immer Windows(1) ist.</para>
       <para>Beschriftung des Fensters wird der Text in der Titelleiste am oberen Rand des Fensters angezeigt wird, wenn das Fenster maximiert ist. Die Beschriftung wird auch in der Liste der geöffneten Dateien unten im Menü Fenster angezeigt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> -Eigenschaft auf die Beschriftung des Fensters zurückzugeben oder festzulegen. Ändern der Beschriftung des Fensters nicht ändern Sie den Namen der Arbeitsmappe.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -146,7 +146,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Die <b>Activate</b> -Methode werden nicht Auto_aktivieren oder Auto_deaktivieren ausgeführt, die an die Arbeitsmappe angefügt werden kann. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> Methode zum Ausführen dieser Makros.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -230,7 +230,7 @@
         <remarks>
           <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft die aktive Zelle im aktiven Fenster.</para>
           <para>Achten Sie darauf, dass Sie zwischen der aktiven Zelle und der Markierung zu unterscheiden. Die aktive Zelle ist eine einzelne Zelle innerhalb der aktuellen Markierung. Die Markierung kann mehrere Zellen enthalten, aber nur eine die aktive Zelle.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -260,8 +260,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> -Objekt, das das aktive Diagramm (entweder ein eingebettetes Diagramm oder ein Diagrammblatt) darstellt. Ein eingebettetes Diagramm wird als aktiv betrachtet, wenn es entweder markiert oder aktiviert ist. Wenn kein Diagramm aktiv ist, gibt diese Eigenschaft <b>Nothing zurück</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft das aktive Diagramm in der aktiven Arbeitsmappe zurück.</para>
-          <para />
+          <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft das aktive Diagramm in der aktiven Arbeitsmappe.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -293,7 +293,7 @@
         <remarks>
           <para>Diese Eigenschaft kann nur in Arbeitsblättern und Makroblättern verwendet werden.</para>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> -Eigenschaft auf den Index des aktiven Fensterausschnitt abzurufen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -327,7 +327,7 @@
         <remarks>
           <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft das aktive Blatt in der aktiven Arbeitsmappe.</para>
           <para>, Wenn eine Arbeitsmappe in mehreren Fenstern angezeigt wird, die <b>ActiveSheet</b> -Eigenschaft ist möglicherweise unterschiedliche in unterschiedlichen Fenstern.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -482,8 +482,9 @@
         <summary>Schließt das Objekt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Die <b>Close</b> -Methode nicht in der Arbeitsmappe keine Auto_schließen-Makros ausgeführt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> zum Ausführen des Auto-Methode schließen Makros.</para>
-          <para />
+          <para>
+            <b>Close</b> -Methode wird keine Auto_schließen-Makros in der Arbeitsmappe nicht ausgeführt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> zum Ausführen des Auto-Methode schließen Makros.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -515,7 +516,7 @@
         <remarks>
           <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
           <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -550,7 +551,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makrovorlagen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -586,7 +587,7 @@
         <remarks>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makrovorlagen.</para>
           <para>Wirkt sich auf diese Eigenschaft, nur Gitternetzlinien angezeigt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> Eigenschaft, um das Drucken von Gitternetzlinien steuern.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -622,7 +623,7 @@
         <remarks>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makrovorlagen.</para>
           <para>Wirkt sich auf diese Eigenschaft, nur Überschriften angezeigt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> -Eigenschaft auf das Drucken der Zeilen-und Spaltenköpfe steuern.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -689,7 +690,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makrovorlagen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -888,7 +889,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makrovorlagen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -954,9 +955,9 @@
           <b>True,</b> wenn geteilte Ausschnitte fixiert sind.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Ist es möglich, dass <b>FreezePanes </b>auf <b>True</b> festgelegt ist und <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> auf <b>false festgelegt</b>sein, oder umgekehrt.</para>
+          <para>Es ist möglich, dass <b>FreezePanes </b>auf <b>True</b> festgelegt ist und <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> auf <b>false festgelegt</b>sein, oder umgekehrt.</para>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makrovorlagen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1021,7 +1022,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Legen Sie diese Eigenschaft auf <b>xlColorIndexAutomatic fest</b> , um die automatische Farbe anzugeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1055,7 +1056,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> Eigenschaft, um die maximale Größe des Fensters zu bestimmen. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1150,7 +1151,7 @@
           <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Seiten nach oben.</para>
           <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, Bildlauf zu der drei Seiten nach rechts.</para>
           <para>Eines der Argumente kann auch eine negative Zahl sein.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1242,7 +1243,7 @@
         <remarks>
           <para>Von dieser Eigenschaft angegebene Prozedur wird nicht ausgeführt werden, wenn andere Prozeduren wechseln, um das Fenster oder ein Befehl So wechseln Sie zu einem Fenster über einen DDE-Kanal empfangen wird. Stattdessen das Verfahren reagiert auf Benutzeraktionen, wie das Klicken auf ein Fenster mit der Maus aus, klicken auf Gehe zu im Menü Bearbeiten usw..</para>
           <para>Weist ein Arbeitsblatt oder eine Makrovorlage ein Auto_aktivieren- oder Auto_deaktivieren-Makro festgelegt, werden diese Makros von der <b>OnWindow</b> -Eigenschaft angegebene Prozedur ausgeführt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1272,8 +1273,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> -Auflistung, die alle Ausschnitte im angegebenen Fenster darstellt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft steht für ein Fenster nur, wenn des Fensters <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> -Eigenschaft kann auf <b>True</b>festgelegt werden.</para>
-          <para />
+          <para>Diese Eigenschaft steht für ein Fenster nur, wenn des Fensters <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> -Eigenschaft auf <b>True</b>festgelegt werden kann.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1406,7 +1407,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>"Seiten" in den Beschreibungen des <paramref name="From" /> und <paramref name="To" /> bezieht sich auf gedruckte Seiten – nicht auf sämtliche Seiten des Arbeitsblatts oder der Arbeitsmappe.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1500,7 +1501,7 @@
           <para>Wenn ein Graphic-Objekt in einem Arbeitsblatt ausgewählt wird die <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> -Eigenschaft gibt das Graphic-Objekt anstelle eines <b>Range</b> -Objekts zurück. die <b>RangeSelection</b> -Eigenschaft gibt den Bereich der Zellen, die ausgewählt wurde, bevor das Graphic-Objekt ausgewählt wurde.</para>
           <para>Diese Eigenschaft und die Eigenschaft <b>Selection</b> geben identische Werte zurück, wenn auf dem Arbeitsblatt ein Bereich (also kein Grafikobjekt) markiert ist.</para>
           <para>Ist das aktive Blatt im angegebenen Fenster nicht um ein Arbeitsblatt handelt, schlägt diese Eigenschaft.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1532,10 +1533,7 @@
       <Docs>
         <summary>Gibt zurück oder legt die Anzahl der am weitesten links stehende Spalte im Bereich oder Fenster fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Fenster geteilt ist, wird die <b>ScrollColumn</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Window" /> -Objekt verweist auf die linke obere Bereich. Wenn die Bereiche fixiert sind, schließt die <b>ScrollColumn</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche aus.</para>
-          <para />
-        </remarks>
+        <remarks>Wenn das Fenster geteilt ist, wird die <b>ScrollColumn</b> -Eigenschaft des <para>der <see cref="T:Microsoft.Office.Interop.Excel.Window" /> -Objekt verweist auf die linke obere Bereich. Wenn die Bereiche fixiert sind, schließt die <b>ScrollColumn</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -1575,8 +1573,8 @@
         <param name="Start">Optionaler <b>Integer</b>-Wert. <b>True</b> , wenn die linke obere Ecke des Rechtecks in der oberen linken Ecke des Dokumentfensters oder Bereich angezeigt werden. <b>False</b> , wenn der unteren rechten Ecke des Rechtecks in der unteren rechten Ecke des Dokumentfensters oder Bereich angezeigt werden. Der Standardwert ist <b>True</b>.</param>
         <summary>Rollt das Dokumentfenster, sodass der Inhalt eines angegebenen rechteckigen Bereichs in der linken oberen oder unteren rechten Ecke des Dokumentfensters oder Bereich angezeigt wird.</summary>
         <remarks>
-          <para>Die <paramref name="Start" /> Argument eignet sich zum Ausrichten der Bildschirmanzeige, wenn das Rechteck größer als das Dokumentfenster oder der Bereich ist.</para>
-          <para />
+          <para>Der <paramref name="Start" /> Argument eignet sich für die Bildschirmanzeige auszurichten, wenn das Rechteck größer als das Dokumentfenster oder der Bereich ist-Fensterausschnitt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1608,10 +1606,7 @@
       <Docs>
         <summary>Zurückgeben oder festlegen die Anzahl der Zeilen, die angezeigt wird am oberen Rand der Bereich oder Fenster.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Fenster geteilt ist, wird die <b>ScrollRow</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Window" /> -Objekt verweist auf die linke obere Bereich. Wenn die Bereiche fixiert sind, schließt die <b>ScrollRow</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche aus.</para>
-          <para />
-        </remarks>
+        <remarks>Wenn das Fenster geteilt ist, wird die <b>ScrollRow</b> -Eigenschaft des <para>der <see cref="T:Microsoft.Office.Interop.Excel.Window" /> -Objekt verweist auf die linke obere Bereich. Wenn die Bereiche fixiert sind, schließt die <b>ScrollRow</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollWorkbookTabs">
@@ -1643,8 +1638,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>ScrollWorkbookTabs</b> -Methode wirkt sich nicht auf das aktive Blatt in der Arbeitsmappe aus.</para>
-          <para />
+            <b>ScrollWorkbookTabs</b> -Methode wirkt sich nicht auf das aktive Blatt in der Arbeitsmappe.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1704,7 +1699,7 @@
         <remarks>
           <para>Der Typ des zurückgegebenen Objekts hängt von der aktuellen Auswahl (beispielsweise, wenn eine Zelle ausgewählt ist, gibt diese Eigenschaft eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt). Die <b>Selection</b> -Eigenschaft gibt <b>Nothing zurück</b> , wenn nichts markiert ist.</para>
           <para>Verwendung dieser Eigenschaft ohne einen Objektbezeichner entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1773,7 +1768,7 @@
           <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Zeilen.</para>
           <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, Bildlauf zu den drei Spalten nach rechts.</para>
           <para>Jedes dieser Argumente kann auch eine negative Zahl sein.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1807,9 +1802,9 @@
           <b>True,</b> Wenn das Fenster geteilt ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Ist es möglich, dass <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /><b>False</b>, <b>True</b> und <b>Teilen</b> können und umgekehrt.</para>
+          <para>Es ist möglich, dass <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /><b>False</b>, <b>True</b> und <b>Teilen</b> können und umgekehrt.</para>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makrovorlagen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1967,7 +1962,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft hat keine Wirkung, wenn <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> auf <b>False</b> festgelegt ist (bleibt ihr Wert, aber er hat keine Auswirkung auf die Anzeige).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2000,8 +1995,8 @@
         <summary>Der Abstand in Punkt vom oberen Rand des Fensters zum oberen Rand des verwendbaren Bereichs (unterhalb der Menüs, Symbolleisten verankert den oberen Bereich und der Bearbeitungsleiste).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft für ein maximiertes Fenster kann nicht festgelegt werden. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> -Eigenschaft auf den Status des Fensters zurückgeben oder festlegen.</para>
-          <para />
+          <para>Können nicht Sie diese Eigenschaft für ein maximiertes Fenster festgelegt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> -Eigenschaft auf den Status des Fensters zurückgeben oder festlegen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2209,7 +2204,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> Eigenschaft, um die maximale Größe des Fensters zu bestimmen. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2240,7 +2235,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Die Fensternummer ist nicht identisch mit dem Fensterindex (den Rückgabewert der <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> -Eigenschaft), also die Position des Fensters innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> Auflistung.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2306,7 +2301,7 @@
         <remarks>
           <para>Sie können diese Eigenschaft auch festlegen, auf <b>true fest,</b> um die Größe des Fensters angepasst wird die aktuelle Markierung zu machen.</para>
           <para>Wirkt sich auf diese Funktion nur das Blatt, das im Fenster derzeit aktiv ist. Um diese Eigenschaft in anderen Arbeitsblättern verwenden, Sie müssen zuerst aktiviert werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

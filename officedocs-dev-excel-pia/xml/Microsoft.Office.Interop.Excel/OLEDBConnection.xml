@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20576209" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEDBConnection" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Eine OLE DB-Verbindung kann in einer Excel-Arbeitsmappe gespeichert werden.  Wenn in Microsoft Excel die Arbeitsmappe geöffnet wird, erstellt Excel eine speicherinterne Kopie der OLE DB-Verbindung als bezeichnet die <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> -Objekt.</para>
       <para>Ein <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> -Objekt enthält Informationen, die im Zusammenhang mit der Verbindung, beispielsweise den Namen des Servers für die Verbindung und den Namen der Objekte, die auf dem Server geöffnet sein.  Optional können Sie die <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> Objekt kann auch Anmeldeinformationen für die Authentifizierung oder einen Befehl, der an den Server übergeben und ausgeführt wird (beispielsweise eine SELECT-Anweisung, die von SQL Server ausgeführt werden) enthalten.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -69,7 +69,7 @@
         <remarks>
           <para>Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> -Eigenschaft verfügbar macht, die Microsoft Excel-Verbindung an den Datenanbieter, sodass der Benutzer Code im Kontext derselben Sitzung zu schreiben, die Excel verwendet. </para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> Eigenschaft steht nur für Sitzungen, in dem ein OLE DB-Datenquelle ist die Datenquelle. Wenn keine ADO-Sitzung vorhanden ist, führt die Abfrage zu einem Laufzeitfehler.  Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> -Eigenschaft kann für einen beliebigen OLE DB-basierten Cache mit ADO verwendet werden. Das ADO-Connection-Objekt kann mit ADO MD verwendet werden, für die Suche nach Informationen zu OLAP-Cubes auf dem Cache basiert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -105,8 +105,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Wenn diese Eigenschaft auf <b>True</b> festgelegt ist wird die Verbindungsdatei immer zum Herstellen der Verbindung mit der Datenquelle verwendet werden.  Wenn die in der Arbeitsmappe eingebettete Verbindung von der externen Verbindungsdatei unterscheidet, wird die eingebettete Verbindung ignoriert und die externen Verbindungsdatei wird als einzige Version berücksichtigt.</para>
-          <para />
+          <para>, Wenn diese Eigenschaft <b>True</b> die Verbindungsdatei ist wird immer zum Herstellen der Verbindung mit der Datenquelle verwendet werden.  Wenn die in der Arbeitsmappe eingebettete Verbindung von der externen Verbindungsdatei unterscheidet, wird die eingebettete Verbindung ignoriert und die externen Verbindungsdatei wird als einzige Version berücksichtigt.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
         </value>
         <remarks>
           <para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Bei OLAP-Datenquellen ist diese Eigenschaft ist schreibgeschützt und gibt immer <b>False</b>zurück.</para>
-          <para />
+          <para>Für OLAP-Datenquellen ist diese Eigenschaft ist schreibgeschützt und gibt immer <b>False</b>zurück.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -208,7 +208,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> -Auflistung, um berechnete Elemente für mehrere PivotTables und Cubefunktionen Funktionen freigeben, die die gleiche Verbindung verwenden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
         <summary>Bricht alle laufenden Aktualisierungsvorgänge für die angegebene OLE DB-Verbindung ab.</summary>
         <remarks>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> Eigenschaft, um zu bestimmen, ob aktuell ein Aktualisierungsvorgang ausgeführt wird.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -273,7 +273,7 @@
         <remarks>
           <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> Eigenschaft anstelle der <b>SQL</b>-Eigenschaft, die nun in erster Linie für die Kompatibilität mit früheren Versionen von Microsoft Excel vorhanden ist. Wenn Sie beide Eigenschaften verwenden, die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> Wert der Eigenschaft hat Vorrang vor.</para>
           <para>Der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" /> -Eigenschaft beschreibt den Wert der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> -Eigenschaft.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -307,10 +307,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />
         </value>
-        <remarks>
-          <para>Die zurückgegebene oder festgelegte Konstante beschreibt den Wert der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> Eigenschaft. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />.</para>
-          <para />
-        </remarks>
+        <remarks>Die Konstante, die zurückgegebene oder festgelegte <para>beschreibt den Wert der der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> Eigenschaft. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />. </para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -344,8 +341,8 @@
           <b>Objekt</b>
         </value>
         <remarks>
-          <para>Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> Eigenschaft wird die Verbindung zur Datenquelle nicht sofort initiiert. Sie müssen verwenden die <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> -Methode zum Herstellen der Verbindung und die Daten abzurufen.  Offline-Cubedatei legen fest, die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> -Eigenschaft auf <b>true fest,</b> und die Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> -Eigenschaft statt der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> Eigenschaft.</para>
-          <para />
+          <para>Einstellung der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> Eigenschaft wird die Verbindung zur Datenquelle nicht sofort initiiert. Sie müssen verwenden die <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> -Methode zum Herstellen der Verbindung und die Daten abzurufen.  Offline-Cubedatei legen fest, die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> -Eigenschaft auf <b>true fest,</b> und Verwenden der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> -Eigenschaft statt der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> -Eigenschaft.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -377,8 +374,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para />
+          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -414,8 +411,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> -Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
-          <para />
+          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> -Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -447,8 +444,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" /> Eigenschaft wird nicht überprüft, um festzustellen, ob die Verbindung besteht. Auch wenn diese Eigenschaft gibt<b>True</b>zurück, konnte das Senden von Befehlen an den Anbieter tritt ein Fehler Laufzeitfehler, wenn die Verbindung nicht mehr gültig ist.</para>
-          <para />
+          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" /> Eigenschaft wird nicht überprüft, um festzustellen, ob die Verbindung besteht. Auch wenn diese Eigenschaft gibt<b>True</b>zurück, Senden von Befehlen an den Anbieter konnte bewirken einen Fehler, wenn die Verbindung nicht mehr gültig ist.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -486,7 +483,7 @@
           <para>Für eine nicht-OLAP-Datenquelle, den Wert der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> -Eigenschaft ist eine leere Zeichenfolge, und die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
           <para>Einstellung der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> Eigenschaft wird die Verbindung zur Datenquelle nicht sofort initiiert. Sie müssen zunächst mit dem der <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> -Methode zum Herstellen der Verbindung und die Daten abzurufen.</para>
           <para>Der Wert von der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> -Eigenschaft wird verwendet, wenn die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> -Eigenschaft auf <b>True</b>festgelegt ist. Wenn die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> -Eigenschaft auf <b>False</b>festgelegt ist die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> -Eigenschaft gibt die Verbindungszeichenfolge für Abfragetabellen basierend auf anderen Quellen als lokale Cubedateien.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -521,7 +518,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Vor dem Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> -Eigenschaft wird ein neues Gebietsschema, Sie müssen festlegen, die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> Objekts auf <b>false festgelegt</b>. Suchen Sie Informationen zu gültigen Werten für Gebietsschema-ID (LCID), die MSDN-Website nach "Gebietsschema-IDs Assigned by Microsoft".</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -558,8 +555,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Der Standardwert ist <b>True</b>. Wenn Sie häufig verwendete Abfragen an einen Server erwarten, möglicherweise durch Festlegen dieser Eigenschaft auf <b>true fest,</b> Leistung verbessern, da Zeit wiederhergestellt werden. Durch Festlegen dieser Eigenschaft auf <b>False</b> festgelegt, dass eine offene Verbindung geschlossen wird.</para>
-          <para />
+          <para>Der Standardwert ist <b>True</b>. Wenn Sie häufig verwendete Abfragen an einen Server erwarten, möglicherweise durch Festlegen dieser Eigenschaft auf <b>true fest,</b> Leistung verbessern, da Zeit wiederhergestellt werden. Durch Festlegen dieser Eigenschaft auf <b>False</b> bewirkt, dass eine offene Verbindung geschlossen wird.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -589,7 +586,7 @@
           <para>Die <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" /> -Methode kann verwendet werden, wenn eine Verbindung getrennt wird und der Benutzer die Verbindung erneut herstellen möchte. </para>
           <para>Verschiedene Objekte und Methoden möglicherweise zurückgeben einen Laufzeitfehler, wenn die Verbindung getrennt wird. Mit dieser Methode wird durch eine Verbindung, bevor weitere Objekte oder Methoden ausgeführt.</para>
           <para>Diese Methode führt zu einem Laufzeitfehler, wenn die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> -Eigenschaft des angegebenen OLE DB-Verbindung auf <b>False</b>festgelegt wurde.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -739,7 +736,7 @@
           <para>Nachdem die Verbindung hergestellt ist, wird die SQL-Abfrage überprüft. Wenn die Abfrage nicht gültig ist, ist die <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> -Methode schlägt fehl, mit der Ausnahme von SQL-Syntaxfehler.</para>
           <para>Der <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> -Methode gibt <b>True</b> zurück, wenn die Abfrage erfolgreich abgeschlossen oder gestartet ist; es gibt <b>False</b> zurück, wenn der Benutzer eine Verbindung abbricht.</para>
           <para>Zu sehen, ob die Anzahl der abgerufenen Zeilen die Anzahl der verfügbaren Zeilen im Arbeitsblatt übersteigt, untersuchen Sie die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> Eigenschaft. Diese Eigenschaft wird jedes Mal initialisiert die <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> -Methode aufgerufen wird.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -771,8 +768,8 @@
           <b>DateTime</b>
         </value>
         <remarks>
-          <para>Bei OLAP-Datenquellen ist diese Eigenschaft nach jeder Abfrage aktualisiert.</para>
-          <para />
+          <para>Für OLAP-Datenquellen ist diese Eigenschaft nach jeder Abfrage aktualisiert.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -806,7 +803,7 @@
         </value>
         <remarks>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> -Methode, um Hintergrundabfragen abzubrechen.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -843,7 +840,7 @@
         </value>
         <remarks>
           <para>Die Verbindungen werden nicht automatisch aktualisiert, wenn beim Öffnen der Arbeitsmappe mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode in Visual Basic. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> -Methode, um die Daten zu aktualisieren, nachdem die Arbeitsmappe geöffnet ist.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -879,7 +876,7 @@
         </value>
         <remarks>
           <para>Festlegen des Zeitraums auf 0 (null) deaktiviert die automatische Intervallen aktualisiert und entspricht dem Festlegen dieser Eigenschaft auf <b>null festgelegt</b>. Der Wert der <b>RefreshPeriod</b> -Eigenschaft kann eine ganze Zahl zwischen 0 und 32767 sein.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -915,8 +912,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Wenn diese Eigenschaft auf <b>False</b>festgelegt ist, wird stattdessen der LCID-Wert in der Verbindungszeichenfolge verwendet. Wenn keine LCID angegeben ist, wird die Standard-LCID vom Server verwendet.</para>
-          <para />
+          <para>, Wenn diese Eigenschaft auf <b>false festgelegt</b>, den LCID-Wert in der Verbindungszeichenfolge festgelegt ist, wird stattdessen verwendet. Wenn keine LCID angegeben ist, wird die Standard-LCID vom Server verwendet.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -953,7 +950,7 @@
         <remarks>
           <para>, Wenn Sie robusteren Konnektivität verwenden, wenn Microsoft Excel zum Herstellen einer Verbindung mithilfe der Arbeitsmappe Verbindungsinformationen kann, Excel prüfen, ob die arbeitsmappenverbindung einen Pfad zu einer externen Verbindungsdatei hat.  Wenn dies der Fall ist, wird Excel öffnen Sie die externen Verbindungsdatei und versuchen, eine Verbindung über die in der externen Verbindungsdatei enthaltenen Informationen.  Wenn eine Verbindung hergestellt werden kann, und zwar hinter using externen Verbindungsdatei, aktualisiert Excel klicken Sie dann die Arbeitsmappe Connection-Objekt.  </para>
           <para>Dadurch wird die robusten-Konnektivität in Szenarien, in dem eine IT-Abteilung verwaltet und aktualisiert Verbindungen an einem zentralen Ort, wobei Arbeitsmappe automatisch die Abrufen eines Benutzers, wenn aktualisiert die frühere Version von der Connection (innerhalb der Arbeitsmappe zwischengespeichert) fällt aus. </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1021,7 +1018,7 @@
         </value>
         <remarks>
           <para>Diese Eigenschaft wird in ODBC- und OLEDB-Abfragen sowie von PivotTables und Abfragetabellen verwendet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1291,8 +1288,8 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Bei dateibasierten Datenquellen (z. B. Access) der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> -Eigenschaft enthält einen vollqualifizierten Pfad zu die Quelldatendatei. Es ist null für basierenden Datenquellen (z. B. SQL Server). Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> -Eigenschaft ist festgelegt auf null, wenn die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> -Eigenschaft programmgesteuert geändert wird.</para>
-          <para />
+          <para>Für dateibasierten Datenquellen (z. B. Access) der <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> -Eigenschaft enthält einen vollqualifizierten Pfad zu die Quelldatendatei. Es ist null für basierenden Datenquellen (z. B. SQL Server). Die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> -Eigenschaft ist festgelegt auf null, wenn die <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> -Eigenschaft programmgesteuert geändert wird.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1328,8 +1325,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>In diesem Beispiel wird die Verbindungszeichenfolge des ersten PivotTable-Caches auf eine Offlinecubedatei zu verweisen.</para>
-          <para />
+          <para>In diesem Beispiel wird die Verbindungszeichenfolge des ersten PivotTable-Caches auf eine Offlinecubedatei verweisen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
