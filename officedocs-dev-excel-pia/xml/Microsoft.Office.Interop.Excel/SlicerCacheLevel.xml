@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587269" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Stellt eine Hierarchieebene in einer durch einen Datenschnitt gefilterten OLAP-Datenquelle dar</summary>
     <remarks>
-      <para>Wenn Sie ein Datenschnitt zum Filtern einer OLAP-Datenquelle verwendet wird, kann der Datenschnittcache, denen, dem er zugeordnet ist, mehreren Hierarchieebenen aus der Datenquelle enthalten. Verwendung der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> Auflistung des übergeordneten <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt in Access der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> -Objekten, die diese Hierarchieebenen darstellen.</para>
-      <para />
+      <para>, Wenn Sie ein Datenschnitt zum Filtern einer OLAP-Datenquelle verwendet wird, kann der Datenschnittcache, denen, dem er zugeordnet ist, mehreren Hierarchieebenen aus der Datenquelle enthalten. Verwendung der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> Auflistung des übergeordneten <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt in Access der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> -Objekten, die diese Hierarchieebenen darstellen.</para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -62,8 +62,8 @@
         <summary>Wenn Sie ohne einen Objektbezeichner verwendet wird, ruft diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, ruft diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -93,8 +93,8 @@
         <summary>Ruft die Anzahl der <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> Objekte des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt.</summary>
         <value>Die Anzahl der <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> Objekte des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -126,7 +126,7 @@
         <remarks>
           <para>Nur-Lese- <b>long</b>.</para>
           <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -162,7 +162,7 @@
           <para>Lese-/Schreibzugriff.</para>
           <para>Ist mehr als ein Datenschnitt zugeordnet, mit der gleichen PivotTable standardmäßig, wenn Elemente filtern nach in einem Datenschnitt keine entsprechenden Daten in einer anderen Datenschnitt enthalten, werden diese Elemente abgeblendet. Beispielsweise sind, wenn Sie Land Datenschnitt und einen Datenschnitt Zustand, und Sie auf ein Land im Datenschnitt Country, alle Zustände im Datenschnitt Zustand, die nicht, Land abgeblendet angezeigt wird. Diese Funktion wird als "Filterung schneidet." bezeichnet</para>
           <para>Der Benutzeroberfläche Einstellungen, die die Einstellung der entsprechen, den <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> -Eigenschaft sind die visuell Elemente ohne Daten und Anzeigen von Elementen mit keine Daten letzten Kontrollkästchen im Dialogfeld Datenschnitt Einstellungen anzugeben. Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> -Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> entspricht der Auswahl sowohl die letzten Kontrollkästchen Elemente ohne Daten anzeigen und visuell Elemente ohne Daten anzugeben. Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> -Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> entspricht der Auswahl nur die Elemente mit keine Kontrollkästchen Daten visuell anzugeben. Deaktivieren beide Kontrollkästchen entspricht der Einstellung der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> -Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para> Filtern von nicht-OLAP-Datenquellen 
-          <para>Datenschnitte (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>) werden nicht unterstützt, durch die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt. Verwenden Sie für Datenschnitte, Filtern von PivotTables auf Bereiche, Listen und relationalen nicht-OLAP-Datenquellen basieren, die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt stattdessen.</para><para /></remarks>
+          <para>Datenschnitte (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>) werden nicht unterstützt, durch die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt. Verwenden Sie für Datenschnitte, Filtern von PivotTables auf Bereiche, Listen und relationalen nicht-OLAP-Datenquellen basieren, die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt stattdessen.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -219,8 +219,8 @@
         <summary>Ruft den 1 beginnenden Ordnungswert der Hierarchieebene, dargestellt durch die angegebene <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt.</summary>
         <value>Der 1-basierte Ordnungswerts der Hierarchieebene, dargestellt durch die angegebene <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -250,8 +250,8 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt für das angegebene <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt für das angegebene <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -281,8 +281,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> -Auflistung, die die Auflistung aller Datenschnitt Elemente für die angegebene Ebene enthält.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> -Auflistung, die die Auflistung aller Datenschnitt Elemente für die angegebene Ebene enthält.</value>
         <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
+          <para>Read-only.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -317,7 +317,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>Die Standardeinstellung dieser Eigenschaft ist <b>XlDataSourceOrder</b> (1).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -349,7 +349,7 @@
         <remarks>
           <para>Read-only.</para>
           <para>Die Liste der datenschnittelemente werden als eindeutigen MDX-Zeichenfolgen zurückgegeben. Wenn diese Liste leer ist, der Datenschnitt ist nicht die Datenquelle filtern und alle Kacheln angezeigt werden, als Datenschnitt ausgewählt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

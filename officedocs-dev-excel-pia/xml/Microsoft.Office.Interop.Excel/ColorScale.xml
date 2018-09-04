@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20585589" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScale" />
@@ -34,7 +34,7 @@
       <para>Alle Objekte für bedingte Formatierung enthaltenen ein <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> -Auflistungsobjekt, das ein untergeordnetes Element von einer <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Auflistung. Sie können eine Regel mithilfe einer Formatierung einer Farbskala Erstellen der <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> -Methode der <b>FormatConditions</b> -Auflistung.</para>
       <para>Farbe skaliert werden visual Daten Verteilung und Variation Leitfäden, die Ihnen helfen zu verstehen. Sie können einen zweifarbigen oder einer Farbskala auf einen Bereich von Daten, Daten in einer Tabelle oder Daten in einem PivotTable-Bericht anwenden. Für einen zweifarbigen bedingten farbskalenformatierung weisen Sie den Wert, den Typ und die Farbe der niedrigste und der höchste Schwellenwerten eines Bereichs. Eine Farbskala verfügt auch über eine mittlere Schwelle.</para>
       <para>Die Schwellenwerte wird durch Festlegen der Eigenschaften von bestimmt die <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> Objekt. <b>ColorScaleCriteria</b> -Objekt, das ein untergeordnetes Element des <b>ColorScale</b> -Objekts, ist eine Auflistung aller von der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> -Objekte für die Farbskala.</para>
-      <para />
+      <para></para>
     </remarks>
     <example>
       <para>Im folgenden Codebeispiel wird erstellt einen Nummernbereich, und klicken Sie dann gilt Regel zur bedingten Formatierung einer Farbskala mit zwei Farben für diesen Bereich. Die Farbe für den kleinsten Schwellenwert wird dann rot und der maximalen Schwellenwerts zugewiesen auf Blau festgelegt.</para>
@@ -328,7 +328,7 @@
           <b>Anwendung</b> (siehe oben)</value>
         <remarks>
           <para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -420,8 +420,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para />
+          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -481,8 +481,8 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Diese Eigenschaft ist hilfreich, den Bereich von Werten zu begrenzen, die die bedingte Formatierung angezeigt wird. Ein herkömmliches Szenario ist, wenn Sie einen Bereich von Zahlen, positive und negative Werte enthält. Sie möchten mehr als ein bedingtes Format für diesen Bereich Nummern zu erstellen – eines für positive Werte und ein weiteres für negative Werte.</para>
-          <para />
+          <para>Eignet sich diese Eigenschaft Beschränken des Bereichs der Werte, die die bedingte Formatierung angezeigt werden. Ein herkömmliches Szenario ist, wenn Sie einen Bereich von Zahlen, positive und negative Werte enthält. Sie möchten mehr als ein bedingtes Format für diesen Bereich Nummern zu erstellen – eines für positive Werte und ein weiteres für negative Werte.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -513,7 +513,7 @@
         <remarks>
           <para>Der Bereich muss in der A1-Bezugsart und werden vollständig in das Blatt, das das übergeordnete Objekt des ist enthalten die <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistung. Sie können den Bereichsoperator (Doppelpunkt), der Schnittmengenoperator (ein Leerzeichen) oder der union-Operator (Komma) enthalten. Dollarzeichen kann auch verwendet werden, aber sie werden ignoriert.</para>
           <para>Sie können auch einen lokalen, definierten Namen in einem beliebigen Teil des Bereichs verwenden, aber der Name muss sich in der Sprache des Makros.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -578,8 +578,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Beim Festlegen der Priorität muss der Wert eine positive ganze Zahl zwischen 1 und der Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt. Die Priorität muss einen eindeutigen Wert für alle Regeln im Arbeitsblatt so ändern die Priorität für die angegebene Regel zur bedingten Formatierung den Prioritätswert anderen Regeln im Arbeitsblatt verschoben werden sollen führen kann.</para>
-          <para />
+          <para>Beim Festlegen der Priorität, die der Wert muss eine positive ganze Zahl zwischen 1 und der Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt. Die Priorität muss einen eindeutigen Wert für alle Regeln im Arbeitsblatt, so ändern die Priorität für die angegebene Regel zur bedingten Formatierung kann dazu führen, dass den Prioritätswert anderen Regeln im Arbeitsblatt verschoben werden sollen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -644,8 +644,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />Eigenschaft.</para>
-          <para />
+          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />-Eigenschaft.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -675,7 +675,7 @@
           <para>Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt vorhanden sind, wenn die Regel nicht zuvor Priorität "1" festgelegt wurde, verursacht diese Methode die Priorität aller anderen vorhandenen Regeln auf dem Arbeitsblatt um 1 erhöht.</para>
           <para>
             <b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -701,7 +701,7 @@
       <Parameters />
       <Docs>
         <summary>Legt die Auswertungsreihenfolge für diese Regel zur bedingten Formatierung fest, sodass sie nach allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
-        <remarks>Der aktuelle Wert der Priorität <para>wird die Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt entsprechen. Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt haben, verursacht diese Methode die Priorität der Regeln, die einen Prioritätswert größer als dieser Regel um 1 erhöht werden hatte.</para><para><b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para><para /></remarks>
+        <remarks>Der aktuelle Wert der Priorität <para>wird die Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt entsprechen. Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt haben, verursacht diese Methode die Priorität der Regeln, die einen Prioritätswert größer als dieser Regel um 1 erhöht werden hatte.</para><para><b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -733,7 +733,7 @@
         </value>
         <remarks>
           <para>Zur Unterstützung der Abwärtskompatibilität ist der Standardwert für diese Eigenschaft <b>True</b>das Gegenteil des Verhaltens einer Formatierungsregel ist Regel in der Benutzeroberfläche erstellt.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -766,7 +766,7 @@
         </value>
         <remarks>
           <para>Diese Eigenschaft gibt immer einen <b>Integer</b> -Wert der "3", was entspricht zurück <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587514" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
@@ -40,7 +40,7 @@
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> Eigenschaft, um ein <b>FormatConditions</b> -Objekt zurückzugeben. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein neues bedingtes Format erstellen und Verwenden der <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein bestehendes bedingtes Format zu ändern.</para>
       <para>, Wenn Sie versuchen, mehr als drei bedingte Formate für einen Bereich zu erstellen, schlägt die <b>Add</b> -Methode. Wenn ein Bereich drei Formate hat, Sie die <b>Modify</b> -Methode verwenden können, um eines der Formate zu ändern oder können die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> -Methode, um ein Format löschen, und klicken Sie dann die <b>Add</b> -Methode verwenden, um ein neues Format erstellen.</para>
       <para>Weitere Informationen zu bedingten Formaten finden Sie unter der <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> -Objekt.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -119,8 +119,8 @@
         <summary>Fügt ein neues bedingtes Format hinzu.</summary>
         <returns>Ein <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> -Objekt, das das neue bedingte Format darstellt.</returns>
         <remarks>
-          <para>Sie können nicht mehr als drei bedingte Formate für einen Bereich definieren. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein bestehendes bedingtes Format zu ändern, oder verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> -Methode, um ein vorhandenes Format zu löschen, bevor Sie eine neue hinzufügen.</para>
-          <para />
+          <para>Kann nicht mehr als drei bedingte Formate für einen Bereich festlegen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein bestehendes bedingtes Format zu ändern, oder verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> -Methode, um ein vorhandenes Format zu löschen, bevor Sie eine neue hinzufügen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -149,8 +149,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />Objekt</returns>
         <remarks>
-          <para>Die <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> -Objekt wird verwendet, um Werte über oder unter einem Mittelwert oder der Standardabweichung in einem Bereich von Zellen zu suchen. Beispielsweise finden Sie die oben genannten durchschnittlichen Ausführenden einer jährlichen Leistung Überprüfung oder Sie können hergestellte Materialien, die unter zwei Standardabweichungen in eine Bewertung Qualität fallen suchen.</para>
-          <para />
+          <para>Der <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> -Objekt wird verwendet, um Werte über oder unter einem Mittelwert oder der Standardabweichung in einem Bereich von Zellen zu suchen. Beispielsweise finden Sie die oben genannten durchschnittlichen Ausführenden einer jährlichen Leistung Überprüfung oder wählen Sie hergestellte Materialien, die unter zwei Standardabweichungen in eine Bewertung Qualität fallen.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -182,8 +182,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />Objekt</returns>
         <remarks>
-          <para>Farbskalen stellen optische Daten Verteilung und Variation Leitfäden, die Ihnen helfen zu verstehen. Eine Farbskala können Sie relative Differenzen der Werte von Zellen in einem bestimmten Zahlenbereich zu identifizieren, mithilfe von Farbe Variation. Verschiedene Farben und bei der Abstufungen zwischen Farben darstellen Unterschiede in Zellenwerten. In einer Skala können Sie beispielsweise angeben, dass Zellen mit der höchsten relativen Datenwerten grün sind, Zellen mit mittleren Werten gelb und Zellen mit den niedrigsten Werten rot sind.</para>
-          <para />
+          <para>Farbe skaliert werden visual Daten Verteilung und Variation Leitfäden, die Ihnen helfen zu verstehen. Eine Farbskala können Sie relative Differenzen der Werte von Zellen in einem bestimmten Zahlenbereich zu identifizieren, mithilfe von Farbe Variation. Verschiedene Farben und bei der Abstufungen zwischen Farben darstellen Unterschiede in Zellenwerten. Beispielsweise in einer Skala, Sie können angeben, dass Zellen mit der höchsten relativen Datenwerten grün sind, Zellen mit mittleren Werten gelb und Zellen mit den niedrigsten Werte red. werden</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -212,8 +212,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Databar" />Objekt</returns>
         <remarks>
-          <para>Datenbalken können Sie den Wert einer Zelle relativ zu anderen Zellen anzeigen. Die Länge des Datenbalkens stellt den Wert in der Zelle. Ein längerer Balken stellt einen höheren Wert und ein kürzerer Balken einen niedrigeren Wert darstellt. Datenbalken sind hilfreich beim Suchen höherer und niedrigerer Zahlen insbesondere im Hinblick auf große Datenmengen, wie oben und unten Spielwaren in einem Bericht.</para>
-          <para />
+          <para>Datenbalken können Sie den Wert einer Zelle relativ zu anderen Zellen anzeigen. Die Länge des Datenbalkens stellt den Wert in der Zelle. Ein längerer Balken stellt einen höheren Wert und ein kürzerer Balken einen niedrigeren Wert darstellt. Datenbalken sind hilfreich beim Suchen höherer und niedrigerer Zahlen insbesondere im Hinblick auf große Datenmengen, wie oben und unten Spielwaren in einem Umsatzbericht.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -242,8 +242,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />Objekt</returns>
         <remarks>
-          <para>Verwenden Sie einem Symbolsatz Anmerkungen und Klassifizieren von Daten in drei bis fünf Kategorien, die durch einen Schwellenwert getrennt. Jedes Symbol steht für einen Bereich von Werten. Beispielsweise in der 3 Pfeile Symbolsatz der roten Aufwärtspfeil höhere Werte darstellt, der gelbe Pfeil zur Seite mittlere Werte darstellt, und der grünen Pfeil nach unten niedrige Werte dar.</para>
-          <para />
+          <para>Verwendung legen Sie ein Symbol auf Daten kennzeichnen und in drei bis fünf Kategorien, die durch einen Schwellenwert getrennt. Jedes Symbol steht für einen Bereich von Werten. Beispielsweise in der 3 Pfeile Symbolsatz der roten Aufwärtspfeil höhere Werte darstellt, der gelbe Pfeil zur Seite mittlere Werte darstellt und der grünen Pfeil nach unten niedrige Werte dar.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -272,8 +272,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Top10" />Objekt</returns>
         <remarks>
-          <para>Mithilfe der <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> -Objekt finden Sie die höchsten und niedrigsten Werte in einem Bereich von Zellen, die basierend auf einen angegebenen Grenzwert. Beispielsweise finden Sie die oberen fünf verkaufen Produkte in einem regionalen Bericht, die unteren 15 % der Produkte in einer Umfrage unter den Kunden oder die 25 höchsten Gehälter in einer Abteilung Personalanalyse.</para>
-          <para />
+          <para>Mit der <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> -Objekt finden Sie die höchsten und niedrigsten Werte in einem Bereich von Zellen, die basierend auf einen angegebenen Grenzwert. Angenommen, Sie finden die oberen fünf verkaufen Produkte in einem regionalen Bericht, die unteren 15 % der Produkte in einem Kunden Umfrage, oder die oberen 25 höchsten Gehälter in einer Abteilung Personalanalyse.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -302,8 +302,8 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />Objekt</returns>
         <remarks>
-          <para>Sie können die <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> Objekt Sie schnell Zellen anzeigen, die entweder eindeutige oder doppelte Werten enthalten.</para>
-          <para />
+          <para>Können Sie die <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> Objekt Sie schnell Zellen anzeigen, die entweder eindeutige oder doppelte Werten enthalten.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -391,7 +391,7 @@
         <remarks>
           <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
           <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
