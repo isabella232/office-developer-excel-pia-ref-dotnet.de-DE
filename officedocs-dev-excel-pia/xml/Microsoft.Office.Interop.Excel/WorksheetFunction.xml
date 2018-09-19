@@ -1,10 +1,10 @@
 <Type Name="WorksheetFunction" FullName="Microsoft.Office.Interop.Excel.WorksheetFunction">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c4f9fcb96caaeda1ab919426e45e33ce9a1e04aa" />
+    <Meta Name="ms.openlocfilehash" Value="0e8779a13b1ae831ceba99e1523c885328838f42" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/06/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/17/2018" />
     <Meta Name="ms.locfileid" Value="20574613" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorksheetFunction" />
@@ -165,24 +165,24 @@
           <para>In der folgenden Tabelle werden die Werte, die für verwendet werden können <paramref name="Arg5" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para></para>
@@ -228,48 +228,50 @@
           <para>In der folgenden Tabelle werden die Werte, die für verwendet werden können <paramref name="Arg5" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>Die folgende Liste enthält Informationen, die beim Arbeiten mit AUFGELZINSF beachten:</para>
           <list type="bullet">
             <item>
-              <description>Speichert Microsoft Excel Datumsangaben als fortlaufende Zahlen des sequenziellen, damit sie in Berechnungen verwendet werden können. Standardmäßig 1. Januar 1900 Seriennummer 1 ist, und am 1. Januar 2008 fortlaufende Zahl 39448, da er 39.448 Tage nach dem 1. Januar 1900 liegt. </description>
+              <description>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt.</description>
             </item>
             <item>
-              <description>Problem, Fälligkeit und Basis werden zu ganzen Zahlen gekürzt.</description>
+              <description>issue, maturity und basis werden zu ganzen Zahlen gekürzt.</description>
             </item>
             <item>
-              <description>Wenn Problem oder Fälligkeit kein gültiges Datum angegeben sind, generiert ACCRINTM einen Fehler.</description>
+              <description>Wenn für issue oder maturity kein gültiges Datum angegeben wird, generiert ACCRINTM einen Fehler.</description>
             </item>
             <item>
-              <description>Wenn Zins ≤ 0 oder Par ≤ 0 ist, generiert ACCRINTM einen Fehler verursacht,.</description>
+              <description>Wenn rate ≤ 0 oder par ≤ 0, generiert ACCRINTM einen Fehler.</description>
             </item>
             <item>
-              <description>Wenn Basis &lt; 0 oder, wenn Basis &gt; 4 ist, generiert ACCRINTM einen Fehler.</description>
+              <description>Wenn Basis &lt; 0 oder, wenn Basis &gt; 4 ist, generiert ACCRINTM einen Fehler. </description>
             </item>
             <item>
-              <description>Wenn Issue ≥ Maturity, generiert ACCRINTM einen Fehler verursacht,.</description>
+              <description>Wenn issue ≥ maturity, generiert ACCRINTM einen Fehler.</description>
             </item>
             <item>
-              <description>ACCRINTM wird wie folgt berechnet:</description>
+              <description>ACCRINTM wird wie folgt berechnet: 
+
+ </description>
             </item>
           </list>
           <para>Dabei gilt Folgendes:</para>
@@ -492,8 +494,8 @@
             </item>
             <item>
               <term>14 17</term>
-              <description>gültige Typen: beliebiger Zellbezug Unions Schnittpunkten definierten Namen strukturierte Verweise Istwert Datenarrays</description>
-              <description>gültige Typen: beliebiger Zellbezug Unions Schnittpunkten definierten Namen strukturierte Verweise Istwert Datenarrays</description>
+              <description>Gültige Typen: beliebiger Zellbezug Unions Schnittpunkten definierten Namen strukturierte Verweise Istwert Datenarrays</description>
+              <description>Gültige Typen: beliebiger Zellbezug Unions Schnittpunkten definierten Namen strukturierte Verweise Istwert Datenarrays</description>
               <description>Keine Bezüge erlaubt</description>
             </item>
           </list>
@@ -544,12 +546,12 @@
           <para>Wenn ein Vermögenswert in der Mitte des Abrechnungszeitraums erworben wird, wird die anteilige Abschreibung berücksichtigt. Die Methode ähnelt <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.AmorLinc(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />, außer dass ein Abschreibungskoeffizient in der Berechnung je nach während der Lebensdauer der Anlagen angewendet wird. Die folgende Tabelle beschreibt die Werte, die in <paramref name="Arg7" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>360 Tage (NASD-Methode)</description>
             </item>
             <item>
               <term>1</term>
-              <description>tatsächlichen</description>
+              <description>Tatsächlich</description>
             </item>
             <item>
               <term>3</term>
@@ -576,7 +578,7 @@
             </item>
             <item>
               <term>Mehr als 6 Jahre</term>
-              <description>2.5</description>
+              <description>2,5</description>
             </item>
           </list>
           <para>Der Abschreibungssatz steigt für den Zeitraum vor dem letzten Zeitraum auf 50 Prozent an und wird bis zum letzten Zeitraum auf 100 Prozent gesteigert.</para>
@@ -626,12 +628,12 @@
           <para>Wenn ein Vermögenswert in der Mitte des Abrechnungszeitraums erworben wird, wird die anteilige Abschreibung berücksichtigt. Die folgende Tabelle beschreibt die für verwendeten Werte <paramref name="Arg7" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>360 Tage (NASD-Methode)</description>
             </item>
             <item>
               <term>1</term>
-              <description>tatsächlichen</description>
+              <description>Tatsächlich</description>
             </item>
             <item>
               <term>3</term>
@@ -1147,13 +1149,13 @@
           <para>Die <b>durchschnittliche</b> -Methode Maßnahmen zentrale Tendenz der Speicherort des Mittelpunkts des einer Gruppe von Zahlen in einer statistischen Verteilung ist. Die drei sind die meisten gemeinsamen zentrale Tendenz:</para>
           <list type="bullet">
             <item>
-              <description>Durchschnitt der ist das arithmetische Mittel, und wird durch Hinzufügen einer Gruppe von Zahlen, und klicken Sie dann Division durch die Anzahl der diese Nummern berechnet. Beispielsweise ist der Durchschnitt von 2, 3, 3, 5, 7 und 10 30 geteilt durch 6, 5. </description>
+              <description>Mittelwert. Dies ist das arithmetische Mittel, das berechnet wird, indem Zahlen addiert werden und die Summe dann durch die Anzahl der Summanden geteilt wird. Der Mittelwert von 2, 3, 3, 5, 7 und 10 beträgt beispielsweise 30 geteilt durch 6, also 5.</description>
             </item>
             <item>
-              <description>Median, also die mittlere Anzahl von einer Gruppe von Zahlen; das ist, Hälfte die Zahlen enthalten Werte, die größer als der Median sind und die Hälfte die Zahlen enthalten Werte, die kleiner als der Median sind. Des Medians von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
+              <description>Medianwert. Dies ist die mittlere Zahl in einer Gruppe von Zahlen. Dies bedeutet, dass die Hälfte der Zahlen größer als der Median und die Hälfte der Zahlen kleiner als der Median ist. Der Median von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
             </item>
             <item>
-              <description>Modus, die am häufigsten auftretenden Zahl in einer Gruppe von Zahlen ist. Beispielsweise ist der Modus 2, 3, 3, 5, 7 und 10 3.</description>
+              <description>Modalwert. Dies ist die Zahl, die in einer Gruppe von Zahlen am häufigsten vorkommt. Der Modalwert von 2, 3, 3, 5, 7 und 10 ist beispielsweise 3.</description>
             </item>
           </list>
           <para>Bei einer symmetrischen Verteilung in einer Gruppe von Zahlen sind diese drei Arten der zentralen Tendenz gleich. Bei einer nicht symmetrischen Verteilung in einer Gruppe von Zahlen können die Werte unterschiedlich sein.</para>
@@ -1200,22 +1202,22 @@
           <para>Die Größe von Mittelwert_Bereich muss nicht der Größe von Bereich entsprechen. Die Zellen, aus denen der Mittelwert tatsächlich berechnet wird, werden ermittelt, indem die Zelle oben links in Mittelwert_Bereich als Anfangszelle herangezogen wird und dann alle Zellen eingeschlossen werden, deren Größe und Form Bereich entsprechen, wie im folgenden Beispiel dargestellt:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -1223,13 +1225,13 @@
           <para>Die <b>AverageIf</b> -Methode Maßnahmen zentrale Tendenz der Speicherort des Mittelpunkts des einer Gruppe von Zahlen in einer statistischen Verteilung ist. Die drei sind die meisten gemeinsamen zentrale Tendenz:</para>
           <list type="bullet">
             <item>
-              <description>Durchschnitt der ist das arithmetische Mittel, und wird durch Hinzufügen einer Gruppe von Zahlen, und klicken Sie dann Division durch die Anzahl der diese Nummern berechnet. Beispielsweise ist der Durchschnitt von 2, 3, 3, 5, 7 und 10 30 geteilt durch 6, 5. </description>
+              <description>Mittelwert. Dies ist das arithmetische Mittel, das berechnet wird, indem Zahlen addiert werden und die Summe dann durch die Anzahl der Summanden geteilt wird. Der Mittelwert von 2, 3, 3, 5, 7 und 10 beträgt beispielsweise 30 geteilt durch 6, also 5.</description>
             </item>
             <item>
-              <description>Median, also die mittlere Anzahl von einer Gruppe von Zahlen; das ist, Hälfte die Zahlen enthalten Werte, die größer als der Median sind und die Hälfte die Zahlen enthalten Werte, die kleiner als der Median sind. Des Medians von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
+              <description>Medianwert. Dies ist die mittlere Zahl in einer Gruppe von Zahlen. Dies bedeutet, dass die Hälfte der Zahlen größer als der Median und die Hälfte der Zahlen kleiner als der Median ist. Der Median von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
             </item>
             <item>
-              <description>Modus, die am häufigsten auftretenden Zahl in einer Gruppe von Zahlen ist. Beispielsweise ist der Modus 2, 3, 3, 5, 7 und 10 3.</description>
+              <description>Modalwert. Dies ist die Zahl, die in einer Gruppe von Zahlen am häufigsten vorkommt. Der Modalwert von 2, 3, 3, 5, 7 und 10 ist beispielsweise 3.</description>
             </item>
           </list>
           <para>Bei einer symmetrischen Verteilung in einer Gruppe von Zahlen sind diese drei Arten der zentralen Tendenz gleich. Bei einer nicht symmetrischen Verteilung in einer Gruppe von Zahlen können die Werte unterschiedlich sein.</para>
@@ -1329,22 +1331,22 @@
           <para>Die Größe von Kriterien_Bereich muss nicht der Größe von Mittelwert_Bereich entsprechen. Die Zellen, aus denen der Mittelwert tatsächlich berechnet wird, werden ermittelt, indem die Zelle oben links in Kriterien_Bereich als Anfangszelle herangezogen wird und dann alle Zellen eingeschlossen werden, deren Größe und Form Bereich entsprechen, wie im folgenden Beispiel dargestellt:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -1352,13 +1354,13 @@
           <para>Die <b>AverageIfs</b> Funktion Maßnahmen zentrale Tendenz der Speicherort des Mittelpunkts des einer Gruppe von Zahlen in einer statistischen Verteilung ist. Die drei sind die meisten gemeinsamen zentrale Tendenz:</para>
           <list type="bullet">
             <item>
-              <description>Durchschnitt der ist das arithmetische Mittel, und wird durch Hinzufügen einer Gruppe von Zahlen, und klicken Sie dann Division durch die Anzahl der diese Nummern berechnet. Beispielsweise ist der Durchschnitt von 2, 3, 3, 5, 7 und 10 30 geteilt durch 6, 5. </description>
+              <description>Mittelwert. Dies ist das arithmetische Mittel, das berechnet wird, indem Zahlen addiert werden und die Summe dann durch die Anzahl der Summanden geteilt wird. Der Mittelwert von 2, 3, 3, 5, 7 und 10 beträgt beispielsweise 30 geteilt durch 6, also 5.</description>
             </item>
             <item>
-              <description>Median, also die mittlere Anzahl von einer Gruppe von Zahlen; das ist, Hälfte die Zahlen enthalten Werte, die größer als der Median sind und die Hälfte die Zahlen enthalten Werte, die kleiner als der Median sind. Des Medians von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
+              <description>Medianwert. Dies ist die mittlere Zahl in einer Gruppe von Zahlen. Dies bedeutet, dass die Hälfte der Zahlen größer als der Median und die Hälfte der Zahlen kleiner als der Median ist. Der Median von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
             </item>
             <item>
-              <description>Modus, die am häufigsten auftretenden Zahl in einer Gruppe von Zahlen ist. Beispielsweise ist der Modus 2, 3, 3, 5, 7 und 10 3.</description>
+              <description>Modalwert. Dies ist die Zahl, die in einer Gruppe von Zahlen am häufigsten vorkommt. Der Modalwert von 2, 3, 3, 5, 7 und 10 ist beispielsweise 3.</description>
             </item>
           </list>
           <para>Bei einer symmetrischen Verteilung in einer Gruppe von Zahlen sind diese drei Arten der zentralen Tendenz gleich. Bei einer nicht symmetrischen Verteilung in einer Gruppe von Zahlen können die Werte unterschiedlich sein.</para>
@@ -1647,7 +1649,7 @@
               <description>Wenn Alpha ≤ 0 oder Beta ≤ 0, <b>Beta.dist</b> einen Fehlerwert generiert.</description>
             </item>
             <item>
-              <description>Wenn X &lt; A, X &gt; B oder A = B, generiert <b>Beta.dist</b> einen Fehlerwert.</description>
+              <description>Wenn x &lt; A, X &gt; B oder A = B, generiert <b>Beta.dist</b> einen Fehlerwert.</description>
             </item>
             <item>
               <description>Wenn Sie keine Werte für A und B (die unter- und Obergrenze), <b>Beta.dist</b> verwendet die kumulierte standardbetaverteilung, sodass A = 0 und B = 1.</description>
@@ -1756,7 +1758,7 @@
               <description>Wenn Alpha ≤ 0 oder Beta ≤ 0, <b>gibt BETAVERT</b> einen Fehlerwert generiert.</description>
             </item>
             <item>
-              <description>Wenn X &lt; A, X &gt; B oder A = B, <b>BETAVERT einen Fehlerwert</b> .</description>
+              <description>Wenn x &lt; A, X &gt; B oder A = B, <b>BETAVERT einen Fehlerwert</b> .</description>
             </item>
             <item>
               <description>Wenn Sie keine Werte für A und B, <b>gibt BETAVERT</b> verwendet die kumulierte standardbetaverteilung, sodass A = 0 und B = 1.</description>
@@ -1808,10 +1810,10 @@
               <description>Wenn ein Argument nicht numerisch ist, generiert <b>BetaInv</b> einen Fehlerwert.</description>
             </item>
             <item>
-              <description>Wenn Alpha ≤ 0 oder Beta ≤ 0, <b>gibt BetaInv</b> einen Fehlerwert generiert.</description>
+              <description>Wenn Alpha ≤ 0 oder Beta ≤ 0, <b>gibt BetaInv</b> einen Fehlerwert generiert. </description>
             </item>
             <item>
-              <description>Wenn Wahrsch ≤ 0 oder Wahrsch &gt; 1, <b>gibt BetaInv</b> generiert einen Fehlerwert.</description>
+              <description>Wenn Wahrsch ≤ 0 oder Wahrsch &gt; 1, <b>gibt BetaInv</b> generiert einen Fehlerwert. </description>
             </item>
             <item>
               <description>Wenn Sie keine Werte für A und B, <b>BetaInv</b> verwendet die kumulierte standardbetaverteilung, sodass A = 0 und B = 1.</description>
@@ -1966,16 +1968,18 @@
           <para>Verwenden Sie die <b>Binom_Dist</b> -Methode bei Problemen mit einer festen Anzahl von Tests oder versuchen, wenn die Ergebnisse sind nur Erfolg oder Fehler, wenn Tests unabhängig sind und die Wahrscheinlichkeit eines Erfolgs des Experiments konstant ist. Beispielsweise kann die <b>Binom_Dist</b> -Methode die Wahrscheinlichkeit zu ermitteln, dass zwei von drei Neugeborenen männlich sind. </para>
           <list type="bullet">
             <item>
-              <description>Zahl_Erfolge und Versuche werden zu ganzen Zahlen gekürzt.</description>
+              <description>Zahl_Erfolge und Versuche werden auf ganze Zahlen abgerundet.</description>
             </item>
             <item>
-              <description>Ist gleich Zahl_Erfolge, Versuche oder Erfolgswahrsch nicht numerisch ist, generiert die <b>Binom_Dist</b> -Methode einen Fehler.</description>
+              <description>Wenn Zahl_Erfolge, Versuche oder Erfolgswahrsch nicht numerisch ist, generiert die <b>Binom_Dist</b> -Methode einen Fehler. </description>
             </item>
             <item>
-              <description>Wenn Zahl_Erfolge &lt; 0 oder Zahl_Erfolge &gt; Versuche, die <b>Binom_Dist</b> -Methode generiert einen Fehler.</description>
+              <description>Wenn Zahl_Erfolge &lt; 0 oder Zahl_Erfolge &gt; Versuche, die <b>Binom_Dist</b> -Methode generiert einen Fehler. </description>
             </item>
             <item>
-              <description>Wenn Erfolgswahrsch &lt; 0 oder Erfolgswahrsch &gt; 1, die <b>Binom_Dist</b> -Methode generiert einen Fehler. Ist der Binomialverteilung:</description>
+              <description>Wenn Erfolgswahrsch &lt; 0 oder Erfolgswahrsch &gt; 1, die <b>Binom_Dist</b> -Methode generiert einen Fehler. Die Dichtefunktion der Binomialverteilung lautet: 
+
+ </description>
             </item>
           </list>
           <para>Dabei gilt Folgendes:</para>
@@ -2381,16 +2385,19 @@
           <list type="table">
             <item>
               <term>-/-</term>
-              <description>Runden in Richtung Null.</description>
+              <description>Runden in Richtung Null</description>
             </item>
             <item>
-              <term>+/+</term>Aufrunden.
+              <term>+/+</term>
+              <description>Aufrunden auf eine Stelle.</description>
             </item>
             <item>
-              <term>-/+</term>Runden in Richtung Null.
+              <term>-/+</term>
+              <description>Runden in Richtung Null</description>
             </item>
             <item>
-              <term>+/-</term>Aufrunden.
+              <term>+/-</term>
+              <description>Aufrunden auf eine Stelle.</description>
             </item>
           </list>
           <para>Ist ein Argument nicht numerisch, generiert <b>Ceiling_Precise</b> einen Fehler.</para>
@@ -3176,29 +3183,29 @@
               <description>"g"</description>
             </item>
             <item>
-              <term>Infobereich</term>
+              <term>Slug</term>
               <description>"sg"</description>
             </item>
             <item>
               <term>Pfund (Handelsgewicht)</term>
-              <description>"IPS"</description>
+              <description>"lbm"</description>
             </item>
             <item>
-              <term>U (atommasseeinheit)</term>
+              <term>U (Atommasseeinheit)</term>
               <description>"u"</description>
             </item>
             <item>
-              <term>Unze (Handelsgewicht) Masse</term>
-              <description>"Ozm"</description>
+              <term>Unze (Handelsgewicht)</term>
+              <description>"ozm"</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>Statusanzeiger</term>
+              <term>Meter</term>
               <description>"m"</description>
             </item>
             <item>
-              <term>englische Meile</term>
+              <term>Englische Meile</term>
               <description>"mi"</description>
             </item>
             <item>
@@ -3214,12 +3221,12 @@
               <description>"ft"</description>
             </item>
             <item>
-              <term>Garten</term>
+              <term>Yard</term>
               <description>"yd"</description>
             </item>
             <item>
-              <term>Angstrom</term>
-              <description>"Ang"</description>
+              <term>Angström</term>
+              <description>"ang"</description>
             </item>
             <item>
               <term>Pica (1/72 Zoll)</term>
@@ -3229,11 +3236,11 @@
           <list type="table">
             <item>
               <term>Jahr</term>
-              <description>"Jahre"</description>
+              <description>"yr"</description>
             </item>
             <item>
               <term>Tag</term>
-              <description>"Tag"</description>
+              <description>"day"</description>
             </item>
             <item>
               <term>Stunde</term>
@@ -3241,11 +3248,11 @@
             </item>
             <item>
               <term>Minute</term>
-              <description>"Mn"</description>
+              <description>"mn"</description>
             </item>
             <item>
-              <term>zweite</term>
-              <description>"s"</description>
+              <term>Sekunde</term>
+              <description>"sec"</description>
             </item>
           </list>
           <list type="table">
@@ -3268,26 +3275,26 @@
               <description>"N"</description>
             </item>
             <item>
-              <term>Dyn.</term>
+              <term>Dyn</term>
               <description>"dyn" (oder "dy")</description>
             </item>
             <item>
-              <term>Pfund erzwingen</term>
-              <description>"Lbf"</description>
+              <term>Pfund (Druck)</term>
+              <description>"lbf"</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <item>
-                <term>Joule</term>
-                <description>"J"</description>
-              </item>
+              <term>Joule</term>
+              <description>"J"</description>
+            </item>
+            <item>
               <term>Erg</term>
               <description>"e"</description>
             </item>
             <item>
               <term>Thermodynamische Kalorie</term>
-              <description>"C"</description>
+              <description>"c"</description>
             </item>
             <item>
               <term>IT-Kalorie</term>
@@ -3298,25 +3305,25 @@
               <description>"eV" (oder "ev")</description>
             </item>
             <item>
-              <term>Leistung-Stunde</term>
-              <description>"HPh" (oder "Hh")</description>
+              <term>Pferdestärken/Stunde</term>
+              <description>"HPh" (oder "hh")</description>
             </item>
             <item>
-              <term>Watt-Hour</term>
+              <term>Wattstunden</term>
               <description>"Wh" (oder "wh")</description>
             </item>
             <item>
               <term>Fuß pro Pfund</term>
-              <description>"Flb"</description>
+              <description>"flb"</description>
             </item>
             <item>
               <term>BTU</term>
-              <description>"BTU" (oder "btu")</description>
+              <description>"BTU" (or "btu")</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>Leistung</term>
+              <term>Pferdestärke</term>
               <description>"HP" (oder "h")</description>
             </item>
             <item>
@@ -3326,106 +3333,106 @@
           </list>
           <list type="table">
             <item>
-              <term>Tesla.</term>
+              <term>Tesla</term>
               <description>"T"</description>
             </item>
             <item>
               <term>Gauss</term>
-              <description>"Ga"</description>
+              <description>"ga"</description>
             </item>
           </list>
           <list type="table">
             <item>
               <term>Grad Celsius</term>
-              <description>"C" (oder "Cel")</description>
+              <description>"C" (oder "cel")</description>
             </item>
             <item>
               <term>Grad Fahrenheit</term>
-              <description>"F" (oder "Fah")</description>
+              <description>"F" (oder "fah")</description>
             </item>
             <item>
               <term>Kelvin</term>
-              <description>"K" (oder "Kel")</description>
+              <description>"K" (oder "kel")</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>Knallen</term>
+              <term>Teelöffel</term>
               <description>"tsp"</description>
             </item>
             <item>
-              <term>Tablespoon</term>
-              <description>"TB"</description>
+              <term>Esslöffel</term>
+              <description>"tbs"</description>
             </item>
             <item>
               <term>Unze (Flüssigkeit)</term>
               <description>"oz"</description>
             </item>
             <item>
-              <term>Tasse</term>
-              <description>"Tasse"</description>
+              <term>Cup</term>
+              <description>"cup"</description>
             </item>
             <item>
-              <term> US-Pint</term>
-              <description>"pt" (oder "Us_pt")</description>
+              <term>Pint (USA)</term>
+              <description>"pt" (oder "us_pt")</description>
             </item>
             <item>
               <term>Pint (Großbritannien)</term>
-              <description>"Uk_pt"</description>
+              <description>"uk_pt"</description>
             </item>
             <item>
               <term>Quart</term>
-              <description>"unbedingt"</description>
+              <description>"qt"</description>
             </item>
             <item>
-              <term>durchschnittlichen Verbrauch</term>
+              <term>Gallone</term>
               <description>"gal"</description>
             </item>
             <item>
-              <term>Liter </term>
-              <description>"l" (oder "Lt")</description>
+              <term>Liter</term>
+              <description>"l" (oder "lt")</description>
             </item>
           </list>
           <para>Die folgenden Abkürzungen für Einheitenpräfixe können metrischen Werten für Von_Maßeinheit oder In_Maßeinheit vorangestellt werden.</para>
           <list type="table">
             <item>
-              <term>ExA</term>
-              <description>1E + 18</description>
+              <term>Exa</term>
+              <description>1E+18</description>
               <description>"E"</description>
             </item>
             <item>
               <term>Peta</term>
-              <description>1E + 15</description>
+              <description>1E+15</description>
               <description>"P"</description>
             </item>
             <item>
-              <term>TERa</term>
-              <description>1E + 12</description>
+              <term>Tera</term>
+              <description>1E+12</description>
               <description>"T"</description>
             </item>
             <item>
               <term>Giga</term>
-              <description>1E + 09</description>
+              <description>1E+09</description>
               <description>"G"</description>
             </item>
             <item>
-              <term>hilfsspalten</term>
-              <description>1E + 06</description>
+              <term>Mega</term>
+              <description>1E+06</description>
               <description>"M"</description>
             </item>
             <item>
-              <term>kg</term>
-              <description>1E + 03</description>
+              <term>Kilo</term>
+              <description>1E+03</description>
               <description>"k"</description>
             </item>
             <item>
               <term>Hecto</term>
-              <description>1E + 02</description>
+              <description>1E+02</description>
               <description>"h"</description>
             </item>
             <item>
               <term>Dekao</term>
-              <description>1E + 01</description>
+              <description>1E+01</description>
               <description>"e"</description>
             </item>
             <item>
@@ -3434,7 +3441,7 @@
               <description>"d"</description>
             </item>
             <item>
-              <term>Centi</term>
+              <term>Zenti</term>
               <description>1E-02</description>
               <description>"c"</description>
             </item>
@@ -3444,7 +3451,7 @@
               <description>"m"</description>
             </item>
             <item>
-              <term>Micro</term>
+              <term>Mikro</term>
               <description>1E-06</description>
               <description>"u"</description>
             </item>
@@ -3454,18 +3461,18 @@
               <description>"n"</description>
             </item>
             <item>
-              <term>Pico</term>
-              <description>1E 12</description>
+              <term>Piko</term>
+              <description>1E-12</description>
               <description>"p"</description>
             </item>
             <item>
               <term>Femto</term>
-              <description>1E 15</description>
+              <description>1E-15</description>
               <description>"f"</description>
             </item>
             <item>
-              <term>angeboten</term>
-              <description>1E 18</description>
+              <term>Atto</term>
+              <description>1E-18</description>
               <description>"a"</description>
             </item>
           </list>
@@ -3993,24 +4000,24 @@
           <para>Die folgende Tabelle enthält die Liste der Werte für <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -4061,24 +4068,24 @@
           <para>Die folgende Tabelle enthält die Werte, die in <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -4129,24 +4136,24 @@
           <para>Die folgende Tabelle enthält die Werte, die in <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -4197,24 +4204,24 @@
           <para>Die folgende Tabelle enthält die Werte, die in <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -4265,24 +4272,24 @@
           <para>Die folgende Tabelle enthält die Werte, die in <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -4333,24 +4340,24 @@
           <para>Die folgende Tabelle enthält die Werte, die in <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -4667,8 +4674,8 @@
           <para>In den folgenden Tabellen sind die Werte, die in <paramref name="Arg6" />.</para>
           <list type="table">
             <item>
-              <term>0 (null)</term>
-              <description>Zahlung am Ende des Zeitraums</description>
+              <term>0 (Null)</term>
+              <description>Zahlung am Ende der Periode</description>
             </item>
             <item>
               <term>1</term>
@@ -4725,8 +4732,8 @@
           <para>In den folgenden Tabellen sind die Werte, die in <paramref name="Arg6" />.</para>
           <list type="table">
             <item>
-              <term>0 (null)</term>
-              <description>Zahlung am Ende des Zeitraums</description>
+              <term>0 (Null)</term>
+              <description>Zahlung am Ende der Periode</description>
             </item>
             <item>
               <term>1</term>
@@ -4779,12 +4786,12 @@
           <para>Wobei Entryis den Text oder den Wert ermittelt werden soll. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -4860,13 +4867,13 @@
             <item>
               <term>
                 <b>false</b> oder nicht angegeben</term>
-              <description>US (NASD)-Methode. Wenn das Startdatum der 31. eines Monats ist, wird es zum 30. desselben Monats. Wenn das Enddatum der 31. eines Monats und das Startdatum vor dem 30. eines Monats ist, wird das Enddatum zum 1. des nächsten Monats. Andernfalls wird das Enddatum zum 30. desselben Monats.</description>
+              <description>US-Methode (NASD). Wenn das Anfangsdatum der 31. Tag eines Monats ist, wird er dem 30. Tag des gleichen Monats gleichgesetzt. Wenn das Enddatum der 31. Tag eines Monats ist und das Anfangsdatum vor dem 30. Tag eines Monats liegt, wird das Enddatum dem 1. Tag des nächsten Monats gleichgesetzt, andernfalls ist das Enddatum gleich dem 30. Tag des gleichen Monats.</description>
             </item>
             <item>
               <term>
-                <b>true</b>
+                <b>"true"</b>
               </term>
-              <description>europäische Methode. Datumsangaben Start- und Enddatum, die auf den 31. eines Monats auftreten werden zum 30. desselben Monats.</description>
+              <description>Europäische Methode. Anfangsdatumswerte und Enddatumswerte, die auf den 31. Tag eines Monats fallen, werden dem 30. Tag des gleichen Monats gleichgesetzt.</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -4985,12 +4992,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5034,12 +5041,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5437,12 +5444,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5541,12 +5548,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5590,12 +5597,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5744,12 +5751,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5793,12 +5800,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5842,12 +5849,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -5891,12 +5898,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -6067,24 +6074,24 @@
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -6135,12 +6142,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -6184,12 +6191,12 @@
           <para>Eintrag ist, in dem der Text oder Wert, den Sie suchen möchten. Beispiel:</para>
           <list type="table">
             <item>
-              <term>= "Davolio ="</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "3000 ="</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Beim Filtern von Daten wird Excel nicht zwischen Groß-und Kleinschreibung unterschieden. Jedoch können Sie eine Formel, die zum Ausführen der Groß-/ Kleinschreibung.</para>
@@ -7050,7 +7057,7 @@
           <list type="bullet">
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" /> immer zählt jedes Zeichen, ob Einzel-Byte oder Double-Byte, als 1, unabhängig davon, welche die standardmäßige Sprache Einstellung Inseln</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />immer zählt jedes Zeichen an, ob Einzel-Byte oder Double-Byte, als 1, unabhängig davon, welche die Einstellung für die Standardsprache ist.</description>
             </item>
             <item>
               <description>
@@ -7332,16 +7339,19 @@
           <list type="table">
             <item>
               <term>-/-</term>
-              <description>Aufrunden.</description>
+              <description>Aufrunden auf eine Stelle.</description>
             </item>
             <item>
-              <term>+/+</term>Runden in Richtung Null.
+              <term>+/+</term>
+              <description>Runden in Richtung Null</description>
             </item>
             <item>
-              <term>-/+</term>Aufrunden.
+              <term>-/+</term>
+              <description>Aufrunden auf eine Stelle.</description>
             </item>
             <item>
-              <term>+/-</term>Runden in Richtung Null.
+              <term>+/-</term>
+              <description>Runden in Richtung Null</description>
             </item>
           </list>
           <para>Wenn ein Argument nicht numerisch ist, generiert die <b>Floor_Precise</b> -Methode einen Fehler. </para>
@@ -7512,11 +7522,11 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>Am Ende des Zeitraums</description>
+              <description>Zum Ende des Zeitraums</description>
             </item>
             <item>
               <term>1</term>
-              <description>am Anfang der Periode</description>
+              <description>Zum Anfang des Zeitraums</description>
             </item>
           </list>
           <para>Stellen Sie sicher, dass Sie die zur Angabe von Zins und Zzr verwendeten Einheiten einheitlich verwenden. Wenn Sie für eine vierjährige Anleihe mit jährlichen Zinsen von 12 Prozent monatliche Zahlungen tätigen, verwenden Sie 12%/12 für Zins und 4*12 für Zzr. Wenn Sie für dieselbe Anleihe jährliche Zahlungen tätigen, verwenden Sie 12% für Zins und 4 für Zzr.</para>
@@ -9750,7 +9760,7 @@
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> gibt den Wert 0 zurück. Die <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> Algorithmus sinnvolle Ergebnisse für kollineare Daten zurückgeben soll, und in diesem Fall mindestens eine Antwort gefunden werden kann.</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />Gibt den Wert 0 zurück. Die <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> Algorithmus sinnvolle Ergebnisse für kollineare Daten zurückgeben soll, und in diesem Fall mindestens eine Antwort gefunden werden kann.</description>
             </item>
           </list>
           <para></para>
@@ -9793,24 +9803,24 @@
         <remarks>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -9871,14 +9881,14 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>Am Ende des Zeitraums</description>
+              <description>Zum Ende des Zeitraums</description>
             </item>
             <item>
               <term>1</term>
-              <description>am Anfang der Periode</description>
+              <description>Zum Anfang des Zeitraums</description>
             </item>
           </list>
-          <para>Stellen Sie sicher, dass Sie die zur Angabe von Zins und Zzr verwendeten Einheiten einheitlich verwenden. Wenn Sie für eine vierjährige Anleihe mit jährlichen Zinsen von 12 Prozent monatliche Zahlungen tätigen, verwenden Sie 12%/12 für Zins und 4*12 für Zzr. Wenn Sie für dieselbe Anleihe jährliche Zahlungen tätigen, verwenden Sie 12% für Zins und 4 für Zzr.</para>
+          <para>Stellen Sie sicher, dass Sie die zur Angabe von Zins und Zzr verwendeten Einheiten einheitlich verwenden. Wenn Sie für eine vierjährige Anleihe mit jährlichen Zinsen von 12 Prozent monatliche Zahlungen tätigen, verwenden Sie 12%/12 für Zins und 4*12 für Zzr. Wenn Sie für dieselbe Anleihe jährliche Zahlungen tätigen, verwenden Sie 12% für Zins und 4 für Zzr. </para>
           <para>Für alle Argumente gilt, dass Geldbeträge, die Sie auszahlen (z. B. Spareinlagen), durch negative Zahlen und Geldbeträge, die Sie einnehmen (z. B. Dividenden), durch positive Zahlen dargestellt werden.</para>
           <para></para>
         </remarks>
@@ -10663,36 +10673,36 @@
           <para>Die folgenden Regressionskenngrößen können zusätzlich ermittelt werden:</para>
           <list type="table">
             <item>
-              <term>se1, se2,..., sen</term>
-              <description>Den Standardfehler Werte für die Koeffizienten m1; m2;...; Mn.</description>
+              <term>se1,se2,...,sen</term>
+              <description>Sind die Standardfehlerwerte der Koeffizienten m1;m2;...;mn.</description>
             </item>
             <item>
-              <term>Seb</term>
-              <description>der Standardfehlerwert der Konstante b (Seb = #n/a Wenn Konstante <b>false</b>ist).</description>
+              <term>seb</term>
+              <description>Der Standardfehlerwert der Konstante b (Seb = #n/a Wenn Konstante <b>false</b>ist).</description>
             </item>
             <item>
               <term>r2</term>
-              <description>der Koeffizient Bestimmung. Vergleicht geschätzte und tatsächliche y-Werte und dessen Wert zwischen 0 und 1. Wenn es sich um 1 ist, besteht eine perfekte Korrelation in der Stichprobe – es gibt keinen Unterschied zwischen den geschätzten y-Wert und der tatsächlichen y-Wert. Andererseits Wenn der Koeffizient Bestimmung 0 ist, ist die Formel Regressionsformel nicht Vorhersage einen y-Wert. </description>
+              <description>Der Koeffizient der Bestimmung. Vergleicht geschätzte und tatsächliche y-Werte und dessen Wert zwischen 0 und 1. Wenn es sich um 1 ist, besteht eine perfekte Korrelation in der Stichprobe – es gibt keinen Unterschied zwischen den geschätzten y-Wert und der tatsächlichen y-Wert. Andererseits Wenn der Koeffizient Bestimmung 0 ist, ist die Formel Regressionsformel nicht Vorhersage einen y-Wert. </description>
             </item>
             <item>
-              <term>sey.f</term>
-              <description>der Standardfehler des Schätzwerts y-Schätzung.</description>
+              <term>sey</term>
+              <description>Der Standardfehler des Schätzwerts y (Prognosewert).</description>
             </item>
             <item>
               <term>F</term>
-              <description>der F-Statistik, oder der f-Wert. Verwenden Sie die F-Statistik, um zu bestimmen, ob die beobachtete Beziehung zwischen den abhängigen und unabhängigen Variablen zufällig auftritt.</description>
+              <description>Die F-Statistik (oder der berechnete F-Wert). Anhand der F-Statistik können Sie entscheiden, ob die zwischen der abhängigen und der unabhängigen Variablen beobachtete Beziehung zufällig ist oder nicht.</description>
             </item>
             <item>
-              <term>R2</term>
-              <description>der Freiheitsgrade. Verwenden Sie die Freiheitsgrade, um kritische F-Werte in einer statistischen Tabelle zu finden. Vergleichen der finden Sie in der Tabelle auf die F-Statistik von <b>LinEst zurückgegebenen</b> auf einer Ebene für die einzelnen Details des Modells. </description>
+              <term>df</term>
+              <description>Die Anzahl der Freiheitsgrade. Verwenden Sie die Freiheitsgrade, um kritische F-Werte in einer statistischen Tabelle zu finden. Vergleichen der finden Sie in der Tabelle auf die F-Statistik von <b>LinEst zurückgegebenen</b> auf einer Ebene für die einzelnen Details des Modells. </description>
             </item>
             <item>
-              <term>df.ssreg</term>
-              <description>die Regressionssumme der Quadrate.</description>
+              <term>ssreg</term>
+              <description>Die Regressionssumme der Quadrate.</description>
             </item>
             <item>
-              <term>Ssresid</term>
-              <description>Restwert Summe von Quadraten.</description>
+              <term>ssresid</term>
+              <description>Die verbleibende Summe der Quadrate.</description>
             </item>
           </list>
           <para>Die folgende Abbildung zeigt, in welcher Reihenfolge die zusätzlichen Regressionskenngrößen zurückgegeben werden.</para>
@@ -11092,14 +11102,14 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>Suchen Sie nach einem Wert und zurückgeben einen Wert von derselben Position in einem zweiten Bereich einer Zeile oder einer Spalte in einem Bereich einer Zeile oder einer Spalte (auch als Vektor bezeichnet)</term>
+              <term>Durchsuchen eines Bereichs in einer Zeile oder einer Spalte (auch als Vektor bezeichnet) nach einem Wert und Zurückgeben eines Werts von derselben Position in einem zweiten Bereich in einer Zeile oder einer Spalte</term>
               <description>Vektorversion</description>
-              <description>Verwenden Sie die Vektorversion, wenn Sie haben eine umfangreiche Liste mit Werten durchsuchen oder wenn die Werte im Laufe der Zeit ändern.</description>
+              <description>Verwenden Sie die Vektorversion, wenn Sie eine umfangreiche Liste mit Werten durchsuchen möchten oder wenn sich die Werte im Lauf der Zeit ändern.</description>
             </item>
             <item>
-              <term>Darstellung in der ersten Zeile oder Spalte eines Arrays für den angegebenen Wert und Zurückgeben eines Werts von derselben Position in der letzten Zeile oder Spalte des Arrays</term>
+              <term>Durchsuchen der ersten Zeile einer Matrix nach einem angegebenen Wert und Zurückgeben eines Werts von derselben Position in der letzten Zeile oder Spalte einer Matrix</term>
               <description>Matrixversion</description>
-              <description>verwenden das Array Formular, wenn Sie eine kleine Liste mit Werten und den Werten verfügen konstant bleiben. über einen Zeitraum.</description>
+              <description>Verwenden Sie die Matrixversion, wenn Sie über eine kleine Liste mit Werten verfügen und die Werte konstant bleiben.</description>
             </item>
           </list>
           <para>
@@ -11461,13 +11471,13 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Hinweis</b>: die <b>Median</b> -Funktion gibt zentralen Tendenz der Speicherort des Mittelpunkts des einer Gruppe von Zahlen in einer statistischen Verteilung ist. Die drei sind die meisten gemeinsamen zentrale Tendenz:</para>
           <list type="bullet">
             <item>
-              <description>Durchschnitt der ist das arithmetische Mittel, und wird durch Hinzufügen einer Gruppe von Zahlen, und klicken Sie dann Division durch die Anzahl der diese Nummern berechnet. Beispielsweise ist der Durchschnitt von 2, 3, 3, 5, 7 und 10 30 geteilt durch 6, 5. </description>
+              <description>Mittelwert. Dies ist das arithmetische Mittel, das berechnet wird, indem Zahlen addiert werden und die Summe dann durch die Anzahl der Summanden geteilt wird. Der Mittelwert von 2, 3, 3, 5, 7 und 10 beträgt beispielsweise 30 geteilt durch 6, also 5.</description>
             </item>
             <item>
-              <description>Median, also die mittlere Anzahl von einer Gruppe von Zahlen; das ist, Hälfte die Zahlen enthalten Werte, die größer als der Median sind und die Hälfte die Zahlen enthalten Werte, die kleiner als der Median sind. Des Medians von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
+              <description>Medianwert. Dies ist die mittlere Zahl in einer Gruppe von Zahlen. Dies bedeutet, dass die Hälfte der Zahlen größer als der Median und die Hälfte der Zahlen kleiner als der Median ist. Der Median von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
             </item>
             <item>
-              <description>Modus, die am häufigsten auftretenden Zahl in einer Gruppe von Zahlen ist. Beispielsweise ist der Modus 2, 3, 3, 5, 7 und 10 3.</description>
+              <description>Modalwert. Dies ist die Zahl, die in einer Gruppe von Zahlen am häufigsten vorkommt. Der Modalwert von 2, 3, 3, 5, 7 und 10 ist beispielsweise 3.</description>
             </item>
           </list>
           <para>Bei einer symmetrischen Verteilung in einer Gruppe von Zahlen sind diese drei Arten der zentralen Tendenz gleich. Bei einer nicht symmetrischen Verteilung in einer Gruppe von Zahlen können die Werte unterschiedlich sein.</para>
@@ -11615,7 +11625,7 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <item>
               <term>Zeile 2</term>
               <description>c / (b *- c a*d)</description>
-              <description>einer / (ein*d / b*-c)</description>
+              <description>eine / (ein*d / b*-c)</description>
             </item>
           </list>
           <para>
@@ -11809,13 +11819,13 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Hinweis</b>: die <b>Mode</b> -Funktion gibt zentralen Tendenz der Speicherort des Mittelpunkts des einer Gruppe von Zahlen in einer statistischen Verteilung ist. Die drei sind die meisten gemeinsamen zentrale Tendenz:</para>
           <list type="bullet">
             <item>
-              <description>Durchschnitt der ist das arithmetische Mittel, und wird durch Hinzufügen einer Gruppe von Zahlen, und klicken Sie dann Division durch die Anzahl der diese Nummern berechnet. Beispielsweise ist der Durchschnitt von 2, 3, 3, 5, 7 und 10 30 geteilt durch 6, 5. </description>
+              <description>Mittelwert. Dies ist das arithmetische Mittel, das berechnet wird, indem Zahlen addiert werden und die Summe dann durch die Anzahl der Summanden geteilt wird. Der Mittelwert von 2, 3, 3, 5, 7 und 10 beträgt beispielsweise 30 geteilt durch 6, also 5.</description>
             </item>
             <item>
-              <description>Median, also die mittlere Anzahl von einer Gruppe von Zahlen; das ist, Hälfte die Zahlen enthalten Werte, die größer als der Median sind und die Hälfte die Zahlen enthalten Werte, die kleiner als der Median sind. Beispielsweise ist der Median von 2, 3, 3, 5, 7 und 10 4. </description>
+              <description>Medianwert. Dies ist die mittlere Zahl in einer Gruppe von Zahlen. Dies bedeutet, dass die Hälfte der Zahlen größer als der Median und die Hälfte der Zahlen kleiner als der Median ist. Der Median von 2, 3, 3, 5, 7 und 10 ist beispielsweise 4.</description>
             </item>
             <item>
-              <description>Modus der am häufigsten Zahl in einer Gruppe von Zahlen stattfindet. Beispielsweise ist der Modus 2, 3, 3, 5, 7 und 10 3.</description>
+              <description>Modalwert. Dies ist die Zahl, die in einer Gruppe von Zahlen am häufigsten vorkommt. Der Modalwert von 2, 3, 3, 5, 7 und 10 ist beispielsweise 3.</description>
             </item>
           </list>
           <para>Bei einer symmetrischen Verteilung in einer Gruppe von Zahlen sind diese drei Arten der zentralen Tendenz gleich. Bei einer nicht symmetrischen Verteilung in einer Gruppe von Zahlen können die Werte unterschiedlich sein.</para>
@@ -12010,10 +12020,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
               <description>Durchschnittliche das arithmetische Mittel und wird durch Hinzufügen einer Gruppe von Zahlen, und klicken Sie dann Division durch die Anzahl der diese Nummern berechnet. Beispielsweise ist der Durchschnitt von 2, 3, 3, 5, 7 und 10 30 geteilt durch 6, 5. </description>
             </item>
             <item>
-              <description>Median der Mitte Anzahl von einer Gruppe von Zahlen; d. h., Hälfte der Zahlen Werte aufweisen, die größer als der Median sind und Hälfte der Zahlen Werte aufweisen, die kleiner als der Median sind. Beispielsweise ist der Median von 2, 3, 3, 5, 7 und 10 4. </description>
+              <description>Median Wert einer Gruppe von Zahlen in der Mitte; d. h., Hälfte die Zahlen enthalten Werte, die größer als der Median sind, und die Hälfte die Zahlen enthalten Werte, die kleiner als der Median sind. Beispielsweise ist der Median von 2, 3, 3, 5, 7 und 10 4. </description>
             </item>
             <item>
-              <description>Modus die am häufigsten auftretenden Zahl in einer Gruppe von Zahlen. Beispielsweise ist der Modus 2, 3, 3, 5, 7 und 10 3.</description>
+              <description>Die am häufigsten auftretenden Zahl in einer Gruppe von Zahlen Modus. Beispielsweise ist der Modus 2, 3, 3, 5, 7 und 10 3.</description>
             </item>
           </list>
           <para>Bei einer symmetrischen Verteilung in einer Gruppe von Zahlen sind diese drei Arten der zentralen Tendenz gleich. Bei einer nicht symmetrischen Verteilung in einer Gruppe von Zahlen können die Werte unterschiedlich sein.</para>
@@ -12761,12 +12771,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
-              <description>Am Ende des Zeitraums</description>
+              <term>0 (oder Auslassung)</term>
+              <description>Zum Ende des Zeitraums</description>
             </item>
             <item>
               <term>1</term>
-              <description>am Anfang der Periode</description>
+              <description>Zum Anfang des Zeitraums</description>
             </item>
           </list>
           <para></para>
@@ -13097,24 +13107,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -13200,24 +13210,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -13277,24 +13287,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -13353,24 +13363,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -14024,12 +14034,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Eine genauere Beschreibung der Argumente der <b>Pmt</b>, finden Sie unter der <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Pv(System.Double,System.Double,System.Double,System.Object,System.Object)" /> Funktion.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
-              <description>Am Ende des Zeitraums</description>
+              <term>0 (oder Auslassung)</term>
+              <description>Zum Ende des Zeitraums</description>
             </item>
             <item>
               <term>1</term>
-              <description>am Anfang der Periode</description>
+              <description>Zum Anfang des Zeitraums</description>
             </item>
           </list>
           <para>Zurückgegebene <b>RMZ</b> umfasst nur die Tilgung und die Zinsen, jedoch keine steuern, reservieren Zahlungen und Gebühren zurückgegebener. </para>
@@ -14208,12 +14218,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Eine genauere Beschreibung der Argumente der <b>ppm</b>, finden Sie unter <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Pv(System.Double,System.Double,System.Double,System.Object,System.Object)" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
-              <description>Am Ende des Zeitraums</description>
+              <term>0 (oder Auslassung)</term>
+              <description>Zum Ende des Zeitraums</description>
             </item>
             <item>
               <term>1</term>
-              <description>am Anfang der Periode</description>
+              <description>Zum Anfang des Zeitraums</description>
             </item>
           </list>
           <para>Stellen Sie sicher, dass Sie die zur Angabe von Zins und Zzr verwendeten Einheiten einheitlich verwenden. Wenn Sie für eine vierjährige Anleihe mit jährlichen Zinsen von 12 Prozent monatliche Zahlungen tätigen, verwenden Sie 12%/12 für Zins und 4*12 für Zzr. Wenn Sie für dieselbe Anleihe jährliche Zahlungen tätigen, verwenden Sie 12% für Zins und 4 für Zzr.</para>
@@ -14263,24 +14273,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -14342,24 +14352,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -14421,24 +14431,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -14655,34 +14665,36 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
-              <description>Am Ende des Zeitraums</description>
+              <term>0 (oder Auslassung)</term>
+              <description>Zum Ende des Zeitraums</description>
             </item>
             <item>
               <term>1</term>
-              <description>am Anfang der Periode</description>
+              <description>Zum Anfang des Zeitraums</description>
             </item>
           </list>
-          <para>Stellen Sie sicher, dass Sie die zur Angabe von Zins und Zzr verwendeten Einheiten einheitlich verwenden. Wenn Sie für eine vierjährige Anleihe mit jährlichen Zinsen von 12 Prozent monatliche Zahlungen tätigen, verwenden Sie 12%/12 für Zins und 4*12 für Zzr. Wenn Sie für dieselbe Anleihe jährliche Zahlungen tätigen, verwenden Sie 12% für Zins und 4 für Zzr.</para>
+          <para>Stellen Sie sicher, dass Sie die zur Angabe von Zins und Zzr verwendeten Einheiten einheitlich verwenden. Wenn Sie für eine vierjährige Anleihe mit jährlichen Zinsen von 12 Prozent monatliche Zahlungen tätigen, verwenden Sie 12%/12 für Zins und 4*12 für Zzr. Wenn Sie für dieselbe Anleihe jährliche Zahlungen tätigen, verwenden Sie 12% für Zins und 4 für Zzr. </para>
           <para>Annuitäten gelten die folgenden Funktionen: </para>
           <list type="table">
             <item>
-              <term>CUMIPMT</term>
-              <description>PPMT</description>
+              <term>KUMZINSZ</term>
+              <description>KAPZ</description>
             </item>
             <item>
-              <term>CUMPRINC</term>-
-              <description>PV</description></item>
-            <item>
-              <term>FV</term>-
-              <description>RATE</description></item>
-            <item>
-              <term>FVSCHEDULE</term>
-              <description>gibt XIRR</description>
+              <term>KUMKAPITAL</term>
+              <description>BW</description>
             </item>
             <item>
-              <term>IPMT</term>
-              <description>XNPV</description>
+              <term>ZW</term>
+              <description>ZINS</description>
+            </item>
+            <item>
+              <term>ZW2</term>
+              <description>XINTZINSFUSS</description>
+            </item>
+            <item>
+              <term>ZINSZ</term>
+              <description>XKAPITALWERT</description>
             </item>
             <item>
               <term>RMZ</term>
@@ -14690,10 +14702,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
           </list>
           <para>Eine Annuität ist eine Reihe von konstanten Barzahlungen über einen kontinuierlichen Zeitraum. Beispielsweise ergibt eines Darlehens Auto oder einen Hypothekenrechner auf einer Annuität. Weitere Informationen finden Sie in der Beschreibung für jede Funktion Annuität. </para>
-          <para>Für die Annuitätenfunktionen gilt, dass alle Zahlungen, die Sie tätigen (so z. B. Spareinlagen), durch negative Zahlen, und alle Geldbeträge, die Sie einnehmen (z. B. Dividenden), durch positive Zahlen dargestellt werden. Beispielsweise würde eine Spareinlage von 1.000 € durch das Argument -1000 dargestellt, wenn Sie der Einzahler sind, und durch das Argument 1000, wenn Sie die Bank sind.</para>
+          <para>Für die Annuitätenfunktionen gilt, dass alle Zahlungen, die Sie tätigen (so z. B. Spareinlagen), durch negative Zahlen, und alle Geldbeträge, die Sie einnehmen (z. B. Dividenden), durch positive Zahlen dargestellt werden. Beispielsweise würde eine Spareinlage von 1.000 € durch das Argument -1000 dargestellt, wenn Sie der Einzahler sind, und durch das Argument 1000, wenn Sie die Bank sind. </para>
           <para>Microsoft Excel berechnet ein finanzmathematisches Argument mithilfe der jeweils anderen Argumente. Ist Zins ungleich 0, dann gilt: 
 
-</para>
+ </para>
           <para>Abbildung 1: Gleichung bei Zins ungleich 0</para>
           <para></para>
           <para></para>
@@ -14737,19 +14749,19 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0</term>
-              <description>Wert für das Minimum</description>
+              <description>Kleinster Wert</description>
             </item>
             <item>
               <term>1</term>
-              <description>Erstes Quartil (25 %-Perzentil))</description>
+              <description>Erstes Quartil (25. Perzentil)</description>
             </item>
             <item>
               <term>2</term>
-              <description>den Median (50 %-Perzentil))</description>
+              <description>Mittlerer Wert (50. Perzentil)</description>
             </item>
             <item>
               <term>3</term>
-              <description>Drittes Quartil (75 %-Perzentil))</description>
+              <description>Drittes Quartil (75. Perzentil)</description>
             </item>
             <item>
               <term>4</term>
@@ -15089,12 +15101,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Eine vollständige Beschreibung der Argumente Zzr, Rmz, BW, Zw und Typ, finden Sie unter <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Pv(System.Double,System.Double,System.Double,System.Object,System.Object)" />.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
-              <description>Am Ende des Zeitraums</description>
+              <term>0 (oder Auslassung)</term>
+              <description>Zum Ende des Zeitraums</description>
             </item>
             <item>
               <term>1</term>
-              <description>am Anfang der Periode</description>
+              <description>Zum Anfang des Zeitraums</description>
             </item>
           </list>
           <para>Wenn Sie Schätzwert nicht angeben, wird ein Wert von 10 Prozent vorausgesetzt.</para>
@@ -15142,24 +15154,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -15326,36 +15338,36 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
-              <description>Klassische.</description>
+              <term>0 (oder Auslassung)</term>
+              <description>Klassisch</description>
             </item>
             <item>
               <term>1</term>
-              <description>kürzeren.</description>
+              <description>Kürzeren.</description>
             </item>
             <item>
               <term>2</term>
-              <description>kürzeren.</description>
+              <description>Kürzeren.</description>
             </item>
             <item>
               <term>3</term>
-              <description>kürzeren.</description>
+              <description>Kürzeren.</description>
             </item>
             <item>
               <term>4</term>
-              <description>vereinfacht.</description>
+              <description>Vereinfacht</description>
             </item>
             <item>
               <term>
-                <b>true</b>
+                <b>"true"</b>
               </term>
-              <description>klassische.</description>
+              <description>Standard.</description>
             </item>
             <item>
               <term>
                 <b>false</b>
               </term>
-              <description>vereinfacht.</description>
+              <description>Vereinfacht</description>
             </item>
           </list>
           <para>Wenn Zahl negativ ist, wird der Fehlerwert #VALUE! zurückgegeben.</para>
@@ -16202,7 +16214,7 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> gibt den Wert 0 zurück. Die <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> Algorithmus sinnvolle Ergebnisse für kollineare Daten zurückgeben soll, und in diesem Fall mindestens eine Antwort gefunden werden kann.</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />Gibt den Wert 0 zurück. Die <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> Algorithmus sinnvolle Ergebnisse für kollineare Daten zurückgeben soll, und in diesem Fall mindestens eine Antwort gefunden werden kann.</description>
             </item>
           </list>
           <para></para>
@@ -17016,22 +17028,22 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Summe_Bereich muss nicht dieselbe Größe und Form wie Bereich aufweisen. Die tatsächlich zu addierenden Zellen werden bestimmt, indem die linke obere Zelle in Summe_Bereich als Anfangszelle verwendet wird und dann die Zellen einbezogen werden, die Bereich hinsichtlich Größe und Form entsprechen. Beispiel:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -17129,22 +17141,22 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Kriterien_Bereich muss jeweils nicht dieselbe Größe und Form wie Summe_Bereich aufweisen. Die tatsächlich zu addierenden Zellen werden bestimmt, indem die linke obere Zelle in diesem Kriterien_Bereich als Anfangszelle verwendet wird und dann die Zellen einbezogen werden, die Summe_Bereich hinsichtlich Größe und Form entsprechen. Beispiel:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: B4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -18444,15 +18456,15 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>Kombiniert</description>
+              <description>Gepaart</description>
             </item>
             <item>
               <term>2</term>
-              <description>zwei Stichproben mit gleicher Varianz (homoskedastisch)</description>
+              <description>Zwei Stichproben mit gleicher Varianz (homoskedastisch)</description>
             </item>
             <item>
               <term>3</term>
-              <description>zwei Stichproben mit ungleicher Varianz (heteroskedastisch)</description>
+              <description>Zwei Stichproben mit ungleicher Varianz (heteroskedastisch)</description>
             </item>
           </list>
           <para>Wenn array1 und array2 eine unterschiedliche Anzahl von Datenpunkten und Typ aufweisen = 1 (kombinierte), <b>gibt TTest</b> gibt den Fehlerwert #n/a zurück. </para>
@@ -19113,8 +19125,8 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>1 oder weggelassen</term>
-              <description>Zahlen von 1 (Sonntag) bis 7 (Samstag). Verhält sich wie frühere Versionen von Microsoft Excel.</description>
+              <term>1 (oder Auslassung)</term>
+              <description>Zahlen von 1 (Sonntag) bis 7 (Samstag). Verhält sich wie in früheren Versionen von Microsoft Excel.</description>
             </item>
             <item>
               <term>2</term>
@@ -19191,11 +19203,11 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>Beginnt Woche am Sonntag. WeekDays werden von 1 bis 7 nummeriert.</description>
+              <description>Die Woche beginnt am Sonntag. Die Wochentage sind von 1 bis 7 nummeriert.</description>
             </item>
             <item>
               <term>2</term>
-              <description>Woche beginnt am Montag. WeekDays werden von 1 bis 7 nummeriert.</description>
+              <description>Die Woche beginnt am Montag. Die Wochentage sind von 1 bis 7 nummeriert.</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -19607,24 +19619,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -19673,24 +19685,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
@@ -19744,24 +19756,24 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Wichtig</b>: Datumsangaben sollten mithilfe der DATE-Funktion oder als Ergebnis anderer Formeln oder Funktionen eingegeben werden. Verwenden Sie beispielsweise Datum(2008;5;23) für den 23. Tag im Mai 2008. Probleme können auftreten, wenn Datumsangaben als Text eingegeben werden.</para>
           <list type="table">
             <item>
-              <term>0 oder weggelassen</term>
+              <term>0 (oder Auslassung)</term>
               <description>US (NASD) 30/360</description>
             </item>
             <item>
               <term>1</term>
-              <description>Istwert/tatsächliche</description>
+              <description>Taggenau/taggenau</description>
             </item>
             <item>
               <term>2</term>
-              <description>tatsächlichen/360</description>
+              <description>Taggenau/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>tatsächlichen/365</description>
+              <description>Taggenau/365</description>
             </item>
             <item>
               <term>4</term>
-              <description>Europäische 30/360</description>
+              <description>Europäisch 30/360</description>
             </item>
           </list>
           <para>In Microsoft Excel werden Datumswerte als laufende Zahlen gespeichert, damit sie in Berechnungen verwendet werden können. In der Standardeinstellung entspricht der 1. Januar der laufenden Zahl 1, und der 1. Januar 2008 entspricht der laufenden Zahl 39448, da er 39.448 Tage hinter dem 1. Januar 1900 liegt. In Microsoft Excel für Macintosh wird ein anderes Datumssystem als Standardeinstellung verwendet.</para>
