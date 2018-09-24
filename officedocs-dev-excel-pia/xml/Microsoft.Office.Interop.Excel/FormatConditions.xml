@@ -1,10 +1,10 @@
 <Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4ea44a9883870de6c0c9f822551e19d40e34f00d" />
+    <Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587514" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
@@ -34,29 +34,50 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="de039-101">Stellt die Auflistung der bedingten Formate in einem einzelnen Bereich dar.</span>
+      <span data-ttu-id="e8a95-101">Stellt die Auflistung der bedingten Formate in einem einzelnen Bereich dar.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="de039-101">Represents the collection of conditional formats for a single range.</span>
+        <span data-stu-id="e8a95-101">Represents the collection of conditional formats for a single range.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="de039-102">
-        <para>
-          <b>FormatConditions</b> -Auflistung kann bis zu drei bedingte Formate enthalten. Jedes Format dargestellt, durch eine <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> -Objekt.</para>
-        <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> Eigenschaft, um ein <b>FormatConditions</b> -Objekt zurückzugeben. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein neues bedingtes Format erstellen und Verwenden der <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein bestehendes bedingtes Format zu ändern.</para>
-        <para>, Wenn Sie versuchen, mehr als drei bedingte Formate für einen Bereich zu erstellen, schlägt die <b>Add</b> -Methode. Wenn ein Bereich drei Formate hat, Sie die <b>Modify</b> -Methode verwenden können, um eines der Formate zu ändern oder können die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> -Methode, um ein Format löschen, und klicken Sie dann die <b>Add</b> -Methode verwenden, um ein neues Format erstellen.</para>
-        <para>Weitere Informationen zu bedingten Formaten finden Sie unter der <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> -Objekt.</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="de039-102">
-          <para>The <b>FormatConditions</b> collection can contain up to three conditional formats. Each format is represented by a <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> property to return a <b>FormatConditions</b> object. Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format, and use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change an existing conditional format.</para>
-          <para>If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails. If a range has three formats, you can use the <b>Modify</b> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</para>
-          <para>For more information about conditional formats, see the <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="e8a95-102">
+          <b>FormatConditions</b> -Auflistung kann bis zu drei bedingte Formate enthalten.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8a95-102">The <b>FormatConditions</b> collection can contain up to three conditional formats.</span>
         </span>
-      </span>
+        <span data-ttu-id="e8a95-103">Jedes Format dargestellt, durch eine <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> Objekt.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8a95-103">Each format is represented by a <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="e8a95-104">Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> Eigenschaft, um ein <b>FormatConditions</b> -Objekt zurückzugeben.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8a95-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> property to return a <b>FormatConditions</b> object.</span>
+        </span>
+        <span data-ttu-id="e8a95-105">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein neues bedingtes Format erstellen und Verwenden der <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein bestehendes bedingtes Format zu ändern.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8a95-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format, and use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change an existing conditional format.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="e8a95-106">Wenn Sie versuchen, mehr als drei bedingte Formate für einen Bereich zu erstellen, schlägt die <b>Add</b> -Methode.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8a95-106">If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails.</span>
+        </span>
+        <span data-ttu-id="e8a95-107">Wenn ein Bereich drei Formate hat, Sie die <b>Modify</b> -Methode verwenden können, um eines der Formate zu ändern oder können die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> -Methode, um ein Format löschen, und klicken Sie dann die <b>Add</b> -Methode verwenden, um ein neues Format erstellen.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8a95-107">If a range has three formats, you can use the <b>Modify</b> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="e8a95-108">Weitere Informationen zu bedingten Formaten finden Sie unter der <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> Objekt.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8a95-108">For more information about conditional formats, see the <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -91,9 +112,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="de039-103">Für die interne Verwendung reserviert.</span>
+          <span data-ttu-id="e8a95-109">Für die interne Verwendung reserviert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-103">Reserved for internal use.</span>
+            <span data-stu-id="e8a95-109">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -130,51 +151,51 @@
       </Parameters>
       <Docs>
         <param name="Type">
-          <span data-ttu-id="de039-104">.</span>
+          <span data-ttu-id="e8a95-110">.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-104"></span>
+            <span data-stu-id="e8a95-110"></span>
           </span>
-          <span data-ttu-id="de039-105">(<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
+          <span data-ttu-id="e8a95-111">(<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-105"></span>
+            <span data-stu-id="e8a95-111"></span>
           </span>
-          <span data-ttu-id="de039-106">Gibt an, ob das bedingte Format auf einem Zellwert oder auf einem Ausdruck basiert.</span>
+          <span data-ttu-id="e8a95-112">Gibt an, ob das bedingte Format auf einem Zellwert oder auf einem Ausdruck basiert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-106">Specifies whether the conditional format is based on a cell value or an expression.</span>
+            <span data-stu-id="e8a95-112">Specifies whether the conditional format is based on a cell value or an expression.</span>
           </span>
         </param>
         <param name="Operator">
-          <span data-ttu-id="de039-107">Der Operator für bedingte Formate.</span>
+          <span data-ttu-id="e8a95-113">Der Operator für bedingte Formate.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-107">The conditional format operator.</span>
+            <span data-stu-id="e8a95-113">The conditional format operator.</span>
           </span>
-          <span data-ttu-id="de039-108">Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> Konstanten: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, oder <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />.</span>
+          <span data-ttu-id="e8a95-114">Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> Konstanten: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, oder <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-108">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />.</span>
+            <span data-stu-id="e8a95-114">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />.</span>
           </span>
-          <span data-ttu-id="de039-109">Wenn <paramref name="Type" /> ist <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, die <paramref name="Operator" /> Argument wird ignoriert.</span>
+          <span data-ttu-id="e8a95-115">Wenn <paramref name="Type" /> ist <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, die <paramref name="Operator" /> Argument wird ignoriert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-109">If <paramref name="Type" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, the <paramref name="Operator" /> argument is ignored.</span>
+            <span data-stu-id="e8a95-115">If <paramref name="Type" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, the <paramref name="Operator" /> argument is ignored.</span>
           </span>
         </param>
         <param name="Formula1">
-          <span data-ttu-id="de039-110">Der Wert oder ein Ausdruck, der bedingten Formatierung zugeordnet.</span>
+          <span data-ttu-id="e8a95-116">Der Wert oder ein Ausdruck, der bedingten Formatierung zugeordnet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-110">The value or expression associated with the conditional format.</span>
+            <span data-stu-id="e8a95-116">The value or expression associated with the conditional format.</span>
           </span>
-          <span data-ttu-id="de039-111">Hierbei kann es sich um einen konstanten Wert, einen <b>String</b> -Wert, ein Zellbezug oder eine Formel sein.</span>
+          <span data-ttu-id="e8a95-117">Hierbei kann es sich um einen konstanten Wert, einen <b>String</b> -Wert, ein Zellbezug oder eine Formel sein.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-111">Can be a constant value, a <b>String</b> value, a cell reference, or a formula.</span>
+            <span data-stu-id="e8a95-117">Can be a constant value, a <b>String</b> value, a cell reference, or a formula.</span>
           </span>
         </param>
         <param name="Formula2">
-          <span data-ttu-id="de039-112">Der Wert oder Ausdruck im zweiten Teil des bedingten zugeordnet, die beim Formatieren <paramref name="Operator" /> ist <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> oder <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (andernfalls wird dieses Argument ignoriert).</span>
+          <span data-ttu-id="e8a95-118">Der Wert oder Ausdruck im zweiten Teil des bedingten zugeordnet, die beim Formatieren <paramref name="Operator" /> ist <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> oder <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (andernfalls wird dieses Argument ignoriert).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-112">The value or expression associated with the second part of the conditional format when <paramref name="Operator" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (otherwise, this argument is ignored).</span>
+            <span data-stu-id="e8a95-118">The value or expression associated with the second part of the conditional format when <paramref name="Operator" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (otherwise, this argument is ignored).</span>
           </span>
-          <span data-ttu-id="de039-113">Hierbei kann es sich um einen konstanten Wert, einen String-Wert, ein Zellbezug oder eine Formel sein.</span>
+          <span data-ttu-id="e8a95-119">Hierbei kann es sich um einen konstanten Wert, einen String-Wert, ein Zellbezug oder eine Formel sein.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-113">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            <span data-stu-id="e8a95-119">Can be a constant value, a string value, a cell reference, or a formula.</span>
           </span>
         </param>
         <param name="String">To be added.</param>
@@ -182,28 +203,29 @@
         <param name="DateOperator">To be added.</param>
         <param name="ScopeType">To be added.</param>
         <summary>
-          <span data-ttu-id="de039-114">Fügt ein neues bedingtes Format hinzu.</span>
+          <span data-ttu-id="e8a95-120">Fügt ein neues bedingtes Format hinzu.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-114">Adds a new conditional format.</span>
+            <span data-stu-id="e8a95-120">Adds a new conditional format.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-115">Ein <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> -Objekt, das das neue bedingte Format darstellt.</span>
+          <span data-ttu-id="e8a95-121">Ein <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> -Objekt, das das neue bedingte Format darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-115">A <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object that represents the new conditional format.</span>
+            <span data-stu-id="e8a95-121">A <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object that represents the new conditional format.</span>
           </span>
         </returns>
         <remarks>
-          <span data-ttu-id="de039-116">
-            <para>Kann nicht mehr als drei bedingte Formate für einen Bereich festlegen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein bestehendes bedingtes Format zu ändern, oder verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> -Methode, um ein vorhandenes Format zu löschen, bevor Sie eine neue hinzufügen.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-116">
-              <para>You cannot define more than three conditional formats for a range. Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to modify an existing conditional format, or use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete an existing format before adding a new one.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-122">Sie können nicht mehr als drei bedingte Formate für einen Bereich definieren.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-122">You cannot define more than three conditional formats for a range.</span>
             </span>
-          </span>
+            <span data-ttu-id="e8a95-123">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> -Methode, um ein bestehendes bedingtes Format zu ändern, oder verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> -Methode, um ein vorhandenes Format zu löschen, bevor Sie eine neue hinzufügen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-123">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to modify an existing conditional format, or use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete an existing format before adding a new one.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -229,30 +251,31 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="de039-117">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> -Objekt, das eine Regel zur bedingte Formatierung für den angegebenen Bereich darstellt.</span>
+          <span data-ttu-id="e8a95-124">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> -Objekt, das eine Regel zur bedingte Formatierung für den angegebenen Bereich darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-117">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object representing a conditional formatting rule for the specified range.</span>
+            <span data-stu-id="e8a95-124">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object representing a conditional formatting rule for the specified range.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-118">
+          <span data-ttu-id="e8a95-125">
             <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />Objekt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-118">
+            <span data-stu-id="e8a95-125">
               <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object</span>
           </span>
         </returns>
         <remarks>
-          <span data-ttu-id="de039-119">
-            <para>Der <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> -Objekt wird verwendet, um Werte über oder unter einem Mittelwert oder der Standardabweichung in einem Bereich von Zellen zu suchen. Beispielsweise finden Sie die oben genannten durchschnittlichen Ausführenden einer jährlichen Leistung Überprüfung oder wählen Sie hergestellte Materialien, die unter zwei Standardabweichungen in eine Bewertung Qualität fallen.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-119">
-              <para>The <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object is used to find values above or below an average or standard deviation in a range of cells. For example, you can find the above average performers in an annual performance review or you can locate manufactured materials that fall below two standard deviations in a quality rating.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-126">Die <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> -Objekt wird verwendet, um Werte über oder unter einem Mittelwert oder der Standardabweichung in einem Bereich von Zellen zu suchen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-126">The <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object is used to find values above or below an average or standard deviation in a range of cells.</span>
             </span>
-          </span>
+            <span data-ttu-id="e8a95-127">Beispielsweise finden Sie die oben genannten durchschnittlichen Ausführenden einer jährlichen Leistung Überprüfung oder Sie können hergestellte Materialien, die unter zwei Standardabweichungen in eine Bewertung Qualität fallen suchen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-127">For example, you can find the above average performers in an annual performance review or you can locate manufactured materials that fall below two standard deviations in a quality rating.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -280,36 +303,33 @@
       </Parameters>
       <Docs>
         <param name="ColorScaleType">
-          <span data-ttu-id="de039-120">Der Typ der Farbskala.</span>
+          <span data-ttu-id="e8a95-128">Der Typ der Farbskala.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-120">The type of color scale.</span>
+            <span data-stu-id="e8a95-128">The type of color scale.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="de039-121">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> -Objekt, das eine Regel zur bedingte Formatierung, die bei der Abstufungen der Zellfarben relative Differenzen der Werte von Zellen in einem ausgewählten Zellbereich kennzeichnen darstellt.</span>
+          <span data-ttu-id="e8a95-129">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> -Objekt, das eine Regel zur bedingte Formatierung, die bei der Abstufungen der Zellfarben relative Differenzen der Werte von Zellen in einem ausgewählten Zellbereich kennzeichnen darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-121">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object representing a conditional formatting rule that uses gradations in cell colors to indicate relative differences in the values of cells included in a selected range.</span>
+            <span data-stu-id="e8a95-129">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object representing a conditional formatting rule that uses gradations in cell colors to indicate relative differences in the values of cells included in a selected range.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-122">
+          <span data-ttu-id="e8a95-130">
             <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />Objekt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-122">
+            <span data-stu-id="e8a95-130">
               <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object</span>
           </span>
         </returns>
         <remarks>
-          <span data-ttu-id="de039-123">
-            <para>Farbe skaliert werden visual Daten Verteilung und Variation Leitfäden, die Ihnen helfen zu verstehen. Eine Farbskala können Sie relative Differenzen der Werte von Zellen in einem bestimmten Zahlenbereich zu identifizieren, mithilfe von Farbe Variation. Verschiedene Farben und bei der Abstufungen zwischen Farben darstellen Unterschiede in Zellenwerten. Beispielsweise in einer Skala, Sie können angeben, dass Zellen mit der höchsten relativen Datenwerten grün sind, Zellen mit mittleren Werten gelb und Zellen mit den niedrigsten Werte red. werden</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-123">
-              <para>Color scales are visual guides that help you understand data distribution and variation. A color scale helps you identify relative differences in the values of cells in a given range by using color variation. Different colors and gradations between colors represent differences in cell values. For example, in a three-color scale, you can specify that cells with the highest relative data values are green, cells with intermediate values are yellow, and cells with the lowest values are red.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-p110">Bei Farbskalen handelt es sich um visuelle Hilfen, durch die Sie die Datenverteilung und -streuung leichter erkennen können. Mit einer Farbskala können Sie relative Differenzen in den Werten von Zellen in einem bestimmten Bereich anhand der Farbunterschiede erkennen. Unterschiedliche Farben und Farbabstufungen stellen Unterschiede der Zellwerte dar. In einer Skala mit drei Farben können Sie beispielsweise angeben, dass die Zellen mit den höchsten relativen Datenwerten grün, Zellen mit mittleren Werten gelb und Zellen mit den niedrigsten Werten rot angezeigt werden.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-p110">Color scales are visual guides that help you understand data distribution and variation. A color scale helps you identify relative differences in the values of cells in a given range by using color variation. Different colors and gradations between colors represent differences in cell values. For example, in a three-color scale, you can specify that cells with the highest relative data values are green, cells with intermediate values are yellow, and cells with the lowest values are red.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -335,30 +355,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="de039-124">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> -Objekt, das eine Regel zur bedingten Formatierung für den angegebenen Bereich von Datenbalken darstellt.</span>
+          <span data-ttu-id="e8a95-135">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> -Objekt, das eine Regel zur bedingten Formatierung für den angegebenen Bereich von Datenbalken darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-124">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object representing a data bar conditional formatting rule for the specified range.</span>
+            <span data-stu-id="e8a95-135">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object representing a data bar conditional formatting rule for the specified range.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-125">
+          <span data-ttu-id="e8a95-136">
             <see cref="T:Microsoft.Office.Interop.Excel.Databar" />Objekt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-125">
+            <span data-stu-id="e8a95-136">
               <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object</span>
           </span>
         </returns>
         <remarks>
-          <span data-ttu-id="de039-126">
-            <para>Datenbalken können Sie den Wert einer Zelle relativ zu anderen Zellen anzeigen. Die Länge des Datenbalkens stellt den Wert in der Zelle. Ein längerer Balken stellt einen höheren Wert und ein kürzerer Balken einen niedrigeren Wert darstellt. Datenbalken sind hilfreich beim Suchen höherer und niedrigerer Zahlen insbesondere im Hinblick auf große Datenmengen, wie oben und unten Spielwaren in einem Umsatzbericht.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-126">
-              <para>Data bars help you see the value of a cell relative to other cells. The length of the data bar represents the value in the cell. A longer bar represents a higher value and a shorter bar represents a lower value. Data bars are useful in spotting higher and lower numbers especially with large amounts of data, such as top and bottom selling toys in a holiday sales report.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-p111">Mit Datenbalken können Sie den Wert einer Zelle relativ zu anderen Zellen darstellen. Die Länge des Datenbalkens stellt den Wert in der Zelle dar. Ein längerer Balken kennzeichnet einen höheren Wert und ein kürzerer Balken einen niedrigeren Wert. Datenbalken sind hilfreich beim Suchen von höheren und niedrigeren Werten, insbesondere bei großen Datenmengen. Ein Beispiel sind die Spielzeuge mit den besten und schlechtesten Verkaufszahlen in einem Bericht zum Weihnachtsgeschäft.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-p111">Data bars help you see the value of a cell relative to other cells. The length of the data bar represents the value in the cell. A longer bar represents a higher value and a shorter bar represents a lower value. Data bars are useful in spotting higher and lower numbers especially with large amounts of data, such as top and bottom selling toys in a holiday sales report.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -384,30 +401,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="de039-127">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Regel zur bedingten Formatierung für den angegebenen Bereich legen Sie ein Symbol darstellt.</span>
+          <span data-ttu-id="e8a95-141">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Regel zur bedingten Formatierung für den angegebenen Bereich legen Sie ein Symbol darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-127">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object which represents an icon set conditional formatting rule for the specified range.</span>
+            <span data-stu-id="e8a95-141">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object which represents an icon set conditional formatting rule for the specified range.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-128">
+          <span data-ttu-id="e8a95-142">
             <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />Objekt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-128">
+            <span data-stu-id="e8a95-142">
               <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object</span>
           </span>
         </returns>
         <remarks>
-          <span data-ttu-id="de039-129">
-            <para>Verwendung legen Sie ein Symbol auf Daten kennzeichnen und in drei bis fünf Kategorien, die durch einen Schwellenwert getrennt. Jedes Symbol steht für einen Bereich von Werten. Beispielsweise in der 3 Pfeile Symbolsatz der roten Aufwärtspfeil höhere Werte darstellt, der gelbe Pfeil zur Seite mittlere Werte darstellt und der grünen Pfeil nach unten niedrige Werte dar.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-129">
-              <para>Use an icon set to annotate and classify data into three to five categories separated by a threshold value. Each icon represents a range of values. For example, in the 3 Arrows icon set, the red up arrow represents higher values, the yellow sideways arrow represents middle values, and the green down arrow represents lower values.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-p112">Mit einem Symbolsatz können Sie Daten kennzeichnen und in drei bis fünf Kategorien einteilen, die durch einen Schwellenwert getrennt werden. Jedes Symbol stellt einen Wertebereich dar. Im Symbolsatz "3 Pfeile" stellt der rote Pfeil nach oben beispielsweise höhere Werte dar, der gelbe Pfeil zur Seite mittlere Werte, und der grüne Pfeil nach unten stellt geringere Werte dar.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-p112">Use an icon set to annotate and classify data into three to five categories separated by a threshold value. Each icon represents a range of values. For example, in the 3 Arrows icon set, the red up arrow represents higher values, the yellow sideways arrow represents middle values, and the green down arrow represents lower values.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -433,30 +447,31 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="de039-130">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> -Objekt, das eine Regel zur bedingte Formatierung für den angegebenen Bereich darstellt.</span>
+          <span data-ttu-id="e8a95-146">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> -Objekt, das eine Regel zur bedingte Formatierung für den angegebenen Bereich darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-130">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object representing a conditional formatting rule for the specified range.</span>
+            <span data-stu-id="e8a95-146">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object representing a conditional formatting rule for the specified range.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-131">
+          <span data-ttu-id="e8a95-147">
             <see cref="T:Microsoft.Office.Interop.Excel.Top10" />Objekt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-131">
+            <span data-stu-id="e8a95-147">
               <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object</span>
           </span>
         </returns>
         <remarks>
-          <span data-ttu-id="de039-132">
-            <para>Mit der <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> -Objekt finden Sie die höchsten und niedrigsten Werte in einem Bereich von Zellen, die basierend auf einen angegebenen Grenzwert. Angenommen, Sie finden die oberen fünf verkaufen Produkte in einem regionalen Bericht, die unteren 15 % der Produkte in einem Kunden Umfrage, oder die oberen 25 höchsten Gehälter in einer Abteilung Personalanalyse.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-132">
-              <para>Using the <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object, you can find the highest and lowest values in a range of cells based on a cutoff value that you specify. For example, you can find the top five selling products in a regional report, the bottom 15 percent of products in a customer survey, or the top 25 salaries in a department personnel analysis.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-148">Mithilfe der <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> -Objekt finden Sie die höchsten und niedrigsten Werte in einem Bereich von Zellen, die basierend auf einen angegebenen Grenzwert.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-148">Using the <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object, you can find the highest and lowest values in a range of cells based on a cutoff value that you specify.</span>
             </span>
-          </span>
+            <span data-ttu-id="e8a95-149">Beispielsweise finden Sie die oberen fünf verkaufen Produkte in einem regionalen Bericht, die unteren 15 % der Produkte in einer Umfrage unter den Kunden oder die 25 höchsten Gehälter in einer Abteilung Personalanalyse.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-149">For example, you can find the top five selling products in a regional report, the bottom 15 percent of products in a customer survey, or the top 25 salaries in a department personnel analysis.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -482,30 +497,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="de039-133">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> -Objekt, das eine Regel zur bedingte Formatierung für den angegebenen Bereich darstellt.</span>
+          <span data-ttu-id="e8a95-150">Gibt eine neue <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> -Objekt, das eine Regel zur bedingte Formatierung für den angegebenen Bereich darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-133">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object representing a conditional formatting rule for the specified range.</span>
+            <span data-stu-id="e8a95-150">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object representing a conditional formatting rule for the specified range.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-134">
+          <span data-ttu-id="e8a95-151">
             <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />Objekt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-134">
+            <span data-stu-id="e8a95-151">
               <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object</span>
           </span>
         </returns>
         <remarks>
-          <span data-ttu-id="de039-135">
-            <para>Können Sie die <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> Objekt Sie schnell Zellen anzeigen, die entweder eindeutige oder doppelte Werten enthalten.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-135">
-              <para>You can use the <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object to quickly visualize cells that contain either unique or duplicate values.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-152">Sie können die <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> Objekt Sie schnell Zellen anzeigen, die entweder eindeutige oder doppelte Werten enthalten.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-152">You can use the <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object to quickly visualize cells that contain either unique or duplicate values.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -533,9 +545,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="de039-136">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span data-ttu-id="e8a95-153">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-136">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="e8a95-153">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -566,9 +578,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="de039-137">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
+          <span data-ttu-id="e8a95-154">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-137">Returns the number of objects in the collection.</span>
+            <span data-stu-id="e8a95-154">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -599,25 +611,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="de039-138">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="e8a95-155">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-138">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="e8a95-155">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="de039-139">
-            <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-            <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="de039-139">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8a95-156">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-156">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="e8a95-157">Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-157">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="e8a95-158">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8a95-158">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -643,9 +660,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="de039-140">Löscht das Objekt.</span>
+          <span data-ttu-id="e8a95-159">Löscht das Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-140">Deletes the object.</span>
+            <span data-stu-id="e8a95-159">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -707,28 +724,28 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="de039-141">
+          <span data-ttu-id="e8a95-160">
             <b>Objekt</b>erforderlich.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-141">Required <b>Object</b>.</span>
+            <span data-stu-id="e8a95-160">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="de039-142">Die Indexnummer für das Objekt</span>
+          <span data-ttu-id="e8a95-161">Die Indexnummer für das Objekt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-142">The index number for the object.</span>
+            <span data-stu-id="e8a95-161">The index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="de039-143">Gibt ein einzelnes Objekt aus einer Auflistung zurück.</span>
+          <span data-ttu-id="e8a95-162">Gibt ein einzelnes Objekt aus einer Auflistung zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-143">Returns a single object from a collection.</span>
+            <span data-stu-id="e8a95-162">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>
-          <span data-ttu-id="de039-144">
+          <span data-ttu-id="e8a95-163">
             <b>Objekt</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-144">
+            <span data-stu-id="e8a95-163">
               <b>Object</b>
             </span>
           </span>
@@ -760,9 +777,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="de039-145">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
+          <span data-ttu-id="e8a95-164">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="de039-145">Returns the parent object for the specified object.</span>
+            <span data-stu-id="e8a95-164">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

@@ -1,10 +1,10 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584728" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
@@ -34,34 +34,51 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="46dd9-101">Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Name" /> -Objekte in der Anwendung oder Arbeitsmappe.</span>
+      <span data-ttu-id="e5a87-101">Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Name" /> -Objekte in der Anwendung oder Arbeitsmappe.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="46dd9-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objects in the application or workbook.</span>
+        <span data-stu-id="e5a87-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objects in the application or workbook.</span>
       </span>
-      <span data-ttu-id="46dd9-102">Jedes <b>Name</b> -Objekt stellt einen definierten Namen für einen Zellbereich.</span>
+      <span data-ttu-id="e5a87-102">Jedes <b>Name</b> -Objekt stellt einen definierten Namen für einen Zellbereich.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="46dd9-102">Each <b>Name</b> object represents a defined name for a range of cells.</span>
+        <span data-stu-id="e5a87-102">Each <b>Name</b> object represents a defined name for a range of cells.</span>
       </span>
-      <span data-ttu-id="46dd9-103">Namen können sein – wie Datenbank, integriert und Auto_öffnen – oder Benutzerdefiniert.</span>
+      <span data-ttu-id="e5a87-103">Namen können sein – wie Datenbank, integriert und Auto_öffnen – oder Benutzerdefiniert.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="46dd9-103">Names can be either built-in names — such as Database, Print_Area, and Auto_Open — or custom names.</span>
+        <span data-stu-id="e5a87-103">Names can be either built-in names — such as Database, Print_Area, and Auto_Open — or custom names.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="46dd9-104">
-        <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> Eigenschaft, um die <b>Names</b> -Auflistung zurückzugeben.</para>
-        <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um einen Namen erstellen und der Auflistung hinzugefügt. Der <b>Add</b> -Methode <paramref name="RefersTo" /> Argument muss in der A1-Schreibweise einschließlich Dollarzeichen ($) gegebenenfalls angegeben werden. Beispiel: bei Zelle A10 in Sheet1 ausgewählt ist, und definieren Sie einen Namen mit der <paramref name="RefersTo" /> Argument "= sheet1! A1: B1 ", der neue Name bezieht sich auf die Zellen a10: B10 (da Sie einen relativen Bezug angegeben haben). Verwenden Sie zum Angeben der absoluten Bezugs "= sheet1! $A$ 1: $B$ 1".</para>
-        <para>Mit <b>Namen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name Indexnummer oder definierter Name, um ein einzelnes <b>Name</b> -Objekt zurückzugeben.</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="46dd9-104">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> property to return the <b>Names</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a name and add it to the collection. The <b>Add</b> method's <paramref name="RefersTo" /> argument must be specified in A1-style notation, including dollar signs ($) where appropriate. For example, if cell A10 is selected on Sheet1 and you define a name by using the <paramref name="RefersTo" /> argument "=sheet1!A1:B1", the new name actually refers to cells A10:B10 (because you specified a relative reference). To specify an absolute reference, use "=sheet1!$A$1:$B$1".</para>
-          <para>Use <b>Names</b>(<paramref name="index" />), where <paramref name="index" /> is the name index number or defined name, to return a single <b>Name</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="e5a87-104">Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> Eigenschaft, um die <b>Names</b> -Auflistung zurückzugeben.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e5a87-104">Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> property to return the <b>Names</b> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="e5a87-105">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um einen Namen erstellen und der Auflistung hinzugefügt.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e5a87-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a name and add it to the collection.</span>
+        </span>
+        <span data-ttu-id="e5a87-106">Der <b>Add</b> -Methode <paramref name="RefersTo" /> Argument muss in der A1-Schreibweise einschließlich Dollarzeichen ($) gegebenenfalls angegeben werden.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e5a87-106">The <b>Add</b> method's <paramref name="RefersTo" /> argument must be specified in A1-style notation, including dollar signs ($) where appropriate.</span>
+        </span>
+        <span data-ttu-id="e5a87-107">Beispiel: bei Zelle A10 in Sheet1 ausgewählt ist, und definieren Sie einen Namen mit der <paramref name="RefersTo" /> Argument "= sheet1! A1: B1 ", der neue Name bezieht sich auf die Zellen a10: B10 (da Sie einen relativen Bezug angegeben haben).</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e5a87-107">For example, if cell A10 is selected on Sheet1 and you define a name by using the <paramref name="RefersTo" /> argument "=sheet1!A1:B1", the new name actually refers to cells A10:B10 (because you specified a relative reference).</span>
+        </span>
+        <span data-ttu-id="e5a87-108">Verwenden Sie zum Angeben der absoluten Bezugs "= sheet1! $A$ 1: $B$ 1".</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e5a87-108">To specify an absolute reference, use "=sheet1!$A$1:$B$1".</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="e5a87-109">Verwenden Sie <b>Namen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name Indexnummer oder definierter Name, um ein einzelnes <b>Name</b> -Objekt zurückzugeben.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e5a87-109">Use <b>Names</b>(<paramref name="index" />), where <paramref name="index" /> is the name index number or defined name, to return a single <b>Name</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -96,9 +113,9 @@
         <param name="IndexLocal">To be added.</param>
         <param name="RefersTo">To be added.</param>
         <summary>
-          <span data-ttu-id="46dd9-105">Für die interne Verwendung reserviert.</span>
+          <span data-ttu-id="e5a87-110">Für die interne Verwendung reserviert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-105">Reserved for internal use.</span>
+            <span data-stu-id="e5a87-110">Reserved for internal use.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -137,197 +154,197 @@
       </Parameters>
       <Docs>
         <param name="Name">
-          <span data-ttu-id="46dd9-106">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-111">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-106">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-111">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-107">Erforderlich, wenn <paramref name="NameLocal" /> nicht angegeben ist.</span>
+          <span data-ttu-id="e5a87-112">Erforderlich, wenn <paramref name="NameLocal" /> nicht angegeben ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-107">Required if <paramref name="NameLocal" /> isn't specified.</span>
+            <span data-stu-id="e5a87-112">Required if <paramref name="NameLocal" /> isn't specified.</span>
           </span>
-          <span data-ttu-id="46dd9-108">Der Text, der als Name verwendet.</span>
+          <span data-ttu-id="e5a87-113">Der Text, der als Name verwendet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-108">The text to use as the name.</span>
+            <span data-stu-id="e5a87-113">The text to use as the name.</span>
           </span>
-          <span data-ttu-id="46dd9-109">Namen dürfen keine Leerzeichen enthalten und können nicht wie Zellbezüge aussehen.</span>
+          <span data-ttu-id="e5a87-114">Namen dürfen keine Leerzeichen enthalten und können nicht wie Zellbezüge aussehen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-109">Names cannot include spaces and cannot look like cell references.</span>
+            <span data-stu-id="e5a87-114">Names cannot include spaces and cannot look like cell references.</span>
           </span>
         </param>
         <param name="RefersTo">
-          <span data-ttu-id="46dd9-110">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-115">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-110">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-115">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-111">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
+          <span data-ttu-id="e5a87-116">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-111">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="e5a87-116">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="46dd9-112">Beschreibt, worauf der Name bezieht (Verwendung von A1-Schreibweise).</span>
+          <span data-ttu-id="e5a87-117">Beschreibt, worauf der Name bezieht (Verwendung von A1-Schreibweise).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-112">Describes what the name refers to (using A1-style notation).</span>
+            <span data-stu-id="e5a87-117">Describes what the name refers to (using A1-style notation).</span>
           </span>
-          <span data-ttu-id="46dd9-113">
+          <span data-ttu-id="e5a87-118">
             <b>Hinweis</b> Nothing wird zurückgegeben, wenn der Bezug nicht vorhanden ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-113">
+            <span data-stu-id="e5a87-118">
               <b>Note</b> Nothing is returned if the reference does not exist.</span>
           </span>
         </param>
         <param name="Visible">
-          <span data-ttu-id="46dd9-114">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-119">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-114">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-119">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-115">
+          <span data-ttu-id="e5a87-120">
             <b>True</b> , wenn der Name normal angegeben.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-115">
+            <span data-stu-id="e5a87-120">
               <b>True</b> to define the name normally.</span>
           </span>
-          <span data-ttu-id="46dd9-116">
+          <span data-ttu-id="e5a87-121">
             <b>False</b> , wenn der Name als ausgeblendeter Name festgelegt (d. h., es wird nicht angezeigt im Dialogfeld Namen definieren, Namen einfügen oder Gehe zu).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-116">
+            <span data-stu-id="e5a87-121">
               <b>False</b> to define the name as a hidden name (that is, it doesn't appear in either the Define Name, Paste Name, or Goto dialog box).</span>
           </span>
-          <span data-ttu-id="46dd9-117">Der Standardwert ist <b>True</b>.</span>
+          <span data-ttu-id="e5a87-122">Der Standardwert ist <b>True</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-117">The default value is <b>True</b>.</span>
+            <span data-stu-id="e5a87-122">The default value is <b>True</b>.</span>
           </span>
         </param>
         <param name="MacroType">
-          <span data-ttu-id="46dd9-118">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-123">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-118">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-123">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-119">Der Makrotyp, wie in der folgenden Tabelle dargestellt. ValueMeaning1User-Funktion (<b>Function</b> -Prozedur) 2Macro (auch als <b>Sub</b> -Prozedur bezeichnet) 3 oder OmittedNone (d. h., der Name bezieht sich nicht auf eine benutzerdefinierte Funktion oder ein Makro)</span>
+          <span data-ttu-id="e5a87-124">Der Makrotyp, wie in der folgenden Tabelle dargestellt. ValueMeaning1User-Funktion (<b>Function</b> -Prozedur) 2Macro (auch als <b>Sub</b> -Prozedur bezeichnet) 3 oder OmittedNone (d. h., der Name bezieht sich nicht auf eine benutzerdefinierte Funktion oder ein Makro)</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-119">The macro type, as shown in the following table.ValueMeaning1User-defined function (<b>Function</b> procedure)2Macro (also known as <b>Sub</b> procedure)3 or omittedNone (that is, the name doesn't refer to a user-defined function or macro)</span>
+            <span data-stu-id="e5a87-124">The macro type, as shown in the following table.ValueMeaning1User-defined function (<b>Function</b> procedure)2Macro (also known as <b>Sub</b> procedure)3 or omittedNone (that is, the name doesn't refer to a user-defined function or macro)</span>
           </span>
         </param>
         <param name="ShortcutKey">
-          <span data-ttu-id="46dd9-120">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-125">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-120">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-125">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-121">Die Tastenkombination des Makros.</span>
+          <span data-ttu-id="e5a87-126">Die Tastenkombination des Makros.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-121">The macro shortcut key.</span>
+            <span data-stu-id="e5a87-126">The macro shortcut key.</span>
           </span>
-          <span data-ttu-id="46dd9-122">Muss ein einzelner Buchstaben, z. B. "Z" oder "Z".</span>
+          <span data-ttu-id="e5a87-127">Muss ein einzelner Buchstaben, z. B. "Z" oder "Z".</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-122">Must be a single letter, such as "z" or "Z".</span>
+            <span data-stu-id="e5a87-127">Must be a single letter, such as "z" or "Z".</span>
           </span>
-          <span data-ttu-id="46dd9-123">Gilt nur für den Befehlsmakros.</span>
+          <span data-ttu-id="e5a87-128">Gilt nur für den Befehlsmakros.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-123">Applies only for command macros.</span>
+            <span data-stu-id="e5a87-128">Applies only for command macros.</span>
           </span>
         </param>
         <param name="Category">
-          <span data-ttu-id="46dd9-124">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-129">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-124">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-129">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-125">Die Kategorie des Makros oder der Funktion Wenn <paramref name="MacroType" /> ist 1 oder 2.</span>
+          <span data-ttu-id="e5a87-130">Die Kategorie des Makros oder der Funktion Wenn <paramref name="MacroType" /> ist 1 oder 2.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-125">The category of the macro or function if <paramref name="MacroType" /> is 1 or 2.</span>
+            <span data-stu-id="e5a87-130">The category of the macro or function if <paramref name="MacroType" /> is 1 or 2.</span>
           </span>
-          <span data-ttu-id="46dd9-126">Die Kategorie wird im Funktions-Assistenten verwendet.</span>
+          <span data-ttu-id="e5a87-131">Die Kategorie wird im Funktions-Assistenten verwendet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-126">The category is used in the Function Wizard.</span>
+            <span data-stu-id="e5a87-131">The category is used in the Function Wizard.</span>
           </span>
-          <span data-ttu-id="46dd9-127">Vorhandene Kategorien können in Form einer Nummer (beginnend mit 1) oder nach Namen (in der Sprache des Makros) verwiesen werden.</span>
+          <span data-ttu-id="e5a87-132">Vorhandene Kategorien können in Form einer Nummer (beginnend mit 1) oder nach Namen (in der Sprache des Makros) verwiesen werden.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-127">Existing categories can be referred to either by number (starting at 1) or by name (in the language of the macro).</span>
+            <span data-stu-id="e5a87-132">Existing categories can be referred to either by number (starting at 1) or by name (in the language of the macro).</span>
           </span>
-          <span data-ttu-id="46dd9-128">Wenn die angegebene Kategorie noch nicht vorhanden ist, erstellt Microsoft Excel eine neue Kategorie.</span>
+          <span data-ttu-id="e5a87-133">Wenn die angegebene Kategorie noch nicht vorhanden ist, erstellt Microsoft Excel eine neue Kategorie.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-128">Microsoft Excel creates a new category if the specified category doesn't already exist.</span>
+            <span data-stu-id="e5a87-133">Microsoft Excel creates a new category if the specified category doesn't already exist.</span>
           </span>
         </param>
         <param name="NameLocal">
-          <span data-ttu-id="46dd9-129">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-134">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-129">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-134">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-130">Erforderlich, wenn <paramref name="Name" /> nicht angegeben ist.</span>
+          <span data-ttu-id="e5a87-135">Erforderlich, wenn <paramref name="Name" /> nicht angegeben ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-130">Required if <paramref name="Name" /> isn't specified.</span>
+            <span data-stu-id="e5a87-135">Required if <paramref name="Name" /> isn't specified.</span>
           </span>
-          <span data-ttu-id="46dd9-131">Der Text, der als Name (in der Sprache des Benutzers) verwendet.</span>
+          <span data-ttu-id="e5a87-136">Der Text, der als Name (in der Sprache des Benutzers) verwendet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-131">The text to use as the name (in the language of the user).</span>
+            <span data-stu-id="e5a87-136">The text to use as the name (in the language of the user).</span>
           </span>
-          <span data-ttu-id="46dd9-132">Namen dürfen keine Leerzeichen enthalten und können nicht wie Zellbezüge aussehen.</span>
+          <span data-ttu-id="e5a87-137">Namen dürfen keine Leerzeichen enthalten und können nicht wie Zellbezüge aussehen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-132">Names cannot include spaces and cannot look like cell references.</span>
+            <span data-stu-id="e5a87-137">Names cannot include spaces and cannot look like cell references.</span>
           </span>
         </param>
         <param name="RefersToLocal">
-          <span data-ttu-id="46dd9-133">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-138">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-133">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-138">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-134">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
+          <span data-ttu-id="e5a87-139">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-134">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="e5a87-139">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="46dd9-135">Beschreibt, worauf sich der Name bezieht (in der Sprache des Benutzers unter Verwendung der A1-Schreibweise).</span>
+          <span data-ttu-id="e5a87-140">Beschreibt, worauf sich der Name bezieht (in der Sprache des Benutzers unter Verwendung der A1-Schreibweise).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-135">Describes what the name refers to (in the language of the user, using A1-style notation).</span>
+            <span data-stu-id="e5a87-140">Describes what the name refers to (in the language of the user, using A1-style notation).</span>
           </span>
         </param>
         <param name="CategoryLocal">
-          <span data-ttu-id="46dd9-136">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-141">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-136">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-141">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-137">Erforderlich, wenn <paramref name="Category" /> nicht angegeben ist.</span>
+          <span data-ttu-id="e5a87-142">Erforderlich, wenn <paramref name="Category" /> nicht angegeben ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-137">Required if <paramref name="Category" /> isn't specified.</span>
+            <span data-stu-id="e5a87-142">Required if <paramref name="Category" /> isn't specified.</span>
           </span>
-          <span data-ttu-id="46dd9-138">Text, der die Kategorie einer benutzerdefinierten Funktion in der Sprache des Benutzers identifiziert.</span>
+          <span data-ttu-id="e5a87-143">Text, der die Kategorie einer benutzerdefinierten Funktion in der Sprache des Benutzers identifiziert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-138">Text identifying the category of a custom function in the language of the user.</span>
+            <span data-stu-id="e5a87-143">Text identifying the category of a custom function in the language of the user.</span>
           </span>
         </param>
         <param name="RefersToR1C1">
-          <span data-ttu-id="46dd9-139">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-144">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-139">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-144">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-140">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
+          <span data-ttu-id="e5a87-145">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-140">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="e5a87-145">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="46dd9-141">Beschreibt, worauf der Name bezieht (Verwendung der Z1S1-Schreibweise).</span>
+          <span data-ttu-id="e5a87-146">Beschreibt, worauf der Name bezieht (Verwendung der Z1S1-Schreibweise).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-141">Describes what the name refers to (using R1C1-style notation).</span>
+            <span data-stu-id="e5a87-146">Describes what the name refers to (using R1C1-style notation).</span>
           </span>
         </param>
         <param name="RefersToR1C1Local">
-          <span data-ttu-id="46dd9-142">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-147">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-142">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-147">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-143">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
+          <span data-ttu-id="e5a87-148">Erforderlich, wenn eine der anderen <paramref name="RefersTo" /> Argumente angegeben ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-143">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="e5a87-148">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="46dd9-144">Beschreibt, worauf sich der Name bezieht (in der Sprache des Benutzers unter Verwendung der Z1S1-Schreibweise).</span>
+          <span data-ttu-id="e5a87-149">Beschreibt, worauf sich der Name bezieht (in der Sprache des Benutzers unter Verwendung der Z1S1-Schreibweise).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-144">Describes what the name refers to (in the language of the user, using R1C1-style notation).</span>
+            <span data-stu-id="e5a87-149">Describes what the name refers to (in the language of the user, using R1C1-style notation).</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="46dd9-145">Definiert einen neuen Namen an.</span>
+          <span data-ttu-id="e5a87-150">Definiert einen neuen Namen an.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-145">Defines a new name.</span>
+            <span data-stu-id="e5a87-150">Defines a new name.</span>
           </span>
-          <span data-ttu-id="46dd9-146">Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Name" /> Objekt.</span>
+          <span data-ttu-id="e5a87-151">Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Name" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-146">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object.</span>
+            <span data-stu-id="e5a87-151">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -358,9 +375,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="46dd9-147">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span data-ttu-id="e5a87-152">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-147">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="e5a87-152">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -391,13 +408,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="46dd9-148">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
+          <span data-ttu-id="e5a87-153">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-148">Returns the number of objects in the collection.</span>
+            <span data-stu-id="e5a87-153">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="46dd9-149">Schreibgeschützter <b>Integer</b>-Wert.</span>
+          <span data-ttu-id="e5a87-154">Schreibgeschützter <b>Integer</b>-Wert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-149">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="e5a87-154">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -428,31 +445,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="46dd9-150">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="e5a87-155">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-150">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="e5a87-155">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="46dd9-151">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
+          <span data-ttu-id="e5a87-156">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-151">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="e5a87-156">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="46dd9-152">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span data-ttu-id="e5a87-157">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-152">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="e5a87-157">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="46dd9-153">
-            <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46dd9-153">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e5a87-158">Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e5a87-158">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="e5a87-159">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e5a87-159">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -513,61 +531,58 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="46dd9-154">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-160">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-154">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-160">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-155">Der Name oder die Nummer des definierten Namens, der zurückgegeben werden soll.</span>
+          <span data-ttu-id="e5a87-161">Der Name oder die Nummer des definierten Namens, der zurückgegeben werden soll.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-155">The name or number of the defined name to be returned.</span>
+            <span data-stu-id="e5a87-161">The name or number of the defined name to be returned.</span>
           </span>
         </param>
         <param name="IndexLocal">
-          <span data-ttu-id="46dd9-156">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-162">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-156">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-162">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-157">Der Name des definierten Namens in der Sprache des Benutzers.</span>
+          <span data-ttu-id="e5a87-163">Der Name des definierten Namens in der Sprache des Benutzers.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-157">The name of the defined name in the language of the user.</span>
+            <span data-stu-id="e5a87-163">The name of the defined name in the language of the user.</span>
           </span>
-          <span data-ttu-id="46dd9-158">Wenn dieses Argument verwenden, werden keine Namen übersetzt.</span>
+          <span data-ttu-id="e5a87-164">Wenn dieses Argument verwenden, werden keine Namen übersetzt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-158">No names will be translated if you use this argument.</span>
+            <span data-stu-id="e5a87-164">No names will be translated if you use this argument.</span>
           </span>
         </param>
         <param name="RefersTo">
-          <span data-ttu-id="46dd9-159">Optionales- <b>Objekt</b>.</span>
+          <span data-ttu-id="e5a87-165">Optionales- <b>Objekt</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-159">Optional <b>Object</b>.</span>
+            <span data-stu-id="e5a87-165">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="46dd9-160">Worauf sich der Name bezieht sich auf.</span>
+          <span data-ttu-id="e5a87-166">Worauf sich der Name bezieht sich auf.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-160">What the name refers to.</span>
+            <span data-stu-id="e5a87-166">What the name refers to.</span>
           </span>
-          <span data-ttu-id="46dd9-161">Sie verwenden dieses Argument, was in Bezug auf einen Namen identifiziert.</span>
+          <span data-ttu-id="e5a87-167">Sie verwenden dieses Argument, was in Bezug auf einen Namen identifiziert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-161">You use this argument to identify a name by what it refers to.</span>
+            <span data-stu-id="e5a87-167">You use this argument to identify a name by what it refers to.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="46dd9-162">Gibt einen Single- <see cref="T:Microsoft.Office.Interop.Excel.Name" /> -Objekt aus einer <see cref="T:Microsoft.Office.Interop.Excel.Names" /> Auflistung.</span>
+          <span data-ttu-id="e5a87-168">Gibt einen Single- <see cref="T:Microsoft.Office.Interop.Excel.Name" /> -Objekt aus einer <see cref="T:Microsoft.Office.Interop.Excel.Names" /> Auflistung.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-162">Returns a single <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object from a <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection.</span>
+            <span data-stu-id="e5a87-168">Returns a single <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object from a <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="46dd9-163">
-            <para>Müssen Sie einen und nur ein einziges dieser drei Argumente angeben.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46dd9-163">
-              <para>You must specify one, and only one, of these three arguments.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e5a87-169">Sie dürfen nur ein einziges dieser drei Argumente angeben.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e5a87-169">You must specify one, and only one, of these three arguments.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -595,9 +610,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="46dd9-p119">Gibt das übergeordnete Objekt für das angegebene Objekt zurück. Schreibgeschützt.</span>
+          <span data-ttu-id="e5a87-p121">Gibt das übergeordnete Objekt für das angegebene Objekt zurück. Schreibgeschützt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="46dd9-p119">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="e5a87-p121">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>

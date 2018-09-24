@@ -1,10 +1,10 @@
 <Type Name="SparklineGroup" FullName="Microsoft.Office.Interop.Excel.SparklineGroup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c34b4c1cd646b1414ae18e10ee0fbe1e821f9fa" />
+    <Meta Name="ms.openlocfilehash" Value="ba984506dbd7cd1c005762dfefbca8ba4bc4260a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585078" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
@@ -34,24 +34,33 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="ae695-101">Stellt eine Gruppe von Sparklines dar.</span>
+      <span data-ttu-id="5b477-101">Stellt eine Gruppe von Sparklines dar.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ae695-101">Represents a group of sparklines.</span>
+        <span data-stu-id="5b477-101">Represents a group of sparklines.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="ae695-102">
-        <para>Die <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> -Objekt kann mehrere Sparklines enthalten und enthält die Einstellungen für die Gruppe ein, beispielsweise Farbe und Achse. Jeder Sparkline ist dargestellt, durch eine <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> -Objekt.</para>
-        <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> -Methode zum Hinzufügen oder Entfernen von Sparklines in der Sparklinegruppe. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> -Methode, um den Speicherort des Sparkline, und Ändern der <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> -Methode, um den Bereich der Quelldaten zu ändern.</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ae695-102">
-          <para>The <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> object can contain multiple sparklines and contains the property settings for the group, such as color and axis settings. Each sparkline is represented by a <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> object.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> method to add or remove sparklines from the sparkline group. Use the <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> method to change the location of the sparkline and use the <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> method to change the range of the source data.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="5b477-102">Die <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> -Objekt kann mehrere Sparklines enthalten und enthält die Einstellungen für die Gruppe ein, beispielsweise Farbe und Achse.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5b477-102">The <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> object can contain multiple sparklines and contains the property settings for the group, such as color and axis settings.</span>
         </span>
-      </span>
+        <span data-ttu-id="5b477-103">Jeder Sparkline ist dargestellt, durch eine <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> Objekt.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5b477-103">Each sparkline is represented by a <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5b477-104">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> -Methode zum Hinzufügen oder Entfernen von Sparklines in der Sparklinegruppe.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5b477-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> method to add or remove sparklines from the sparkline group.</span>
+        </span>
+        <span data-ttu-id="5b477-105">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> -Methode, um den Speicherort des Sparkline, und Ändern der <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> -Methode, um den Bereich der Quelldaten zu ändern.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5b477-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> method to change the location of the sparkline and use the <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> method to change the range of the source data.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -79,32 +88,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-103">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span data-ttu-id="5b477-106">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-103">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="5b477-106">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="ae695-104">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</span>
+          <span data-ttu-id="5b477-107">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-104">When used with an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object.</span>
+            <span data-stu-id="5b477-107">When used with an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-105">Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</span>
+          <span data-ttu-id="5b477-108">Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-105">An <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
+            <span data-stu-id="5b477-108">An <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-106">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-106">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-109">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-109">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -132,28 +138,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-107">Dient zum Abrufen der zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> Objekt.</span>
+          <span data-ttu-id="5b477-110">Dient zum Abrufen der zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-107">Gets the associated <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> object.</span>
+            <span data-stu-id="5b477-110">Gets the associated <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-108">Der zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> Objekt.</span>
+          <span data-ttu-id="5b477-111">Der zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-108">The associated <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> object.</span>
+            <span data-stu-id="5b477-111">The associated <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-109">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-109">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-112">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-112">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -181,28 +184,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-110">Ruft die Anzahl der Sparklines in der Sparklinegruppe.</span>
+          <span data-ttu-id="5b477-113">Ruft die Anzahl der Sparklines in der Sparklinegruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-110">Gets the number of sparklines in the sparkline group.</span>
+            <span data-stu-id="5b477-113">Gets the number of sparklines in the sparkline group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-111">Die Anzahl der Sparklines in der Sparklinegruppe.</span>
+          <span data-ttu-id="5b477-114">Die Anzahl der Sparklines in der Sparklinegruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-111">The number of sparklines in the sparkline group.</span>
+            <span data-stu-id="5b477-114">The number of sparklines in the sparkline group.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-112">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-112">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-115">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-115">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -230,30 +230,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-113">Ruft eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="5b477-116">Ruft eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-113">Gets a 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
+            <span data-stu-id="5b477-116">Gets a 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-114">Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="5b477-117">Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-114">A 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
+            <span data-stu-id="5b477-117">A 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-115">
-            <para>Nur-Lese- <b>long</b>.</para>
-            <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-115">
-              <para>Read-only <b>long</b>.</para>
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C. The <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-118">Nur-Lese- <b>long</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-118">Read-only <b>long</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-119">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-119">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            </span>
+            <span data-ttu-id="5b477-120">Die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-120">The <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="5b477-121">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-121">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -284,36 +293,49 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-116">Ruft ab oder legt den Datumsbereich für die Sparklinegruppe fest.</span>
+          <span data-ttu-id="5b477-122">Ruft ab oder legt den Datumsbereich für die Sparklinegruppe fest.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-116">Gets or sets the date range for the sparkline group.</span>
+            <span data-stu-id="5b477-122">Gets or sets the date range for the sparkline group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-117">Der Datumsbereich der Sparklinegruppe.</span>
+          <span data-ttu-id="5b477-123">Der Datumsbereich der Sparklinegruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-117">The date range for the sparkline group.</span>
+            <span data-stu-id="5b477-123">The date range for the sparkline group.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-118">
-            <para>Raed/Write.</para>
-            <para>Zum Löschen des Datumsbereichs Bereich legen Sie diese Eigenschaft auf eine leere Zeichenfolge.</para>
-            <para>Der Datumsbereich muss eine fortlaufende eindimensional.</para>
-            <para>Der Datumsbereich kann sich nicht auf einem anderen Blatt als die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> und <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> Eigenschaften.</para>
-            <para>Leere Zellen und nichtdatumswerte Werte im Datumsbereich werden nicht angezeigt.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-118">
-              <para>Raed/write.</para>
-              <para>To clear the date range set this property to an empty string.</para>
-              <para>The date range must be a continuous one dimensional range.</para>
-              <para>The date range can be located on a different sheet than the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> and <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> properties.</para>
-              <para>Empty cells and non-date values in the date range are not displayed.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-124">Raed/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-124">Raed/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-125">Legen Sie diese Eigenschaft zum Löschen des Datumsbereichs auf eine leere Zeichenfolge fest.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-125">To clear the date range set this property to an empty string.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-126">Der Datumsbereich muss fortlaufend und eindimensional sein.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-126">The date range must be a continuous one dimensional range.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-127">Der Datumsbereich kann sich nicht auf einem anderen Blatt als die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> und <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> Eigenschaften.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-127">The date range can be located on a different sheet than the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> and <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> properties.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-128">Leere Zellen und Nichtdatumswerte im Datumsbereich werden nicht angezeigt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-128">Empty cells and non-date values in the date range are not displayed.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -339,9 +361,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-119">Löscht die Sparklinegruppe.</span>
+          <span data-ttu-id="5b477-129">Löscht die Sparklinegruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-119">Deletes the sparkline group.</span>
+            <span data-stu-id="5b477-129">Deletes the sparkline group.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -374,28 +396,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-120">Ruft ab oder legt fest, wie leere Zellen in einem Diagramm gezeichnet werden.</span>
+          <span data-ttu-id="5b477-130">Ruft ab oder legt fest, wie leere Zellen in einem Diagramm gezeichnet werden.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-120">Gets or sets the way that blank cells are plotted on a chart.</span>
+            <span data-stu-id="5b477-130">Gets or sets the way that blank cells are plotted on a chart.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-121">Gibt an, wie leere Zellen in einem Diagramm gezeichnet werden.</span>
+          <span data-ttu-id="5b477-131">Gibt an, wie leere Zellen in einem Diagramm gezeichnet werden.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-121">Specifies the way that blank cells are plotted on a chart.</span>
+            <span data-stu-id="5b477-131">Specifies the way that blank cells are plotted on a chart.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-122">
-            <para>Diese Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> Konstanten. Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-122">
-              <para>This property can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> constants. Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-132">Diese Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> Konstanten.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-132">This property can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> constants.</span>
             </span>
-          </span>
+            <span data-ttu-id="5b477-133">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-133">Read/write.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -426,34 +449,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-123">Gibt an, ob in der Sparklinegruppe ausgeblendete Zellen gezeichnet werden.</span>
+          <span data-ttu-id="5b477-134">Gibt an, ob in der Sparklinegruppe ausgeblendete Zellen gezeichnet werden.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-123">Specifies whether hidden cells are plotted in the sparkline group.</span>
+            <span data-stu-id="5b477-134">Specifies whether hidden cells are plotted in the sparkline group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-124">
+          <span data-ttu-id="5b477-135">
             <b>true,</b> wenn ausgeblendete Zellen in der Sparklinegruppe gezeichnet werden. anderenfalls <b>false</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-124">
+            <span data-stu-id="5b477-135">
               <b>true</b> if hidden cells are plotted in the sparkline group; otherwise, <b>false</b>.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-125">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>
-              <b>true,</b> Wenn Zellen ausgeblendet werden angezeigt, in der Sparklinegruppe.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-125">
-              <para>Read/write.</para>
-              <para>
-                <b>true</b> if hidden cells are shown in the sparkline group.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-136">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-136">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-137">
+              <b>true,</b> wenn ausgeblendete Zellen in der Sparklinegruppe angezeigt werden.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-137">
+                <b>true</b> if hidden cells are shown in the sparkline group.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -486,9 +510,9 @@
       <Docs>
         <summary>To be added.</summary>
         <returns>
-          <span data-ttu-id="ae695-126">Gibt <see cref="T:System.Collections.IEnumerator" />.</span>
+          <span data-ttu-id="5b477-138">Gibt <see cref="T:System.Collections.IEnumerator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-126">Returns <see cref="T:System.Collections.IEnumerator" />.</span>
+            <span data-stu-id="5b477-138">Returns <see cref="T:System.Collections.IEnumerator" />.</span>
           </span>
         </returns>
         <remarks>To be added.</remarks>
@@ -521,21 +545,21 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="ae695-127">Indexwert der Sparkline.</span>
+          <span data-ttu-id="5b477-139">Indexwert der Sparkline.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-127">Index value of the sparkline.</span>
+            <span data-stu-id="5b477-139">Index value of the sparkline.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ae695-128">Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> Objekt.</span>
+          <span data-ttu-id="5b477-140">Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-128">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> object.</span>
+            <span data-stu-id="5b477-140">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-129">Gibt <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />.</span>
+          <span data-ttu-id="5b477-141">Gibt <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-129">Returns <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />.</span>
+            <span data-stu-id="5b477-141">Returns <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />.</span>
           </span>
         </value>
         <remarks>To be added.</remarks>
@@ -568,28 +592,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-130">Ruft ab oder legt die Stärke der Sparklines in der Sparklinegruppe fest.</span>
+          <span data-ttu-id="5b477-142">Ruft ab oder legt die Stärke der Sparklines in der Sparklinegruppe fest.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-130">Gets or sets the thickness of the sparklines in the sparkline group.</span>
+            <span data-stu-id="5b477-142">Gets or sets the thickness of the sparklines in the sparkline group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-131">Die Breite der Sparklines in der Sparklinegruppe.</span>
+          <span data-ttu-id="5b477-143">Die Breite der Sparklines in der Sparklinegruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-131">The thickness of the sparklines in the sparkline group.</span>
+            <span data-stu-id="5b477-143">The thickness of the sparklines in the sparkline group.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-132">
-            <para>Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-132">
-              <para>Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-144">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-144">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -620,38 +641,51 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-133">Dient zum Abrufen oder Festlegen der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Position der Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-145">Dient zum Abrufen oder Festlegen der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Position der Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-133">Gets or sets the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the location of the sparkline group.</span>
+            <span data-stu-id="5b477-145">Gets or sets the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the location of the sparkline group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-134">Die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Position der Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-146">Die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Position der Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-134">The <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the location of the sparkline group.</span>
+            <span data-stu-id="5b477-146">The <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the location of the sparkline group.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-135">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Der Speicherort für alle Sparklines in einer Sparklinegruppe muss sich auf demselben Blatt, aber die Quelldaten für die Sparklinegruppe sind auf einem anderen Arbeitsblatt oder einer Arbeitsmappe.</para>
-            <para>Die Größe des Bereichs darstellt, die die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> Eigenschaft muss gleich der Anzahl von Zeilen oder Spalten in der <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> -Eigenschaft für die <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> Objekt.</para>
-            <para>A zusammenhängenden Bereichs eine Sparklinegruppe zugeordnete kann nur eindimensional sein. Wenn der Bereich nicht zusammenhängend ist, jede Zelle muss angegeben werden einzeln.</para>
-            <para>
-              <b>Hinweis</b>: Verwenden Sie nicht die <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> -Methode zum Erstellen eines nicht zusammenhängenden Bereichs, da die <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> -Methode gibt einen einzelnen Bereichsverweis zurück.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-135">
-              <para>Read/write.</para>
-              <para>The location for all sparklines in a sparkline group must be on the same sheet, but the source data for the sparkline group can be on a different sheet or workbook.</para>
-              <para>The size of the range that represents the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> property must equal the number of rows or columns in the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> property for the <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> object.</para>
-              <para>A continuous range associated with a sparkline group can only be one dimensional. If the range is not continuous, each cell must be specified individually.</para>
-              <para>
-                <b>Note</b>: Do not use the <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> method to create a non-continuous range because the <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> method returns a single range reference.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-147">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-147">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-148">Die Position aller Sparklines in einer Sparklinegruppe muss sich auf demselben Blatt befinden, aber die Quelldaten der Sparklinegruppe können sich auf einem anderen Blatt oder in einer anderen Arbeitsmappe befinden.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-148">The location for all sparklines in a sparkline group must be on the same sheet, but the source data for the sparkline group can be on a different sheet or workbook.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-149">Die Größe des Bereichs darstellt, die die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> Eigenschaft muss gleich der Anzahl von Zeilen oder Spalten in der <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> -Eigenschaft für die <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> Objekt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-149">The size of the range that represents the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> property must equal the number of rows or columns in the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> property for the <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> object.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-p106">Ein zu einer Sparklinegruppe gehörender zusammenhängender Bereich kann nur eindimensional sein. Ist der Bereich nicht zusammenhängend, muss jede Zelle einzeln angegeben werden.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-p106">A continuous range associated with a sparkline group can only be one dimensional. If the range is not continuous, each cell must be specified individually.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-152">
+              <b>Hinweis</b>: Verwenden Sie nicht die <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> -Methode zum Erstellen eines nicht zusammenhängenden Bereichs, da die <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> -Methode gibt einen einzelnen Bereichsverweis zurück.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-152">
+                <b>Note</b>: Do not use the <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> method to create a non-continuous range because the <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> method returns a single range reference.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -680,21 +714,21 @@
       </Parameters>
       <Docs>
         <param name="Location">
-          <span data-ttu-id="ae695-136">Die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Position der Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-153">Die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Position der Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-136">The <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the location of the sparkline group.</span>
+            <span data-stu-id="5b477-153">The <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the location of the sparkline group.</span>
           </span>
         </param>
         <param name="SourceData">
-          <span data-ttu-id="ae695-137">Der Bereich, der die Quelldaten für die Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-154">Der Bereich, der die Quelldaten für die Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-137">The range that represents the source data for the sparkline group.</span>
+            <span data-stu-id="5b477-154">The range that represents the source data for the sparkline group.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ae695-138">Legt Position und Quelldaten der Sparklinegruppe fest.</span>
+          <span data-ttu-id="5b477-155">Legt Position und Quelldaten der Sparklinegruppe fest.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-138">Sets the location and the source data for the sparkline group.</span>
+            <span data-stu-id="5b477-155">Sets the location and the source data for the sparkline group.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -724,15 +758,15 @@
       </Parameters>
       <Docs>
         <param name="DateRange">
-          <span data-ttu-id="ae695-139">Der Datumsbereich der Sparklinegruppe.</span>
+          <span data-ttu-id="5b477-156">Der Datumsbereich der Sparklinegruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-139">The date range for the sparkline group.</span>
+            <span data-stu-id="5b477-156">The date range for the sparkline group.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ae695-140">Legt den Datumsbereich für die Sparklinegruppe fest.</span>
+          <span data-ttu-id="5b477-157">Legt den Datumsbereich für die Sparklinegruppe fest.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-140">Sets the date range for the sparkline group.</span>
+            <span data-stu-id="5b477-157">Sets the date range for the sparkline group.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -762,15 +796,15 @@
       </Parameters>
       <Docs>
         <param name="Location">
-          <span data-ttu-id="ae695-141">Die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> , das die Position der Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-158">Die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> , das die Position der Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-141">The <see cref="T:Microsoft.Office.Interop.Excel.Range" /> that represents the location of the sparkline group.</span>
+            <span data-stu-id="5b477-158">The <see cref="T:Microsoft.Office.Interop.Excel.Range" /> that represents the location of the sparkline group.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ae695-142">Legt die zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekts, um die Position der Sparklinegruppe zu ändern.</span>
+          <span data-ttu-id="5b477-159">Legt die zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekts, um die Position der Sparklinegruppe zu ändern.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-142">Sets the associated <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object to modify the location of the sparkline group.</span>
+            <span data-stu-id="5b477-159">Sets the associated <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object to modify the location of the sparkline group.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -800,15 +834,15 @@
       </Parameters>
       <Docs>
         <param name="SourceData">
-          <span data-ttu-id="ae695-143">Der Bereich, der die Quelldaten darstellt.</span>
+          <span data-ttu-id="5b477-160">Der Bereich, der die Quelldaten darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-143">The range that represents the source data.</span>
+            <span data-stu-id="5b477-160">The range that represents the source data.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ae695-144">Legt den Bereich fest, der die Quelldaten für die Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-161">Legt den Bereich fest, der die Quelldaten für die Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-144">Sets the range that represents the source data for the sparkline group.</span>
+            <span data-stu-id="5b477-161">Sets the range that represents the source data for the sparkline group.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -838,28 +872,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-145">Ruft ab, der übergeordnete Objekt des angegebenen Objekts.</span>
+          <span data-ttu-id="5b477-162">Ruft ab, der übergeordnete Objekt des angegebenen Objekts.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-145">Gets the parent object for the specified object.</span>
+            <span data-stu-id="5b477-162">Gets the parent object for the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-146">Das übergeordnete Objekt des angegebenen Objekts.</span>
+          <span data-ttu-id="5b477-163">Das übergeordnete Objekt des angegebenen Objekts.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-146">The parent object for the specified object.</span>
+            <span data-stu-id="5b477-163">The parent object for the specified object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-147">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-147">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-164">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-164">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -890,32 +921,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-148">Ruft ab oder legt diesen fest wie die Sparkline gezeichnet wird, wenn die Daten auf der es basiert in einem quadratischen Bereich ist.</span>
+          <span data-ttu-id="5b477-165">Ruft ab oder legt diesen fest wie die Sparkline gezeichnet wird, wenn die Daten auf der es basiert in einem quadratischen Bereich ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-148">Gets or sets how to plot the sparkline when the data on which it is based is in a square-shaped range.</span>
+            <span data-stu-id="5b477-165">Gets or sets how to plot the sparkline when the data on which it is based is in a square-shaped range.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-149">Gibt an, wie die Sparkline gezeichnet wird, wenn die Daten, auf denen sie basiert, in einem quadratischen Bereich liegen.</span>
+          <span data-ttu-id="5b477-166">Gibt an, wie die Sparkline gezeichnet wird, wenn die Daten, auf denen sie basiert, in einem quadratischen Bereich liegen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-149">Specifies how to plot the sparkline when the data on which it is based is in a square-shaped range.</span>
+            <span data-stu-id="5b477-166">Specifies how to plot the sparkline when the data on which it is based is in a square-shaped range.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-150">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Diese Eigenschaft kann nur festgelegt werden, wenn die Daten auf dem die Sparkline basiert in einem quadratischen Bereich, z. B., wenn die Daten im Bereich a1: B2.</para>
-            <para>Der Standardwert für sp-Daten in einem quadratischen Bereich werden die Daten zeilenweise zeichnen (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-150">
-              <para>Read/write.</para>
-              <para>This property can only be set if the data on which the sparkline is based is in a square-shaped range, for example if the data is in the range A1:B2.</para>
-              <para>The default value for sp data in a square-shaped range is to plot the data by rows (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-167">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-167">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-168">Diese Eigenschaft kann nur festgelegt werden, wenn die Daten, auf denen die Sparkline basiert, in einem Bereich mit quadratischer Form vorliegen, z. B. wenn die Daten im Bereich A1:B2 liegen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-168">This property can only be set if the data on which the sparkline is based is in a square-shaped range, for example if the data is in the range A1:B2.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-169">Der Standardwert für sp-Daten in einem quadratischen Bereich werden die Daten zeilenweise zeichnen (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-169">The default value for sp data in a square-shaped range is to plot the data by rows (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />).</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -943,34 +979,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-151">Ruft die Position des angegebenen Knotens als ein paar koordinieren.</span>
+          <span data-ttu-id="5b477-170">Ruft die Position des angegebenen Knotens als ein paar koordinieren.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-151">Gets the position of the specified node as a coordinate pair.</span>
+            <span data-stu-id="5b477-170">Gets the position of the specified node as a coordinate pair.</span>
           </span>
-          <span data-ttu-id="ae695-152">Die einzelnen Koordinaten werden in Punkt angegeben.</span>
+          <span data-ttu-id="5b477-171">Die einzelnen Koordinaten werden in Punkt angegeben.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-152">Each coordinate is expressed in points.</span>
+            <span data-stu-id="5b477-171">Each coordinate is expressed in points.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-153">Die Position des angegebenen Knotens als ein paar koordinieren.</span>
+          <span data-ttu-id="5b477-172">Die Position des angegebenen Knotens als ein paar koordinieren.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-153">The position of the specified node as a coordinate pair.</span>
+            <span data-stu-id="5b477-172">The position of the specified node as a coordinate pair.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-154">
-            <para>Ein paar-Koordinate ist ein Paar von Werten, die die x- und y-Koordinaten eines Punkts, die in einem zweidimensionalen Array gespeichert sind, die Koordinaten für viele Punkte enthalten kann darstellen.</para>
-            <para>Ist diese Eigenschaft schreibgeschützt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> -Methode, um den Wert dieser Eigenschaft festzulegen.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-154">
-              <para>A coordinate pair is a pair of values representing the x- and y-coordinates of a point that are stored in a two-dimensional array that can contain coordinates for many points.</para>
-              <para>This property is read-only. Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> method to set the value of this property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-173">Ein paar-Koordinate ist ein Paar von Werten, die die x- und y-Koordinaten eines Punkts, die in einem zweidimensionalen Array gespeichert sind, die Koordinaten für viele Punkte enthalten kann darstellen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-173">A coordinate pair is a pair of values representing the x- and y-coordinates of a point that are stored in a two-dimensional array that can contain coordinates for many points.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-174">Diese Eigenschaft ist schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-174">This property is read-only.</span>
+            </span>
+            <span data-ttu-id="5b477-175">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> -Methode, um den Wert dieser Eigenschaft festzulegen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-175">Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> method to set the value of this property.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -998,28 +1039,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-155">Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> -Objekt, das die Farbe main Serie für die Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-176">Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> -Objekt, das die Farbe main Serie für die Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-155">Gets a <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object that represents the main series color for the sparkline group.</span>
+            <span data-stu-id="5b477-176">Gets a <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object that represents the main series color for the sparkline group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-156">Ein <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> -Objekt, das die Farbe main Serie für die Sparklinegruppe darstellt.</span>
+          <span data-ttu-id="5b477-177">Ein <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> -Objekt, das die Farbe main Serie für die Sparklinegruppe darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-156">A <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object that represents the main series color for the sparkline group.</span>
+            <span data-stu-id="5b477-177">A <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object that represents the main series color for the sparkline group.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-157">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-157">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-178">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-178">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1050,32 +1088,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-158">Dient zum Abrufen oder festlegen den Bereich, der die Quelldaten für die Sparklinegruppe enthält.</span>
+          <span data-ttu-id="5b477-179">Dient zum Abrufen oder festlegen den Bereich, der die Quelldaten für die Sparklinegruppe enthält.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-158">Gets or sets the range that contains the source data for the sparkline group.</span>
+            <span data-stu-id="5b477-179">Gets or sets the range that contains the source data for the sparkline group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-159">Der Bereich, der die Quelldaten für die Sparklinegruppe enthält.</span>
+          <span data-ttu-id="5b477-180">Der Bereich, der die Quelldaten für die Sparklinegruppe enthält.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-159">The range that contains the source data for the sparkline group.</span>
+            <span data-stu-id="5b477-180">The range that contains the source data for the sparkline group.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-160">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Die Anzahl der Zeilen oder Spalten in der Quelldatenbereich muss gleich der Anzahl von Zellen in der <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> Eigenschaftsbereich.</para>
-            <para>Der Datenquellenbereich für eine einzelne Sparkline in der Sparklinegruppe muss kontinuierliche.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-160">
-              <para>Read/write.</para>
-              <para>The number of rows or columns in the source data range must equal the number of cells in the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> property range.</para>
-              <para>The data source range for a single sparkline in the sparkline group must be continuous.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-181">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-181">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-182">Die Anzahl der Zeilen oder Spalten in der Quelldatenbereich muss gleich der Anzahl von Zellen in der <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> -Eigenschaft liegen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-182">The number of rows or columns in the source data range must equal the number of cells in the <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> property range.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5b477-183">Der Datenquellenbereich für eine einzelne Sparkline in der Sparklinegruppe muss zusammenhängend sein.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-183">The data source range for a single sparkline in the sparkline group must be continuous.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1106,28 +1149,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ae695-161">Ruft ab oder legt den Typ der Sparkline für die Gruppe.</span>
+          <span data-ttu-id="5b477-184">Ruft ab oder legt den Typ der Sparkline für die Gruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-161">Gets or sets the type of sparkline for the group.</span>
+            <span data-stu-id="5b477-184">Gets or sets the type of sparkline for the group.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ae695-162">Der Typ der Sparkline für die Gruppe.</span>
+          <span data-ttu-id="5b477-185">Der Typ der Sparkline für die Gruppe.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ae695-162">The type of sparkline for the group.</span>
+            <span data-stu-id="5b477-185">The type of sparkline for the group.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ae695-163">
-            <para>Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ae695-163">
-              <para>Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5b477-186">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5b477-186">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
