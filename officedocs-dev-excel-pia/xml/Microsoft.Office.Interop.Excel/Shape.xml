@@ -1,10 +1,10 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Excel.Shape">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fbb7ccfce4b3641da65d4d7f598e5099a4404460" />
+    <Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585085" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Shape" />
@@ -32,40 +32,40 @@
     <summary>Stellt ein Objekt in der Zeichnungsebene dar, z. B. eine AutoForm, eine Freihandform, ein OLE-Objekt oder eine Grafik. Das <b>Shape</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung. Die <b>Shapes</b> -Auflistung enthält alle Formen auf einer Folie.</summary>
     <remarks>
       <para>Es gibt drei Objekte, die Formen darstellen: die <b>Shapes</b> -Auflistung, die alle Formen in einem Dokument; darstellt. die <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> -Auflistung, die eine angegebene Teilmenge der Formen in einem Dokument darstellt (beispielsweise ein <b>ShapeRange</b> -Objekt die Formen 1 und 4 im Dokument darstellen, oder alle markierten Formen im Dokument darstellen); und das <b>Shape</b> -Objekt, das eine einzelne Form in einem Dokument darstellt. Wenn Sie mit mehreren Formen gleichzeitig oder mit Formen innerhalb der Markierung arbeiten möchten, verwenden Sie eine <b>ShapeRange</b> -Auflistung.</para>
-      <para>In diesem Abschnitt wird beschrieben, wie Sie:</para>
+      <para>Dieser Abschnitt wird beschrieben, wie Sie:</para>
       <list type="bullet">
         <item>
-          <description>Zurückgeben einer vorhandenen Form.</description>
+          <description>vorhandene Form zurückgegeben wird.</description>
         </item>
         <item>
-          <description>Zurückgeben einer Form innerhalb der Markierung.</description>
+          <description>eine Form innerhalb einer Auswahl zurückgegeben wird.</description>
         </item>
         <item>
-          <description>Zurückgeben die Formen, die den Enden einer Verbindung zusammengefügt.</description>
+          <description>Formen zurückgegeben werden, die am Ende eines Verbinders angefügt sind.</description>
         </item>
         <item>
-          <description>Zurückgeben eines neu erstellten Freihandobjekts.</description>
+          <description>eine neu erstellte Freihandform zurückgegeben wird.</description>
         </item>
         <item>
-          <description>Zurückgeben einer einzelnen Form innerhalb einer Gruppe von.</description>
+          <description>Zurückgeben einer einzelnen Form innerhalb einer Gruppe.</description>
         </item>
         <item>
-          <description>Zurückgeben eine neu gebildete Gruppe von Formen.</description>
+          <description>Zurückgeben einer neu gebildeten Gruppe von Formen.</description>
         </item>
       </list>
-      <para>Zurückgeben einer bestehenden Form</para>
-      <para>Verwenden von <b>Formen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Shapes oder die Indexzahl darstellt, um ein <b>Shape</b> -Objekt zurückzugeben, das eine Form repräsentiert.</para>
-      <para>Jeder Form wird ein Standardname zugewiesen, wenn Sie es der <b>Shapes</b> -Auflistung hinzufügen. Wenn der Form einen aussagekräftigeren Namen übergeben möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> -Eigenschaft.</para>
-      <para>Zurückgeben einer Form innerhalb der Markierung</para>
-      <para>Verwendung <b>Selection.ShapeRange</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Shapes oder die Indexzahl darstellt, um ein <b>Shape</b> -Objekt zurückzugeben, das eine Form innerhalb der Markierung darstellt.</para>
-      <para>Zurückgeben der Formen, die den Enden einer Verbindung zugeordnet sind</para>
-      <para>Verwenden, um ein <b>Shape</b> -Objekt zurückzugeben, das eine der durch eine Verbindung zugeordneten Formen darstellt, die <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> oder <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> -Eigenschaft.</para>
+      <para>Zurückgeben einer vorhandenen Form</para>
+      <para>Verwenden von <b>Formen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Shapes oder die Indexzahl darstellt, um ein <b>Shape</b> -Objekt zurückzugeben, das eine Form darstellt.</para>
+      <para>Jeder Form wird ein Standardname zugewiesen, wenn Sie es der <b>Shapes</b> -Auflistung hinzufügen. Wenn der Form einen aussagekräftigeren Namen übergeben möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> Eigenschaft.</para>
+      <para>Zurückgeben einer Form innerhalb einer Sammlung</para>
+      <para>Verwenden Sie <b>Selection.ShapeRange</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Shapes oder die Indexzahl darstellt, um ein <b>Shape</b> -Objekt zurückzugeben, das eine Form innerhalb der Markierung darstellt.</para>
+      <para>Zurückgeben von Formen, die am Ende eines Verbinders angefügt sind</para>
+      <para>Verwenden, um ein <b>Shape</b> -Objekt zurückzugeben, das eine der durch eine Verbindung zugeordneten Formen darstellt, die <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> oder <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> Eigenschaft.</para>
       <para>Zurückgeben einer neu erstellten Freihandform</para>
-      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> und <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> Methoden verwenden, um die Geometrie einer neuen Freihandform definieren, und verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> -Methode, um die Freihandform erstellen und Zurückgeben des <b>Shape</b> -Objekts, die darauf verweisen darstellt</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> und <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> Methoden verwenden, um die Geometrie einer neuen Freihandform definieren, und verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> -Methode, um die Freihandform erstellen und Zurückgeben des <b>Shape</b> -Objekts, das es darstellt.</para>
       <para>Zurückgeben einer einzelnen Form aus einer Gruppe</para>
-      <para>Verwendung <b>GroupItems</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Shapes oder die Indexnummer innerhalb der Gruppe, um ein <b>Shape</b> -Objekt zurückzugeben, das eine einzelne Form in einer gruppierten Form darstellt.</para>
+      <para>Verwenden Sie <b>GroupItems</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Shapes oder die Indexnummer innerhalb der Gruppe, um ein <b>Shape</b> -Objekt zurückzugeben, das eine einzelne Form in einer gruppierten Form darstellt.</para>
       <para>Zurückgeben einer neu gebildeten Gruppe von Formen</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> oder <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> -Methode, um einen Formbereich gruppieren und zurückgeben ein einzelnes <b>Shape</b> -Objekt, das die neu gebildete Gruppe darstellt. Wenn Sie eine Gruppe gebildet haben, können Sie mit arbeiten der Gruppe die gleiche Weise wie Arbeiten Sie mit einem anderen Shape.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> oder <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> -Methode, um einen Formbereich gruppieren und zurückgeben ein einzelnes <b>Shape</b> -Objekt, das die neu gebildete Gruppe darstellt. Nach dem bilden einer Gruppe können Sie arbeiten mit der Gruppe der gleichen Weise wie Arbeit mit einem anderen Shape.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -130,7 +130,7 @@
         <summary>Zurückgeben oder festlegen die beschreibenden (alternative) Textzeichenfolge für einen <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt, wenn das Objekt als Webseite gespeichert wird. Lese-/Schreibzugriff <b>String</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der alternative Text kann angezeigt werden entweder anstelle des Shapes Bild in einem Webbrowser oder direkt über dem Bild der Mauszeiger bewegt wird über dem Bild (in Browsern, die diese Funktionen unterstützt).</para>
+          <para>Der alternative Text kann entweder anstelle des Shapes Bild in einem Webbrowser oder direkt über dem Bild angezeigt werden, wenn der Mauszeiger bewegt wird über dem Bild (in Browsern, die diese Funktionen unterstützt).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -217,7 +217,7 @@
         <summary>Gibt zurück oder legt den Typ der Form für das angegebene <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das eine AutoForm eine Zeile, eine Freihandform-Zeichnung oder Verbindung darstellen muss. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie den Typ einer Form ändern, behält die Form ihre Größe, Farbe und andere Attribute.</para>
+          <para>[!HINWEIS] Wenn Sie den Typ der Form ändern, bleiben Größe, Farbe und andere Eigenschaften der Form erhalten.</para>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> Objekt festzulegen oder zurückzugeben Verbindungsart.</para>
           <para></para>
         </remarks>
@@ -749,7 +749,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -778,7 +778,7 @@
         <summary>Schneidet das Objekt aus, legt es in die Zwischenablage oder fügt es an einer angegebenen Stelle ein.</summary>
         <remarks>
           <para>Der ausgeschnittene Bereich muss aus angrenzenden Zellen bestehen.</para>
-          <para>Können nur eingebettete Diagramme ausgeschnitten werden.</para>
+          <para>Es können nur eingebettete Diagramme ausgeschnitten werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1041,7 +1041,10 @@
         <value>
           <see cref="T:Microsoft.Office.Core.GlowFormat" />
         </value>
-        <remarks>Der Leuchteffekt <para>Grafiken eine kräftige farbige Edge hinzugefügt.  </para><para></para></remarks>
+        <remarks>
+          <para>Der Leuchteffekt fügt Grafiken einen Rand in leuchtenden Farben hinzu.  </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupItems">
@@ -1190,9 +1193,9 @@
         <summary>Ruft ab, ob ein SmartArt-Diagramm auf die angegebene Form vorhanden ist.</summary>
         <value>Eine <see cref="T:Microsoft.Office.Core.MsoTriState" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>
-            <b>MsoTrue</b> (1), wenn ein SmartArt-Diagramm auf der Form vorhanden ist, andernfalls <b>MsoFalse</b> (0).</para>
+          <para>Schreibgeschützt.</para>
+          <para>msoTrue
+            <b>msoTrue</b> (-1), wenn ein SmartArt-Diagramm auf der Form vorhanden ist, andernfalls <b>msoFalse</b> (0).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1311,7 +1314,7 @@
         <summary>Gibt den Typ für das angegebene Objekt zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Können eine ID-Beschriftung als einen Hyperlinkverweis in anderen HTML-Dokumenten oder auf derselben Webseite.</para>
+          <para>Sie können eine ID-Beschriftung in anderen HTML-Dokumenten oder auf derselben Webseite als Hyperlinkverweis verwenden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1372,7 +1375,7 @@
           <b>Single</b>erforderlich. Gibt an, wie weit die Form horizontal in Grad gedreht werden soll. Ein positiver Wert dreht die Form im Uhrzeigersinn; ein negativer Wert gegen den Uhrzeigersinn gedreht.</param>
         <summary>Ändert die Drehung der angegebenen Form um die z-Achse um die angegebene Gradzahl. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> Eigenschaft, um die absolute Drehung der Form festzulegen.</summary>
         <remarks>
-          <para>, Um eine dreidimensionale Form um die x-Achse oder die y-Achse drehen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> Methode oder die <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> -Methode.</para>
+          <para>Um eine dreidimensionale Form um die x-Achse oder die y-Achse drehen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> Methode oder die <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1463,7 +1466,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> -Objekt, das Zeile Formateigenschaften für die angegebene Form enthält. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Bei einer Linie stellt das <b>LineFormat</b> -Objekt die Linie selbst; für eine Form mit einem Rahmen stellt das <b>LineFormat</b> -Objekt den Rahmen dar.</para>
+          <para>Bei einer Linie stellt das <b>LineFormat</b> -Objekt die Linie selbst dar; für eine Form mit einem Rahmen stellt das <b>LineFormat</b> -Objekt den Rahmen dar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1589,7 +1592,7 @@
         <summary>Gibt den Namen des Objekts zurück oder legt ihn fest. <b>String</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die folgende Tabelle zeigt Beispielwerte der <b>Name</b> -Eigenschaft und die verwandten Eigenschaften eine OLAP-Datenquelle mit dem eindeutigen Namen "[Europa]. [Frankreich]. [Paris] "und eine nicht-OLAP-Datenquelle mit dem Element"Paris"nennen.</para>
+          <para>Die folgende Tabelle enthält Beispielwerte der <b>Name</b>-Eigenschaft und verwandter Eigenschaften. Dabei wird von einer OLAP-Datenquelle mit dem eindeutigen Namen "[Europa].[Frankreich].[Paris]" und einer Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris" ausgegangen.</para>
           <list type="table">
             <item>
               <term>
@@ -1600,37 +1603,37 @@
             </item>
             <item>
               <term>
-                <b>Namen</b>
+                <b>Name</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>(Identisch mit SQL-Eigenschaftenwert, schreibgeschützt)</description>
             </item>
             <item>
               <term>
                 <b>Wert</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Beim angeben als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
+          <para>Beim Angeben von als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <term>Ausdruck. PivotItems ("[Europa]. [ Frankreich]. [Paris] ")</term>
               <description>Expression.PivotItems("Paris")</description>
             </item>
           </list>
-          <para>bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> -Eigenschaft so verweisen Sie auf ein bestimmtes Element einer Auflistung, können Sie den Textindexnamen wie in der folgenden Tabelle gezeigt verwenden.</para>
+          <para>Bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> -Eigenschaft so verweisen Sie auf ein bestimmtes Element einer Auflistung, können Sie den Textindexnamen wie in der folgenden Tabelle gezeigt verwenden.</para>
           <list type="table">
             <item>
-              <term>[Europa]. [ Frankreich]. [Paris]</term>
+              <term>[Europa]. [Frankreich]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
@@ -1723,7 +1726,7 @@
         <summary>Zurückgeben oder Festlegen der Name des Makros, die ausgeführt wird, wenn das angegebene Objekt geklickt wird. Lese-/Schreibzugriff <b>String</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft für ein Menüelement eine beliebige benutzerdefinierte Hilfe überschreibt Daten für das Menüelement mit den Informationen eingerichtet wurde eingerichtet für das zugewiesene Makro.</para>
+          <para>Durch Festlegen dieser Eigenschaft für ein Menüelement werden alle benutzerdefinierten, für das Menüelement eingerichteten Hilfeinformationen mit den für das zugewiesene Makro eingerichteten Informationen überschrieben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1921,8 +1924,8 @@
       <Docs>
         <summary>Leitet Connectors, damit sie den kürzesten möglichen Weg zwischen den Shapes nutzen, die sie verbinden.</summary>
         <remarks>
-          <para>Um den kürzesten Pfad zu verwenden, kann die <b>RerouteConnections</b> -Methode die Enden einer Verbindung trennen und sie an anderen Verbindungspunkten der verbundenen Formen anfügen. Diese Methode leitet alle Verbinder auf die angegebene Form an; Wenn die angegebene Form eine Verbindung ist, wird sie umgeleitet.</para>
-          <para>, Wenn diese Methode, an einen Connector, nur diese Verbindung angewendet wird wird umgeleitet. Wenn diese Methode mit einer verbundenen Form angewendet wird, werden alle Verbindungen zu dieser Form umgeleitet.</para>
+          <para>Um den kürzesten Pfad zu verwenden, kann die <b>RerouteConnections</b> -Methode die Enden einer Verbindung trennen und sie an anderen Verbindungspunkten der verbundenen Formen anfügen. Diese Methode erstellt alle Verbindungen neu, die der angegebenen Form angefügt sind. Handelt es sich bei der angegebenen Form um eine Verbindung, wird sie neu erstellt.</para>
+          <para>Wenn diese Methode auf eine Verbindung angewendet wird, wird nur die betreffende Verbindung umgeleitet. Wenn die Methode auf eine verbundene Form angewendet wird, werden sämtliche Verbindungen zu der Form umgeleitet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2084,7 +2087,7 @@
         <param name="Replace">Optionales- <b>Objekt</b>. Das Objekt zu ersetzen.</param>
         <summary>Markiert das Objekt.</summary>
         <remarks>
-          <para>Wählen Sie eine Zelle oder einen Zellbereich, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> -Methode.</para>
+          <para>Um eine Zelle oder einen Zellbereich ausgewählt haben, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2202,7 +2205,7 @@
         <summary>Ruft ein Objekt, das mit dem Shape verknüpften SmartArt darstellt.</summary>
         <value>Ein Objekt, das mit dem Shape verknüpften SmartArt darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2381,7 +2384,7 @@
         <value>Der Titel des alternativen Texts der angegebenen Form zugeordnete.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Um der beschreibenden Textzeichenfolge des alternativen Texts für ein Shape festzulegen, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> -Eigenschaft.</para>
+          <para>Verwenden Sie zum Festlegen der beschreibenden Textzeichenfolge des alternativen Texts für ein Shape, das <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2497,7 +2500,7 @@
         <summary>Hebt die Gruppierung aller gruppierten Formen in der angegebenen Form oder einen Bereich von Formen. Zerlegt Bilder und OLE-Objekte innerhalb der angegebenen Form. Gibt die nicht gruppierten Formen als Single-Wert <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Objekt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>, Da eine Gruppe von Formen als ein einzelnes Objekt behandelt wird, gruppieren und Gruppierung shapes ändert sich die Anzahl der Elemente in der <b>Shapes</b> -Auflistung und die Indexnummern von Elementen, die nach den betroffenen Elementen in der Auflistung enthalten sind.</para>
+          <para>Da eine Gruppe von Formen als <b>einzelnes Objekt</b> behandelt wird und die Indexnummern von Elementen, die nach den betroffenen Elementen in der Auflistung enthalten sind.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2557,32 +2560,32 @@
         <summary>Gibt die Koordinaten der Scheitelpunkte der angegebenen Freihandform-Zeichnung (und Kontrollpunkte für Bézierkurven) als eine Reihe von Koordinatenpaaren zurück. Read-only- <b>Objekt</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sie können das als Argument für die von dieser Eigenschaft zurückgegebene Array der <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> Methode oder <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> -Methode.</para>
-          <para>In der folgenden Tabelle veranschaulicht, wie die <b>Vertices</b> -Eigenschaft die Werte im Array vertArray() mit den Koordinaten der Scheitelpunkte eines Dreiecks zuordnet.</para>
+          <para>Sie können das als Argument für die von dieser Eigenschaft zurückgegebene Array der <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> Methode oder <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> Methode.</para>
+          <para>Die folgende Tabelle zeigt, wie die <b>Vertices</b>-Eigenschaft die Werte im Array vertArray() den Koordinaten der Scheitelpunkte eines Dreiecks zuordnet.</para>
           <list type="table">
             <item>
               <term>VertArray (1, 1)</term>
-              <description>der horizontalen Abstand des ersten Scheitelpunktes von der linken Kante des Dokuments</description>
+              <description>Der horizontale Abstand zwischen dem ersten Scheitelpunkt und der linken Seite des Dokuments</description>
             </item>
             <item>
               <term>VertArray (1, 2)</term>
-              <description>die vertikale Abstand vom ersten Scheitelpunkt zum oberen Rand des Dokuments</description>
+              <description>Der vertikale Abstand zwischen dem ersten Scheitelpunkt und der oberen Seite des Dokuments</description>
             </item>
             <item>
-              <term> VertArray (2, 1)</term>
-              <description>den horizontalen Abstand des zweiten Scheitelpunktes von der linken Kante des Dokuments</description>
+              <term>VertArray (2, 1)</term>
+              <description>Der horizontale Abstand zwischen dem zweiten Scheitelpunkt und der linken Seite des Dokuments</description>
             </item>
             <item>
               <term>VertArray (2, 2)</term>
-              <description>die vertikale Abstand vom zweiten Scheitelpunkt zum oberen Rand des Dokuments</description>
+              <description>Der vertikale Abstand zwischen dem zweiten Scheitelpunkt und der oberen Seite des Dokuments</description>
             </item>
             <item>
-              <term> VertArray (3, 1)</term>
-              <description>den horizontalen Abstand des dritten Scheitelpunktes von der linken Kante des Dokuments</description>
+              <term>VertArray (3, 1)</term>
+              <description>Der horizontale Abstand zwischen dem dritten Scheitelpunkt und der linken Seite des Dokuments</description>
             </item>
             <item>
               <term>VertArray (3, 2)</term>
-              <description>der vertikale Abstand vom dritten Scheitelpunkt zum oberen Rand des Dokuments</description>
+              <description>Der vertikale Abstand zwischen dem dritten Scheitelpunkt und der oberen Seite des Dokuments</description>
             </item>
           </list>
           <para></para>
@@ -2708,8 +2711,11 @@
         <summary>Gibt die Position der angegebenen Form in der Z-Ordnung zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn die Position der Form in der Z-Reihenfolge festlegen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> -Methode.</para> Position 
-          <para>eine Form in der Z-Reihenfolge entspricht Indexnummer der Form in der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung. Beispielsweise Shapes(1) gibt die Form am Ende der Z-Reihenfolge und Shapes(4) gibt die Form im Vordergrund der Z-Reihenfolge.</para><para>Immer wenn Sie einer Auflistung eine neue Form hinzufügen, es in den Vordergrund der Z-Reihenfolge standardmäßig hinzugefügt.</para><para></para></remarks>
+          <para>Wenn die Position der Form in der Z-Reihenfolge festlegen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> Methode.</para>
+          <para>Position einer Form in der Z-Reihenfolge entspricht Indexnummer der Form in der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung. Beispielsweise Shapes(1) gibt die Form am Ende der Z-Reihenfolge und Shapes(4) gibt die Form im Vordergrund der Z-Reihenfolge zurück.</para>
+          <para>Jede neue Form, die einer Auflistung hinzugefügt wird, wird standardmäßig am Anfang der Z-Reihenfolge eingefügt.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

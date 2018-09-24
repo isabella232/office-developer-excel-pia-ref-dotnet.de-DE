@@ -1,10 +1,10 @@
 <Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bc68b806e9539de6f5350ba189ec017a58c6f1db" />
+    <Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580724" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSetCondition" />
@@ -127,7 +127,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,7 +188,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Eignet sich diese Eigenschaft Beschränken des Bereichs der Werte, die die bedingte Formatierung angezeigt werden. Ein herkömmliches Szenario ist, wenn Sie einen Bereich von Zahlen, positive und negative Werte enthält. Sie möchten mehr als ein bedingtes Format für diesen Bereich Nummern zu erstellen – eines für positive Werte und ein weiteres für negative Werte.</para>
+          <para>Diese Eigenschaft ist hilfreich, um den Wertebereich einzuschränken, in dem die bedingte Formatierung angezeigt wird. Ein typisches Szenario ist ein Bereich mit negativen und positiven Zahlen. Hier könnten Sie mehrere bedingte Formatierungen für diesen Zahlenbereich erstellen, eine für positive und eine für negative Werte.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -221,7 +221,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
         </value>
         <remarks>
-          <para>Nach dem Einrichten der <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />-Auflistung verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> -Eigenschaft der Auflistung zurückzugebenden ein <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> Objekt. Die <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> Objekt stellt ein einzelnes Kriterium eines Symbolsatzes.</para>
+          <para>Nachdem Sie haben die <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />-Auflistung verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> -Eigenschaft der Auflistung zurückzugebenden ein <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> Objekt. Die <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> -Objekt stellt ein einzelnes Kriterium eines Symbolsatzes dar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,7 +257,7 @@
           <b>Objekt</b>
         </value>
         <remarks>
-          <para>Können Sie den Symbolsatz mithilfe von Zuweisen der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> -Objekt.</para>
+          <para>Sie können den Symbolsatz mithilfe von Zuweisen der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Objekt. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -288,7 +288,7 @@
         <summary>Legt den Zellbereich fest, für den diese Formatierungsregel gilt.</summary>
         <remarks>
           <para>Der Bereich muss in der A1-Bezugsart und werden vollständig in das Blatt, das das übergeordnete Objekt des ist enthalten die <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistung. Sie können den Bereichsoperator (Doppelpunkt), der Schnittmengenoperator (ein Leerzeichen) oder der union-Operator (Komma) enthalten. Dollarzeichen kann auch verwendet werden, aber sie werden ignoriert.</para>
-          <para>Sie können auch einen lokalen, definierten Namen in einem beliebigen Teil des Bereichs verwenden, aber der Name muss sich in der Sprache des Makros.</para>
+          <para>Sie können auch einen lokalen, definierten Namen in einem Teil des Bereichs verwenden, der Name muss aber in der Sprache des Makros angegeben sein.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -354,7 +354,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Diese Eigenschaft gibt <b>False</b> zurück, wenn nicht alle Schwellenwert wird auf Perzentil festgelegt. Durch Festlegen dieser Eigenschaft auf <b>true festgelegt,</b> wird jeder Art Schwellenwert auf Perzentil festgelegt.</para>
+          <para>Diese Eigenschaft gibt <b>False</b> zurück, wenn nicht alle Schwellenwerttypen auf Perzentil festgelegt sind. Durch das Festlegen dieser Eigenschaft auf <b>True</b> werden alle Schwellenwerttypen auf Perzentil festgelegt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -390,7 +390,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Beim Festlegen der Priorität, die der Wert muss eine positive ganze Zahl zwischen 1 und der Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt. Die Priorität muss einen eindeutigen Wert für alle Regeln im Arbeitsblatt, so ändern die Priorität für die angegebene Regel zur bedingten Formatierung kann dazu führen, dass den Prioritätswert anderen Regeln im Arbeitsblatt verschoben werden sollen.</para>
+          <para>Beim Festlegen der Priorität muss der Wert eine positive ganze Zahl zwischen 1 und der Gesamtanzahl von Regeln zur bedingten Formatierung auf dem Arbeitsblatt sein. Die Priorität muss ein eindeutiger Wert für alle Regeln des Arbeitsblatts sein. Das Ändern der Priorität für eine Regel zur bedingten Formatierung kann also dazu führen, dass sich die Prioritätswerte anderer Regeln des Arbeitsblatts ebenfalls ändern.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -456,7 +456,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Standardmäßig die meisten Symbolsätze können positive Bilder mit höheren Werten zuordnen. Beispielsweise gilt der Symbolsatz "3 Ampeln" grünen Kreis für die oberen Schwellenwert und ein roter Kreis mit den niedrigsten Werten im Bereich. Wenn Ihre Daten befinden, niedrigere Werte wie Marathons mehr wünschenswert sind, möchten Sie möglicherweise die Reihenfolge umkehren, Symbole auf den Bereich den grünen Kreis mit den niedrigsten Werten zuordnen angewendet werden.</para>
+          <para>Die meisten Symbolsätze, die Sie verwenden können, verknüpfen standardmäßig positive Bilder mit höheren Werten. Beispielsweise verbindet der Symbolsatz "3 Ampel" einen grünen Kreis mit der oberen Wertschwelle und einen roten Kreis mit den niedrigsten Werten im Bereich. Wenn bei Ihren Daten jedoch niedrige Werte wünschenswert sind, z. B. bei den Laufzeiten eines Marathons, empfiehlt es sich, die Reihenfolge der Symbole, die dem Bereich zugewiesen sind, umzukehren, um den grünen Kreis mit den niedrigsten Werten zu verknüpfen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -492,7 +492,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> -Eigenschaft.</para>
+          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -520,7 +520,7 @@
       <Docs>
         <summary>Legt den Prioritätswert für diese Regel zur bedingten Formatierung auf 1 fest, sodass die Regel vor allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
         <remarks>
-          <para>Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt vorhanden sind, wenn die Regel nicht zuvor Priorität "1" festgelegt wurde, verursacht diese Methode die Priorität aller anderen vorhandenen Regeln auf dem Arbeitsblatt um 1 erhöht.</para>
+          <para>Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt vorhanden sind, wenn die Regel nicht zuvor Priorität "1" festgelegt wurde, bewirkt diese Methode die Priorität aller anderen vorhandenen Regeln auf dem Arbeitsblatt um 1 erhöht werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -548,7 +548,7 @@
       <Docs>
         <summary>Legt die Auswertungsreihenfolge für diese Regel zur bedingten Formatierung fest, sodass sie nach allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
         <remarks>
-          <para>Den tatsächlichen Wert der Priorität wird die Gesamtanzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt entsprechen. Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt haben, verursacht diese Methode die Priorität der Regeln, die einen Prioritätswert größer als dieser Regel um 1 erhöht werden hatte.</para>
+          <para>Der aktuelle Wert der Priorität wird die Gesamtanzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt entsprechen. Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt haben, verursacht diese Methode die Priorität der Regeln, die einen Wert größer als dieser Regel um 1 erhöht werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -617,7 +617,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Zur Unterstützung der Abwärtskompatibilität ist der Standardwert für diese Eigenschaft <b>True</b>das Gegenteil des Verhaltens einer Formatierungsregel ist Regel in der Benutzeroberfläche erstellt.</para>
+          <para>Zur Unterstützung der Abwärtskompatibilität lautet der Standardwert für diese Eigenschaft <b>True</b>, dies ist das Gegenteil des Verhaltens einer Formatierungsregel, die auf der Benutzeroberfläche erstellt wird.</para>
           <para></para>
         </remarks>
       </Docs>

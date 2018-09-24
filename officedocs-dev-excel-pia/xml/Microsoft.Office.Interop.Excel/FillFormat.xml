@@ -1,10 +1,10 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Excel.FillFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08f56ae45c74cc43f24d342198fea9563bb00d90" />
+    <Meta Name="ms.openlocfilehash" Value="d51378ea225e992f908efc9e6730e1e261e2887c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577273" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FillFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -30,10 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt das Füllformat einer Form dar.</summary>
+    <summary>Stellt die Formatierung der Füllung für eine Form dar.</summary>
     <remarks>
-      <para>Ein Shape kann ein Solid, Farbverlauf, Struktur, Muster, Bild oder halbtransparent Füllung haben.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> zurückzugebende Eigenschaft eine <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> -Objekt.</para>
+      <para>Eine Form kann folgende Füllungen haben: einfarbig, Verlauf, Struktur, Muster, Grafik oder halbtransparent.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> zurückzugebende Eigenschaft eine <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> Objekt.</para>
       <para>Viele der Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> Objekts sind schreibgeschützt. Um eine dieser Eigenschaften festzulegen, müssen Sie die entsprechende Methode anwenden.</para>
       <para></para>
     </remarks>
@@ -158,8 +158,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,18 +257,18 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoGradientColorType" />kann eine der folgenden <b>MsoGradientColorType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoGradientColorType" />Dies kann eine der folgenden <b>MsoGradientColorType</b> -Konstanten sein:</para>
           <para>
-            <b>MsoGradientColorMixed</b>
+            <b>msoGradientColorMixed</b>
           </para>
           <para>
-            <b>MsoGradientOneColor</b>
+            <b>msoGradientOneColor</b>
           </para>
           <para>
-            <b>MsoGradientPresetColors</b>
+            <b>msoGradientPresetColors</b>
           </para>
           <para>
-            <b>MsoGradientTwoColors</b>
+            <b>msoGradientTwoColors</b>
           </para>
           <para>
             <b>MsoGradientColorMixed</b> ist ein Rückgabewert nur gibt eine Kombination der anderen Status im angegebenen Bereich an. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, oder <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> -Methode, um den Farbverlaufstyp für die Füllung festzulegen.</para>
@@ -302,7 +302,7 @@
         <summary>Gibt den Farbverlaufsgrad für die angegebene schattierte Füllung mit einem einfarbigen als ein Gleitkommawert zwischen 0,0 (dunkel) bis 1.0 (hell).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der <b>GradiantDegree</b> -Eigenschaft ist schreibgeschützt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> -Methode, um den Farbverlaufsgrad für die Füllung festzulegen.</para>
+          <para>Die <b>GradiantDegree</b> -Eigenschaft ist schreibgeschützt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> -Methode, um den Farbverlaufsgrad für die Füllung festzulegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -364,30 +364,30 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />kann eine der folgenden <b>MsoGradientStyle</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />Dies kann eine der folgenden <b>MsoGradientStyle</b> -Konstanten sein:</para>
           <para>
-            <b>MsoGradientDiagonalDown</b>
+            <b>msoGradientDiagonalDown</b>
           </para>
           <para>
-            <b>MsoGradientDiagonalUp</b>
+            <b>msoGradientDiagonalUp</b>
           </para>
           <para>
-            <b>MsoGradientFromCenter</b>
+            <b>msoGradientFromCenter</b>
           </para>
           <para>
-            <b>MsoGradientFromCorner</b>
+            <b>msoGradientFromCorner</b>
           </para>
           <para>
-            <b>MsoGradientFromTitle</b>
+            <b>msoGradientFromTitle</b>
           </para>
           <para>
-            <b> MsoGradientHorizontal</b>
+            <b>msoGradientHorizontal</b>
           </para>
           <para>
-            <b>MsoGradientMixed</b>
+            <b>msoGradientMixed</b>
           </para>
           <para>
-            <b>MsoGradientVertical</b>
+            <b>msoGradientVertical</b>
           </para>
           <para></para>
         </remarks>
@@ -420,7 +420,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Die Werte für diese Eigenschaft entsprechen den Verlaufsvarianten (Nummerierung von links nach rechts und von oben nach unten) auf der Registerkarte Graduell im Dialogfeld Fülleffekte.</para>
-          <para>Ist diese Eigenschaft schreibgeschützt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> -Methode, um die Farbverlaufsvariante für die Füllung festzulegen.</para>
+          <para>Diese Eigenschaft ist schreibgeschützt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> -Methode, um die Farbverlaufsvariante für die Füllung festzulegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -573,8 +573,8 @@
         <summary>Ruft ein Objekt, das die Grafik oder Struktur Füllung für das angegebene Füllformat darstellt.</summary>
         <value>Die Füllung Bilds oder der Textur für das angegebene Füllformat darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Eine Grafik oder Struktur Füllung kann angegeben werden, in die Formatierung für die verschiedenen Elemente (Shapes) in einem Diagramm. Das Dialogfeld Datenreihen formatieren können Sie beispielsweise die Spalten in einem Säulendiagramm zu einer Grafik oder Struktur der Füllung. In diesem Fall die <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> -Eigenschaft gibt eine <see cref="T:Microsoft.Office.Core.PictureEffects" /> -Auflistung, um die Einstellungen in der Kategorie Füllung im Dialogfeld Datenreihen formatieren Option Füllung Bilds oder der Textur zugeordnet entspricht.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Eine Grafik oder Struktur der Füllung kann angegeben werden, in die Formatierung für die verschiedenen Elemente (Shapes) in einem Diagramm. Das Dialogfeld Datenreihen formatieren können Sie beispielsweise die Spalten in einem Säulendiagramm zu einer Grafik oder Struktur der Füllung. In diesem Fall die <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> -Eigenschaft gibt eine <see cref="T:Microsoft.Office.Core.PictureEffects" /> -Auflistung, um die Einstellungen in der Kategorie Füllung im Dialogfeld Datenreihen formatieren Option Füllung Bilds oder der Textur zugeordnet entspricht.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -736,7 +736,7 @@
         <remarks>
           <list type="table">
             <item>
-              <term>MsoTriState kann eine der folgenden <b>MsoTriState</b> -Konstanten sein.</term>
+              <term>MsoTriState kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</term>
             </item>
             <item>
               <term>
@@ -756,6 +756,11 @@
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Core.MsoTriState.msoTriStateToggle" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoTriState.msoTrue" />
               </term>
             </item>
           </list>
@@ -786,7 +791,7 @@
       <Docs>
         <summary>Legt die angegebene Füllung auf eine einheitliche Farbe fest.</summary>
         <remarks>
-          <para>Verwenden Sie diese Methode, um eine fließende, strukturierte, Gemusterte oder Hintergrund Füllung wieder in eine einfarbige Füllung.</para>
+          <para>Verwenden Sie diese Methode, um eine Füllung mit Farbverlauf, eine strukturierte oder gemusterte Füllung oder eine Hintergrundfüllung in eine einfarbige Füllung zurückzukonvertieren.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -985,7 +990,7 @@
         <remarks>
           <list type="table">
             <item>
-              <term>MsoTriState kann eine der folgenden <b>MsoTriState</b> -Konstanten sein.</term>
+              <term>MsoTriState kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</term>
             </item>
             <item>
               <term>
@@ -1005,6 +1010,11 @@
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Core.MsoTriState.msoTriStateToggle" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoTriState.msoTrue" />
               </term>
             </item>
           </list>
@@ -1041,7 +1051,7 @@
         </value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTextureType" />kann eine der folgenden <b>MsoTextureType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoTextureType" />Dies kann eine der folgenden <b>MsoTextureType</b> -Konstanten sein:</para>
           <para>
             <see cref="F:Microsoft.Office.Core.MsoTextureType.msoTexturePreset" />
           </para>
@@ -1118,7 +1128,7 @@
         <summary>Gibt zurück oder legt den Grad der Transparenz der angegebenen Füllung als Wert von 0,0 (undurchsichtig) und 1,0 (löschen).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der Wert dieser Eigenschaft wirkt sich auf die Darstellung des einfarbige Füllungen und nur Zeilen; er hat keine Auswirkung auf die Darstellung des gemusterten Linien oder gemusterten, Farbverlauf, Bild oder strukturierte Füllungen.</para>
+          <para>Der Wert dieser Eigenschaft hat nur Einfluss auf die Darstellung von einfarbigen Füllbereichen und Linien. Er hat keine Auswirkung auf die Darstellung von Linienfüllmustern, gemusterten oder graduellen Füllungen oder Bildfüllungen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1181,7 +1191,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoFillType" /> kann eine der folgenden Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoFillType" />Dies kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>msoFillGradient</b>
           </para>
@@ -1266,7 +1276,7 @@
           <b>String</b> erforderlich. Der Name der Grafikdatei.</param>
         <summary>Füllt die angegebene Form mit kleinen Abbildungen eines Bildes.</summary>
         <remarks>
-          <para>Wenn Sie die Form mit einem großen Bild füllen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> -Methode.</para>
+          <para>Wenn Sie die Form mit einem großen Bild füllen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1301,23 +1311,23 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Dies kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
-            <b>MsoCTrue</b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>MsoFalse</b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>MsoTriStateMixed</b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>MsoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>MsoTrue</b> das Objekt ist sichtbar.</para>
-          <para>Die <b>Visible</b> -Eigenschaft für ein PivotTable-Element ist <b>True</b> , wenn das Element derzeit in der Tabelle angezeigt wird.</para>
-          <para>Wenn Sie die <b>Visible</b> -Eigenschaft für einen Namen auf <b>False</b>festlegen, wird nicht der Name im Dialogfeld Namen definieren angezeigt.</para>
+            <b>msoTrue</b> Das Objekt ist sichtbar.</para>
+          <para>Die <b>Visible</b>-Eigenschaft für ein PivotTable-Element ist <b>True</b>, wenn das Element zum betreffenden Zeitpunkt in der Tabelle angezeigt wird.</para>
+          <para>Wenn Sie der <b>Visible</b>Visible-Eigenschaft für einen Namen den Wert <b>False</b> zuweisen, wird der Name nicht im Dialogfeld Namen definieren angezeigt.</para>
           <para></para>
         </remarks>
       </Docs>

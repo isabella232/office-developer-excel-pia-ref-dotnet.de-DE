@@ -1,10 +1,10 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="953e871a40c21fce56f87ab1a7241017eaeb4ca0" />
+    <Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572835" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
@@ -35,8 +35,8 @@
   <Docs>
     <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> Objekte für die angegebene PivotTable.</summary>
     <remarks>
-      <para>Jede <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> Objekt stellt ein berechnetes Element oder eine berechnete Maßeinheit.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> zurückzugebenden Objekts einer <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> Auflistung.</para>
+      <para>Jede <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> Objekt stellt ein berechnetes Element oder eine berechnete Maßeinheit dar.</para>
+      <para>Verwenden der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> zurückzugebenden-Objekts ein <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> Auflistung.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -114,7 +114,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Die <paramref name="Formula" /> -Argument muss eine gültige MDX (multidimensional Expression) Syntax der Anweisung aufweisen. Die <paramref name="Name" /> Argument für den Anbieter (OLAP = Online Analytical Processing) geeignet ist und die <paramref name="Type" /> Argument muss definiert werden.</para>
-          <para>Wenn Sie festlegen, die <paramref name="Type" /> Argument dieser Methode <paramref name="xlCalculatedSet" />, Sie aufrufen, müssen die <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> Methode, um das neue Feld in der PivotTable sichtbar festlegen,.</para>
+          <para>Wenn Sie festlegen der <paramref name="Type" /> Argument dieser Methode <paramref name="xlCalculatedSet" />, Sie aufrufen, müssen die <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> -Methode, um die neue Feldgruppe in der PivotTable sichtbar machen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -205,7 +205,7 @@
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder</b>: anzeigeordnern sind nur für berechnete Measures gültig. Sie sind nicht gültig für berechnete Elemente. Die Zeichenfolge kann Semikolons haben. darin. Semikolons Festlegen mehrerer anzeigeordnern. Beispielsweise bei Verwendung die Zeichenfolge wird meine folder1; myfolder2 dann des berechneten Measures in zwei Anzeige Ordner eine benannte myfolder1 der anderen benannten 'myfolder2' anzeigen. Die Zeichenfolge kann umgekehrte Schrägstriche haben \. bezeichnet einen hierarchischen Pfad für den Anzeigeordner. Beispielsweise bei Verwendung der Zeichenfolge Welcome\to\seattle fallen aufgerufen, ein Anzeigeordner Willkommen aufgerufen, die einen Anzeigeordner enthält das einen Anzeigeordner Seattle aufgerufen enthält. Anzeigeordner sind virtuelle Ordner.  Sie sind nicht wirklich im selben Sinn vorhanden, die wir Systemordner vorstellen. Nur aus Gründen der Anzeige der berechnete Measures vorhanden.</description>
+                <b>DisplayFolder</b>: anzeigeordnern sind nur für berechnete Measures gültig. Sie sind nicht gültig für berechnete Elemente. Die Zeichenfolge kann Semikolons haben. darin. Semikolons Festlegen mehrerer anzeigeordnern. Beispielsweise bei Verwendung die Zeichenfolge wird meine folder1; myfolder2 dann des berechneten Measures in zwei Anzeige Ordner eine benannte myfolder1 der anderen benannten 'myfolder2' anzeigen. Die Zeichenfolge kann umgekehrte Schrägstriche haben \. Einen hierarchischen Pfad für den Anzeigeordner bezeichnet. Beispielsweise bei Verwendung der Zeichenfolge Welcome\to\seattle fallen aufgerufen, ein Anzeigeordner Willkommen aufgerufen, die einen Anzeigeordner enthält das einen Anzeigeordner Seattle aufgerufen enthält. Anzeigeordner sind virtuelle Ordner.  Sie sind nicht wirklich im selben Sinn vorhanden, die wir Systemordner vorstellen. Nur vorhanden aus Gründen der berechnete Measures anzeigen.</description>
             </item>
             <item>
               <description>
@@ -213,7 +213,7 @@
             </item>
             <item>
               <description>
-                <b>ParentHierarchy</b>: die übergeordnete Hierarchie kann eine beliebige gültige MDX-Hierarchie sein. Das übergeordnete Hierarchien sind nur für berechnete Elemente gültig. Sie sind nicht gültig für berechnete Measures. Wenn ein übergeordnetes Element ausgewählt wird, der sich in einer anderen übergeordneten Hierarchie, die übergeordnete Hierarchie automatisch geändert wird, um die übergeordnete Hierarchie des übergeordneten Elements übereinstimmen.</description>
+                <b>ParentHierarchy</b>: die übergeordnete Hierarchie kann eine beliebige gültige MDX-Hierarchie sein. Das übergeordnete Hierarchien sind nur für berechnete Elemente gültig. Sie sind nicht gültig für berechnete Measures. Wenn ein übergeordnetes Element ausgewählt wird, die in einer anderen übergeordneten Hierarchie ist, wird die übergeordnete Hierarchie automatisch die übergeordnete Hierarchie des übergeordneten Elements entsprechend geändert werden.</description>
             </item>
           </list>
           <para></para>
@@ -302,8 +302,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>

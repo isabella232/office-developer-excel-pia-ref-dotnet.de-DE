@@ -1,10 +1,10 @@
 <Type Name="CalculatedFields" FullName="Microsoft.Office.Interop.Excel.CalculatedFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="322bea970ce4e1d5a0095eafdd21ad263f26ffe7" />
+    <Meta Name="ms.openlocfilehash" Value="551200c74cbef27982489b80758fa22c187b61fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572674" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
@@ -35,10 +35,10 @@
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> -Objekten, die alle berechneten Felder im angegebenen PivotTable-Bericht darstellt.</summary>
     <remarks>
-      <para>Beispielsweise ein Bericht mit Feldern für Einnahmen und Kosten könnte ein berechnetes Feld mit dem Namen "Gewinn" und definiert haben als Betrag des Einnahmefelds minus dem Betrag in das Feld Kosten.</para>
-      <para>Für OLAP-Datenquellen Sie diese Auflistung nicht festlegen, und es gibt immer <b>Nothing</b>zurück.</para>
+      <para>Angenommen, ein Bericht mit Feldern für Einnahmen und Kosten könnte ein berechnetes Feld mit dem Namen "Gewinn" und definiert haben als Betrag des Einnahmefelds minus dem Betrag in das Feld Kosten.</para>
+      <para>Bei OLAP-Datenquellen können Sie diese Auflistung nicht festlegen; es wird immer <b>Nothing</b> zurückgegeben.</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> -Methode, um die <b>CalculatedFields</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung <b>CalculatedFields</b>(<paramref name="index" />), wobei <paramref name="index" /> ist des angegebenen Felds Namen\noder die Indexzahl darstellt, um ein einzelnes <b>PivotField</b> -Objekt aus der <b>CalculatedFields</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie die <b>CalculatedFields</b>(<paramref name="index" />), wobei <paramref name="index" /> ist des angegebenen Felds Namen\noder die Indexzahl darstellt, um ein einzelnes <b>PivotField</b> -Objekt aus der <b>CalculatedFields</b> -Auflistung zurückzugeben.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -228,8 +228,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>

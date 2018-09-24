@@ -1,10 +1,10 @@
 <Type Name="ChartObjects" FullName="Microsoft.Office.Interop.Excel.ChartObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3019bdb5ddacb9a6d190a2084952101edf58700e" />
+    <Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586093" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
@@ -37,7 +37,7 @@
     <remarks>
       <para>Jedes <b>ChartObject</b> -Objekt stellt ein eingebettetes Diagramm dar. Das <b>ChartObject</b> -Objekt dient als Container für eine <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekt. Eigenschaften und Methoden für das <b>ChartObject</b> -Objekt bestimmen Darstellung und Größe des eingebetteten Diagramms auf dem Blatt.</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> -Methode, um die <b>ChartObjects</b> -Auflistung zurückzugeben. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> -Methode, um ein neues, leeres eingebettetes Diagramm zu erstellen und der Auflistung hinzugefügt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um Daten hinzuzufügen und das neue Diagramm formatieren.</para>
-      <para>Verwendung <b>ChartObjects</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des eingebetteten Diagramms oder der Name, um ein einzelnes <b>ChartObject</b> -Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <b>ChartObjects</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des eingebetteten Diagramms oder der Name, um ein einzelnes <b>ChartObject</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -536,7 +536,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -565,7 +565,7 @@
         <summary>Schneidet das Objekt aus, legt es in die Zwischenablage oder fügt es an einer angegebenen Stelle ein.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Können nur eingebettete Diagramme ausgeschnitten werden.</para>
+          <para>Es können nur eingebettete Diagramme ausgeschnitten werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -842,7 +842,7 @@
         <summary>Der Abstand vom linken Rand des Objekts an der linken Kante der Spalte A (auf einem Arbeitsblatt) oder zur linken Seite des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Wenn das Fenster maximiert ist, gibt diese Eigenschaft die Breite des Fensterrahmens eine negative Zahl, die variiert, entsprechend. Durch Festlegen dieser Eigenschaft auf 0 (null) wird, das Fenster ein wenig kleiner, als wäre, wenn das Anwendungsfenster maximiert wurden. Anders ausgedrückt, wenn diese Eigenschaft 0 (null) ist, der linke Rand des Hauptfensters von Microsoft Excel kaum werden auf dem Bildschirm angezeigt.</para>
+          <para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft die Breite des Fensterrahmens eine negative Zahl, die variiert, entsprechend. Durch Festlegen dieser Eigenschaft auf 0 (null) wird, das Fenster ein wenig kleiner, als wäre, wenn das Anwendungsfenster maximiert wurden. Anders ausgedrückt, wenn diese Eigenschaft 0 (null) ist, ist der linke Rand des Hauptfensters von Microsoft Excel auf dem Bildschirm kaum sichtbar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1039,7 +1039,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>true fest,</b> schützt Sie nicht den Rahmen eines eingebetteten Diagramms, über das Objektmodell geändert.</para>
+          <para>Durch Festlegen dieser Eigenschaft auf <b>True</b> wird der Rahmen des eingebetteten Diagramms nicht vor Änderungen durch das Objektmodell geschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1265,8 +1265,8 @@
         <summary>Bestimmt, ob das Objekt sichtbar ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Visible</b> -Eigenschaft für ein PivotTable-Element ist <b>True</b> , wenn das Element derzeit in der Tabelle angezeigt wird.</para>
-          <para>Wenn Sie die <b>Visible</b> -Eigenschaft für einen Namen auf <b>False</b>festlegen, wird nicht der Name im Dialogfeld Namen definieren angezeigt.</para>
+          <para>Die <b>Visible</b>-Eigenschaft für ein PivotTable-Element ist <b>True</b>, wenn das Element zum betreffenden Zeitpunkt in der Tabelle angezeigt wird.</para>
+          <para>Wenn Sie der <b>Visible</b>Visible-Eigenschaft für einen Namen den Wert <b>False</b> zuweisen, wird der Name nicht im Dialogfeld Namen definieren angezeigt.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Excel.ShapeNodes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="01b5b643110df0aa3347346606d63c6288376360" />
+    <Meta Name="ms.openlocfilehash" Value="fcefaa651f73c2e96e8b51711d14e2e3ee8df786" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578099" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
@@ -38,7 +38,7 @@
       <para>Jedes <b>ShapeNode</b> -Objekt stellt entweder einen Knoten zwischen Abschnitten in einer Freihandform oder ein Kontrollpunkt für einen gekrümmten Abschnitt einer Freihandform dar. Sie können eine Freihandform erstellen, manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> und <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> Methoden.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> -Eigenschaft auf die <b>ShapeNodes</b> -Auflistung zurückzugeben.</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> -Methode, um einen neuen Knoten erstellen und Hinzufügen der Kontaktobjekte zu den <b>ShapeNodes</b> -Auflistung.</para>
-      <para>Verwendung <b>Knoten</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Knotens, um ein einzelnes <b>ShapeNode</b> -Objekt zurückzugeben.</para>
+      <para>Verwenden von <b>Knoten</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Knotens, um ein einzelnes <b>ShapeNode</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -131,7 +131,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Schreibgeschützter <b>Integer</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -330,7 +330,7 @@
         <param name="EditingType">Erforderliche <see cref="T:Microsoft.Office.Core.MsoEditingType" />. Die Bearbeitungseigenschaft des Scheitelpunkts.</param>
         <summary>Legt die Bearbeitungsart des angegebenen Knotens fest.</summary>
         <remarks>
-          <para>, Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, legt diese Methode die Bearbeitungsart des Knotens daneben, der zwei Abschnitte verbindet. Beachten Sie, dass je nach Bearbeitungsart kann diese Methode die Position benachbarter Knoten beeinflussen.</para>
+          <para>Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, legt diese Methode die Bearbeitungsart des angrenzenden Knotens fest, der zwei Abschnitte verbindet. Beachten Sie, dass diese Methode abhängig vom Bearbeitungstyp die Position angrenzender Knoten beeinflussen kann.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -402,7 +402,7 @@
         <param name="SegmentType">Erforderliche <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Legt fest, ob das Segment gerade oder gekrümmt ist. Kann eine der folgenden <b>MsoSegmentType</b> -Konstanten sein:<b>MsoSegmentType</b><b>msoSegmentCurve zurück</b><b>MsoSegmentLine</b></param>
         <summary>Legt den Segmenttyp des Abschnitts fest, der dem angegebenen Knoten folgt.</summary>
         <remarks>
-          <para>, Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, diese Methode legt den Segmenttyp für diese Kurve. Beachten Sie, dass dies die Gesamtzahl der Knoten durch Einfügen oder löschen benachbarte Knoten beeinflussen kann.</para>
+          <para>Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, legt diese Methode den Abschnittstyp für diese Kurve fest. Beachten Sie, dass dies die Gesamtzahl der Knoten beeinflussen könnte, weil möglicherweise benachbarte Knoten eingefügt oder gelöscht werden.</para>
           <para></para>
         </remarks>
       </Docs>

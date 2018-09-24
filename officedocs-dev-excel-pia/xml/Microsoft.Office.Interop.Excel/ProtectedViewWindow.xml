@@ -1,10 +1,10 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindow">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e408f0f28015c64503fb4f24fd3d1bb9d13526ce" />
+    <Meta Name="ms.openlocfilehash" Value="ba924f04fb4c1accdb23e5bb8b2f1b404a2117ad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574760" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
@@ -31,27 +31,27 @@
   <Docs>
     <summary>Stellt ein Fenster mit geschützter Ansicht dar.</summary>
     <remarks>
-      <para>Eine geschützte Ansicht-Fenster wird verwendet, um eine Arbeitsmappe von einem vor potenziell unsicheren Speicherort anzuzeigen. Unsichere Speicherorten werden wie folgt definiert:</para>
+      <para>Ein Fenster Geschützte Ansicht wird verwendet, um eine Arbeitsmappe von einem potenziell unsicheren Speicherort anzuzeigen. Unsichere Speicherorte sind wie folgt definiert:</para>
       <list type="number">
         <item>
-          <description>Dateien aus dem Internet geöffnet.</description>
+          <description>Aus dem Internet geöffnete Dateien.</description>
         </item>
         <item>
-          <description>Aus Microsoft Outlook 2010 geöffnete Anlagen.</description>
+          <description>In Microsoft Outlook 2010 geöffnete Anlagen.</description>
         </item>
         <item>
-          <description>Von Zugriffsschutz-Richtlinie gesperrte Dateien.</description>
+          <description>Durch eine Zugriffsschutz-Richtlinie gesperrte Dateien.</description>
         </item>
         <item>
-          <description>Dateien, die Office-Dateiüberprüfung nicht bestehen.</description>
+          <description>Dateien, die die Office-Dateiüberprüfung nicht bestehen.</description>
         </item>
         <item>
-          <description>Dateien in der geschützten Ansicht explizit mithilfe des Befehls in geschützter Ansicht öffnen der Schaltfläche im Dialogfeld öffnen geöffnet.</description>
+          <description>Dateien, die explizit mithilfe des Befehls In geschützter Ansicht öffnen der Schaltfläche Öffnen im Dialogfeld Öffnen in der geschützten Ansicht geöffnet werden.</description>
         </item>
       </list>
-      <para>Können nicht bearbeitet werden und von aktiven Inhalte ausführen wie Visual Basic für Applikationen-Makros und datenverbindungen dürfen keine Arbeitsmappen in einem geschützten Ansichtsfenster angezeigt.</para>
+      <para>Arbeitsmappen, die in einem Fenster geschützte Ansicht angezeigte können nicht bearbeitet werden und dürfen aktiven Inhalte ausführen wie Visual Basic für Applikationen-Makros und Data Connections.</para>
       <para>Zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekt aus der <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> -Auflistung verwenden Sie ProtectedViewWindows(Index), wobei Index die Indexnummer des zu öffnenden Fenster ist. Sie können auch zugreifen, die <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekt, das das aktive Fenster geschützte Ansicht, mithilfe darstellt der <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</para>
-      <para>, Nachdem Sie den Zugriff auf eine <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekts, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> Eigenschaft für den Zugriff auf die <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> -Objekt, das die Arbeitsmappendatei darstellt, die in das Fenster geschützte Ansicht geöffnet ist. Da ein Fenster geschützte Ansicht ausgelegt ist, um den Benutzer potenziell schädlichen Code zu schützen, die Vorgänge bei der Durchführung mithilfe von einer <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> von zurückgegebene Objekt einer <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekt eingeschränkt. Die meisten Vorgänge, die nicht werden dürfen zurückgeben "Laufzeitfehler 1004: mit diesem Befehl ist nicht verfügbar, wenn Excel sandboxed ist."</para>
+      <para>Nachdem Sie den Zugriff auf eine <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekts, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> Eigenschaft für den Zugriff auf die <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> -Objekt, das die Arbeitsmappendatei darstellt, die in das Fenster geschützte Ansicht geöffnet ist. Da ein Fenster geschützte Ansicht ausgelegt ist, um den Benutzer potenziell schädlichen Code zu schützen, die Vorgänge bei der Durchführung mithilfe von einer <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> von zurückgegebene Objekt einer <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekt eingeschränkt. Die meisten Vorgänge, die nicht werden dürfen zurückgeben "Laufzeitfehler 1004: mit diesem Befehl ist nicht verfügbar, wenn Excel sandboxed ist."</para>
       <para></para>
     </remarks>
   </Docs>
@@ -201,17 +201,17 @@
         <returns>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Objekt.</returns>
         <remarks>
           <para>Wenn die <paramref name="WriteResPassword" /> -Parameter ausgelassen wird und die Arbeitsmappe ist ein Kennwort erforderlich, der Benutzer werden aufgefordert, das Kennwort.</para>
-          <para>Wenn das <paramref name="UpdateLinks" /> -Parameter ausgelassen wird, der Benutzer wird aufgefordert, die angeben, wie Links aktualisiert wird. Wenn Sie Excel Öffnen einer Datei in die WKS ist, WK1 oder WK3-format und die <paramref name="UpdateLinks" /> Argument 0 ist, werden keine Diagramme erstellt. andernfalls generiert Excel Diagramme aus den Grafiken, die Datei angehängt.</para>
-          <para>Vermeiden hartcodierte Kennwörter in der Anwendung verwenden. Wenn in einer Prozedur ein Kennwort erforderlich ist, fordern Sie das Kennwort des Benutzers, in einer Variablen zu speichern, und klicken Sie dann die Variable in Ihrem Code verwenden.</para>
-          <para>Können Sie einen der Werte, die in der folgenden Tabelle aufgeführten angeben der <paramref name="UpdateLinks" /> -Parameters zum bestimmen, ob externe Verweise (Verknüpfungen) beim Öffnen der Arbeitsmappe aktualisiert werden.</para>
+          <para>Wenn die <paramref name="UpdateLinks" /> -Parameter ausgelassen wird, der Benutzer wird aufgefordert, die angeben, wie Links aktualisiert wird. Wenn Sie Excel Öffnen einer Datei in die WKS ist, WK1 oder WK3-format und die <paramref name="UpdateLinks" /> Argument 0 ist, werden keine Diagramme erstellt. Andernfalls erstellt Excel Diagramme aus den Grafiken, die Datei angehängt.</para>
+          <para>Vermeiden Sie das Verwenden von hartcodierten Kennwörtern in Anwendungen. Fordern Sie das Kennwort vom Benutzer an, speichern Sie es in einer Variablen, und verwenden Sie die Variable dann im Code, falls ein Kennwort in einer Prozedur benötigt wird.</para>
+          <para>Sie können einen der Werte, die in der folgenden Tabelle aufgeführten angeben der <paramref name="UpdateLinks" /> -Parameters zum bestimmen, ob externe Verweise (Verknüpfungen) aktualisiert werden, wenn die Arbeitsmappe geöffnet wird.</para>
           <list type="table">
             <item>
               <term>0</term>
-              <description>externe Verweise (Verknüpfungen) werden nicht aktualisiert werden, wenn die Arbeitsmappe geöffnet wird.</description>
+              <description>Externe Verweise (Verknüpfungen) werden beim Öffnen der Arbeitsmappe nicht aktualisiert.</description>
             </item>
             <item>
               <term>3</term>
-              <description>externe Verweise (Verknüpfungen) werden aktualisiert, wenn die Arbeitsmappe geöffnet wird.</description>
+              <description>Externe Verweise (Verknüpfungen) werden beim Öffnen der Arbeitsmappe aktualisiert.</description>
             </item>
           </list>
           <para></para>
@@ -283,7 +283,7 @@
         <value>Die Höhe des Fensters geschützte Ansicht in Punkt.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Können nicht Sie diese Eigenschaft nicht festlegen, wenn das Fenster geschützte Ansicht maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
+          <para>Sie können diese Eigenschaft nicht festlegen, wenn das Fenster geschützte Ansicht maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -348,7 +348,7 @@
         <summary>Ruft den Namen der Quelldatei, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</summary>
         <value>Der Name der Quelldatei, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -379,8 +379,8 @@
         <summary>Ruft den Pfad der Quelldatei, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</summary>
         <value>Der Pfad der Quelldatei, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Den Pfad enthält kein nachfolgendes Zeichen (z. B. "C:\MSOffice"). Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> von der <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekts, um den Namen der Quelldatei ohne den Pfad zurückzugeben</para>
+          <para>Schreibgeschützt.</para>
+          <para>Der Pfad enthält kein nachfolgendes Zeichen (z. B. "C:\MSOffice"). Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> von der <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> -Objekt der Name der Quelldatei ohne Pfad zurückgegeben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -415,7 +415,7 @@
         <value>Der Abstand in Punkt vom oberen Rand des angegebenen geschützte Ansicht-Fensters zum oberen Rand des verwendbaren Bereichs.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Kann nicht Festlegen dieser Eigenschaft für ein maximiertes Fenster geschützte Ansicht. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zurückgeben oder festlegen.</para>
+          <para>Diese Eigenschaft für ein maximiertes Fenster geschützte Ansicht kann nicht festgelegt werden. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zurückgeben oder festlegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -485,7 +485,7 @@
         <value>Die Breite in Punkt, der das angegebene Fenster geschützte Ansicht.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Können nicht Sie diese Eigenschaft nicht festlegen, wenn das Fenster geschützte Ansicht maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
+          <para>Sie können diese Eigenschaft nicht festlegen, wenn das Fenster geschützte Ansicht maximiert oder minimiert ist. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -550,8 +550,8 @@
         <summary>Ruft ein Objekt, das die Arbeitsmappe darstellt, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</summary>
         <value>Die Arbeitsmappe, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>, Da ein Fenster geschützte Ansicht entwickelt wurde, um dem Benutzer potenziell schädlichen Code zu schützen, die Vorgänge bei der Durchführung mithilfe einer <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> von zurückgegebene Objekt die <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Methode eingeschränkt. Alle Vorgänge, die nicht zulässig ist, gibt zurück "Laufzeitfehler 1004: mit diesem Befehl ist nicht verfügbar, wenn Excel sandboxed ist."</para>
+          <para>Schreibgeschützt.</para>
+          <para>Da ein Fenster geschützte Ansicht ausgelegt ist, um den Benutzer potenziell schädlichen Code zu schützen, die Vorgänge bei der Durchführung mithilfe einer <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> von zurückgegebene Objekt die <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Methode eingeschränkt. Alle Vorgänge, die nicht zulässig ist, gibt zurück "Laufzeitfehler 1004: mit diesem Befehl ist nicht verfügbar, wenn Excel sandboxed ist."</para>
           <para></para>
         </remarks>
       </Docs>

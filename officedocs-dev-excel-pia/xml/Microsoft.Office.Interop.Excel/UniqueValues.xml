@@ -1,10 +1,10 @@
 <Type Name="UniqueValues" FullName="Microsoft.Office.Interop.Excel.UniqueValues">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f01acc4c1bb63a5b606cf231563d19494b82dbd9" />
+    <Meta Name="ms.openlocfilehash" Value="7327266440c4ce7862c175d5e4fbece11422832f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578477" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UniqueValues" />
@@ -124,7 +124,7 @@
           <b>Borders</b>
         </value>
         <remarks>
-          <para>Bei einem bedingten Formatierungsobjekt können Sie nur die Eigenschaften für die oberen, unteren und seitlichen Rahmen der Zelle festlegen.</para>
+          <para>Bei einem bedingten Formatierungsobjekt können Sie die Eigenschaften nur für die oberen, unteren und seitlichen Rahmen der Zelle festlegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -157,7 +157,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -248,7 +248,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Font" />
         </value>
         <remarks>
-          <para>Nicht alle Eigenschaften des <b>Font</b> -Objekts für einem bedingten Formatierungsobjekt unterstützt werden. Sie können die Schriftart Formatvorlage, Unterstreichung, Farbe und durchgestrichen Attribute festlegen.</para>
+          <para>Für ein bedingtes Formatierungsobjekt werden nicht alle Eigenschaften des <b>Font</b>-Objekt unterstützt. Sie können Attribute für den Schriftschnitt, Unterstreichungen, die Farbe und Durchstreichungen festlegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -309,7 +309,7 @@
         <summary>Legt den Zellbereich fest, für den diese Formatierungsregel gilt.</summary>
         <remarks>
           <para>Der Bereich muss in der A1-Bezugsart und werden vollständig in das Blatt, das das übergeordnete Objekt des ist enthalten die <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistung. Sie können den Bereichsoperator (Doppelpunkt), der Schnittmengenoperator (ein Leerzeichen) oder der union-Operator (Komma) enthalten. Dollarzeichen kann auch verwendet werden, aber sie werden ignoriert.</para>
-          <para>Sie können auch einen lokalen, definierten Namen in einem beliebigen Teil des Bereichs verwenden, aber der Name muss sich in der Sprache des Makros.</para>
+          <para>Sie können auch einen lokalen, definierten Namen in einem Teil des Bereichs verwenden, der Name muss aber in der Sprache des Makros angegeben sein.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -345,7 +345,7 @@
           <b>Objekt</b>
         </value>
         <remarks>
-          <para>Das Zahlenformat wird mit den gleichen Formatcodes angezeigt, auf der Registerkarte Zahl im Dialogfeld Zellen formatieren angegeben. Sie können ein integriertes Zahlenformat, z. B. "Allgemein" verwenden, oder erstellen Sie ein benutzerdefiniertes Zahlenformat.</para>
+          <para>Das Zahlenformat wird mit den gleichen Formatcodes angegeben, die auch auf der Registerkarte Zahlen im Dialogfeld Zellen formatieren angezeigt werden. Sie können ein integriertes Zahlenformat z. B. Standard verwenden oder ein benutzerdefiniertes Zahlenformat erstellen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -411,7 +411,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Beim Festlegen der Priorität, die der Wert muss eine positive ganze Zahl zwischen 1 und der Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt. Die Priorität muss einen eindeutigen Wert für alle Regeln im Arbeitsblatt, so ändern die Priorität für die angegebene Regel zur bedingten Formatierung kann dazu führen, dass den Prioritätswert anderen Regeln im Arbeitsblatt verschoben werden sollen.</para>
+          <para>Beim Festlegen der Priorität muss der Wert eine positive ganze Zahl zwischen 1 und der Gesamtanzahl von Regeln zur bedingten Formatierung auf dem Arbeitsblatt sein. Die Priorität muss ein eindeutiger Wert für alle Regeln des Arbeitsblatts sein. Das Ändern der Priorität für eine Regel zur bedingten Formatierung kann also dazu führen, dass sich die Prioritätswerte anderer Regeln des Arbeitsblatts ebenfalls ändern.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -477,7 +477,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.AppliesTo" /> -Eigenschaft.</para>
+          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.AppliesTo" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -505,7 +505,7 @@
       <Docs>
         <summary>Legt den Prioritätswert für diese Regel zur bedingten Formatierung auf 1 fest, sodass die Regel vor allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
         <remarks>
-          <para>Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt vorhanden sind, wenn die Regel nicht zuvor Priorität "1" festgelegt wurde, verursacht diese Methode die Priorität aller anderen vorhandenen Regeln auf dem Arbeitsblatt um 1 erhöht.</para>
+          <para>Wenn mehrere Regeln zur bedingten Formatierung vorhanden sind und wenn für diese Regel nicht zuvor die Priorität 1 festgelegt wurde, wird die Priorität aller anderen im Arbeitsblatt vorhandenen Regeln von dieser Methode um 1 erhöht.</para>
           <para>
             <b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para>
           <para></para>
@@ -534,7 +534,12 @@
       <Parameters />
       <Docs>
         <summary>Legt die Auswertungsreihenfolge für diese Regel zur bedingten Formatierung fest, sodass sie nach allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
-        <remarks>Der aktuelle Wert der Priorität <para>wird die Gesamtzahl der Regeln zur bedingten Formatierung auf dem Arbeitsblatt entsprechen. Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt haben, verursacht diese Methode die Priorität der Regeln, die einen Prioritätswert größer als dieser Regel um 1 erhöht werden hatte.</para><para><b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para><para></para></remarks>
+        <remarks>
+          <para>Der tatsächliche Wert der Priorität entspricht der Gesamtanzahl von Regeln zur bedingten Formatierung im Arbeitsblatt. Wenn ein Arbeitsblatt mehrere Regeln zur bedingten Formatierung enthält, werden die Prioritäten von Regeln, die zuvor einen höheren Prioritätswert als diese Regel hatten, von dieser Methode um 1 reduziert.</para>
+          <para>
+            <b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -568,7 +573,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Zur Unterstützung der Abwärtskompatibilität ist der Standardwert für diese Eigenschaft <b>True</b>das Gegenteil des Verhaltens einer Formatierungsregel ist Regel in der Benutzeroberfläche erstellt.</para>
+          <para>Zur Unterstützung der Abwärtskompatibilität lautet der Standardwert für diese Eigenschaft <b>True</b>, dies ist das Gegenteil des Verhaltens einer Formatierungsregel, die auf der Benutzeroberfläche erstellt wird.</para>
           <para></para>
         </remarks>
       </Docs>

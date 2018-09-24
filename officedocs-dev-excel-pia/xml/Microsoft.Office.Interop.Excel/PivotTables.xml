@@ -1,10 +1,10 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578022" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
@@ -36,9 +36,11 @@
     <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekte des angegebenen Arbeitsblatts.</summary>
     <remarks>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> -Methode, um die <b>PivotTables</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um einen neuen PivotTable-Bericht erstellen und der Auflistung hinzugefügt.</para>
-      <para>Verwendung <b>PivotTables</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name, um ein einzelnes <b>PivotTable</b> -Objekt zurückzugeben oder die Indexnummer.</para> Programmierung 
-      <para>, da PivotTable-Berichten komplex sein kann, in der Regel am einfachsten kann Aktionen für PivotTable-Bericht aufzuzeichnen und den Code anschließend zu überarbeiten. Um ein Makro aufzuzeichnen, zeigen Sie im Menü Extras auf Makro, und klicken Sie auf neue Makro aufzeichnen.</para><para></para></remarks>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um einen neuen PivotTable-Bericht erstellen und zur Auflistung hinzufügen.</para>
+      <para>Verwenden von <b>PivotTables</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer oder der Name, um ein einzelnes <b>PivotTable</b> -Objekt zurückzugeben.</para>
+      <para>Da die Programmierung von PivotTable-Berichten komplex sein kann, besteht der leichteste Weg häufig darin, die Aktionen für den PivotTable-Bericht aufzuzeichnen und den Code anschließend zu überarbeiten. Um ein Makro aufzuzeichnen, zeigen Sie im Menü Extras auf Makro, und klicken Sie auf neue Makro aufzeichnen.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -160,7 +162,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>

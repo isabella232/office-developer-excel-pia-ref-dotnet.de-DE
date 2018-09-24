@@ -1,10 +1,10 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Excel.Axis">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ddfafcdfbef138ea093cab8dfc3008aaafe95251" />
+    <Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572933" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Axis" />
@@ -32,7 +32,7 @@
     <summary>Stellt eine einzelne Achse in einem Diagramm dar.</summary>
     <remarks>
       <para>Das <b>Axis</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> Auflistung.</para>
-      <para>Verwenden Sie <b>Axes</b>(<paramref name="type, group" />) wobei Typ den Achsentyp und Gruppe die Achsengruppe, um ein einzelnes <b>Axis</b> -Objekt zurückzugeben ist. <paramref name="Type" /> kann eine der folgenden <see cref="ff" /> Konstanten: <b>XlCategory</b>, <b>ist</b>oder <b>XlValue</b>. <paramref name="Group" /> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> Konstanten: <b>XlPrimary</b> oder <b>XlSecondary</b>. Weitere Informationen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> -Methode.</para>
+      <para>Verwenden Sie <b>Axes</b>(<paramref name="type, group" />) wobei Typ den Achsentyp und Gruppe die Achsengruppe, um ein einzelnes <b>Axis</b> -Objekt zurückzugeben ist. <paramref name="Type" />kann eine der folgenden <see cref="ff" /> Konstanten: <b>XlCategory</b>, <b>ist</b>oder <b>XlValue</b>. <paramref name="Group" />kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> Konstanten: <b>XlPrimary</b> oder <b>XlSecondary</b>. Weitere Informationen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> Methode.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -95,7 +95,7 @@
           <b>True</b>, wenn die Größenachse die Rubrikenachse zwischen den Rubriken schneidet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft gilt nur für Rubrikenachsen, und es gilt nicht für 3D-Diagramme.</para>
+          <para>Diese Eigenschaft ist nur gültig für Rubrikenachsen. Sie gilt nicht für 3D-Diagramme.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -126,7 +126,7 @@
         <summary>Gibt die Gruppe für die angegebene Achse zurück.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Für 3D-Diagramme ist nur <b>die Gruppe XlPrimary</b> gültig.</para>
+          <para>Für 3D-Diagramme ist nur die Gruppe <b>xlPrimary</b> gültig.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,8 +188,8 @@
         <summary>Gibt die Basiseinheit für die angegebene Rubrikenachse zurück oder legt diese Einheit fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft hat keine sichtbare Auswirkung, wenn die <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> -Eigenschaft der angegebenen Achse auf <b>XlCategoryScale</b>festgelegt ist. Der festgelegte Wert wird jedoch beibehalten und wird wirksam, wenn die <b>CategoryType</b> -Eigenschaft auf <b>XlTimeScale</b>festgelegt ist.</para>
-          <para>Sie können diese Eigenschaft für eine Größenachse festlegen.</para>
+          <para>Durch Festlegen dieser Eigenschaft hat keine sichtbare Auswirkung, wenn die <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> -Eigenschaft der angegebenen Achse auf <b>XlCategoryScale</b>festgelegt ist. Der festgelegte Wert wird jedoch beibehalten und wird wirksam, wenn die <b>CategoryType</b> -Eigenschaft auf <b>XlTimeScale</b> festgelegt ist.</para>
+          <para>Sie können diese Eigenschaft nicht für eine Größenachse festlegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -224,7 +224,7 @@
           <b>True,</b> Wenn Microsoft Excel geeignete Basiseinheiten für die angegebene Rubrikenachse wählt. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sie können diese Eigenschaft für eine Größenachse festlegen.</para>
+          <para>Sie können diese Eigenschaft nicht für eine Größenachse festlegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -321,7 +321,7 @@
         <summary>Gibt den Typ der Rubrikenachse zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sie können diese Eigenschaft für eine Größenachse festlegen.</para>
+          <para>Sie können diese Eigenschaft nicht für eine Größenachse festlegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -352,8 +352,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -387,36 +387,36 @@
         <summary>Zurückgeben oder festlegen den Punkt auf der angegebenen Achse Schnittpunkt mit die anderen Achse.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Crosses</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" /> Konstanten in der folgenden Tabelle aufgeführten.</para>
+          <para>Die <b>Crosses</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" /> Konstanten, die in der folgenden Tabelle aufgelistet.</para>
           <list type="table">
             <item>
               <term>
-                <b>XlAxisCrossesAutomatic</b>
+                <b>xlAxisCrossesAutomatic</b>
               </term>
-              <description>den Achsenschnittpunkt wird von Microsoft Excel festgelegt.</description>
+              <description>Der Achsenschnittpunkt wird von Microsoft Excel festgelegt.</description>
             </item>
             <item>
               <term>
-                <b>XlMinimum</b>
+                <b>xlMinimum</b>
               </term>
-              <description>der Schnittpunkt liegt am Minimalwert.</description>
+              <description>Der Schnittpunkt liegt am Minimalwert.</description>
             </item>
             <item>
               <term>
-                <b>XlMaximum</b>
+                <b>xlMaximum</b>
               </term>
-              <description>der Schnittpunkt liegt am Maximalwert.</description>
+              <description>Der Schnittpunkt liegt am Maximalwert.</description>
             </item>
             <item>
               <term>
-                <b>XlAxisCrossesCustom</b>
+                <b>xlAxisCrossesCustom</b>
               </term>
-              <description>der <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> -Eigenschaft gibt den Achsenschnittpunkt an.</description>
+              <description>Die <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> -Eigenschaft gibt den Achsenschnittpunkt an.</description>
             </item>
           </list>
-          <para>Ist diese Eigenschaft nicht für Netzdiagramme verfügbar. Für 3D-Diagramme, diese Eigenschaft kann nur auf der Größenachse angewendet werden und gibt an, in dem die durch die Rubrikenachse definierte Ebene die Größenachse schneidet.</para>
-          <para>Für Kategorie und Wert Achsen kann diese Eigenschaft verwendet werden. Auf der Rubrikenachse <b>XlMinimum</b> legt die Größenachse in der ersten Rubrik schneidet und <b>XlMaximum</b> in der letzten Rubrik schneidet die Größenachse.</para>
-          <para>Beachten Sie, dass die <b>Werte XlMinimum</b> und <b>XlMaximum</b> können je nach Achse verschiedene Bedeutungen haben.</para>
+          <para>Diese Eigenschaft steht für Netzdiagramme nicht zur Verfügung. In 3D-Diagrammen kann diese Eigenschaft nur auf die Größenachse angewendet werden, wobei sie die Stelle angibt, an der die von den Rubrikenachsen definierte Fläche die Größenachse schneidet.</para>
+          <para>Diese Eigenschaft kann sowohl bei Rubriken- als auch bei Größenachsen angewendet werden. Bei der Rubrikenachse legt <b>xlMinimum</b>xlMinimum den Schnittpunkt mit der Größenachse in der ersten Rubrik fest, und <b>xlMaximum</b>xlMaximum legt den Schnittpunkt mit der Größenachse in der letzten Rubrik fest.</para>
+          <para>Die Werte <b>xlMinimum</b> und <b>xlMaximum</b> können je nach Achse verschiedene Bedeutungen haben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -451,7 +451,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Die Einstellung dieser Eigenschaft bewirkt, dass die <see cref="P:Microsoft.Office.Interop.Excel.Axis.Crosses" /> -Eigenschaft in <b>XlAxisCrossesCustom</b>geändert.</para>
-          <para>Diese Eigenschaft kann nicht für Netzdiagramme nicht verwendet werden. Für 3D-Diagramme, diese Eigenschaft gibt an, in dem die durch die Rubrikenachse definierte Ebene die Größenachse schneidet.</para>
+          <para>Diese Eigenschaft kann für Netzdiagramme nicht verwendet werden. Bei 3D-Diagrammen kennzeichnet diese Eigenschaft, wo die durch die Rubrikenachse definierte Ebene die Größenachse schneidet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -511,9 +511,9 @@
         <summary>Zurückgeben oder festlegen die Beschriftung für Anzeigeeinheit für die Größenachse.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Einheitenbeschriftungen verwenden, wenn große Werte Diagramm macht Ihre Teilstrich Etiketten einfacher zu lesen. Angenommen, wenn Sie die Größenachse in Einheiten von Hunderte oder Tausende Millionen beschriften, können kleinere numerische Werte an den Teilstrichen auf der Achse.</para>
+          <para>Die Verwendung von Einheitenbeschriftungen erhöht die Lesbarkeit von Teilstrichbeschriftungen bei der Darstellung von großen Werten. Wenn Sie beispielsweise die Größenachse in Einheiten von Hunderten, Tausenden oder Millionen beschriften, können Sie auf der Größenachse an den Teilstrichen kleinere numerische Werte verwenden.</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> kann eine der folgenden <b>XlDisplayUnit</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" />Dies kann eine der folgenden <b>XlDisplayUnit</b> -Konstanten sein:</para>
           <para>
             <b>xlHundredMillions</b>
           </para>
@@ -580,7 +580,10 @@
       <Docs>
         <summary>Wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> -Eigenschaft <b>XlCustom</b>ist, gibt die <b>DisplayUnitCustom</b> -Eigenschaft zurück oder legt den Wert der angezeigten Einheiten. Der Wert muss im Bereich von 0 bis 10E307 sein.</summary>
         <value>To be added.</value>
-        <remarks>Bei Diagrammfunktionen große Werte Ihrer Teilstrich Using einheitenbeschriftungen <para>Markieren Etiketten einfacher zu lesen. Angenommen, wenn Sie die Größenachse in Einheiten von Hunderte oder Tausende Millionen beschriften, können kleinere numerische Werte an den Teilstrichen auf der Achse.</para><para></para></remarks>
+        <remarks>
+          <para>Die Verwendung von Einheitenbeschriftungen erhöht die Lesbarkeit von Teilstrichbeschriftungen bei der Darstellung von großen Werten. Wenn Sie beispielsweise die Größenachse in Einheiten von Hunderten, Tausenden oder Millionen beschriften, können Sie auf der Größenachse an den Teilstrichen kleinere numerische Werte verwenden.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayUnitLabel">
@@ -767,8 +770,8 @@
           <b>True</b>, wenn die Achse eine sichtbare Beschriftung oder das Diagramm einen sichtbaren Titel aufweist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Ein Achsentitel wird durch dargestellt ein <see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" /> -Objekt.</para>
-          <para>Ein Diagrammtitel wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Excel.ChartTitle" /> -Objekt.</para>
+          <para>Ein Achsentitel wird durch dargestellt ein <see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" /> Objekt.</para>
+          <para>Ein Diagrammtitel wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Excel.ChartTitle" /> Objekt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -860,7 +863,7 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>Wird zum Festlegen dieser Eigenschaft auf einen Wert kleiner oder gleich 0 (null) verursacht einen Fehler. Der Standardwert ist 10.</para>
+          <para>Wenn versucht wird, diese Eigenschaft auf einen Wert kleiner oder gleich null (0) festzulegen, wird ein Fehler ausgelöst. Der Standardwert ist 10.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -923,18 +926,18 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" />kann eine der folgenden <b>XlTickMark</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" />Dies kann eine der folgenden <b>XlTickMark</b> -Konstanten sein:</para>
           <para>
-            <b>XlTickMarkInside</b>
+            <b>xlTickMarkInside</b>
           </para>
           <para>
-            <b>XlTickMarkOutside</b>
+            <b>xlTickMarkOutside</b>
           </para>
           <para>
-            <b>XlTickMarkCross</b>
+            <b>xlTickMarkCross</b>
           </para>
           <para>
-            <b>XlTickMarkNone</b>
+            <b>xlTickMarkNone</b>
           </para>
           <para></para>
         </remarks>
@@ -1005,7 +1008,7 @@
           <b>True,</b> Wenn Microsoft Excel die Hilfseinheiten für die Größenachse automatisch berechnet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
+          <para>Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1040,15 +1043,15 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" />kann eine der folgenden <b>XlTimeUnit</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" />Dies kann eine der folgenden <b>XlTimeUnit</b> -Konstanten sein:</para>
           <para>
-            <b>XlMonths</b>
+            <b>xlMonths</b>
           </para>
           <para>
-            <b>XlDays</b>
+            <b>xlDays</b>
           </para>
           <para>
-            <b>XlYears</b>
+            <b>xlYears</b>
           </para>
           <para></para>
         </remarks>
@@ -1118,7 +1121,7 @@
           <b>True,</b> Wenn Microsoft Excel den Maximalwert für die Größenachse automatisch berechnet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
+          <para>Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1187,7 +1190,7 @@
           <b>True,</b> Wenn Microsoft Excel den minimalen Wert für die Größenachse automatisch berechnet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
+          <para>Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1250,18 +1253,18 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" />kann eine der folgenden <b>XlTickMark</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" />Dies kann eine der folgenden <b>XlTickMark</b> -Konstanten sein:</para>
           <para>
-            <b>XlTickMarkInside</b>
+            <b>xlTickMarkInside</b>
           </para>
           <para>
-            <b>XlTickMarkOutside</b>
+            <b>xlTickMarkOutside</b>
           </para>
           <para>
-            <b>XlTickMarkCross</b>
+            <b>xlTickMarkCross</b>
           </para>
           <para>
-            <b>XlTickMarkNone</b>
+            <b>xlTickMarkNone</b>
           </para>
           <para></para>
         </remarks>
@@ -1332,7 +1335,7 @@
           <b>True,</b> Wenn Microsoft Excel Hilfsintervalle der Größenachse automatisch berechnet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
+          <para>Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1367,15 +1370,15 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" />kann eine der folgenden <b>XlTimeUnit</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" />Dies kann eine der folgenden <b>XlTimeUnit</b> -Konstanten sein:</para>
           <para>
-            <b>XlMonths</b>
+            <b>xlMonths</b>
           </para>
           <para>
-            <b>XlDays</b>
+            <b>xlDays</b>
           </para>
           <para>
-            <b>XlYears</b>
+            <b>xlYears</b>
           </para>
           <para></para>
         </remarks>
@@ -1439,7 +1442,7 @@
           <b>True,</b> Wenn Microsoft Excel Datenpunkte zeigt vom letzten zum ersten.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft kann nicht für Netzdiagramme nicht verwendet werden.</para>
+          <para>Diese Eigenschaft ist für Netzdiagramme nicht verfügbar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1474,12 +1477,12 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlScaleType" />kann eine der folgenden <b>XlScaleType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlScaleType" />Dies kann eine der folgenden <b>XlScaleType</b> -Konstanten sein:</para>
           <para>
-            <b>XlScaleLinear</b>
+            <b>xlScaleLinear</b>
           </para>
           <para>
-            <b>XlScaleLogarithmic</b>
+            <b>xlScaleLogarithmic</b>
           </para>
           <para></para>
         </remarks>
@@ -1509,7 +1512,7 @@
         <summary>Markiert das Objekt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Wählen Sie eine Zelle oder einen Zellbereich, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> -Methode.</para>
+          <para>Um eine Zelle oder einen Zellbereich ausgewählt haben, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1544,20 +1547,20 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelPosition" />kann eine der folgenden <b>XlTickLabelPosition</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelPosition" />Dies kann eine der folgenden <b>XlTickLabelPosition</b> -Konstanten sein:</para>
           <para>
-            <b>XlTickLabelPositionLow</b>
+            <b>xlTickLabelPositionLow</b>
           </para>
           <para>
-            <b>XlTickLabelPositionNone</b>
+            <b>xlTickLabelPositionNone</b>
           </para>
           <para>
-            <b>XlTickLabelPositionHigh</b>
+            <b>xlTickLabelPositionHigh</b>
           </para>
           <para>
-            <b>XlTickLabelPositionNextToAxis</b>
+            <b>xlTickLabelPositionNextToAxis</b>
           </para>
-          <para>der <b>kann nicht verwendet werden XlTickLabelPositionHigh</b> Konstante auf 3D-Diagramme.</para>
+          <para>Sie können nicht für 3D-Diagramme <b>XlTickLabelPositionHigh</b> -Konstante verwenden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1619,7 +1622,7 @@
         <summary>Gibt zurück oder legt die Anzahl der Rubriken oder Datenreihen zwischen teilstrichbeschriftungen. Gilt nur für die Kategorie und Series Achsen.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Bezeichnung Teilstrichen auf der Größenachse wird stets von Microsoft Excel berechnet.</para>
+          <para>Der Abstand zwischen den Beschriftungen auf der Größenachse wird immer von Microsoft Excel berechnet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1655,7 +1658,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> -Eigenschaft gibt den aktuellen Abstand zwischen Beschriftungsabstand, ob die Einstellung automatisch erfolgt oder nicht.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> -Eigenschaft gibt den aktuellen Abstand zwischen Beschriftungsabstand, ob die Einstellung automatisch erfolgt oder nicht.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1689,7 +1692,7 @@
         <summary>Gibt zurück oder legt die Anzahl der Rubriken oder Datenreihen zwischen Teilstrichen. Gilt nur für die Kategorie und Series Achsen.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwenden die <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> und <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> Eigenschaften festlegen Teilstrichen auf der Größenachse Abstand.</para>
+          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> und <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> Eigenschaften festlegen Teilstrichen auf der Größenachse Abstand.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1752,17 +1755,17 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />kann eine der folgenden <b>XlAxisType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />Dies kann eine der folgenden <b>XlAxisType</b> -Konstanten sein:</para>
           <para>
-            <b>XlCategory</b>
+            <b>xlCategory</b>
           </para>
           <para>
-            <b>XlSeriesAxis</b>
+            <b>xlSeriesAxis</b>
           </para>
           <para>
-            <b>XlValue</b>
+            <b>xlValue</b>
           </para>
-          <para>Wenn Sie diese Eigenschaft für die horizontale Achse eines Punkt (XY)-Diagramms verwenden, wird <b>XlCategory</b> als Achsentyp zurückgegeben.</para>
+          <para>Wenn Sie diese Eigenschaft für die horizontale Achse eines Punkt (XY)-Diagramms verwenden, wird als Achsentyp <b>xlCategory</b> zurückgegeben.</para>
           <para></para>
         </remarks>
       </Docs>

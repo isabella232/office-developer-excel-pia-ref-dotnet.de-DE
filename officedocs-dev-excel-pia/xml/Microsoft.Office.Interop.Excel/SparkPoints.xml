@@ -1,10 +1,10 @@
 <Type Name="SparkPoints" FullName="Microsoft.Office.Interop.Excel.SparkPoints">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="244ea4c7d176a75a006d65791e464a2e30c56131" />
+    <Meta Name="ms.openlocfilehash" Value="e5a9199cd752c599cbd9222cae79f2248af65580" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585127" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparkPoints" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Stellt die Einstellungen der Markierungen für Datenpunkte auf einer Sparkline dar.</summary>
     <remarks>
-      <para>Verwendung der <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> -Objekt, legen Sie die Farbe und die Sichtbarkeit der Markierungen für Datenpunkte in einer Sparkline dar. Verwenden der <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> zurückzugebenden-Objekts ein <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> Objekt. Die Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> -Objekt mit den Einstellungen der High Point, Low Punkt, Negative Punkt, Punkt der ersten, letzten angeben und Markierungen Kontrollkästchen im Abschnitt anzeigen und der Elemente in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage der Sparkline entsprechen Tools Design Registerkarte des Menübands.</para>
+      <para>Verwendung der <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> -Objekt, legen Sie die Farbe und die Sichtbarkeit der Markierungen für Datenpunkte in einer Sparkline dar. Verwenden der <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> zurückzugebenden-Objekts ein <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> Objekt. Die Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> -Objekt mit den Einstellungen der High Point, Low Punkt, Negative Punkt, Punkt der ersten, letzten angeben und Markierungen Kontrollkästchen im Abschnitt anzeigen und der Elemente in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage der Sparkline entsprechen Registerkarte "Entwurf" des Menübands Tools.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -62,7 +62,7 @@
         <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -94,7 +94,7 @@
         <value>Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</value>
         <remarks>
           <para>Nur-Lese- <b>long</b>.</para>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" />-Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" />-Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -125,8 +125,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den ersten Datenpunkt in einer Sparkline dar darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den ersten Datenpunkt in einer Sparkline dar darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /> -Eigenschaft entspricht der Einstellung des Kontrollkästchens ersten Punkt im Abschnitt anzeigen und des ersten Punkts Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /> -Eigenschaft entspricht der Einstellung des Kontrollkästchens ersten Punkt im Abschnitt anzeigen und des ersten Punkts Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -157,8 +157,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den höchsten Punkt auf einer Sparkline dar darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den höchsten Punkt auf einer Sparkline dar darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /> -Eigenschaft entspricht der Einstellung des Kontrollkästchens besonders Punkt im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage besonders Punkt der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /> -Eigenschaft entspricht der Einstellung des Kontrollkästchens besonders Punkt im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage besonders Punkt der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -189,8 +189,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den letzten Datenpunkt in einer Sparkline dar darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den letzten Datenpunkt in einer Sparkline dar darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" />-Eigenschaft entspricht der Einstellung des letzten Punkts, das Kontrollkästchen im Abschnitt anzeigen und des letzten Punkts Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" />-Eigenschaft entspricht der Einstellung des letzten Punkts, das Kontrollkästchen im Abschnitt anzeigen und des letzten Punkts Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -221,8 +221,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den niedrigsten Punkt der Daten auf einer Sparkline darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierung für den niedrigsten Punkt der Daten auf einer Sparkline darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /> -Eigenschaft entspricht der Einstellung des Kontrollkästchens niedrig Punkt im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage niedrig Punkt der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /> -Eigenschaft entspricht der Einstellung des Kontrollkästchens niedrig Punkt im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage niedrig Punkt der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -253,8 +253,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierungen für Datenpunkte in einer Sparkline dar positive darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierungen für Datenpunkte in einer Sparkline dar positive darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" />-Eigenschaft entspricht der Einstellung des Kontrollkästchens Markierungen im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage Markierungen der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" />-Eigenschaft entspricht der Einstellung des Kontrollkästchens Markierungen im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage Markierungen der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -285,8 +285,8 @@
         <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierungen für negative Datenpunkte in einer Sparkline darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> -Objekt, das die Farbe und die Sichtbarkeit der Markierungen für negative Datenpunkte in einer Sparkline darstellt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" />-Eigenschaft entspricht der Einstellung des Kontrollkästchens Negative Punkt im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage Negative Punkt der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" />-Eigenschaft entspricht der Einstellung des Kontrollkästchens Negative Punkt im Abschnitt anzeigen und des Elements in der Markierung Farbe Dropdown-Liste im Abschnitt Formatvorlage Negative Punkt der Sparkline-Tools – Entwurf Registerkarte des Menübands.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -317,7 +317,7 @@
         <summary>Ruft ab, der übergeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> -Objekt für das angegebene Objekt.</summary>
         <value>Das übergeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> -Objekt für das angegebene Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>

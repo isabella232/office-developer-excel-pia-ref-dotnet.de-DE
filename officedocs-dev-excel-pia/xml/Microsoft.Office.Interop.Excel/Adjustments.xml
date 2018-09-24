@@ -1,10 +1,10 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Excel.Adjustments">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="55c03b5083f29e8896f86dd16915d59d3c798ec9" />
+    <Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584140" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,22 +32,22 @@
   <Docs>
     <summary>Enthält eine Auflistung von Korrekturwerten für die angegebene AutoForm, das WordArt-Objekt oder die Verbindung.</summary>
     <remarks>
-      <para>Jeder Wert stellt eine Möglichkeit dar, die einem UserForm angepasst werden kann. Da einige Anpassungsziehpunkte auf zwei Arten angepasst werden können – beispielsweise einige können angepasst werden horizontal und vertikal – eine Form mehr Anpassungswerte als Anpassungsziehpunkte besitzen aufweisen kann. Ein Shape kann bis zu acht Korrekturen aufweisen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> Eigenschaft, um ein <b>Adjustments</b> -Objekt zurückzugeben. Verwenden Sie <b>Adjustments</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Anpassungswert Indexzahl darstellt, um einen einzelnen Wert zurückzugeben.</para>
-      <para>Verschiedene Formen unterschiedliche Anzahl von Korrekturwerten haben, verschiedene Arten der Korrekturen ändern die Geometrie eines Shapes auf verschiedene Arten und verschiedene Arten von Anpassungen sind unterschiedliche gültige Wertebereiche.</para>
-      <para>In der folgenden Tabelle sind die Bereiche der gültigen Anpassungswerte für unterschiedliche Arten von Anpassungen zusammengefasst. In den meisten Fällen, wenn Sie einen Wert angeben, die außerhalb des gültigen Werte ist der nächste gültige Wert zugewiesen wird die Anpassung.</para>
+      <para>Jeder Wert stellt dabei eine Anpassungsmöglichkeit des Korrekturziehpunkts dar. Da manche Ziehpunkte auf zwei Arten angepasst werden können, z. B. sowohl horizontal als auch vertikal, kann eine Form mehr Anpassungswerte als Korrekturziehpunkte besitzen. Die maximale Anzahl der Anpassungen einer Form beträgt acht.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> Eigenschaft, um ein <b>Adjustments</b> -Objekt zurückzugeben. Verwenden Sie <b>Adjustments</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Anpassungswert Indexzahl darstellt, um einen einzelnen Wert zurück.</para>
+      <para>Verschiedene Formen haben verschieden viele Anpassungswerte, verschiedene Arten von Anpassungen ändern die Geometrie einer Form auf verschiedene Weisen, und verschiedene Arten von Anpassungen haben verschiedene Bereiche gültiger Werte.</para>
+      <para>In der folgenden Tabelle sind die Bereiche der gültigen Anpassungswerte für verschiedene Anpassungsarten zusammengefasst. Wenn Sie einen Wert angeben, der außerhalb des gültigen Bereichs liegt, wird der Anpassung in den meisten Fällen der am nächsten liegende gültige Wert zugewiesen.</para>
       <list type="table">
         <item>
           <term>Linear (horizontal oder vertikal)</term>
-          <description>im Allgemeinen der Wert 0,0 den linken oder oberen Rand der Form darstellt, und der Wert 1,0 den rechten oder unteren Begrenzung der Form dar. Gültige Werte entsprechen gültigen Korrekturen, die Sie mit dem Shape manuell vornehmen können. Angenommen, wenn Sie nur eine Anpassung halb über die Form manuell ziehen können, sein der Höchstwert für die entsprechende Anpassung 0,5. Für Formen wie Verbinder und nicht ausgewählte Beschriftungen, wobei die Werte 0,0 und 1,0 die Grenzen des durch die Anfangs- und Endpunkte des Connectors oder Legendenlinie definierten Rechtecks darstellen, Zahlen und Zahlen größer als negative 1.0 sind gültige Werte.</description>
+          <description>Im Allgemeinen stellt der Wert 0,0 den linken oder oberen Rand des Shapes, und der Wert 1,0 den rechten oder unteren Begrenzung der Form dar. Gültige Werte entsprechen gültigen Korrekturen, die Sie mit dem Shape manuell vornehmen können. Angenommen, wenn Sie nur eine Anpassung halb über die Form manuell ziehen können, sein der Höchstwert für die entsprechende Anpassung 0,5. Für Formen wie Verbinder und nicht ausgewählte Beschriftungen, bei denen die Werte 0,0 und 1,0 die Grenzen des Rechtecks definiert durch die Punkte Start- und Enddatum des Connectors oder Legendenlinie, negativen Zahlen darstellen und Zahlen größer als 1,0 gültige Werte.</description>
         </item>
-        <term>Radial</term>
-        <description>ein Wert von 1.0 
-        <item>entspricht der Breite der Form. Der Höchstwert ist 0,5 bzw. die Hälfte der Form. 
-        </item></description>
+        <item>
+          <term>Radial</term>
+          <description>Ein Anpassungswert von 1,0 entspricht der Breite der Form. Der Maximalwert beträgt 0,5 oder die halbe Breite der Form.</description>
+        </item>
         <item>
           <term>Winkel</term>
-          <description>Werte werden in Grad angegeben. Wenn Sie einen Wert außerhalb des Bereichs –180 180 angeben, wird er um innerhalb dieses Bereichs liegen normalisiert.</description>
+          <description>Werte werden in Grad angegeben. Wenn Sie einen Wert außerhalb des Bereichs –180 180 angeben, wird er normalisiert, um innerhalb dieses Bereichs liegen.</description>
         </item>
       </list>
       <para></para>
@@ -142,8 +142,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -183,7 +183,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Bei linearen Korrekturen ein Wert von 0,0 entspricht im Allgemeinen den linken oder oberen Rand des Shapes, und ein Wert von 1.0 im Allgemeinen entspricht den rechten oder unteren Begrenzung der Form. Adjustments können jedoch über Shape Grenzen für einige Shapes übergeben. Bei radial Korrekturen bezieht sich ein Wert von 1.0 auf die Breite der Form. Für Winkel Anpassungen ist der Anpassungswert in Grad angegeben. Die <b>Item</b> -Eigenschaft gilt nur für Formen, die Anpassungen aufweisen.</para>
-          <para>AutoFormen, Verbindungen und WordArt-Objekte können bis zu acht Korrekturen aufweisen.</para>
+          <para>AutoFormen, Verbindungen und WordArt-Objekte können bis zu acht Anpassungen haben.</para>
           <para></para>
         </remarks>
       </Docs>

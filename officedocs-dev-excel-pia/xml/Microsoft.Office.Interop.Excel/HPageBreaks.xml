@@ -1,10 +1,10 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108f19eb2bdfc41fd93ef30c28377a61a1667c" />
+    <Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585729" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
@@ -36,18 +36,18 @@
     <summary>Die Auflistung der horizontalen Seitenumbrüche im Druckbereich. Jeder horizontale Seitenumbruch wird durch dargestellt ein <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> Objekt.</summary>
     <remarks>
       <para>Verwenden Sie die <b>HPageBreaks</b> -Eigenschaft, um die <b>HPageBreaks</b> -Auflistung zurückzugeben. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> -Methode, um einen horizontalen Seitenumbruch hinzuzufügen.</para>
-      <para>Wenn Sie einen Seitenumbruch, der den Druckbereich nicht überschneidet hinzufügen, und klicken Sie dann das neu hinzugefügte <b>HPageBreak</b> -Objekt nicht, in der <b>HPageBreaks</b> -Auflistung für den Druckbereich angezeigt wird.</para>
-      <para>Bei der <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> -Eigenschaft, oder <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> -Methode in Verbindung mit der <b>HPageBreaks</b> -Eigenschaft verwendet wird:</para>
+      <para>Wenn Sie einen Seitenumbruch, der den Druckbereich nicht überschneidet hinzufügen, wird das neu hinzugefügte <b>HPageBreak</b> -Objekt nicht in der <b>HPageBreaks</b> -Auflistung für den Druckbereich angezeigt.</para>
+      <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> -Eigenschaft, oder <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> -Methode in Verbindung mit der <b>HPageBreaks</b> -Eigenschaft verwendet wird:</para>
       <list type="bullet">
         <item>
-          <description>Bei einem automatischen Druckbereich wird die <b>HPageBreaks</b> -Eigenschaft nur auf die Seitenumbrüche im Druckbereich gilt.</description>
+          <description>Bei einem automatischen Druckbereich wird die <b>HPageBreaks</b> -Eigenschaft nur auf die Seitenumbrüche im Druckbereich angewendet.</description>
         </item>
         <item>
-          <description>Bei einem benutzerdefinierten Druckbereich mit denselben Abmessungen wird die <b>HPageBreaks</b> -Eigenschaft auf alle Seitenumbrüche.</description>
+          <description>Bei einem benutzerdefinierten Druckbereich mit denselben Abmessungen wird die <b>HPageBreaks</b> -Eigenschaft auf alle Seitenumbrüche angewendet.</description>
         </item>
       </list>
       <para>
-        <b>Hinweis</b> vorhanden ist maximal 1,026 horizontalen Seitenumbrüche pro Blatt.</para>
+        <b>Hinweis</b>  Es besteht ein Grenzwert von 1,026 horizontalen Seitenumbrüche pro Blatt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -199,8 +199,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>

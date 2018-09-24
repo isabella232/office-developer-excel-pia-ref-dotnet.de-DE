@@ -1,10 +1,10 @@
 <Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="62181a586d545e1a026f86bd8ec84b25d6e092ad" />
+    <Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581501" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
@@ -37,8 +37,8 @@
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> Eigenschaft, um die <b>Worksheets</b> -Auflistung zurückzugeben.</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> -Methode zum Erstellen eines neuen Arbeitsblatts und der Auflistung hinzugefügt.</para>
-      <para>Verwendung <b>Arbeitsblätter</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Arbeitsblatts oder Namen, um ein einzelnes <b>Worksheet</b> -Objekt zurückzugeben.</para>
-      <para>Das <b>Worksheet</b> -Objekt ist außerdem ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung. <b>Sheets</b> -Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter und Arbeitsblätter).</para>
+      <para>Verwenden Sie <b>Arbeitsblätter</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Arbeitsblatts oder Namen, um ein einzelnes <b>Worksheet</b> -Objekt zurückzugeben.</para>
+      <para>Das <b>Worksheet</b> -Objekt ist auch ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung. Die <b>Sheets</b> -Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter und Arbeitsblätter).</para>
       <para></para>
     </remarks>
   </Docs>
@@ -152,7 +152,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Wenn <paramref name="Before" /> und <paramref name="After" /> sind beide ausgelassen, das neue Blatt vor dem aktiven Blatt eingefügt.</para>
+          <para>Wenn <paramref name="Before" /> und <paramref name="After" /> sind beide ausgelassen, das neue Blatt vor dem aktiven Blatt eingefügt wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -189,7 +189,7 @@
         <summary>Diese Methode ist nur für das <b>Charts</b> -Auflistung-Objekt implementiert und erzeugt einen Laufzeitfehler, wenn für die Objekte <b>Sheets</b> und die <b>Arbeitsblätter</b> verwendet.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Wenn <paramref name="Before" /> und <paramref name="After" /> sind beide ausgelassen, das neue Blatt vor dem aktiven Blatt eingefügt.</para>
+          <para>Wenn <paramref name="Before" /> und <paramref name="After" /> sind beide ausgelassen, das neue Blatt vor dem aktiven Blatt eingefügt wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -308,7 +308,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -427,7 +427,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> Seitenumbrüche des Blatts-Auflistung, die die horizontale Seite darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Es besteht ein Grenzwert von 1,026 horizontalen Seitenumbrüche pro Blatt.</para>
+          <para>Die horizontalen Seitenumbrüche sind pro Arbeitsblatt auf 1,026 begrenzt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -667,7 +667,7 @@
         <param name="Replace">Optional- <b>Objekt</b> (nur für Blätter verwendet). <b>True</b>, wenn die aktuelle Auswahl mit dem angegebenen Objekt ersetzt. <b>False</b>, wenn die aktuelle Markierung erweitert bereits ausgewählte Objekte und das angegebene Objekt.</param>
         <summary>Markiert das Objekt.</summary>
         <remarks>
-          <para>Wählen Sie eine Zelle oder einen Zellbereich, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> -Methode.</para>
+          <para>Um eine Zelle oder einen Zellbereich ausgewählt haben, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>

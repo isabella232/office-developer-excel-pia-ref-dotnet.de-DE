@@ -1,10 +1,10 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c2be0679f4fcc0da628343344a5b5b0cce8a4549" />
+    <Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579450" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Eine Auflistung von Objekten, die für die Anzeige auf dem Server gekennzeichnet wurden.</summary>
     <remarks>
       <para>Dies ist eine Auflistung von Verweisen auf Objekte in der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Nur die Objekte in dieser Auflistung werden auf dem Server angezeigt werden.  Standardmäßig wird die gesamte Arbeitsmappe (einschließlich aller Arbeitsblätter) angezeigt.  </para>
-      <para>Nur eine <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Objekt kann pro vorhanden <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Diese Auflistung ist nicht nach Namen indiziert werden, da es nicht gewährleistet ist, dass die Namen der Objekte, die die Anzeige auf dem Server gekennzeichnet sind, eindeutig sind.</para>
-      <para>In Excel-Benutzeroberfläche können Sie die Auflistung von Objekten, die die Anzeige auf dem Server im Dialogfeld Optionen für Excel Services gekennzeichnet sind anzeigen.</para>
+      <para>Nur ein <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Objekt kann pro vorhanden <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Diese Auflistung ist nicht nach Namen indiziert werden, da es nicht gewährleistet ist, dass die Namen der Objekte, die die Anzeige auf dem Server gekennzeichnet sind, eindeutig sind.</para>
+      <para>In der Excel-Benutzeroberfläche können Sie die Auflistung von Objekten anzeigen, die die Anzeige auf dem Server im Dialogfeld Optionen für Excel Services gekennzeichnet sind.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -107,7 +107,7 @@
           <b>Objekt</b>
         </returns>
         <remarks>
-          <para>, Wenn Sie versuchen, eine Kombination von Arbeitsblätter und benannte Elemente hinzufügen der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung ein Fehler zurückgegeben.  Die <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung kann nur Verweise auf Arbeitsblätter oder nur Verweise auf benannte Elemente, jedoch nicht beide in demselben Aufruf enthalten.  </para>
+          <para>Wenn Sie versuchen, eine Kombination von Arbeitsblätter und benannte Elemente hinzufügen der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung ein Fehler zurückgegeben.  Die <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung kann nur Verweise auf Arbeitsblätter oder nur Verweise auf benannte Elemente, jedoch nicht beide in demselben Aufruf enthalten.  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -140,7 +140,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>Beim ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft die Microsoft Office Excel-Anwendung. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</para>
+          <para>Wenn Sie ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft die Microsoft Office Excel-Anwendung. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -203,7 +203,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -234,7 +234,7 @@
         <param name="Index">Erforderlich, <b>ganze Zahl</b> der Index des Objekts, den Sie löschen möchten.</param>
         <summary>Löscht einen Verweis auf ein Objekt in der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung in der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
         <remarks>
-          <para>Wenn Sie nicht, dass ein bestimmtes Objekt in Excel Services angezeigt werden möchten, verwenden Sie diese Methode zum Entfernen des Objekts.</para>
+          <para>Wenn es nicht möglich sein soll, ein bestimmtes Objekt in Excel Services anzuzeigen, verwenden Sie diese Methode zum Entfernen des Objekts.</para>
           <para></para>
         </remarks>
       </Docs>

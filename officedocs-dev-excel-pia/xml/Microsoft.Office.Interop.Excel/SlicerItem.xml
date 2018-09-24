@@ -1,10 +1,10 @@
 <Type Name="SlicerItem" FullName="Microsoft.Office.Interop.Excel.SlicerItem">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c437a5df8c218a73a221a359a6d25ce166383fd0" />
+    <Meta Name="ms.openlocfilehash" Value="3c1b11b181cf76e60a0a1ab7e6eab3bce566f124" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575145" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerItem" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Stellt ein Element in einem Datenschnitt dar.</summary>
     <remarks>
-      <para>Für den Zugriff auf die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die aktuell ausgewählte Schaltfläche im Datenschnitt, Verwendung stellt die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt. Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> -Auflistung, die alle Elemente in einem Datenschnitt Filtern einer PivotTable, die Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt, das zugeordnet ist die <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt. Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> -Auflistung, die die Elemente in einem Datenschnitt Filtern einer OLAP-Hierarchieebene Verwendung darstellen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> -Objekt, das die entsprechende Stufe der Hierarchie darstellt.</para>
+      <para>Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die aktuell ausgewählte Schaltfläche im Datenschnitt, Verwendung stellt die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt. Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> -Auflistung, die alle Elemente in einem Datenschnitt Filtern einer PivotTable, die Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt, das zugeordnet ist die <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt. Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> -Auflistung, die die Elemente in einem Datenschnitt Filtern einer OLAP-Hierarchieebene Verwendung darstellen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> -Objekt, das die entsprechende Stufe der Hierarchie darstellt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -62,7 +62,7 @@
         <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -93,7 +93,7 @@
         <summary>Ruft den Beschriftungstext für das Datenschnittelement ab.</summary>
         <value>Den Beschriftungstext für das Datenschnittelement.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -124,7 +124,7 @@
         <summary>Ruft eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -156,9 +156,9 @@
         <value>
           <b>true,</b> Wenn das Datenschnittelement Daten enthält, die den aktuellen manuellen filterzustand entsprechen. anderenfalls <b>false</b>.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para>
-            <b>true,</b> Wenn das Datenschnittelement Daten enthält, die den aktuellen manuellen filterzustand entsprechen, andernfalls <b>false</b>.</para>
+            <b>true,</b> Wenn das Datenschnittelement Daten enthält, die den aktuellen manuellen filterzustand entsprechen. andernfalls <b>false</b>.</para>
           <para>Diese Eigenschaft wird nur unterstützt, wenn kreuzfilterung aktiviert ist, und einen Laufzeitfehler andernfalls generiert. Um festzustellen, ob kreuzfilterung für einen Datenschnitt zugeordneten PivotTable-Bericht aktiviert ist, überprüfen Sie den Wert der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> -Eigenschaft des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> übergeordneten Objekts <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Objekt. Um festzustellen, ob kreuzfilterung für einen Datenschnitt, der mit einer OLAP-Datenquelle verknüpften aktiviert ist, überprüfen Sie den Wert der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekt, das die gefilterten OLAP-Hierarchie entspricht.</para>
           <para></para>
         </remarks>
@@ -190,7 +190,7 @@
         <summary>Ruft den Namen des Datenschnitt-Elements ab.</summary>
         <value>Der Name des Datenschnitt-Elements.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -221,7 +221,7 @@
         <summary>Ruft ab, der übergeordnete <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt für das Datenschnittelement.</summary>
         <value>Das übergeordnete <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt für das Datenschnittelement.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -258,7 +258,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>true,</b> Wenn das Datenschnittelement ausgewählt ist, andernfalls <b>false</b>.</para>
+            <b>true,</b> Wenn das Datenschnittelement ausgewählt ist. andernfalls <b>false</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -289,7 +289,7 @@
         <summary>Ruft den Quellnamen des Datenschnitt-Elements.</summary>
         <value>Der Quellenname des Datenschnitt-Elements.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -320,7 +320,7 @@
         <summary>Ruft das Datenschnittelement der Quellname in Standard-Englisch (Vereinigte Staaten) formateinstellungen ab.</summary>
         <value>Das Datenschnittelement Source Name in formateinstellungen Standard Englisch (USA).</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para>Diese Eigenschaft wird verwendet, wenn ein Slicer-Element eine lokalisierte Version vorhanden ist und die zugehörige <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> Eigenschaftswert unterscheidet sich von der <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> Eigenschaft value, so wie bei der Formatierung von Datum.</para>
           <para></para>
         </remarks>
@@ -352,7 +352,7 @@
         <summary>Ruft den Wert des Datenschnitt-Elements ab.</summary>
         <value>Der Wert des Datenschnitt-Elements.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>

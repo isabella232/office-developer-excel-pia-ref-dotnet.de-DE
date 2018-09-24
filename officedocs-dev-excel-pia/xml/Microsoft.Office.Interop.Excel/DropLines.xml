@@ -1,10 +1,10 @@
 <Type Name="DropLines" FullName="Microsoft.Office.Interop.Excel.DropLines">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b812f4bbf5c164a5e6bd7c838afce5e6befd46ba" />
+    <Meta Name="ms.openlocfilehash" Value="75b4c26df638c0a7eb516bce66d8566fed0d8a59" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580878" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DropLines" />
@@ -31,9 +31,9 @@
   <Docs>
     <summary>Stellt die Bezugslinien in einer Diagrammgruppe dar.</summary>
     <remarks>
-      <para>Drop Zeilen verbinden die Punkte im Diagramm mit der x-Achse an. Nur Linien- und Flächendiagrammgruppen können Bezugslinien aufweisen. Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Bezugslinie darstellt. Sie müssen die Bezugslinien für alle Datenpunkte in einer Diagrammgruppe oder eingeschaltet ausgeschaltet</para>
+      <para>Bezugslinien verbinden die Diagrammpunkte mit der X-Achse. Nur Linien- und Flächendiagrammgruppen können Bezugslinien aufweisen. Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Bezugslinie darstellt. Die Bezugslinien müssen für alle Punkte in einer Diagrammgruppe gleichzeitig aktiviert oder deaktiviert werden.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.DropLines" /> -Eigenschaft auf das <b>DropLines</b> -Objekt zurückzugeben.</para>
-      <para>Wenn das <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasDropLines" /> -Eigenschaft <b>False</b>ist, sind die meisten Eigenschaften des <b>DropLines</b> -Objekts deaktiviert.</para>
+      <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasDropLines" /> -Eigenschaft <b>False</b>ist, sind die meisten Eigenschaften des <b>DropLines</b> -Objekts deaktiviert.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -120,8 +120,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -262,7 +262,7 @@
         <summary>Markiert das Objekt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Wählen Sie eine Zelle oder einen Zellbereich, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> -Methode.</para>
+          <para>Um eine Zelle oder einen Zellbereich ausgewählt haben, verwenden Sie die <b>Select</b> -Methode. Um einer einzelnen Zelle als aktive Zelle festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>

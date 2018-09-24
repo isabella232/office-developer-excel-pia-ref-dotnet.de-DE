@@ -1,10 +1,10 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ceeeadbbe58866d8578dc0cbfba5a77ed0fec61" />
+    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575635" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
@@ -36,9 +36,11 @@
     <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> Objekte des angegebenen Arbeitsblatts. Jedes  <b>OLEObject</b>-Objekt stellt ein ActiveX-Steuerelement oder ein verknüpftes bzw. eingebettetes OLE-Objekt dar.</summary>
     <remarks>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> -Methode, um die <b>OLEObjects</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um ein neues OLE-Objekt erstellen und der <b>OLEObjects</b> -Auflistung hinzuzufügen.</para>
-      <para>Ein ActiveX-Steuerelement in einem Blatt verfügt über zwei Namen: der Name der Form, die das Steuerelement, die Sie in das Feld Name anzeigen können enthält, wenn Sie das Blatt und den Code für das Steuerelement, das Sie in der Zelle rechts neben (Name) im Fenster Eigenschaften finden Sie unter anzeigen. Wenn Sie zuerst ein Steuerelement zu einem Blatt hinzufügen, zuordnen Shape-Name und Codename. Jedoch, wenn Sie Shapenamen oder der Codename ändern, der andere wird nicht automatisch geändert entsprechend.</para> Verwendung der Codename des Steuerelements in die Namen der entsprechenden Ereignisprozeduren 
-      <para>. Wenn Sie jedoch ein Steuerelement aus Zurückgeben der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> oder <b>OLEObjects</b> -Auflistung für ein Blatt, müssen Sie den Shapenamen nicht den Codenamen verwenden, um auf das Steuerelement nach Namen verweisen möchten. Nehmen wir beispielsweise an, dass Sie einem Blatt ein Kontrollkästchen hinzugefügt und der Name des Shapes und den Code Standardnamen "CheckBox1" lauten. Wenn Sie den Code Steuerelementnamen klicken Sie dann im Eigenschaftenfenster ChkFinished neben (Name) eingeben ändern, müssen Sie ChkFinished Ereignisprozeduren verwenden, jedoch weiterhin "CheckBox1" verwenden, um das Steuerelement aus der <b>Shapes-</b> oder der <b>OLEObjects</b> zurückzugeben -Auflistung.</para><para></para></remarks>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um ein neues OLE-Objekt erstellen und der <b>OLEObjects</b> -Auflistung hinzufügen.</para>
+      <para>Ein ActiveX-Steuerelement in einem Blatt verfügt über zwei Namen: der Name der Form, die das Steuerelement, die Sie in das Feld Name anzeigen können enthält, wenn Sie das Blatt und den Code für das Steuerelement, das Sie in der Zelle rechts neben (Name) im Fenster Eigenschaften finden Sie unter anzeigen. Wenn Sie zuerst ein Steuerelement zu einem Blatt hinzufügen, zuordnen Shape-Name und Codename. Jedoch wenn Sie Shapenamen oder der Codename ändern, wird die andere nicht automatisch entsprechend geändert.</para>
+      <para>Verwenden Sie den Code Namen eines Steuerelements in die Namen der entsprechenden Ereignisprozeduren. Wenn Sie jedoch ein Steuerelement aus Zurückgeben der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> oder <b>OLEObjects</b> -Auflistung für ein Blatt, müssen Sie den Shapenamen nicht den Codenamen verwenden, um auf das Steuerelement nach Namen verweisen möchten. Nehmen wir beispielsweise an, dass Sie einem Blatt ein Kontrollkästchen hinzugefügt und der Name des Shapes und den Code Standardnamen "CheckBox1" lauten. Wenn Sie den Code Steuerelementnamen klicken Sie dann im Eigenschaftenfenster ChkFinished neben (Name) eingeben ändern, müssen Sie ChkFinished Ereignisprozeduren verwenden, jedoch weiterhin "CheckBox1" verwenden, um das Steuerelement aus der <b>Shapes-</b> oder der <b>OLEObjects</b> zurückzugeben Auflistung.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Dummy12">
@@ -539,8 +541,8 @@
           <b>True,</b> Wenn das OLE-Objekt automatisch geladen wird, wenn die Arbeitsmappe, in der es enthalten wird geöffnet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Von ActiveX-Steuerelementen wird diese Eigenschaft ignoriert. ActiveX-Steuerelemente werden immer geladen, wenn eine Arbeitsmappe geöffnet wird.</para>
-          <para>Für die meisten OLE-Objekttypen sollte nicht diese Eigenschaft auf <b>True</b>festgelegt werden. Standardmäßig wird die <b>AutoLoad</b> -Eigenschaft für neue OLE-Objekte auf <b>False</b> festgelegt. Dadurch wird Zeit und Arbeitsspeicher gespeichert, wenn Microsoft Excel Arbeitsmappen geladen wird. Der Vorteil des automatischen Ladens von OLE-Objekten besteht darin, dass für Objekte, die veränderliche Daten darstellen, Verknüpfungen zu Quelldaten sofort wiederhergestellt werden können, und die Objekte erneut gerendert werden können bei Bedarf.</para>
+          <para>Diese Eigenschaft wird von ActiveX-Steuerelementen ignoriert. ActiveX-Steuerelemente werden immer geladen, wenn eine Arbeitsmappe geöffnet wird.</para>
+          <para>Bei den meisten OLE-Objektarten sollte diese Eigenschaft nicht auf <b>True</b>True gesetzt werden. Standardmäßig ist die <b>AutoLoad</b>AutoLoad-Eigenschaft bei neuen OLE-Objekten auf <b>False</b>False gesetzt; dies spart Zeit und Speicherplatz, wenn Microsoft Excel Arbeitsmappen lädt. Das automatische Laden von OLE-Objekten besitzt den Vorteil, dass bei Objekten, die veränderliche Daten darstellen, Verknüpfungen zu den Quelldaten sofort wiederhergestellt und die Objekte, falls notwendig, erneut aufgebaut werden können.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -709,8 +711,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -740,7 +742,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Der ausgeschnittene Bereich muss aus angrenzenden Zellen bestehen.</para>
-          <para>Können nur eingebettete Diagramme ausgeschnitten werden.</para>
+          <para>Es können nur eingebettete Diagramme ausgeschnitten werden.</para>
           <para></para>
         </remarks>
       </Docs>

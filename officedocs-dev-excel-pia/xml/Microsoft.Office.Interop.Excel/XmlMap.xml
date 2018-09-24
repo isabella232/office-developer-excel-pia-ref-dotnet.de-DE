@@ -1,10 +1,10 @@
 <Type Name="XmlMap" FullName="Microsoft.Office.Interop.Excel.XmlMap">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c3b5f447ad7e8151b7dba366715192ac74ad6768" />
+    <Meta Name="ms.openlocfilehash" Value="90e19f9871537de3824defd244b85c6255bb7e45" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583608" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XmlMap" />
@@ -35,7 +35,7 @@
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> Auflistung, um einer Arbeitsmappe eine XML-Zuordnung hinzuzufügen.</para>
       <para>Importieren und Exportieren von XML-Daten</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> -Methode zum Importieren von XML-Daten aus einer XML-Datendatei in Zellen, die dem angegebenen <b>XmlMap</b>zugeordnet sind. Die <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" /> -Methode importiert XML-Daten für eine <b>String</b> -Variable.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> Methode zum Exportieren von Daten aus Zellen, die dem angegebenen <b>XmlMap</b>zugeordnet sind. Die <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> -Methode exportiert XML-Daten in <b>einer Zeichenfolgenvariablen</b> .</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> Methode zum Exportieren von Daten aus Zellen, die dem angegebenen <b>XmlMap</b>zugeordnet sind. Die <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> -Methode exportiert XML-Daten in eine <b>String</b> -Variable.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -195,7 +195,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -285,7 +285,7 @@
         <summary>Exportiert den Inhalt von Zellen zugeordnet sind, auf das angegebene <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> Objekt in eine XML-Datendatei. Gibt <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> -Methode, um den Inhalt der zugeordneten Zellen in eine <b>String</b> -Variable exportieren.</para>
+          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> -Methode, um den Inhalt der zugeordneten Zellen in <b>einer Zeichenfolgenvariablen</b> zu exportieren.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -319,7 +319,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
-          <para>Verwenden, um den Inhalt der zugeordneten Zellen in eine XML-Datendatei zu exportieren, die <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> -Methode.</para>
+          <para>Um den Inhalt der zugeordneten Zellen in eine XML-Datendatei zu exportieren, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -673,7 +673,7 @@
         <value>To be added.</value>
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
-          <para>Das erste Element in der zurückgegebenen <b>XmlSchemas</b> -Auflistung ist das Schema, das als Stammelement der angegebenen XML-schemazuordnung verwendet wird.</para>
+          <para>Beim ersten Element in der zurückgegebenen <b>XmlSchemas</b>-Auflistung handelt es sich um das Schema, das als Stammelement der angegebenen XML-Schemazuordnung verwendet wird.</para>
           <para></para>
         </remarks>
       </Docs>

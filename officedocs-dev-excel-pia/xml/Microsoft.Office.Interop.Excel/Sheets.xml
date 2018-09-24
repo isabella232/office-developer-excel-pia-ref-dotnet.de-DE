@@ -1,10 +1,10 @@
 <Type Name="Sheets" FullName="Microsoft.Office.Interop.Excel.Sheets">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="370f0fa19b86c461efce88bb828c15aab19745a1" />
+    <Meta Name="ms.openlocfilehash" Value="db6b3bb11f3b424395c8a07057d1712212b447b0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581214" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Sheets : System.Collections.IEnumerable" />
@@ -32,11 +32,11 @@
   <Docs>
     <summary>Eine Auflistung aller Blätter in der angegebenen oder aktiven Arbeitsmappe.</summary>
     <remarks>
-      <para>Die <b>Sheets</b> -Auflistung kann enthalten <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekte. Die <b>Sheets</b> -Auflistung ist nützlich, wenn Sie Blätter eines beliebigen Typs zurückgeben möchten. Wenn Sie arbeiten mit Blättern eines bestimmten Typs müssen, finden Sie im Objektthema dieses Typs Blatt.</para>
+      <para>Die <b>Sheets</b> -Auflistung kann enthalten <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekte. Die <b>Sheets</b> -Auflistung ist nützlich, wenn Sie Blätter eines beliebigen Typs zurückgeben möchten. Wenn Sie arbeiten mit Blättern eines bestimmten Typs müssen, finden Sie unter dem Thema-Objekt für diesen Blatt.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Sheets" /> Eigenschaft, um die <b>Sheets</b> -Auflistung zurückzugeben.</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Sheets.Add(System.Object,System.Object,System.Object,System.Object)" /> -Methode, um ein neues Blatt erstellt und der Auflistung hinzugefügt.</para>
-      <para>Verwendung <b>Sheets</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Arbeitsblatts oder die Indexnummer ist, zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt.</para>
-      <para>Verwendung <b>Sheets</b>(<paramref name="array" />) an mehrere Arbeitsblätter.</para>
+      <para>Verwenden Sie <b>Sheets</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Arbeitsblatts oder die Indexnummer ist, zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekt.</para>
+      <para>Verwenden Sie <b>Sheets</b>(<paramref name="array" />) an mehr als einem Blatt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -156,7 +156,7 @@
         <summary>Erstellt ein neues Arbeitsblatt, Diagramm oder Makroblatt. Das neue Arbeitsblatt wird zum aktiven Blatt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Wenn <paramref name="Before" /> und <paramref name="After" /> sind beide ausgelassen, das neue Blatt vor dem aktiven Blatt eingefügt.</para>
+          <para>Wenn <paramref name="Before" /> und <paramref name="After" /> sind beide ausgelassen, das neue Blatt vor dem aktiven Blatt eingefügt wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -312,7 +312,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -434,7 +434,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> Seitenumbrüche des Blatts-Auflistung, die die horizontale Seite darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Es besteht ein Grenzwert von 1,026 horizontalen Seitenumbrüche pro Blatt.</para>
+          <para>Die horizontalen Seitenumbrüche sind pro Arbeitsblatt auf 1,026 begrenzt.</para>
           <para></para>
         </remarks>
       </Docs>

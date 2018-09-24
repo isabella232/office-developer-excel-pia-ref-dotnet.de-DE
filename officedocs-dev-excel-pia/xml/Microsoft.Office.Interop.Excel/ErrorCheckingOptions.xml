@@ -1,10 +1,10 @@
 <Type Name="ErrorCheckingOptions" FullName="Microsoft.Office.Interop.Excel.ErrorCheckingOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9e4747600167fd2eed7dd64b83d8c7d1cb5b951d" />
+    <Meta Name="ms.openlocfilehash" Value="fcbc54c7e67e1b8642a95dec50c04ef275b48f27" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585638" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ErrorCheckingOptions" />
@@ -32,8 +32,8 @@
     <summary>Stellt die Optionen zur Fehlerprüfung für eine Anwendung dar.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.ErrorCheckingOptions" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekts, um ein <b>ErrorCheckingOptions</b> -Objekt zurückzugeben.</para>
-      <para>Verweis der <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> -Objekt um eine Liste der Indexwerte anzuzeigen fehlerprüfung zugeordnet Optionen.</para>
-      <para>Können die folgenden Eigenschaften, die Elemente des <b>ErrorCheckingOptions</b> -Objekts sind, um festzulegen oder zurückzugeben Optionen zur fehlerprüfung.</para>
+      <para>Referenz der <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> -Objekt um eine Liste der Indexwerte anzuzeigen fehlerprüfung zugeordnet Optionen.</para>
+      <para>Die folgenden Eigenschaften, die Elemente des <b>ErrorCheckingOptions</b> -Objekts sind, können Sie festlegen oder Zurückgeben von Fehlerüberprüfungsoptionen.</para>
       <list type="bullet">
         <item>
           <description>
@@ -73,6 +73,11 @@
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.TextDate" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.UnlockedFormulaCells" />
           </description>
         </item>
       </list>
@@ -138,7 +143,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Wenn <b>BackgroundChecking</b> -Eigenschaft auf <b>True</b> (Standard) festgelegt ist, wird die Schaltfläche AutoKorrektur-Optionen, dass alle Zellen, die durch den verletzt werden Fehler aktiviert neben angezeigt. <b>False</b> deaktiviert Hintergrund Überprüfen auf Fehler.</para>
-          <para>Finden Sie in der <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> Objekt um eine Liste der aktivierbaren Elemente anzuzeigen, die aktiviert werden kann.</para>
+          <para>Verweisen auf die <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> Objekt um eine Liste der aktivierbaren Elemente anzuzeigen, die aktiviert werden kann.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -169,8 +174,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -266,7 +271,7 @@
         <summary>Bei Festlegung auf <b>True</b> (Standard), Microsoft Excel Zellen, die inkonsistente Formeln in einem Bereich identifiziert. <b>False</b> deaktiviert die Prüfung auf inkonsistente Formeln.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Konsistente Formeln im Bereich müssen befinden, links und rechts oder über und unter der Zelle, die die inkonsistente Formel für die <b>InconsistentFormula</b> -Eigenschaft funktioniert nur ordnungsgemäß enthält.</para>
+          <para>Damit die <b>InconsistentFormula</b>-Eigenschaft ordnungsgemäß funktioniert, müssen links und rechts oder über und unter der Zelle, die die inkonsistente Formeln enthält, konsistente Formeln in dem Bereich enthalten sein.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -334,12 +339,12 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />kann eine der folgenden <b>XlColorIndex</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />Dies kann eine der folgenden <b>XlColorIndex</b> -Konstanten sein:</para>
           <para>
-            <b>XlColorIndexAutomatic</b> die Standardsystemfarbe.</para>
+            <b>xlColorIndexAutomatic</b> Die Standardsystemfarbe.</para>
           <para>
-            <b>xlColorIndexNone wird</b> nicht mit dieser Eigenschaft verwendet.</para>
-          <para>Sie eine bestimmte Farbe für das Symbol angeben können, indem Sie den entsprechenden Indexwert eingeben. Sie können die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" /> Eigenschaft, um die aktuelle Farbpalette zurückzugeben.</para>
+            <b>xlColorIndexNone wird</b> Mit dieser Eigenschaft verwendet nicht.</para>
+          <para>Sie können eine bestimmte Farbe für das Symbol angeben, indem Sie den entsprechenden Indexwert eingeben. Sie können die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" /> Eigenschaft, um die aktuelle Farbpalette zurückzugeben.</para>
           <para>Die folgende Abbildung zeigt die Farbindex Werte in der Standardfarbpalette.</para>
           <para></para>
         </remarks>
@@ -374,7 +379,7 @@
         <summary>Ein <b>boolescher</b> Wert, der <b>True</b> ist, wenn die datenüberprüfung in einer Liste aktiviert ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die datenüberprüfung für eine Liste kann auch werden aktiviert oder deaktiviert durch in der Benutzeroberfläche durch Aktivieren oder deaktivieren Daten Validierung Fehler das Kontrollkästchen auf der Registerkarte Fehlerüberprüfung des Dialogfelds Optionen.</para>
+          <para>Eine Liste mit Validierung kann auch auf oder durch in der Benutzeroberfläche deaktiviert werden durch Aktivieren oder deaktivieren Daten Validierung Fehler das Kontrollkästchen auf der Registerkarte Fehlerüberprüfung des Dialogfelds Optionen.</para>
           <para></para>
         </remarks>
       </Docs>

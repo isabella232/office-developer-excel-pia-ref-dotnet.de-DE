@@ -1,10 +1,10 @@
 <Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eacfd0890002beb17c916870ea77d7aa5ba1db4b" />
+    <Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587668" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Slicer" />
@@ -67,10 +67,10 @@
           <para>Die <b>ActiveItem</b> -Eigenschaft gibt <b>Nothing</b> (ein Nullverweis (Nothing in Visual Basic) in c#) unter folgenden Umständen zurück:</para>
           <list type="bullet">
             <item>
-              <description>Der angegebene Datenschnitt hat keinen Fokus (ist nicht ausgewählt oder aktiv).</description>
+              <description>Der angegebene Datenschnitt hat nicht den Fokus (ist nicht ausgewählt oder aktiv).</description>
             </item>
             <item>
-              <description>Der angegebene Datenschnitt hat den Fokus und der gesamte Datenschnitt aktiviert ist (beispielsweise der Benutzer kann verschieben den gesamten Datenschnitt mithilfe der Tastatur in diesem Status).</description>
+              <description>Der angegebene Datenschnitt hat den Fokus und der gesamte Datenschnitt ist seinerseits ausgewählt (beispielsweise kann der Benutzer den gesamten Datenschnitt in diesem Status mithilfe der Tastatur verschieben).</description>
             </item>
             <item>
               <description>Der angegebene Datenschnitt hat den Fokus, und das aktive Steuerelement ist die Schaltfläche <b>Filter löschen</b> in der Kopfzeile des Datenschnitts.</description>
@@ -106,7 +106,7 @@
         <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -141,7 +141,7 @@
         <value>Die Beschriftung des angegebenen Datenschnitts.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Für angegebene Wert der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> -Eigenschaft in der Kopfzeile des Datenschnitts angezeigt wird. Wenn die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> nicht angegeben wird, Excel verwendet den Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> -Eigenschaft des zugrunde liegenden <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt.</para>
+          <para>Der angegebene Wert für die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> -Eigenschaft in der Kopfzeile des Datenschnitts angezeigt wird. Wenn die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> nicht angegeben wird, Excel verwendet den Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> -Eigenschaft des zugrunde liegenden <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -176,7 +176,7 @@
         <value>Die Breite in Punkt, der einzelnen Spalten im Datenschnitt.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt wird automatisch angepasst, basierend auf dem Wert von der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> Eigenschaft und die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> -Eigenschaft.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt wird automatisch angepasst, basierend auf dem Wert von der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> Eigenschaft und die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -233,7 +233,7 @@
         <value>Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</value>
         <remarks>
           <para>Nur-Lese- <b>long</b>.</para>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -320,7 +320,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>true,</b> Wenn der Datenschnitt kann nicht verschoben oder durch Auswählen von Rahmen oder Handles in der Benutzeroberfläche angepasst werden soll, andernfalls <b>false</b>. Der Standardwert ist <b>false</b>. Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> -Eigenschaft auf <b>true</b> wirkt sich nur auf die Benutzeroberfläche. Verschieben oder Ändern der Größe des Datenschnitts durch Festlegen von Eigenschaften wie die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, oder <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt in Code ist nicht deaktiviert.</para>
+            <b>true,</b> Wenn der Datenschnitt kann nicht verschoben oder durch Auswählen von Rahmen oder Handles in der Benutzeroberfläche angepasst werden soll. andernfalls <b>false</b>. Der Standardwert ist <b>false</b>. Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> -Eigenschaft auf <b>true</b> wirkt sich nur auf die Benutzeroberfläche. Verschieben oder Ändern der Größe des Datenschnitts durch Festlegen von Eigenschaften wie die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, oder <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt von Code nicht deaktiviert ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -357,7 +357,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>true,</b> Wenn die Kopfzeile angezeigt wird, andernfalls <b>false</b>. Der Standardwert lautet <b>true</b>.</para>
+            <b>true,</b> Wenn die Kopfzeile angezeigt wird. andernfalls <b>false</b>. Der Standardwert ist <b>true</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -462,7 +462,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>true,</b> Wenn der Datenschnitt gesperrt ist, wenn das Blatt geschützt ist. <b>false,</b> Wenn der Datenschnitt geändert werden kann, wenn das Blatt geschützt ist. Der Standardwert lautet <b>true</b>.</para>
+            <b>true,</b> Wenn der Datenschnitt gesperrt ist, wenn das Blatt geschützt ist. <b>false,</b> Wenn der Datenschnitt geändert werden kann, wenn das Blatt geschützt ist. Der Standardwert ist <b>true</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -497,7 +497,7 @@
         <value>Der Name der der angegebene Datenschnitt.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Muss der Namen über alle Datenschnitte in einer Arbeitsmappe eindeutig sein. Der Standardname verwendet den Text, der den Namen des PivotFields auf dem der Datenschnitt basiert, und, falls erforderlich, fügt ein Leerzeichen und der Zahl und der Name eindeutig ist.</para>
+          <para>Der Name muss über alle Datenschnitte in einer Arbeitsmappe eindeutig sein. Der Standardname verwendet den Text, der den Namen des PivotFields auf dem der Datenschnitt basiert, und, falls erforderlich, fügt ein Leerzeichen und der Zahl und der Name eindeutig ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -563,7 +563,7 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -598,7 +598,7 @@
         <value>Die Höhe des jede Zeile im angegebenen Datenschnitt in Punkt.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Diese Eigenschaft wirkt sich nicht auf die Höhe des Datenschnitts. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt zurückgeben oder Festlegen der Höhe des Datenschnitts.</para>
+          <para>Diese Eigenschaft wirkt sich nicht auf die Höhe des Datenschnitts aus. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt zurückgeben oder Festlegen der Höhe des Datenschnitts.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -629,8 +629,8 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Einige Eigenschaften des Datenschnitts, wie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> -Eigenschaft kann nur aus zugegriffen werden die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt der Datenschnitt zugeordnet.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Einige Eigenschaften des Datenschnitts, wie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> -Eigenschaft kann nur zugegriffen werden, aus der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den Datenschnitt zugeordnete-Objekt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -661,7 +661,7 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -692,8 +692,8 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Diese Eigenschaft gilt nur für OLAP-Datenquellen.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Diese Eigenschaft betrifft nur OLAP-Datenquellen.</para>
           <para></para>
         </remarks>
       </Docs>

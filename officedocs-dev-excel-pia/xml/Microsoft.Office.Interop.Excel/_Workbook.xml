@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575047" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Workbook" />
@@ -332,40 +332,40 @@
         <value>Gibt an, welche Version der Algorithmen für bestimmte Microsoft Excel-Arbeitsblattfunktionen verwendet.</value>
         <remarks>
           <para>Lese-/Schreibzugriff</para>
-          <para>Standardmäßig verwenden einige der Arbeitsblattfunktionen von Microsoft Office Excel 2007 und früheren Versionen von Microsoft Excel neue Algorithmen an, die ihre Genauigkeit erhöhen. In einigen Fällen verringern die neuen Algorithmen jedoch die Leistung dieser Funktionen relativ zu ihrer Leistung in Microsoft Office Excel 2007 und früheren Versionen von Excel. Um anzugeben, dass diese Funktionen die älteren Algorithmen verwenden, um die Leistung zu erhöhen, legen Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> -Eigenschaft auf 1. Die folgende Tabelle beschreibt die möglichen Einstellungen für die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> -Eigenschaft.</para>
+          <para>In der Standardeinstellung verwenden einige der Arbeitsblattfunktionen von Microsoft Office Excel 2007 und früheren Versionen von Microsoft Excel neue Algorithmen an, die ihre Genauigkeit erhöhen. In einigen Fällen verringern die neuen Algorithmen jedoch die Leistung dieser Funktionen relativ zu ihrer Leistung in Microsoft Office Excel 2007 und früheren Versionen von Excel. Um anzugeben, dass diese Funktionen die älteren Algorithmen verwenden, um die Leistung zu erhöhen, legen Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> -Eigenschaft auf 1. Die folgende Tabelle beschreibt die möglichen Einstellungen für die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> Eigenschaft.</para>
           <list type="table">
             <item>
               <term>0</term>
-              <description>Verwenden Sie die neuesten, genauesten Algorithmen (Standardeinstellung)</description>
+              <description>Die neuesten, genauesten Algorithmen verwenden (Standardeinstellung)</description>
             </item>
             <item>
               <term>1</term>
-              <description>verwenden Microsoft Office Excel 2007 oder frühere Algorithmen</description>
+              <description>Verwenden Sie Microsoft Office Excel 2007 oder frühere Algorithmen</description>
             </item>
             <item>
               <term>2</term>
-              <description>verwendet Microsoft Excel 2010-Algorithmen</description>
+              <description>Microsoft Excel 2010-Algorithmen verwenden</description>
             </item>
           </list>
           <para>
             <b>Vorsicht</b>: die Einstellung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> -Eigenschaft auf einen anderen Wert als 0, 1 oder 2 führt zu einem nicht definierten Verhalten.</para>
-          <para>Der folgenden Tabelle zusammengefasst, welche Funktionen betroffen sind, durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> -Eigenschaft auf 1. Die Funktionen, die in der Spalte "Nicht betroffene Funktionen" aufgeführt sind verwendet immer die neuesten Genauigkeitsalgorithmen oder wurden in Excel 2010 nicht geändert. Funktionsnamen, die einen Punkt (.) in ihren Namen enthalten, den Namen der entsprechenden Funktion bestimmen Implementierung in VBA als Methode der <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> -Objekts, ersetzen durch den Unterstrich (_) für den Zeitraum. Angenommen, die VBA-Methode, die die Betaversion entspricht. Verteiler-Funktion ist die <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> -Methode.</para>
+          <para>In der folgenden Tabelle zusammengefasst, welche Funktionen betroffen sind, durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> -Eigenschaft auf 1. Die Funktionen, die in der Spalte "Nicht betroffene Funktionen" aufgeführt sind verwendet immer die neuesten Genauigkeitsalgorithmen oder wurden in Excel 2010 nicht geändert. Funktionsnamen, die einen Punkt (.) in ihren Namen enthalten, den Namen der entsprechenden Funktion bestimmen Implementierung in VBA als Methode der <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> -Objekts, ersetzen durch den Unterstrich (_) für den Zeitraum. Angenommen, die VBA-Methode, die die Betaversion entspricht. Verteiler-Funktion ist die <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> Methode.</para>
           <list type="table">
             <item>
-              <term>BETAVERT</term>
-              <description>AGGREGIERTE</description>
+              <term>BETADIST</term>
+              <description>AGGREGATE</description>
             </item>
             <item>
               <term>BETAINV</term>
-              <description>BETA. Verteiler</description>
+              <description>Beta. VERTEILER</description>
             </item>
             <item>
               <term>BINOMDIST</term>
-              <description>BETA. INV</description>
+              <description>Beta. INV</description>
             </item>
             <item>
-              <term>CHIVERT</term>
-              <description>BINOM. Verteiler</description>
+              <term>CHIDIST</term>
+              <description>BINOM. VERTEILER</description>
             </item>
             <item>
               <term>CHIINV</term>
@@ -381,7 +381,7 @@
             </item>
             <item>
               <term>CRITBINOM</term>
-              <description>CHISQ. Verteiler</description>
+              <description>CHISQ. VERTEILER</description>
             </item>
             <item>
               <term>CUMIPMT</term>
@@ -396,16 +396,16 @@
               <description>CHISQ. FELD RT</description>
             </item>
             <item>
-              <term>gibt ERFC</term>
+              <term>ERFC</term>
               <description>CHISQ. TEST</description>
             </item>
             <item>
-              <term>gibt EXPONDIST</term>
-              <description>vertrauen. NORM</description>
+              <term>EXPONDIST</term>
+              <description>VERTRAUEN. NORM</description>
             </item>
             <item>
-              <term>FVERT</term>
-              <description>vertrauen. T</description>
+              <term>FDIST</term>
+              <description>VERTRAUEN. T</description>
             </item>
             <item>
               <term>FINV</term>
@@ -413,11 +413,11 @@
             </item>
             <item>
               <term>FTEST</term>
-              <description>Kovarianz. P</description>
+              <description>KOVARIANZ. P</description>
             </item>
             <item>
               <term>GAMMADIST</term>
-              <description>Kovarianz. S</description>
+              <description>KOVARIANZ. S</description>
             </item>
             <item>
               <term>GAMMALN</term>
@@ -425,11 +425,11 @@
             </item>
             <item>
               <term>GAMMINV</term>
-              <description>gibt ERFC. PRÄZISE</description>
+              <description>ERFC. PRÄZISE</description>
             </item>
             <item>
-              <term>gibt HYPGEOMDIST</term>
-              <description>EXPON. Verteiler</description>
+              <term>HYPGEOMDIST</term>
+              <description>EXPON. VERTEILER</description>
             </item>
             <item>
               <term>IPMT</term>
@@ -444,15 +444,15 @@
               <description>F.INV</description>
             </item>
             <item>
-              <term>gibt LOGNORMDIST</term>
+              <term>LOGNORMDIST</term>
               <description>F.INV. RT</description>
             </item>
             <item>
-              <term>gibt NEGBINOMDIST</term>
+              <term>NEGBINOMDIST</term>
               <description>F.TEST</description>
             </item>
             <item>
-              <term>NORMVERT</term>
+              <term>NORMDIST</term>
               <description>FLOOR</description>
             </item>
             <item>
@@ -460,20 +460,20 @@
               <description>FLOOR. PRÄZISE</description>
             </item>
             <item>
-              <term>STANDNORMVERT</term>
-              <description>GAMMA. Verteiler</description>
+              <term>NORMSDIST</term>
+              <description>GAMMA. VERTEILER</description>
             </item>
             <item>
-              <term>STANDNORMINV</term>
+              <term>NORMSINV</term>
               <description>GAMMA. INV</description>
             </item>
             <item>
-              <term>RMZ</term>
+              <term>PMT</term>
               <description>GAMMALN. PRÄZISE</description>
             </item>
             <item>
               <term>POISSON</term>
-              <description>HYPGEOM. Verteiler</description>
+              <description>HYPGEOM. VERTEILER</description>
             </item>
             <item>
               <term>PPMT</term>
@@ -481,46 +481,46 @@
             </item>
             <item>
               <term>STDEV</term>
-              <description>LOGNORM. Verteiler</description>
+              <description>LOGNORM. VERTEILER</description>
             </item>
             <item>
               <term>STDEVP</term>
               <description>LOGNORM. INV</description>
             </item>
             <item>
-              <term>TVERT</term>
+              <term>TDIST</term>
               <description>MOD</description>
             </item>
             <item>
               <term>TINV</term>
-              <description>Modus</description>
+              <description>MODE</description>
             </item>
             <item>
               <term>TTEST</term>
-              <description>Modus. MULT</description>
+              <description>MODUS. MULT</description>
             </item>
             <item>
               <term>VAR</term>
-              <description>Modus. SNGL</description>
+              <description>MODUS. SNGL</description>
             </item>
             <item>
-              <term>VARIANZA</term>
-              <description>NEGBINOM. Verteiler</description>
+              <term>VARA</term>
+              <description>NEGBINOM. VERTEILER</description>
             </item>
             <item>
               <term>VARP</term>
-              <description>gibt NETWORKDAYS. Internes</description>
+              <description>NETWORKDAYS. INTERNES</description>
             </item>
             <item>
-              <term>VARIANZENA</term>
-              <description>NORM. Verteiler</description>
+              <term>VARPA</term>
+              <description>NORM. VERTEILER</description>
             </item>
             <item>
               <term>WEIBULL</term>
               <description>NORM. INV</description>
             </item>
             <item>
-              <term>gibt XIRR</term>
+              <term>XIRR</term>
               <description>NORM. S.VERT</description>
             </item>
             <item>
@@ -528,94 +528,124 @@
               <description>NORM. S.INV</description>
             </item>
             <item>
-              <term />%-PERZENTIL)
+              <term />
+              <description>PERCENTILE</description>
             </item>
             <item>
-              <term />Quantil. EXKL
+              <term />
+              <description>PERZENTIL. EXKL</description>
             </item>
             <item>
-              <term />Quantil. INC
+              <term />
+              <description>PERZENTIL. INC</description>
             </item>
             <item>
-              <term />PERCENTRANK
+              <term />
+              <description>PERCENTRANK</description>
             </item>
             <item>
-              <term />PERCENTRANK. EXKL
+              <term />
+              <description>PERCENTRANK. EXKL</description>
             </item>
             <item>
-              <term />PERCENTRANK. INC
+              <term />
+              <description>PERCENTRANK. INC</description>
             </item>
             <item>
-              <term />POISSON. Verteiler
+              <term />
+              <description>POISSON. VERTEILER</description>
             </item>
             <item>
-              <term />QUARTILE
+              <term />
+              <description>QUARTILE</description>
             </item>
             <item>
-              <term />QUARTILE zurück. EXKL
+              <term />
+              <description>QUARTILE ZURÜCK. EXKL</description>
             </item>
             <item>
-              <term />QUARTILE zurück. INC
+              <term />
+              <description>QUARTILE ZURÜCK. INC</description>
             </item>
             <item>
-              <term />Rang
+              <term />
+              <description>RANK</description>
             </item>
             <item>
-              <term />Rang. AVG
+              <term />
+              <description>FESTLEGEN DER RANGFOLGE. AVG</description>
             </item>
             <item>
-              <term />Rang. EQ
+              <term />
+              <description>FESTLEGEN DER RANGFOLGE. EQ</description>
             </item>
             <item>
-              <term />STDEV. P
+              <term />
+              <description>STDEV. P</description>
             </item>
             <item>
-              <term />STDEV. S
+              <term />
+              <description>STDEV. S</description>
             </item>
             <item>
-              <term />T.VERT
+              <term />
+              <description>T.VERT</description>
             </item>
             <item>
-              <term />T.DIST.2T
+              <term />
+              <description>T.DIST.2T</description>
             </item>
             <item>
-              <term />T.VERT. RT
+              <term />
+              <description>T.VERT. RT</description>
             </item>
             <item>
-              <term />T.VERT. RT
+              <term />
+              <description>T.VERT. RT</description>
             </item>
             <item>
-              <term />T.INV
+              <term />
+              <description>T.INV</description>
             </item>
             <item>
-              <term />T.INV.2T
+              <term />
+              <description>T.INV.2T</description>
             </item>
             <item>
-              <term />T.INV. RT
+              <term />
+              <description>T.INV. RT</description>
             </item>
             <item>
-              <term />T.TEST
+              <term />
+              <description>T.TEST</description>
             </item>
             <item>
-              <term />VAR. P
+              <term />
+              <description>VAR. P</description>
             </item>
             <item>
-              <term />VAR. S
+              <term />
+              <description>VAR. S</description>
             </item>
             <item>
-              <term />WEEKDAY
+              <term />
+              <description>WEEKDAY</description>
             </item>
             <item>
-              <term />WEEKNUM
+              <term />
+              <description>WEEKNUM</description>
             </item>
             <item>
-              <term />WEIBULL. Verteiler
+              <term />
+              <description>WEIBULL. VERTEILER</description>
             </item>
             <item>
-              <term />Arbeitstag. Internes
+              <term />
+              <description>ARBEITSTAG. INTERNES</description>
             </item>
             <item>
-              <term />Z.TEST
+              <term />
+              <description>Z.TEST</description>
             </item>
           </list>
           <para></para>
@@ -676,7 +706,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> -Objekt, das das aktive Diagramm (entweder ein eingebettetes Diagramm oder ein Diagrammblatt) darstellt. Ein eingebettetes Diagramm wird als aktiv betrachtet, wenn es entweder markiert oder aktiviert ist. Wenn kein Diagramm aktiv ist, gibt diese Eigenschaft <b>Nothing zurück</b>. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft das aktive Diagramm in der aktiven Arbeitsmappe.</para>
+          <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft das aktive Diagramm in der aktiven Arbeitsmappe zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -707,8 +737,8 @@
         <summary>Gibt ein Objekt, das aktive Blatt (das Blatt im Vordergrund) darstellt, in der aktiven Arbeitsmappe oder im angegebenen Fenster oder Arbeitsmappe. Gibt <b>Nothing</b> zurück, wenn kein Blatt aktiv ist. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft das aktive Blatt in der aktiven Arbeitsmappe.</para>
-          <para>, Wenn eine Arbeitsmappe in mehreren Fenstern, erscheint die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> Eigenschaft möglicherweise in verschiedenen Fenstern unterschiedliche.</para>
+          <para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft das aktive Blatt in der aktiven Arbeitsmappe zurück.</para>
+          <para>Wenn eine Arbeitsmappe in mehreren Fenstern, erscheint die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> -Eigenschaft kann in verschiedenen Fenstern unterschiedliche sein.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -740,7 +770,7 @@
         <value>Ein Objekt, das den aktiven Datenschnitt in der aktiven Arbeitsmappe oder in der angegebenen Arbeitsmappe darstellt.</value>
         <remarks>
           <para>Gibt ein Nullverweis (Nothing in Visual Basic) zurück, wenn keine Datenschnitt aktiv ist.</para>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para>Wenn Sie keine angeben einer <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> -Objekt, diese Eigenschaft den aktiven Datenschnitt in der aktiven Arbeitsmappe zurückgegeben.</para>
           <para></para>
         </remarks>
@@ -869,19 +899,19 @@
         <value>Gibt <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>Dieses Beispiel löscht alle auf dem aktiven Blatt von Jean Selva hinzugefügten Kommentare.</para>
+          <para>In diesem Beispiel werden alle von Jean Selva hinzugefügten Kommentare im aktiven Blatt gelöscht.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Dieses Beispiel löscht alle auf dem aktiven Blatt von Jean Selva hinzugefügten Kommentare.</para>
+          <para>In diesem Beispiel werden alle von Jean Selva hinzugefügten Kommentare im aktiven Blatt gelöscht.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Dieses Beispiel löscht alle auf dem aktiven Blatt von Jean Selva hinzugefügten Kommentare.</para>
+          <para>In diesem Beispiel werden alle von Jean Selva hinzugefügten Kommentare im aktiven Blatt gelöscht.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -952,7 +982,7 @@
           <b>True</b>, wenn aktuelle Änderungen an der gemeinsam verwendeten Arbeitsmappe an andere Benutzer weitergeleitet werden, sobald die Arbeitsmappe automatisch aktualisiert wird. <b>False</b>False, wenn Änderungen nicht weitergeleitet werden (die Arbeitsmappe wird jedoch weiterhin mit Änderungen anderer Benutzer abgeglichen). Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> -Eigenschaft muss festgelegt werden auf einen Wert zwischen 5 und 1,440 für diese Eigenschaft wirksam wird.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> -Eigenschaft muss festgelegt werden auf einen Wert zwischen 5 und 1,440 für diese Eigenschaft wirksam wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1015,15 +1045,42 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gibt die gesamte Auflistung der integrierten Dokumenteigenschaften. Verwendung der <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> -Methode, um ein einzelnes Element der Auflistung zurückgeben (eine <see cref="T:Microsoft.Office.Core.DocumentProperty" /> Object) indem Sie entweder den Namen der Eigenschaft oder den Auflistungsindex (als Zahl) angeben.</para>
-          <para>Können Sie auf Dokumenteigenschaften entweder anhand des Indexwertes oder nach Namen verweisen möchten. Die folgende Liste enthält die verfügbaren integrierten Dokumenteigenschaften Eigenschaftennamen:</para>
+          <para>Sie können auf Dokumenteigenschaften entweder durch den Indexwert oder einen Namen verweisen. Die folgende Liste zeigt die verfügbaren integrierten Namen von Dokumenteigenschaften:</para>
           <para>Titel </para>
           <para>Betreff</para>
           <para>Autor</para>
-          <para>Schlüsselwörter</para>
-          <para>Kommentare</para>
-          <para>Vorlage</para>
-          <para>Letzter Autor</para>,
-          <para>Revisionsnummer</para><para> Name der Anwendung</para><para>Datum der letzten Print</para><para>Erstellungsdatum </para><para>letzten Zeit sparen</para><para>insgesamt Bearbeitungszeit</para><para>Anzahl von Seiten,</para><para>Anzahl von Wörtern</para><para>Anzahl von Zeichen</para><para>Sicherheit</para><para> Kategorie</para><para>Format</para><para>Manager</para><para>Unternehmen</para><para>Anzahl von Bytes</para><para>Anzahl Zeilen</para><para>Anzahl der Absätze</para><para>Anzahl von Folien</para><para>Anzahl von Notizen</para><para>Ausgeblendete Folien</para><para>Anzahl von Multimedia Clips</para><para>Hyperlinkbasis</para><para>Anzahl der Zeichen (mit Leerzeichen)</para><para>Container Applikationen sind nicht erforderlich, um Werte für jede integrierte Dokumenteigenschaft zu definieren. Wenn in Microsoft Excel einen Wert für eine der integrierten Dokumenteigenschaften definiert ist, Lesen der <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> -Eigenschaft für diese Dokumenteigenschaft einen Fehler verursacht.</para><para>Die <b>Item</b> -Methode die Standardmethode für die <b>DocumentProperties</b> -Auflistung ist.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> -Eigenschaft auf die Auflistung benutzerdefinierter Dokumenteigenschaften zurückzugeben.</para><para></para></remarks>
+          <para>Schlüsselwörter</para>
+          <para>Comments</para>
+          <para>Template</para>
+          <para>Last Author</para>
+          <para>Revision Number</para>
+          <para>Name der Anwendung</para>
+          <para>Last Print Date</para>
+          <para>Creation Date </para>
+          <para>Last Save Time</para>
+          <para>Total Editing Time</para>
+          <para>Number of Pages</para>
+          <para>Number of Words</para>
+          <para>Number of Characters</para>
+          <para>Sicherheit</para>
+          <para>Kategorie</para>
+          <para>Format</para>
+          <para>Manager</para>
+          <para>Unternehmen</para>
+          <para>Number of Bytes</para>
+          <para>Number of Lines</para>
+          <para>Number of Paragraphs</para>
+          <para>Number of Slides</para>
+          <para>Number of Notes</para>
+          <para>Number of Hidden Slides</para>
+          <para>Number of Multimedia Clips</para>
+          <para>Hyperlinkbasis</para>
+          <para>Anzahl der Zeichen (mit Leerzeichen)</para>
+          <para>Container Applikationen sind nicht erforderlich, um Werte für jede integrierte Dokumenteigenschaft zu definieren. Wenn in Microsoft Excel einen Wert für eine der integrierten Dokumenteigenschaften definiert ist, Lesen der <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> -Eigenschaft für diese Dokumenteigenschaft einen Fehler verursacht.</para>
+          <para>Die <b>Item</b> -Methode ist die Standardmethode für die <b>DocumentProperties</b> -Auflistung.</para>
+          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> -Eigenschaft auf die Auflistung benutzerdefinierter Dokumenteigenschaften zurückzugeben.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculationVersion">
@@ -1052,7 +1109,7 @@
         <summary>Gibt eine Zahl, deren vier rechts stehende Ziffern die Nummer der Nebenversion des Berechnungsmoduls werden und deren andere Ziffern (links) werden die Hauptversion von Microsoft Excel. Für eine <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> -Objekts, diese Eigenschaft gibt die Informationen zur Version von Excel, die die Arbeitsmappe zuletzt vollständig neu berechnet wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn die Arbeitsmappe in einer früheren Version von Excel gespeichert wurde, und wenn die Arbeitsmappe vollständig neu berechnet wurde noch nicht, diese Eigenschaft 0 gibt.</para>
+          <para>Wenn die Arbeitsmappe in einer früheren Version von Excel gespeichert wurde, und die Arbeitsmappe vollständig neu berechnet wurde, gibt diese Eigenschaft 0 zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1145,7 +1202,7 @@
         <param name="Notify">Optionales- <b>Objekt</b>. Beim Wert <b>True</b> (oder keine Angabe) wird der Benutzer benachrichtigt, falls auf die Datei nicht sofort zugegriffen werden kann.</param>
         <summary>Ändert die Zugriffsberechtigungen zu der Arbeitsmappe. Dazu muss u.U. eine aktualisierte Version von dem Datenträger geöffnet werden.</summary>
         <remarks>
-          <para>, Wenn Sie eine Datei im schreibgeschützten Modus geöffnet haben, nicht Sie exklusiven Zugriff auf die Datei verfügen. Wenn Sie eine Datei von schreibgeschützt in Lese-Schreib-Zugriff ändern, muss Microsoft Excel eine neue Kopie der Datei, um sicherzustellen, dass keine Änderungen vorgenommen wurden, während Sie die Datei als schreibgeschützt geöffnet war laden.</para>
+          <para>Wenn Sie eine Datei schreibgeschützt geöffnet haben, besitzen Sie keinen exklusiven Zugriff auf die Datei. Wenn Sie eine Datei von schreibgeschützt auf Lese-/Schreibzugriff umstellen, muss Microsoft Excel eine neue Kopie der Datei laden. Dadurch wird sichergestellt, dass keine Änderungen durchgeführt wurden, so lange Sie die Datei schreibgeschützt geöffnet hatten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1179,7 +1236,7 @@
         <summary>Zurückgeben oder festlegen die Anzahl der Tage im Änderungsprotokoll der freigegebenen Arbeitsmappe angezeigt. Lese-/Schreibzugriff <b>Integer</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Alle Änderungen im Änderungsprotokoll, die älter sind als die Einstellung für diese Eigenschaft werden entfernt, wenn die Arbeitsmappe geschlossen wird.</para>
+          <para>Alle Änderungen im Änderungsprotokoll, die älter als die in dieser Eigenschaft festgelegte Einstellung sind, werden beim Schließen der Arbeitsmappe entfernt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1381,7 +1438,7 @@
         <summary>Speichert eine Arbeitsmappe von einem lokalen Computer auf einem Server und legt für die lokale Arbeitsmappe einen Schreibschutz fest, sodass sie nicht lokal bearbeitet werden kann.</summary>
         <remarks>
           <para>Festlegen der <paramref name="MakePublic" /> Parameter auf <b>true fest,</b> sendet die Arbeitsmappe für den Genehmigungsprozess, was in einer Version der Arbeitsmappe für Benutzer mit schreibgeschütztem Zugriff auf die Arbeitsmappe veröffentlicht wird führen kann (gilt nur, wenn <paramref name="SaveChanges" /> auf <b>"true" festgelegt ist </b>). </para>
-          <para>, Um in Microsoft Excel integrierten Features zur Zusammenarbeit genutzt werden können, müssen Dokumente auf einem Microsoft SharePoint Server gespeichert werden.</para>
+          <para>Damit die in Microsoft Excel integrierten Features für die Zusammenarbeit genutzt werden können, müssen Dokumente auf einem Computer mit Microsoft SharePoint Server gespeichert werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1418,7 +1475,7 @@
         <param name="RouteWorkbook">Optionales- <b>Objekt</b>. Wenn die Arbeitsmappe nicht an den nächsten Empfänger (wenn es keinen Verteiler oder bereits weitergeleitet wurde) weitergeleitet werden muss, wird dieses Argument ignoriert. Andernfalls leitet Microsoft Excel die Arbeitsmappe, wie in der folgenden Tabelle dargestellt. ValueMeaning<b>True</b>die Arbeitsmappe an den nächsten Empfänger gesendet. <b>"False"</b> Die Arbeitsmappe nicht gesendet werden. OmittedDisplays ein Dialogfeld mit der Benutzer gefragt, ob die Arbeitsmappe weitergeleitet werden soll.</param>
         <summary>Schließt das Objekt.</summary>
         <remarks>
-          <para>Schließen einer Arbeitsmappe mithilfe der <b>Close</b> -Methode nicht Auto_schließen-Makros in der Arbeitsmappe ausgeführt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> -Methode, um die Auto_schließen-Makros ausgeführt werden sollen.</para>
+          <para>Schließen einer Arbeitsmappe mithilfe der <b>Close</b> -Methode wird nicht in der Arbeitsmappe keine Auto_schließen-Makros ausgeführt. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> -Methode, um die Auto_schließen-Makros ausgeführt werden sollen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1449,8 +1506,8 @@
         <summary>Gibt den Namen der Code für das Objekt zurück. Schreibgeschützter <b>String</b>-Wert. Der Wert, den Sie in der Zelle rechts neben <b>(Name)</b> im Fenster Eigenschaften finden Sie unter wird der Codename des ausgewählten Objekts an. Zur Entwurfszeit können Sie den Namen eines Objekts Code durch Ändern dieses Werts ändern. Diese Eigenschaft kann nicht programmgesteuert zur Laufzeit geändert werden.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der Codename für ein Objekt kann verwendet werden, an der Stelle ein Ausdruck, der das Objekt zurückgibt.</para>
-          <para>Ist es möglich, dass der Name des Arbeitsblatts aus der Codename des ersten unterschiedlich sein. Beim Erstellen Sie ein Arbeitsblatt, das Blatt und Codename identisch sind, aber ändern den Namen des Arbeitsblatts wird der Codename nicht geändert und Ändern des Codenamens (Eigenschaftenfenster in Visual Basic-Editor) nicht der Name des Arbeitsblatts.</para>
+          <para>Der Codename für ein Objekt kann anstelle eines Ausdrucks verwendet werden, der das Objekt zurückgibt.</para>
+          <para>Es ist möglich, dass der Name des Arbeitsblatts aus der Codename des ersten unterschiedlich sein. Wenn Sie ein Arbeitsblatt erstellen, der Name des Blatts und Codename identisch sind, aber ändern den Namen des Arbeitsblatts wird der Codename nicht geändert, und Ändern des Codenamens (Eigenschaftenfenster in Visual Basic-Editor) nicht der Name des Arbeitsblatts.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1522,8 +1579,8 @@
         <summary>Gibt ein <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> -Objekt, das die Microsoft Excel-Befehlsleisten darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn eine Arbeitsmappe in eine andere Anwendung eingebettet und vom Benutzer durch Doppelklicken auf die Arbeitsmappe aktiviert ist, gibt die Verwendung dieser Eigenschaft ein <b>Workbook</b> -Objekt den Satz von Microsoft Excel-Befehlsleisten in der anderen Anwendung zur Verfügung. In allen anderen Fällen die Verwendung dieser Eigenschaft mit <b>einem Arbeitsmappenobjekt</b> gibt <b>Nothing zurück</b>.</para>
-          <para>Gibt es keine Möglichkeit zum Zurückgeben des Satzes mit einer Arbeitsmappe verbundenen Befehlsleisten.</para>
+          <para>Wenn eine Arbeitsmappe in eine andere Anwendung eingebettet und vom Benutzer durch Doppelklicken auf die Arbeitsmappe aktiviert ist, gibt die Verwendung dieser Eigenschaft ein <b>Workbook</b> -Objekt den Satz von Microsoft Excel-Befehlsleisten in der anderen Anwendung zur Verfügung. In allen anderen Fällen gibt ein <b>Workbook</b> -Objekt mit dieser Eigenschaft <b>Nothing zurück</b>.</para>
+          <para>Die mit einer Arbeitsmappe verbundenen Befehlsleisten können nicht durch ein Programm zurückgegeben werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1570,19 +1627,19 @@
         <value>Gibt <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>Dieses Beispiel löscht alle auf dem aktiven Blatt von Jean Selva hinzugefügten Kommentare.</para>
+          <para>In diesem Beispiel werden alle von Jean Selva hinzugefügten Kommentare im aktiven Blatt gelöscht.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Dieses Beispiel löscht alle auf dem aktiven Blatt von Jean Selva hinzugefügten Kommentare.</para>
+          <para>In diesem Beispiel werden alle von Jean Selva hinzugefügten Kommentare im aktiven Blatt gelöscht.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Dieses Beispiel löscht alle auf dem aktiven Blatt von Jean Selva hinzugefügten Kommentare.</para>
+          <para>In diesem Beispiel werden alle von Jean Selva hinzugefügten Kommentare im aktiven Blatt gelöscht.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -1706,7 +1763,7 @@
         <summary>Gibt das Objekt zurück, das die Containeranwendung für das angegebene OLE-Objekt darstellt. Schreibgeschützter <b>Object</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft bietet eine Möglichkeit, das Objektmodell der containeranwendung zuzugreifen, wenn eine Excel-Arbeitsmappe innerhalb einer hostanwendung wie beispielsweise Microsoft Internet Explorer geöffnet wird.</para>
+          <para>Diese Eigenschaft bietet eine Möglichkeit, auf das Objektmodell der Containeranwendung zuzugreifen, wenn eine Excel-Arbeitsmappe innerhalb einer Hostanwendung wie beispielsweise Microsoft Internet Explorer geöffnet ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1799,7 +1856,7 @@
         <summary>Gibt eine Konstante in der <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> -Enumeration, die die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1831,7 +1888,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Diese Eigenschaft gibt die gesamte Auflistung der benutzerdefinierten Dokumenteigenschaften. Verwendung der <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> -Methode, um ein einzelnes Element der Auflistung zurückgeben (eine <see cref="T:Microsoft.Office.Core.DocumentProperty" /> Object) indem Sie entweder den Namen der Eigenschaft oder den Auflistungsindex (als Zahl) angeben.</para>
-          <para>Die <b>Item</b> -Methode die Standardmethode für die <b>DocumentProperties</b> -Auflistung ist.</para>
+          <para>Die <b>Item</b> -Methode ist die Standardmethode für die <b>DocumentProperties</b> -Auflistung.</para>
           <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" /> -Eigenschaft auf die Auflistung integrierter Dokumenteigenschaften zurückzugeben.</para>
           <para></para>
         </remarks>
@@ -2186,22 +2243,25 @@
         <summary>Gibt zurück oder legt fest, wie Formen angezeigt werden. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayDrawingObjects" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Kann eine der folgenden XlDisplayDrawingObjects-Konstanten sein.</para>
+          <para>Dies kann eine der folgenden XlDisplayDrawingObjects-Konstanten sein.</para>
           <list type="table">
             <item>
               <term>
                 <paramref name="xlDisplayShapes" />
-              </term>Alle Formen anzeigen.
+              </term>
+              <description>Alle Formen anzeigen.</description>
             </item>
             <item>
               <term>
                 <paramref name="xlPlaceholders" />
-              </term>Nur Platzhalter anzeigen.
+              </term>
+              <description>Nur Platzhalter anzeigen.</description>
             </item>
             <item>
               <term>
                 <paramref name="xlHide" />
-              </term>Alle Formen ausblenden.
+              </term>
+              <description>Alle Formen ausblenden.</description>
             </item>
           </list>
           <para></para>
@@ -2474,7 +2534,10 @@
       <Docs>
         <summary>Speichert geänderte Dateien aller Formate in festgelegten Intervallen. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>Wenn Microsoft Excel <para>ein Fehler auftritt, die System schlägt fehl, oder wenn das System nicht ordnungsgemäß (Excel zum Speichern der geänderten Dateien nicht zulassen) heruntergefahren wird, werden die gesicherten Dateien geöffnet und der Benutzer hat die Möglichkeit zum Speichern von Änderungen, die andernfalls verloren gegangen würde. Wenn der Benutzer Excel neu startet, Dokumentfenster Wiederherstellung wird geöffnet, sodass der Benutzer eine Option, um die Dateien wiederherzustellen, an denen sie gearbeitet haben. Dieses Feature ermöglicht das Festlegen dieser Eigenschaft auf <b>True</b> (Standard).</para><para></para></remarks>
+        <remarks>
+          <para>Bei Fehlern in Microsoft Excel oder des Systems oder bei fehlerhaftem Herunterfahren des Systems (wodurch die geänderten Dateien von Excel nicht gespeichert werden können) werden die gesicherten Dateien geöffnet, und der Benutzer erhält die Möglichkeit, Änderungen zu speichern, die andernfalls verlorengehen würden. Beim erneuten Starten von Excel wird ein Fenster für die Wiederherstellung von Dokumenten geöffnet, in dem der Benutzer die Dateien wiederherstellen kann, an denen er zuletzt gearbeitet hat. Wenn Sie für diese Eigenschaft den Wert <b>True</b> festlegen (Standard), wird dieses Feature aktiviert.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableConnections">
@@ -2676,7 +2739,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Im Kompatibilitätsmodus für bestimmte Funktionen deaktiviert ist, oder funktioniert anders.  Beispielsweise in short_Excel2007 stehen mehr Zeilen und Spalten im Vergleich zu früheren Versionen von Excel. Darüber hinaus strukturierte Verweise gibt es in short_Excel2007.</para>
+          <para>Im Kompatibilitätsmodus ist für bestimmte Funktionen deaktiviert oder Funktionen unterschiedlich.  Beispielsweise in short_Excel2007 stehen mehr Zeilen und Spalten im Vergleich zu früheren Versionen von Excel. Strukturierte Verweise ist auch in short_Excel2007 verfügbar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2708,9 +2771,8 @@
         <summary>Räumt dem aktuellen Benutzer exklusiven Zugriff auf die geöffnete und für gemeinsamen Zugriff freigegebene Arbeitsmappe ein.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>
-            <b>ExclusiveAccess</b> -Methode speichert alle Änderungen vorgenommen haben, um die Arbeitsmappe und andere Benutzer mit der Arbeitsmappe öffnen, um ihre Änderungen an einer anderen Datei speichern erfordert.</para>
-          <para>, Wenn die angegebene Arbeitsmappe nicht als freigegebene Liste geöffnet ist, schlägt diese Methode fehl. Um festzustellen, ob eine Arbeitsmappe im Freigabemodus geöffnet ist, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> -Eigenschaft.</para>
+          <para>Mit der <b>ExclusiveAccess</b>-Methode werden alle Änderungen gespeichert, die Sie an der Arbeitsmappe vorgenommen haben. Andere Benutzer, die dieselbe Arbeitsmappe geöffnet haben, müssen ihre Änderungen in einer anderen Datei speichern.</para>
+          <para>Wenn die angegebene Arbeitsmappe nicht als freigegebene Liste geöffnet ist, schlägt diese Methode fehl. Um festzustellen, ob eine Arbeitsmappe im Freigabemodus geöffnet ist, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2757,7 +2819,7 @@
         <summary>Die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode wird verwendet, um eine Arbeitsmappe im PDF- oder XPS-Format veröffentlichen.</summary>
         <remarks>To be added.</remarks>
         <example>
-          <para>Im folgenden Beispiel wird die PDF-Datei in Standardqualität im Verzeichnis der aktuellen Datei erstellt und die Datei nach der Veröffentlichung im Viewer angezeigt.</para>
+          <para>Im folgenden Beispiel wird die PDF-Datei in der Standardqualität im Verzeichnis der aktuellen Datei erstellt und nach dem Veröffentlichen in einem Viewer angezeigt.</para>
           <para>
             <b>Hinweis</b>: tritt ein Fehler auf, wenn das PDF-add-in derzeit nicht installiert ist.</para>
         </example>
@@ -2792,7 +2854,7 @@
         <summary>Gibt das Dateiformat und/oder den Typ der Arbeitsmappe. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlFileFormat" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para>Einige dieser Konstanten stehen Ihnen, abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch), möglicherweise nicht zur Verfügung.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2828,7 +2890,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Festlegen des Werts auf <b>True</b> markiert die Arbeitsmappe als Final, benachrichtigt Empfänger (sofern vorhanden), dass die Arbeitsmappe abgeschlossen ist, und die Arbeitsmappe festgelegt schreibgeschützt.</para>
+          <para>Durch das Festlegen des Werts auf <b>True</b> wird die Arbeitsmappe als abgeschlossen gekennzeichnet, ggf. werden Empfänger darüber benachrichtigt, dass die Arbeitsmappe abgeschlossen ist, und es wird ein Schreibschutz für die Arbeitsmappe festgelegt.
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2963,7 +3027,7 @@
         <summary>Gibt den Namen des Objekts, einschließlich des Pfads auf dem Datenträger, als Zeichenfolge zurück. Schreibgeschützter <b>String</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> -Eigenschaft, gefolgt von der aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> -Eigenschaft.</para>
+          <para>Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> -Eigenschaft, gefolgt von der aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3128,7 +3192,7 @@
           <b>True</b>, wenn die Arbeitsmappe ein Schutzkennwort besitzt. Schreibgeschützter <b>Boolean</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Können Sie eine Arbeitsmappe ein Schutzkennwort zuweisen, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode.</para>
+          <para>Sie können einer Arbeitsmappe ein Schutzkennwort zuweisen, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3175,7 +3239,7 @@
           <b>True</b>, wenn die Arbeitsmappe einen Verteiler besitzt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>true festgelegt,</b> wird ein Verteiler mit Standardwerten erstellt. Die-Eigenschaft auf <b>False</b> festlegen, wird der Verteiler gelöscht.</para>
+          <para>Wird für diese Eigenschaft der Wert <b>True</b>True festgelegt, so wird ein neuer Verteiler mit Standardeinstellungen erstellt. Wird der Wert hingegen auf <b>False</b>False gesetzt, so wird der Verteiler gelöscht.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3208,7 +3272,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Diese Eigenschaft ist besonders in programmgesteuert zu bestimmen, ob eine Arbeitsmappe in einem Dateiformat mit Makros gespeichert werden muss. Wenn in einem anderen Format gespeichert, Makros und Projekten mit Code im Dokument enthaltenen verloren.</para>
+          <para>Diese Eigenschaft ist hilfreich, um programmgesteuert zu ermitteln, ob eine Arbeitsmappe in einem Dateiformat mit Makros gespeichert werden muss. Wenn sie in einem anderen Format gespeichert wird, gehen Makros und Codeprojekte in diesem Dokument möglicherweise verloren.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3366,7 +3430,7 @@
         <summary>Ein <b>Boolean</b>-Wert, der angibt, ob Listenrahmen sichtbar sind, wenn eine Liste nicht aktiv ist. Gibt <b>True</b> zurück, wenn der Rahmen sichtbar ist. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft wirkt sich auf alle Listen, die auf dem Arbeitsblatt.</para>
+          <para>Das Festlegen dieser Eigenschaft wirkt sich auf alle Listen auf dem Arbeitsblatt aus.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3401,22 +3465,22 @@
           <b>True</b>, falls die Arbeitsmappe als Add-In ausgeführt wird. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie diese Eigenschaft auf <b>True</b>festlegen, die Arbeitsmappe weist folgende Merkmale auf:</para>
+          <para>Wenn Sie diese Eigenschaft auf <b>True</b> festglegen, besitzt die Arbeitsmappe folgende Kennzeichen:</para>
           <list type="bullet">
             <item>
-              <description>werden Sie nicht aufgefordert, die Arbeitsmappe zu speichern, falls Änderungen vorgenommen werden, während die Arbeitsmappe geöffnet ist.</description>
+              <description>Sie werden nicht aufgefordert, die Arbeitsmappe zu speichern, falls Änderungen vorgenommen werden, während die Arbeitsmappe geöffnet ist.</description>
             </item>
             <item>
               <description>Das Arbeitsmappenfenster ist nicht sichtbar.</description>
             </item>
             <item>
-              <description>Makros in der Arbeitsmappe wird nicht sichtbar sein, in das Dialogfeld Makro (indem Sie im Menü Extras auf Makro zeigen und auf Makros angezeigt).</description>
+              <description>Eventuell in der Arbeitsmappe enthaltene Makros werden im Makro-Dialogfeld nicht dargestellt (das Dialogfeld wird angezeigt, wenn Sie auf Makro im Extras-Menü zeigen und auf Makros klicken).</description>
             </item>
             <item>
-              <description>Können Makros in der Arbeitsmappe noch im Dialogfeld Makro ausgeführt werden, obwohl sie nicht dargestellt werden. Darüber hinaus Makronamen müssen nicht mit den Namen der Arbeitsmappe gekennzeichnet sein.</description>
+              <description>Makros der Arbeitsmappe können, obwohl sie nicht dargestellt werden, über das Makro-Dialogfeld ausgeführt werden. Außerdem müssen Makronamen nicht mit dem Namen der Arbeitsmappe qualifiziert werden.</description>
             </item>
             <item>
-              <description>Beim Öffnen der Arbeitsmappe die UMSCHALTTASTE gedrückt halten, hat keine Auswirkung.</description>
+              <description>Wenn Sie beim Öffnen der Arbeitsmappe die UMSCHALTTASTE gedrückt halten, hat dies keine Wirkung.</description>
             </item>
           </list>
           <para></para>
@@ -3592,8 +3656,8 @@
         <summary>Gibt ein Array von Links in der Arbeitsmappe zurück. Die Namen in der Matrix sind die Namen der verknüpften Dokumente, Editionen oder DDE oder OLE-Server. Gibt <b>leer</b> zurück, wenn es keine Hyperlinks gibt. - <b>Objekt</b>.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Das Format des Arrays ist ein eindimensionales Array für alle Typen jedoch Publisher und Abonnenten. Die zurückgegebenen Zeichenfolgen enthalten den Namen der Verknüpfungsquelle in der für den Linktyp geeigneten Notation. Beispielsweise DDE links und Verwenden der "Server | Dokument! Element"Syntax.</para>
-          <para>Für Publisher und Abonnenten Links, ist das zurückgegebene Array zweidimensional. Die erste Spalte des Arrays enthält die Namen der Edition, und die zweite Spalte enthält die Verweise der Editionen als Text.</para>
+          <para>Das Format der Matrix ist für alle Typen eindimensional, mit Ausnahme von Verleger und Abonnent. Die zurückgegebenen Zeichenfolgen enthalten den Namen der Verknüpfungsquelle in der für den jeweiligen Verknüpfungstyp geeigneten Schreibweise. In DDE-Verknüpfungen wird z.B. die Syntax "Server| Dokument!Element" verwendet.</para>
+          <para>Bei Verleger- und Abonnentenverknüpfungen ist die zurückgegebene Matrix zweidimensional. Die erste Spalte der Matrix enthält die Namen der Auflage, und die zweite Spalte enthält die Bezüge auf die Auflagen in Form von Text.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3801,7 +3865,7 @@
           <b>True</b>, wenn die Arbeitsmappe für gemeinsamen Zugriff freigegeben ist. <b>Boolean</b>-Wert mit Lesezugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Zum Speichern einer Arbeitsmappe im Freigabemodus, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode. Um die Arbeitsmappe vom Freigabemodus exklusiven Modus wechseln möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" /> -Methode.</para>
+          <para>Um eine Arbeitsmappe im Freigabemodus speichern möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode. Um die Arbeitsmappe vom Freigabemodus exklusiven Modus wechseln möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4112,7 +4176,7 @@
         <summary>Gibt das Kennwort zurück oder legt das Kennwort fest, das bereitgestellt werden muss, um die angegebene Arbeitsmappe zu öffnen. <b>String</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwenden Sie starke Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbole. Schwache Kennwörter Kombination keine dieser Elemente. Sicheres Kennwort: Y6dh! et5. Schwache Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie behalten können, damit Sie nicht notieren.</para>
+          <para>[!HINWEIS] Verwenden Sie sichere Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbolen. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4744,7 +4808,7 @@
         <param name="SharingPassword">Optionales- <b>Objekt</b>. Eine Zeichenfolge, die das Kennwort angibt, das zu verwenden ist, um die Datei für die Freigabe zu schützen.</param>
         <summary>Speichert eine Arbeitsmappe und schützt sie für die Freigabe.</summary>
         <remarks>
-          <para>Verwenden Sie starke Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbole. Schwache Kennwörter Kombination keine dieser Elemente. Sicheres Kennwort: Y6dh! et5. Schwache Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie behalten können, damit Sie nicht notieren.</para>
+          <para>[!HINWEIS] Verwenden Sie sichere Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbolen. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4933,7 +4997,7 @@
         <summary>Gibt <b>True</b> zurück, wenn das Objekt schreibgeschützt geöffnet wurde. <b>Boolean</b>-Wert mit Lesezugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft wird nur für Listen, die mit einer SharePoint-Website verknüpft sind.</para>
+          <para>Diese Eigenschaft wird nur für Listen verwendet, die mit einer SharePoint-Website verknüpft sind.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4968,7 +5032,7 @@
           <b>True</b>, wenn die Arbeitsmappe mit "Schreibschutz empfehlen" gespeichert wurde. <b>Boolean</b>-Wert mit Lesezugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Beim Öffnen einer Arbeitsmappe, die als schreibgeschützt gespeichert wurde, empfiehlt Microsoft Excel eine Meldung angezeigt, mit der Empfehlung angezeigt, dass Sie die Arbeitsmappe mit Schreibschutz öffnen.</para>
+          <para>Beim Öffnen einer Arbeitsmappe, die mit "Schreibschutz empfehlen" gespeichert wurde, empfiehlt Ihnen Microsoft Excel in einer Meldung, die Arbeitsmappe schreibgeschützt zu öffnen.</para>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um diese Eigenschaft zu ändern.</para>
           <para></para>
         </remarks>
@@ -5025,7 +5089,7 @@
       <Docs>
         <summary>Aktualisiert alle externen Datenbereiche und PivotTable-Berichte in der angegebenen Arbeitsmappe.</summary>
         <remarks>
-          <para>-Objekte, denen die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> -Eigenschaft auf <b>True</b> festgelegt, werden im Hintergrund aktualisiert.</para>
+          <para>Objekte, denen die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> -Eigenschaft auf <b>True</b> festgelegt, werden im Hintergrund aktualisiert.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5087,7 +5151,7 @@
         <param name="Encoding">Erforderliche <see cref="T:Microsoft.Office.Core.MsoEncoding" />. Die Codierung, die auf die Arbeitsmappe angewendet werden soll.</param>
         <summary>Lädt eine Arbeitsmappe, die auf einem HTML-Dokument basiert, erneut, wobei die angegebene Dokumentcodierung verwendet wird.</summary>
         <remarks>
-          <para>Nur <b>MsoEncoding</b> -Konstanten, die für HTML geltende sind arbeiten mit der <b>ReloadAs</b> -Methode.</para>
+          <para>Nur <b>MsoEncoding</b> -Konstanten, die für HTML geltende sind mit der <b>ReloadAs</b> -Methode verwendet werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5262,7 +5326,7 @@
         <param name="ShowMessage">Optionales- <b>Objekt</b>. <b>"False"</b> wird die Meldung nicht angezeigt. <b>True</b> wird die Nachricht angezeigt.</param>
         <summary>Sendet eine E-Mail an den Autor einer Arbeitsmappe, die zur Überprüfung versendet wurde, und benachrichtigt diesen darüber, dass die Überprüfung der Arbeitsmappe abgeschlossen ist.</summary>
         <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> -Methode, um eine gemeinsame Überprüfung einer Arbeitsmappe zu starten. Wenn die <b>ReplyWithChanges</b> -Methode für eine Arbeitsmappe, die nicht Teil Bearbeiter vorher ist ausgeführt wird, wird der Benutzer ein Fehler gemeldet.</para>
+          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> -Methode, um eine gemeinsame Überprüfung einer Arbeitsmappe zu starten. Wenn die <b>ReplyWithChanges</b> -Methode für eine Arbeitsmappe, die nicht Teil Bearbeiter vorher ist ausgeführt wird, erhält der Benutzer einen Fehler.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5351,7 +5415,7 @@
         <summary>Gibt die Anzahl der Häufigkeit, mit die Arbeitsmappe, während Sie als freigegebene Liste geöffnet gespeichert wurde. Wenn die Arbeitsmappe im exklusiven Modus geöffnet ist, gibt diese Eigenschaft 0 (null) zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>RevisionNumber</b> -Eigenschaft wird nur aktualisiert, wenn die lokale Kopie der Arbeitsmappe, nicht jedoch beim Speichern von Kopien gespeichert wird.</para>
+          <para>Die <b>RevisionNumber</b>-Eigenschaft wird nur dann aktualisiert, wenn die lokale Kopie der Arbeitsmappe gespeichert wird, nicht jedoch beim Speichern von Kopien weiterer Benutzer.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5385,7 +5449,7 @@
       <Docs>
         <summary>Leitet die Arbeitsmappe entsprechend den Einstellungen des aktuellen Verteilers der Arbeitsmappe weiter.</summary>
         <remarks>
-          <para>Routing einer Arbeitsmappe wird die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> -Eigenschaft auf <b>True</b>.</para>
+          <para>Weiterleiten einer Arbeitsmappe wird die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> -Eigenschaft auf <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5423,7 +5487,7 @@
           <b>True</b>, wenn die Arbeitsmappe bereits an den nächsten Empfänger weitergeleitet wurde. <b>False</b>, wenn sie noch weitergeleitet werden muss. Schreibgeschützter <b>Boolean</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Wenn die Arbeitsmappe nicht an den aktuellen Empfänger weitergeleitet wurde, ist diese Eigenschaft immer <b>False</b> (z. B., wenn das Dokument keine Verteilerliste hat oder gerade erst eine Verteilerliste erstellt wurde).</para>
+          <para>Falls die Arbeitsmappe nicht an den aktuellen Empfänger weitergeleitet wurde, ist diese Eigenschaft immer <b>False</b> (z.B. wenn das Dokument keinen Verteiler enthält oder gerade erst ein Verteiler erstellt wurde).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5516,9 +5580,9 @@
       <Docs>
         <summary>Speichert Änderungen in der angegebenen Arbeitsmappe.</summary>
         <remarks>
-          <para>Verwenden, um eine Arbeitsmappendatei zu öffnen, die <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode.</para>
-          <para>Festlegen, um eine Arbeitsmappe als gespeichert zu markieren ohne diese auf einen Datenträger geschrieben wird, dessen <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> -Eigenschaft auf <b>True</b>.</para>
-          <para>Beim ersten einer Arbeitsmappe speichern verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um einen Namen für die Datei anzugeben.</para>
+          <para>Verwenden, um eine Arbeitsmappendatei zu öffnen, die <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode.</para>
+          <para>Um eine Arbeitsmappe als gespeichert zu markieren ohne diese auf einen Datenträger geschrieben wird, legen Sie dessen <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> -Eigenschaft auf <b>True</b>.</para>
+          <para>Verwenden Sie beim ersten einer Arbeitsmappe speichern, die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um einen Namen für die Datei anzugeben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5605,7 +5669,7 @@
         <summary>Exportiert die der angegebenen XML-Schemazuordnung zugeordneten Daten in eine XML-Datendatei.</summary>
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
-          <para>Diese Methode führt zu einem Laufzeitfehler, wenn Excel-Daten mit der angegebenen schemazuordnung exportieren kann nicht. Um zu überprüfen, ob Excel die angegebenen schemazuordnung zum Exportieren von Daten verwenden kann, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" /> -Eigenschaft.</para>
+          <para>Diese Methode führt in einen Laufzeitfehler, wenn Excel-Daten mit der angegebenen schemazuordnung nicht exportieren kann. Um zu überprüfen, ob Excel die angegebenen schemazuordnung zum Exportieren von Daten verwenden kann, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5677,7 +5741,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Wenn eine Arbeitsmappe noch nie gespeichert wurde, dessen <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> -Eigenschaft gibt eine leere Zeichenfolge ("").</para>
-          <para>Sie können diese Eigenschaft auf <b>True</b> festlegen, wenn Sie ohne Speichern oder Aufforderung zum Speichern von darauf verweisen eine geänderte Arbeitsmappe schließen möchten</para>
+          <para>Sie können diese Eigenschaft auf <b>True</b> festlegen, wenn Sie eine geänderte Arbeitsmappe schließen, ohne zu speichern oder zum Speichern aufgefordert werden möchten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5780,10 +5844,10 @@
         <param name="ShowMessage">Optionales- <b>Objekt</b>. <b>True</b> zeigt die Faxnachricht vor dem senden. <b>False</b> sendet das Fax ohne Anzeigen der Faxnachricht.</param>
         <summary>Sendet ein Arbeitsblatt als Fax an die angegebenen Empfänger.</summary>
         <remarks>
-          <para>Die <b>SendFaxOverInternet</b> -Methode muss der Faxdienst auf dem Computer eines Benutzers aktiviert sein.</para>
+          <para>Zum Verwenden der <b>SendFaxOverInternet</b>-Methode muss der Faxdienst auf dem Computer des Benutzers aktiviert sein.</para>
           <para>Das Format zum Festlegen von Faxnummern in der <paramref name="Recipients" /> Parameter ist entweder <paramref name="recipientsfaxnumber@usersfaxprovider" /> oder <paramref name="recipientsname@recipientsfaxnumber" />. Sie können die Informationen des Benutzers Fax Anbieter über den folgenden Registrierungspfad zugreifen:</para>
           <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
-          <para>Verwenden Sie den Wert des Schlüssels FaxAddress in diesem Registrierungspfad, um zu bestimmen die für einen Empfänger zu verwendende Format.</para>
+          <para>Verwenden Sie den Wert des Schlüssels FaxAddress in diesem Registrierungspfad, um das Format für einen Empfänger zu verwendende bestimmen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5819,7 +5883,7 @@
         <param name="IncludeAttachment">Optionales- <b>Objekt</b>. Ein <b>boolescher</b> Wert, der angibt, ob die Nachricht eine Anlage oder ein Link zu einem Serverpfad enthalten soll. Der Standardwert ist <b>True</b>. Wenn auf <b>False</b>festgelegt ist, muss das Dokument an einen freigegebenen Speicherort gespeichert werden.</param>
         <summary>Sendet eine Arbeitsmappe in einer E-Mail, damit diese von den angegebenen Empfängern überprüft werden kann.</summary>
         <remarks>
-          <para>Der <b>SendForReview</b> -Methode startet einen gemeinschaftlichen Überprüfungszyklus. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> -Methode, um einen Zyklus.</para>
+          <para>Die <b>SendForReview</b> -Methode startet einen gemeinschaftlichen Überprüfungszyklus. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> -Methode, um einen Überprüfungszyklus zu beenden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5949,7 +6013,7 @@
           <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" />
         </value>
         <remarks>
-          <para>Gibt diese Eigenschaft eine Auflistung der Elemente, die in Excel Services veröffentlicht werden konnte.  Es kann Tabellen, PivotTables, benannte Bereiche und Diagramme enthalten.  Es kann auch Blätter enthalten, solange es sich nicht um eine Mischung aus Sheets ist und der zuvor aufgeführten Liste.  </para>
+          <para>Diese Eigenschaft gibt eine Auflistung von Elementen zurück, die von Excel Services veröffentlicht werden können. Dies kann Tabellen, PivotTables, Benannte Bereiche und Diagramme umfassen. Außerdem kann auch Blätter enthalten sein, wenn Blätter nicht gemeinsam mit der zuvor aufgeführten Liste verwendet wird.  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -6019,8 +6083,8 @@
         <param name="PasswordEncryptionFileProperties">Optionales- <b>Objekt</b>. Bei <b>True</b> (Standard) werden die Dateieigenschaften verschlüsselt.</param>
         <summary>Legt die Optionen zur Verschlüsselung von Arbeitsmappen mit Kennwörtern fest.</summary>
         <remarks>
-          <para>Die <paramref name="PasswordEncryptionProvider" />, <paramref name="PasswordEncryptionAlgorithm" />, und <paramref name="PasswordEncryptionKeyLength" /> Argumenten sind nicht unabhängig voneinander. Ein ausgewählter Verschlüsselungsanbieter beschränkt die Auswahl der Algorithmen und die Schlüssellänge, die ausgewählt werden können.</para>
-          <para>Für die <paramref name="PasswordEncryptionKeyLength" /> Argument vorhanden ist, keine Sicherheitsmechanismen Grenzwert für den Bereich der Schlüssellänge. Der Bereich wird durch den Kryptografiedienstanbieter der auch den kryptografischen Algorithmus bestimmt bestimmt.</para>
+          <para>Die <paramref name="PasswordEncryptionProvider" />, <paramref name="PasswordEncryptionAlgorithm" />, und <paramref name="PasswordEncryptionKeyLength" /> Argumenten sind nicht unabhängig voneinander. Ein ausgewählter Verschlüsselungsanbieter beschränkt die Auswahl von Algorithmen und der Schlüssellänge, der ausgewählt werden können.</para>
+          <para>Für die <paramref name="PasswordEncryptionKeyLength" /> Argument vorhanden ist, keine Sicherheitsmechanismen Grenzwert für den Bereich der Schlüssellänge. Der Bereich wird durch den Kryptografiedienstanbieter bestimmt, der auch den kryptografischen Algorithmus bestimmt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6117,7 +6181,7 @@
           <b>True</b>, wenn das Konfliktprotokoll-Arbeitsblatt in der geöffneten und freigegebenen Arbeitsmappe sichtbar ist. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Wenn die angegebene Arbeitsmappe nicht als freigegebene Liste geöffnet ist, schlägt diese Eigenschaft fehl. Um festzustellen, ob eine Arbeitsmappe im Freigabemodus geöffnet ist, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> -Eigenschaft.</para>
+          <para>Die angegebene Arbeitsmappe nicht als freigegebene Liste geöffnet ist, schlägt diese Eigenschaft fehl. Um festzustellen, ob eine Arbeitsmappe im Freigabemodus geöffnet ist, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6153,7 +6217,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Diese Eigenschaft steuert die Sichtbarkeit der PivotChart-Filterbereich (schaltet es on/off).  Damit für sichtbar sein kann muss ein <b>PivotChart</b> -Objekt ausgewählt werden. </para>
+          <para>Diese Eigenschaft steuert die Sichtbarkeit des PivotChart-Filterbereichs (schaltet zwischen Anzeigen und Ausblenden um). Ein <b>PivotChart</b>-Objekt muss ausgewählt sein, damit der Bereich sichtbar ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6218,7 +6282,8 @@
           <see cref="T:Microsoft.Office.Core.SignatureSet" />
         </value>
         <remarks>
-          <para>Digital signieren Excel2007 Arbeitsmappen und anderen Signaturen zu, überprüfen Sie die Microsoft CryptoAPI und ein eindeutiges digitales Signaturzertifikat benötigen. CryptoAPI ist mit Microsoft Internet Explorer 4.01 oder höher installiert. Sie können ein Zertifikat für digitale Signaturen von einer Zertifizierungsstelle abrufen. </para>
+          <para>Um digital zu signieren Excel2007 Arbeitsmappen und anderen Signaturen zu überprüfen, benötigen Sie die Microsoft CryptoAPI und ein eindeutiges digitales Signaturzertifikat. CryptoAPI ist mit Microsoft Internet Explorer 4.01 oder höher installiert. Sie können ein Zertifikat für digitale Signaturen von einer Zertifizierungsstelle abrufen.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6440,7 +6505,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" />
         </value>
         <remarks>
-          <para>Können Sie die von der Eigenschaft zurückgegebenen Tabellenformate bearbeiten.</para>
+          <para>Sie können die von der Eigenschaft zurückgegebenen Tabellenformate bearbeiten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6573,7 +6638,7 @@
       <Docs>
         <summary>Schaltet den Formularentwurfsmodus ein oder aus.</summary>
         <remarks>
-          <para>Beim Excel im Formularentwurfsmodus ist, wird die Steuerelement-Toolbox-Symbolleiste angezeigt. Diese Symbolleiste können Sie ActiveX-Steuerelemente wie Befehlsschaltflächen, Bildlaufleisten und Optionsfeldern einfügen. Im Formularentwurfsmodus Ereignisprozeduren nicht ausgeführt, und das Steuerelement Ziehpunkte angezeigt werden, wenn Sie ein eingebettetes Steuerelement klicken,.</para>
+          <para>Wenn Excel im Formularentwurfsmodus befindet, wird die Steuerelement-Toolbox-Symbolleiste angezeigt. Diese Symbolleiste können Sie ActiveX-Steuerelemente wie Befehlsschaltflächen, Bildlaufleisten und Optionsfeldern einfügen. Im Formularentwurfsmodus Ereignisprozeduren nicht ausgeführt und wenn Sie ein eingebettetes Steuerelement klicken, Ziehpunkte des Steuerelements angezeigt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6606,7 +6671,7 @@
         <param name="Password">Optionales- <b>Objekt</b>. Eine Zeichenfolge, die das Groß-/Kleinschreibung beachtet Kennwort für das Blatt oder die Arbeitsmappe aufheben angibt. Wenn das Blatt oder die Arbeitsmappe mit einem Kennwort geschützt ist, wird dieses Argument ignoriert. Wenn Sie dieses Argument für ein Blatt, die mit einem Kennwort geschützt sind auslassen, werden Sie aufgefordert, das Kennwort aufgefordert. Wenn Sie dieses Argument für eine Arbeitsmappe, die mit einem Kennwort geschützt ist auslassen, schlägt die Methode fehl.</param>
         <summary>Hebt den Schutz eines Blatts oder einer Arbeitsmappe auf. Diese Methode hat keine Wirkung, wenn das Blatt oder die Arbeitsmappe nicht geschützt ist.</summary>
         <remarks>
-          <para>, Wenn Sie das Kennwort vergessen haben, kann nicht das Blatt oder die Arbeitsmappe aufzuheben. Es ist eine gute Idee, eine Liste Ihrer Kennwörter und der entsprechenden Dokumentnamen an einem sicheren Ort.</para>
+          <para>Wenn Sie das Kennwort vergessen, können Sie den Schutz des Blatts oder der Arbeitsmappe nicht wieder aufheben. Sie sollten daher eine Liste Ihrer Kennwörter und der zugehörigen Dateinamen an einem sicheren Ort aufbewahren.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6636,7 +6701,7 @@
         <param name="SharingPassword">Optionales- <b>Objekt</b>. Das Kennwort der Arbeitsmappe.</param>
         <summary>Hebt den Schutz für die Freigabe auf und speichert die Arbeitsmappe.</summary>
         <remarks>
-          <para>Verwenden Sie starke Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbole. Schwache Kennwörter Kombination keine dieser Elemente. Sicheres Kennwort: Y6dh! et5. Schwache Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie behalten können, damit Sie nicht notieren.</para>
+          <para>[!HINWEIS] Verwenden Sie sichere Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbolen. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6667,7 +6732,7 @@
       <Docs>
         <summary>Aktualisiert eine schreibgeschützte Arbeitsmappe mit der gespeicherten Version, falls die Version auf dem Datenträger neuer ist als die aktuelle Kopie der Arbeitsmappe im Arbeitsspeicher. Wurde die Kopie auf dem Datenträger seit dem Laden der Arbeitsmappe nicht verändert, wird die Kopie im Arbeitsspeicher nicht neu geladen.</summary>
         <remarks>
-          <para>Ist diese Methode hilfreich, wenn eine Arbeitsmappe von Benutzer A mit Schreibschutz geöffnet und von Benutzer b mit Lese-/Schreibzugriff geöffnet ist Wenn Benutzer B eine neuere Version der Arbeitsmappe auf dem Datenträger, speichert während Benutzer A noch die Arbeitsmappe geöffnet, die eine aktualisierte Kopie erhalten kann nicht hat ohne Schließen und erneuten Öffnen der Arbeitsmappe und die Einstellungen für die Ansicht zu verlieren. <b>UpdateFromFile</b> -Methode aktualisiert die speicherinterne Kopie der Arbeitsmappe mit der Datenträgerdatei.</para>
+          <para>Diese Methode ist hilfreich, wenn eine Arbeitsmappe von Benutzer/in A schreibgeschützt und von Benutzer/in B mit Lese-/Schreibzugriff geöffnet wird. Falls Benutzer/in B eine neuere Version der Arbeitsmappe auf dem Datenträger speichert, während Benutzer/in A die Arbeitsmappe noch geöffnet hat, kann Benutzer/in A die aktualisierte Kopie nicht einsehen, ohne die Arbeitsmappe zu schließen und erneut zu öffnen. Dabei gehen Ansichtseinstellungen verloren. Die <b>UpdateFromFile</b>-Methode aktualisiert die Kopie der Arbeitsmappe im Speicher entsprechend der Datei auf dem Datenträger.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6702,7 +6767,7 @@
         <param name="Type">Optionale <see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" />.</param>
         <summary>Aktualisiert eine Microsoft Excel-, DDE- oder OLE-Verknüpfung (bzw. mehrere Verknüpfungen).</summary>
         <remarks>
-          <para>Wenn die <b>UpdateLink</b> -Methode ohne Angabe von Parametern aufgerufen wird, Excel wird standardmäßig alle arbeitsblattverknüpfungen aktualisieren.</para>
+          <para>Wenn die <b>UpdateLink</b> -Methode ohne Angabe von Parametern aufgerufen wird, standardmäßig Excel alle arbeitsblattverknüpfungen aktualisieren.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6842,7 +6907,7 @@
         <summary>Gibt ein 1-basierter, zweidimensionales Array, das Informationen zu allen Benutzern bereitstellt, die die Arbeitsmappe im Freigabemodus geöffnet. Das erste Element der zweiten Dimension ist der Benutzername; das zweite Element gibt Datum und Uhrzeit des Öffnens der Arbeitsmappe durch den Benutzer an; das dritte Element ist eine Zahl, die den Modus angibt (1 steht für Exklusivmodus, 2 für Freigabemodus). Read-only- <b>Objekt</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>UserStatus</b> -Eigenschaft nicht zurückgeben von Informationen zu Benutzer, die die angegebene Arbeitsmappe schreibgeschützt geöffnet haben.</para>
+          <para>Die <b>UserStatus</b>-Eigenschaft gibt keine Informationen über Benutzer zurück, die die angegebene Arbeitsmappe schreibgeschützt geöffnet haben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7072,8 +7137,8 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> -Auflistung, die alle Arbeitsblätter in der angegebenen Arbeitsmappe darstellt. Schreibgeschütztes <b>Sheets</b> -Objekt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwendung dieser Eigenschaft ohne ein Objektbezeichner aller Arbeitsblätter in der aktiven Arbeitsmappe zurückgegeben.</para>
-          <para>Diese Eigenschaft nicht Makrovorlagen zurück; verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> Eigenschaft, um diese Blätter zurückzugeben.</para>
+          <para>Wenn kein Objektbezeichner verwendet wird, werden alle Arbeitsblätter in der aktiven Arbeitsmappe zurückgegeben.</para>
+          <para>Diese Eigenschaft gibt keine Makrovorlagen zurück; Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> Eigenschaft, um diese Blätter zurückzugeben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7210,7 +7275,7 @@
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para>Geben Sie keinen Wert für die <paramref name="Destination" /> Parameter, wenn Sie Daten in eine vorhandene Zuordnung importieren möchten.</para>
-          <para>Folgendes bewirkt, dass die <b>XMLImport</b> -Methode Laufzeitfehler generiert:</para>
+          <para>Die folgenden Bedingungen bewirkt, dass die <b>XMLImport</b> -Methode Laufzeitfehler generiert:</para>
           <list type="bullet">
             <item>
               <description>Die angegebenen XML-Daten enthalten Syntaxfehler.</description>
@@ -7259,7 +7324,7 @@
         <remarks>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para>Geben Sie keinen Wert für die <paramref name="Destination" /> Parameter, wenn Sie Daten in eine vorhandene Zuordnung importieren möchten.</para>
-          <para>Folgendes bewirkt, dass die <b>XMLImport</b> -Methode Laufzeitfehler generiert:</para>
+          <para>Die folgenden Bedingungen bewirkt, dass die <b>XMLImport</b> -Methode Laufzeitfehler generiert:</para>
           <list type="bullet">
             <item>
               <description>Die angegebenen XML-Daten enthalten Syntaxfehler.</description>

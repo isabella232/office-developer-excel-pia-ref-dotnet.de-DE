@@ -1,10 +1,10 @@
 <Type Name="PivotTableChangeList" FullName="Microsoft.Office.Interop.Excel.PivotTableChangeList">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="63698bef46404d04033b537d223fd3813ffa3abc" />
+    <Meta Name="ms.openlocfilehash" Value="636cf57ba1c7b70d9eb9e8e8297d99ac0acff5dc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574718" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTableChangeList : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>Stellt die Liste der Änderungen, die ein Benutzer an Wertzellen in einem PivotTable-Bericht basierend auf einer OLAP-Datenquelle vorgenommen hat.</summary>
     <remarks>
-      <para>Der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung enthält <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekten, die Änderungen darstellen, hat ein Benutzer an Wertzellen in einem PivotTable-Bericht vorgenommen. Zurückgeben der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung für eine PivotTable, Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekt.</para>
+      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung enthält <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekten, die Änderungen darstellen, hat ein Benutzer an Wertzellen in einem PivotTable-Bericht vorgenommen. Zurückgeben der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> -Auflistung für eine PivotTable, Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -109,7 +109,7 @@
         <summary>Fügt eine <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> auf das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</summary>
         <returns>Gibt <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />.</returns>
         <remarks>
-          <para>Der <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> Methode ermöglicht Ihnen das Hinzufügen von <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekten, die dem PivotTable-Bericht mithilfe von Code Änderungen darstellen. Dadurch wird der UPDATE CUBE-Anweisung, die Excel erstellt basierend auf dieser Änderungsliste hinzugefügt. Beachten Sie, dass, wenn der Benutzer die Einstellungen für die Zuordnung geändert wird, damit nicht alle Änderungen mit denselben Einstellungen haben, Excel mehrere UPDATE CUBE-Anweisungen, eine für jede Gruppe von Änderungen ausgeführt wird, die vorgenommen wurden, während die gleichen Einstellungen angewendet wurden.</para>
+          <para>Die <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> Methode ermöglicht Ihnen das Hinzufügen von <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekten, die dem PivotTable-Bericht mithilfe von Code Änderungen darstellen. Dadurch wird der UPDATE CUBE-Anweisung, die Excel erstellt basierend auf dieser Änderungsliste hinzugefügt. Beachten Sie, dass, wenn der Benutzer die Einstellungen für die Zuordnung geändert wird, damit nicht alle Änderungen mit denselben Einstellungen haben, Excel mehrere UPDATE CUBE-Anweisungen, eine für jede Gruppe von Änderungen ausgeführt wird, die vorgenommen wurden, während die gleichen Einstellungen angewendet wurden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -140,7 +140,7 @@
         <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -200,7 +200,7 @@
         <value>Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</value>
         <remarks>
           <para>Nur-Lese- <b>long</b>.</para>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -295,7 +295,7 @@
         <summary>Ruft ab, der übergeordnete <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekt für das angegebene <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</summary>
         <value>Das übergeordnete <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekt für das angegebene <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>

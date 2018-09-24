@@ -1,10 +1,10 @@
 <Type Name="DisplayUnitLabel" FullName="Microsoft.Office.Interop.Excel.DisplayUnitLabel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f42cc953ea800c389ad99a80bdcabb741008c694" />
+    <Meta Name="ms.openlocfilehash" Value="307ac8532d5ba9d3d696802a345173a9dece29b5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584525" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DisplayUnitLabel" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Stellt eine Einheitenbeschriftung auf einer Achse im angegebenen Diagramm dar.</summary>
     <remarks>
-      <para>Einheit Etiketten eignen sich für die diagrammerstellung große Werte – beispielsweise in Millionen oder Milliarden. Sie können das Diagramm besser lesbar stellen Sie mithilfe einer einzelnen einheitenbeschriftung anstelle zahlreicher an jedem Teilstrich.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitLabel" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" /> -Objekt.</para>
+      <para>Einheitenbeschriftungen eignen sich für die diagrammerstellung große Werte – beispielsweise in Millionen oder Milliarden. Sie können das Diagramm mithilfe einer einzelnen einheitenbeschriftung anstelle zahlreicher an jedem Teilstrich besser lesbar machen.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitLabel" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" /> Objekt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -257,8 +257,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -543,7 +543,7 @@
         <summary>Ruft die Höhe des Objekts in Punkt.</summary>
         <value>Die Höhe des Objekts in Punkten.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -577,7 +577,7 @@
         <summary>Zurückgeben oder festlegen die horizontale Ausrichtung für das angegebene Objekt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Können die folgenden Konstanten verwendet werden:</para>
+          <para>Die folgenden Konstanten können verwendet werden:</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -593,7 +593,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para>[!HINWEIS] Einige dieser Konstanten stehen Ihnen, abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch), möglicherweise nicht zur Verfügung.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -717,7 +717,7 @@
         <summary>Die Ausrichtung von Text. Eine Ganzzahl zwischen-90 und 90 Grad kann sein.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der Orientation-Eigenschaft kann eine der folgenden Konstanten sein:</para>
+          <para>Orientation-Eigenschaft kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -730,7 +730,7 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para>Für OLAP-Datenquellen wird durch Festlegen dieser Eigenschaft für ein Feld in einer Hierarchie die Ausrichtung für die anderen Felder in der gleichen Hierarchie. Dimensionsfelder können nur in der Zeile, Spalte und Seite Feld Bereichen des PivotTable-Berichts angeordnet werden. Felder der Maßeinheiten können nur im Datenbereich angeordnet werden. Die Hierarchie oder das Feld aus dem PivotTable-Bericht entfernt wird eine Hierarchie oder ein Datenfeld auf <b>xlHidden eingestellt</b> .</para>
+          <para>Bei OLAP-Datenquellen wird durch Festlegen dieser Eigenschaft für ein Feld in einer Hierarchie die Ausrichtung für die anderen Felder in der gleichen Hierarchie. Dimensionsfelder können nur in der Zeile, Spalte und Seite Feld Bereichen des PivotTable-Berichts angeordnet werden. Felder der Maßeinheiten können nur im Datenbereich angeordnet werden. Wird eine Hierarchie oder ein Datenfeld auf <b>xlHidden eingestellt</b> werden die Hierarchie oder das Feld aus dem PivotTable-Bericht entfernt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -825,7 +825,7 @@
         <summary>Gibt zurück oder legt die leserichtung für das angegebene Objekt fest. Kann eine der folgenden Konstanten sein: <b>XlRTL</b> (rechts-nach-links), <b>XlLTR</b> (von links nach rechts) oder <b>XlContext</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para>[!HINWEIS] Einige dieser Konstanten stehen Ihnen, abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch), möglicherweise nicht zur Verfügung.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -982,19 +982,19 @@
           <para>
             <b>VerticalAlignment</b> -Eigenschaft kann eine der folgenden Konstanten sein:</para>
           <para>
-            <b>XlBottom</b>
+            <b>xlBottom</b>
           </para>
           <para>
-            <b>XlCenter</b>
+            <b>xlCenter</b>
           </para>
           <para>
-            <b>XlDistributed</b>
+            <b>xlDistributed</b>
           </para>
           <para>
-            <b>XlJustify</b>
+            <b>xlJustify</b>
           </para>
           <para>
-            <b>XlTop</b>
+            <b>xlTop</b>
           </para>
           <para></para>
         </remarks>
@@ -1026,7 +1026,7 @@
         <summary>Ruft die Breite des Objekts in Punkt.</summary>
         <value>Die Breite des Objekts in Punkten.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575803" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Validation" />
@@ -70,33 +70,33 @@
         <param name="Formula2">Optionales- <b>Objekt</b>. Im zweiten Teil der datenüberprüfung, wenn <paramref name="Operator" /> handelt es sich <b>um XlBetween</b> oder <b>XlNotBetween</b> (andernfalls wird dieses Argument ignoriert).</param>
         <summary>Fügt dem angegebenen Bereich eine Datenüberprüfung hinzu.</summary>
         <remarks>
-          <para>Der Add-Methode erfordert, abhängig vom Gültigkeitstyp, verschiedene Argumente, wie in der folgenden Tabelle dargestellt.</para>
+          <para>Die Add-Methode ist, abhängig vom Gültigkeitstyp, verschiedene Argumente erforderlich, wie in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <term>
-                <b>XlValidateCustom</b>
+                <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ist erforderlich; <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" /> muss einen Ausdruck, der <b>true,</b> Wenn die Dateneingabe gültig ist und <b>False</b> ausgewertet wird, wenn die Dateneingabe ungültig ist enthalten.</description>
+                <paramref name="Formula1" />ist erforderlich. <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" />muss einen Ausdruck enthalten, der auf <b>true fest,</b> Wenn die Dateneingabe gültig ist und <b>False</b> ausgewertet wird, wenn die Dateneingabe ungültig ist.</description>
             </item>
             <item>
               <term>
-                <b>XlInputOnly</b>
+                <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />, <paramref name="Formula1" />, oder <paramref name="Formula2" /> dienen.</description>
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, oder <paramref name="Formula2" /> verwendet werden.</description>
             </item>
             <item>
               <term>
-                <b>um XlValidateList</b>
+                <b>Um xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ist erforderlich; <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" /> muss eine durch Trennzeichen getrennte Liste von Werten oder ein Verweis auf diese Liste Arbeitsblatt enthalten.</description>
+                <paramref name="Formula1" />ist erforderlich. <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" />muss sich um eine durch Trennzeichen getrennte Liste von Werten oder Verweis auf diese Liste ein Arbeitsblatt enthalten.</description>
             </item>
             <item>
               <term>
-                <b>XlValidateWholeNumber</b>, <b>XlValidateDate</b>, <b>XlValidateDecimal</b>, <b>XlValidateTextLength</b>, oder <b>XlValidateTime</b></term>
-              <description>eine entweder <paramref name="Formula1" /> oder <paramref name="Formula2" /> muss angegeben werden, oder beides kann angegeben werden.</description>
+                <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b> oder <b>xlValidateTime</b></term>
+              <description>Entweder <paramref name="Formula1" /> oder <paramref name="Formula2" /> muss angegeben werden, oder beide Mai angegeben werden.</description>
             </item>
           </list>
           <para></para>
@@ -129,7 +129,7 @@
         <summary>Gibt die überprüfungswarnung zurück. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um der Warnungsstil für einen Bereich festlegen. Wenn der Bereich bereits mit einer datenüberprüfung versehen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode zum Ändern des Warnungsstil.</para>
+          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um der Warnungsstil für einen Bereich festlegen. Wenn der Bereich bereits mit einer datenüberprüfung versehen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um der Warnungsstil ändern.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,7 +188,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -334,7 +334,7 @@
         <summary>Gibt den Wert oder ein Ausdruck, der zweite Teil des eine bedingte Format oder Daten Validierung zugeordnet. Schreibgeschützter <b>String</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Ist diese Eigenschaft nur, wenn die Daten Validierung bedingte format verwendet <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> -Eigenschaft ist <b>XlBetween</b> oder <b>XlNotBetween</b>. Es kann sein, einen konstanten Wert, einen String-Wert, ein Zellbezug oder eine Formel.</para>
+          <para>Diese Eigenschaft wird nur verwendet, wenn die Daten Validierung bedingte format <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> -Eigenschaft ist <b>XlBetween</b> oder <b>XlNotBetween</b>. Es kann einen konstanten Wert, einen String-Wert, ein Zellbezug oder eine Formel sein.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -403,7 +403,7 @@
         <summary>Gibt zurück oder legt die Beschreibung der japanischen Eingaberegeln fest. Kann eine der der <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> Konstanten. Lese-/Schreibzugriff <b>Integer</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Beachten, dass diese Eigenschaft nur, wenn japanische sprachunterstützung installiert und aktiviert wurde festgelegt werden kann.</para>
+          <para>Beachten Sie, dass diese Eigenschaft nur festgelegt werden kann, wenn die japanische Sprachunterstützung installiert und aktiviert wurde.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -438,7 +438,7 @@
           <b>True</b>, wenn die Validierung ein Dropdown-Listenfeld mit gültigen Werten anzeigt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft wird ignoriert, wenn die Gültigkeitstyp nicht <b>um XlValidateList</b>handelt.</para>
+          <para>Diese Eigenschaft wird ignoriert, wenn es sich beim Gültigkeitstyp nicht um eine <b>xlValidateList</b>-Konstante handelt.</para>
           <para>Verwendung der <paramref name="Minimum" /> -Argument der der <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> Objekts, um den Bereich anzugeben, die gültige Daten enthält.</para>
           <para></para>
         </remarks>
@@ -539,34 +539,34 @@
         <param name="Formula2">Optionales- <b>Objekt</b>. Im zweiten Teil der datenüberprüfung, wenn <paramref name="Operator" /> handelt es sich <b>um XlBetween</b> oder <b>XlNotBetween</b> (andernfalls wird dieses Argument ignoriert).</param>
         <summary>Ändert die Datenüberprüfung für einen Bereich.</summary>
         <remarks>
-          <para>Die <b>Modify</b> -Methode erfordert, abhängig vom Gültigkeitstyp, verschiedene Argumente, wie in der folgenden Tabelle dargestellt.</para>
+          <para>Für die <b>Modify</b>-Methode sind je nach Überprüfungstyp verschiedene Argumente erforderlich, wie in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <term>
-                <b>XlInputOnly</b>
+                <b>xlInputOnly</b>
               </term>
               <description>
                 <paramref name="AlertStyle" />, <paramref name="Formula1" />, und <paramref name="Formula2" /> werden nicht verwendet.</description>
             </item>
             <item>
               <term>
-                <b>XlValidateCustom</b>
+                <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ist erforderlich; <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" /> muss einen Ausdruck, der <b>true,</b> Wenn die Dateneingabe gültig ist und <b>False</b> ausgewertet wird, wenn die Dateneingabe ungültig ist enthalten.</description>
+                <paramref name="Formula1" />ist erforderlich. <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" />muss einen Ausdruck enthalten, der auf <b>true fest,</b> Wenn die Dateneingabe gültig ist und <b>False</b> ausgewertet wird, wenn die Dateneingabe ungültig ist.</description>
             </item>
             <item>
               <term>
-                <b>um XlValidateList</b>
+                <b>Um xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ist erforderlich; <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" /> muss eine durch Trennzeichen getrennte Liste von Werten oder einen Verweis auf die Liste ein Arbeitsblatt enthalten.</description>
+                <paramref name="Formula1" />ist erforderlich. <paramref name="Formula2" /> wird ignoriert. <paramref name="Formula1" />muss sich um eine durch Trennzeichen getrennte Liste von Werten oder einen Verweis auf die Liste ein Arbeitsblatt enthalten.</description>
             </item>
             <item>
               <term>
-                <b>XlValidateDate</b>, <b>XlValidateDecimal</b>, <b>XlValidateTextLength</b>, <b>XlValidateTime</b>, oder <b>XlValidateWholeNumber</b></term>
+                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b> oder <b>xlValidateWholeNumber</b></term>
               <description>
-                <paramref name="Formula1" /> oder <paramref name="Formula2" />, oder beide müssen angegeben werden.</description>
+                <paramref name="Formula1" />oder <paramref name="Formula2" />, oder beide müssen angegeben werden.</description>
             </item>
           </list>
           <para></para>

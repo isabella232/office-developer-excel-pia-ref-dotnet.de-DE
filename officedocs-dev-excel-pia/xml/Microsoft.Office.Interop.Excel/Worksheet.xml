@@ -1,10 +1,10 @@
 <Type Name="Worksheet" FullName="Microsoft.Office.Interop.Excel.Worksheet">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="092a8bd086f190725e346add1ff9bd88a61c6ee6" />
+    <Meta Name="ms.openlocfilehash" Value="f8af3c130d8cd9b8102e484a18e8b5c0f9ce9942" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577735" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheet : Microsoft.Office.Interop.Excel._Worksheet, Microsoft.Office.Interop.Excel.DocEvents_Event" />
@@ -37,20 +37,26 @@
     <remarks>
       <para>Dies ist ein .NET-Schnittstelle abgeleitet eine COM-Co-Klasse, die von verwaltetem Code für die Interoperabilität mit den entsprechenden COM-Objekt erforderlich ist. Verwenden Sie diese abgeleiteten Schnittstelle, um alle-Methode, -Eigenschaft und Ereignismember des COM-Objekts zuzugreifen. Jedoch, wenn eine Methode oder ein Ereignis, den Sie verwenden möchten, den gleichen Namen unter dem gleichen COM-Objekt gemeinsam, wandeln Sie auf die entsprechende primäre Schnittstelle, rufen Sie die Methode und die neuesten Ereignisse Benutzeroberfläche für die Verbindung an das Ereignis umgewandelt. Verweisen Sie auf dieses Thema bietet Informationen über das COM-Objekt. Informationen zu den Methoden- und Membern des COM-Objekts finden Sie unter <see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />.</para>
       <para>Das <b>Worksheet</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Worksheets" /> Auflistung. <b>Worksheets</b> -Auflistung enthält alle <b>Worksheet</b> -Objekte in einer Arbeitsmappe.</para>
-      <para>In diesem Abschnitt werden die folgenden Eigenschaften zur Rückgabe ein <b>Worksheet</b> -Objekt beschrieben:</para>
+      <para>In diesem Abschnitt werden die folgenden Eigenschaften zur Rückgabe eines <b>Worksheet</b> -Objekts beschrieben:</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" /> Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" />Eigenschaft</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />Eigenschaft</description>
         </item>
       </list>
       <para>Worksheets-Eigenschaft</para>
-      <para>Verwendung <b>Arbeitsblätter</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Arbeitsblatts oder Namen, um ein einzelnes <b>Worksheet</b> -Objekt zurückzugeben.</para> Die Indexnummer des Arbeitsblatts 
-      <para>Gibt die Position des Arbeitsblatts auf der Registerleiste der Arbeitsmappe. Worksheets(1) ist das erste Arbeitsblatt in der Arbeitsmappe (links) und Worksheets(Worksheets.Count) wird als letzte Datenreihe. Alle Arbeitsblätter sind in der Nummerierung enthalten, auch wenn sie ausgeblendet sind.</para><para>Ist der Arbeitsblattname auf der Registerkarte für das Arbeitsblatt angezeigt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" /> -Eigenschaft festlegen oder Zurückgeben des Arbeitsblattnamens.</para><para>Das <b>Worksheet</b> -Objekt ist außerdem ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung. <b>Sheets </b>-Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter und Arbeitsblätter).</para><para>ActiveSheet-Eigenschaft</para><para>Wenn ein Arbeitsblatt das aktive Blatt ist können Sie die <b>ActiveSheet</b> -Eigenschaft verweisen auf darauf verweisen</para><para></para></remarks>
+      <para>Verwenden Sie <b>Arbeitsblätter</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Arbeitsblatts oder Namen, um ein einzelnes <b>Worksheet</b> -Objekt zurückzugeben.</para>
+      <para>Die Arbeitsblatt-Indexnummer gibt die Position des Arbeitsblatts auf der Registerkartenleiste der Arbeitsmappe an. Worksheets(1) ist das erste Arbeitsblatt (ganz links) in der Arbeitsmappe, und Worksheets(Worksheets.Count) ist das letzte. Alle Arbeitsblätter sind in der Indexzählung enthalten, auch wenn sie ausgeblendet sind.</para>
+      <para>Der Arbeitsblattname wird auf der Registerkarte für das Arbeitsblatt angezeigt. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" /> -Eigenschaft auf den Namen des Arbeitsblattes zurückzugeben oder festzulegen.</para>
+      <para>Das <b>Worksheet</b> -Objekt ist auch ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung. Die <b>Sheets </b>-Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter und Arbeitsblätter).</para>
+      <para>ActiveSheet-Eigenschaft</para>
+      <para>Wenn ein Arbeitsblatt das aktive Blatt ist, können Sie die <b>ActiveSheet</b> -Eigenschaft verwenden, darauf verweisen.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members />
 </Type>

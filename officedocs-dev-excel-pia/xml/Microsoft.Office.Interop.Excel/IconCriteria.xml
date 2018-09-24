@@ -1,10 +1,10 @@
 <Type Name="IconCriteria" FullName="Microsoft.Office.Interop.Excel.IconCriteria">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ef3b184a713db5375fa9501f07c78266ac2688e2" />
+    <Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572919" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
@@ -35,11 +35,12 @@
   <Docs>
     <summary>Stellt die Auflistung der <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> Objekte. Jede <b>IconCriterion</b> stellt die Werte und den Typ des Schwellenwerts für jede Symbole in einer Regel zur bedingten Formatierung festlegen.</summary>
     <remarks>
-      <para>Der <b>IconCriteria</b> -Auflistung wird zurückgegeben, aus der <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Objekt. Sie können jede <b>IconCriterion</b> -Objekts in der Auflistung zugreifen, indem Sie einen Index in der Auflistung übergeben. Siehe das Beispiel für Details.</para>
+      <para>
+        <b>IconCriteria</b> -Auflistung wird zurückgegeben, aus der <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Objekt. Sie können jede <b>IconCriterion</b> -Objekts in der Auflistung zugreifen, indem Sie einen Index in der Auflistung übergeben. Siehe Beispiel für Details.</para>
       <para></para>
     </remarks>
     <example>
-      <para>Im folgenden Codebeispiel wird erstellt einen Nummernbereich Testergebnisse darstellen und anschließend auf diesem Bereich eine Regel zur bedingten Formatierung von Symbolsätzen angewendet. Der Typ des Symbolsatzes wird aus der Standardsymbole an eine Reihe von fünf-Pfeilsymbol geändert. Schließlich wird auf eine Zahl hartcodiert und den Typ des Schwellenwerts aus Quantil geändert.</para>
+      <para>Im folgenden Codebeispiel wird ein Bereich mit Zahlen dargestellt, die Testergebnisse darstellen. Anschließend wird auf den Bereich eine Regel zur bedingten Formatierung von Symbolsätzen angewendet. Der Typ des Symbolsatzes wird dann von den Standardsymbolen zu einem Symbolsatz mit fünf Pfeilen geändert. Schließlich wird der Typ des Schwellenwerts von Perzentil in eine hartcodierte Zahl geändert.</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF() 
 
 
@@ -26729,7 +26730,7 @@ End Sub&lt;/span&gt;</code>
         <summary>Gibt einen Wert vom Typ <b>Long</b> zurück, der die Anzahl der Kriterien für eine Regel zur bedingten Formatierung von Symbolsätzen angibt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die Anzahl der Kriterien entspricht der Anzahl von Schwellenwerten, die für einen Symbolsatz zugewiesen.</para>
+          <para>Die Anzahl der Kriterien entspricht der Anzahl von Schwellenwerten, die für einen Symbolsatz zugewiesen wurden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -26796,7 +26797,7 @@ End Sub&lt;/span&gt;</code>
         <summary>Gibt einen Single- <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> Objekt aus der <b>IconCriteria</b> -Auflistung. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der Wert von der <paramref name="Index" /> Parameter darf nicht größer als die Anzahl der Kriterien, die ein Symbol für bedingte Formatierung festgelegt sein. Die Kriterien entsprechen die Schwellenwerte für einen Symbolsatz zugewiesen wurden. Die Anzahl von Schwellenwerten verwenden, um die <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" /> -Eigenschaft.</para>
+          <para>Der Wert der <paramref name="Index" /> Parameter darf nicht größer als die Anzahl der Kriterien, die ein Symbol für bedingte Formatierung festgelegt sein. Die Kriterien entsprechen die Schwellenwerte für einen Symbolsatz zugewiesen wurden. Die Anzahl von Schwellenwerten verwenden, um die <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>

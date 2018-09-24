@@ -1,10 +1,10 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Excel.Dialog">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="683b59b8e165135797b6775618abd9a9ace43d44" />
+    <Meta Name="ms.openlocfilehash" Value="274e93847efbe2121de825e75c0a66505c3899d3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582866" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Dialog" />
@@ -33,8 +33,10 @@
     <remarks>
       <para>
         <b>Dialog</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> Auflistung. Die <b>Dialogs-</b> Auflistung enthält alle integrierten Dialogfeldern in Microsoft Excel. Sie können nicht erstellen ein neuen integrierten Dialogfelds oder fügen Sie der Auflistung hinzu. Die nur sinnvoll, der ein <b>Dialog</b> -Objekt können Sie vornehmen wird zusammen mit der <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um das entsprechende Dialogfeld anzuzeigen.</para>
-      <para>Verwendung <b>Dialogs</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine integrierte Konstante, identifiziert das Dialogfeld, um ein einzelnes <b>Dialog</b> -Objekt zurückzugeben.</para> Microsoft Excel 
-      <para>enthält integrierte Konstanten für viele der integrierten Dialogfelder. Alle Konstanten werden aus dem Präfix "xlDialog" und den Namen des Dialogfelds englischen gebildet. Beispielsweise den Namen übernehmen Dialogfeldkonstante ist <b>XlDialogApplyNames</b>, und die Datei suchen Dialogfeldkonstante lautet <b>XlDialogFindFile</b>. Diese Konstanten sind Mitglieder der <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> Enumerationstyp.</para><para></para></remarks>
+      <para>Verwenden des <b>Dialogs</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine integrierte Konstante, identifiziert das Dialogfeld, um ein einzelnes <b>Dialog</b> -Objekt zurückzugeben.</para>
+      <para>Microsoft Excel enthält integrierte Konstanten für viele der integrierten Dialogfelder an. Alle Konstanten werden aus dem Präfix "xlDialog" und den Namen des Dialogfelds englischen gebildet. Beispielsweise den Namen übernehmen Dialogfeldkonstante ist <b>XlDialogApplyNames</b>, und die Datei suchen Dialogfeldkonstante lautet <b>XlDialogFindFile</b>. Diese Konstanten sind Mitglieder der <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> Typ aufgelistet.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -91,8 +93,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -209,9 +211,9 @@
         <summary>Zeigt das integrierte Dialogfeld an und erwartet Dateneingaben vom Benutzer Daten eingeben.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Für integrierte Dialogfelder, diese Methode gibt <b>True</b> zurück, wenn der Benutzer auf OK klickt, oder es gibt <b>False</b> zurück, wenn der Benutzer auf Abbrechen klickt.</para>
-          <para>Sie ein einzelnes Dialogfeld verwenden können, um viele Eigenschaften gleichzeitig zu ändern. Sie können beispielsweise das Dialogfeld Zellen formatieren verwenden, so ändern Sie die Eigenschaften des der <see cref="T:Microsoft.Office.Interop.Excel.Font" /> -Objekt.</para>
-          <para>Für einige integrierte Dialogfelder (das Dialogfeld öffnen, beispielsweise) können Sie die Anfangswerte mit arg1, arg2,..., arg30 festlegen. Weitere Informationen über integrierte Dialogfelder finden Sie unter der <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> Auflistung.</para>
+          <para>Für integrierte Dialogfelder, gibt diese Methode <b>True</b> zurück, wenn der Benutzer auf OK klickt, oder es gibt <b>False</b> zurück, wenn der Benutzer auf Abbrechen klickt.</para>
+          <para>Ein einzelnes Dialogfeld können Sie um viele Eigenschaften gleichzeitig zu ändern. Sie können beispielsweise das Dialogfeld Zellen formatieren verwenden, so ändern Sie die Eigenschaften des der <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt.</para>
+          <para>Bei einigen integrierten Dialogfeldern (das Dialogfeld öffnen, beispielsweise) können Sie die Anfangswerte mit arg1, arg2,..., arg30 festlegen. Weitere Informationen über integrierte Dialogfelder finden Sie unter der <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> Auflistung.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Tab" FullName="Microsoft.Office.Interop.Excel.Tab">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f556887ccfbbf416d3399219f2df31285e1376b3" />
+    <Meta Name="ms.openlocfilehash" Value="71eb536a457812dc4d61b8e60fbc32743a3a5406" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585820" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Tab" />
@@ -156,8 +156,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -221,7 +221,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" />
         </value>
         <remarks>
-          <para>Versucht, auf eine Designfarbe für ein Objekt, dessen Farbe nicht aktuell entsprechendes mit Design versehenes ist einen Laufzeitfehler ungültige Anforderung führt zuzugreifen.</para>
+          <para>Wenn Sie versuchen, auf eine Designfarbe für ein Objekt zuzugreifen, dessen Farbe aktuell nicht durch ein Design festgelegt ist, wird der Laufzeitfehler "Ungültige Anforderung" ausgegeben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -258,7 +258,7 @@
         </value>
         <remarks>
           <para>Sie können Geben Sie eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für die <see cref="P:Microsoft.Office.Interop.Excel.Tab.TintAndShade" /> Eigenschaft. 0 (null) ist neutral.</para>
-          <para>Versuch, diese Eigenschaft auf einen Wert kleiner als 1 oder größer als 1 führt einen Laufzeitfehler festgelegt: "der angegebene Wert liegt außerhalb des Bereichs".  Diese Eigenschaft funktioniert für Designfarben und designfremde Farben.</para>
+          <para>Wenn Sie versuchen, diese Eigenschaft auf einen Wert unter -1 oder über 1 festzulegen, wird der Laufzeitfehler "Der angegebene Wert ist außerhalb des zulässigen Bereichs" ausgegeben. Diese Eigenschaft gilt sowohl für Designfarben als auch für designfremde Farben.</para>
           <para></para>
         </remarks>
       </Docs>

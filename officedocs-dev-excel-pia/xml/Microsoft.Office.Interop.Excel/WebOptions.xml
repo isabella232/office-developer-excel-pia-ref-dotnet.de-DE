@@ -1,10 +1,10 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1bb92fb327f4b105c6f89b685f7776df03148a7f" />
+    <Meta Name="ms.openlocfilehash" Value="daab179c046c8ae3d7a70032ace37b8eb5d45e81" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579835" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WebOptions" />
@@ -28,7 +28,7 @@
   <Docs>
     <summary>Enthält Attribute auf Arbeitsmappenebene, die von Microsoft Excel verwendet werden, wenn Sie ein Dokument als Webseite speichern oder eine Webseite öffnen.</summary>
     <remarks>
-      <para>Sie können zurück, oder legen Sie Attribute auf Anwendungsebene (global) oder auf der Arbeitsmappenebene. (Beachten Sie, dass Attributwerte sich von einer Arbeitsmappe zur anderen unterscheiden können, hängt vom Attributwert zum Zeitpunkt die Arbeitsmappe gespeichert wurde). Attribute auf Arbeitsmappenebene Einstellungen haben Vorrang vor Einstellungen auf Anwendungsebene-Attribut. Attribute auf Anwendungsebene befinden sich der <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> -Objekt.</para>
+      <para>Sie können zurück, oder legen Sie Attribute auf Anwendungsebene (global) oder auf der Arbeitsmappenebene. (Beachten Sie, dass Attributwerte sich von einer Arbeitsmappe zur anderen unterscheiden können, hängt vom Attributwert zum Zeitpunkt die Arbeitsmappe gespeichert wurde). Attribute auf Arbeitsmappenebene Einstellungen haben Vorrang vor Einstellungen auf Anwendungsebene-Attribut. Attribute auf Anwendungsebene befinden sich der <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> Objekt.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> -Eigenschaft auf das <b>WebOptions</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
@@ -64,7 +64,7 @@
           <b>True,</b> wenn PNG (Portable Network Graphics) als Bildformat, beim Speichern von Dokumenten als Webseite zulässig ist. <b>False,</b> wenn PNG als Ausgabeformat nicht zulässig ist. Der Standardwert lautet <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn Sie Bilder im PNG-Format im Gegensatz zu einem beliebigen anderen Dateiformat speichern, können Sie die Bildqualität erhöhen oder verringern Sie die Größe der betreffenden Bilddateien und verringern somit Uhrzeit des Downloads nehmen an, die Sie verwenden Inhaltsadressierung für Webbrowser PNG-Format unterstützen.</para>
+          <para>Beim Speichern von Bildern im PNG-Format kann im Gegensatz zu anderen Dateiformaten die Bildqualität verbessert oder die Größe der entsprechenden Bilddateien reduziert und somit die Downloadzeit verringert werden, sofern die Zielwebbrowser das PNG-Format unterstützen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -123,8 +123,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -159,8 +159,8 @@
           <b>True,</b> Wenn die erforderlichen Microsoft Office Web Components heruntergeladen werden, bei der Anzeige des gespeicherten Dokuments in einem Webbrowser, aber nur wenn die Komponenten noch nicht installiert. <b>False,</b> Wenn die Komponenten nicht heruntergeladen werden. Der Standardwert lautet <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sie können festlegen, die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> -Eigenschaft auf einen zentralen URL (im Intranet oder Web) oder Pfad (lokale oder im Netzwerk) an einen Speicherort aus der autorisierte Benutzer beim Anzeigen des gespeicherten Dokuments Komponenten herunterladen können. Der Pfad muss gültig sein muss zeigen Sie auf einen Speicherort, der die erforderlichen Komponenten enthält, und der Benutzer muss eine gültige Microsoft Office-Lizenz verfügen.</para>
-          <para>Office Web-Komponenten hinzufügen Interaktivität für Dokumente, die Sie als Webseiten speichern. Wenn Sie eine Webseite in einem Browser auf einem Computer, für die nicht die Komponenten installiert ist anzeigen, werden die interaktiven Teile der Seite statisch sein.</para>
+          <para>Sie können festlegen, die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> -Eigenschaft auf einen zentralen URL (im Intranet oder Web) oder Pfad (lokale oder im Netzwerk) an einen Speicherort aus der autorisierte Benutzer beim Anzeigen des gespeicherten Dokuments Komponenten herunterladen können. Der Pfad muss gültig sein und muss zeigen Sie auf einen Speicherort, der die erforderlichen Komponenten enthält, und der Benutzer muss eine gültige Microsoft Office-Lizenz verfügen.</para>
+          <para>Office Web Components fügen Interaktivität zu Dokumenten hinzu, die Sie als Webseiten speichern. Wenn Sie eine Webseite in einem Browser auf einem Computer anzeigen, auf dem die Komponenten nicht installiert sind, verhalten sich die interaktiven Teile der Seite statisch.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -194,7 +194,7 @@
         <summary>Zurückgeben oder Festlegen des Dokuments Codierung (Codepage oder Zeichensatz) vom Webbrowser verwendet werden soll, wenn Sie das gespeicherte Dokument anzeigen. Der Standardwert ist die Codepage des Systems.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sie eine der Konstanten, die das Suffix <b>Automatische Erkennung</b>nicht verwenden können. Diese Konstanten werden verwendet, indem die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> -Methode.</para>
+          <para>Sie können keinen mit das Suffix <b>Automatische Erkennung</b>verwendet werden. Diese Konstanten werden verwendet, indem die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -226,7 +226,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Neu erstellte Dokumente verwenden das Suffix zurückgegeben wird durch die <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> Objekt. Der Wert der <b>FolderSuffix</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> Objekt kann aus dem des <b>DefaultWebOptions</b> -Objekts unterscheiden, wenn das Dokument zuvor in einer anderen Sprachversion von Microsoft Excel bearbeitet wurde. Sie können die <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> -Methode, um das Suffix in die Sprache ändern, die aktuell in Microsoft Office.</para>
-          <para>Wird standardmäßig der Name des unterstützenden Ordners ist der Name der Webseite plus einem Unterstrich (_), einem Punkt (.), oder ein Bindestrich (-) und das Wort "Files" (in der Sprache der Version von Excel in dem die Datei als Webseite gespeichert wurde). Nehmen wir beispielsweise an, dass Sie die Sprache Niederländisch Version von Excel verwenden, um eine Datei namens "Page1" als Webseite speichern. Der Standardname des unterstützenden Ordners ist Page1_bestanden.</para>
+          <para>Standardmäßig besteht der Name des Unterstützungsordners aus dem Namen der Webseite und einem Unterstrich (_), einem Punkt (.) oder einem Bindestrich (-) sowie dem Wort "files" (das in der Sprachversion von Excel angezeigt wird, in der die Datei als Webseite gespeichert wurde). Wenn Sie beispielsweise die niederländische Sprachversion von Excel verwenden, um eine Datei Page1 als Webseite zu speichern, lautet der Standardname des Unterstützungsordners Page1_bestanden.</para>
           <para>Die folgende Tabelle listet alle Sprachversionen von Office und dem jeweiligen <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> Eigenschaft und das Ordnersuffix. Für Sprachen, die in der Tabelle nicht aufgeführt sind, wird das Suffix "Files" verwendet.</para>
           <list type="table">
             <item>
@@ -240,7 +240,7 @@
               <description>_fitxategiak</description>
             </item>
             <item>
-              <term>Portugiesisch (Brasilien)</term>
+              <term>Brasilianisch</term>
               <description>1046</description>
               <description>_arquivos</description>
             </item>
@@ -255,12 +255,12 @@
               <description>_fitxers</description>
             </item>
             <item>
-              <term>Chinesisch - vereinfacht</term>
+              <term>Chinesisch - Vereinfacht</term>
               <description>2052</description>
               <description>Files</description>
             </item>
             <item>
-              <term>Chinesisch - traditionell</term>
+              <term>Chinesisch - Traditionell</term>
               <description>1028</description>
               <description>Files</description>
             </item>
@@ -275,17 +275,17 @@
               <description>_soubory</description>
             </item>
             <item>
-              <term>Dänische</term>
+              <term>Dänisch</term>
               <description>1030</description>
-              <description>-File-Server</description>
+              <description>-filer</description>
             </item>
             <item>
-              <term>Niederländische</term>
+              <term>Niederländisch</term>
               <description>1043</description>
               <description>_bestanden</description>
             </item>
             <item>
-              <term>Englische</term>
+              <term>Englisch</term>
               <description>1033</description>
               <description>_files</description>
             </item>
@@ -307,7 +307,7 @@
             <item>
               <term>Deutsch</term>
               <description>1031</description>
-              <description>Erfahren Sie mehr über</description>
+              <description>-Dateien</description>
             </item>
             <item>
               <term>Griechisch</term>
@@ -327,10 +327,10 @@
             <item>
               <term>Italienisch</term>
               <description>1040</description>
-              <description>-Datei</description>
+              <description>-file</description>
             </item>
             <item>
-              <term>Japanische</term>
+              <term>Japanisch</term>
               <description>1041</description>
               <description>Files</description>
             </item>
@@ -352,7 +352,7 @@
             <item>
               <term>Norwegisch</term>
               <description>1044</description>
-              <description>-File-Server</description>
+              <description>-filer</description>
             </item>
             <item>
               <term>Polnisch</term>
@@ -370,7 +370,7 @@
               <description>Files</description>
             </item>
             <item>
-              <term>Russische</term>
+              <term>Russisch</term>
               <description>1049</description>
               <description>Files</description>
             </item>
@@ -385,7 +385,7 @@
               <description>_fajlovi</description>
             </item>
             <item>
-              <term>Slowakische</term>
+              <term>Slowakisch</term>
               <description>1051</description>
               <description>Files</description>
             </item>
@@ -402,10 +402,10 @@
             <item>
               <term>Schwedisch</term>
               <description>1053</description>
-              <description>-File-Server</description>
+              <description>-filer</description>
             </item>
             <item>
-              <term>Thailändische</term>
+              <term>Thailändisch</term>
               <description>1054</description>
               <description>Files</description>
             </item>
@@ -458,7 +458,7 @@
         <summary>Zurückgeben oder Festlegen der zentralen URL (im Intranet oder Web) oder Pfad (lokale oder Netzwerk) zu dem Speicherort, von dem autorisierte Benutzer beim Anzeigen des gespeicherten Dokuments Microsoft Office Web Components herunterladen können. Der Standardwert ist der lokale oder Netzwerk-Installationspfad für Microsoft Office.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Office Web Components werden automatisch mit der angegebenen Webseite heruntergeladen, wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> -Eigenschaft auf <b>True</b>festgelegt ist, die Komponenten nicht bereits installiert sind, der Pfad ist gültig und verweist auf einen Speicherort, der die erforderlichen Komponenten enthält und der Benutzer verfügt über eine gültige Microsoft Office-Lizenz.</para>
+          <para>Office Web Components werden automatisch mit der angegebenen Webseite heruntergeladen, wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> -Eigenschaft auf <b>True</b>festgelegt ist, die Komponenten nicht bereits installiert sind, der Pfad ist gültig und verweist auf einen Speicherort, der die erforderlichen Komponenten enthält und die Benutzer verfügt über eine gültige Microsoft Office-Lizenz.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -494,8 +494,8 @@
         <value>To be added.</value>
         <remarks>
           <para>Der neue Ordner wird erstellt, in dem Ordner, in dem Sie die Webseite gespeichert haben, und nach dem Dokument benannt wird. Wenn langen Dateinamen verwendet werden, wird der Name des Ordners ein Suffix hinzugefügt. Die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> -Eigenschaft gibt das Ordnersuffix für die Unterstützung von Sprachen ausgewählt oder installiert oder das Standardsuffix Ordner zurück.</para>
-          <para>, Wenn Sie ein Dokument, zuvor mit der <b>OrganizeInFolder</b> -Eigenschaft auf einen anderen Wert festgelegt wurde speichern, die Hilfsdateien in oder aus dem Ordner Microsoft Excel automatisch verschiebt.</para>
-          <para>, Wenn Sie keine langen Dateinamen verwenden (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> -Eigenschaft auf <b>False</b>festgelegt ist), speichert Microsoft Excel alle unterstützenden Dateien in einem separaten Ordner. Die Dateien können nicht im gleichen Ordner wie die Webseite gespeichert werden.</para>
+          <para>Wenn Sie ein Dokument speichern, das vorher gespeichert wurde und dort die <b>OrganizeInFolder</b>OrganizeInFolder-Eigenschaft auf einen anderen Wert eingestellt war, verschiebt Microsoft Excel die Unterstützungsdateien automatisch in oder aus dem Ordner.</para>
+          <para>Wenn Sie keine langen Dateinamen verwenden (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> -Eigenschaft auf <b>False</b>festgelegt ist), speichert Microsoft Excel alle unterstützenden Dateien in einem separaten Ordner. Die Dateien können nicht im gleichen Ordner wie die Webseite gespeichert werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -557,7 +557,7 @@
         <summary>Zurückgeben oder festlegen die Dichte (Pixel pro Zoll) von Grafiken und Tabellenzellen auf einer Webseite. Bereich von Einstellungen liegt normalerweise zwischen 19 und 480 und gemeinsame Einstellungen für beliebte Screen Größen sind 72, 96 und 120. Die Standardeinstellung ist 96.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Bestimmt diese Eigenschaft die Größe von Bildern und Zellen auf der angegebenen Webseite relativ zu der Größe des Texts, wenn Sie das gespeicherte Dokument in einem Webbrowser anzeigen. Die physischen Dimensionen der das resultierende Bild oder die Zelle sind das Ergebnis der ursprünglichen Dimensionen (in Zoll) und der Anzahl der Pixel pro Zoll.</para>
+          <para>Diese Eigenschaft bestimmt die Größe der Bilder und Zellen auf der angegebenen Webseite relativ zu der Textgröße, wenn das gespeicherte Dokument in einem Webbrowser angezeigt wird. Die physikalischen Abmessungen des resultierenden Bildes oder der resultierenden Zelle ergeben sich aus den ursprünglichen Abmessungen (in Zoll) multipliziert mit der Anzahl der Pixel pro Zoll.</para>
           <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> Eigenschaft, um die optimale Bildschirmgröße für die Zielwebbrowser festlegen.</para>
           <para></para>
         </remarks>
@@ -593,8 +593,8 @@
           <b>True,</b> Wenn für die Schriftart, die Formatierung beim Anzeigen eines gespeicherten Dokuments in einem Webbrowser cascading Stylesheets (CSS) verwendet werden. <b>False,</b> wenn HTML &lt;Schriftart&gt; Tags und cascading Stylesheets verwendet werden. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel erstellt eine CSS-Datei und speichert sie in den angegebenen Ordner oder im gleichen Ordner wie die Webseite, je nach Wert der <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> -Eigenschaft.</para>
-          <para>Sollten Sie diese Eigenschaft auf <b>true fest,</b> Wenn Ihr Webbrowser cascading Stylesheets, unterstützt, da Sie dies wird eine genauere Kontrolle über Layout und Formatierung auf Ihrer Webseite und mehr wie Ihrem Dokument darstellen (wie in Microsoft Excel angezeigt) festlegen.</para>
+          <para>Microsoft Excel erstellt eine CSS-Datei und speichert sie in den angegebenen Ordner oder im gleichen Ordner wie die Webseite, je nach Wert der <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> Eigenschaft.</para>
+          <para>Sie sollten diese Eigenschaft auf <b>True</b>True festlegen, falls Ihr Webbrowser Cascading Style Sheets unterstützt, da Sie dadurch eine präzisere Kontrolle über Layout und Formatierung auf der Webseite erreichen und das Aussehen mehr dem Dokument entspricht (wie es in Microsoft Excel angezeigt wird).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -629,8 +629,8 @@
           <b>True,</b> Wenn Bilddateien aus Zeichnungsobjekten beim Speichern eines Dokuments als Webseite nicht generiert werden. <b>False,</b> Wenn Bilder generiert werden. Der Standardwert lautet <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sie können die Dateigrößen reduzieren, indem keine Bilder für Zeichnungsobjekte, wenn Ihr Webbrowser Vector Markup Language (VML) unterstützt generieren. Sie sollten die <b>RelyOnVML</b> -Eigenschaft auf <b>True</b> festgelegt, wenn Sie einen Browser verwenden möchten, der VML unterstützt. Für Browser, die nicht VML unterstützen, wird das Bild nicht angezeigt, wenn Sie eine Webseite gespeichert mit dieser Eigenschaft aktiviert anzeigen.</para>
-          <para>Angenommen, Sie sollten nicht generieren Bilder, wenn Ihre Webseite Bilddateien verwendet, die Sie zuvor erstellt haben und der Speicherort, in dem Sie das Dokument speichern, von Ihren endgültigen Speicherort der Seite auf dem Webserver unterscheidet.</para>
+          <para>Sie können die Dateigrößen reduzieren, indem keine Bilder für Zeichnungsobjekte, wenn Ihr Webbrowser Vector Markup Language (VML) unterstützt generieren. Sie sollten die <b>RelyOnVML</b> -Eigenschaft auf <b>True</b> festgelegt, wenn Sie einen Browser verwenden möchten, der VML unterstützt. Für Browsern, die VML nicht unterstützen, wird das Bild nicht angezeigt, bei der Anzeige auf einer Webseite gespeichert mit dieser Eigenschaft aktiviert.</para>
+          <para>Sie sollten beispielsweise keine Bilder erstellen, wenn die Webseite Bilddateien verwendet, die früher erstellt wurden, und wenn der Speicherort, an dem das Dokument gespeichert wird, sich von dem endgültigen Speicherort der Seite auf dem Webserver unterscheidet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -721,7 +721,7 @@
         <summary>Legt das Ordnersuffix für das angegebene Dokument auf das Standardsuffix für die ausgewählte oder installierte Sprachunterstützung fest.</summary>
         <remarks>
           <para>Microsoft Excel verwendet das Ordnersuffix, wenn Sie ein Dokument als Webseite speichern, langen Dateinamen verwendet, und wählen Sie zum Speichern von Hilfsdateien in einem separaten Ordner (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> und <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> Eigenschaften auf <b>True</b>festgelegt sind).</para>
-          <para>Wird das Suffix im Namen Ordners nach den Namen des Dokuments angezeigt. Wenn das Dokument "Mappe1" aufgerufen wird und die Sprache Englisch ist, lautet der Ordnername Book1_files. Die verfügbaren Ordnersuffixe der <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> Thema-Eigenschaft.</para>
+          <para>Das Suffix wird im Ordnernamen nach dem Namen des Dokuments angezeigt. Wenn das Dokument "Mappe1" aufgerufen wird und die Sprache Englisch ist, lautet der Ordnername Book1_files. Die verfügbaren Ordnersuffixe der <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> Thema-Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -756,7 +756,7 @@
           <b>True,</b> Wenn langen Dateinamen verwendet werden, wenn Sie das Dokument als Webseite speichern. <b>False,</b> Wenn keine langen Dateinamen verwendet werden und das DOS-Dateinamenformat (8.3) wird verwendet. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Wenn Sie keine langen Dateinamen verwenden und das Dokument über Unterstützungsdateien verfügt, speichert Microsoft Excel diese Dateien automatisch in einem separaten Ordner. Verwenden Sie andernfalls die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> Eigenschaft, um zu bestimmen, ob Hilfsdateien in einem separaten Ordner gespeichert werden.</para>
+          <para>Wenn Sie keine langen Dateinamen verwenden, und das Dokument über Unterstützungsdateien verfügt, speichert Microsoft Excel diese Dateien in einem separaten Ordner automatisch aus. Verwenden Sie andernfalls die <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> Eigenschaft, um zu bestimmen, ob Hilfsdateien in einem separaten Ordner gespeichert sind.</para>
           <para></para>
         </remarks>
       </Docs>

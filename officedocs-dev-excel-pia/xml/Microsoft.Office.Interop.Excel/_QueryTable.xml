@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587843" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _QueryTable" />
@@ -182,7 +182,7 @@
         <summary>Zurückgeben oder festlegen die Befehlszeichenfolge für die angegebene Datenquelle. Lese-Schreib- <b>Objekt</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Für OLE DB-Quellen der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandType" /> -Eigenschaft den Wert der <b>CommandText</b> -Eigenschaft beschreibt.</para>
+          <para>Bei OLE DB-Datenquellen die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandType" /> -Eigenschaft beschreibt den Wert der <b>CommandText</b> -Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -217,7 +217,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Sie können der <b>CommandType</b> -Eigenschaft nur, wenn den Wert der <b>QueryType</b> -Eigenschaft der Abfragetabelle festlegen oder <b>PivotTable-Cache xlOLEDBQuery</b>lautet.</para>
-          <para>Der Wert der <b>CommandType</b> -Eigenschaft <b>XlCmdCube</b>lautet, können Sie diesen Wert nicht ändern, wenn ein Abfragetabelle zugeordneten PivotTable-Bericht vorhanden ist.</para>
+          <para>Wenn der Wert der <b>CommandType</b> -Eigenschaft <b>XlCmdCube</b>lautet, können nicht Sie diesen Wert ändern, wenn ein Abfragetabelle zugeordneten PivotTable-Bericht vorhanden ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -251,11 +251,11 @@
         <summary>Zurückgeben oder festlegen eine Zeichenfolge, die Verbindungsinformationen für die Abfragetabelle enthält. Lese-Schreib- <b>Objekt</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Connection</b> -Eigenschaft kann eine der folgenden sein: Quellcode-OLE DB-Einstellungen, mit denen Microsoft Excel die Verbindung mit einer OLE DB-Datenquelle, ODBC-Einstellungen, mit denen Microsoft Excel mit einer ODBC-Datenquelle verbunden, eine URL, die Microsoft Excel zum Herstellen einer Verbindung ermöglicht eine Web-Daten Quelle, den Pfad und Dateiname einer Textdatei oder den Pfad und Dateiname einer Datei, die eine Datenbank oder Webabfrage angibt.</para>
-          <para>Durch Festlegen der <b>Connection</b> -Eigenschaft nicht sofort die Verbindung mit der Datenquelle initiiert. Sie müssen verwenden die <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> -Methode zum Herstellen der Verbindung und die Daten abzurufen.</para>
-          <para>Offline-Cubedatei legen fest, die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> -Eigenschaft auf <b>true fest,</b> und die Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> Eigenschaft anstelle der <b>Connection</b> -Eigenschaft.</para>
+          <para>Die <b>Connection</b> -Eigenschaft kann eine der folgenden sein: Quellcode-OLE DB-Einstellungen, mit denen Microsoft Excel die Verbindung mit einer OLE DB-Datenquelle, ODBC-Einstellungen, mit denen Microsoft Excel mit einer ODBC-Datenquelle verbunden, eine URL, die Microsoft Excel zum Herstellen einer Verbindung ermöglicht eine Web-Datenquelle, der Pfad und Dateiname des eine Textdatei oder der Pfad und Dateiname einer Datei, die eine Datenbank oder Webabfrage angibt.</para>
+          <para>Festlegen der <b>Connection</b> -Eigenschaft initiiert nicht sofort die Verbindung mit der Datenquelle. Sie müssen verwenden die <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> -Methode zum Herstellen der Verbindung und die Daten abzurufen.</para>
+          <para>Wenn eine Offlinecubedatei verwenden, legen die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> -Eigenschaft auf <b>true fest,</b> und die Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> Eigenschaft anstelle der <b>Connection</b> -Eigenschaft.</para>
           <para>Weitere Informationen über die Syntax der Verbindungszeichenfolge finden Sie unter der <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> Auflistung und die <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> Auflistung.</para>
-          <para>Alternativ können Sie auch auf eine Datenquelle zugreifen, direkt mithilfe von Microsoft ActiveX Data Objects (ADO).</para>
+          <para>Alternativ können Sie auswählen, auf eine Datenquelle zugreifen, direkt mithilfe von Microsoft ActiveX Data Objects (ADO).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -286,7 +286,7 @@
         <summary>Gibt eine Konstante in der <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> -Enumeration, die die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -373,8 +373,8 @@
         <summary>Zurückgeben oder Festlegen der Webseite uniform Resource Locator (URL) für eine Webabfrage. Lese-Schreib- <b>Objekt</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>EditWebPage</b> -Eigenschaft gibt <b>Null</b> zurück, wenn nicht festlegen. Die <b>EditWebPage</b> -Eigenschaft ist nur sinnvoll, wenn der Abfragetyp <b>XlWebQuery</b> oder <b>XlOLEDBQuery</b>ist.</para>
-          <para>Wenn <b>EditWebPage</b> nicht null ist, ignorieren Sie die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> -Eigenschaft für das aktualisieren. Dementsprechend eine XML-Abfrage und die <b>WebTable</b> -Eigenschaft bezieht sich auf die Tabelle in der ursprünglichen Webseite und sollten nur zum Bearbeiten verwendet werden, um das Dialogfeld Webabfrage vorab auszufüllen.</para>
+          <para>Die <b>EditWebPage</b> -Eigenschaft gibt <b>Null</b> zurück, wenn nicht festlegen. Die <b>EditWebPage</b> -Eigenschaft ist nur Bedeutung, wenn der Abfragetyp <b>XlWebQuery</b> oder <b>XlOLEDBQuery</b>ist.</para>
+          <para>Wenn <b>EditWebPage</b> nicht null ist, ignorieren Sie die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> -Eigenschaft für das aktualisieren. Daher wird eine XML-Abfrage und die <b>WebTable</b> -Eigenschaft bezieht sich auf die Tabelle in der ursprünglichen Webseite und sollten nur zum Bearbeiten verwendet werden, um das Dialogfeld Webabfrage vorab auszufüllen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -441,7 +441,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshOnFileOpen" /> -Eigenschaft wird ignoriert, wenn die <b>EnableRefresh</b> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
-          <para>Für OLAP-Datenquellen durch Festlegen dieser Eigenschaft auf <b>False</b> Aktualisierungen deaktiviert.</para>
+          <para>Bei OLAP-Datenquellen werden Aktualisierungen durch Festlegen dieser Eigenschaft auf <b>False</b> deaktiviert.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -633,7 +633,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Sie können festlegen, die <b>MaintainConnection</b> -Eigenschaft nur, wenn die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft der Abfragetabelle oder des PivotTable-Caches auf <b>XlOLEDBQuery</b>festgelegt ist.</para>
-          <para>, Wenn Sie häufig verwendete Abfragen an einen Server erwarten, möglicherweise durch Festlegen dieser Eigenschaft auf <b>true fest,</b> Leistung verbessern, da Zeit wiederhergestellt werden. Festlegen der Eigenschaft auf <b>False</b> bewirkt, dass eine offene Verbindung geschlossen wird.</para>
+          <para>Wenn häufige Abfragen an einen Server erfolgen, kann die Festlegung dieser Eigenschaft auf <b>True</b>True unter Umständen die Leistung steigern, indem die Zeit für den erneuten Verbindungsaufbau reduziert wird. Wird die Eigenschaft auf <b>False</b>False eingestellt, wird eine geöffnete Verbindung geschlossen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -667,7 +667,7 @@
         <summary>Gibt den Namen des Objekts zurück oder legt ihn fest. <b>String</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die folgende Tabelle zeigt Beispielwerte der <b>Name</b> -Eigenschaft und die verwandten Eigenschaften eine Datenquelle mit dem eindeutigen Namen "[Europa]. [Frankreich]. [Paris] "und eine nicht-OLAP-Datenquelle mit dem Element"Paris"nennen.</para>
+          <para>Die folgende Tabelle zeigt Beispielwerte der <b>Name</b> -Eigenschaft und die verwandten Eigenschaften eine Datenquelle mit dem eindeutigen Namen "[Europa]. [Frankreich]. [Paris] ", und nennen Sie eine nicht-OLAP-Datenquelle mit dem Element"Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -678,37 +678,37 @@
             </item>
             <item>
               <term>
-                <b>Namen</b>
+                <b>Name</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>(Identisch mit SQL-Eigenschaftenwert, schreibgeschützt)</description>
             </item>
             <item>
               <term>
                 <b>Wert</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Beim angeben als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
+          <para>Beim Angeben von als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <term>Ausdruck. PivotItems ("[Europa]. [ Frankreich]. [Paris] ")</term>
               <description>Expression.PivotItems("Paris")</description>
             </item>
           </list>
-          <para>bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> -Eigenschaft so verweisen Sie auf ein bestimmtes Element einer Auflistung, können Sie den Textindexnamen wie in der folgenden Tabelle gezeigt verwenden.</para>
+          <para>Bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> -Eigenschaft so verweisen Sie auf ein bestimmtes Element einer Auflistung, können Sie den Textindexnamen wie in der folgenden Tabelle gezeigt verwenden.</para>
           <list type="table">
             <item>
-              <term>[Europa]. [ Frankreich]. [Paris]</term>
+              <term>[Europa]. [Frankreich]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
@@ -801,8 +801,8 @@
         <summary>Gibt die Zeichenfolge zurück, die mit der Versandmethode zur Dateneingabe in einen Web-Server verwendet wird, um Daten aus einer Webabfrage zurückzugeben, oder legt die Zeichenfolge fest. <b>String</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Teile des Inhalts in diesem Thema möglicherweise nicht in der treffen für bestimmte Sprachen.</para>
-          <para>Microsoft Excel enthält Webabfragen als Beispiele, die Sie ändern können, indem Sie den HTML-Code mithilfe von WordPad oder einem anderen Texteditor ändern. Diese Beispiele finden Sie im Ordner Abfragen, auf dem Microsoft Office installiert.</para>
+          <para>Teile des Inhalts in diesem Thema treffen für bestimmte Sprachen möglicherweise nicht.</para>
+          <para>Microsoft Excel enthält Webabfragen als Beispiele, die Sie modifizieren können, indem Sie den HTML-Code mit WordPad oder einem anderen Texteditor ändern. Die Beispiele finden Sie in dem Ordner Queries, an der Stelle, an der Sie Microsoft Office installiert haben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -837,8 +837,8 @@
           <b>True</b>, wenn Sortier-, Filter- und Layoutinformationen einer Spalte erhalten bleiben, wenn eine Abfragetabelle aktualisiert wird. Der Standardwert ist <b>False </b><b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft wirkt sich nur, wenn die Abfragetabelle eine datenbankverbindung verwendet wird.</para>
-          <para>Können Sie diese Eigenschaft auf <b>False</b> festlegen, um die Kompatibilität mit früheren Versionen von Microsoft Excel.</para>
+          <para>Diese Eigenschaft hat nur dann Auswirkungen, wenn die Abfragetabelle eine Datenbankverbindung verwendet.</para>
+          <para>Sie können diese Eigenschaft aus Gründen der Kompatibilität mit früheren Versionen von Microsoft Excel auf <b>False</b> festlegen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -872,8 +872,10 @@
         <summary>Diese Eigenschaft ist <b>True</b> , wenn eine Formatierung, die auf die ersten fünf Zeilen von Daten ist, um neue Datenzeilen in der Abfragetabelle übernommen werden. Nicht verwendete Zellen werden nicht formatiert. Die Eigenschaft ist <b>False,</b> Wenn das letzte AutoFormat auf die Abfragetabelle angewendet auf neue Datenzeilen angewendet wird. Der Standardwert ist <b>True</b> (es sei denn, die Abfragetabelle in Microsoft Excel 97 erstellt wurde und die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.HasAutoFormat" /> -Eigenschaft ist <b>True</b>, in denen die Groß-/Kleinschreibung <b>PreserveFormatting</b><b>False</b>ist). <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Für Datenbank-Abfragetabellen ist die Standardeinstellung standardformateinstellung <b>XlSimple</b>.</para> Die neue Formatvorlage AutoFormat 
-          <para>gilt für die Abfragetabelle beim Aktualisieren der Tabelle. AutoFormat wird auf <b>None</b> zurückgesetzt, sobald <b>PreserveFormatting</b> auf <b>False</b>festgelegt wird. Daher AutoFormat, die festgelegt wird, bevor <b>PreserveFormatting</b> auf <b>False</b> festgelegt ist und vor der Abfrage aktualisiert wird nicht wirksam, und die sich ergebende Abfragetabelle hat keine Formatierung an</para><para></para></remarks>
+          <para>Bei Datenbank-Abfragetabellen lautet die Standardformateinstellung <b>xlSimple</b>.</para>
+          <para>Die neue AutoFormat-Art wird von der Abfragetabelle beim Aktualisieren der Tabelle übernommen. AutoFormat wird auf <b>None</b> zurückgesetzt, sobald <b>PreserveFormatting</b>PreserveFormatting auf <b>False</b>False festgelegt wird. Daher hat jedes AutoFormat, das vor dem Festlegen von <b>PreserveFormatting</b>PreserveFormatting auf <b>False</b>False und vor dem Aktualisieren der Abfragetabelle eingestellt wurde, keine Auswirkungen, und auf die resultierende Abfragetabelle wird keine Formatierung angewendet.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryType">
@@ -902,7 +904,7 @@
         <summary>Gibt den Typ der Abfrage, die von Microsoft Excel zum Auffüllen der Abfragetabelle oder den PivotTable-Cache verwendet. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Geben Sie die Datenquelle im Präfix für den <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> des Eigenschaftswerts.</para>
+          <para>Sie geben die Datenquelle im Präfix für den <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> Wert der Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -968,13 +970,13 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Die folgenden Anmerkungen gelten für <b>QueryTable</b> -Objekte, die auf den Ergebnissen einer SQL-Abfrage basieren.</para>
-          <para>Der <b>Refresh</b> -Methode wird von Microsoft Excel eine Verbindung mit der Datenquelle des <b>QueryTable</b> -Objekts, führen Sie die SQL-Abfrage und Zurückgeben von Daten auf den Bereich, der auf dem <b>QueryTable</b> -Objekt basiert. Wenn diese Methode aufgerufen wird, nicht das <b>QueryTable</b> -Objekt mit der Datenquelle kommunizieren.</para>
-          <para>Beim Herstellen der Verbindung zur OLE DB- oder ODBC-Datenquelle, Microsoft Excel verwendet die Verbindungszeichenfolge angegeben durch die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> Eigenschaft. Die angegebenen Verbindungszeichenfolge erforderliche Werte fehlen, werden der Benutzer für die erforderlichen Informationen aufgefordert, um Dialogfelder angezeigt. Wenn die <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft <b>False</b>ist, werden keine Dialogfelder angezeigt, und die <b>Refresh</b> -Methode schlägt fehl, mit dem Ausnahmefehler "Ungenügende Informationen zur Verbindung" ab.</para>
-          <para>Nach Microsoft Excel stellt eine erfolgreiche Verbindung, speichert es die vollständige Verbindungszeichenfolge, sodass Ansagen für nachfolgende Aufrufe an die <b>Refresh</b> -Methode während der Bearbeitung Sitzung nicht angezeigt werden. Sie können die vollständige Verbindungszeichenfolge abrufen, indem Sie den Wert der der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> -Eigenschaft.</para>
-          <para>Nachdem die Verbindung hergestellt ist, wird die SQL-Abfrage überprüft. Wenn die Abfrage nicht gültig ist, die <b>Refresh</b> -Methode schlägt fehl, mit der Ausnahme von SQL-Syntaxfehler.</para>
-          <para>, Wenn die Abfrage Parameter, erfordert die <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> Auflistung muss mit Informationen zur Einbindung initialisiert werden, bevor die <b>Refresh</b> -Methode aufgerufen wird. Nicht genügend Parameter gebunden wurden, die <b>Refresh</b> -Methode schlägt fehl, mit der Ausnahme von Parameter-Fehler. Wenn der Parameter auffordern, ihre Werte festgelegt sind, werden an den Benutzer unabhängig von der Einstellung der Dialogfelder angezeigt der <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> Eigenschaft. Wenn der Benutzer ein Parameterdialogfeld schließt, wird die <b>Refresh</b> -Methode wird angehalten und gibt <b>False</b>zurück. Wenn in der <b>Parameters</b> -Auflistung zusätzliche Parameter eingebunden sind, werden diese zusätzlichen Parameter ignoriert.</para>
-          <para>Die <b>Refresh</b> -Methode gibt <b>True</b> zurück, wenn die Abfrage abgeschlossen oder begonnen wird; es gibt <b>False</b> zurück, wenn der Benutzer eine Verbindung abbricht oder ein Parameterdialogfeld.</para>
-          <para>Zu sehen, ob die Anzahl der abgerufenen Zeilen die Anzahl der verfügbaren Zeilen im Arbeitsblatt übersteigt, untersuchen Sie die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> Eigenschaft. Jedes Mal, wenn die <b>Refresh</b> -Methode aufgerufen wird, wird diese Eigenschaft initialisiert.</para>
+          <para>Die <b>Refresh</b> -Methode wird Microsoft Excel eine Verbindung mit der Datenquelle des <b>QueryTable</b> -Objekts, führen Sie die SQL-Abfrage und Zurückgeben von Daten auf den Bereich, der auf dem <b>QueryTable</b> -Objekt basiert. Wenn diese Methode aufgerufen wird, kommuniziert das <b>QueryTable</b> -Objekt nicht mit der Datenquelle.</para>
+          <para>Beim Herstellen der Verbindung zur OLE DB- oder ODBC-Datenquelle, verwendet Microsoft Excel die Verbindungszeichenfolge angegeben durch die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> Eigenschaft. Die angegebenen Verbindungszeichenfolge erforderliche Werte fehlen, werden der Benutzer für die erforderlichen Informationen aufgefordert, um Dialogfelder angezeigt. Wenn die <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft <b>False</b>ist, werden keine Dialogfelder angezeigt, und die <b>Refresh</b> -Methode schlägt fehl, mit dem Ausnahmefehler "Ungenügende Informationen zur Verbindung" ab.</para>
+          <para>Nachdem Microsoft Excel eine erfolgreiche Verbindung herstellt, speichert es die vollständige Verbindungszeichenfolge, sodass Ansagen für nachfolgende Aufrufe an die <b>Refresh</b> -Methode während der Bearbeitung Sitzung nicht angezeigt werden. Sie können die vollständige Verbindungszeichenfolge abrufen, indem Sie den Wert der der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> Eigenschaft.</para>
+          <para>Nachdem die Verbindung hergestellt ist, wird die SQL-Abfrage überprüft. Wenn die Abfrage nicht gültig ist, fällt die <b>Refresh</b> -Methode mit der Syntaxfehler SQL-Ausnahme aus.</para>
+          <para>Wenn die Abfrage Parameter, erfordert die <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> Auflistung muss mit Informationen zur Einbindung initialisiert werden, bevor die <b>Refresh</b> -Methode aufgerufen wird. Nicht genügend Parameter gebunden wurden, die <b>Refresh</b> -Methode schlägt fehl, mit der Ausnahme von Parameter-Fehler. Wenn der Parameter auffordern, ihre Werte festgelegt sind, werden an den Benutzer unabhängig von der Einstellung der Dialogfelder angezeigt der <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> Eigenschaft. Wenn der Benutzer ein Parameterdialogfeld schließt, wird die <b>Refresh</b> -Methode wird angehalten und gibt <b>False</b>zurück. In der <b>Parameters</b> -Auflistung zusätzliche Parameter eingebunden sind, werden diese ignoriert.</para>
+          <para>Die <b>Refresh</b> -Methode gibt <b>true,</b> Wenn die Abfrage abgeschlossen oder begonnen wird; Wenn der Benutzer eine Verbindung abbricht oder ein Parameterdialogfeld zurückgibt <b>"false"</b> .</para>
+          <para>Um herauszufinden, ob die Anzahl der abgerufenen Zeilen die Anzahl der verfügbaren Zeilen auf dem Arbeitsblatt überschritten, untersuchen Sie die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> Eigenschaft. Jedes Mal, wenn die <b>Refresh</b> -Methode aufgerufen wird, wird diese Eigenschaft initialisiert.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1041,7 +1043,7 @@
           <b>True</b>, wenn der PivotTable-Cache oder die Abfragetabelle jedes Mal automatisch aktualisiert wird, wenn die Arbeitsmappe geöffnet wird. Der Standardwert ist <b>False</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Abfrage-Tabellen und PivotTable-Berichte werden nicht automatisch aktualisiert beim Öffnen der Arbeitsmappe mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> -Methode, um die Daten zu aktualisieren, nachdem die Arbeitsmappe geöffnet ist.</para>
+          <para>Abfragen von Tabellen und PivotTable-Berichte werden nicht automatisch aktualisiert, wenn beim Öffnen der Arbeitsmappe mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> -Methode, um die Daten zu aktualisieren, nachdem die Arbeitsmappe geöffnet ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1075,7 +1077,7 @@
         <summary>Zurückgeben oder festlegen die Anzahl der Minuten zwischen aktualisiert. Lese-/Schreibzugriff <b>Integer</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Festlegen des Zeitraums auf 0 (null) deaktiviert die automatische Timeout wird aktualisiert, und entspricht dem Festlegen dieser Eigenschaft auf <b>einen Nullwert fest</b>.</para>
+          <para>Wird der Zeitraum auf 0 (Null) festgelegt, sind zeitabhängige automatische Aktualisierungen deaktiviert. Dies entspricht dem Festlegen dieser Eigenschaft auf Null.</para>
           <para>Der Wert der <b>RefreshPeriod</b> -Eigenschaft kann eine ganze Zahl von 0 bis 32.767 sein.</para>
           <para></para>
         </remarks>
@@ -1229,7 +1231,7 @@
           <b>True</b>, falls Zeilennummern als erste Spalte der Abfragetabelle hinzugefügt werden. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>true fest,</b> nicht sofort Aktualisierung der Abfragetabelle Zeilennummern angezeigt werden. Die Zeilennummern angezeigt werden, das nächste Mal die Abfragetabelle aktualisiert wird, und jedes Mal, wenn die Abfragetabelle aktualisiert wird neu konfiguriert.</para>
+          <para>Wird diese Eigenschaft auf <b>True</b> festgelegt, erscheinen die Zeilennummern nicht sofort, sondern nach der nächsten Aktualisierung der Abfragetabelle. Sie werden bei jeder Aktualisierung der Abfragetabelle neu konfiguriert.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1295,7 +1297,7 @@
         <summary>TrueTrue, wenn die Daten des PivotTable-Berichts zusammen mit der Arbeitsmappe gespeichert werden. FalseFalse, wenn nur die Definition des Berichts gespeichert wird. BooleanBoolean-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Für OLAP-Datenquellen ist diese Eigenschaft immer auf <b>False</b>festgelegt ist.</para>
+          <para>Bei OLAP-Datenquellen ist diese Eigenschaft immer auf <b>False</b> festgelegt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1362,9 +1364,10 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Sort" />
         </value>
         <remarks>
-          <para>Importieren von Daten mithilfe der Benutzeroberfläche Daten aus Web- oder Textabfragen als importiert ist ein <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> -Objekts, während alle anderen externen Daten als importiert werden eine <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> -Objekt.</para>
-          <para>Wenn Sie Daten mithilfe des Objektmodells importieren, Daten aus Web- oder Textabfragen müssen importiert werden als <b>QueryTable</b>, während alle anderen externen Daten als ein <b>ListObject-Objekts</b> oder eine <b>Abfragetabelle</b>importiert werden können.</para>
-          <para>Können die <b>QueryTable</b> -Eigenschaft des <b>ListObject-Objekts</b> auf die <b>Sort</b> -Eigenschaft zugreifen.</para>
+          <para>Importieren von Daten mithilfe der Benutzeroberfläche Daten aus Web- oder Textabfragen als importiert ist ein <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> -Objekts, während alle anderen externen Daten als importiert werden eine <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt.</para>
+          <para>Beim Import von Daten mithilfe des Objektmodells müssen Daten aus Web- oder Textabfragen als <b>QueryTable</b>-Objekt importiert werden, während alle anderen externen Daten als <b>ListObject</b>- oder <b>QueryTable</b>-Objekt importiert werden können.</para>
+          <para>Sie können mithilfe der <b>QueryTable</b>-Eigenschaft des <b>ListObject</b>-Objekts auf die <b>Sort</b>-Eigenschaft zugreifen.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1429,7 +1432,7 @@
         <summary>Zurückgeben oder Festlegen einer <b>Zeichenfolge</b> zurück, der die Quelldatendatei für eine Abfragetabelle angibt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Für dateibasierten (z. B. Access) die <b>SourceDataFile</b> -Eigenschaft für Datenquellen enthält einen vollqualifizierten Pfad zu die Quelldatendatei. Es ist null für basierenden Datenquellen (z. B. SQL Server). Die <b>SourceDataFile</b> -Eigenschaft ist festgelegt auf null, wenn die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> -Eigenschaft programmgesteuert geändert wird.</para>
+          <para>Bei dateibasierten Datenquellen (z. B. Access) enthält die <b>SourceDataFile</b> -Eigenschaft einen vollqualifizierten Pfad zu die Quelldatendatei. Es ist null für basierenden Datenquellen (z. B. SQL Server). Die <b>SourceDataFile</b> -Eigenschaft ist festgelegt auf null, wenn die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> -Eigenschaft programmgesteuert geändert wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1506,11 +1509,11 @@
         <summary>Erstellt eine Datentabelle basierend auf Eingabewerten und Formeln, die in einem Arbeitsblatt definiert sind.</summary>
         <value>Variant</value>
         <remarks>
-          <para>Verwenden Sie zum Ausführen einer Was-Wenn-Analysis durch Ändern der bestimmte Konstantenwerte auf einem Arbeitsblatt zu finden Sie unter Auswirkungen von Werten in anderen Zellen Datentabellen.</para>
+          <para>Mit Datentabellen können Sie eine "Was-wäre-wenn"-Analyse durchführen. Sie können bestimmte konstante Werte im Arbeitsblatt ändern und anschließend die Auswirkung auf Werte in anderen Zellen beobachten.</para>
           <para></para>
         </remarks>
         <example>
-          <para>Dieses Beispiel erstellt eine formatierte Multiplikationstabelle in Zellen A1:K11 in "Sheet1".</para>
+          <para>In diesem Beispiel wird eine formatierte Multiplikationstabelle im Bereich A1:K11 in Sheet1 erstellt.</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -10732,7 +10735,7 @@ dataTableRange.&lt;/span&gt;
 &lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Dieses Beispiel erstellt eine formatierte Multiplikationstabelle in Zellen A1:K11 in "Sheet1".</para>
+          <para>In diesem Beispiel wird eine formatierte Multiplikationstabelle im Bereich A1:K11 in Sheet1 erstellt.</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -19954,7 +19957,7 @@ dataTableRange.&lt;/span&gt;
 &lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Dieses Beispiel erstellt eine formatierte Multiplikationstabelle in Zellen A1:K11 in "Sheet1".</para>
+          <para>In diesem Beispiel wird eine formatierte Multiplikationstabelle im Bereich A1:K11 in Sheet1 erstellt.</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -29210,69 +29213,69 @@ dataTableRange.&lt;/span&gt;
           <list type="table">
             <item>
               <term>
-                <b>XlGeneralFormat</b>
+                <b>xlGeneralFormat</b>
               </term>
               <description>Allgemein</description>
             </item>
             <item>
               <term>
-                <b>XlTextFormat</b>
+                <b>xlTextFormat</b>
               </term>
               <description>Text</description>
             </item>
             <item>
               <term>
-                <b>XlSkipColumn</b>
+                <b>xlSkipColumn</b>
               </term>
               <description>Spalte überspringen</description>
             </item>
             <item>
               <term>
-                <b>XlDMYFormat</b>
+                <b>xlDMYFormat</b>
               </term>
               <description>Tag-Monat-Jahr-Datumsformat</description>
             </item>
             <item>
               <term>
-                <b>XlDYMFormat</b>
+                <b>xlDYMFormat</b>
               </term>
               <description>Tag-Jahr-Monat-Datumsformat</description>
             </item>
             <item>
               <term>
-                <b>XlEMDFormat</b>
+                <b>xlEMDFormat</b>
               </term>
-              <description>Datum im Emd-Format</description>
+              <description>Datum im EMD-Format</description>
             </item>
             <item>
               <term>
-                <b>XlMDYFormat</b>
+                <b>xlMDYFormat</b>
               </term>
               <description>Monat-Tag-Jahr-Datumsformat</description>
             </item>
             <item>
               <term>
-                <b>XlMYDFormat</b>
+                <b>xlMYDFormat</b>
               </term>
               <description>Monat-Jahr-Tag-Datumsformat</description>
             </item>
             <item>
               <term>
-                <b>XlYDMFormat</b>
+                <b>xlYDMFormat</b>
               </term>
               <description>Jahr-Tag-Monat-Datumsformat</description>
             </item>
             <item>
               <term>
-                <b>XlYMDFormat</b>
+                <b>xlYMDFormat</b>
               </term>
               <description>Jahr-Monat-Tag-Datumsformat</description>
             </item>
           </list>
           <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt).</para>
-          <para>Bei Angabe Weitere Elemente im Array als Spalten vorhanden sind, werden diese Werte ignoriert.</para>
+          <para>Wenn Sie weitere Elemente im Array angeben als Spalten vorhanden sind, werden diese Werte ignoriert.</para>
           <para>
-            <b>XlEMDFormat</b> können Sie nur, wenn Taiwan sprachunterstützung installiert und aktiviert ist. Die <b>XlEMDFormat</b> -Konstante gibt an, dass Kalenderangaben verwendet werden.</para>
+            <b>XlEMDFormat</b> können nur, wenn Taiwan sprachunterstützung installiert und aktiviert ist. Die <b>XlEMDFormat</b> -Konstante gibt an, dass Kalenderangaben verwendet werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -29376,48 +29379,48 @@ dataTableRange.&lt;/span&gt;
         <summary>Gibt das Dezimaltrennzeichen, das von Microsoft Excel beim Importieren einer Textdatei in eine Abfragetabelle verwendet wird, zurück oder legt dieses fest. Standardmäßig wird das Dezimaltrennzeichen des Systems verwendet. <b>String</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt), Decimal und Tausende enthält Trennzeichen, die sich von denen auf dem Computer, aufgrund einer anderen Sprache verwendet werden Festlegen von verwendet wird.</para>
-          <para>In der folgenden Tabelle sind die Ergebnisse beim Importieren von Text in Microsoft Excel mit verschiedenen Trennzeichen. Numerische Ergebnisse werden angezeigt, in der Spalte ganz rechts.</para>
+          <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt), Decimal und Tausende enthält Trennzeichen, die sich von denen auf dem Computer, aufgrund einer anderen Sprache verwendet werden die Einstellung verwendet wird.</para>
+          <para>In der folgenden Tabelle sind die Ergebnisse beim Importieren von Text in Microsoft Excel mit verschiedenen Trennzeichen gezeigt. Die numerischen Ergebnisse werden in der Spalte ganz rechts angezeigt.</para>
           <list type="table">
             <item>
-              <term>Zeitraum</term>
-              <description>durch Trennzeichen</description>
+              <term>Punkt</term>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>123.123,45</description>
-              <description>123,123.45 (numerisch)</description>
+              <description>Komma</description>
+              <description>Punkt</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123,123.45 (numerisch)</description>
             </item>
             <item>
-              <term>Zeitraum</term>
-              <description>durch Trennzeichen</description>
+              <term>Punkt</term>
               <description>Komma</description>
               <description>Komma</description>
-              <description>123.123,45</description>
-              <description> 123.123,45 (Text)</description>
+              <description>Komma</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123.123,45 (Text)</description>
             </item>
             <item>
               <term>Komma</term>
-              <description>Zeitraum</description>
+              <description>Punkt</description>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>123,123.45</description>
-              <description>123,123.45 (numerisch)</description>
+              <description>Punkt</description>
+              <description>$$$123,123.45</description>
+              <description>$$$123,123.45 (numerisch)</description>
             </item>
             <item>
-              <term>Zeitraum</term>
+              <term>Punkt</term>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>Komma </description>
-              <description>123 123,45</description>
-              <description>123 123,45 (Text)</description>
+              <description>Punkt</description>
+              <description>Komma</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123.123,45 (Text)</description>
             </item>
             <item>
-              <term>Zeitraum</term>
+              <term>Punkt</term>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>Speicherplatz</description>
-              <description>123 123,45</description>
-              <description>(numerischen) 123,123.45</description>
+              <description>Punkt</description>
+              <description>Leerzeichen</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123.123 45 (numerisch)</description>
             </item>
           </list>
           <para></para>
@@ -29454,7 +29457,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt), und nur, wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> -Eigenschaft ist <b>XlFixedWidth</b>.</para>
-          <para>Müssen Sie eine gültige, nicht negative Spaltenbreite angeben. Wenn Sie Spalten, die die Breite der Textdatei überschreiten angeben, werden diese Werte ignoriert. Wenn die Breite der Textdatei größer ist als die gesamte Breite der Spalten Sie angeben, wird das Gleichgewicht der Textdatei in eine zusätzliche Spalte importiert.</para>
+          <para>Sie müssen eine zulässige, nichtnegative Spaltenbreite angeben. Wenn Sie Spalten angeben, die die Breite der Textdatei überschreiten, werden diese Werte ignoriert. Ist die Breite der Textdatei größer als die Gesamtbreite der angegebenen Spalten, werden die überschüssigen Zeichen der Textdatei in eine zusätzliche Spalte importiert.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -29489,7 +29492,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt), und nur, wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> -Eigenschaft <b>XlDelimited</b>lautet.</para>
-          <para>Wenn Sie mehr als ein Zeichen in der Zeichenfolge angeben, wird nur das erste Zeichen verwendet.</para>
+          <para>Wird in der Zeichenfolge mehr als ein Zeichen angegeben, wird lediglich das erste Zeichen verwendet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -29593,8 +29596,8 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt).</para>
-          <para>, Wenn der Wert dieser Eigenschaft auf <b>True</b>festgelegt ist, wird das Dialogfeld nicht beim ersten einer Abfragetabelle aktualisieren angezeigt.</para>
-          <para>Der Standardwert ist <b>true,</b> in der Benutzeroberfläche.</para>
+          <para>Ist der Wert dieser Eigenschaft <b>True</b>, wird beim ersten Aktualisieren einer Abfragetabelle kein Dialogfeld angezeigt.</para>
+          <para>Der Standardwert in der Benutzeroberfläche ist <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -29801,48 +29804,48 @@ dataTableRange.&lt;/span&gt;
         <summary>Zurück oder legt 1.000er-Trennzeichen, die Microsoft Excel beim Importieren einer Textdatei in eine Abfragetabelle verwendet. Der Standardwert ist das 1.000er-Trennzeichen. Lese-/Schreibzugriff <b>String</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt), insbesondere dann, wenn die Datei Dezimalzahl und Tausende enthält Trennzeichen, die sich von denen aufgrund von auf dem Computer sind ein andere Sprache eingestellt, verwendet wird.</para>
-          <para>In der folgenden Tabelle sind die Ergebnisse beim Importieren von Text in Microsoft Excel mit verschiedenen Trennzeichen. Numerische Ergebnisse werden angezeigt, in der Spalte ganz rechts.</para>
+          <para>Verwenden Sie diese Eigenschaft nur, wenn Ihre Abfragetabelle auf Daten aus einer Textdatei basiert (mit der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlTextImport</b>festgelegt), insbesondere dann, wenn die Datei Dezimalzahl und Tausende enthält Trennzeichen, die sich von denen aufgrund von auf dem Computer sind ein andere Sprache eingestellt ist, verwendet wird.</para>
+          <para>In der folgenden Tabelle sind die Ergebnisse beim Importieren von Text in Microsoft Excel mit verschiedenen Trennzeichen gezeigt. Die numerischen Ergebnisse werden in der Spalte ganz rechts angezeigt.</para>
           <list type="table">
             <item>
-              <term>Zeitraum</term>
-              <description>durch Trennzeichen</description>
+              <term>Punkt</term>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>123.123,45</description>
-              <description>123,123.45 (numerisch)</description>
+              <description>Komma</description>
+              <description>Punkt</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123,123.45 (numerisch)</description>
             </item>
             <item>
-              <term>Zeitraum</term>
-              <description>durch Trennzeichen</description>
+              <term>Punkt</term>
               <description>Komma</description>
               <description>Komma</description>
-              <description>123.123,45</description>
-              <description> 123.123,45 (Text)</description>
+              <description>Komma</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123.123,45 (Text)</description>
             </item>
             <item>
               <term>Komma</term>
-              <description>Zeitraum</description>
+              <description>Punkt</description>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>123,123.45</description>
-              <description>123,123.45 (numerisch)</description>
+              <description>Punkt</description>
+              <description>$$$123,123.45</description>
+              <description>$$$123,123.45 (numerisch)</description>
             </item>
             <item>
-              <term>Zeitraum</term>
+              <term>Punkt</term>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>Komma </description>
-              <description>123 123,45</description>
-              <description>123 123,45 (Text)</description>
+              <description>Punkt</description>
+              <description>Komma</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123.123,45 (Text)</description>
             </item>
             <item>
-              <term>Zeitraum</term>
+              <term>Punkt</term>
               <description>Komma</description>
-              <description>Zeitraum</description>
-              <description>Speicherplatz</description>
-              <description>123 123,45</description>
-              <description>(numerischen) 123,123.45</description>
+              <description>Punkt</description>
+              <description>Leerzeichen</description>
+              <description>$$$123.123,45</description>
+              <description>$$$123.123 45 (numerisch)</description>
             </item>
           </list>
           <para></para>
@@ -30077,7 +30080,7 @@ dataTableRange.&lt;/span&gt;
         <summary>Gibt zurück oder legt fest, ob die Daten in HTML enthalten &lt;älter als Version&gt; Tags in der Webseite wird beim Importieren der Seite in eine Abfragetabelle in Spalten analysiert. Der Standardwert ist <b>True</b>. Lese-/Schreibzugriff <b>vom Typ Boolean</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wird diese Eigenschaft nur, wenn die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /><b>-Eigenschaft der Abfragetabelle xlWebQuery</b> lautet und die Abfrage ein HTML-Dokument zurückgibt.</para>
+          <para>Diese Eigenschaft wird nur dann, wenn die <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /><b>-Eigenschaft der Abfragetabelle xlWebQuery</b> lautet und die Abfrage ein HTML-Dokument zurückgibt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -30112,7 +30115,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Verwenden Sie diese Eigenschaft nur, wenn der Abfragetabelle <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> -Eigenschaft auf <b>XlWebQuery</b> festgelegt ist und die Abfrage ein HTML-Dokument zurückgibt.</para>
-          <para>, Wenn der Wert dieser Eigenschaft <b>XlSpecifiedTables</b>lautet, können Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> -Eigenschaft auf die zu importierenden Tabellen angeben.</para>
+          <para>Wenn der Wert dieser Eigenschaft <b>XlSpecifiedTables</b>lautet, können Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> -Eigenschaft auf die zu importierenden Tabellen angeben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -30214,10 +30217,9 @@ dataTableRange.&lt;/span&gt;
           <b>WorkbookConnection</b>
         </value>
         <remarks>
-          <para>Wenn Importieren von Daten mithilfe der Benutzeroberfläche werden importiert Daten aus einer Webabfrage oder eine Textabfrage als ein <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> -Objekts, während alle anderen externen Daten als importiert werden eine <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> -Objekt.</para>
-          <para>Wenn Importieren von Daten mithilfe des Objektmodells Daten aus einer Webabfrage oder eine Textabfrage müssen importiert werden als <b>QueryTable</b>, während alle anderen externen Daten als ein <b>ListObject-Objekts</b> oder eine <b>Abfragetabelle</b>importiert werden können.</para>
-          <para>
-            <b>WorkbookConnection</b> -Eigenschaft gilt nur für <b>QueryTable</b> -Objekte.</para>
+          <para>Wenn Importieren von Daten mithilfe der Benutzeroberfläche werden importiert Daten aus einer Webabfrage oder eine Textabfrage als ein <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> -Objekts, während alle anderen externen Daten als importiert werden eine <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt.</para>
+          <para>Wenn Importieren von Daten mithilfe des Objektmodells müssen Daten aus einer Webabfrage oder eine Textabfrage als ein <b>QueryTable</b>importiert werden, während alle anderen externen Daten als ein <b>ListObject-Objekts</b> oder eine <b>Abfragetabelle</b>importiert werden können.</para>
+          <para>Die <b>WorkbookConnection</b>-Eigenschaft gilt nur für <b>QueryTable</b>-Objekte.</para>
           <para></para>
         </remarks>
       </Docs>

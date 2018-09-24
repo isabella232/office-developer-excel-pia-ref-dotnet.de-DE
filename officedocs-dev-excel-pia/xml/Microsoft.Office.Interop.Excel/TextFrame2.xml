@@ -1,10 +1,10 @@
 <Type Name="TextFrame2" FullName="Microsoft.Office.Interop.Excel.TextFrame2">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d24c98b23e803f95f010af3cea96d47a9497cbcf" />
+    <Meta Name="ms.openlocfilehash" Value="ed2de645a61dfb227782869ab7a06f69f1159fde" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576034" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextFrame2 : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,7 +32,7 @@
   <Docs>
     <summary>Stellt den Textrahmen in einem <see cref="T:Microsoft.Office.Interop.Excel.Shape" />, <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />, oder <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt.</summary>
     <remarks>
-      <para>Dieses Objekt enthält den Text im Textrahmen sowie die Eigenschaften und Methoden, die die Ausrichtung und Verankerung des Textrahmens steuern. Verwenden Sie die <b>TextFrame2</b> -Eigenschaft zum Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> -Objekt.</para>
+      <para>Dieses Objekt enthält den Text im Textrahmen sowie die Eigenschaften und Methoden, die die Ausrichtung und Verankerung des Textrahmens steuern. Verwenden Sie die <b>TextFrame2</b> -Eigenschaft zum Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> Objekt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -68,7 +68,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>Ohne einen Objektbezeichner verwendet, um diese Eigenschaft gibt ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt um die Anwendung dieses Objekts zurückzugeben). </para>
+          <para>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt um die Anwendung dieses Objekts zurückzugeben). </para>
           <para></para>
         </remarks>
       </Docs>
@@ -167,7 +167,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -195,7 +195,7 @@
       <Docs>
         <summary>Löscht den Text aus einem Textrahmen und alle zugehörigen Texteigenschaften.</summary>
         <remarks>
-          <para>Die entsprechenden Texteigenschaften umfassen <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Attribute wie fett, unterstreichen und usw..</para>
+          <para>Die entsprechenden Texteigenschaften umfassen <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Attribute wie fett, unterstreichen und so weiter.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -425,26 +425,26 @@
         <value>To be added.</value>
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
-          <para>Zurück oder legt MsoTriState-Enumerationen mit den folgenden Werten:</para>
+          <para>Gibt MsoTriState-Enumerationen mit den folgenden Werten zurück oder legt sie fest:</para>
           <list type="number">
             <item>
               <description>
-                <b>MsoCTrue</b>
+                <b>msoCTrue</b>
               </description>
             </item>
             <item>
               <description>
-                <b>MsoFalse</b>
+                <b>msoFalse</b>
               </description>
             </item>
             <item>
               <description>
-                <b>MsoTriStateMixed</b>
+                <b>msoTriStateMixed</b>
               </description>
             </item>
             <item>
               <description>
-                <b>MsoTriStateToggle</b>
+                <b>msoTriStateToggle</b>
               </description>
             </item>
             <item>

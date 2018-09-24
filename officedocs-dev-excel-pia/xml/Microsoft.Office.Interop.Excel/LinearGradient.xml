@@ -1,10 +1,10 @@
 <Type Name="LinearGradient" FullName="Microsoft.Office.Interop.Excel.LinearGradient">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="250babde04104bda95819ab5ffb2aca0cc58b39e" />
+    <Meta Name="ms.openlocfilehash" Value="82c4b43f65abfbbe4c1e37be6fcbcaa9b08edec1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573815" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LinearGradient" />
@@ -35,7 +35,7 @@
         <b>Hinweis</b>: berücksichtigen Sie beim Arbeiten mit <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> Objekte</para>
       <list type="bullet">
         <item>
-          <description>beim Zugriff auf eine <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> -Objekt, das keine graduelle Füllung verfügt, bewirken einen Laufzeitfehler.  Beachten Sie die <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> Eigenschaft vor dem Zugriff auf die Eigenschaft Farbverlauf.</description>
+          <description>Access bei dem Versuch einer <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> -Objekt, das keine graduelle Füllung verfügt, bewirken einen Laufzeitfehler.  Beachten Sie die <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> Eigenschaft vor dem Zugriff auf die Gradient-Eigenschaft.</description>
         </item>
         <item>
           <description>Wenn <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> wird von einem Verlaufstyp in einen nicht-Verlaufstyp, geändert die <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> Objekt mit Standardwerten aufgefüllt wird.</description>
@@ -132,7 +132,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die Creator-Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück. </para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Creator-Eigenschaft wurde für die Verwendung in Microsoft Excel für den Macintosh entwickelt, bei dem jede Anwendung einen aus vier Zeichen bestehenden Urhebercode besitzt. Der Urhebercode für Microsoft Excel lautet XCEL. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -168,7 +168,7 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>Verwendeten Werte liegen zwischen 0 - 360.</para>
+          <para>Die verwendeten Werte liegen zwischen 0 und 360.</para>
           <para></para>
         </remarks>
       </Docs>

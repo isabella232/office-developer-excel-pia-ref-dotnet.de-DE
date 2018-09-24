@@ -1,10 +1,10 @@
 <Type Name="DataLabel" FullName="Microsoft.Office.Interop.Excel.DataLabel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2b832d255d01c5c5b7e9ed01b46690aca71f5da4" />
+    <Meta Name="ms.openlocfilehash" Value="2636427ad9e2bda4aa31e39589f7777b7ffdf22f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586758" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DataLabel" />
@@ -31,10 +31,10 @@
   <Docs>
     <summary>Stellt die Datenbeschriftung eines Datenpunkts oder einer Trendlinie dar.</summary>
     <remarks>
-      <para>In einer Datenreihe ist das <b>DataLabel</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> Auflistung. Die <b>DataLabels</b> -Auflistung enthält ein <b>DataLabel</b> -Objekt für jeden Punkt. Bei einer Datenreihe ohne definierbare Punkte (beispielsweise eine Bereichsdatenreihe), die <b>DataLabels</b> -Auflistung ein einzelnes <b>DataLabel</b> -Objekt enthält.</para>
-      <para>Verwendung <b>DataLabels</b>(<paramref name="index" />), wobei <paramref name="index" /> die Datenbeschriftung Indexzahl darstellt, um ein einzelnes <b>DataLabel</b> -Objekt zurückzugeben.</para>
+      <para>In einer Datenreihe ist das <b>DataLabel</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> Auflistung. Die <b>DataLabels</b> -Auflistung enthält ein <b>DataLabel</b> -Objekt für jeden Punkt. Bei einer Datenreihe ohne definierbare Punkte (beispielsweise eine Bereichsdatenreihe) enthält die <b>DataLabels</b> -Auflistung ein einzelnes <b>DataLabel</b> -Objekt.</para>
+      <para>Verwenden der <b>DataLabels</b>(<paramref name="index" />), wobei <paramref name="index" /> die Datenbeschriftung Indexzahl darstellt, um ein einzelnes <b>DataLabel</b> -Objekt zurückzugeben.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Point.DataLabel" /> -Eigenschaft auf das <b>DataLabel</b> -Objekt für einen einzelnen Punkt zurückzugeben.</para>
-      <para>Auf einer Trendlinie der <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" /> -Eigenschaft gibt den für die sich eine Trendlinie angezeigten Text zurück. Dies kann die Formel und/oder der R-Quadrat-Wert (wenn beide angezeigt werden).</para>
+      <para>Auf einer Trendlinie der <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" /> -Eigenschaft gibt den für die sich eine Trendlinie angezeigten Text zurück. Dabei kann es sich um die Formel, das Bestimmtheitsmaß oder beides (wenn beides angezeigt wird) handeln.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -328,7 +328,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -518,7 +518,7 @@
         <summary>Dient zum Abrufen oder Festlegen eines Werts, das die Formel des Objekts unter Verwendung der A1-Schreibweise in der Sprache des Benutzers darstellt.</summary>
         <value>Die Formel des Objekts unter Verwendung der A1-Schreibweise in der Sprache des Benutzers.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -620,7 +620,7 @@
         <summary>Ruft die Höhe des Objekts in Punkt.</summary>
         <value>Die Höhe des Objekts in Punkten.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -654,7 +654,7 @@
         <summary>Zurückgeben oder festlegen die horizontale Ausrichtung für das angegebene Objekt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Können die folgenden Konstanten verwendet werden:</para>
+          <para>Die folgenden Konstanten können verwendet werden:</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -670,7 +670,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para>[!HINWEIS] Einige dieser Konstanten stehen Ihnen, abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch), möglicherweise nicht zur Verfügung.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -737,7 +737,7 @@
         <summary>Der Abstand (in Punkten) von der linken Seite des Objekts zur linken Seite von Spalte A (auf einem Arbeitsblatt) oder zur linken Seite des Diagrammbereichs (in einem Diagramm). <b>Double</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Wenn das Fenster maximiert ist, gibt diese Eigenschaft die Breite des Fensterrahmens eine negative Zahl, die variiert, entsprechend. Durch Festlegen dieser Eigenschaft auf 0 (null) wird, das Fenster ein wenig kleiner, als wäre, wenn das Anwendungsfenster maximiert wurden. Anders ausgedrückt, wenn diese Eigenschaft 0 (null) ist, der linke Rand des Hauptfensters von Microsoft Excel kaum werden auf dem Bildschirm angezeigt.</para>
+          <para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft die Breite des Fensterrahmens eine negative Zahl, die variiert, entsprechend. Durch Festlegen dieser Eigenschaft auf 0 (null) wird, das Fenster ein wenig kleiner, als wäre, wenn das Anwendungsfenster maximiert wurden. Anders ausgedrückt, wenn diese Eigenschaft 0 (null) ist, ist der linke Rand des Hauptfensters von Microsoft Excel auf dem Bildschirm kaum sichtbar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -798,7 +798,10 @@
       <Docs>
         <summary>Zurückgeben oder festlegen den Formatierungscode für das Objekt. Lese-/Schreibzugriff <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
-        <remarks>Das Format <para>Code ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <b>NumberFormat</b> und <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" /> Eigenschaften.</para><para></para></remarks>
+        <remarks>
+          <para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <b>NumberFormat</b> und <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" /> Eigenschaften.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -862,7 +865,7 @@
         <summary>Zurückgeben oder festlegen den Formatierungscode des Objekts als Zeichenfolge in der Sprache des Benutzers. Lese-Schreib- <b>Objekt</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" /> und Eigenschaften <b>NumberFormatLocal</b> .</para>
+          <para>Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" /> und <b>NumberFormatLocal</b> -Eigenschaften.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -896,7 +899,7 @@
         <summary>Die Ausrichtung von Text. Eine Ganzzahl zwischen-90 und 90 Grad kann sein.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Können die folgenden Konstanten verwendet werden:</para>
+          <para>Die folgenden Konstanten können verwendet werden:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -1001,7 +1004,7 @@
         <summary>Gibt zurück oder legt die leserichtung für das angegebene Objekt fest. Kann eine der folgenden Konstanten sein: <b>XlRTL</b> (rechts-nach-links), <b>XlLTR</b> (von links nach rechts) oder <b>XlContext</b>. Lese-/Schreibzugriff <b>Integer</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para>[!HINWEIS] Einige dieser Konstanten stehen Ihnen, abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch), möglicherweise nicht zur Verfügung.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1061,7 +1064,7 @@
         <summary>Legt fest oder gibt ein <b>Objekt</b> zurück, das Trennzeichen für die datenbeschriftungen in einem Diagramm darstellt. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Das Diagramm muss zunächst aktiv sein, bevor Sie programmgesteuert die datenbeschriftungen zugreifen können; andernfalls, tritt ein Laufzeitfehler.</para>
+          <para>Das Diagramm muss zunächst aktiv sein, bevor Sie programmgesteuert; die datenbeschriftungen zugreifen können andernfalls tritt ein Laufzeitfehler.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1127,7 +1130,7 @@
         <summary>Mit <b>True</b> wird die Blasengröße für die Datenbeschriftungen in einem Diagramm angezeigt. Mit <b>False</b> wird sie ausgeblendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Das Diagramm muss zunächst aktiv sein, bevor Sie programmgesteuert die datenbeschriftungen zugreifen können, oder ein Laufzeitfehler tritt.</para>
+          <para>Das Diagramm muss zuerst aktiviert werden, bevor Sie mithilfe des Programms auf die Diagrammbeschriftungen zugreifen können. Andernfalls tritt ein Laufzeitfehler auf.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1161,7 +1164,7 @@
         <summary>Mit <b>True</b> wird der Rubrikenname für die Datenbeschriftungen eines Diagramms angezeigt. Mit <b>False</b> wird der Name ausgeblendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Das Diagramm muss zunächst aktiv sein, bevor Sie programmgesteuert die datenbeschriftungen zugreifen können, oder ein Laufzeitfehler tritt.</para>
+          <para>Das Diagramm muss zuerst aktiviert werden, bevor Sie mithilfe des Programms auf die Diagrammbeschriftungen zugreifen können. Andernfalls tritt ein Laufzeitfehler auf.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1228,7 +1231,7 @@
           <b>True</b>, wenn der Prozentwert für die Datenbeschriftungen in einem Diagramm angezeigt werden soll. Mit <b>False</b> wird dieser ausgeblendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Das Diagramm muss zunächst aktiv sein, bevor Sie programmgesteuert die datenbeschriftungen zugreifen können, oder ein Laufzeitfehler tritt.</para>
+          <para>Das Diagramm muss zuerst aktiviert werden, bevor Sie mithilfe des Programms auf die Diagrammbeschriftungen zugreifen können. Andernfalls tritt ein Laufzeitfehler auf.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1262,7 +1265,7 @@
         <summary>Verwendet, um das Feld <b>Bereich</b> umschalten, wenn sie für den Datenbereich Bezeichnung vorhanden sind. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Das <b>Range</b> -Objekt einen beliebigen Bereich von Zellen, die einem Bereich Datenbeschriftungstyp, zugeordnet ist, damit jedes Datenbeschriftung eine der Zellen im Bereich entspricht.</para>
+          <para>Das <b>Range</b> -Objekt ordnet einen Bereich von datenbeschriftungen, einen beliebigen Bereich von Zellen, sodass jede Bezeichnung Daten auf eine der Zellen im Bereich entspricht.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1296,7 +1299,7 @@
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der das Anzeigeverhalten der Datenreihennamen für Datenbeschriftungen in einem Diagramm angibt, oder legt diesen Wert fest. Mit <b>True</b> wird der Datenreihenname angezeigt. Mit <b>False</b> wird er ausgeblendet. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Das Diagramm muss zunächst aktiv sein, bevor Sie programmgesteuert die datenbeschriftungen zugreifen können, oder ein Laufzeitfehler tritt.</para>
+          <para>Das Diagramm muss zuerst aktiviert werden, bevor Sie mithilfe des Programms auf die Diagrammbeschriftungen zugreifen können. Andernfalls tritt ein Laufzeitfehler auf.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1330,7 +1333,7 @@
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der dem Anzeigeverhalten der Datenbeschriftungswerte eines angegebenen Diagramms entspricht, oder legt diesen Wert fest. Mit <b>True</b> werden die Werte angezeigt. Mit <b>False</b> werden sie ausgeblendet. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Das angegebene Diagramm muss zunächst aktiv sein, bevor Sie programmgesteuert die datenbeschriftungen zugreifen können, oder ein Laufzeitfehler tritt.</para>
+          <para>Das angegebene Diagramm muss zuerst aktiviert werden, bevor Sie mithilfe des Programms auf die Datenbeschriftungen zugreifen können. Andernfalls tritt ein Laufzeitfehler auf.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1465,7 +1468,7 @@
         <summary>Gibt zurück oder legt die vertikale Ausrichtung des angegebenen Objekts.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Können die folgenden Konstanten verwendet werden:</para>
+          <para>Die folgenden Konstanten können verwendet werden:</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -1514,7 +1517,7 @@
         <summary>Ruft die Breite des Objekts in Punkt.</summary>
         <value>Die Breite des Objekts in Punkten.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>

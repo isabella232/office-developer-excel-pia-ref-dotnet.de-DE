@@ -1,10 +1,10 @@
 <Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="97d53069436a318096bbfbdc2ce01e7de3cf9166" />
+    <Meta Name="ms.openlocfilehash" Value="d2f870880113d0a92987ae33be86341048714031" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574725" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCell" />
@@ -32,8 +32,8 @@
     <summary>Stellt eine Zelle in einem PivotTable-Bericht dar.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Auflistung, um ein <b>PivotCell</b> -Objekt zurückzugeben.</para>
-      <para>Nachdem ein <b>PivotCell</b> -Objekt zurückgegeben wurde, können Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> Eigenschaft, um zu bestimmen, geben einen bestimmten Bereich Inseln</para>
-      <para>Können Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> oder <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> -Eigenschaft bestimmt die <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung, die den Elementen auf der Achse Zeile oder Spalte entspricht, die die ausgewählte Nummer darstellt.</para>
+      <para>Nachdem ein <b>PivotCell</b> -Objekt zurückgegeben wurde, können Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> -Eigenschaft, um zu bestimmen, geben einen bestimmten Bereich ist.</para>
+      <para>Können die <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> oder <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> -Eigenschaft bestimmt die <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung, die den Elementen auf der Achse Zeile oder Spalte entspricht, die die ausgewählte Nummer darstellt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -61,8 +61,8 @@
       <Docs>
         <summary>Führt einen Rückschreibevorgang in der angegebenen Zelle eines PivotTable-Berichts basierend auf einer OLAP-Datenquelle aus.</summary>
         <remarks>
-          <para>Diese Methode führt eine UPDATE CUBE-Anweisung, um nur die Änderung in dieser bestimmten Zelle hinzuzufügen, jedoch enthält außerdem alle vorherigen Änderungen angewendet. Nachdem die CUBE UPDATE-Anweisung ausgeführt wird, ein PivotTable-Update wird ausgeführt, und klicken Sie dann eine ROLLBACK TRANSACTION-Anweisung ausgeführt wird.</para>
-          <para>Mit der <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> -Methode für eine Zelle in einem PivotTable-Bericht basierend auf einer nicht-OLAP-Datenquelle generiert einen Laufzeitfehler.</para>
+          <para>Diese Methode führt eine UPDATE CUBE-Anweisung aus, um nur die Änderung an dieser bestimmten Zelle hinzuzufügen, schließt jedoch auch alle zuvor übernommenen Änderungen ein. Nach dem Ausführen der UPDATE CUBE-Anweisung wird eine PivotTable-Aktualisierung und anschließend eine ROLLBACK TRANSACTION-Anweisung ausgeführt.</para>
+          <para>Ausführen der <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> -Methode für eine Zelle in einem PivotTable-Bericht basierend auf einer nicht-OLAP-Datenquelle generiert einen Laufzeitfehler.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -123,31 +123,31 @@
         <remarks>
           <para>Der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> -Eigenschaft ist <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> standardmäßig.</para>
           <para>Für PivotTable-Berichte mit nicht-OLAP-Datenquellen, der Wert dieser Eigenschaft kann nur eine <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> oder <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />. Es ist <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für Zellen, die nicht bearbeitet wurde und <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> für Zellen, die bearbeitet wurden. Änderungen verwerfen legt dessen Wert auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />.</para>
-          <para>Anwenden und Speichern von Änderungen gilt nur für PivotTable-Berichten mit OLAP-Datenquellen. Die folgenden Beschreibungen der die möglichen Zustände der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> -Eigenschaft gelten nur für PivotTables mit OLAP-Datenquellen.</para>
+          <para>Durch Anwenden und Speichern von Änderungen gilt nur für PivotTable-Berichten mit OLAP-Datenquellen. Die folgenden Beschreibungen der die möglichen Zustände der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> -Eigenschaft gelten nur für PivotTables mit OLAP-Datenquellen.</para>
           <list type="bullet">
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> -die Zelle nicht bearbeitet oder neu berechnet (wenn die Zelle eine Formel enthält), da die PivotTable erstellt wurde, oder seit dem letzten Speichern oder verwerfen Änderungen-Vorgang ausgeführt wurde.</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />-die Zelle nicht bearbeitet oder neu berechnet (wenn die Zelle eine Formel enthält), da die PivotTable erstellt wurde, oder seit dem letzten Speichern oder verwerfen Änderungen-Vorgang ausgeführt wurde.</description>
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> -die Zelle bearbeitet oder neu berechnet, da die PivotTable erstellt wurde, oder seit der letzten Änderungen übernehmen oder das Speichern von Änderungen Vorgang ausgeführt wurde, aber diese Änderung wurde noch nicht angewendet wurde (UPDATE CUBE-Anweisung wurde nicht für sie ausgeführt wurde).</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />-die Zelle bearbeitet oder neu berechnet, da die PivotTable erstellt wurde, oder seit der letzten Änderungen übernehmen oder das Speichern von Änderungen Vorgang ausgeführt wurde, aber diese Änderung wurde noch nicht angewendet wurde (UPDATE CUBE-Anweisung wurde nicht für sie ausgeführt wurde).</description>
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- die Zelle wurde bearbeitet oder neu berechnet wurde seit der Erstellung der PivotTable oder seit der letzten Änderungen anwenden, speichern Sie Änderungen, oder Änderungen verwerfen Vorgang ausgeführt wurde, und ändern angewendet wurde (die UPDATE CUBE-Anweisung hat für sie ausgeführt wurde).</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />-die Zelle bearbeitet oder neu berechnet, da die PivotTable erstellt wurde, oder es wurde seit die letzten Änderungen übernehmen, Änderungen zu speichern oder verwerfen von Änderungen durchgeführt wurde und dass der Änderung (UPDATE CUBE-Anweisung hat für sie ausgeführt wurde).</description>
             </item>
           </list>
           <para>In der folgenden Tabelle wird beschrieben, wie verschiedenen Aktionen durch Benutzer beeinflussen die Einstellung der der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> -Eigenschaft in einer PivotTable mit einer OLAP-Datenquelle.</para>
           <list type="table">
             <item>
-              <term>Gibt einen Wert oder eine Formel in eine oder mehrere Zellen.</term>
+              <term>Eingeben eines Werts oder einer Formel in eine oder mehrere Zelle(n).</term>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> für die betroffenen Zellen.</description>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> für die betroffenen Zellen.</description>
             </item>
             <item>
-              <term>Neu berechnet eine oder mehrere Zellen mit einer Formel, entweder manuell (F9) oder automatisch durch Excel.</term>
-              <description>Nicht zutreffend</description>
+              <term>Ausführen einer Neuberechnung einer oder mehrerer Zelle(n) mit einer Formel, entweder manuell (F9) oder automatisch durch Excel ausgelöst.</term>
+              <description>n/v</description>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> für die betroffenen Zellen.</description>
             </item>
             <item>
@@ -156,14 +156,14 @@
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> für alle bearbeiten Zellen mit Formel.</description>
             </item>
             <item>
-              <term>Verwirft alle Änderungen.</term>
+              <term>Alle Änderungen verwerfen.</term>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für alle bearbeiten Zellen ohne Formel.</description>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für alle bearbeiten Zellen mit Formel.</description>
             </item>
             <item>
-              <term>Verwirft ändern in einzelne Zelle.</term>
-              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für diese Zelle nur.</description>
-              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für diese Zelle nur.</description>
+              <term>Änderungen in einer einzelnen Zelle verwerfen.</term>
+              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> nur für diese Zelle.</description>
+              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> nur für diese Zelle.</description>
             </item>
             <item>
               <term>Löschen mehrerer Zellen in einem Vorgang.</term>
@@ -171,17 +171,17 @@
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für alle betroffenen Zellen.</description>
             </item>
             <item>
-              <term>Löscht eine Zelle.</term>
-              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für diese Zelle nur.</description>
-              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> für diese Zelle nur.</description>
+              <term>Löschen einer Zelle.</term>
+              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> nur für diese Zelle.</description>
+              <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> nur für diese Zelle.</description>
             </item>
             <item>
-              <term>Führt einen Rückgängig-Vorgang, der den Wert wieder auf einen zuvor bearbeiteten Wert, zurückführt, bevor dieser Wert übernommen wurde.</term>
+              <term>Ausführen eines Rückgängig-Vorgangs, der den Wert wieder auf einen zuvor bearbeiteten Wert zurückführt, bevor dieser Wert übernommen wurde.</term>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> für alle bearbeiten Zellen ohne Formel.</description>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> für alle bearbeiten Zellen mit Formel.</description>
             </item>
             <item>
-              <term>Führt einen Rückgängig-Vorgang, der den Wert wieder auf einen zuvor bearbeiteten Wert, zurückführt, nachdem dieser Wert übernommen wurde.</term>
+              <term>Ausführen eines Rückgängig-Vorgangs, der den Wert wieder auf einen zuvor bearbeiteten Wert zurückführt, nachdem dieser Wert übernommen wurde.</term>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> für alle bearbeiten Zellen ohne Formel.</description>
               <description>Legen Sie auf <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> für alle bearbeiten Zellen mit Formel.</description>
             </item>
@@ -244,8 +244,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -277,29 +277,46 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />kann eine der folgenden <b>XlConsolidationFunction</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />Dies kann eine der folgenden <b>XlConsolidationFunction</b> -Konstanten sein:</para>
           <para>
-            <b>XlAverage</b>
+            <b>xlAverage</b>
           </para>
           <para>
-            <b>XlCount</b>
+            <b>xlCount</b>
           </para>
           <para>
-            <b>XlCountNums</b>
+            <b>xlCountNums</b>
           </para>
           <para>
-            <b>XlMax</b>
+            <b>xlMax</b>
           </para>
           <para>
-            <b>XlMin</b>
+            <b>xlMin</b>
           </para>
           <para>
-            <b>XlProduct</b>
+            <b>xlProduct</b>
           </para>
           <para>
-            <b>XlStDev</b>
-          </para>,
-          <para><b>XlStDevP</b></para><para><b>XlSum </b></para><para><b>XlUnknown</b></para><para><b>XlVar</b></para><para><b>XlVarP</b></para><para><b>CustomSubtotalFunction</b> -Eigenschaft gibt einen Fehler zurück, wenn der <b>PivotCell</b> -Objekttyp nicht um ein benutzerdefiniertes Teilergebnis darstellt. Diese Eigenschaft gilt nur für nicht-OLAP-Quelldaten.</para><para></para></remarks>
+            <b>xlStDev</b>
+          </para>
+          <para>
+            <b>xlStDevP</b>
+          </para>
+          <para>
+            <b>xlSum</b>
+          </para>
+          <para>
+            <b>xlUnknown</b>
+          </para>
+          <para>
+            <b>xlVar</b>
+          </para>
+          <para>
+            <b>xlVarP</b>
+          </para>
+          <para>Die <b>CustomSubtotalFunction</b>-Eigenschaft gibt einen Fehler zurück, wenn der <b>PivotCell</b>-Objekttyp kein benutzerdefiniertes Teilergebnis ist. Diese Eigenschaft gilt nur für Nicht-OLAP-Quelldaten.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -359,8 +376,11 @@
         <summary>Ruft den Wert aus der Datenquelle für den bearbeiteten Zellen in einem PivotTable-Bericht zuletzt abgerufen.</summary>
         <value>Der Wert aus der Datenquelle für den bearbeiteten Zellen in einem PivotTable-Bericht zuletzt abgerufen.</value>
         <remarks>
-          <para>Read-only.</para> Wenn eine Zelle in einem PivotTable-Bericht des Wertebereichs bearbeitet wird, 
-          <para>der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft enthält den Wert, die zuletzt aus der Datenquelle abgerufen wurde, bevor die Bearbeitung vorgenommen wurde. Für PivotTable-Bericht Wertzellen, die nicht bearbeitet wurde, oder für die der Quelle Datenwert nicht explizit abgerufen wurden gibt diese Eigenschaft ein Nullverweis (Nothing in Visual Basic) zurück. Für PivotTable-Berichte mit OLAP-Datenquellen ist der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> Eigenschaft wird von einer separaten Verbindung, um sicherzustellen, dass es nicht den Wert der Rückschreiben Vorgänge enthält, die der Benutzer vorgenommen haben möglicherweise abgerufen.</para><para>Beim Lesen der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft für Zellen, die außerhalb des Wertebereichs eines PivotTable-Berichts sind generiert einen Laufzeitfehler.</para><para></para></remarks>
+          <para>Schreibgeschützt.</para>
+          <para>Wenn eine Zelle in einem PivotTable-Bericht des Wertebereichs bearbeitet wird, die <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft enthält den Wert, die zuletzt aus der Datenquelle abgerufen wurde, bevor die Bearbeitung vorgenommen wurde. Für PivotTable-Bericht Wertzellen, die nicht bearbeitet wurde, oder für die der Quelle Datenwert nicht explizit abgerufen wurden gibt diese Eigenschaft ein Nullverweis (Nothing in Visual Basic) zurück. Für PivotTable-Berichte mit OLAP-Datenquellen ist der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft abgerufen wird von einer separaten Verbindung, um sicherzustellen, dass es nicht den Wert der Rückschreiben Aktionen enthält, die der Benutzer möglicherweise vorgenommen haben.</para>
+          <para>Lesen der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> -Eigenschaft für Zellen, die außerhalb des Wertebereichs eines PivotTable-Berichts sind generiert einen Laufzeitfehler.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DiscardChange">
@@ -386,7 +406,7 @@
       <Docs>
         <summary>Verwirft Änderungen an der angegebenen Zelle in einem PivotTable-Bericht.</summary>
         <remarks>
-          <para>Für eine Zelle in einer PivotTable auf einer OLAP-Datenquelle basiert die <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> -Methode den Wert oder die Formel in der angegebenen Zelle eingegebene entfernt und anschließend wird ein PivotTable-Update aus, um den letzten Wert aus der Datenquelle abrufen. Der Datenwert Quelle wird durch diese Methode für die angegebene Zelle mit einem Nullverweis (Nothing in Visual Basic) festgelegt. Außerdem werden die-Methode entfernt alle Änderungen an dieser Zelle aus Excel Änderungsliste, damit es nicht mehr in UPDATE CUBE-Anweisung für die Datenquelle eingeschlossen werden sollen. Diese Methode stellt auch den Sitzungsstatus für alle Änderungen, die in der Transaktion vorgenommen. Dazu gehören eine ROLLBACK TRANSACTION-Anweisung ausgeführt, und klicken Sie dann Ausführen einer UPDATE CUBE-Anweisung mit allen Änderungen, mit Ausnahme der angegebenen Zelle. Für eine Zelle in einer PivotTable auf einer nicht-OLAP-Datenquelle basiert, löscht diese Methode einfach die bearbeitete Zelle.</para>
+          <para>Für eine Zelle in einer PivotTable auf einer OLAP-Datenquelle basiert die <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> -Methode den Wert oder die Formel in der angegebenen Zelle eingegebene entfernt und anschließend wird ein PivotTable-Update aus, um den letzten Wert aus der Datenquelle abrufen. Der Datenwert Quelle wird durch diese Methode für die angegebene Zelle mit einem Nullverweis (Nothing in Visual Basic) festgelegt. Außerdem werden die-Methode entfernt alle Änderungen an dieser Zelle aus Excel Änderungsliste, damit es nicht mehr in UPDATE CUBE-Anweisung für die Datenquelle eingeschlossen werden sollen. Diese Methode stellt auch den Sitzungsstatus für alle Änderungen, die in der Transaktion vorgenommen. Dazu gehören eine ROLLBACK TRANSACTION-Anweisung ausgeführt, und klicken Sie dann Ausführen einer UPDATE CUBE-Anweisung mit allen Änderungen, mit Ausnahme der angegebenen Zelle. Für eine Zelle in einer PivotTable basierend auf einer nicht-OLAP-Datenquelle löscht diese Methode einfach die bearbeitete Zelle.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -448,8 +468,8 @@
         <summary>Ruft ein Tupel, das die vollständigen MDX Koordinaten der Zelle angegebenen Wert in PivotTable mit einer OLAP-Datenquelle enthält.</summary>
         <value>Ein Tupel, das die vollständigen MDX Koordinaten der Zelle angegebenen Wert in PivotTable mit einer OLAP-Datenquelle enthält.</value>
         <remarks>
-          <para>Read-only.</para>
-          <para>Die Dimensionen, die in das Tupel durch zurückgegeben der <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> Eigenschaft Zeile und Spalte Koordinaten als auch Report Filter Koordinaten enthalten. Bei Zellen, die außerhalb des Wertebereichs der PivotTable und außerhalb einer PivotTable Zugriff auf diese Eigenschaft einen Laufzeitfehler generiert. Bei PivotTables mit mehreren Elementauswahl in einem Berichtsfilterfeld, Zugriff auf diese Eigenschaft auch generiert einen Laufzeitfehler.</para>
+          <para>Schreibgeschützt.</para>
+          <para>Die Dimensionen zurückgegeben wird, im Tupel durch die <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> Eigenschaft enthalten, Zeile und Spalte Koordinaten als auch Report Filter Koordinaten. Bei Zellen, die außerhalb des Wertebereichs der PivotTable und außerhalb einer PivotTable Zugriff auf diese Eigenschaft einen Laufzeitfehler generiert. Bei PivotTables mit mehreren Elementauswahl in einem Berichtsfilterfeld Zugriff auf diese Eigenschaft auch ein Laufzeitfehler generiert.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -509,27 +529,27 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" />kann eine der folgenden <b>XlPivotCellType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" />Dies kann eine der folgenden <b>XlPivotCellType</b> -Konstanten sein:</para>
           <para>
-            <b>XlPivotCellBlankCell</b> eine strukturelle leere Zelle in der PivotTable.</para>
+            <b>xlPivotCellBlankCell</b> Eine strukturelle leere Zelle in der PivotTable.</para>
           <para>
-            <b>XlPivotCellCustomSubtotal</b> eine Zelle im Zeilen- oder Spaltenbereich, die ein benutzerdefiniertes Teilergebnis darstellt.</para>
+            <b>xlPivotCellCustomSubtotal</b> Eine Zelle in der Zeilen- oder Spaltenbereich, der ein benutzerdefiniertes Teilergebnis darstellt.</para>
           <para>
-            <b>XlPivotCellDataField</b> eine datenfeldbezeichnung (nicht die Schaltfläche <b>Daten</b> ).</para>
+            <b>xlPivotCellDataField</b> Eine datenfeldbeschriftung (nicht die Schaltfläche <b>Daten</b> ).</para>
           <para>
-            <b>XlPivotCellDataPivotField</b> die Schaltfläche <b>Daten</b> .</para>
+            <b>xlPivotCellDataPivotField</b> Die Schaltfläche <b>Daten</b> .</para>
           <para>
-            <b>XlPivotCellGrandTotal</b> eine Zelle in einem Zeilen- oder Spaltenbereich, die ein Gesamtergebnis darstellt.</para>
+            <b>xlPivotCellGrandTotal</b> Eine Zelle in einem Zeilen- oder Spaltenbereich, der ein Gesamtergebnis darstellt.</para>
           <para>
-            <b>XlPivotCellPageFieldItem</b> die Zelle, die das ausgewählte Element eines Seitenfelds anzeigt.</para>
+            <b>xlPivotCellPageFieldItem</b> Die Zelle, die das ausgewählte Element eines Seitenfelds anzeigt.</para>
           <para>
-            <b>XlPivotCellPivotField</b> die Schaltfläche für ein Feld (nicht die Schaltfläche <b>Daten</b> ).</para>
+            <b>xlPivotCellPivotField</b> Die Schaltfläche für ein Feld (nicht die Schaltfläche <b>Daten</b> ).</para>
           <para>
-            <b>XlPivotCellPivotItem</b> eine Zelle im Zeilen- oder Spaltenbereich sich nicht Teilergebnis, Gesamtergebnis oder benutzerdefiniertes Teilergebnis bzw. eine leere Zeile befindet.</para>
+            <b>xlPivotCellPivotItem</b> Eine Zelle in der Zeilen- oder Spaltenbereich, der nicht Teilergebnis, Gesamtergebnis oder benutzerdefiniertes Teilergebnis bzw. eine leere Zeile ist.</para>
           <para>
-            <b>XlPivotCellSubtotal</b> eine Zelle in der Zeilen- oder Spaltenbereich, die ein Teilergebnis darstellt.</para>
+            <b>xlPivotCellSubtotal</b> Eine Zelle in der Zeilen- oder Spaltenbereich, der ein Teilergebnis darstellt.</para>
           <para>
-            <b>xlPivotCellValue eine</b> eine im Datenbereich (mit Ausnahme einer leeren Zeile Zelle).</para>
+            <b>xlPivotCellValue eine</b> Eine beliebige Zelle im Datenbereich (mit Ausnahme einer leeren Zeile).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -564,7 +584,7 @@
         <remarks>
           <para>Wenn sich <b>PivotCell</b> auf Zeilen bezieht, gibt die <b>PivotColumnLine</b> -Eigenschaft einen Laufzeitfehler zurück.</para>
           <para>Wenn sich <b>PivotCell</b> auf Spalten bezieht, gibt die <b>PivotColumnLine</b> -Eigenschaft das Spalte <b>PivotLine</b> -Objekt zurück.</para>
-          <para>Wenn das <b>PivotCell</b> im Datenbereich befindet, gibt die <b>PivotColumnLine</b> -Eigenschaft das entsprechende Spalte <b>PivotLine</b> -Objekt.</para>
+          <para>Wenn das <b>PivotCell</b> im Datenbereich befindet, gibt die <b>PivotColumnLine</b> -Eigenschaft das entsprechende Spalte <b>PivotLine</b> -Objekt zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -655,7 +675,7 @@
         <remarks>
           <para>Wenn sich <b>PivotCell</b> auf Zeilen bezieht, gibt <b>PivotRowLine</b> das <b>PivotLine</b> -Objekt der Zeile zurück.</para>
           <para>Wenn sich <b>PivotCell</b> auf Spalten bezieht, gibt <b>PivotRowLine</b> einen Laufzeitfehler zurück.</para>
-          <para>Wenn das <b>PivotCell</b> im Datenbereich befindet, gibt <b>PivotRowLine</b><b>PivotLine</b> -Objekt der entsprechenden Zeile zurück.</para>
+          <para>Wenn das <b>PivotCell</b> im Datenbereich befindet, gibt <b>PivotRowLine</b> das <b>PivotLine</b> -Objekt der entsprechenden Zeile zurück.</para>
           <para></para>
         </remarks>
       </Docs>

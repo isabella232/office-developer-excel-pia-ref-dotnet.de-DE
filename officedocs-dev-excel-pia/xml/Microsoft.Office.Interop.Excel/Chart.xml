@@ -1,10 +1,10 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Excel.Chart">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9f66d37751758f0af07f823171b4c06c4d2dcbb" />
+    <Meta Name="ms.openlocfilehash" Value="27bd453c5b6413f47df900780ebfd03d3cabd7c6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577154" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
@@ -40,32 +40,32 @@
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" />Eigenschaft</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />Eigenschaft</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />Eigenschaft</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />Eigenschaft</description>
         </item>
       </list>
       <para>Chart-Eigenschaft</para>
-      <para>Verwenden Sie die <b>Chart</b> -Eigenschaft, um ein <b>Chart</b> -Objekt zurückzugeben, das in einem <b>ChartObject</b> -Objekt enthaltene Diagramm darstellt.</para>
+      <para>Verwenden Sie die <b>Chart</b> -Eigenschaft, um ein <b>Chart</b> -Objekt zurückzugeben, das Diagramm enthalten in einem <b>ChartObject</b> -Objekt darstellt.</para>
       <para>Charts-Eigenschaft</para>
-      <para>Der <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> -Auflistung enthält ein <b>Chart</b> -Objekt für jedes Diagrammblatt in einer Arbeitsmappe. Verwenden von <b>Diagrammen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Diagrammblatt Indexnummer oder Namen, um ein einzelnes <b>Chart</b> -Objekt zurückzugeben.</para>
-      <para>Des Diagramms Indexnummer stellt die Position des Diagrammblatts auf der Registerleiste der Arbeitsmappe dar. Alle Diagrammblätter sind in der Nummerierung enthalten, auch wenn sie ausgeblendet sind. Der Name des Arbeitsblatts wird auf der Registerkarte Arbeitsmappe für das Diagramm angezeigt. Sie können die <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> -Eigenschaft festlegen oder Zurückgeben des Namens des Diagramms.</para>
-      <para>Des <b>Chart</b> -Objekt ist außerdem ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung. Die <b>Sheets</b> -Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter und Arbeitsblätter). Verwenden Sie <b>Sheets</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer oder der Name, um ein einzelnes Blatt zurückzugeben.</para>
+      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> -Auflistung enthält ein <b>Chart</b> -Objekt für jedes Diagrammblatt in einer Arbeitsmappe. Verwenden von <b>Diagrammen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Diagrammblatt Indexnummer oder Namen, um ein einzelnes <b>Chart</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Diagrammblatts auf der Registerleiste der Arbeitsmappe dar. Alle Diagrammblätter sind in der Nummerierung enthalten, auch wenn sie ausgeblendet sind. Der Name des Arbeitsblatts wird auf der Registerkarte Arbeitsmappe für das Diagramm angezeigt. Sie können die <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> -Eigenschaft festlegen oder Zurückgeben des Namens des Diagramms.</para>
+      <para>Das <b>Chart</b> -Objekt ist außerdem ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung. Die <b>Sheets</b> -Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter und Arbeitsblätter). Verwenden Sie <b>Sheets</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer oder der Name, um ein einzelnes Blatt zurückzugeben.</para>
       <para>ActiveChart-Eigenschaft</para>
-      <para>Wenn ein Diagramm, das aktive Objekt ist, können Sie die <b>ActiveChart</b> -Eigenschaft verwenden, darauf verweisen. Ein Diagrammblatt ist aktiv, wenn der Benutzer ausgewählt hat, oder es ist aktiviert wurde, mit der <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> -Methode.</para>
+      <para>Wenn ein Diagramm, das aktive Objekt ist, können Sie die <b>ActiveChart</b> -Eigenschaft verwenden, darauf verweisen. Ein Diagrammblatt ist aktiv, wenn der Benutzer ausgewählt hat, oder es ist aktiviert wurde, mit der <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> Methode.</para>
       <para>Ein eingebettetes Diagramm ist aktiv, wenn der Benutzer ausgewählt hat oder der <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> -Objekt, das in der es enthalten ist mit der <b>Activate</b> -Methode aktiviert wurde.</para>
       <para>ActiveSheet-Eigenschaft</para>
-      <para>Wenn ein Diagrammblatt mit dem aktiven Blatt ist können Sie die <b>ActiveSheet</b> -Eigenschaft verweisen auf darauf verweisen verwenden</para>
+      <para>Wenn ein Diagrammblatt das aktive Blatt handelt, können Sie die <b>ActiveSheet</b> -Eigenschaft verwenden, darauf verweisen. </para>
       <para></para>
     </remarks>
   </Docs>

@@ -1,10 +1,10 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7a0555508b1378be940d3dc42a9131282186bb8" />
+    <Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585148" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFormula" />
@@ -32,7 +32,7 @@
     <summary>Stellt eine Formel dar, die zur Berechnung von Ergebnissen in einem PivotTable-Bericht verwendet wird.</summary>
     <remarks>
       <para>Verwenden der <b>PivotFormulas</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Formel Zahl oder eine Zeichenfolge, die auf der linken Seite der Formel, um das <b>PivotFormula</b> -Objekt zurückzugeben.</para>
-      <para>Dieses Objekt sowie dessen zugehörige Eigenschaften und Methoden sind nicht verfügbar für OLAP-Datenquellen, da berechnete Felder und Elemente nicht unterstützt.</para>
+      <para>Dieses Objekt und die dazugehörigen Eigenschaften und Methoden stehen für OLAP-Datenquellen nicht zur Verfügung, da berechnete Felder und Elemente nicht unterstützt werden.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -128,8 +128,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,11 +188,11 @@
         <summary>Gibt die Formel des Objekts im Format der A1-Schreibweise zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft ist nicht verfügbar für OLAP-Datenquellen.</para>
-          <para>, Wenn die Zelle eine Konstante enthält, gibt diese Eigenschaft die Konstante. Wenn die Zelle leer ist, gibt diese <b>Formel</b> -Eigenschaft eine leere Zeichenfolge. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b> -Eigenschaft die Formel als Zeichenfolge in demselben Format, die in der Bearbeitungsleiste (einschließlich Gleichheitszeichen) dargestellt werden würde.</para>
-          <para>, Wenn Sie den Wert oder die Formel einer Zelle auf ein Datum festlegen, überprüft Microsoft Excel, ob diese Zelle bereits in einem der Zahlenformate für Datum oder Uhrzeit formatiert ist. Wenn nicht, Microsoft Excel das Zahlenformat in das Zahlenformat für die standardmäßige kurzes Datumsformat ändert.</para>
-          <para>, Wenn der Bereich einen ein- oder zweidimensionalen Bereich ist, können Sie die Formel auf ein Array mit denselben Dimensionen festlegen. In ähnlicher Weise können Sie die Formel in ein Array versetzen.</para>
-          <para>Durch Festlegen der Formel für ein Bereich von mehreren Zellen alle Zellen im Bereich mit der Formel gefüllt.</para>
+          <para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
+          <para>Wenn die Zelle eine Konstante enthält, gibt diese Eigenschaft eine Konstante zurück. Wenn die Zelle leer ist, gibt diese <b>Formula</b>-Eigenschaft eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge zurück, und zwar in dem gleichen Format, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
+          <para>Wenn Sie den Wert oder die Formel einer Zelle in ein Datum umwandeln, überprüft Microsoft Excel, ob die Zelle bereits mit einem Datums- oder Zeitformat formatiert ist. Ist das nicht der Fall, so wird das Zahlenformat in das kurze Standard-Datumsformat geändert.</para>
+          <para>Wenn der Bereich einen ein- oder zweidimensionalen Bereich handelt, können Sie die Formel in ein Array mit denselben Dimensionen festlegen. In ähnlicher Weise können Sie die Formel in ein Array einfügen.</para>
+          <para>Beim Festlegen der Formel für einen Bereich mit mehreren Zellen wird die Formel in alle Zellen des Bereichs eingetragen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -285,7 +285,7 @@
         <summary>Zurückgeben oder Festlegen einer <b>Zeichenfolge</b> zur Angabe der Formeln Standards Englisch (Vereinigte Staaten) festlegt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>StandardFormula</b> -Eigenschaft wirkt sich in erster Linie Elementnamen Datums- oder Zahlenformat. Es bietet eine Möglichkeit, festzulegen oder eine Formel für ein bestimmtes berechnete Element abzufragen.</para>
+          <para>Die <b>StandardFormula</b>StandardFormula-Eigenschaft wirkt sich in erster Linie auf Elementnamen aus, die ein Datums- oder Zahlenformat besitzen. Sie bietet eine Möglichkeit, eine Formel für ein gegebenes berechnetes Element festzulegen oder abzufragen.</para>
           <para>Die <b>StandardFormula</b> -Eigenschaft ist "International lesbar" während der <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> -Eigenschaft ist nicht.</para>
           <para></para>
         </remarks>

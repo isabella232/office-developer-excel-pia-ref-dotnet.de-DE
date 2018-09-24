@@ -1,10 +1,10 @@
 <Type Name="AppEvents_Event" FullName="Microsoft.Office.Interop.Excel.AppEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a27629fb8f2b82071d18bfdd4a110964f2911154" />
+    <Meta Name="ms.openlocfilehash" Value="9bf90f2833e35c96400ee1d99e1cdd02fe945d69" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580241" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AppEvents_Event" />
@@ -50,8 +50,10 @@
       <Docs>
         <summary>Die <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> Ereignis tritt auf, wenn alle ausstehenden Aktualisierungsvorgänge (synchron und asynchron) und alle Aktivitäten daraus ergebenden Berechnungen abgeschlossen wurden.</summary>
         <remarks>
-          <para>Dieses Ereignis tritt auf, wenn Berechnungen abgeschlossen ist und es keine ausstehenden Abfragen sind.  Es ist erforderlich für beide Bedingungen erfüllt sein, bevor das Ereignis auftritt.  Das Ereignis kann ausgelöst werden, auch wenn es keine Blattdaten in der Arbeitsmappe, sind wie bei jeder Berechnung für die gesamte Arbeitsmappe abgeschlossen ist und keine Abfragen ausgeführt werden.  </para>
-          <para>Add-In-Entwickler verwenden die <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> Ereignis wissen, wann alle Daten in die Arbeitsmappe wurde vollständig aktualisiert durch Abfragen und/oder Berechnungen, die ausgeführt wurden möglicherweise.</para>
+          <para>Dieses Ereignis tritt auf, wenn eine Berechnung abgeschlossen wurde und keine ausstehenden Abfragen vorhanden sind. Beide Bedingungen müssen erfüllt sein, damit das Ereignis auftritt. Das Ereignis kann auch ausgelöst werden, wenn sich keine Arbeitsblattdaten in der Arbeitsmappe befinden, beispielsweise wenn eine Berechnung für die gesamte Arbeitsmappe abgeschlossen ist und keine Abfragen ausgeführt werden.
+
+</para>
+          <para>Add-In-Entwickler verwenden die <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> Ereignis wissen, wann alle Daten in die Arbeitsmappe wurde vollständig aktualisiert durch Abfragen und/oder Berechnungen, die ausgeführt wurden, können.</para>
           <para>Dieses Ereignis tritt auf, nachdem alle <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, und <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> Ereignisse.  Es ist das letzte Ereignis eintritt, nachdem alle Refresh Verarbeitung und alle Calc-Verarbeitung abgeschlossen haben, und es tritt nach<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> auf festgelegt ist <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</para>
           <para></para>
         </remarks>
@@ -390,7 +392,7 @@
       <Docs>
         <summary>Tritt auf, nachdem eine Zelle oder ein Zellbereich in einer PivotTable bearbeitet oder neu berechnet wurde (bei Zellen, die Formeln enthalten).</summary>
         <remarks>
-          <para>Der <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> Ereignis tritt nicht auf eine beliebige Maßgabe als Bearbeitung oder neuberechnung Zellen. Angenommen, sie nicht tritt auf, wenn die PivotTable aktualisiert, sortiert, gefiltert oder Drilldown auf, obwohl diese Vorgänge Zellen verschieben und potenziell neue Werte aus der OLAP-Datenquelle abgerufen wird.</para>
+          <para>Die <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> Ereignis tritt nicht auf eine beliebige Maßgabe als Bearbeitung oder neuberechnung Zellen. Es wird beispielsweise nicht auftreten, wenn die PivotTable aktualisiert, sortiert, gefiltert oder Drilldown auf, obwohl diese Vorgänge Zellen verschieben und potenziell neue Werte aus der OLAP-Datenquelle abgerufen wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -412,7 +414,7 @@
       <Docs>
         <summary>Tritt auf, bevor Änderungen auf eine PivotTable angewendet werden.</summary>
         <remarks>
-          <para>Der <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Ereignis tritt auf, unmittelbar bevor Excel eine UPDATE CUBE-Anweisung, um alle Änderungen zu übernehmen, um OLAP-Datenquelle der PivotTable ausführt, und unmittelbar nachdem der Benutzer sich entschieden hat, Änderungen in der Benutzeroberfläche.</para>
+          <para>Die <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Ereignis tritt auf, unmittelbar bevor Excel eine UPDATE CUBE-Anweisung, um alle Änderungen zu übernehmen, um OLAP-Datenquelle der PivotTable ausführt, und unmittelbar nachdem der Benutzer sich entschieden hat, Änderungen in der Benutzeroberfläche.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -434,7 +436,7 @@
       <Docs>
         <summary>Tritt auf, bevor Änderungen per Commit in die OLAP-Datenquelle für eine PivotTable geschrieben werden.</summary>
         <remarks>
-          <para>Der <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> Ereignis tritt auf, unmittelbar bevor Excel eine COMMIT TRANSACTION für OLAP-Datenquelle der PivotTable ausführt, und unmittelbar nachdem der Benutzer sich entschieden hat, um Änderungen für die gesamte PivotTable zu speichern.</para>
+          <para>Die <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> Ereignis tritt auf, unmittelbar bevor Excel eine COMMIT TRANSACTION für OLAP-Datenquelle der PivotTable ausführt, und unmittelbar nachdem der Benutzer sich entschieden hat, um Änderungen für die gesamte PivotTable zu speichern.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -456,7 +458,7 @@
       <Docs>
         <summary>Tritt auf, bevor Änderungen an einer PivotTable verworfen werden.</summary>
         <remarks>
-          <para>Häufigkeit unmittelbar bevor Excel eine ROLLBACK TRANSACTION-Anweisung für die OLAP-Datenquelle ausführt, wenn eine Transaktion noch aktiv ist, und klicken Sie dann alle bearbeiteten Werte in der PivotTable verworfen, nachdem der Benutzer sich entschieden hat, um Änderungen zu verwerfen.</para>
+          <para>Tritt auf, unmittelbar bevor Excel eine ROLLBACK TRANSACTION-Anweisung für die OLAP-Datenquelle ausführt, wenn eine Transaktion noch aktiv ist, und klicken Sie dann alle bearbeiteten Werte in der PivotTable verworfen, nachdem der Benutzer sich entschieden hat, um Änderungen zu verwerfen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -668,7 +670,7 @@
       <Docs>
         <summary>Tritt ein, nachdem Microsoft Excel gespeichert oder Daten aus einer geöffneten Arbeitsmappe in einer XML-Datendatei exportiert.</summary>
         <remarks>
-          <para>Verwenden Sie das <b>AfterXmlExport</b> -Ereignis, wenn Sie einen Vorgang ausführen, nachdem XML-Daten aus einer bestimmten Arbeitsmappe exportiert wurde möchten.</para>
+          <para>Verwenden Sie das <b>AfterXmlExport</b>-Ereignis, wenn Sie einen Vorgang ausführen möchten, nachdem XML-Daten aus einer bestimmten Arbeitsmappe exportiert wurden.</para>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
@@ -691,7 +693,7 @@
       <Docs>
         <summary>Tritt auf, nachdem eine bestehende XML-Datenverbindung aktualisiert wird oder neue XML-Daten in eine geöffnete Microsoft Excel-Arbeitsmappe importiert werden.</summary>
         <remarks>
-          <para>Verwenden Sie das <b>AfterXmlImport</b> -Ereignis, wenn Sie einen Vorgang ausführen, nachdem XML-Daten in einer bestimmten Arbeitsmappe importiert wurden möchten.</para>
+          <para>Verwenden Sie das <b>AfterXmlImport</b>-Ereignis, wenn Sie einen Vorgang ausführen möchten, nachdem XML-Daten in eine bestimmte Arbeitsmappe importiert wurden.</para>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
@@ -771,7 +773,7 @@
       <Docs>
         <summary>Tritt auf, bevor Microsoft Excel gespeichert oder Daten aus einer geöffneten Arbeitsmappe in einer XML-Datendatei exportiert.</summary>
         <remarks>
-          <para>Verwenden Sie das <b>BeforeXmlExport</b> -Ereignis, wenn Sie XML-Daten erfassen, die gerade möchten aus einer bestimmten Arbeitsmappe exportiert oder gespeichert.</para>
+          <para>Verwenden Sie das <b>BeforeXmlExport</b>-Ereignis, wenn Sie XML-Daten erfassen möchten, die aus einer bestimmten Arbeitsmappe exportiert oder gespeichert werden.</para>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
@@ -794,7 +796,7 @@
       <Docs>
         <summary>Tritt auf, bevor eine bestehende XML-Datenverbindung aktualisiert wird oder neue XML-Daten in eine geöffnete Microsoft Excel-Arbeitsmappe importiert werden.</summary>
         <remarks>
-          <para>Verwenden Sie das <b>BeforeXmlImport</b> -Ereignis, wenn Sie XML-Daten erfassen, die gerade möchten in einer bestimmten Arbeitsmappe importiert oder aktualisiert.</para>
+          <para>Verwenden Sie das <b>BeforeXmlImport</b>-Ereignis, wenn Sie XML-Daten erfassen möchten, die in einer bestimmten Arbeitsmappe importiert oder aktualisiert werden.</para>
           <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
@@ -855,8 +857,8 @@
       <Docs>
         <summary>Tritt auf, wenn in einer geöffneten Arbeitsmappe ein neues Diagramm erstellt wird.</summary>
         <remarks>
-          <para>Die <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> Ereignis tritt auf, wenn ein neues Diagramm eingefügt oder in einem Arbeitsblatt, ein Diagrammblatt oder andere Blatt eingefügt wird. Wenn mehrere Diagramme eingefügt oder eingefügt werden, tritt das Ereignis für jedes Diagramm in der Reihenfolge eingefügt oder eingefügt werden. Wenn ein Chart-Objekt oder ein Diagrammblatt von einer Position an eine andere verschoben wird, wird das Ereignis nicht ausgeführt. Jedoch, wenn das Diagramm zwischen ein Chart-Objekt und ein Diagrammblatt verschoben wird, das Ereignis ausgelöst, da ein neues Diagramm erstellt werden muss.</para>
-          <para>Der <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> Ereignis tritt nicht in den folgenden Szenarien: Kopieren oder ein Diagrammblatt einfügen, einen Diagrammtyp ändern, ändern eine Diagramm-Datenquelle, Rückgängigmachen oder Wiederholen einfügen oder Einfügen eines Diagramms, und Laden eine Arbeitsmappe, die ein Diagramm enthält.</para>
+          <para>Die <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> Ereignis tritt auf, wenn ein neues Diagramm eingefügt oder in einem Arbeitsblatt, ein Diagrammblatt oder andere Blatt eingefügt wird. Wenn mehrere Diagramme eingefügt oder eingefügt werden, tritt das Ereignis für jedes Diagramm in der Reihenfolge eingefügt oder eingefügt werden. Wenn ein Chart-Objekt oder ein Diagrammblatt von einer Position an eine andere verschoben wird, wird das Ereignis nicht ausgeführt. Jedoch, wenn das Diagramm zwischen ein Chart-Objekt und ein Diagrammblatt verschoben wurde, wird das Ereignis tritt auf, weil ein neues Diagramm erstellt werden muss.</para>
+          <para>Die <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> Ereignis tritt nicht in den folgenden Szenarien: Kopieren oder ein Diagrammblatt einfügen, einen Diagrammtyp ändern, ändern eine Diagramm-Datenquelle, Rückgängigmachen oder Wiederholen einfügen oder Einfügen eines Diagramms, und Laden eine Arbeitsmappe, die ein Diagramm enthält.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -954,7 +956,7 @@
       <Docs>
         <summary>Die <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />Ereignis tritt auf, wenn der Benutzer einen durch das Recordset-Objekt Drillthrough oder die Rowset-Aktion für eine OLAP-PivotTable aufruft.</summary>
         <remarks>
-          <para>, Da das Recordset asynchron erstellt wird, ermöglicht das Ereignis Automatisierung, um zu bestimmen, wann die Aktion abgeschlossen wurde. Darüber hinaus, da das Recordset-Objekt auf einem separaten Blatt erstellt wird, das Ereignis muss auf Arbeitsmappenebene.</para>
+          <para>Da das Recordset asynchron erstellt wird, ist bei diesem Ereignis eine Automatisierung möglich, um zu bestimmen, wann die Aktion abgeschlossen wurde. Außerdem muss sich das Ereignis auf Arbeitsmappenebene befinden, da das Recordset auf einem eigenen Arbeitsblatt erstellt wird.</para>
           <para></para>
         </remarks>
       </Docs>

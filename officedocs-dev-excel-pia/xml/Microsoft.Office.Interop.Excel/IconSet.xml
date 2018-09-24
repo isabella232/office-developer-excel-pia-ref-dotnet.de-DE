@@ -1,10 +1,10 @@
 <Type Name="IconSet" FullName="Microsoft.Office.Interop.Excel.IconSet">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="edd1f28ee8b5a4020748a5990476af31b8889717" />
+    <Meta Name="ms.openlocfilehash" Value="62eb85821f62dd352395cbd400597e9412efe980" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577560" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSet : System.Collections.IEnumerable" />
@@ -36,10 +36,12 @@
     <summary>Stellt einen einzelnen Satz von Symbolen dar, die in einer Regel zur bedingten Formatierung von Symbolsätzen verwendet werden.</summary>
     <remarks>
       <para>
-        <b>IconSet</b> -Objekts ist ein untergeordnetes Objekt von der <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> Auflistung.</para> Legen Sie 
-      <para>das Symbol für die bedingte Formatierung mithilfe von zugewiesen ist die <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Objekt. Sie diese Eigenschaft auf eine der integrierten Symbolsätze festlegen, indem Sie eine der Konstanten der übergeben der <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> -Enumeration als Index der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Objekt. Siehe Beispiel für Details. </para><para></para></remarks>
+        <b>IconSet</b> -Objekts ist ein untergeordnetes Objekt von der <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> Auflistung.</para>
+      <para>Der Symbolsatz für die bedingte Formatierung mithilfe von zugewiesen ist die <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Objekt. Sie diese Eigenschaft auf eine der integrierten Symbolsätze festlegen, indem Sie eine der Konstanten der übergeben der <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> -Enumeration als Index der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Objekt. Siehe Beispiel für Details. </para>
+      <para></para>
+    </remarks>
     <example>
-      <para>Im folgenden Codebeispiel wird erstellt einen Nummernbereich Testergebnisse darstellen und anschließend auf diesem Bereich eine Regel zur bedingten Formatierung von Symbolsätzen angewendet. Der Typ des Symbolsatzes wird aus der Standardsymbole an eine Reihe von 5-Pfeilsymbol geändert. Schließlich wird auf eine Zahl hartcodiert und den Typ des Schwellenwerts aus Quantil geändert.</para>
+      <para>Im folgenden Codebeispiel wird ein Bereich mit Zahlen dargestellt, die Testergebnisse darstellen. Anschließend wird auf den Bereich eine Regel zur bedingten Formatierung von Symbolsätzen angewendet. Der Typ des Symbolsatzes wird dann von den Standardsymbolen zu einem Symbolsatz mit fünf Pfeilen geändert. Schließlich wird der Typ des Schwellenwerts von Perzentil in eine hartcodierte Zahl geändert.</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF()  
 
 
@@ -14761,7 +14763,7 @@ End Sub&lt;/span&gt;</code>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -14860,7 +14862,7 @@ End Sub&lt;/span&gt;</code>
           <see cref="T:Microsoft.Office.Interop.Excel.Icon" />
         </value>
         <remarks>
-          <para>Der Wert von der <paramref name="Index" /> Parameter darf nicht größer als die Anzahl der Symbole in einem Symbolsatz sein. Die Gesamtzahl der Symbole in einem Symbolsatz verwenden, um die <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Count" /> -Eigenschaft.</para>
+          <para>Der Wert der <paramref name="Index" /> Parameter darf nicht größer als die Anzahl der Symbole in einem Symbolsatz sein. Die Gesamtzahl der Symbole in einem Symbolsatz verwenden, um die <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Count" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>

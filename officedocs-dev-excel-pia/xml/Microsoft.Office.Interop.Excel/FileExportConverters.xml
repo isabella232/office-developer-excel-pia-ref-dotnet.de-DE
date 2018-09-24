@@ -1,10 +1,10 @@
 <Type Name="FileExportConverters" FullName="Microsoft.Office.Interop.Excel.FileExportConverters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a0248fd27bcefad2e1cbf85330ede4a467e15625" />
+    <Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572457" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> -Objekten, die alle zum Speichern von Dateien verfügbaren Dateikonverter darstellen.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Auflistung.</para>
-      <para>Der <b>Add</b> -Methode ist nicht verfügbar für die <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Auflistung. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> Objekte werden während der Installation von Microsoft Office oder durch Installieren von zusätzlichen Konvertern hinzugefügt.</para>
-      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> (Index), wobei Index eine ganze Zahl, um ein einzelnes FileExportConverter-Objekt zurückzugeben. Die Indexnummer stellt die Position des Dateikonverters in der FileExportConverters-Auflistung.</para>
+      <para>Die <b>Add</b> -Methode ist nicht verfügbar für die <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Auflistung. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />Objekte werden während der Installation von Microsoft Office oder durch Installieren von zusätzlichen Konvertern hinzugefügt.</para>
+      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> (Index), wobei Index eine ganze Zahl, um ein einzelnes FileExportConverter-Objekt zurückzugeben. Die Indexnummer stellt die Position des Dateikonverters in der FileExportConverters-Auflistung dar.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -167,7 +167,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C, Zeichenfolge "XCEL zurück". Die Creator-Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para></para>
         </remarks>
       </Docs>

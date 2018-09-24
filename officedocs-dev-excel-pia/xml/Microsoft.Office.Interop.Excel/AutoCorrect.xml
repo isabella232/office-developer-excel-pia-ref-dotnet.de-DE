@@ -1,10 +1,10 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e14cf70b8bdf1df93bc526f14352da5bd8c8b680" />
+    <Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572723" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AutoCorrect" />
@@ -126,7 +126,7 @@
         <summary>Ein <b>boolescher</b> Wert, der angibt, ob die automatische Erweiterung für Listen aktiviert ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Bei der Eingabe in einer Zelle einer leeren Zeile oder Spalte neben einer Liste wird die Liste erweitert, um diese Zeile oder Spalte enthalten, wenn die automatische Erweiterung aktiviert ist.</para>
+          <para>Wenn Sie in einer Zelle einer leeren Zeile oder Spalte neben einer Liste eingeben, wird die Liste erweitert, um diese Zeile oder Spalte einzuschließen, wenn die automatische Erweiterung aktiviert ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -162,7 +162,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Die-Eigenschaft wirkt sich nicht vorhandene berechnete Spalten oder auf berechnete Spalten erstellt, in dem automatische Ausfüllen nicht aufgetreten wäre.</para>
+          <para>Die Eigenschaft wirkt sich nicht auf vorhandene berechnete Spalten oder auf berechnete Spalten, die ohne automatische Ausfülloption erstellt wurden, aus.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -289,8 +289,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -354,8 +354,8 @@
         <summary>Ermöglicht es dem Benutzer auf die Schaltfläche AutoKorrektur-Optionen anzuzeigen oder auszublenden. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>DisplayAutoCorrectOptions</b> -Eigenschaft ist eine Microsoft Office-Einstellung. Ändern diese Eigenschaft in Microsoft Excel wirkt sich auf die Office-Programme auch.</para>
-          <para>In Excel die Schaltfläche AutoKorrektur-Optionen wird nur angezeigt, wenn es sich bei der automatischen Erstellung eines Hyperlinks.</para>
+          <para>Die <b>DisplayAutoCorrectOptions</b>-Eigenschaft gilt für das gesamte Microsoft Office. Wenn Sie diese Eigenschaft in Microsoft Excel ändern, wirkt sich dies auch auf die anderen Office-Anwendungen aus.</para>
+          <para>In Excel wird die Schaltfläche AutoKorrektur-Optionen nur bei der automatischen Erstellung eines Hyperlinks angezeigt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -425,11 +425,11 @@
           <list type="table">
             <item>
               <term>1</term>
-              <description>der Text, der ersetzt werden</description>
+              <description>Der zu ersetzende Text</description>
             </item>
             <item>
               <term>2</term>
-              <description>den Ersatztext</description>
+              <description>Der Ersatztext</description>
             </item>
           </list>
           <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> -Methode, um einen Eintrag zur Liste hinzuzufügen.</para>

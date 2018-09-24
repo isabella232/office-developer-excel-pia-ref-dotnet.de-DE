@@ -1,10 +1,10 @@
 <Type Name="SmartTagOptions" FullName="Microsoft.Office.Interop.Excel.SmartTagOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c56b52fc5575c4410dbfda5ac1c7f7b98b1d6b52" />
+    <Meta Name="ms.openlocfilehash" Value="08e6c64d1c42348903ffb92e85b1dbbff6eb03f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581795" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagOptions" />
@@ -32,11 +32,16 @@
     <summary>Stellt die Optionen dar, die mit Smarttags ausgeführt werden können.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Objekts, um ein <b>SmartTagOptions</b> -Objekt zurückzugeben.</para>
-      <para>Nachdem ein <b>SmartTagOptions</b> -Objekt wird zurückgegeben, Sie die folgenden Eigenschaften verwenden können, um die Optionen für die Anzeige von Smarttags zu bestimmen und ob verfügen über Smarttags in der aktiven Arbeitsmappe eingebettete.</para>
+      <para>Nachdem ein <b>SmartTagOptions</b> -Objekt zurückgegeben wurde, können Sie die folgenden Eigenschaften verwenden, um die Optionen für die Anzeige von Smarttags und ob Sie Smarttags eingebettet in der aktiven Arbeitsmappe zu bestimmen.</para>
       <list type="bullet">
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.EmbedSmartTags" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.DisplaySmartTags" />
           </description>
         </item>
       </list>
@@ -98,8 +103,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -136,11 +141,11 @@
           <para>
             <b>XlSmartTagDisplayMode</b> kann eine der folgenden Konstanten sein:</para>
           <para>
-            <b>XlButtonOnly</b> zeigt nur die Schaltfläche für Smarttags.</para>
+            <b>xlButtonOnly</b> Zeigt nur die Schaltfläche für Smarttags an.</para>
           <para>
-            <b>XlDisplayNone</b> es keine für Smarttags Anzeige erfolgt.</para>
+            <b>xlDisplayNone</b> Nichts ist für Smarttags angezeigt.</para>
           <para>
-            <b>XlIndicatorAndButton</b> zeigt den Indikator und die Schaltfläche für Smarttags.</para>
+            <b>xlIndicatorAndButton</b> Zeigt den Indikator und die Schaltfläche für Smarttags an.</para>
           <para></para>
         </remarks>
       </Docs>

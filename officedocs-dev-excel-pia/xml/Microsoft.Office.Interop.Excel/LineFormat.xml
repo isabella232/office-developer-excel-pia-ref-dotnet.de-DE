@@ -1,10 +1,10 @@
 <Type Name="LineFormat" FullName="Microsoft.Office.Interop.Excel.LineFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="13bc8c12ad34dfd5fd661b85e444b185e1b7b074" />
+    <Meta Name="ms.openlocfilehash" Value="7d64676ab2ca48d349cd8696c6abf4830f0a9f32" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575488" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LineFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -30,9 +30,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Formatierung von Linie und Pfeilspitze dar.</summary>
+    <summary>Linie und Pfeilspitze Formatierung darstellt.</summary>
     <remarks>
-      <para>Bei einer Linie enthält das <b>LineFormat</b> -Objekt Formatinformationen für die Linie selbst; Um eine Form mit einem Rahmen, enthält dieses Objekt Formatinformationen für das Shape Rahmen.</para>
+      <para>Bei einer Linie enthält das <b>LineFormat</b> -Objekt Formatinformationen für die Linie selbst; Um eine Form mit einem Rahmen enthält dieses Objekt Informationen über die Formatierung für den Rahmen der Form.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" /> Eigenschaft, um ein <b>LineFormat</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
@@ -222,8 +222,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -414,7 +414,7 @@
         <remarks>
           <para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>MsoTrue</b> (1), wenn Linien innerhalb der Grenzen der Form gezeichnet werden, andernfalls <b>MsoFalse</b> (0).</para>
+            <b>msoTrue</b> (-1), wenn Linien innerhalb der Grenzen der Form gezeichnet werden, andernfalls <b>msoFalse</b> (0).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -538,7 +538,7 @@
         <summary>Gibt zurück oder legt den Grad der Transparenz der angegebenen Füllung als Wert von 0,0 (undurchsichtig) und 1,0 (löschen).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der Wert dieser Eigenschaft wirkt sich auf die Darstellung des einfarbige Füllungen und nur Zeilen; er hat keine Auswirkung auf die Darstellung des gemusterten Linien oder gemusterten, Farbverlauf, Bild oder strukturierte Füllungen.</para>
+          <para>Der Wert dieser Eigenschaft hat nur Einfluss auf die Darstellung von einfarbigen Füllbereichen und Linien. Er hat keine Auswirkung auf die Darstellung von Linienfüllmustern, gemusterten oder graduellen Füllungen oder Bildfüllungen.</para>
           <para></para>
         </remarks>
       </Docs>

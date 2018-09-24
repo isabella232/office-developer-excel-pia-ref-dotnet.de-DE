@@ -1,10 +1,10 @@
 <Type Name="AutoRecover" FullName="Microsoft.Office.Interop.Excel.AutoRecover">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b126d37a57a924ef96cf203d46d8043619a844cf" />
+    <Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576748" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AutoRecover" />
@@ -31,11 +31,11 @@
   <Docs>
     <summary>Stellt die automatischen Wiederherstellungsfeatures einer Arbeitsmappe dar.</summary>
     <remarks>
-      <para>Eigenschaften für das AutoRecover-Objekt bestimmen den Pfad und das Zeitintervall zum Sichern aller Dateien.</para>
+      <para>Die Eigenschaften für das AutoRecover-Objekt bestimmen den Pfad und das Zeitintervall zum Sichern aller Dateien.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekts, um ein <b>AutoRecover</b> -Objekt zurückzugeben.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> -Eigenschaft des <b>AutoRecover</b> -Objekts zum Festlegen des Pfads, in dem die AutoWiederherstellen-Datei gespeichert wird.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> -Eigenschaft des <b>AutoRecover</b> -Objekts, um das Zeitintervall zum Sichern aller Dateien festzulegen.</para>
-      <para>Hinweis Einheiten für die <b>Time</b> -Eigenschaft werden Minuten.</para>
+      <para>Hinweis Einheiten für die <b>Time</b> -Eigenschaft werden Minuten verwendet.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -94,8 +94,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -221,7 +221,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Zulässige Werte sind ganze Zahlen von 1 bis 120 Minuten. Der Standardwert ist 10 Minuten.</para>
-          <para>Einen Dezimalwert eingeben, werden auf die nächste ganze Zahl gerundet. Beispielsweise eingeben eines Werts von 5.5 entspricht dem 6.</para>
+          <para>Wenn Sie einen Dezimalwert eingeben, wird dieser auf die nächste ganze Zahl aufgerundet. Die Eingabe von 5,5 ist z.B. äquivalent zu 6.</para>
           <para>Wenn Zeitwerte außerhalb des gültigen Bereichs eingegeben werden, wird Microsoft Excel zum zuvor verwendeten Zeitwert zurück.</para>
           <para></para>
         </remarks>

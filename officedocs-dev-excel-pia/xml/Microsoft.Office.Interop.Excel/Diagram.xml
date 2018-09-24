@@ -1,10 +1,10 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="284dac8d28fb2f4619db584ffa0820a68ade7b37" />
+    <Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572667" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Diagram" />
@@ -31,11 +31,11 @@
   <Docs>
     <summary>Stellt ein Diagramm dar.</summary>
     <remarks>
-      <para>Verwenden Sie die <b>Diagramm</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt oder <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> -Auflistung, um eine Rückgabe <b>ein Diagrammobjekt</b> .</para>
-      <para>Können Sie auch das aktuelle Diagramm in ein anderes Diagramm mithilfe Konvertieren der <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> -Methode.</para>
+      <para>Verwenden Sie die <b>Diagramm</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt oder <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> -Auflistung, um eine Rückgabe ein <b>Diagramm</b> -Objekt.</para>
+      <para>Sie können auch das aktuelle Diagramm in ein anderes Diagramm konvertieren, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> Methode.</para>
       <para>
-        <b>Hinweis</b> : Wenn das aktuelle Diagramm ein Organigramm (<b>msoDiagramOrgChart tritt</b>) ist ein Laufzeitfehler tritt.</para>
-      <para>Es gibt verschiedene Arten von Diagrammen zur Auswahl beim Arbeiten mit dem <b>Diagramm</b> -Objekt. Verweisen auf die <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> -Methode, um eine Liste der verfügbaren Diagrammtypen anzuzeigen.</para>
+        <b>Hinweis</b>   Wenn das aktuelle Diagramm ein Organigramm (<b>msoDiagramOrgChart tritt</b>) ist, tritt ein Laufzeitfehler.</para>
+      <para>Es gibt verschiedene Arten von Diagramme zur Auswahl beim Arbeiten mit dem <b>Diagramm</b> -Objekt. Verweisen auf die <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> -Methode, um eine Liste der verfügbaren Diagrammtypen anzuzeigen.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -192,8 +192,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -311,7 +311,7 @@
         <summary>Kehrt die Knoten in einem Diagramm.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Festlegen <b>des Reverseproxys</b> auf <b>MsoFalse</b> lässt die Diagrammknoten unverändert. Die Knoten in einem Diagramm macht auf <b>MsoTrue</b> festlegen <b>des Reverseproxys</b> .</para>
+          <para>Festlegen <b>des Reverseproxys</b> auf <b>MsoFalse</b> lässt die Diagrammknoten unverändert. <b>Umgekehrte</b> auf <b>MsoTrue</b> festlegen, kehrt die Knoten in einem Diagramm.</para>
           <para>In der folgenden <b>MsoTriState</b> -Konstanten, die nicht auf diese Eigenschaft angewendet: <b>MsoCTrue</b>, <b>MsoTriStateMixed</b>, <b>MsoTriStateToggle</b>.</para>
           <para></para>
         </remarks>
@@ -344,27 +344,27 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoDiagramType" />kann eine der folgenden <b>MsoDiagramType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoDiagramType" />Dies kann eine der folgenden <b>MsoDiagramType</b> -Konstanten sein:</para>
           <para>
-            <b>MsoDiagramCycle</b>
+            <b>msoDiagramCycle</b>
           </para>
           <para>
-            <b>MsoDiagramMixed</b>
+            <b>msoDiagramMixed</b>
           </para>
           <para>
             <b>msoDiagramOrgChart tritt</b>
           </para>
           <para>
-            <b>MsoDiagramPyramid</b>
+            <b>msoDiagramPyramid</b>
           </para>
           <para>
-            <b>MsoDiagramRadial</b>
+            <b>msoDiagramRadial</b>
           </para>
           <para>
-            <b>MsoDiagramTarget</b>
+            <b>msoDiagramTarget</b>
           </para>
           <para>
-            <b> MsoDiagramVenn</b>
+            <b>msoDiagramVenn</b>
           </para>
           <para></para>
         </remarks>

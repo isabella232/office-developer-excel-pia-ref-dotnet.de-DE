@@ -1,10 +1,10 @@
 <Type Name="ConditionValue" FullName="Microsoft.Office.Interop.Excel.ConditionValue">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a502761111afad4e3e8a449a28ce61efad23c0b4" />
+    <Meta Name="ms.openlocfilehash" Value="81c793a0733604f15df8956de448166bd0681dac" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587311" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConditionValue" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Stellt dar, wie der kürzeste oder längste Balken für eine Regel zur bedingten Formatierung für einen Datenbalken ausgewertet wird.</summary>
     <remarks>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> -Objekt wird zurückgegeben, entweder die <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> oder <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> -Objekt.</para>
-      <para>Können Sie die Art der Überprüfung von der Standardeinstellung (niedrigster Wert für den kürzesten Balken) und der höchste Wert für den längsten Balken mithilfe ändern die <see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" /> -Methode.</para>
+      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> -Objekt wird zurückgegeben, verwenden entweder die <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> oder <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> Objekt.</para>
+      <para>Sie können die Art der Überprüfung von der Standardeinstellung (niedrigster Wert für den kürzesten Balken) und der höchste Wert für den längsten Balken ändern, mit der <see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" /> Methode.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -97,7 +97,7 @@
           <see cref="F:Microsoft.Office.Interop.Excel.XlCreator.xlCreatorCode" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -129,37 +129,43 @@
         <param name="newvalue">Der kürzeste oder längste Datenbalken zugewiesene Wert. Je nachdem, welche die <paramref name="newtype" /> -Argument kann sein, eine Zahl oder eine Formel, die eine Zahl ausgewertet wird.</param>
         <summary>Ändert, wie der längste oder kürzeste Balken für eine Regel zur bedingten Formatierung für einen Datenbalken ausgewertet wird.</summary>
         <remarks>
-          <para>Die folgende Tabelle beschreibt die zulässigen Schwellenwerte für jede Art von Auswertung.</para>
+          <para>In der folgenden Tabelle werden die zulässigen Schwellenwerte für die Auswertungstypen dargestellt.</para>
           <list type="table">
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />
-              </term>Argument wird ignoriert,
+              </term>
+              <description>Argument wird ignoriert</description>
             </item>
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" />
-              </term>Argument wird ignoriert,
+              </term>
+              <description>Argument wird ignoriert</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />
-              </term>eine beliebige Anzahl
+              </term>
+              <description>Beliebige Zahl</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />
-              </term>eine beliebige Zahl zwischen 0 und 100 
+              </term>
+              <description>Beliebige Zahl zwischen 0 und 100 </description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />
-              </term>eine beliebige Zahl zwischen 0 und 100
+              </term>
+              <description>Beliebige Zahl zwischen 0 und 100</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />
-              </term>eine Formel, die Gibt eine einzelne Zahl
+              </term>
+              <description>Eine Formel, die eine einzelne Zahl zurückgibt</description>
             </item>
           </list>
           <para></para>
@@ -255,7 +261,7 @@
         </value>
         <remarks>
           <para>Sie können festlegen, den Wert nur, wenn die <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> -Eigenschaft für die bedingte Formatierung auf eine der folgenden Konstanten festgelegt ist: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, oder <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
-          <para>, Wenn der Schwellenwert für eine Formel ist, können Sie die Formel als <b>Zeichenfolge</b>festlegen. Die Formel muss eine einzelne Zahl zurückgeben.</para>
+          <para>Wenn es sich bei dem Typ des Schwellenwerts um eine Formel handelt, können Sie die Formel als Wert vom Typ <b>String</b> festlegen. Die Formel muss eine einzelne Zahl zurückgeben.</para>
           <para></para>
         </remarks>
       </Docs>

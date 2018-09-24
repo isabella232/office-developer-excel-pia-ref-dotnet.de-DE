@@ -1,10 +1,10 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Excel.Characters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="af8c5c7adc42aa94b514bcaf0612a241b196dc71" />
+    <Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582362" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Characters" />
@@ -31,7 +31,10 @@
   <Docs>
     <summary>Stellt Zeichen in einem Objekt dar, das Text enthält. Das <b>Characters</b> -Objekt können Sie eine beliebige Abfolge von Zeichen in der vollständigen Textzeichenfolge ändern.</summary>
     <remarks>
-      <para>Verwenden Sie <b>Characters</b>(<paramref name="start" />, <paramref name="length" />), wobei <paramref name="start" /> ist die Nummer des Zeichens Start und <paramref name="length" /> ist die Anzahl der Zeichen, um ein <b>Characters</b> -Objekt zurückzugeben.</para> Die <b>Zeichen</b><para>-Methode ist erforderlich, nur, wenn Sie Teil des Texts eines Objekts ohne den Rest (Sie können nicht die <b>Characters</b> -Methode verwenden, formatieren Sie einen Teil des Texts, wenn das Objekt rich-Text nicht unterstützt) ändern müssen. Um den gesamten Text gleichzeitig zu ändern, können Sie in der Regel die entsprechende Methode oder Eigenschaft anwenden, direkt auf das Objekt.</para><para></para></remarks>
+      <para>Verwenden Sie <b>Characters</b>(<paramref name="start" />, <paramref name="length" />), wobei <paramref name="start" /> ist die Nummer des Zeichens Start und <paramref name="length" /> ist die Anzahl der Zeichen, um ein <b>Characters</b> -Objekt zurückzugeben.</para>
+      <para>Die <b>Characters</b> -Methode ist erforderlich, nur, wenn Sie Teil des Texts eines Objekts ohne den Rest (Sie können nicht die <b>Characters</b> -Methode verwenden, formatieren Sie einen Teil des Texts, wenn das Objekt rich-Text nicht unterstützt) ändern müssen. Um den gesamten Text gleichzeitig zu ändern, können Sie in der Regel die entsprechende Methode oder Eigenschaft direkt auf das Objekt anwenden.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -147,8 +150,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -294,7 +297,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Verwenden Sie statt der Verwendung dieser Eigenschaft an, die <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> -Auflistung, um eine Zelle phonetischen Informationen hinzu, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> Objekt um die phonetischen Textzeichenfolgen in einer Zelle festzulegen oder zurückzugeben.</para>
-          <para>Verwenden Sie diese Eigenschaft nur bei <b>Characters</b> -Objekten, die auf einer einzelnen Zelle basieren.</para>
+          <para>Sie können diese Eigenschaft nur bei <b>Characters</b> -Objekten, die auf einer einzelnen Zelle basieren.</para>
           <para></para>
         </remarks>
       </Docs>

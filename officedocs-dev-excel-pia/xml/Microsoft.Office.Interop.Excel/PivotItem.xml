@@ -1,10 +1,10 @@
 <Type Name="PivotItem" FullName="Microsoft.Office.Interop.Excel.PivotItem">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e442965f9ffbd148054a2f84e29e9a51ecca6941" />
+    <Meta Name="ms.openlocfilehash" Value="fb2cfd5e547820789be4ff24b8428ca8e43d853e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578981" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotItem" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Stellt ein Element eines PivotTable-Felds dar. Die Elemente stellen die einzelnen Dateneinträge in einer Feldkategorie dar. Das <b>PivotItem</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Auflistung. Die <b>PivotItems</b> -Auflistung enthält alle Elemente in einer <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt.</summary>
     <remarks>
-      <para>Verwendung <b>PivotItems</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Artikelnummer Index oder Name, um ein einzelnes <b>PivotItem</b> -Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <b>PivotItems</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Artikelnummer Index oder Name, um ein einzelnes <b>PivotItem</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -162,7 +162,7 @@
         <summary>Gibt ein Objekt, das entweder stellt ein einzelnes PivotTable-Element (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Objekt) oder eine Auflistung aller Elemente (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Object), die sich untergeordnete Gruppenelemente im angegebenen Feld oder untergeordnete Elemente des angegebenen Elements. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft ist nicht verfügbar für OLAP-Datenquellen.</para>
+          <para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -193,7 +193,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -225,13 +225,21 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>DataRange</b> -Eigenschaft gibt je nach dem Objekt:</para>
+            <b>DataRange</b> -Eigenschaft gibt je nach dem-Objekt zurück:</para>
           <list type="table">
             <item>
               <term>Datenfeld</term>
-              <description>im Feld enthaltene Daten</description>
-            </item>der
-            <item><term>Zeile, Spalte oder Seitenfeld</term><description>Elemente im Feld</description></item><item><term>Element</term><description>Durch das Element gekennzeichnete Daten</description></item></list>
+              <description>Im Feld enthaltene Daten</description>
+            </item>
+            <item>
+              <term>Zeilen-, Spalten- oder Seitenfeld</term>
+              <description>Im Feld enthaltene Elemente</description>
+            </item>
+            <item>
+              <term>Element</term>
+              <description>Durch das Element gekennzeichnete Daten</description>
+            </item>
+          </list>
           <para></para>
         </remarks>
       </Docs>
@@ -294,7 +302,7 @@
           <b>True</b>, wenn das Kennzeichen für das angegebene PivotTable-Feld oder PivotTable-Element auf "Drilled" (eingeblendet oder sichtbar) festgelegt wurde. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Verwenden Sie diese Eigenschaft nur für OLAP-Datenquellen.</para>
+          <para>Sie können diese Eigenschaft nur für OLAP-Datenquellen verwenden.</para>
           <para>Sie können diese Eigenschaft nicht festlegen, wenn das Feld oder das Element ausgeblendet ist.</para>
           <para></para>
         </remarks>
@@ -326,7 +334,7 @@
         <param name="Field">To be added.</param>
         <summary>Die<see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" /> Methode unterstützt den Drilldown zu einem angegebenen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> aus einer <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />.</summary>
         <remarks>
-          <para>Für OLAP-Datenquellen ist der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Drilldown ausgeführt wird muss in der gleichen Hierarchie als sein der <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Drilldown ausgeführt wird oder, wenn mehrere Attributhierarchien nebeneinander in Zeilen oder Spalten platziert werden die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Drilldown ausgeführt wird hat das Attribut kann Hierarchien, die nebeneinander sind; keine Benutzer Hierarchien dazwischen platziert werden können die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> von der <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Drilldown ausgeführt wird und die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Drilldown ausgeführt wird.  Wenn diese Bedingung nicht erfüllt sind, wird ein Laufzeitfehler zurückgegeben.</para>
+          <para>Bei OLAP-Datenquellen ist der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Drilldown ausgeführt wird muss in der gleichen Hierarchie als sein der <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Drilldown ausgeführt wird oder, wenn mehrere Attributhierarchien nebeneinander in Zeilen oder Spalten befinden die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Drilldown ausgeführt wird hat das Attribut kann Hierarchien, die nebeneinander sind; keine Benutzer Hierarchien dazwischen platziert werden können die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> von der <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Drilldown ausgeführt wird und die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Drilldown ausgeführt wird.  Wenn diese Bedingung nicht erfüllt sind, wird ein Laufzeitfehler zurückgegeben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -360,11 +368,11 @@
         <summary>Gibt zurück oder legt die Formel des Objekts in der A1-Schreibweise und in der Sprache des Makros. Lese-/Schreibzugriff <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft ist nicht verfügbar für OLAP-Datenquellen.</para>
-          <para>, Wenn die Zelle eine Konstante enthält, gibt diese Eigenschaft die Konstante. Wenn die Zelle leer ist, gibt diese <b>Formel</b> -Eigenschaft eine leere Zeichenfolge. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b> -Eigenschaft die Formel als Zeichenfolge in demselben Format, die in der Bearbeitungsleiste (einschließlich Gleichheitszeichen) dargestellt werden würde.</para>
-          <para>, Wenn Sie den Wert oder die Formel einer Zelle auf ein Datum festlegen, überprüft Microsoft Excel, ob diese Zelle bereits in einem der Zahlenformate für Datum oder Uhrzeit formatiert ist. Wenn nicht, Microsoft Excel das Zahlenformat in das Zahlenformat für die standardmäßige kurzes Datumsformat ändert.</para>
-          <para>, Wenn der Bereich einen ein- oder zweidimensionalen Bereich ist, können Sie die Formel in ein Visual Basic-Array mit denselben Dimensionen festlegen. In ähnlicher Weise können Sie die Formel in ein Visual Basic-Array eingefügt.</para>
-          <para>Durch Festlegen der Formel für ein Bereich von mehreren Zellen alle Zellen im Bereich mit der Formel gefüllt.</para>
+          <para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
+          <para>Wenn die Zelle eine Konstante enthält, gibt diese Eigenschaft eine Konstante zurück. Wenn die Zelle leer ist, gibt diese <b>Formula</b>-Eigenschaft eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge zurück, und zwar in dem gleichen Format, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
+          <para>Wenn Sie den Wert oder die Formel einer Zelle in ein Datum umwandeln, überprüft Microsoft Excel, ob die Zelle bereits mit einem Datums- oder Zeitformat formatiert ist. Ist das nicht der Fall, so wird das Zahlenformat in das kurze Standard-Datumsformat geändert.</para>
+          <para>Wenn der Bereich einen ein- oder zweidimensionalen Bereich darstellt, können Sie für die Formel eine Visual Basic-Matrix mit derselben Dimension festlegen. Ebenso können Sie die Formel auch in eine Visual Basic-Matrix einfügen.</para>
+          <para>Beim Festlegen der Formel für einen Bereich mit mehreren Zellen wird die Formel in alle Zellen des Bereichs eingetragen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -396,7 +404,7 @@
           <b>True,</b> Wenn das PivotTable-Feld oder PivotTable-Element ein berechnetes Feld oder Element ist. Schreibgeschützter <b>Boolean</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Für OLAP-Datenquellen gibt diese Eigenschaft immer <b>False</b>.</para>
+          <para>Bei OLAP-Datenquellen gibt diese Eigenschaft immer <b>False</b> zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -514,7 +522,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> -Objekt, das übergeordnete PivotTable-Element im übergeordneten darstellt <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt (das Feld muss gruppiert werden, damit es ein übergeordnetes Objekt ist). Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft steht für OLAP-Datenquellen nicht.</para>
+          <para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -546,7 +554,7 @@
           <b>True</b>, wenn das angegebene Element angezeigt wird, weil eines seiner übergeordneten Elemente mit Details angezeigt wird. <b>False</b>, wenn das angegebene Element nicht angezeigt wird, weil eines seiner übergeordneten Elemente die Details verdeckt. Diese Eigenschaft steht nur zur Verfügung, wenn das Element gruppiert ist. <b>Boolean</b>-Wert mit Lesezugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft steht für OLAP-Datenquellen nicht.</para>
+          <para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -611,7 +619,7 @@
         <summary>Gibt die Anzahl der Datensätze in der PivotTable-Cache oder die Anzahl der Cache-Datensätze, die das angegebene Element enthalten. Schreibgeschützter <b>Integer</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Gibt diese Eigenschaft den Übergangszustand des Caches zum Zeitpunkt der Abfrage wieder. Der Cache zwischen Abfragen ändern kann.</para>
+          <para>Diese Eigenschaft gibt den Übergangszustand des Caches zum Zeitpunkt der Abfrage wider. Der Cache kann sich zwischen Abfragen ändern.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -646,24 +654,24 @@
           <b>True,</b> Wenn die Gliederung für den angegebenen Bereich erweitert wird (sodass das Detail der Spalte oder Zeile sichtbar wird). Lese-Schreib- <b>Objekt</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Der angegebene Bereich muss eine einzelne Hauptspalte oder einer Zeile in einer Gliederung. Diese Eigenschaft auf <b>True</b> festgelegt ist, wenn das Element detailliert angezeigt werden.</para>
-          <para>Diese Eigenschaft steht für OLAP-Datenquellen nicht.</para>
-          <para>Wenn nicht um der angegebene Bereich in einem PivotTable-Bericht handelt, sind die folgenden Aussagen true:</para>
+          <para>Der angegebene Bereich muss eine einzelne Hauptspalte oder einer Zeile in einer Gliederung. Diese Eigenschaft ist auf <b>True</b> festgelegt, wenn das Element mit Details angezeigt wird.</para>
+          <para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
+          <para>Bitte beachten Sie folgende Punkte, wenn sich der angegebene Bereich nicht in einem PivotTable-Bericht befindet:</para>
           <list type="bullet">
             <item>
-              <description>Muss der Bereich in einer einzelnen Hauptzeile oder Spalte sein.</description>
+              <description>Der Bereich muss sich in einer einzelnen Hauptzeile oder Hauptspalte befinden.</description>
             </item>
             <item>
-              <description>Diese Eigenschaft gibt <b>False</b> zurück, wenn alle untergeordneten Zellen der Zeile oder Spalte ausgeblendet sind.</description>
+              <description>Diese Eigenschaft gibt <b>False</b> zurück, wenn alle untergeordneten Elemente der Zeile oder Spalte ausgeblendet sind.</description>
             </item>
             <item>
               <description>Durch Festlegen dieser Eigenschaft auf <b>True</b> ist gleichbedeutend mit dem Einblenden aller untergeordneten Zellen der Hauptzeile oder -Spalte.</description>
             </item>
             <item>
-              <description>Durch Festlegen dieser Eigenschaft auf <b>false festgelegt</b> ist gleichbedeutend mit dem Ausblenden aller untergeordneten Zellen der Hauptzeile oder -Spalte.</description>
+              <description>Das Festlegen der Eigenschaft auf <b>False</b> entspricht dem Ausblenden aller untergeordneten Zellen der Hauptzeile oder -spalte.</description>
             </item>
           </list>
-          <para>, Wenn der angegebene Bereich in einem PivotTable-Bericht ist, es ist möglich, diese Eigenschaft für mehrere Zellen gleichzeitig festlegen, wenn der Bereich zusammenhängend ist. Diese Eigenschaft kann nur verwendet werden, wenn der Bereich eine einzelne Zelle ist zurückgegeben werden.</para>
+          <para>Handelt es sich um einen Bereich in einem PivotTable-Bericht, kann diese Eigenschaft für mehrere Zellen gleichzeitig festgelegt werden, sofern der Bereich zusammenhängend ist. Zum Zurückgeben dieser Eigenschaft muss der Bereich eine einzelne Zelle sein.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -756,7 +764,7 @@
         <summary>Gibt einen <b>String</b>-Wert zurück oder legt diesen fest, der für Formeln das Standardformat "Englisch (USA)" angibt. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>StandardFormula</b> -Eigenschaft wirkt sich in erster Linie Elementnamen Datums- oder Zahlenformat. Es bietet eine Möglichkeit, festzulegen oder eine Formel für ein bestimmtes berechnete Element abzufragen.</para>
+          <para>Die <b>StandardFormula</b>StandardFormula-Eigenschaft wirkt sich in erster Linie auf Elementnamen aus, die ein Datums- oder Zahlenformat besitzen. Sie bietet eine Möglichkeit, eine Formel für ein gegebenes berechnetes Element festzulegen oder abzufragen.</para>
           <para>Die <b>StandardFormula</b> -Eigenschaft ist "International lesbar" während der <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" /> -Eigenschaft ist nicht.</para>
           <para></para>
         </remarks>
@@ -822,8 +830,8 @@
         <summary>Bestimmt, ob das Objekt sichtbar ist. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Visible</b> -Eigenschaft für ein PivotTable-Element ist <b>True</b> , wenn das Element derzeit in der Tabelle angezeigt wird.</para>
-          <para>Wenn Sie die <b>Visible</b> -Eigenschaft für einen Namen auf <b>False</b>festlegen, wird nicht der Name im Dialogfeld Namen definieren angezeigt.</para>
+          <para>Die <b>Visible</b>-Eigenschaft für ein PivotTable-Element ist <b>True</b>, wenn das Element zum betreffenden Zeitpunkt in der Tabelle angezeigt wird.</para>
+          <para>Wenn Sie der <b>Visible</b>Visible-Eigenschaft für einen Namen den Wert <b>False</b> zuweisen, wird der Name nicht im Dialogfeld Namen definieren angezeigt.</para>
           <para></para>
         </remarks>
       </Docs>
