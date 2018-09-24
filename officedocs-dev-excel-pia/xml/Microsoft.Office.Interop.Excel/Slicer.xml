@@ -1,10 +1,10 @@
 <Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eacfd0890002beb17c916870ea77d7aa5ba1db4b" />
+    <Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587668" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Slicer" />
@@ -30,24 +30,33 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="0c242-101">Stellt einen Datenschnitt in einer Arbeitsmappe dar.</span>
+      <span data-ttu-id="79bab-101">Stellt einen Datenschnitt in einer Arbeitsmappe dar.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="0c242-101">Represents a slicer in a workbook.</span>
+        <span data-stu-id="79bab-101">Represents a slicer in a workbook.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="0c242-102">
-        <para>Jede <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt stellt einen Datenschnitt in einer Arbeitsmappe dar. Datenschnitte dienen zum Filtern von Daten im PivotTable-Berichten oder in OLAP-Datenquellen.</para>
-        <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> -Methode zum Hinzufügen einer <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt wird an die <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung. Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die aktuell ausgewählte Schaltfläche in einem Datenschnitt, Verwendung stellt die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt.</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0c242-102">
-          <para>Each <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object represents a slicer in a workbook. Slicers are used to filter data in PivotTable reports or OLAP data sources.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> method to add a <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object to the <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection. To access the <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object that represents the currently selected button in a slicer, use the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="79bab-102">Jede <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt stellt einen Datenschnitt in einer Arbeitsmappe dar.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="79bab-102">Each <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object represents a slicer in a workbook.</span>
         </span>
-      </span>
+        <span data-ttu-id="79bab-103">Datenschnitte dienen zum Filtern von Daten im PivotTable-Berichten oder in OLAP-Datenquellen.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="79bab-103">Slicers are used to filter data in PivotTable reports or OLAP data sources.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="79bab-104">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> -Methode zum Hinzufügen einer <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt wird an die <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="79bab-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> method to add a <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object to the <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection.</span>
+        </span>
+        <span data-ttu-id="79bab-105">Access die <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die aktuell ausgewählte Schaltfläche in einem Datenschnitt, Verwendung stellt die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="79bab-105">To access the <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object that represents the currently selected button in a slicer, use the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -75,51 +84,56 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-103">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die Schaltfläche Datenschnitt darstellt, die derzeit im Fokus für den angegebenen Datenschnitt ist.</span>
+          <span data-ttu-id="79bab-106">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> -Objekt, das die Schaltfläche Datenschnitt darstellt, die derzeit im Fokus für den angegebenen Datenschnitt ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-103">Returns a <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object that represents the slicer button that is currently in focus for the specified slicer.</span>
+            <span data-stu-id="79bab-106">Returns a <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object that represents the slicer button that is currently in focus for the specified slicer.</span>
           </span>
-          <span data-ttu-id="0c242-104">Schreibgeschützt.</span>
+          <span data-ttu-id="79bab-107">Schreibgeschützt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-104">Read-only.</span>
+            <span data-stu-id="79bab-107">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="0c242-105">
-            <para>Die <b>ActiveItem</b> -Eigenschaft gibt ein <b>SlicerItem</b> -Objekt zurück, wenn der angegebene Datenschnitt den Fokus hat, und das aktive Steuerelement eine Schaltfläche innerhalb der Datenschnitt ist (beispielsweise der Benutzer kann die Schaltflächen innerhalb der Datenschnitt mit der Tastatur in diesem Status navigieren).</para>
-            <para>Die <b>ActiveItem</b> -Eigenschaft gibt <b>Nothing</b> (ein Nullverweis (Nothing in Visual Basic) in c#) unter folgenden Umständen zurück:</para>
-            <list type="bullet">
-              <item>
-                <description>Der angegebene Datenschnitt hat keinen Fokus (ist nicht ausgewählt oder aktiv).</description>
-              </item>
-              <item>
-                <description>Der angegebene Datenschnitt hat den Fokus und der gesamte Datenschnitt aktiviert ist (beispielsweise der Benutzer kann verschieben den gesamten Datenschnitt mithilfe der Tastatur in diesem Status).</description>
-              </item>
-              <item>
-                <description>Der angegebene Datenschnitt hat den Fokus, und das aktive Steuerelement ist die Schaltfläche <b>Filter löschen</b> in der Kopfzeile des Datenschnitts.</description>
-              </item>
-            </list>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-105">
-              <para>The <b>ActiveItem</b> property will return a <b>SlicerItem</b> object when the specified slicer has focus and the active control is a button within the slicer (for example, the user can navigate the buttons within the slicer with the keyboard in this state).</para>
-              <para>The <b>ActiveItem</b> property will return <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) under the following circumstances:</para>
-              <list type="bullet">
-                <item>
-                  <description>The specified slicer does not have focus (is not selected or active).</description>
-                </item>
-                <item>
-                  <description>The specified slicer has focus and the whole slicer itself is selected (for example, the user can move the whole slicer around using the keyboard in this state).</description>
-                </item>
-                <item>
-                  <description>The specified slicer has focus and the active control is the <b>Clear Filter</b> button in the header of the slicer.</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-108">Die <b>ActiveItem</b> -Eigenschaft gibt ein <b>SlicerItem</b> -Objekt zurück, wenn der angegebene Datenschnitt den Fokus hat, und das aktive Steuerelement eine Schaltfläche innerhalb der Datenschnitt ist (beispielsweise der Benutzer kann die Schaltflächen innerhalb der Datenschnitt mit der Tastatur in diesem Status navigieren).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-108">The <b>ActiveItem</b> property will return a <b>SlicerItem</b> object when the specified slicer has focus and the active control is a button within the slicer (for example, the user can navigate the buttons within the slicer with the keyboard in this state).</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-109">Die <b>ActiveItem</b> -Eigenschaft gibt <b>Nothing</b> (ein Nullverweis (Nothing in Visual Basic) in c#) unter folgenden Umständen zurück:</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-109">The <b>ActiveItem</b> property will return <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) under the following circumstances:</span>
+            </span>
+          </para>
+          <list type="bullet">
+            <item>
+              <description>
+                <span data-ttu-id="79bab-110">Der angegebene Datenschnitt hat nicht den Fokus (ist nicht ausgewählt oder aktiv).</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="79bab-110">The specified slicer does not have focus (is not selected or active).</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <description>
+                <span data-ttu-id="79bab-111">Der angegebene Datenschnitt hat den Fokus und der gesamte Datenschnitt ist seinerseits ausgewählt (beispielsweise kann der Benutzer den gesamten Datenschnitt in diesem Status mithilfe der Tastatur verschieben).</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="79bab-111">The specified slicer has focus and the whole slicer itself is selected (for example, the user can move the whole slicer around using the keyboard in this state).</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <description>
+                <span data-ttu-id="79bab-112">Der angegebene Datenschnitt hat den Fokus, und das aktive Steuerelement ist die Schaltfläche <b>Filter löschen</b> in der Kopfzeile des Datenschnitts.</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="79bab-112">The specified slicer has focus and the active control is the <b>Clear Filter</b> button in the header of the slicer.</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -147,32 +161,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-106">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span data-ttu-id="79bab-113">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-106">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="79bab-113">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="0c242-107">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</span>
+          <span data-ttu-id="79bab-114">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-107">When used with an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object.</span>
+            <span data-stu-id="79bab-114">When used with an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-108">Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</span>
+          <span data-ttu-id="79bab-115">Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-108">An <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
+            <span data-stu-id="79bab-115">An <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-109">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-109">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-116">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-116">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -203,30 +214,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-110">Dient zum Abrufen oder die Beschriftung des angegebenen Datenschnitts festgelegt.</span>
+          <span data-ttu-id="79bab-117">Dient zum Abrufen oder die Beschriftung des angegebenen Datenschnitts festgelegt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-110">Gets or sets the caption of the specified slicer.</span>
+            <span data-stu-id="79bab-117">Gets or sets the caption of the specified slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-111">Die Beschriftung des angegebenen Datenschnitts.</span>
+          <span data-ttu-id="79bab-118">Die Beschriftung des angegebenen Datenschnitts.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-111">The caption of the specified slicer.</span>
+            <span data-stu-id="79bab-118">The caption of the specified slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-112">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Für angegebene Wert der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> -Eigenschaft in der Kopfzeile des Datenschnitts angezeigt wird. Wenn die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> nicht angegeben wird, Excel verwendet den Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> -Eigenschaft des zugrunde liegenden <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-112">
-              <para>Read/write.</para>
-              <para>The value specified for the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> property is displayed in the header of the slicer. If the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> property is not specified, Excel uses the value of the <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> property of the underlying <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-119">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-119">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-120">Der angegebene Wert für die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> -Eigenschaft in der Kopfzeile des Datenschnitts angezeigt wird.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-120">The value specified for the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> property is displayed in the header of the slicer.</span>
+            </span>
+            <span data-ttu-id="79bab-121">Wenn die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> nicht angegeben wird, Excel verwendet den Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> -Eigenschaft des zugrunde liegenden <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-121">If the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> property is not specified, Excel uses the value of the <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> property of the underlying <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -257,30 +273,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-113">Dient zum Abrufen oder Festlegen der Breite in Punkt, der einzelnen Spalten im Datenschnitt.</span>
+          <span data-ttu-id="79bab-122">Dient zum Abrufen oder Festlegen der Breite in Punkt, der einzelnen Spalten im Datenschnitt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-113">Gets or sets the width, in points, of each column in the slicer.</span>
+            <span data-stu-id="79bab-122">Gets or sets the width, in points, of each column in the slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-114">Die Breite in Punkt, der einzelnen Spalten im Datenschnitt.</span>
+          <span data-ttu-id="79bab-123">Die Breite in Punkt, der einzelnen Spalten im Datenschnitt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-114">The width, in points, of each column in the slicer.</span>
+            <span data-stu-id="79bab-123">The width, in points, of each column in the slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-115">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt wird automatisch angepasst, basierend auf dem Wert von der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> Eigenschaft und die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> -Eigenschaft.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-115">
-              <para>Read/write.</para>
-              <para>The <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object is automatically adjusted based on the value of the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> property and the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-124">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-124">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-125">Die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt wird automatisch angepasst, basierend auf dem Wert von der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> Eigenschaft und die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> Eigenschaft.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-125">The <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object is automatically adjusted based on the value of the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> property and the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> property.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -306,9 +323,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-116">Kopiert den angegebenen Datenschnitt in die Zwischenablage.</span>
+          <span data-ttu-id="79bab-126">Kopiert den angegebenen Datenschnitt in die Zwischenablage.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-116">Copies the specified slicer to the clipboard.</span>
+            <span data-stu-id="79bab-126">Copies the specified slicer to the clipboard.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -338,30 +355,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-117">Ruft eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="79bab-127">Ruft eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-117">Gets a 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
+            <span data-stu-id="79bab-127">Gets a 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-118">Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="79bab-128">Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-118">A 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
+            <span data-stu-id="79bab-128">A 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-119">
-            <para>Nur-Lese- <b>long</b>.</para>
-            <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-119">
-              <para>Read-only <b>long</b>.</para>
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C. The <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-129">Nur-Lese- <b>long</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-129">Read-only <b>long</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-130">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-130">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            </span>
+            <span data-ttu-id="79bab-131">Die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-131">The <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="79bab-132">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-132">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -387,9 +413,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-120">Schneidet den angegebenen Datenschnitt aus und kopiert sie in die Zwischenablage.</span>
+          <span data-ttu-id="79bab-133">Schneidet den angegebenen Datenschnitt aus und kopiert sie in die Zwischenablage.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-120">Cuts the specified slicer and copies it to the clipboard.</span>
+            <span data-stu-id="79bab-133">Cuts the specified slicer and copies it to the clipboard.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -417,9 +443,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-121">Löscht den Datenschnitt und entfernt ihn aus der zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung.</span>
+          <span data-ttu-id="79bab-134">Löscht den Datenschnitt und entfernt ihn aus der zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-121">Deletes the slicer and removes it from the associated <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection.</span>
+            <span data-stu-id="79bab-134">Deletes the slicer and removes it from the associated <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -452,38 +478,51 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-122">Ruft ab oder legt fest, ob der angegebene Datenschnitt verschoben oder über die Benutzeroberfläche geändert werden kann.</span>
+          <span data-ttu-id="79bab-135">Ruft ab oder legt fest, ob der angegebene Datenschnitt verschoben oder über die Benutzeroberfläche geändert werden kann.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-122">Gets or sets whether the specified slicer can be moved or resized by using the user interface.</span>
+            <span data-stu-id="79bab-135">Gets or sets whether the specified slicer can be moved or resized by using the user interface.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-123">
+          <span data-ttu-id="79bab-136">
             <b>true,</b> Wenn der angegebene Datenschnitt verschoben oder über die Benutzeroberfläche geändert werden kann. anderenfalls <b>false</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-123">
+            <span data-stu-id="79bab-136">
               <b>true</b> if the specified slicer can be moved or resized by using the user interface; otherwise, <b>false</b>.</span>
           </span>
-          <span data-ttu-id="0c242-124">Der Standardwert ist <b>false</b>.</span>
+          <span data-ttu-id="79bab-137">Der Standardwert ist <b>false</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-124">The default is <b>false</b>.</span>
+            <span data-stu-id="79bab-137">The default is <b>false</b>.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-125">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>
-              <b>true,</b> Wenn der Datenschnitt kann nicht verschoben oder durch Auswählen von Rahmen oder Handles in der Benutzeroberfläche angepasst werden soll, andernfalls <b>false</b>. Der Standardwert ist <b>false</b>. Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> -Eigenschaft auf <b>true</b> wirkt sich nur auf die Benutzeroberfläche. Verschieben oder Ändern der Größe des Datenschnitts durch Festlegen von Eigenschaften wie die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, oder <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt in Code ist nicht deaktiviert.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-125">
-              <para>Read/write.</para>
-              <para>
-                <b>true</b> if the slicer cannot be moved or resized by selecting borders or handles in the user interface; otherwise <b>false</b>. The default value is <b>false</b>. Setting the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> property to <b>true</b> affects only the user interface. Moving or resizing the slicer by setting properties such as the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, or <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> properties of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object from code is not disabled.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-138">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-138">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-139">
+              <b>true,</b> Wenn der Datenschnitt kann nicht verschoben oder durch Auswählen von Rahmen oder Handles in der Benutzeroberfläche angepasst werden soll. andernfalls <b>false</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-139">
+                <b>true</b> if the slicer cannot be moved or resized by selecting borders or handles in the user interface; otherwise <b>false</b>.</span>
+            </span>
+            <span data-ttu-id="79bab-140">Der Standardwert ist <b>false</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-140">The default value is <b>false</b>.</span>
+            </span>
+            <span data-ttu-id="79bab-141">Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> -Eigenschaft auf <b>true</b> wirkt sich nur auf die Benutzeroberfläche.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-141">Setting the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> property to <b>true</b> affects only the user interface.</span>
+            </span>
+            <span data-ttu-id="79bab-142">Verschieben oder Ändern der Größe des Datenschnitts durch Festlegen von Eigenschaften wie die <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, oder <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt von Code nicht deaktiviert ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-142">Moving or resizing the slicer by setting properties such as the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, or <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> properties of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object from code is not disabled.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -514,38 +553,43 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-126">Ruft ab oder legt fest, ob der Kopfzeile, die angezeigt den Datenschnitt <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> sichtbar ist.</span>
+          <span data-ttu-id="79bab-143">Ruft ab oder legt fest, ob der Kopfzeile, die angezeigt den Datenschnitt <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> sichtbar ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-126">Gets or sets whether the header that displays the slicer <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> is visible.</span>
+            <span data-stu-id="79bab-143">Gets or sets whether the header that displays the slicer <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> is visible.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-127">
+          <span data-ttu-id="79bab-144">
             <b>true,</b> Wenn die Kopfzeile angezeigt wird, die den Datenschnitt <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> sichtbar ist; anderenfalls <b>false</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-127">
+            <span data-stu-id="79bab-144">
               <b>true</b> if the header that displays the slicer <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> is visible; otherwise, <b>false</b>.</span>
           </span>
-          <span data-ttu-id="0c242-128">Der Standardwert ist <b>true</b>.</span>
+          <span data-ttu-id="79bab-145">Der Standardwert ist <b>true</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-128">The default is <b>true</b>.</span>
+            <span data-stu-id="79bab-145">The default is <b>true</b>.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-129">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>
-              <b>true,</b> Wenn die Kopfzeile angezeigt wird, andernfalls <b>false</b>. Der Standardwert lautet <b>true</b>.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-129">
-              <para>Read/write.</para>
-              <para>
-                <b>true</b> if the header is visible; otherwise <b>false</b>. The default value is <b>true</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-146">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-146">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-147">
+              <b>true,</b> Wenn die Kopfzeile angezeigt wird. andernfalls <b>false</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-147">
+                <b>true</b> if the header is visible; otherwise <b>false</b>.</span>
+            </span>
+            <span data-ttu-id="79bab-148">Der Standardwert ist <b>true</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-148">The default value is <b>true</b>.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -576,28 +620,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-130">Dient zum Abrufen oder festlegen die Höhe für die angegebene Datenschnitt in Punkt.</span>
+          <span data-ttu-id="79bab-149">Dient zum Abrufen oder festlegen die Höhe für die angegebene Datenschnitt in Punkt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-130">Gets or sets the height of the specified slicer, in points.</span>
+            <span data-stu-id="79bab-149">Gets or sets the height of the specified slicer, in points.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-131">Die Höhe des angegebenen Datenschnitts, die in Punkt.</span>
+          <span data-ttu-id="79bab-150">Die Höhe des angegebenen Datenschnitts, die in Punkt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-131">The height of the specified slicer, in points.</span>
+            <span data-stu-id="79bab-150">The height of the specified slicer, in points.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-132">
-            <para>Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-132">
-              <para>Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-151">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-151">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -628,28 +669,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-133">Dient zum Abrufen oder wird die horizontale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
+          <span data-ttu-id="79bab-152">Dient zum Abrufen oder wird die horizontale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-133">Gets or sets the horizontal position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+            <span data-stu-id="79bab-152">Gets or sets the horizontal position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-134">Die horizontale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
+          <span data-ttu-id="79bab-153">Die horizontale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-134">The horizontal position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+            <span data-stu-id="79bab-153">The horizontal position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-135">
-            <para>Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-135">
-              <para>Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-154">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-154">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -680,38 +718,49 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-136">Ruft ab oder legt fest, ob der angegebene Datenschnitt geändert werden kann, wenn das Blatt, das es enthält geschützt ist.</span>
+          <span data-ttu-id="79bab-155">Ruft ab oder legt fest, ob der angegebene Datenschnitt geändert werden kann, wenn das Blatt, das es enthält geschützt ist.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-136">Gets or sets whether the specified slicer can be modified when the sheet that contains it is protected.</span>
+            <span data-stu-id="79bab-155">Gets or sets whether the specified slicer can be modified when the sheet that contains it is protected.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-137">
+          <span data-ttu-id="79bab-156">
             <b>true,</b> Wenn der angegebene Datenschnitt geändert werden kann, wenn das Blatt, in dem es enthält geschützt ist; anderenfalls <b>false</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-137">
+            <span data-stu-id="79bab-156">
               <b>true</b> if the specified slicer can be modified when the sheet that contains it is protected; otherwise, <b>false</b>.</span>
           </span>
-          <span data-ttu-id="0c242-138">Der Standardwert ist <b>true</b></span>
+          <span data-ttu-id="79bab-157">Der Standardwert ist <b>true</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-138">The default is <b>true</b></span>
+            <span data-stu-id="79bab-157">The default is <b>true</b></span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-139">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>
-              <b>true,</b> Wenn der Datenschnitt gesperrt ist, wenn das Blatt geschützt ist. <b>false,</b> Wenn der Datenschnitt geändert werden kann, wenn das Blatt geschützt ist. Der Standardwert lautet <b>true</b>.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-139">
-              <para>Read/write.</para>
-              <para>
-                <b>true</b> if the slicer is locked when the sheet is protected. <b>false</b> if the slicer can be modified when the sheet is protected. The default value is <b>true</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-158">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-158">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-159">
+              <b>true,</b> Wenn der Datenschnitt gesperrt ist, wenn das Blatt geschützt ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-159">
+                <b>true</b> if the slicer is locked when the sheet is protected.</span>
+            </span>
+            <span data-ttu-id="79bab-160">
+              <b>false,</b> Wenn der Datenschnitt geändert werden kann, wenn das Blatt geschützt ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-160">
+                <b>false</b> if the slicer can be modified when the sheet is protected.</span>
+            </span>
+            <span data-ttu-id="79bab-161">Der Standardwert ist <b>true</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-161">The default value is <b>true</b>.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -742,30 +791,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-140">Dient zum Abrufen oder Festlegen des Namens der angegebene Datenschnitt.</span>
+          <span data-ttu-id="79bab-162">Dient zum Abrufen oder Festlegen des Namens der angegebene Datenschnitt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-140">Gets  or sets the name of the specified slicer.</span>
+            <span data-stu-id="79bab-162">Gets  or sets the name of the specified slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-141">Der Name der der angegebene Datenschnitt.</span>
+          <span data-ttu-id="79bab-163">Der Name der der angegebene Datenschnitt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-141">The name of the specified slicer.</span>
+            <span data-stu-id="79bab-163">The name of the specified slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-142">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Muss der Namen über alle Datenschnitte in einer Arbeitsmappe eindeutig sein. Der Standardname verwendet den Text, der den Namen des PivotFields auf dem der Datenschnitt basiert, und, falls erforderlich, fügt ein Leerzeichen und der Zahl und der Name eindeutig ist.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-142">
-              <para>Read/write.</para>
-              <para>The name must be unique across all slicers within a workbook. The default name uses the text that the field name of the PivotField on which the slicer is based, and if necessary, appends a space and number to make the name unique.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-164">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-164">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-165">Der Name muss über alle Datenschnitte in einer Arbeitsmappe eindeutig sein.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-165">The name must be unique across all slicers within a workbook.</span>
+            </span>
+            <span data-ttu-id="79bab-166">Der Standardname verwendet den Text, der den Namen des PivotFields auf dem der Datenschnitt basiert, und, falls erforderlich, fügt ein Leerzeichen und der Zahl und der Name eindeutig ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-166">The default name uses the text that the field name of the PivotField on which the slicer is based, and if necessary, appends a space and number to make the name unique.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -796,34 +850,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-143">Ruft ab oder legt die Anzahl der Spalten im angegebenen Datenschnitt.</span>
+          <span data-ttu-id="79bab-167">Ruft ab oder legt die Anzahl der Spalten im angegebenen Datenschnitt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-143">Gets or sets the number of columns in the specified slicer.</span>
+            <span data-stu-id="79bab-167">Gets or sets the number of columns in the specified slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-144">Die Anzahl der Spalten in den angegebenen Datenschnitt.</span>
+          <span data-ttu-id="79bab-168">Die Anzahl der Spalten in den angegebenen Datenschnitt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-144">The number of columns in the specified slicer.</span>
+            <span data-stu-id="79bab-168">The number of columns in the specified slicer.</span>
           </span>
-          <span data-ttu-id="0c242-145">Der Standardwert ist 1.</span>
+          <span data-ttu-id="79bab-169">Der Standardwert ist 1.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-145">The default is 1.</span>
+            <span data-stu-id="79bab-169">The default is 1.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-146">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Der Standardwert ist 1.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-146">
-              <para>Read/write.</para>
-              <para>The default value is 1.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-170">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-170">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-171">Der Standardwert ist 1.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-171">The default value is 1.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -851,28 +906,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-147">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</span>
+          <span data-ttu-id="79bab-172">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-147">Gets the <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents the sheet that contains the slicer.</span>
+            <span data-stu-id="79bab-172">Gets the <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents the sheet that contains the slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-148">Die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</span>
+          <span data-ttu-id="79bab-173">Die <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das Blatt darstellt, der den Datenschnitt enthält.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-148">The <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents the sheet that contains the slicer.</span>
+            <span data-stu-id="79bab-173">The <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents the sheet that contains the slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-149">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-149">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-174">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-174">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -903,30 +955,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-150">Ruft ab oder legt die Höhe des jede Zeile im angegebenen Datenschnitt in Punkt.</span>
+          <span data-ttu-id="79bab-175">Ruft ab oder legt die Höhe des jede Zeile im angegebenen Datenschnitt in Punkt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-150">Gets or sets the height, in points, of each row in the specified slicer.</span>
+            <span data-stu-id="79bab-175">Gets or sets the height, in points, of each row in the specified slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-151">Die Höhe des jede Zeile im angegebenen Datenschnitt in Punkt.</span>
+          <span data-ttu-id="79bab-176">Die Höhe des jede Zeile im angegebenen Datenschnitt in Punkt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-151">The height, in points, of each row in the specified slicer.</span>
+            <span data-stu-id="79bab-176">The height, in points, of each row in the specified slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-152">
-            <para>Lese-/Schreibzugriff.</para>
-            <para>Diese Eigenschaft wirkt sich nicht auf die Höhe des Datenschnitts. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt zurückgeben oder Festlegen der Höhe des Datenschnitts.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-152">
-              <para>Read/write.</para>
-              <para>This property does not affect the height of the slicer. Use the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object to return or set the height of the slicer.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-177">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-177">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-178">Diese Eigenschaft wirkt sich nicht auf die Höhe des Datenschnitts aus.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-178">This property does not affect the height of the slicer.</span>
+            </span>
+            <span data-ttu-id="79bab-179">Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> -Objekt zurückgeben oder Festlegen der Höhe des Datenschnitts.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-179">Use the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object to return or set the height of the slicer.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -954,30 +1011,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-153">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</span>
+          <span data-ttu-id="79bab-180">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-153">Gets the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the specified slicer.</span>
+            <span data-stu-id="79bab-180">Gets the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the specified slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-154">Die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</span>
+          <span data-ttu-id="79bab-181">Die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den angegebenen Datenschnitt zugeordnete-Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-154">The <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the specified slicer.</span>
+            <span data-stu-id="79bab-181">The <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the specified slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-155">
-            <para>Read-only.</para>
-            <para>Einige Eigenschaften des Datenschnitts, wie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> -Eigenschaft kann nur aus zugegriffen werden die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt der Datenschnitt zugeordnet.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-155">
-              <para>Read-only.</para>
-              <para>Some properties of the slicer, such as the <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> property, can only be accessed from the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the slicer.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-182">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-182">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-183">Einige Eigenschaften des Datenschnitts, wie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> -Eigenschaft kann nur zugegriffen werden, aus der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> den Datenschnitt zugeordnete-Objekt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-183">Some properties of the slicer, such as the <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> property, can only be accessed from the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the slicer.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1005,28 +1063,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-156">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</span>
+          <span data-ttu-id="79bab-184">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-156">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object associated with the slicer.</span>
+            <span data-stu-id="79bab-184">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object associated with the slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-157">Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</span>
+          <span data-ttu-id="79bab-185">Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> den Datenschnitt zugeordnete-Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-157">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object associated with the slicer.</span>
+            <span data-stu-id="79bab-185">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object associated with the slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-158">
-            <para>Read-only.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-158">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-186">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-186">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1054,30 +1109,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-159">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</span>
+          <span data-ttu-id="79bab-187">Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-159">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object associated with the slicer.</span>
+            <span data-stu-id="79bab-187">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object associated with the slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-160">Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</span>
+          <span data-ttu-id="79bab-188">Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> den Datenschnitt zugeordnete-Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-160">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object associated with the slicer.</span>
+            <span data-stu-id="79bab-188">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object associated with the slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-161">
-            <para>Read-only.</para>
-            <para>Diese Eigenschaft gilt nur für OLAP-Datenquellen.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-161">
-              <para>Read-only.</para>
-              <para>This property only applies to OLAP data sources.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-189">Schreibgeschützt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-189">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="79bab-190">Diese Eigenschaft betrifft nur OLAP-Datenquellen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-190">This property only applies to OLAP data sources.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1105,14 +1161,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-162">Gibt den Typ des datenschnittcaches – Datenschnitt oder Zeitachse.</span>
+          <span data-ttu-id="79bab-191">Gibt den Typ des datenschnittcaches – Datenschnitt oder Zeitachse.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-162">Returns the type of the slicer cache – slicer or timeline.</span>
+            <span data-stu-id="79bab-191">Returns the type of the slicer cache – slicer or timeline.</span>
           </span>
-          <span data-ttu-id="0c242-163">
+          <span data-ttu-id="79bab-192">
             <b>XlSlicerCacheType</b> Schreibgeschützt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-163">
+            <span data-stu-id="79bab-192">
               <b>XlSlicerCacheType</b> Read-only</span>
           </span>
         </summary>
@@ -1147,28 +1203,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-164">Ruft ab oder legt die Formatvorlage, die derzeit auf den angegebenen Datenschnitt angewendet.</span>
+          <span data-ttu-id="79bab-193">Ruft ab oder legt die Formatvorlage, die derzeit auf den angegebenen Datenschnitt angewendet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-164">Gets or sets the style currently applied to the specified slicer.</span>
+            <span data-stu-id="79bab-193">Gets or sets the style currently applied to the specified slicer.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-165">Die Formatvorlage, die derzeit auf den angegebenen Datenschnitt angewendet.</span>
+          <span data-ttu-id="79bab-194">Die Formatvorlage, die derzeit auf den angegebenen Datenschnitt angewendet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-165">The style currently applied to the specified slicer.</span>
+            <span data-stu-id="79bab-194">The style currently applied to the specified slicer.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-166">
-            <para>Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-166">
-              <para>Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-195">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-195">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1196,14 +1249,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-167">Der Zeitachse-spezifischen Zustand des Datenschnitts.</span>
+          <span data-ttu-id="79bab-196">Der Zeitachse-spezifischen Zustand des Datenschnitts.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-167">The timeline-specific state of the Slicer.</span>
+            <span data-stu-id="79bab-196">The timeline-specific state of the Slicer.</span>
           </span>
-          <span data-ttu-id="0c242-168">
+          <span data-ttu-id="79bab-197">
             <b>TimelineViewState</b> Schreibgeschützt</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-168">
+            <span data-stu-id="79bab-197">
               <b>TimelineViewState</b> Read-only</span>
           </span>
         </summary>
@@ -1238,28 +1291,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-169">Dient zum Abrufen oder Festlegen der vertikalen Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
+          <span data-ttu-id="79bab-198">Dient zum Abrufen oder Festlegen der vertikalen Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-169">Gets or sets the vertical position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+            <span data-stu-id="79bab-198">Gets or sets the vertical position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-170">Die vertikale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
+          <span data-ttu-id="79bab-199">Die vertikale Position des angegebenen Datenschnitts relativ der oberen linken Ecke der Zelle A1 in einem Arbeitsblatt in Punkten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-170">The vertical position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+            <span data-stu-id="79bab-199">The vertical position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-171">
-            <para>Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-171">
-              <para>Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-200">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-200">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1290,28 +1340,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0c242-172">Dient zum Abrufen oder festlegen die Breite des angegebenen Datenschnitts in Punkt.</span>
+          <span data-ttu-id="79bab-201">Dient zum Abrufen oder festlegen die Breite des angegebenen Datenschnitts in Punkt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-172">Gets or sets the width of the specified slicer, in points.</span>
+            <span data-stu-id="79bab-201">Gets or sets the width of the specified slicer, in points.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="0c242-173">Die Breite des angegebenen Datenschnitts, die in Punkt.</span>
+          <span data-ttu-id="79bab-202">Die Breite des angegebenen Datenschnitts, die in Punkt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0c242-173">The width of the specified slicer, in points.</span>
+            <span data-stu-id="79bab-202">The width of the specified slicer, in points.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="0c242-174">
-            <para>Lese-/Schreibzugriff.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0c242-174">
-              <para>Read/write.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="79bab-203">Lese-/Schreibzugriff.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="79bab-203">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

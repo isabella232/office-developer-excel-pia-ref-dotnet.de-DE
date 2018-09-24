@@ -1,10 +1,10 @@
 <Type Name="WorkbookEvents_BeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="52cb33b3c4364f6d81cce3321fd2dcdfbca546f7" />
+    <Meta Name="ms.openlocfilehash" Value="481b569bafc01838e418c1b16eae3a7f5a8b8cb7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578470" />
   </Metadata>
   <TypeSignature Language="C#" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
@@ -38,69 +38,66 @@
   </ReturnValue>
   <Docs>
     <param name="Map">
-      <span data-ttu-id="3b87a-101">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> Objekt.</span>
+      <span data-ttu-id="a904d-101">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> Objekt.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-101">Required <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object.</span>
+        <span data-stu-id="a904d-101">Required <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object.</span>
       </span>
-      <span data-ttu-id="3b87a-102">Die XML-Zuordnung, die zum Importieren der Daten verwendet wird.</span>
+      <span data-ttu-id="a904d-102">Die XML-Zuordnung, die zum Importieren der Daten verwendet wird.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-102">The XML map that will be used to import data.</span>
+        <span data-stu-id="a904d-102">The XML map that will be used to import data.</span>
       </span>
     </param>
     <param name="Url">
-      <span data-ttu-id="3b87a-103">
+      <span data-ttu-id="a904d-103">
         <b>String</b> erforderlich.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-103">Required <b>String</b>.</span>
+        <span data-stu-id="a904d-103">Required <b>String</b>.</span>
       </span>
-      <span data-ttu-id="3b87a-104">Der Speicherort der zu importierenden XML-Datei.</span>
+      <span data-ttu-id="a904d-104">Der Speicherort der zu importierenden XML-Datei.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-104">The location of the XML file to be imported.</span>
+        <span data-stu-id="a904d-104">The location of the XML file to be imported.</span>
       </span>
     </param>
     <param name="IsRefresh">
-      <span data-ttu-id="3b87a-105">Erforderlicher <b>boolescher Wert</b>.</span>
+      <span data-ttu-id="a904d-105">Erforderlicher <b>boolescher Wert</b>.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-105">Required <b>Boolean</b>.</span>
+        <span data-stu-id="a904d-105">Required <b>Boolean</b>.</span>
       </span>
-      <span data-ttu-id="3b87a-106">
+      <span data-ttu-id="a904d-106">
         <b>True</b>, wenn das Ereignis durch Aktualisieren einer bestehenden Verbindung auf XML-Daten ausgelöst wurde. <b>False</b>, wenn das Ereignis durch Importieren aus einer anderen Datenquelle ausgelöst wurde.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-106">
+        <span data-stu-id="a904d-106">
           <b>True</b> if the event was triggered by refreshing an existing connection to XML data; <b>False</b> if the event was triggered by importing from a different data source.</span>
       </span>
     </param>
     <param name="Cancel">
-      <span data-ttu-id="3b87a-107">Erforderlicher <b>boolescher Wert</b>.</span>
+      <span data-ttu-id="a904d-107">Erforderlicher <b>boolescher Wert</b>.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-107">Required <b>Boolean</b>.</span>
+        <span data-stu-id="a904d-107">Required <b>Boolean</b>.</span>
       </span>
-      <span data-ttu-id="3b87a-108">Kann auf <b>True</b> festgelegt werden, um den Import- oder Aktualisierungsvorgang abzubrechen.</span>
+      <span data-ttu-id="a904d-108">Kann auf <b>True</b> festgelegt werden, um den Import- oder Aktualisierungsvorgang abzubrechen.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-108">Set to <b>True</b> to cancel the import or refresh operation.</span>
+        <span data-stu-id="a904d-108">Set to <b>True</b> to cancel the import or refresh operation.</span>
       </span>
     </param>
     <summary>
-      <span data-ttu-id="3b87a-109">Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> Ereignis.</span>
+      <span data-ttu-id="a904d-109">Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> Ereignis.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-109">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> event.</span>
+        <span data-stu-id="a904d-109">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> event.</span>
       </span>
-      <span data-ttu-id="3b87a-110">Das <b>BeforeXmlImport</b> -Ereignis tritt auf, bevor eine bestehende XML-Datenverbindung aktualisiert wird oder bevor neue XML Daten in eine Microsoft Excel-Arbeitsmappe importiert.</span>
+      <span data-ttu-id="a904d-110">Das <b>BeforeXmlImport</b> -Ereignis tritt auf, bevor eine bestehende XML-Datenverbindung aktualisiert wird oder bevor neue XML Daten in eine Microsoft Excel-Arbeitsmappe importiert.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="3b87a-110">The <b>BeforeXmlImport</b> event occurs before an existing XML data connection is refreshed or before new XML data is imported into a Microsoft Excel workbook.</span>
+        <span data-stu-id="a904d-110">The <b>BeforeXmlImport</b> event occurs before an existing XML data connection is refreshed or before new XML data is imported into a Microsoft Excel workbook.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="3b87a-111">
-        <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="3b87a-111">
-          <para>XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="a904d-111">XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a904d-111">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
         </span>
-      </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
 </Type>

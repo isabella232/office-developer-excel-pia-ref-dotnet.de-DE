@@ -1,10 +1,10 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ca42ecf50dd3405db74400e2269347011d04258" />
+    <Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576146" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -31,85 +31,109 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="61593-101">Stellt einen Knoten in einem Diagramm dar.</span>
+      <span data-ttu-id="ab859-101">Stellt einen Knoten in einem Diagramm dar.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="61593-101">Represents a node in a diagram.</span>
+        <span data-stu-id="ab859-101">Represents a node in a diagram.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="61593-102">
-        <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> -Methode, um einen Knoten zu einem Diagramm oder einem Diagrammknoten hinzuzufügen.</para>
-        <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> Methode zum Entfernen eines Knotens aus einem Diagramm oder Diagrammknoten.</para>
-        <para>, Um ein <b>DiagramNode</b> -Objekt zurückzugeben, verwenden Sie eine der folgenden:</para>
-        <list type="bullet">
-          <item>
-            <description>
-              <b>DiagramNode</b> -Objekt <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, oder <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> Methoden oder seine <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> Eigenschaft</description>
-          </item>
-          <item>
-            <description>der <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> -Auflistung <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> Methoden oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> Eigenschaften </description>
-          </item>
-          <item>
-            <description>Der <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> -Auflistung <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> Methode</description>
-          </item>
-          <item>
-            <description>der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> des Objekts oder <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /><b>DiagramNode</b> -Eigenschaft der Auflistung</description>
-          </item>
-        </list>
-        <para>eine Diagrammknoten kann beenden, oder andere untergeordnete Diagramme enthalten untergeordnete Diagrammknoten oder untergeordneten Formen. Verweisen auf diese durch den folgenden:</para>
-        <list type="bullet">
-          <item>
-            <description>, um auf ein untergeordnetes Diagramm verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> -Eigenschaft.</description>
-          </item>
-          <item>
-            <description>, Um auf einen einzelnen untergeordneten Diagrammknoten verweisen möchten, verwenden Sie die <b>AddNode</b>, <b><b>CloneNode</b>, <b>NextNode</b> -Methode</b> oder die <b>Stamm</b> -Eigenschaft.</description>
-          </item>
-          <item>
-            <description>, Um auf eine Auflistung von untergeordneten Diagrammknoten verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> -Eigenschaft.</description>
-          </item>
-          <item>
-            <description>, Um auf eine Form verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> Eigenschaften.</description>
-          </item>
-        </list>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="61593-102">
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> method to add a node to a diagram or to a diagram node.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> method to remove a node from a diagram or diagram node.</para>
-          <para>To return a <b>DiagramNode</b> object, use one of the following:</para>
-          <list type="bullet">
-            <item>
-              <description>The <b>DiagramNode</b> object's <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, or <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> methods or its <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> property</description>
-            </item>
-            <item>
-              <description>The <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> collection's <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> or <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> methods or <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> or <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> properties</description>
-            </item>
-            <item>
-              <description>The <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> collection's <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>The <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object's or <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection's <b>DiagramNode</b> property</description>
-            </item>
-          </list>
-          <para>A diagram node can terminate, or it can contain other child diagrams, child diagram nodes, or child shapes. Refer to these with the following:</para>
-          <list type="bullet">
-            <item>
-              <description>To refer to a child diagram, use the <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> property.</description>
-            </item>
-            <item>
-              <description>To refer to an individual child diagram node, use the <b>AddNode</b>, <b>CloneNode</b>, <b>NextNode</b> or <b>PrevNode</b> methods or the <b>Root</b> property.</description>
-            </item>
-            <item>
-              <description>To refer to a collection of child diagram nodes, use the <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> property.</description>
-            </item>
-            <item>
-              <description>To refer to a shape, use the <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> or <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> properties.</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="ab859-102">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> -Methode, um einen Knoten zu einem Diagramm oder einem Diagrammknoten hinzufügen.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ab859-102">Use the <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> method to add a node to a diagram or to a diagram node.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="ab859-103">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> -Methode, um einen Knoten aus einem Diagramm oder Diagrammknoten entfernen.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ab859-103">Use the <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> method to remove a node from a diagram or diagram node.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="ab859-104">Um ein <b>DiagramNode</b> -Objekt zurückzugeben, verwenden Sie eine der folgenden:</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ab859-104">To return a <b>DiagramNode</b> object, use one of the following:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="ab859-105">Des <b>DiagramNode</b> -Objekts <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, oder <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> Methoden oder seine <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> -Eigenschaft</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-105">The <b>DiagramNode</b> object's <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, or <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> methods or its <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> property</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ab859-106">Die <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> -Auflistung <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> Methoden oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> Eigenschaften</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-106">The <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> collection's <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> or <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> methods or <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> or <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> properties</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ab859-107">Die <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> -Auflistung <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> Methode</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-107">The <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> collection's <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ab859-108">Die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> des Objekts oder <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /><b>DiagramNode</b> -Eigenschaft der Auflistung</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-108">The <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object's or <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection's <b>DiagramNode</b> property</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para>
+        <span data-ttu-id="ab859-109">Ein Diagrammknoten kann beenden, oder andere untergeordnete Diagramme, untergeordnete Diagrammknoten oder untergeordneten Formen enthalten.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ab859-109">A diagram node can terminate, or it can contain other child diagrams, child diagram nodes, or child shapes.</span>
+        </span>
+        <span data-ttu-id="ab859-110">Verweisen Sie auf diese durch Folgendes:</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ab859-110">Refer to these with the following:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="ab859-111">Wenn Sie auf ein untergeordnetes Diagramm verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> Eigenschaft.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-111">To refer to a child diagram, use the <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> property.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ab859-112">Um auf einen einzelnen untergeordneten Diagrammknoten verweisen möchten, verwenden Sie die <b>AddNode</b>, <b><b>CloneNode</b>, <b>NextNode</b> -Methode</b> oder die <b>Stamm</b> -Eigenschaft.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-112">To refer to an individual child diagram node, use the <b>AddNode</b>, <b>CloneNode</b>, <b>NextNode</b> or <b>PrevNode</b> methods or the <b>Root</b> property.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ab859-113">Um auf eine Auflistung von untergeordneten Diagrammknoten verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> Eigenschaft.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-113">To refer to a collection of child diagram nodes, use the <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> property.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ab859-114">Um auf eine Form verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> Eigenschaften.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-114">To refer to a shape, use the <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> or <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> properties.</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -137,37 +161,37 @@
       </Parameters>
       <Docs>
         <param name="pos">
-          <span data-ttu-id="61593-103">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
+          <span data-ttu-id="ab859-115">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-103">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
+            <span data-stu-id="ab859-115">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
           </span>
-          <span data-ttu-id="61593-104">An der Knoten, relativ zu einem anderen Knoten hinzugefügt wird. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode </b>Standard<b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></span>
+          <span data-ttu-id="ab859-116">An der Knoten, relativ zu einem anderen Knoten hinzugefügt wird. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode </b>Standard<b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-104">Where the node will be added, relative to another node.<b>MsoRelativeNodePosition</b> can be one of these constants:<b>msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></span>
+            <span data-stu-id="ab859-116">Where the node will be added, relative to another node.<b>MsoRelativeNodePosition</b> can be one of these constants:<b>msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></span>
           </span>
         </param>
         <param name="nodeType">
-          <span data-ttu-id="61593-105">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />.</span>
+          <span data-ttu-id="ab859-117">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-105">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />.</span>
+            <span data-stu-id="ab859-117">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />.</span>
           </span>
-          <span data-ttu-id="61593-106">Der Typ des Knotens.</span>
+          <span data-ttu-id="ab859-118">Der Typ des Knotens.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-106">The type of node.</span>
+            <span data-stu-id="ab859-118">The type of node.</span>
           </span>
-          <span data-ttu-id="61593-107">Kann eine der folgenden <b>MsoDiagramNodeType</b> -Konstanten sein:<b>MsoDiagramAssistant</b><b>MsoDiagramNode</b> Standard</span>
+          <span data-ttu-id="ab859-119">Kann eine der folgenden <b>MsoDiagramNodeType</b> -Konstanten sein:<b>MsoDiagramAssistant</b><b>MsoDiagramNode</b> Standard</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-107">Can be one of these <b>MsoDiagramNodeType</b> constants:<b>msoDiagramAssistant</b><b>msoDiagramNode</b> Default</span>
+            <span data-stu-id="ab859-119">Can be one of these <b>MsoDiagramNodeType</b> constants:<b>msoDiagramAssistant</b><b>msoDiagramNode</b> Default</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="61593-108">Erstellt einen Diagrammknoten.</span>
+          <span data-ttu-id="ab859-120">Erstellt einen Diagrammknoten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-108">Creates a diagram node.</span>
+            <span data-stu-id="ab859-120">Creates a diagram node.</span>
           </span>
-          <span data-ttu-id="61593-109">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den neuen Knoten darstellt.</span>
+          <span data-ttu-id="ab859-121">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den neuen Knoten darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents the new node.</span>
+            <span data-stu-id="ab859-121">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents the new node.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -201,9 +225,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-110">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span data-ttu-id="ab859-122">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-110">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="ab859-122">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -234,9 +258,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-111">Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> Objekt, das die Auflistung von untergeordneten Knoten für einen bestimmten Knoten darstellt.</span>
+          <span data-ttu-id="ab859-123">Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> Objekt, das die Auflistung von untergeordneten Knoten für einen bestimmten Knoten darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-111">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> object, representing the collection of child nodes of a particular node.</span>
+            <span data-stu-id="ab859-123">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> object, representing the collection of child nodes of a particular node.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -268,45 +292,45 @@
       </Parameters>
       <Docs>
         <param name="copyChildren">
-          <span data-ttu-id="61593-112">Erforderlicher <b>boolescher Wert</b>.</span>
+          <span data-ttu-id="ab859-124">Erforderlicher <b>boolescher Wert</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-112">Required <b>Boolean</b>.</span>
+            <span data-stu-id="ab859-124">Required <b>Boolean</b>.</span>
           </span>
-          <span data-ttu-id="61593-113">
+          <span data-ttu-id="ab859-125">
             <b>True,</b> um den Diagrammknoten untergeordneten Elemente sowie klonen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-113">
+            <span data-stu-id="ab859-125">
               <b>True</b> to clone the diagram node's children as well.</span>
           </span>
         </param>
         <param name="pTargetNode">
-          <span data-ttu-id="61593-114">Erforderliches <b>DiagramNode</b> -Objekt.</span>
+          <span data-ttu-id="ab859-126">Erforderliches <b>DiagramNode</b> -Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-114">Required <b>DiagramNode</b> object.</span>
+            <span data-stu-id="ab859-126">Required <b>DiagramNode</b> object.</span>
           </span>
-          <span data-ttu-id="61593-115">Ein Ausdruck, der ein <b>DiagramNode</b> -Objekt zurückgibt, stellt den Knoten, in dem der neue Knoten eingefügt wird.</span>
+          <span data-ttu-id="ab859-127">Ein Ausdruck, der ein <b>DiagramNode</b> -Objekt zurückgibt, stellt den Knoten, in dem der neue Knoten eingefügt wird.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-115">An expression that returns a <b>DiagramNode</b> object that represents the node where the new node will be placed.</span>
+            <span data-stu-id="ab859-127">An expression that returns a <b>DiagramNode</b> object that represents the node where the new node will be placed.</span>
           </span>
         </param>
         <param name="pos">
-          <span data-ttu-id="61593-116">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
+          <span data-ttu-id="ab859-128">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-116">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
+            <span data-stu-id="ab859-128">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
           </span>
-          <span data-ttu-id="61593-117">Wenn <paramref name="pTargetNode" /> angegeben ist, gibt an, an der Knoten relativ zum hinzugefügt wird <paramref name="pTargetNode" />. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode </b>Standard<b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></span>
+          <span data-ttu-id="ab859-129">Wenn <paramref name="pTargetNode" /> angegeben ist, gibt an, an der Knoten relativ zum hinzugefügt wird <paramref name="pTargetNode" />. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode </b>Standard<b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-117">If <paramref name="pTargetNode" /> is specified, indicates where the node will be added relative to <paramref name="pTargetNode" />.<b>MsoRelativeNodePosition</b> can be one of these constants:<b>msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></span>
+            <span data-stu-id="ab859-129">If <paramref name="pTargetNode" /> is specified, indicates where the node will be added relative to <paramref name="pTargetNode" />.<b>MsoRelativeNodePosition</b> can be one of these constants:<b>msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="61593-118">Wird einen Diagrammknoten geklont.</span>
+          <span data-ttu-id="ab859-130">Wird einen Diagrammknoten geklont.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-118">Clones a diagram node.</span>
+            <span data-stu-id="ab859-130">Clones a diagram node.</span>
           </span>
-          <span data-ttu-id="61593-119">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den geklonten Knoten darstellt.</span>
+          <span data-ttu-id="ab859-131">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den geklonten Knoten darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-119">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object representing the cloned node.</span>
+            <span data-stu-id="ab859-131">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object representing the cloned node.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -340,25 +364,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-120">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="ab859-132">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-120">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="ab859-132">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="61593-121">
-            <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-            <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="61593-121">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ab859-133">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-133">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ab859-134">Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-134">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="ab859-135">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-135">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -384,9 +413,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="61593-122">Löscht das Objekt.</span>
+          <span data-ttu-id="ab859-136">Löscht das Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-122">Deletes the object.</span>
+            <span data-stu-id="ab859-136">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -416,9 +445,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-123">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> -Objekt, das ein Diagramm darstellt.</span>
+          <span data-ttu-id="ab859-137">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> -Objekt, das ein Diagramm darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-123">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> object representing a diagram.</span>
+            <span data-stu-id="ab859-137">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> object representing a diagram.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -452,49 +481,70 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-124">Zurückgeben oder festlegen eine Konstanten zur Angabe der Formatierung der untergeordneten Knoten eines Organigramms.</span>
+          <span data-ttu-id="ab859-138">Zurückgeben oder festlegen eine Konstanten zur Angabe der Formatierung der untergeordneten Knoten eines Organigramms.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-124">Returns or sets a constant to indicate the formatting of the child nodes of an organization chart.</span>
+            <span data-stu-id="ab859-138">Returns or sets a constant to indicate the formatting of the child nodes of an organization chart.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="61593-125">
-            <para>
-              <b>MsoOrgChartLayoutType</b> kann eine der folgenden <b>MsoOrgChartLayoutType</b> -Konstanten sein.</para>
-            <para>
-              <b>MsoOrgChartLayoutAssistant</b> platziert untergeordnete Knoten als Assistenten.</para>
-            <para>
-              <b>MsoOrgChartLayoutBothHanging</b> platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der linken und rechten Rand.</para>
-            <para>
-              <b>msoOrgChartLayoutBothHanging</b> platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der linken Seite.</para>
-            <para>
-              <b>MsoOrgChartLayoutMixed</b> Rückgabewert für einen übergeordneten Knoten, die untergeordnete Elemente mit mehr als einem <b>MsoOrgChartLayoutType</b>formatiert wurde.</para>
-            <para>
-              <b>MsoOrgChartLayoutRightHanging</b> platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der rechten Seite.</para>
-            <para>
-              <b>MsoOrgChartLayoutStandard</b> platziert untergeordnete Knoten horizontal unter dem übergeordneten Knoten.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="61593-125">
-              <para>
-                <b>MsoOrgChartLayoutType</b> can be one of these <b>MsoOrgChartLayoutType</b> constants.</para>
-              <para>
-                <b>msoOrgChartLayoutAssistant</b> Places child nodes as assistants.</para>
-              <para>
-                <b>msoOrgChartLayoutBothHanging</b> Places child nodes vertically from the parent node on both the left and the right side.</para>
-              <para>
-                <b>msoOrgChartLayoutLeftHanging</b> Places child nodes vertically from the parent node on the left side.</para>
-              <para>
-                <b>msoOrgChartLayoutMixed</b> Return value for a parent node that has children formatted using more than one <b>MsoOrgChartLayoutType</b>.</para>
-              <para>
-                <b>msoOrgChartLayoutRightHanging</b> Places child nodes vertically from the parent node on the right side.</para>
-              <para>
-                <b>msoOrgChartLayoutStandard</b> Places child nodes horizontally below the parent node.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ab859-139">
+              <b>MsoOrgChartLayoutType</b> kann einer der folgenden <b>MsoOrgChartLayoutType</b> -Konstanten entsprechen.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-139">
+                <b>MsoOrgChartLayoutType</b> can be one of these <b>MsoOrgChartLayoutType</b> constants.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ab859-140">
+              <b>msoOrgChartLayoutAssistant</b> Platziert untergeordnete Knoten als Assistenten.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-140">
+                <b>msoOrgChartLayoutAssistant</b> Places child nodes as assistants.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ab859-141">
+              <b>msoOrgChartLayoutBothHanging</b> Platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der linken und rechten Rand.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-141">
+                <b>msoOrgChartLayoutBothHanging</b> Places child nodes vertically from the parent node on both the left and the right side.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ab859-142">
+              <b>msoOrgChartLayoutBothHanging</b> Platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der linken Seite.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-142">
+                <b>msoOrgChartLayoutLeftHanging</b> Places child nodes vertically from the parent node on the left side.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ab859-143">
+              <b>msoOrgChartLayoutMixed</b> Der Rückgabewert für einen übergeordneten Knoten, der untergeordnete Elemente mit mehr als einem <b>MsoOrgChartLayoutType</b>formatiert wurde.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-143">
+                <b>msoOrgChartLayoutMixed</b> Return value for a parent node that has children formatted using more than one <b>MsoOrgChartLayoutType</b>.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ab859-144">
+              <b>msoOrgChartLayoutRightHanging</b> Platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der rechten Seite.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-144">
+                <b>msoOrgChartLayoutRightHanging</b> Places child nodes vertically from the parent node on the right side.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ab859-145">
+              <b>msoOrgChartLayoutStandard</b> Platziert untergeordnete Knoten horizontal unter dem übergeordneten Knoten.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-145">
+                <b>msoOrgChartLayoutStandard</b> Places child nodes horizontally below the parent node.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -523,29 +573,29 @@
       </Parameters>
       <Docs>
         <param name="pTargetNode">
-          <span data-ttu-id="61593-126">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
+          <span data-ttu-id="ab859-146">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-126">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
+            <span data-stu-id="ab859-146">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
           </span>
-          <span data-ttu-id="61593-127">Der Diagrammknoten, in dem der angegebene Knoten verschoben werden sollen.</span>
+          <span data-ttu-id="ab859-147">Der Diagrammknoten, in dem der angegebene Knoten verschoben werden sollen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-127">The diagram node where the specified node will be moved.</span>
+            <span data-stu-id="ab859-147">The diagram node where the specified node will be moved.</span>
           </span>
         </param>
         <param name="pos">
-          <span data-ttu-id="61593-128">Erforderliche <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
+          <span data-ttu-id="ab859-148">Erforderliche <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-128">Required <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
+            <span data-stu-id="ab859-148">Required <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />.</span>
           </span>
-          <span data-ttu-id="61593-129">Die Position, an den Knoten relativ zum Verschieben <paramref name="TargetNode" />. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode</b><b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></span>
+          <span data-ttu-id="ab859-149">Die Position, an den Knoten relativ zum Verschieben <paramref name="TargetNode" />. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode</b><b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-129">The position to move the node, relative to <paramref name="TargetNode" />.<b>MsoRelativeNodePosition</b> can be one of these constants:<b>msoAfterLastSibling</b><b>msoAfterNode</b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></span>
+            <span data-stu-id="ab859-149">The position to move the node, relative to <paramref name="TargetNode" />.<b>MsoRelativeNodePosition</b> can be one of these constants:<b>msoAfterLastSibling</b><b>msoAfterNode</b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="61593-130">Verschiebt einen Diagrammknoten und alle untergeordneten Knoten in einem Diagramm.</span>
+          <span data-ttu-id="ab859-150">Verschiebt einen Diagrammknoten und alle untergeordneten Knoten in einem Diagramm.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-130">Moves a diagram node and any of its child nodes within a diagram.</span>
+            <span data-stu-id="ab859-150">Moves a diagram node and any of its child nodes within a diagram.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -573,13 +623,13 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="61593-131">Wählt den nächsten Diagrammknoten in einer Reihe von Knoten.</span>
+          <span data-ttu-id="ab859-151">Wählt den nächsten Diagrammknoten in einer Reihe von Knoten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-131">Selects the next diagram node in a series of nodes.</span>
+            <span data-stu-id="ab859-151">Selects the next diagram node in a series of nodes.</span>
           </span>
-          <span data-ttu-id="61593-132">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den neu ausgewählten Knoten darstellt.</span>
+          <span data-ttu-id="ab859-152">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den neu ausgewählten Knoten darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-132">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object representing the newly-selected node.</span>
+            <span data-stu-id="ab859-152">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object representing the newly-selected node.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -610,9 +660,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-133">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
+          <span data-ttu-id="ab859-153">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-133">Returns the parent object for the specified object.</span>
+            <span data-stu-id="ab859-153">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -641,9 +691,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="61593-134">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den vorherigen Diagrammknoten in einer Auflistung von Diagrammknoten darstellt.</span>
+          <span data-ttu-id="ab859-154">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den vorherigen Diagrammknoten in einer Auflistung von Diagrammknoten darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-134">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents the previous diagram node in a collection of diagram nodes.</span>
+            <span data-stu-id="ab859-154">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents the previous diagram node in a collection of diagram nodes.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -674,32 +724,29 @@
       </Parameters>
       <Docs>
         <param name="pTargetNode">
-          <span data-ttu-id="61593-135">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
+          <span data-ttu-id="ab859-155">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-135">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
+            <span data-stu-id="ab859-155">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
           </span>
-          <span data-ttu-id="61593-136">Der Ziel-Diagrammknoten ersetzt werden.</span>
+          <span data-ttu-id="ab859-156">Der Ziel-Diagrammknoten ersetzt werden.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-136">The target diagram node to be replaced.</span>
+            <span data-stu-id="ab859-156">The target diagram node to be replaced.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="61593-137">Einen Ziel-Diagrammknoten ersetzt mit der Quelldiagrammknoten.</span>
+          <span data-ttu-id="ab859-157">Einen Ziel-Diagrammknoten ersetzt mit der Quelldiagrammknoten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-137">Replaces a target diagram node with the source diagram node.</span>
+            <span data-stu-id="ab859-157">Replaces a target diagram node with the source diagram node.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="61593-138">
-            <para>Der Ziel-Diagrammknoten wird gelöscht, und der Quellknoten einschließlich aller untergeordneten Knoten, werden an, bei denen der Zieldiagrammknoten war verschoben.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="61593-138">
-              <para>The target diagram node is deleted, and the source diagram node, including any of its child nodes, are moved to where the target diagram node was.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ab859-158">Der Ziel-Diagrammknoten wird gelöscht, und der Quellknoten einschließlich aller untergeordneten Knoten, an, bei denen der Zieldiagrammknoten war verschoben werden.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ab859-158">The target diagram node is deleted, and the source diagram node, including any of its child nodes, are moved to where the target diagram node was.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -727,9 +774,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-139">Gibt das Stammverzeichnis <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt, das der Stammknoten Diagramm gehört.</span>
+          <span data-ttu-id="ab859-159">Gibt das Stammverzeichnis <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt, das der Stammknoten Diagramm gehört.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-139">Returns the root <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object which the root diagram node belongs.</span>
+            <span data-stu-id="ab859-159">Returns the root <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object which the root diagram node belongs.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -760,9 +807,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-140">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die Form darstellt, der angegebenen Diagrammknoten zugeordnet ist</span>
+          <span data-ttu-id="ab859-160">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die Form darstellt, der angegebenen Diagrammknoten zugeordnet ist</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-140">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape attached to the specified diagram node</span>
+            <span data-stu-id="ab859-160">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape attached to the specified diagram node</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -793,37 +840,37 @@
       </Parameters>
       <Docs>
         <param name="pTargetNode">
-          <span data-ttu-id="61593-141">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
+          <span data-ttu-id="ab859-161">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-141">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
+            <span data-stu-id="ab859-161">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
           </span>
-          <span data-ttu-id="61593-142">Der Ziel-Diagrammknoten ersetzt werden.</span>
+          <span data-ttu-id="ab859-162">Der Ziel-Diagrammknoten ersetzt werden.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-142">The target diagram node to be replaced.</span>
+            <span data-stu-id="ab859-162">The target diagram node to be replaced.</span>
           </span>
         </param>
         <param name="swapChildren">
-          <span data-ttu-id="61593-143">Optionaler <b>Boolean</b>-Wert.</span>
+          <span data-ttu-id="ab859-163">Optionaler <b>Boolean</b>-Wert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-143">Optional <b>Boolean</b>.</span>
+            <span data-stu-id="ab859-163">Optional <b>Boolean</b>.</span>
           </span>
-          <span data-ttu-id="61593-144">Die untergeordneten Knoten der Quell- und Knoten ausgetauscht werden.</span>
+          <span data-ttu-id="ab859-164">Die untergeordneten Knoten der Quell- und Knoten ausgetauscht werden.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-144">The child nodes of the target and source nodes being swapped.</span>
+            <span data-stu-id="ab859-164">The child nodes of the target and source nodes being swapped.</span>
           </span>
-          <span data-ttu-id="61593-145">Alle untergeordneten Diagrammknoten werden zusammen mit ihren entsprechenden Stammknoten verschoben.</span>
+          <span data-ttu-id="ab859-165">Alle untergeordneten Diagrammknoten werden zusammen mit ihren entsprechenden Stammknoten verschoben.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-145">Any child diagram nodes are moved along with their corresponding root nodes.</span>
+            <span data-stu-id="ab859-165">Any child diagram nodes are moved along with their corresponding root nodes.</span>
           </span>
-          <span data-ttu-id="61593-146">Der Standardwert ist <b>True</b>, der die untergeordneten Knoten vertauscht.</span>
+          <span data-ttu-id="ab859-166">Der Standardwert ist <b>True</b>, der die untergeordneten Knoten vertauscht.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-146">Default is <b>True</b>, which swaps the child nodes.</span>
+            <span data-stu-id="ab859-166">Default is <b>True</b>, which swaps the child nodes.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="61593-147">Vertauscht den Quelldiagrammknoten mit einem Zieldiagrammknoten.</span>
+          <span data-ttu-id="ab859-167">Vertauscht den Quelldiagrammknoten mit einem Zieldiagrammknoten.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-147">Swaps the source diagram node with a target diagram node.</span>
+            <span data-stu-id="ab859-167">Swaps the source diagram node with a target diagram node.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -853,9 +900,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="61593-148">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekts ein Diagrammknoten zugeordnet, die die Form des Textfelds darstellt.</span>
+          <span data-ttu-id="ab859-168">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekts ein Diagrammknoten zugeordnet, die die Form des Textfelds darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-148">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object representing the shape of the text box associated with a diagram node.</span>
+            <span data-stu-id="ab859-168">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object representing the shape of the text box associated with a diagram node.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -886,19 +933,19 @@
       </Parameters>
       <Docs>
         <param name="pReceivingNode">
-          <span data-ttu-id="61593-149">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
+          <span data-ttu-id="ab859-169">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-149">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
+            <span data-stu-id="ab859-169">Required <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object.</span>
           </span>
-          <span data-ttu-id="61593-150">Der Diagrammknoten für die untergeordneten Knoten aus dem angegebenen Knoten übertragen wird.</span>
+          <span data-ttu-id="ab859-170">Der Diagrammknoten für die untergeordneten Knoten aus dem angegebenen Knoten übertragen wird.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-150">The diagram node receiving the child nodes being transferred from the specified node.</span>
+            <span data-stu-id="ab859-170">The diagram node receiving the child nodes being transferred from the specified node.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="61593-151">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekts ein Diagrammknoten zugeordnet, die die Form des Textfelds darstellt.</span>
+          <span data-ttu-id="ab859-171">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekts ein Diagrammknoten zugeordnet, die die Form des Textfelds darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="61593-151">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object representing the shape of the text box associated with a diagram node.</span>
+            <span data-stu-id="ab859-171">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object representing the shape of the text box associated with a diagram node.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>

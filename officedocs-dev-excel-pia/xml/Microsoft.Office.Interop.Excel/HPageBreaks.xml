@@ -1,10 +1,10 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108f19eb2bdfc41fd93ef30c28377a61a1667c" />
+    <Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585729" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
@@ -34,50 +34,65 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="1b29a-101">Die Auflistung der horizontalen Seitenumbrüche im Druckbereich.</span>
+      <span data-ttu-id="ae81e-101">Die Auflistung der horizontalen Seitenumbrüche im Druckbereich.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1b29a-101">The collection of horizontal page breaks within the print area.</span>
+        <span data-stu-id="ae81e-101">The collection of horizontal page breaks within the print area.</span>
       </span>
-      <span data-ttu-id="1b29a-102">Jeder horizontale Seitenumbruch wird durch dargestellt ein <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> Objekt.</span>
+      <span data-ttu-id="ae81e-102">Jeder horizontale Seitenumbruch wird durch dargestellt ein <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> Objekt.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1b29a-102">Each horizontal page break is represented by an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
+        <span data-stu-id="ae81e-102">Each horizontal page break is represented by an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="1b29a-103">
-        <para>Verwenden Sie die <b>HPageBreaks</b> -Eigenschaft, um die <b>HPageBreaks</b> -Auflistung zurückzugeben. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> -Methode, um einen horizontalen Seitenumbruch hinzuzufügen.</para>
-        <para>Wenn Sie einen Seitenumbruch, der den Druckbereich nicht überschneidet hinzufügen, und klicken Sie dann das neu hinzugefügte <b>HPageBreak</b> -Objekt nicht, in der <b>HPageBreaks</b> -Auflistung für den Druckbereich angezeigt wird.</para>
-        <para>Bei der <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> -Eigenschaft, oder <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> -Methode in Verbindung mit der <b>HPageBreaks</b> -Eigenschaft verwendet wird:</para>
-        <list type="bullet">
-          <item>
-            <description>Bei einem automatischen Druckbereich wird die <b>HPageBreaks</b> -Eigenschaft nur auf die Seitenumbrüche im Druckbereich gilt.</description>
-          </item>
-          <item>
-            <description>Bei einem benutzerdefinierten Druckbereich mit denselben Abmessungen wird die <b>HPageBreaks</b> -Eigenschaft auf alle Seitenumbrüche.</description>
-          </item>
-        </list>
-        <para>
-          <b>Hinweis</b> vorhanden ist maximal 1,026 horizontalen Seitenumbrüche pro Blatt.</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="1b29a-103">
-          <para>Use the <b>HPageBreaks</b> property to return the <b>HPageBreaks</b> collection. Use the <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method to add a horizontal page break.</para>
-          <para>If you add a page break that does not intersect the print area, then the newly-added <b>HPageBreak</b> object will not appear in the <b>HPageBreaks</b> collection for the print area.</para>
-          <para>When the <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> property, or <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method is used in conjunction with the <b>HPageBreaks</b> property:</para>
-          <list type="bullet">
-            <item>
-              <description>For an automatic print area, the <b>HPageBreaks</b> property applies only to the page breaks within the print area.</description>
-            </item>
-            <item>
-              <description>For a user-defined print area of the same range, the <b>HPageBreaks</b> property applies to all of the page breaks.</description>
-            </item>
-          </list>
-          <para>
-            <b>Note</b>  There is a limit of 1,026 horizontal page breaks per sheet.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="ae81e-103">Verwenden Sie die <b>HPageBreaks</b> -Eigenschaft, um die <b>HPageBreaks</b> -Auflistung zurückzugeben.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ae81e-103">Use the <b>HPageBreaks</b> property to return the <b>HPageBreaks</b> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="ae81e-104">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> -Methode, um einen horizontalen Seitenumbruch hinzuzufügen.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ae81e-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method to add a horizontal page break.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="ae81e-105">Wenn Sie einen Seitenumbruch, der den Druckbereich nicht überschneidet hinzufügen, wird das neu hinzugefügte <b>HPageBreak</b> -Objekt nicht in der <b>HPageBreaks</b> -Auflistung für den Druckbereich angezeigt.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ae81e-105">If you add a page break that does not intersect the print area, then the newly-added <b>HPageBreak</b> object will not appear in the <b>HPageBreaks</b> collection for the print area.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="ae81e-106">Wenn die <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> -Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> -Eigenschaft, oder <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> -Methode in Verbindung mit der <b>HPageBreaks</b> -Eigenschaft verwendet wird:</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ae81e-106">When the <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> property, or <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method is used in conjunction with the <b>HPageBreaks</b> property:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="ae81e-107">Bei einem automatischen Druckbereich wird die <b>HPageBreaks</b> -Eigenschaft nur auf die Seitenumbrüche im Druckbereich angewendet.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ae81e-107">For an automatic print area, the <b>HPageBreaks</b> property applies only to the page breaks within the print area.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ae81e-108">Bei einem benutzerdefinierten Druckbereich mit denselben Abmessungen wird die <b>HPageBreaks</b> -Eigenschaft auf alle Seitenumbrüche angewendet.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ae81e-108">For a user-defined print area of the same range, the <b>HPageBreaks</b> property applies to all of the page breaks.</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para>
+        <span data-ttu-id="ae81e-109">
+          <b>Hinweis</b>  Es besteht ein Grenzwert von 1,026 horizontalen Seitenumbrüche pro Blatt.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ae81e-109">
+            <b>Note</b>  There is a limit of 1,026 horizontal page breaks per sheet.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -112,9 +127,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="1b29a-104">Für die interne Verwendung reserviert.</span>
+          <span data-ttu-id="ae81e-110">Für die interne Verwendung reserviert.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-104">Reserved for internal use.</span>
+            <span data-stu-id="ae81e-110">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -145,28 +160,28 @@
       </Parameters>
       <Docs>
         <param name="Before">
-          <span data-ttu-id="1b29a-105">
+          <span data-ttu-id="ae81e-111">
             <b>Objekt</b>erforderlich.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-105">Required <b>Object</b>.</span>
+            <span data-stu-id="ae81e-111">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="1b29a-106">Eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt.</span>
+          <span data-ttu-id="ae81e-112">Eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-106">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object.</span>
+            <span data-stu-id="ae81e-112">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object.</span>
           </span>
-          <span data-ttu-id="1b29a-107">Der Bereich über dem der neue Seitenumbruch hinzugefügt werden soll.</span>
+          <span data-ttu-id="ae81e-113">Der Bereich über dem der neue Seitenumbruch hinzugefügt werden soll.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-107">The range above which the new page break will be added.</span>
+            <span data-stu-id="ae81e-113">The range above which the new page break will be added.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="1b29a-108">Fügt einen horizontalen Seitenumbruch ein.</span>
+          <span data-ttu-id="ae81e-114">Fügt einen horizontalen Seitenumbruch ein.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-108">Adds a horizontal page break.</span>
+            <span data-stu-id="ae81e-114">Adds a horizontal page break.</span>
           </span>
-          <span data-ttu-id="1b29a-109">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> Objekt.</span>
+          <span data-ttu-id="ae81e-115">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> Objekt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-109">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
+            <span data-stu-id="ae81e-115">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -197,9 +212,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1b29a-110">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
+          <span data-ttu-id="ae81e-116">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-110">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="ae81e-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -230,9 +245,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1b29a-111">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
+          <span data-ttu-id="ae81e-117">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-111">Returns the number of objects in the collection.</span>
+            <span data-stu-id="ae81e-117">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -263,25 +278,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1b29a-112">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
+          <span data-ttu-id="ae81e-118">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="ae81e-118">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="1b29a-113">
-            <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-            <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="1b29a-113">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ae81e-119">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ae81e-119">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ae81e-120">Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ae81e-120">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="ae81e-121">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ae81e-121">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -344,19 +364,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="1b29a-114">Integer erforderlich.</span>
+          <span data-ttu-id="ae81e-122">Integer erforderlich.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-114">Required Integer.</span>
+            <span data-stu-id="ae81e-122">Required Integer.</span>
           </span>
-          <span data-ttu-id="1b29a-115">Die Indexnummer des Objekts.</span>
+          <span data-ttu-id="ae81e-123">Die Indexnummer des Objekts.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-115">The index number of the object.</span>
+            <span data-stu-id="ae81e-123">The index number of the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="1b29a-116">Gibt ein einzelnes Objekt aus einer Auflistung zurück.</span>
+          <span data-ttu-id="ae81e-124">Gibt ein einzelnes Objekt aus einer Auflistung zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-116">Returns a single object from a collection.</span>
+            <span data-stu-id="ae81e-124">Returns a single object from a collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -387,9 +407,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1b29a-117">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
+          <span data-ttu-id="ae81e-125">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1b29a-117">Returns the parent object for the specified object.</span>
+            <span data-stu-id="ae81e-125">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
