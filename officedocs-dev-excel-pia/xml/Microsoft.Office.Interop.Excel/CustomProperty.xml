@@ -1,10 +1,10 @@
 <Type Name="CustomProperty" FullName="Microsoft.Office.Interop.Excel.CustomProperty">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d14ae8362b79561c7d6899990e1114bc9cb70ea8" />
+    <Meta Name="ms.openlocfilehash" Value="afd9b6d75b6603043ecdd7f87755c3b197664c26" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582425" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CustomProperty" />
@@ -32,7 +32,7 @@
     <summary>Stellt Bezeichnerinformationen dar. Diese Informationen können als Metadaten für XML verwendet werden.</summary>
     <remarks>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> Methode oder die <see cref="P:Microsoft.Office.Interop.Excel.CustomProperties.Item(System.Object)" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> -Auflistung, um ein <b>CustomProperty</b> -Objekt zurückzugeben.</para>
-      <para>Nachdem ein <b>CustomProperty</b> -Objekt zurückgegeben wurde, können Sie Metadaten zu Arbeitsblättern verwenden die <b>CustomProperties</b> -Eigenschaft mit der <b>Add</b> -Methode hinzufügen.</para>
+      <para>Nachdem ein <b>CustomProperty</b>-Objekt zurückgegeben wurde, können Sie Arbeitsblättern Metadaten hinzufügen, indem Sie die <b>CustomProperties</b>-Eigenschaft mit der <b>Add</b>-Methode verwenden.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -122,8 +122,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -151,7 +151,7 @@
       <Docs>
         <summary>Löscht das Objekt.</summary>
         <remarks>
-          <para>Können Sie benutzerdefinierte Dokumenteigenschaften löschen, jedoch keine integrierte Dokumenteigenschaft kann nicht gelöscht werden.</para>
+          <para>Sie können benutzerdefinierte Dokumenteigenschaften löschen, jedoch keine integrierte Dokumenteigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -185,7 +185,7 @@
         <summary>Gibt den Namen des Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die folgende Tabelle zeigt Beispielwerte der <b>Name</b> -Eigenschaft und die verwandten Eigenschaften eine OLAP-Datenquelle mit dem eindeutigen Namen "[Europa]. [Frankreich]. [Paris] "und eine nicht-OLAP-Datenquelle mit dem Element"Paris"nennen.</para>
+          <para>Die folgende Tabelle enthält Beispielwerte der <b>Name</b>-Eigenschaft und verwandter Eigenschaften. Dabei wird von einer OLAP-Datenquelle mit dem eindeutigen Namen "[Europa].[Frankreich].[Paris]" und einer Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris" ausgegangen.</para>
           <list type="table">
             <item>
               <term>
@@ -196,37 +196,37 @@
             </item>
             <item>
               <term>
-                <b>Namen</b>
+                <b>Name</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>(Identisch mit SQL-Eigenschaftenwert, schreibgeschützt)</description>
             </item>
             <item>
               <term>
                 <b>Wert</b>
               </term>
-              <description>[Europa]. [ Frankreich]. [Paris] (schreibgeschützt)</description>
+              <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Beim angeben als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
+          <para>Beim Angeben von als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <term>Ausdruck. PivotItems ("[Europa]. [ Frankreich]. [Paris] ")</term>
               <description>Ausdruck. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> -Eigenschaft so verweisen Sie auf ein bestimmtes Element einer Auflistung, können Sie den Textindexnamen wie in der folgenden Tabelle gezeigt verwenden.</para>
+          <para>Bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> -Eigenschaft so verweisen Sie auf ein bestimmtes Element einer Auflistung, können Sie den Textindexnamen wie in der folgenden Tabelle gezeigt verwenden.</para>
           <list type="table">
             <item>
-              <term>[Europa]. [ Frankreich]. [Paris]</term>
+              <term>[Europa]. [Frankreich]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>

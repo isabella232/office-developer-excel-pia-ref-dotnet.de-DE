@@ -1,10 +1,10 @@
 <Type Name="Graphic" FullName="Microsoft.Office.Interop.Excel.Graphic">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f71cc399b82a45b3ea700b16adc69b6140e7585c" />
+    <Meta Name="ms.openlocfilehash" Value="557d2313e5eee89f3ea3d42e9d0eca09addf2bb5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585652" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Graphic" />
@@ -32,7 +32,7 @@
     <summary>Enthält Eigenschaften, die für Grafikobjekte von Kopf- und Fußzeilen gelten.</summary>
     <remarks>
       <para>Es gibt verschiedene Eigenschaften für die <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> -Objekt, das das <b>Graphic</b> -Objekt zurückzugeben.</para>
-      <para>Verwenden die <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightFooterPicture" />, oder <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightHeaderPicture" /> Eigenschaften, um ein <b>Graphic</b> -Objekt zurückzugeben.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightFooterPicture" />, oder <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightHeaderPicture" /> Eigenschaften, um ein <b>Graphic</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -129,21 +129,21 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoPictureColorType" />kann eine der folgenden <b>MsoPictureColorType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoPictureColorType" />Dies kann eine der folgenden <b>MsoPictureColorType</b> -Konstanten sein:</para>
           <para>
-            <b>MsoPictureAutomatic</b>
+            <b>msoPictureAutomatic</b>
           </para>
           <para>
-            <b>MsoPictureBlackAndWhite</b>
+            <b>msoPictureBlackAndWhite</b>
           </para>
           <para>
-            <b>MsoPictureGrayscale</b>
+            <b>msoPictureGrayscale</b>
           </para>
           <para>
-            <b>MsoPictureMixed</b>
+            <b>msoPictureMixed</b>
           </para>
           <para>
-            <b>MsoPictureWatermark</b>
+            <b>msoPictureWatermark</b>
           </para>
           <para></para>
         </remarks>
@@ -178,7 +178,7 @@
         <summary>Gibt den Kontrast des angegebenen Bilds oder OLE-Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Contrast</b> -Eigenschaft muss eine Zahl zwischen 0,0 (Geringster Kontrast) und 1,0 (höchster Kontrast).</para>
+          <para>Die <b>Contrast</b> -Eigenschaft muss eine Zahl zwischen 0,0 (Geringster Kontrast) und 1,0 (höchster Kontrast) sein.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -209,8 +209,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -244,7 +244,7 @@
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der unteren Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild einfügen, das ursprünglich auf 100 Punkt ist, skalieren es auf 200 Punkte hoch ist, und klicken Sie dann werden die <b>CropBottom</b> -Eigenschaft auf 50 100 Punkt (nicht 50) vom unteren Rand des Bildes abgeschnitten.</para>
+          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt hohes Bild ein, skalieren es auf eine Höhe von 200 Punkt und legen danach für die <b>CropBottom</b>CropBottom-Eigenschaft den Wert 50 fest, dann wird das Bild an der unteren Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -278,7 +278,7 @@
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der linken Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild mit der ursprünglichen Breite von 100 Punkt einfügen, skalieren es auf 200 Punkte breit ist, und klicken Sie dann werden die <b>CropLeft</b> -Eigenschaft auf 50 100 Punkt (nicht 50) von der linken Seite des Bilds abgeschnitten.</para>
+          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt breites Bild ein, skalieren es auf eine Breite von 200 Punkt und legen danach für die <b>CropLeft</b>CropLeft-Eigenschaft den Wert 50 fest, dann wird das Bild an der linken Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -312,7 +312,7 @@
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der rechten Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild mit der ursprünglichen Breite von 100 Punkt einfügen, skalieren es auf 200 Punkte breit ist, und klicken Sie dann werden die <b>CropRight</b> -Eigenschaft auf 50 100 Punkt (nicht 50) von der rechten Seite des Bilds abgeschnitten.</para>
+          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt breites Bild ein, skalieren es auf eine Breite von 200 Punkt und legen danach für die <b>CropRight</b>CropRight-Eigenschaft den Wert 50 fest, dann wird das Bild an der rechten Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -346,7 +346,7 @@
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der oberen Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild einfügen, das ursprünglich auf 100 Punkt ist, skalieren es auf 200 Punkte hoch ist, und klicken Sie dann werden die <b>CropTop</b> -Eigenschaft auf 50 100 Punkt (nicht 50) vom oberen Rand Ihres Bilds abgeschnitten.</para>
+          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt hohes Bild ein, skalieren es auf eine Höhe von 200 Punkt und legen danach für die <b>CropTop</b>CropTop-Eigenschaft den Wert 50 fest, dann wird das Bild an der oberen Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -380,7 +380,7 @@
         <summary>Zurückgeben oder Festlegen der URL (im Intranet oder im Web) oder Pfad (lokale oder Netzwerk) zu dem Speicherort, in dem das angegebene Quellobjekt gespeichert wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>FileName</b> -Eigenschaft generiert einen Fehler, wenn ein Ordner im angegebenen Pfad nicht vorhanden.</para>
+          <para>Die <b>FileName</b>-Eigenschaft generiert einen Fehler, wenn ein Ordner in dem angegebenen Pfad nicht vorhanden ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -447,12 +447,12 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Dies kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
-            <b>MsoCTrue</b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>MsoFalse</b> können Sie die Höhe und Breite der Form unabhängig voneinander, wenn Sie darauf verweisen Größe ändern</para>
+            <b>msoFalse</b> Sie können beim Skalieren die Höhe und Breite der Form unabhängig voneinander ändern.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -460,7 +460,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>MsoTrue</b> die angegebene Form behält die ursprünglichen Proportionen beim Ändern der Größe darauf verweisen</para>
+            <b>msoTrue</b> Die angegebene Form behält die ursprünglichen Proportionen beim Skalieren.</para>
           <para></para>
         </remarks>
       </Docs>

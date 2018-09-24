@@ -1,10 +1,10 @@
 <Type Name="ConnectorFormat" FullName="Microsoft.Office.Interop.Excel.ConnectorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="15dfc4a010303c9d647a7f5b002c66763a3fdc79" />
+    <Meta Name="ms.openlocfilehash" Value="6e2dfed647b41c630904642100343ae25d044efb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586114" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
@@ -31,18 +31,18 @@
   <Docs>
     <summary>Enthält Eigenschaften und Methoden, die für Verbindungen gelten.</summary>
     <remarks>
-      <para>Eine Verbindung ist eine Linie, die zwei andere Formen an Punkten Verbindungspunkten anfügt. Wenn Shapes neu, die verbunden sind anordnen, die Geometrie der Connector wird automatisch so angepasst, dass die Formen verbunden bleiben.</para>
+      <para>Eine Verbindung ist eine Linie, die zwei andere Formen mit als "Verbindungsseiten" bezeichneten Punkten zusammenfügt. Wenn Sie die verbundenen Formen neu anordnen, wird die Geometrie der Verbindung automatisch angepasst, sodass die Formen verbunden bleiben.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> Eigenschaft, um ein <b>ConnectorFormat</b> -Objekt zurückzugeben. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> und <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> Methoden verwenden, um den Enden einer Verbindung mit anderen Formen im Dokument verbinden. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> -Methode, um automatisch den kürzesten Pfad zwischen den beiden Formen, die durch die Verbindung verbundenen suchen. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> Eigenschaft, um festzustellen, ob eine Form eine Verbindung ist.</para>
-      <para>Beachten Sie, dass Sie eine Größe und Position zuweisen, wenn Sie eine Verbindung zum Hinzufügen der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> -Auflistung, aber die Größe und Position werden automatisch angepasst, wenn der Anfang und Ende der Verbindung mit anderen Formen in der Auflistung angefügt. Wenn Sie eine Verbindung mit anderen Formen verbinden möchten, sind die ursprüngliche Größe und Position die von Ihnen angegebenen nicht relevant. Ebenso können Sie angeben, welche Verbindungsseiten auf ein Shape, um die Verbindung zu verbinden, wenn Sie den Connector anfügen, aber verwenden die <b>RerouteConnections</b> -Methode nach der Verbindung ansetzt ändern können, welche Verbindungsseiten der Verbindung ansetzt, und Ihre ursprüngliche Auswahl von Verbindungsseiten irrelevant.</para>
-      <para>Werden nach den in der folgenden Tabelle aufgeführten Regeln in der Regel nummeriert.</para>
+      <para>Beachten Sie, dass Sie eine Größe und Position zuweisen, wenn Sie eine Verbindung zum Hinzufügen der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> -Auflistung, aber die Größe und Position werden automatisch angepasst, wenn der Anfang und Ende der Verbindung mit anderen Formen in der Auflistung angefügt. Wenn Sie eine Verbindung mit anderen Formen verbinden möchten, sind die ursprüngliche Größe und Position die von Ihnen angegebenen nicht relevant. Ebenso Sie festlegen, welche Verbindungsseiten einer Form mit der Verbindung, wenn Sie die Verbindung verbinden, aber die <b>RerouteConnections</b> -Methode verwenden, nachdem die Verbindung verbunden ist möglicherweise die Verbindungsseiten die Verbindung, und Ihre ursprüngliche Auswahl von Verbindungsseiten irrelevant machen ändern.</para>
+      <para>Verbindungsseiten werden nach den Regeln nummeriert, die in der folgenden Tabelle verzeichnet sind.</para>
       <list type="table">
         <item>
-          <term>AutoFormen, WordArt, Bilder und OLE-Objekte</term>
-          <description>die Verbindungspunkte werden beginnend am Anfang und Fortsetzen des entgegen dem Uhrzeigersinn nummeriert.</description>
+          <term>AutoFormen, WordArt, Grafiken und OLE-Objekte</term>
+          <description>Die Verbindungsseiten werden von oben fortlaufend entgegen dem Uhrzeigersinn nummeriert.</description>
         </item>
         <item>
           <term>Freihandformen</term>
-          <description>die Verbindungspunkte sind die Scheitelpunkte und entsprechen den Scheitelpunktnummern.</description>
+          <description>Die Verbindungsseiten sind die Scheitelpunkte, die den Nummern der Scheitelpunkte entsprechen.</description>
         </item>
       </list>
       <para></para>
@@ -106,8 +106,8 @@
           <b>Integer</b>erforderlich. Ein Verbindungspunkt auf das Shape durch angegebenen <paramref name="ConnectedShape" />. Muss eine ganze Zahl zwischen 1 und die ganze Zahl zurückgegeben, die durch die <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> -Eigenschaft der angegebenen Form. Wenn die Verbindung automatisch den kürzesten Pfad zwischen den beiden Formen eine Verbindung hergestellt werden soll, geben Sie eine gültige ganze Zahl für dieses Argument und Verwenden der <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> -Methode, nachdem die Verbindung mit beiden Formen an beiden Enden verbunden ist.</param>
         <summary>Ordnet einer angegebenen Form den Anfang der angegebenen Verbindung zu.</summary>
         <remarks>
-          <para>Wenn bereits eine Verbindung zwischen den Anfang der Verbindung und eine andere Form vorhanden ist, wird diese Verbindung unterbrochen. Wenn der Anfang der Verbindung noch nicht an der angegebenen Verbindungsseite positioniert, wird diese Methode verschiebt den Anfang der Verbindung zu der Verbindungsseite und passt die Größe und Position der Verbindung. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> -Methode, um das Ende der Verbindung mit einer Form zusammenfügen.</para>
-          <para>Wenn Sie eine Verbindung zu einem Objekt verbinden, die Größe und Position der Verbindung werden automatisch angepasst bei Bedarf.</para>
+          <para>Wenn bereits eine Verbindung zwischen den Anfang der Verbindung und eine andere Form vorhanden ist, wird diese Verbindung unterbrochen. Wenn der Anfang der Verbindung noch nicht an der angegebenen Verbindungsseite positioniert, wird diese Methode verschiebt den Anfang der Verbindung zu der Verbindungsseite und passt die Größe und Position der Verbindung. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> -Methode, um das Ende der Verbindung mit einer Form zu verbinden.</para>
+          <para>Wenn Sie eine Verbindung mit einem Objekt verbinden, werden Größe und Position der Verbindung bei Bedarf automatisch angepasst.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -140,21 +140,21 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Dies kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
-            <b>MsoCTrue</b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>MsoFalse</b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>MsoTriStateMixed</b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>MsoTriStateToggle</b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>MsoTrue</b> der Anfang der angegebenen Verbindung ist mit einer Form verbunden.</para>
+            <b>msoTrue</b> Der Anfang der angegebenen Verbindung ist mit einer Form verbunden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -185,7 +185,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die Form darstellt, der der Anfang der angegebenen Verbindung zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Wenn der Anfang der angegebenen Verbindung nicht an einer Form ansetzt, wird diese Eigenschaft generiert einen Fehler.</para>
+          <para>Wenn der Anfang der angegebenen Verbindung nicht einer Form zugeordnet ist, generiert diese Eigenschaft einen Fehler.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -216,7 +216,7 @@
         <summary>Gibt eine ganze Zahl zurück, die den Verbindungspunkt angibt, mit dem das Ende einer Verbindung verbunden ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Ende der angegebenen Verbindung nicht an einer Form ansetzt, wird diese Eigenschaft generiert einen Fehler.</para>
+          <para>Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -244,7 +244,8 @@
       <Docs>
         <summary>Trennt den Anfang der angegebenen Verbindung von der Form, die Sie verbunden ist.</summary>
         <remarks>
-          <para>Die <b>BeginDisconnect</b> -Methode wird die Größe oder Position der Verbindung nicht geändert. Der Anfang der Verbindung bleibt an der Verbindungsseite positioniert, aber nicht mehr verbunden. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> -Methode, um das Ende der Verbindung von einer Form zu trennen.</para>
+          <para>
+            <b>BeginDisconnect</b> -Methode wird die Größe oder Position der Verbindung nicht geändert. Der Anfang der Verbindung bleibt an der Verbindungsseite positioniert, aber nicht mehr verbunden. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> -Methode, um das Ende der Verbindung von einer Form zu trennen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -275,8 +276,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -311,7 +312,7 @@
         <summary>Verknüpft das Ende der angegebenen Verbindung mit einer angegebenen Form.</summary>
         <remarks>
           <para>Wenn bereits eine Verbindung zwischen dem Ende der Verbindung und eine andere Form vorhanden ist, wird diese Verbindung unterbrochen. Wenn das Ende der Verbindung noch nicht an der angegebenen Verbindungsseite positioniert ist, wird diese Methode verschiebt das Ende der Verbindung zu der Verbindungsseite und passt die Größe und Position der Verbindung. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> -Methode, um den Anfang der Verbindung an eine Form anzufügen.</para>
-          <para>Wenn Sie eine Verbindung zu einem Objekt verbinden, die Größe und Position der Verbindung werden automatisch angepasst bei Bedarf.</para>
+          <para>Wenn Sie eine Verbindung mit einem Objekt verbinden, werden Größe und Position der Verbindung bei Bedarf automatisch angepasst.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -344,11 +345,11 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Dies kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
-            <b>MsoFalse</b> das Ende der angegebenen Verbindung ist nicht mit einer Form verbunden.</para>
+            <b>msoFalse</b> Das Ende der angegebenen Verbindung ist nicht mit einer Form verbunden.</para>
           <para>
-            <b>MsoTrue</b> das Ende der angegebenen Verbindung ist mit einer Form verbunden.</para>
+            <b>msoTrue</b> Das Ende der angegebenen Verbindung ist mit einer Form verbunden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -379,7 +380,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die Form darstellt, der das Ende der angegebenen Verbindung zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Ende der angegebenen Verbindung nicht an einer Form ansetzt, wird diese Eigenschaft generiert einen Fehler.</para>
+          <para>Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -410,7 +411,7 @@
         <summary>Gibt eine ganze Zahl zurück, die den Verbindungspunkt angibt, mit dem das Ende einer Verbindung verbunden ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Ende der angegebenen Verbindung nicht an einer Form ansetzt, wird diese Eigenschaft generiert einen Fehler.</para>
+          <para>Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -438,7 +439,7 @@
       <Docs>
         <summary>Trennt das Ende der angegebenen Verbindung von der Form, die Sie verbunden ist.</summary>
         <remarks>
-          <para>Dieser Methode wird die Größe oder Position der Verbindung nicht geändert; das Ende der Verbindung bleibt an der Verbindungsseite positioniert, aber nicht mehr verbunden ist. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> -Methode, um den Anfang der Verbindung von einer Form zu trennen.</para>
+          <para>Diese Methode wird die Größe oder Position der Verbindung nicht geändert; das Ende der Verbindung bleibt an der Verbindungsseite positioniert, aber nicht mehr verbunden. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> -Methode, um den Anfang der Verbindung von einer Form zu trennen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -501,18 +502,18 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoConnectorType" />kann eine der folgenden <b>MsoConnectorType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoConnectorType" />Dies kann eine der folgenden <b>MsoConnectorType</b> -Konstanten sein:</para>
           <para>
-            <b>MsoConnectorCurve</b>
+            <b>msoConnectorCurve</b>
           </para>
           <para>
-            <b>MsoConnectorElbow</b>
+            <b>msoConnectorElbow</b>
           </para>
           <para>
-            <b>MsoConnectorStraight</b>
+            <b>msoConnectorStraight</b>
           </para>
           <para>
-            <b>MsoConnectorTypeMixed</b>
+            <b>msoConnectorTypeMixed</b>
           </para>
           <para></para>
         </remarks>

@@ -1,10 +1,10 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Excel.Borders">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65559708625b42273291cf16ec350e291ea4154d" />
+    <Meta Name="ms.openlocfilehash" Value="ac67cbe49f4367fa1e2be6aa391091c3d7ab6ce3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580661" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Eine Auflistung von vier <see cref="T:Microsoft.Office.Interop.Excel.Border" /> -Objekten, die vier Rahmenlinien eines darstellen, einer <see cref="T:Microsoft.Office.Interop.Excel.Range" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Style" /> Objekt.</summary>
     <remarks>
       <para>Verwenden Sie die <b>Borders</b> -Eigenschaft eines <b>Range-</b> oder <b>Style</b> -Objekts, um die <b>Borders</b> -Auflistung zurückzugeben, die alle vier Rahmenlinien enthält.</para>
-      <para>Verwendung <b>Rahmen</b>(<paramref name="index" />), wobei <paramref name="index" /> identifiziert den Rahmen, um ein einzelnes <b>Border</b> -Objekt zurückzugeben.</para>
-      <para>Index kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> -Konstanten sein: <b>XlDiagonalDown</b>, <b>XlDiagonalUp</b>, <b>XlEdgeBottom</b>, <b>XlEdgeLeft</b>, <b>XlEdgeRight</b>, <b>XlEdgeTop</b>, <b>XlInsideHorizontal</b>oder <b>XlInsideVertical</b>.</para>
+      <para>Verwenden Sie <b>Ränder</b>(<paramref name="index" />), wobei <paramref name="index" /> identifiziert den Rahmen, um ein einzelnes <b>Border</b> -Objekt zurückzugeben.</para>
+      <para>Index kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> -Konstanten sein: <b>XlDiagonalDown</b>, <b>XlDiagonalUp</b>, <b>XlEdgeBottom</b>, <b>XlEdgeLeft</b>, <b>XlEdgeRight</b>, <b>XlEdgeTop</b>, <b>XlInsideHorizontal</b>oder <b>XlInsideVertical </b>.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -167,10 +167,10 @@
         <remarks>
           <para>Die Farbe wird als Indexwert in der aktuellen Farbpalette oder als eine der folgenden angegeben <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> Konstanten:</para>
           <para>
-            <b>XlColorIndexAutomatic</b>
+            <b>xlColorIndexAutomatic</b>
           </para>
           <para>
-            <b>XlColorIndexNone</b>
+            <b>xlColorIndexNone wird</b>
           </para>
           <para></para>
         </remarks>
@@ -230,8 +230,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -330,30 +330,30 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />kann eine der folgenden <b>XlLineStyle</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />Dies kann eine der folgenden <b>XlLineStyle</b> -Konstanten sein:</para>
           <para>
-            <b>XlContinuous</b>
+            <b>xlContinuous</b>
           </para>
           <para>
-            <b>XlDash</b>
+            <b>xlDash</b>
           </para>
           <para>
-            <b>XlDashDot</b>
+            <b>xlDashDot</b>
           </para>
           <para>
-            <b>XlDashDotDot</b>
+            <b>xlDashDotDot</b>
           </para>
           <para>
-            <b>XlDot</b>
+            <b>xlDot</b>
           </para>
           <para>
-            <b>XlDouble</b>
+            <b>xlDouble</b>
           </para>
           <para>
-            <b>XlSlantDashDot</b>
+            <b>xlSlantDashDot</b>
           </para>
           <para>
-            <b>XlLineStyleNone</b>
+            <b>xlLineStyleNone</b>
           </para>
           <para></para>
         </remarks>
@@ -418,7 +418,7 @@
           <b>Objekt</b>
         </value>
         <remarks>
-          <para>Versucht, auf eine Designfarbe für ein Objekt, dessen Farbe nicht aktuell entsprechendes mit Design versehenes ist einen Laufzeitfehler ungültige Anforderung führt zuzugreifen.</para>
+          <para>Wenn Sie versuchen, auf eine Designfarbe für ein Objekt zuzugreifen, dessen Farbe aktuell nicht durch ein Design festgelegt ist, wird der Laufzeitfehler "Ungültige Anforderung" ausgegeben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -455,7 +455,7 @@
         </value>
         <remarks>
           <para>Sie können Geben Sie eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für die <see cref="P:Microsoft.Office.Interop.Excel.Borders.TintAndShade" /> Eigenschaft. 0 (null) ist neutral.</para>
-          <para>Versuch, diese Eigenschaft auf einen Wert kleiner als 1 oder größer als 1 führt einen Laufzeitfehler festgelegt: "der angegebene Wert liegt außerhalb des Bereichs".  Diese Eigenschaft funktioniert für Designfarben und designfremde Farben.</para>
+          <para>Wenn Sie versuchen, diese Eigenschaft auf einen Wert unter -1 oder über 1 festzulegen, wird der Laufzeitfehler "Der angegebene Wert ist außerhalb des zulässigen Bereichs" ausgegeben. Diese Eigenschaft gilt sowohl für Designfarben als auch für designfremde Farben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -521,18 +521,18 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />kann eine der folgenden <b>XlBorderWeight</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />Dies kann eine der folgenden <b>XlBorderWeight</b> -Konstanten sein:</para>
           <para>
-            <b>XlHairline</b>
+            <b>xlHairline</b>
           </para>
           <para>
-            <b>XlThin</b>
+            <b>xlThin</b>
           </para>
           <para>
-            <b>XlMedium</b>
+            <b>xlMedium</b>
           </para>
           <para>
-            <b>XlThick</b>
+            <b>xlThick</b>
           </para>
           <para></para>
         </remarks>

@@ -1,10 +1,10 @@
 <Type Name="CustomProperties" FullName="Microsoft.Office.Interop.Excel.CustomProperties">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="564b2e7e7736a68bf5b30982c78ebd00481f015e" />
+    <Meta Name="ms.openlocfilehash" Value="5fa7755a939da1d185231965c1c4aa599e110df3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584462" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
@@ -36,9 +36,9 @@
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.CustomProperty" /> -Objekten, die zusätzliche Informationen darstellt. Die Informationen kann als Metadaten für XML verwendet werden.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SmartTag" /> -Objekt oder der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, um eine <b>CustomProperties</b> -Auflistung zurückzugeben.</para>
-      <para>Nachdem eine <b>CustomProperties</b> -Auflistung zurückgegeben wurde, können Sie Metadaten zu Arbeitsblättern und Smarttags, je nachdem, was Sie entwickelt wählen Sie, hinzufügen.</para>
-      <para>Verwenden, um einem Arbeitsblatt Metadaten hinzuzufügen, die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" /> -Eigenschaft mit der <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> -Methode.</para>
-      <para>Um Metadaten für ein Smarttag hinzuzufügen, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> -Eigenschaft mit der <b>Add</b> -Methode.</para>
+      <para>Nachdem eine <b>CustomProperties</b>-Auflistung zurückgegeben wurde, können Sie Metadaten zu Arbeitsblättern und Smarttags hinzufügen, abhängig davon, wofür Sie sich entschieden haben.</para>
+      <para>Um einem Arbeitsblatt Metadaten hinzuzufügen, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" /> -Eigenschaft mit der <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> Methode.</para>
+      <para>Um ein Smarttag Metadaten hinzuzufügen, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> -Eigenschaft mit der <b>Add</b> -Methode.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -193,8 +193,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="SlicerCacheLevels" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevels">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="50ee558450edaad745671bfb39d84af2b7535fec" />
+    <Meta Name="ms.openlocfilehash" Value="aa0b86cacb4cc71377b8c24dce9b71558a7bfc10" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584721" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevels : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>Stellt die Auflistung der Hierarchieebenen für die OLAP-Datenquelle dar, die von einem Datenschnitt gefiltert wird.</summary>
     <remarks>
-      <para>, Wenn Sie ein Datenschnitt zum Filtern einer OLAP-Datenquelle verwendet wird, kann dessen übergeordneten Datenschnittcache mehrere Hierarchieebenen aus der Datenquelle enthalten. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> Auflistung des übergeordneten <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt in Access der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> -Objekten, die diese Hierarchieebenen darstellen. Diese Auflistung kann nicht für nicht-OLAP-Datenquellen zugegriffen werden.</para>
+      <para>Wenn ein Datenschnitt zum Filtern einer OLAP-Datenquelle verwendet wird, kann dessen übergeordneten Datenschnittcache mehrere Hierarchieebenen aus der Datenquelle enthalten. Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> Auflistung des übergeordneten <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt in Access der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> -Objekten, die diese Hierarchieebenen darstellen. Diese Auflistung kann nicht für nicht-OLAP-Datenquellen zugegriffen werden.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -101,7 +101,7 @@
         <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -161,7 +161,7 @@
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</value>
         <remarks>
           <para>Nur-Lese- <b>long</b>.</para>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +256,7 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt, das das übergeordnete Objekt des angegebenen ist <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> Objekt.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt, das das übergeordnete Objekt des angegebenen ist <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>

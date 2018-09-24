@@ -1,10 +1,10 @@
 <Type Name="TableStyle" FullName="Microsoft.Office.Interop.Excel.TableStyle">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9a5ba00962b5e6ee8160258b4d7d906bd9a5362c" />
+    <Meta Name="ms.openlocfilehash" Value="4195e3f6ef14d553a26ff7dba570149f82c6b4a9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583524" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyle" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Stellt eine einzelne Formatvorlage dar, die einer Tabelle zugewiesen werden kann.</summary>
     <remarks>
-      <para>Eine Tabellenformatvorlage definiert die Formatierung für eine oder alle Elemente einer Tabelle oder PivotTable. Beispielsweise ist eine Spalte ein Element einer Tabelle. Ein Tabellenformat kann definieren, dass Spalten in einer Tabelle mit Formatierung (auch bekannt als banding oder Streifen) abwechselnde formatiert sind.  </para>
+      <para>Ein Tabellenformat definiert die Formatierung für eine oder alle Elemente einer Tabelle oder PivotTable. Beispielsweise ist eine Spalte ein Element einer Tabelle. Ein Tabellenformat kann definieren, dass Spalten in einer Tabelle mit Formatierung (auch bekannt als banding oder Streifen) abwechselnde formatiert sind.  </para>
       <para></para>
     </remarks>
   </Docs>
@@ -159,7 +159,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.  Die <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" /> -Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -280,7 +280,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Wenn die Formatvorlage um eine integrierte Formatvorlage handelt, gibt diese Eigenschaft den Namen der Formatvorlage in der Sprache des aktuellen Gebietsschema.</para>
+          <para>Wenn es sich um eine integrierte Formatvorlage handelt, gibt diese Eigenschaft den Namen der Formatvorlage in der Sprache zurück, die im aktuellen Gebietsschema festgelegt wurde.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -348,7 +348,7 @@
         <remarks>
           <para>Die-Eigenschaft gibt True zurück, wenn die Formatvorlage in der Sammlung für PivotTable-Formate angezeigt wird.</para>
           <para>
-            <b>Hinweis</b>: Benutzer können festlegen, die <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" /> oder <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" /> Eigenschaften auf false fest, selbst wenn der Stil bereits auf eine Tabelle angewendet wird oder PivotTable.  In diesem Fall die Katalog wird nicht angezeigt, die dem Format und kein Format als angezeigt wird ausgewählt, wenn die aktive Zelle in der Tabelle oder die PivotTable ist.</para>
+            <b>Hinweis</b>: Benutzer können festlegen, die <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" /> oder <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" /> Eigenschaften auf false fest, selbst wenn der Stil bereits auf eine Tabelle angewendet wird oder PivotTable.  In diesem Fall ausgewählt Katalog wird nicht angezeigt, die die Formatvorlage und keiner Formatvorlage wird angezeigt, wenn die aktive Zelle in der Tabelle oder die PivotTable ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -419,8 +419,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Wenn <b>True</b>, diese Formatvorlage in der Tabellenformatkatalog angezeigt wird.</para>
-          <para>Können Sie diese Eigenschaft auf <b>False</b> festlegen, auch wenn der Stil bereits auf eine Tabelle angewendet wird.  In diesem Fall der Katalog wird die Formatvorlage nicht anzeigen und keine Formatvorlage wird angezeigt, wenn die aktive Zelle in einer Tabelle befindet, als ausgewählt.</para>
+          <para>Bei Verwendung von <b>True</b>, wird dieses Format im Tabellenformatkatalog angezeigt.</para>
+          <para>Sie können diese Eigenschaft auf <b>False</b> festlegen, selbst wenn das Format bereits auf eine Tabelle angewendet wurde. In diesem Fall wird das Format nicht im Katalog angezeigt, und es wird kein Format als ausgewählt angezeigt, wenn sich die aktive Zelle in dieser Tabelle befindet.</para>
           <para></para>
         </remarks>
       </Docs>

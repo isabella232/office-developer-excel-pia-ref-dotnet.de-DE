@@ -1,10 +1,10 @@
 <Type Name="Scenarios" FullName="Microsoft.Office.Interop.Excel.Scenarios">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="643f9e1ff16bc3d2d264dd9c590ffbf0e6a728ad" />
+    <Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584679" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> Objekte des angegebenen Arbeitsblatts. Ein Szenario ist eine Gruppe von Eingabewerten (aufgerufen <paramref name="changing cells" />), die mit dem Namen und gespeichert.</summary>
     <remarks>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> Methode, um die <b>Scenarios</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um ein neues Szenario erstellen und der Auflistung hinzugefügt.</para>
-      <para>Verwendung <b>Szenarien</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Szenarios oder die Indexzahl darstellt, um ein einzelnes <b>Szenario</b> -Objekt zurückzugeben.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um ein neues Szenario erstellen und zur Auflistung hinzufügen.</para>
+      <para>Verwenden von <b>Szenarien</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Szenarios oder die Indexzahl darstellt, um ein einzelnes <b>Szenario</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -80,7 +80,7 @@
         <summary>Erstellt ein neues Szenario und fügt es der für das aktuelle Arbeitsblatt verfügbaren Szenarioliste hinzu.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Ein Szenarioname muss eindeutig sein. Microsoft Excel generiert einen Fehler, wenn Sie versuchen, ein Szenario mit einem Namen zu erstellen, die bereits verwendet wird.</para>
+          <para>Der Name eines Szenarios muss eindeutig sein. Microsoft Excel gibt eine Fehlermeldung aus, wenn Sie ein Szenario mit einem bereits verwendeten Namen erstellen möchten.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -197,8 +197,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -293,7 +293,7 @@
         <summary>Führt die Szenarios aus einem anderen Blatt in der <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> Auflistung.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Der Wert eines zusammengeführten Bereichs wird in der Zelle die linke obere Ecke des Bereichs angegeben.</para>
+          <para>Der Wert eines zusammengeführten Bereichs wird in der Zelle in der oberen linken Ecke des Bereichs angegeben.</para>
           <para></para>
         </remarks>
       </Docs>

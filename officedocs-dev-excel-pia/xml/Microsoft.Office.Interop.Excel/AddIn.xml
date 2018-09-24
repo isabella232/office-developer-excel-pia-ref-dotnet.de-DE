@@ -1,10 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b2ad4081ea4bdb99cc06e468b6712922b5b097b" />
+    <Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584147" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -32,12 +32,12 @@
     <summary>Stellt ein einzelnes installiertes oder nicht installiertes Add-In dar.</summary>
     <remarks>
       <para>Das <b>AddIn</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> Auflistung. Die <b>AddIns</b> -Auflistung enthält eine Liste aller Add-Ins in Microsoft Excel zur Verfügung, unabhängig davon, ob sie installiert sind. Diese Liste entspricht der Liste der Add-Ins im Dialogfeld Add-Ins (Menü Extras) angezeigt.</para>
-      <para>Verwendung <b>-Add-Ins</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Add-in-Titel oder eine Indexzahl darstellt, um ein einzelnes <b>AddIn</b> -Objekt zurückzugeben.</para>
-      <para>Verwechseln Sie nicht den-Add-in-Titel, der im Dialogfeld Add-Ins mit dem Namen-Add-in angezeigt wird, der Name des Add-Ins ist. Sie müssen den Add-in-Titel Rechtschreibprüfung Schreibweise im Dialogfeld Add-Ins, jedoch die Groß-/Kleinschreibung nicht abgleichen.</para>
+      <para>Verwenden Sie die <b>Add-Ins</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Add-in-Titel oder eine Indexzahl darstellt, um ein einzelnes <b>AddIn</b> -Objekt zurückzugeben.</para>
+      <para>Verwechseln Sie nicht den-Add-in-Titel, der im Dialogfeld Add-Ins mit dem Namen-Add-in angezeigt wird, der Name des Add-Ins ist. Sie müssen den Add-in-Titel Rechtschreibprüfung, genau wie Schreibweise im Dialogfeld Add-Ins, jedoch die Groß-/Kleinschreibung nicht übereinstimmen.</para>
       <para>Die Indexnummer stellt die Position des Add-Ins in das Feld-Add-ins zur Verfügung, klicken Sie im Dialogfeld Add-Ins.</para>
-      <para>Der <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> Methode fügt ein Add-in zur Liste der verfügbaren Add-Ins jedoch nicht die Add-in-Gruppe der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> -Eigenschaft des des Add-Ins auf <b>true fest,</b> um das Add-in zu installieren. Um ein Add-in, die angezeigt werden, nicht in der Liste der verfügbaren Add-Ins zu installieren, müssen Sie zunächst mithilfe der <b>Add</b> -Methode, und legen Sie die <b>Installed</b> -Eigenschaft. Dies kann in einem einzigen Schritt</para>
-      <para>Verwendung <b>Arbeitsmappen</b>(<paramref name="index" />), in dem <paramref name="index" /> wird die Add-in-Filename (nicht Titel) um einen Verweis auf die Arbeitsmappe entsprechend der geladenen Add-in zurückzugeben. Sie müssen den Dateinamen verwenden, da geladenen Add-Ins in normalerweise angezeigt werden, nicht die <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> Auflistung.</para>
-      <para>, Wenn die <b>Installed</b> -Eigenschaft gibt <b>True</b>zurück, aber dennoch fehlschlagen, Aufrufe von Funktionen in das Add-in, das Add-in möglicherweise nicht richtig geladen. Dies ist, da das <b>Addin</b> -Objekt, das Vorhandensein darstellt und Installationsstatus des Add-Ins jedoch nicht die tatsächlichen Inhalte der Add-in-Arbeitsmappe darstellen. Um sicherzustellen, dass ein installiertes Add-In geladen wird, öffnen Sie die Add-in Arbeitsmappe.</para>
+      <para>Die <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> -Methode ein Add-in in die Liste der verfügbaren Add-Ins hinzugefügt, jedoch nicht das Add-in installieren. Legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> -Eigenschaft des Add-Ins auf <b>true fest,</b> um das Add-in zu installieren. Um ein Add-in, die angezeigt werden, nicht in der Liste der verfügbaren Add-Ins zu installieren, müssen Sie zunächst mithilfe der <b>Add</b> -Methode, und legen Sie die <b>Installed</b> -Eigenschaft. Dies kann in einem einzigen Schritt erfolgen</para>
+      <para>Verwenden von <b>Arbeitsmappen</b>(<paramref name="index" />), in dem <paramref name="index" /> wird die Add-in-Filename (nicht Titel) um einen Verweis auf die Arbeitsmappe entsprechend der geladenen Add-in zurückzugeben. Sie müssen den Dateinamen verwenden, da geladenen Add-Ins in normalerweise angezeigt werden, nicht die <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> Auflistung.</para>
+      <para>Wenn die <b>Installed</b> -Eigenschaft gibt <b>True</b>zurück, aber Aufrufe von Funktionen in das Add-in nicht funktioniert, das Add-in möglicherweise nicht richtig geladen. Dies ist, da das <b>Addin</b> -Objekt, das Vorhandensein darstellt und Installationsstatus des Add-Ins jedoch nicht die tatsächlichen Inhalte der Add-in-Arbeitsmappe darstellen. Um sicherzustellen, dass ein installiertes Add-In geladen wird, sollten Sie die Add-in Arbeitsmappe öffnen.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -186,8 +186,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -218,7 +218,7 @@
         <summary>Gibt den Namen des Objekts, einschließlich des Pfads auf dem Datenträger, als Zeichenfolge zurück.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> -Eigenschaft, gefolgt von der aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> -Eigenschaft.</para>
+          <para>Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> -Eigenschaft, gefolgt von der aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -253,7 +253,7 @@
           <b>True,</b> Wenn das Add-in installiert ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>true fest,</b> das Add-in installiert und seine Auto_installieren-Funktionen. Das Add-In entfernt und seine Auto_entfernen-Funktionen durch Festlegen dieser Eigenschaft auf <b>false festgelegt</b> .</para>
+          <para>Wird diese Eigenschaft auf <b>True</b> festgelegt wird, so wird das Add-In installiert und seine Auto_installieren-Funktionen werden aufgerufen. Wird diese Eigenschaft hingegen auf <b>False</b> festgelegt, wird das Add-In entfernt und seine Auto_entfernen-Funktionen werden aufgerufen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -286,7 +286,7 @@
           <b>true,</b> Wenn das Add-in derzeit geöffnet ist. anderenfalls <b>false</b>.</value>
         <remarks>
           <para>
-            <b>boolean</b> schreibgeschützt.</para>
+            <b>Boolean</b> Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>

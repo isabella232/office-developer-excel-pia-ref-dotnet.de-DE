@@ -1,10 +1,10 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30d8a53aca6b1b693a8acc184b1d71d6cd486ceb" />
+    <Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586877" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>Stellt die Auflistung der Cachespeicher der PivotTable-Berichte in einer Arbeitsmappe dar.</summary>
     <remarks>
-      <para>Jeder Cachespeicher wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> -Objekt.</para>
+      <para>Jeder Cachespeicher wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Objekt.</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> -Methode, um die <b>PivotCaches</b> -Auflistung zurückzugeben.</para>
       <para></para>
     </remarks>
@@ -107,7 +107,7 @@
         <summary>Fügt eine neue PivotTable-Caches auf einen <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> Auflistung.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>, Wenn der PivotTable-Cache kein Verweis von erfolgt eine <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekts, der PivotTable-Cache wird automatisch gelöscht werden, bevor die Arbeitsmappe gespeichert wird.</para>
+          <para>Wenn der PivotTable-Cache kein Verweis von erfolgt eine <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekts, der PivotTable-Cache wird automatisch gelöscht werden, bevor die Arbeitsmappe gespeichert wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -200,9 +200,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />
         </returns>
         <remarks>
-          <para>Die folgenden beiden <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> Konstanten werden nicht unterstützt, wenn Sie diese Methode verwenden: <b>XlPivotTable</b> und <b>XlScenario</b>. Ein Laufzeitfehler wird zurückgegeben, wenn eine der folgenden zwei Konstanten bereitgestellt wird.</para>
-          <para>Der <paramref name="SourceData" /> Argument ist erforderlich, wenn <paramref name="SourceType" /> XlExternal nicht zur Verfügung. Kann eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt (beim <paramref name="SourceType" /> XlConsolidation oder XlDatabase ist) oder einer Excel- <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt (Wenn <paramref name="SourceType" /> XlExternal ist).</para>
-          <para>, Wenn nicht angegeben, die Version der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12 werden.  Die Verwendung der Konstante <b>XlPivotTableVersionCurrent</b> ist nicht zulässig, und gibt einen Laufzeitfehler zurück, wenn es bereitgestellt wird.</para>
+          <para>Die folgenden beiden <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> Konstanten werden nicht unterstützt, wenn Sie diese Methode verwenden: <b>XlPivotTable</b> und <b>XlScenario</b>. Wenn eine der folgenden zwei Konstanten bereitgestellt wird, wird ein Laufzeitfehler zurückgegeben.</para>
+          <para>Die <paramref name="SourceData" /> Argument ist erforderlich, wenn <paramref name="SourceType" /> XlExternal nicht zur Verfügung. Kann eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt (beim <paramref name="SourceType" /> XlConsolidation oder XlDatabase ist) oder einer Excel- <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt (Wenn <paramref name="SourceType" /> XlExternal ist).</para>
+          <para>Wenn nicht angegeben, wird die Version der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12 werden.  Die Verwendung der Konstante <b>XlPivotTableVersionCurrent</b> ist nicht zulässig, und gibt einen Laufzeitfehler zurück, wenn es bereitgestellt wird.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -233,8 +233,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>

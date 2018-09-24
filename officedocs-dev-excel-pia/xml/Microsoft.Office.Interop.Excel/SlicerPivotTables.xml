@@ -1,10 +1,10 @@
 <Type Name="SlicerPivotTables" FullName="Microsoft.Office.Interop.Excel.SlicerPivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b123a1bc4260dc8310b68183d37e0c58e2055b96" />
+    <Meta Name="ms.openlocfilehash" Value="e7cf06ad9737671167d43d23e4d02fbaa27f0834" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580983" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>Stellt Informationen zu der angegebenen zugeordneten PivotTables-Auflistung <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Objekt.</summary>
     <remarks>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> -Auflistung enthält Informationen zu den PivotTables ist derzeit der Datenschnittcache filtern. Es stellt Eigenschaften zum Bestimmen der Anzahl von PivotTables der Datenschnitt zugeordnet ist und zum Abrufen von <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekten, die gefilterten PivotTables darstellen. Außerdem bietet Methoden zum Hinzufügen und Entfernen von PivotTables aus der <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung leer, wenn der angegebene Datenschnitt zugeordnet werden <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> ist nicht mit PivotTables verbunden.</para>
+      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> -Auflistung enthält Informationen zu den PivotTables ist derzeit der Datenschnittcache filtern. Es stellt Eigenschaften zum Bestimmen der Anzahl von PivotTables der Datenschnitt zugeordnet ist und zum Abrufen von <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekten, die gefilterten PivotTables darstellen. Außerdem bietet Methoden zum Hinzufügen und Entfernen von PivotTables aus der <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung leer, wenn der angegebene Datenschnitt zugeordnet werden <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> nicht mit PivotTables verbunden ist.</para>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt zurückgegeben der <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung zugeordnet ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />, was wiederum führen kann einem oder mehreren Datenschnitten zugeordnet.</para>
       <para></para>
     </remarks>
@@ -101,7 +101,7 @@
         <param name="PivotTable">Ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekt, das die hinzuzufügende PivotTable darstellt.</param>
         <summary>Fügt einen Verweis auf eine PivotTable an, die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung.</summary>
         <remarks>
-          <para>Bei einer PivotTable hinzugefügt wird die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> -Auflistung können Sie durch das übergeordnete Element gefiltert werden <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> und die Datenschnitte, nämlich</para>
+          <para>Wenn eine PivotTable hinzugefügt wird die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> -Auflistung können Sie durch das übergeordnete Element gefiltert werden <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> und die ihm zugeordneten Datenschnitte.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -132,7 +132,7 @@
         <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -191,7 +191,7 @@
         <summary>Ruft eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde.</value>
         <remarks>
-          <para>, Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" />-Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" />-Eigenschaft dient in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen besitzt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -286,7 +286,7 @@
         <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt, das das übergeordnete Objekt des angegebenen ist <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung.</summary>
         <value>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> -Objekt, das das übergeordnete Objekt des angegebenen ist <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung.</value>
         <remarks>
-          <para>Read-only.</para>
+          <para>Schreibgeschützt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -317,7 +317,7 @@
         <param name="PivotTable">Ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekt, das die PivotTable zu entfernen, oder der Name oder Index der PivotTable in der Auflistung darstellt.</param>
         <summary>Entfernt einen Verweis auf eine PivotTable aus der <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung.</summary>
         <remarks>
-          <para>Bei einer PivotTable aus entfernt die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> -Auflistung wird nicht mehr vom übergeordneten gefiltert <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> und die Datenschnitte, nämlich</para>
+          <para>Wenn eine PivotTable entfernt wird, aus der <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> -Auflistung wird nicht mehr vom übergeordneten gefiltert <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> und die ihm zugeordneten Datenschnitte.</para>
           <para></para>
         </remarks>
       </Docs>

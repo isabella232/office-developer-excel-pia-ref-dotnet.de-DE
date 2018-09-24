@@ -1,10 +1,10 @@
 <Type Name="Protection" FullName="Microsoft.Office.Interop.Excel.Protection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb4842f02045899e4df285db2b98dfe149fa3820" />
+    <Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585190" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Protection" />
@@ -32,7 +32,7 @@
     <summary>Stellt die verschiedenen Arten von Schutzoptionen dar, die für ein Arbeitsblatt zur Verfügung stehen.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekts, um ein <b>Protection</b> -Objekt zurückzugeben.</para>
-      <para>Nachdem ein <b>Protection</b> -Objekt zurückgegeben wurde, können die folgenden Eigenschaften festlegen oder Zurückgeben von Schutzoptionen:</para>
+      <para>Nachdem ein <b>Protection</b> -Objekt zurückgegeben wurde, können Sie die folgenden Eigenschaften verwenden, um Schutzoptionen zurückzugeben oder festzulegen:</para>
       <list type="bullet">
         <item>
           <description>
@@ -84,6 +84,11 @@
             <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowSorting" />
           </description>
         </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowUsingPivotTables" />
+          </description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -116,7 +121,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Die <b>AllowDeletingColumns</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
-          <para>Die Spalten mit den zu löschenden Zellen müssen aufgehoben werden, wenn das Blatt geschützt ist.</para>
+          <para>Die Sperre für die Spalten, die die zu löschenden Zellen enthält, muss aufgehoben werden, wenn das Blatt geschützt ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -148,7 +153,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Die <b>AllowDeletingRows</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
-          <para>Die Zeilen mit den zu löschenden Zellen müssen aufgehoben werden, wenn das Blatt geschützt ist.</para>
+          <para>Die Sperre für die Zeilen, die die zu löschenden Zellen enthalten, muss aufgehoben werden, wenn das Blatt geschützt ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -208,8 +213,8 @@
         <value>To be added.</value>
         <remarks>
           <para>Die <b>AllowFiltering</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
-          <para>Die <b>AllowFiltering</b> -Eigenschaft ermöglicht es dem Benutzer, die Filterkriterien für einen vorhandenen AutoFilter zu ändern. Der Benutzer kann nicht erstellt oder entfernen ein AutoFilters in einem geschützten Arbeitsblatt.</para>
-          <para>Die zu filternden Zellen müssen aufgehoben werden, wenn das Blatt geschützt ist.</para>
+          <para>Die <b>AllowFiltering</b> -Eigenschaft ermöglicht es dem Benutzer, die Filterkriterien für einen vorhandenen AutoFilter zu ändern. Der Benutzer kann nicht erstellen oder entfernen ein AutoFilters in einem geschützten Arbeitsblatt.</para>
+          <para>Die Sperre für die zu filternden Zellen muss aufgehoben werden, wenn das Blatt geschützt ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -241,7 +246,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Die <b>AllowFormattingCells</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
-          <para>Verwendung dieser Eigenschaft deaktiviert die Schutzregisterkarte, sodass der Benutzer alle Formate zu ändern, aber nicht das Entsperren oder Bereiche einblenden.</para>
+          <para>Verwendung dieser Eigenschaft wird die Schutzregisterkarte, sodass der Benutzer alle Formate zu ändern, aber nicht das Entsperren oder Bereiche einblenden deaktiviert.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -334,7 +339,7 @@
         <summary>Gibt <b>True</b> zurück, wenn das Einfügen von Spalten in einem geschützten Arbeitsblatt zulässig ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Eine eingefügte Spalte übernimmt ihre Formatierung (standardmäßig) in der Spalte links davon, was bedeutet, dass es Zellen gesperrt haben kann. Anders ausgedrückt, Benutzer möglicherweise nicht löschen, Spalten, die sie eingefügt haben.</para>
+          <para>Eine eingefügte Spalte übernimmt ihre Formatierung (standardmäßig) von der Spalte, die links von ihr steht. Das bedeutet, dass diese möglicherweise über gesperrte Zellen verfügt und die Benutzer vielleicht nicht in der Lage sind, die von ihnen eingefügten Spalten wieder zu löschen.</para>
           <para>Die <b>AllowInsertingColumns</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
           <para></para>
         </remarks>
@@ -366,7 +371,7 @@
         <summary>Gibt <b>True</b> zurück, falls das Einfügen von Hyperlinks für ein geschütztes Arbeitsblatt zulässig ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Hyperlinks können nur in ungeschützt sind oder keine Zellen eines geschützten Arbeitsblatts eingefügt werden.</para>
+          <para>Hyperlinks können nur in Zellen eines geschützten Arbeitsblatts eingefügt werden, die ungeschützt sind oder keine Sperre besitzen.</para>
           <para>Die <b>AllowInsertingHyperlinks</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
           <para></para>
         </remarks>
@@ -429,7 +434,7 @@
         <summary>Gibt <b>True</b> zurück, wenn die Sortieroption für ein geschütztes Arbeitsblatt zulässig ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>In einem geschützten Arbeitsblatt Sortierung kann nur ausgeführt werden ungeschützt sind oder keine Zellen.</para>
+          <para>In einem geschützten Arbeitsblatt kann Sortierung nur für ungeschützt sind oder keine Zellen durchgeführt werden.</para>
           <para>Die <b>AllowSorting</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
           <para></para>
         </remarks>
@@ -461,7 +466,7 @@
         <summary>Gibt <b>True</b> zurück, wenn der Benutzer PivotTables in einem geschützten Arbeitsblatt zulässig ist.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>AllowUsingPivotTables</b> -Eigenschaft gilt für nicht-OLAP-Quelldaten.</para>
+          <para>Die <b>AllowUsingPivotTables</b>-Eigenschaft gilt für Nicht-OLAP-Quelldaten.</para>
           <para>Die <b>AllowUsingPivotTables</b> -Eigenschaft kann festgelegt werden, mithilfe der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> Argumente-Methode.</para>
           <para></para>
         </remarks>

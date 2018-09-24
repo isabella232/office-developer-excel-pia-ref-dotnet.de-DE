@@ -1,10 +1,10 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="52961e7c7c0430d4ed8f7d76b64787b55ef124c0" />
+    <Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586905" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Pane" />
@@ -32,8 +32,8 @@
     <summary>Stellt einen Ausschnitt eines Fensters dar.</summary>
     <remarks>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />Objekte sind nur für Arbeitsblätter und Microsoft Excel 4.0-Makrovorlagen vorhanden. Die <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> -Auflistung enthält alle in einem einzelnen Fenster gezeigten Ausschnitte.</para>
-      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> (<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer Bereich zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> -Objekt.</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />Objekte sind nur für Arbeitsblätter und Microsoft Excel 4.0-Makrovorlagen vorhanden. Die <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> -Auflistung enthält alle Bereiche in einem einzigen Fenster angezeigt.</para>
+      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> (<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer Bereich zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> Objekt.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -62,7 +62,7 @@
         <summary>Aktiviert den Bereich.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Befindet sich nicht im Bereich in das aktive Fenster, das Fenster, das zugehörige wird ebenfalls aktiviert. Fixierte Ausschnitte kann nicht aktiviert werden.</para>
+          <para>Liegt der Ausschnitt nicht im aktiven Fenster, wird das Fenster, zu dem der Ausschnitt gehört, ebenfalls aktiviert. Fixierte Ausschnitte können nicht aktiviert werden.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -121,8 +121,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,8 +188,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Seiten nach oben.</para>
-          <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, Bildlauf zu der drei Seiten nach rechts.</para>
-          <para>Eines der Argumente kann auch eine negative Zahl sein.</para>
+          <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, der an die drei Seiten nach rechts durchgeführt werden.</para>
+          <para>Die Argumente können auch einen negativen Wert haben.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -352,7 +352,7 @@
         <param name="Start">Optionales- <b>Objekt</b>. <b>True</b> , wenn die linke obere Ecke des Rechtecks in der oberen linken Ecke des Bereichs angezeigt werden. <b>False</b> , wenn der unteren rechten Ecke des Rechtecks in der unteren rechten Ecke des Bereichs angezeigt werden. Der Standardwert ist <b>True</b>.</param>
         <summary>Führt einen Bildlauf im Bereich, sodass der Inhalt eines angegebenen rechteckigen Bereichs in der linken oberen oder unteren rechten Ecke des Bereichs angezeigt wird.</summary>
         <remarks>
-          <para>Der <paramref name="Start" /> Argument eignet sich für die Bildschirmanzeige auszurichten, wenn das Rechteck größer als der Bereich ist-Fensterausschnitt.</para>
+          <para>Die <paramref name="Start" /> Argument eignet sich zum Ausrichten der Bildschirmanzeige, wenn das Rechteck größer als der Bereich ist.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -422,7 +422,7 @@
         <remarks>
           <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Zeilen.</para>
           <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, Bildlauf zu den drei Spalten nach rechts.</para>
-          <para>Jedes dieser Argumente kann auch eine negative Zahl sein.</para>
+          <para>Für jedes dieser Argumente kann auch eine negative Zahl festgelegt werden.</para>
           <para></para>
         </remarks>
       </Docs>

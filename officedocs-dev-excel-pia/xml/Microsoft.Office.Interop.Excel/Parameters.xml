@@ -1,10 +1,10 @@
 <Type Name="Parameters" FullName="Microsoft.Office.Interop.Excel.Parameters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="23a1adc381a42531ec3916120000e82dec4029e9" />
+    <Meta Name="ms.openlocfilehash" Value="6941b2d7f4dfb9eda0f671667102e7c868310e4e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586821" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Parameters : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> -Objekte für die angegebene Abfragetabelle. Jedes <b>Parameter</b> -Objekt stellt einen einzelnen Abfrageparameter dar. Jede Abfragetabelle enthält eine <b>Parameters</b> -Auflistung, aber die Auflistung leer ist, es sei denn, die Abfragetabelle eine Parameterabfrage verwendet wird.</summary>
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> Eigenschaft, um die <b>Parameters</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> -Methode, um einen neuen Parameter für eine Abfragetabelle erstellen.</para>
-      <para>, Dass die <b>Add</b> -Methode auf einer Abfragetabelle des URL-Verbindung verwendet werden können. Für URL-Verbindung Abfragen von Tabellen, erstellt Microsoft Excel die Parameter auf der Grundlage der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> und <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> Eigenschaften.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> -Methode, um einen neuen Parameter für eine Abfragetabelle zu erstellen.</para>
+      <para>Sie können nicht auf eine URL-Verbindung Abfragetabelle die <b>Add</b> -Methode verwenden. Für URL-Verbindung Abfragen von Tabellen, erstellt Microsoft Excel die Parameter auf der Grundlage der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> und <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> Eigenschaften.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -189,7 +189,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>

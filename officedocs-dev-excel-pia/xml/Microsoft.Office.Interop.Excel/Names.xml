@@ -1,10 +1,10 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584728" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
@@ -37,7 +37,7 @@
     <remarks>
       <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> Eigenschaft, um die <b>Names</b> -Auflistung zurückzugeben.</para>
       <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um einen Namen erstellen und der Auflistung hinzugefügt. Der <b>Add</b> -Methode <paramref name="RefersTo" /> Argument muss in der A1-Schreibweise einschließlich Dollarzeichen ($) gegebenenfalls angegeben werden. Beispiel: bei Zelle A10 in Sheet1 ausgewählt ist, und definieren Sie einen Namen mit der <paramref name="RefersTo" /> Argument "= sheet1! A1: B1 ", der neue Name bezieht sich auf die Zellen a10: B10 (da Sie einen relativen Bezug angegeben haben). Verwenden Sie zum Angeben der absoluten Bezugs "= sheet1! $A$ 1: $B$ 1".</para>
-      <para>Mit <b>Namen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name Indexnummer oder definierter Name, um ein einzelnes <b>Name</b> -Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <b>Namen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name Indexnummer oder definierter Name, um ein einzelnes <b>Name</b> -Objekt zurückzugeben.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -206,7 +206,7 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -273,7 +273,7 @@
         <summary>Gibt einen Single- <see cref="T:Microsoft.Office.Interop.Excel.Name" /> -Objekt aus einer <see cref="T:Microsoft.Office.Interop.Excel.Names" /> Auflistung.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Müssen Sie einen und nur ein einziges dieser drei Argumente angeben.</para>
+          <para>Sie dürfen nur ein einziges dieser drei Argumente angeben.</para>
           <para></para>
         </remarks>
       </Docs>

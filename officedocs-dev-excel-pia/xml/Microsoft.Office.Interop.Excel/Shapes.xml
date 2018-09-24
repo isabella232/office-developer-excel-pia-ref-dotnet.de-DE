@@ -1,10 +1,10 @@
 <Type Name="Shapes" FullName="Microsoft.Office.Interop.Excel.Shapes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="423f6ba80e99833cf649d465fd4e782f1fb41192" />
+    <Meta Name="ms.openlocfilehash" Value="7d8f4259d10e89624f92628ba847b174395cf289" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581816" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
@@ -34,7 +34,12 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekte auf dem angegebenen Blatt.</summary>
-    <remarks>&lt;b0&gt;Jede &lt;b1&gt;&lt;/b1&gt; -Objekt darstellt, ein Objekt in der Zeichnungsebene, wie beispielsweise eine AutoForm, Freihandform, OLE-Objekt oder Bild.&lt;/b0&gt; &lt;b2&gt; &lt;b3&gt;Hinweis&lt;/b3&gt;: Wenn Sie mit einer Teilmenge der Formen in einem Dokument arbeiten möchten – beispielsweise nur die AutoFormen im Dokument oder nur die ausgewählten Shapes – müssen Sie erstellen eine &lt;b4&gt;&lt;/b4&gt; -Auflistung, die die Shapes enthält, die Sie mit arbeiten möchten. &lt; /C2 &gt;&lt;b5&gt; &lt;/b5&gt;&lt;/b2&gt;</remarks>
+    <remarks>
+      <para>Jede <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt darstellt, ein Objekt in der Zeichnungsebene, wie beispielsweise eine AutoForm, Freihandform, OLE-Objekt oder Bild.</para>
+      <para>
+        <b>Hinweis</b>: Wenn Sie mit einer Teilmenge der Formen in einem Dokument arbeiten möchten – beispielsweise nur die AutoFormen im Dokument oder nur die ausgewählten Shapes – müssen Sie erstellen eine <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> -Auflistung, die die Shapes enthält, die Sie mit arbeiten möchten.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -108,7 +113,7 @@
         <summary>Erstellt eine rahmenlose Legende mit Linie. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die neue Legende darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Können Sie vielfältigere Legenden einfügen, indem die <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" /> -Methode.</para>
+          <para>Können Sie vielfältigere Legenden einfügen, indem die <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" /> Methode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -270,7 +275,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Wenn eine Verbindung hinzugefügt wird, ist es nicht auf einen anderen Wert verbunden. Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> und <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> Methoden zum Anfang und Ende einer Verbindung mit anderen Formen im Dokument anfügen.</para>
-          <para>, Wenn Sie fügen Sie eine Verbindung mit einer Form, die Größe und Position der Verbindung werden automatisch angepasst, falls erforderlich. Daher sind, wenn Sie eine Verbindung mit anderen Formen verbinden möchten, die Position und die Dimensionen, die Sie beim Hinzufügen der Verbindung angeben irrelevant.</para>
+          <para>Wenn Sie einer Form eine Verbindung zuordnen, werden Größe und Position der Verbindung, wenn notwendig, automatisch angepasst. Deshalb bleiben die Position und die Abmessungen, die Sie beim Hinzufügen einer Verbindung angeben, unbeachtet (Abmessungen müssen ungleich Null sein).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -639,7 +644,7 @@
         <summary>Erstellt eine offene Polylinie oder ein geschlossenes Vieleck. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die neue Polylinie oder Polygon darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>, Um ein geschlossenes Vieleck zu bilden, weisen Sie dem ersten und letzten Scheitelpunkt der Polylinie dieselben Koordinaten.</para>
+          <para>Um ein geschlossenes Polygon zu bilden, weisen Sie dem ersten und dem letzten Scheitelpunkt in der Polylinienzeichnung dieselben Koordinaten zu.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -683,7 +688,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die neue AutoForm in einem Arbeitsblatt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Um den Typ einer hinzugefügten AutoForm zu ändern, die Sie hinzugefügt haben, legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" /> -Eigenschaft.</para>
+          <para>Um den Typ einer hinzugefügten AutoForm zu ändern, die Sie hinzugefügt haben, legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" /> Eigenschaft.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -812,7 +817,7 @@
         <summary>Erstellt ein WordArt-Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das das neue WordArt-Objekt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Wenn Sie einem Dokument WordArt hinzufügen, die Höhe und Breite der WordArt werden automatisch festgelegt basierend auf der Größe und Menge des Texts, die Sie angeben.</para>
+          <para>Wenn Sie einem Dokument WordArt hinzufügen, werden die Höhe und Breite der WordArt automatisch anhand der Höhe und Menge des angegebenen Texts festgelegt.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -937,8 +942,8 @@
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die die hexadezimale Zahl 5843454 c entspricht</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Microsoft Excel verfügt beispielsweise über den erstellten Code XCEL.</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
           <para></para>
         </remarks>
       </Docs>
