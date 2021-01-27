@@ -1,13 +1,5 @@
 <Type Name="ColorScaleCriteria" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriteria">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587437" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004004" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriteria implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriteria&#xA;Implements IEnumerable" />
@@ -33,13 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> -Objekten, die alle die Kriterien für einen bedingten Formatierung von Farbskalen darstellt. Jedes Kriterium gibt an, das mindestens über Mittelpunkt oder höchsten Schwellenwert für die Farbskala.</summary>
-    <remarks>
-      <para>Wenn die <b>ColorScaleCriteria</b> -Auflistung zurückgeben möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> Objekt.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>Im folgenden Codebeispiel wird ein Zahlenbereich erstellt und dann eine Regel zur bedingten Formatierung von Farbskalen mit zwei Farben auf den Bereich angewendet. Die Farbe für den niedrigsten Schwellenwert wird dann auf Rot und die des maximalen Schwellenwerts auf Blau festgelegt, indem ein Index in der <b>ColorScaleCriteria</b>-Auflistung zum Festlegen der einzelnen Kriterien erstellt wird.</para>
+    <summary>Eine Auflistung von Objekten, die alle Kriterien für ein bedingtes Format für <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> Farbskalen darstellt. Jedes Kriterium gibt den niedrigsten, mittleren und höchsten Schwellenwert für die Farbskala an.</summary>
+    <remarks><para>Wenn Sie die <b>ColorScaleCriteria -Auflistung zurückgeben</b> möchten, verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> Objekts.</para>
+      <para> </para></remarks>
+    <example><para>Im folgenden Codebeispiel wird ein Zahlenbereich erstellt und dann eine Regel zur bedingten Formatierung von Farbskalen mit zwei Farben auf den Bereich angewendet. Die Farbe für den niedrigsten Schwellenwert wird dann auf Rot und die des maximalen Schwellenwerts auf Blau festgelegt, indem ein Index in der <b>ColorScaleCriteria</b>-Auflistung zum Festlegen der einzelnen Kriterien erstellt wird.</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF()  
 
 
@@ -4396,8 +4385,7 @@
 &lt;i&gt;ColorScaleCriteria(1)&lt;/i&gt;
 &lt;span class="label"&gt;.FormatColor.Color = RGB(255, 0, 0)     cfColorScale.&lt;/span&gt;
 &lt;i&gt;ColorScaleCriteria(2)&lt;/i&gt;
-&lt;span class="label"&gt;.FormatColor.Color = RGB(0, 0, 255)          End Sub &lt;/span&gt;</code>
-    </example>
+&lt;span class="label"&gt;.FormatColor.Color = RGB(0, 0, 255)          End Sub &lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -4458,14 +4446,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt <b>einen Ganzzahlwert, der die Anzahl der Kriterien für eine Regel zur bedingten Formatierung von Farbe Skalierung angibt</b> . Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Die Anzahl der Kriterien entspricht der Anzahl von Schwellenwerten, die für eine Farbskala zugewiesen wurden. Dies sind zwei oder drei Werte, abhängig davon, ob Sie eine Farbskala mit zwei oder drei Farben für die Regel zur bedingten Formatierung verwenden.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt einen <b>Ganzzahlwert</b> zurück, der die Anzahl der Kriterien für eine bedingte Formatierungsregel für Farbskalen angibt. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Die Anzahl der Kriterien entspricht der Anzahl von Schwellenwerten, die für eine Farbskala zugewiesen wurden. Dies sind zwei oder drei Werte, abhängig davon, ob Sie eine Farbskala mit zwei oder drei Farben für die Regel zur bedingten Formatierung verwenden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -4526,15 +4510,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Indexnummer des der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> Objekt.</param>
-        <summary>Gibt einen Single- <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> -Objekt aus der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
-        </value>
-        <remarks>
-          <para>Der Wert der <paramref name="Index" /> Parameter darf nicht größer als die Anzahl der Kriterien für einen bedingten Formatierung von Farbskalen festgelegt sein. Die Kriterien entsprechen die Schwellenwerte für die Farbskala zugewiesen. Die Anzahl von Schwellenwerten verwenden, um die <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <param name="Index">Die Indexnummer des <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> Objekts.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> einzelnes Objekt aus der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /></value>
+        <remarks><para>Der Wert des Parameters darf nicht größer sein als die Anzahl der Kriterien, die für ein bedingtes Format für <paramref name="Index" /> Farbskalen festgelegt wurden. Die Kriterien entsprechen den Schwellenwerten, die der Farbskala zugewiesen wurden. Verwenden Sie die Eigenschaft, um die Anzahl der Schwellenwerte zu <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> finden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

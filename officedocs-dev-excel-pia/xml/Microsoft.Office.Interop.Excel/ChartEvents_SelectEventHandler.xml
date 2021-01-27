@@ -1,13 +1,5 @@
 <Type Name="ChartEvents_SelectEventHandler" FullName="Microsoft.Office.Interop.Excel.ChartEvents_SelectEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d908c92015694a838a0f3791d629e86b7417d344" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580619" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ChartEvents_SelectEventHandler(int ElementID, int Arg1, int Arg2);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d908c92015694a838a0f3791d629e86b7417d344" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004032" /></Metadata><TypeSignature Language="C#" Value="public delegate void ChartEvents_SelectEventHandler(int ElementID, int Arg1, int Arg2);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartEvents_SelectEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartEvents_SelectEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ChartEvents_SelectEventHandler(ElementID As Integer, Arg1 As Integer, Arg2 As Integer)" />
@@ -36,12 +28,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="ElementID">Erforderlich.  Das Objekt doppelklickt.</param>
-    <param name="Arg1">Hängt <paramref name="ElementID" />.</param>
-    <param name="Arg2">Hängt <paramref name="ElementID" />.</param>
-    <summary>Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> Ereignis. <b>Wählen Sie</b> -Ereignis tritt auf, wenn ein Diagrammelement markiert wird.</summary>
-    <remarks>
-      <para>Die folgende Tabelle enthält die Argumente, die jeweils zugeordneten <paramref name="ElementID" />.</para>
+    <param name="ElementID">Erforderlich.  Das Objekt, auf das doppelgeklickt wurde.</param>
+    <param name="Arg1">Hängt von <paramref name="ElementID" /> ab.</param>
+    <param name="Arg2">Hängt von <paramref name="ElementID" /> ab.</param>
+    <summary>Ein <b>Delegattyp,</b> der zum Hinzufügen eines Ereignishandlers für das Ereignis <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> verwendet wird. Das <b>Select -Ereignis</b> tritt auf, wenn ein Diagrammelement ausgewählt ist.</summary>
+    <remarks><para>In der folgenden Tabelle sind die Argumente aufgeführt, die den einzelnen Argumenten zugeordnet <paramref name="ElementID" /> sind.</para>
       <list type="table">
         <item>
           <term>xlAxis</term>
@@ -129,7 +120,7 @@
           <description>Keine</description>
         </item>
         <item>
-          <term>xlFloor</term>
+          <term>xlXl</term>
           <description>Keine</description>
           <description>Keine</description>
         </item>
@@ -174,7 +165,7 @@
           <description>Keine</description>
         </item>
         <item>
-          <term>Ist</term>
+          <term>xlSeries</term>
           <description>SeriesIndex</description>
           <description>PointIndex</description>
         </item>
@@ -196,49 +187,48 @@
         <item>
           <term>xlShape</term>
           <description>ShapeIndex</description>
-          <description>Keine</description>
+          <description>Keines</description>
         </item>
       </list>
       <para>In der folgenden Tabelle sind die Argumente beschrieben.</para>
       <list type="table">
         <item>
           <term>AxisIndex</term>
-          <description>Gibt an, ob die Achse Primär oder sekundär ist. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> Konstanten: <b>XlPrimary</b> oder <b>XlSecondary</b>.</description>
+          <description>Gibt an, ob die Achse Primär oder sekundär ist. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> Konstanten sein: <b>xlPrimary</b> oder <b>xlSecondary</b>.</description>
         </item>
         <item>
           <term>AxisType</term>
-          <description>Gibt den Typ der Achse an. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> Konstanten: <b>XlCategory</b>, <b>XlSeriesAxis</b>oder <b>XlValue</b>.</description>
+          <description>Gibt den Typ der Achse an. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> Konstanten sein: <b>xlCategory</b>, <b>xlSeriesAxis</b>oder <b>xlValue</b>.</description>
         </item>
         <item>
           <term>DropZoneType</term>
-          <description>Gibt den Typ der Dropzone: Spalte, Daten, Seite oder Zeilenfeld. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> Konstanten: <b>XlColumnField</b>, <b>XlDataField</b>, <b>XlPageField</b>oder <b>XlRowField</b>. Die Spalten-als auch die Feld-Konstanten geben die Datenreihe und die Kategorie an.</description>
+          <description>Gibt den Typ der Dropzone: Spalte, Daten, Seite oder Zeilenfeld. Dies kann eine der folgenden Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> sein: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>oder <b>xlRowField</b>. Die Spalten-als auch die Feld-Konstanten geben die Datenreihe und die Kategorie an.</description>
         </item>
         <item>
           <term>GroupIndex</term>
-          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> -Auflistung für eine bestimmte Diagrammgruppe.</description>
+          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> Auflistung für eine bestimmte Diagrammgruppe an.</description>
         </item>
         <item>
           <term>PivotFieldIndex</term>
-          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> -Auflistung für ein bestimmtes Spalten-(Datenreihen-), Daten, Seite oder Zeilenfeld (Kategorienfeld).</description>
+          <description>Gibt den Offset innerhalb der Auflistung für ein bestimmtes Spalten-, Daten-, Seiten- oder Zeilenfeld <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> (Kategorie) an.</description>
         </item>
         <item>
           <term>PointIndex</term>
-          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Points" /> -Auflistung für einen bestimmten Punkt in einer Datenreihe. Der Wert-1 gibt an, dass alle Datenpunkte ausgewählt sind.</description>
+          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Points" /> Auflistung für einen bestimmten Punkt innerhalb einer Datenreihe an. Der Wert –1 gibt an, dass alle Datenpunkte ausgewählt sind.</description>
         </item>
         <item>
           <term>SeriesIndex</term>
-          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Series" /> Auflistung einer bestimmten Datenreihe.</description>
+          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Series" /> Auflistung für eine bestimmte Datenreihe an.</description>
         </item>
         <item>
           <term>ShapeIndex</term>
-          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> -Auflistung für ein bestimmtes Shape.</description>
+          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung für eine bestimmte Form an.</description>
         </item>
         <item>
           <term>TrendlineIndex</term>
-          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> -Auflistung einer bestimmten Trendlinie in einer Datenreihe.</description>
+          <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> Auflistung für eine bestimmte Trendlinie innerhalb einer Datenreihe an.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
 </Type>

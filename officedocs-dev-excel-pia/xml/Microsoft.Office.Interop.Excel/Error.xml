@@ -1,13 +1,5 @@
 <Type Name="Error" FullName="Microsoft.Office.Interop.Excel.Error">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5da1e5642e0d519cf74c6409887c59d10a124fad" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580871" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Error" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5da1e5642e0d519cf74c6409887c59d10a124fad" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003619" /></Metadata><TypeSignature Language="C#" Value="public interface Error" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Error" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Error" />
   <TypeSignature Language="VB.NET" Value="Public Interface Error" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen Kalkulationstabellenfehler für einen Bereich dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> -Objekt ein <b>Error</b> -Objekt zurückgegeben.</para>
-      <para>Nachdem ein <b>Error</b> -Objekt zurückgegeben wurde, können Sie die <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> Eigenschaft in Verbindung mit der <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> -Eigenschaft, um zu überprüfen, ob eine bestimmte Option zur fehlerprüfung aktiviert ist.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> Objekts, um ein Error <b>-Objekt zurückzukehren.</b></para>
+      <para>Nachdem ein <b>Error</b> -Objekt zurückgegeben wurde, können Sie die Eigenschaft in Verbindung mit der Eigenschaft verwenden, um zu überprüfen, ob eine bestimmte <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> Fehlerprüfungsoption <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> aktiviert ist.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,12 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -122,12 +110,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ermöglicht dem Benutzer, um den Zustand der Fehler beim Überprüfen der Option für einen Bereich zurückzugeben oder festzulegen. <b>"False"</b> können eine Option für einen Bereich zur fehlerprüfung. <b>True,</b> wird der Fehler beim Überprüfen der Option für einen Bereich deaktiviert.</summary>
+        <summary>Ermöglicht es dem Benutzer, den Status einer Fehlerprüfoption für einen Bereich zurückzugeben oder diesen festzulegen. Bei  <b>False</b> wird eine Fehlerprüfoption für einen Bereich aktiviert. Bei <b>True</b> wird eine Fehlerprüfoption für einen Bereich deaktiviert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Referenz der <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> Objekt um eine Liste der Indexwerte anzuzeigen von Optionen zur fehlerprüfung zugeordnet.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Verweisen Sie <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> auf das Objekt, um eine Liste der Indexwerte anzuzeigen, die optionen für die Fehlerüberprüfung zugeordnet sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -181,8 +167,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn alle Gültigkeitskriterien erfüllt werden (d. h., wenn der Bereich gültige Daten enthält).</summary>
+        <summary><b>True,</b> Wenn alle Überprüfungskriterien erfüllt sind (d. h., wenn der Bereich gültige Daten enthält).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

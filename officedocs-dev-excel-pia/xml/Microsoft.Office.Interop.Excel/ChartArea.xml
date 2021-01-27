@@ -1,13 +1,5 @@
 <Type Name="ChartArea" FullName="Microsoft.Office.Interop.Excel.ChartArea">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582376" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004228" /></Metadata><TypeSignature Language="C#" Value="public interface ChartArea" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartArea" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartArea" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartArea" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Diagrammfläche eines Diagramms dar. Die Diagrammfläche in einem 2D-Diagramm enthält die Achsen, den Diagrammtitel, die Achsenbeschriftungen und die Legende. Die Diagrammfläche in einem 3D-Diagramm enthält den Diagrammtitel und die Legende. Sie umfasst nicht die Zeichnungsfläche (die Fläche innerhalb des Diagrammbereichs, in dem die Daten gezeichnet werden). Informationen zum Formatieren der Zeichnungsfläche finden Sie unter der <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> Objekt.</summary>
-    <remarks>
-      <para>Verwenden Sie die abgerundete<see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> Eigenschaft, um das <b>ChartArea</b> -Objekt zurückzugeben.</para>
-      <para></para>
-    </remarks>
+    <summary>Stellt die Diagrammfläche eines Diagramms dar. Die Diagrammfläche in einem 2D-Diagramm enthält die Achsen, den Diagrammtitel, die Achsenbeschriftungen und die Legende. Der Diagrammbereich in einem 3D-Diagramm enthält den Diagrammtitel und die Legende. Die Zeichnungsfläche (die Fläche innerhalb der Diagrammfläche, in der die Daten dargestellt werden) ist nicht enthalten. Informationen zum Formatieren der Zeichnungsfläche finden Sie unter dem <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> Objekt.</summary>
+    <remarks><para>Verwenden Sie die Rounded <see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> -Eigenschaft, um das <b>ChartArea -Objekt zurück.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt um die Anwendung dieses Objekts zurückzugeben).</summary>
+        <summary>Gibt ein Objekt zurück, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE Automation -Objekt verwenden, um die Anwendung <see cref="T:Microsoft.Office.Interop.Excel.Application" /> dieses Objekts zurückgibt).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,8 +86,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text im Objekt Schriftgrad ändert, wenn die Größe des Objekts ändert. Der Standardwert ist <b>True</b>.</summary>
+        <summary><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird. Der Standardwert lautet <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekt zurück, das den Rahmen des Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,13 +249,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -295,7 +282,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> -Objekt für eine angegebene Form oder einem <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> -Objekt für ein angegebenes Diagramm, das Formateigenschaften für das Shape oder Diagramm der Füllung enthält.</summary>
+        <summary>Gibt ein Objekt für eine angegebene Form oder ein Objekt für ein angegebenes Diagramm zurück, das füllformatierungseigenschaften für die Form oder das <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> Diagramm enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,7 +313,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,14 +341,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
-        <remarks>
-          <para>Die <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> -Objekt enthält die Linien-, Füll- und effektformatierung für den Diagrammbereich.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt das Objekt <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt enthält die Linien-, Füll- und Effektformatierung für den Diagrammbereich.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -421,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> -Objekt, das den Innenbereich des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> Objekt zurück, das den Innenbereich des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,12 +435,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand in Punkt vom linken Rand des Objekts zum linken Rand des Diagrammbereichs.</summary>
+        <summary>Der Abstand (in Punkt) vom linken Rand des Objekts zum linken Rand des Diagrammbereichs.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft die Breite des Fensterrahmens eine negative Zahl, die variiert, entsprechend. Durch Festlegen dieser Eigenschaft auf 0 (null) wird, das Fenster ein wenig kleiner, als wäre, wenn das Anwendungsfenster maximiert wurden. Anders ausgedrückt, wenn diese Eigenschaft 0 (null) ist, ist der linke Rand des Hauptfensters von Microsoft Excel auf dem Bildschirm kaum sichtbar.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft eine negative Zahl zurück, die je nach Breite des Fensterrahmens variiert. Wenn Sie diese Eigenschaft auf 0 (Null) festlegen, wird das Fenster etwas kleiner als bei maximiertem Anwendungsfenster. Mit anderen Worten: Wenn diese Eigenschaft 0 (Null) ist, wird der linke Rahmen des Microsoft Excel-Hauptfensters nur noch auf dem Bildschirm angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -542,9 +523,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True, wenn das eingebettete Diagramm abgerundete Ecken besitzt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>.</value>
+        <summary>True, wenn das eingebettete Diagramm abgerundete Ecken besitzt. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,8 +580,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Schriftart Schatten aufweist oder ob das Objekt einen Schatten aufweist.</summary>
+        <summary><b>True,</b> Wenn die Schriftart eine Schattenschriftart ist oder das Objekt einen Schatten hat.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -632,7 +611,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand in Punkt vom oberen Rand des Objekts an den Anfang der Zeile 1 (auf einem Arbeitsblatt) oder im oberen Bereich des Diagrammbereichs (in einem Diagramm).</summary>
+        <summary>Der Abstand (in Punkt) vom oberen Rand des Objekts zum Anfang von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
