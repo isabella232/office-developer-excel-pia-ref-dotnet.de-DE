@@ -1,13 +1,5 @@
 <Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b2b09bda61eed0ec23579a26ff7207bf32c883e0" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575348" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b2b09bda61eed0ec23579a26ff7207bf32c883e0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50007231" /></Metadata><TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlFileValidationPivotMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum XlFileValidationPivotMode" />
@@ -21,25 +13,23 @@
   </Base>
   <Docs>
     <summary>Gibt an, wie die Datencaches für PivotTable-Berichte überprüft werden.</summary>
-    <remarks>
-      <para>Diese Enumeration wird verwendet, um die Einstellung der angeben der <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekt.</para>
-      <para>Die Auswirkung der <b>XlFileValidationPivotDefault</b> Einstellung wird gesteuert, durch den Registrierungswert PivotOptions, die in den folgenden Registrierungsunterschlüssel festgelegt ist: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation. PivotOptions-Wert ist ein DWORD-Wert, der festgelegt werden kann, wie in der folgenden Tabelle aufgeführt.</para>
+    <remarks><para>Diese Aufzählung wird verwendet, um die Einstellung der <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> Eigenschaft des Objekts <see cref="T:Microsoft.Office.Interop.Excel._Application" /> anzugeben.</para>
+      <para>Die Auswirkung der <b>Einstellung "xlFileValidationPivotDefault"</b> wird durch den Registrierungswert "PivotOptions" gesteuert, der im folgenden Registrierungsunterschlüssel festgelegt wird: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation. Der Wert PivotOptions ist ein DWORD-Wert, der entsprechend der Auflistung in der folgenden Tabelle festgelegt werden kann.</para>
       <list type="table">
         <item>
           <term>0</term>
           <description>Datencaches von PivotTable-Berichten werden nie überprüft (nicht empfohlen)</description>
         </item>
         <item>
-          <term>1</term>
-          <description>Überprüfen der PivotTable-Bericht Datencaches in den folgenden Fällen (Standardeinstellung): die Datei geöffnet wurde aus der Internet.The Datei E-mail-Anlage ist. Die Datei wurde mithilfe des Befehls in geschützter Ansicht des Dialogfelds Öffnen geöffnet. Die Datei wurde aus einem bekanntermaßen unsicheren Speicherort, in dem Internetinhalte lokal zwischengespeichert ist, oder aus einem benutzerdefinierten nicht vertrauenswürdigen Speicherort geöffnet. Der Datencache wird während des Ladens beim Öffnen der Datei analysiert.</description>
+          <term>1 </term>
+          <description>Überprüfen Sie die Datencaches von PivotTable-Berichten in den folgenden Fällen (Standardeinstellung):Die Datei wurde aus dem Internet geöffnet.Die Datei ist eine E-Mail-Anlage. Die Datei wurde mit dem Befehl "In geschützter Ansicht öffnen" des Dialogfelds "Öffnen" geöffnet. Die Datei wurde von einem bekannten unsicheren Speicherort geöffnet, an dem Internetinhalte lokal zwischengespeichert werden, oder von einem benutzerdefinierten, nicht vertrauenswürdigen Speicherort. Der Datencache wird während des Ladens beim Öffnen der Datei analysiert.</description>
         </item>
         <item>
-          <term>2</term>
+          <term>2 </term>
           <description>Alle Datencaches von PivotTable-Berichten werden überprüft.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="xlFileValidationPivotDefault">

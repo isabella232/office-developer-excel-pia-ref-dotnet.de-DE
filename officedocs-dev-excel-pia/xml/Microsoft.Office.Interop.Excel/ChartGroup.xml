@@ -1,13 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578246" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005852" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -29,39 +21,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine oder mehrere Datenreihen dar, die unter Verwendung desselben Formats in ein Diagramm gezeichnet wurden. <b>ChartGroup</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> Auflistung.</summary>
-    <remarks>
-      <para>Ein Diagramm enthält eine oder mehrere Diagrammgruppen, jede Diagrammgruppe enthält eine oder mehrere Datenreihen und jede Datenreihe enthält einen oder mehrere Punkte. Beispielsweise kann ein einzelnes Diagramm sowohl eine Liniendiagrammgruppe, mit der Liniendiagramm gezeichneten enthält und eine Balkendiagrammgruppe, die mit dem Format des Balkendiagramms gezeichneten enthält enthalten.</para>
-      <para>Verwenden Sie <b>ChartGroups</b>(<paramref name="index" />), wobei <paramref name="index" /> die Diagrammgruppe Indexzahl darstellt, um ein einzelnes <b>ChartGroup</b> -Objekt zurückzugeben. Wenn das Diagramm aktiviert wurde, können Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> Eigenschaft.</para>
-      <para>Da die Indexnummer für eine bestimmte Diagrammgruppe ändern kann, wenn das Diagrammformat für die Gruppe verwendete geändert wird, kann es einfacher, eine der benannten Diagramm Gruppe Kontextmenü Methoden verwenden, um eine bestimmte Diagrammgruppe zurückzugeben sein. Die <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> Methode gibt die Auflistung der Kreisdiagrammgruppe in einem Diagramm der <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> -Methode gibt die Auflistung der Liniendiagrammgruppen usw. zurück. Jede dieser Methoden kann mit einer Indexnummer, um ein einzelnes <b>ChartGroup</b> -Objekt zurückzugeben, oder ohne eine Indexnummer, um eine <b>ChartGroups</b> -Auflistung zurückzugeben verwendet werden. Die folgenden Diagrammgruppen-Methoden sind verfügbar:</para>
+    <summary>Stellt eine oder mehrere Datenreihen dar, die unter Verwendung desselben Formats in ein Diagramm gezeichnet wurden. Das <b>ChartGroup -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> Auflistung.</summary>
+    <remarks><para>Ein Diagramm enthält eine oder mehrere Diagrammgruppen, jede Diagrammgruppe enthält eine oder mehrere Datenreihen und jede Datenreihe enthält einen oder mehrere Punkte. Beispielsweise kann ein einzelnes Diagramm sowohl eine Liniendiagrammgruppe, mit der Liniendiagramm gezeichneten enthält und eine Balkendiagrammgruppe, die mit dem Format des Balkendiagramms gezeichneten enthält enthalten.</para>
+      <para>Verwenden <b>Sie ChartGroups</b>( ), wobei die Indexnummer der <paramref name="index" /> <paramref name="index" /> Diagrammgruppe ist, um ein einzelnes <b>ChartGroup -Objekt zurückzukehren.</b> Wenn das Diagramm aktiviert wurde, können Sie die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> verwenden.</para>
+      <para>Da sich die Indexnummer für eine bestimmte Diagrammgruppe ändern kann, wenn das für diese Gruppe verwendete Diagrammformat geändert wird, ist es möglicherweise einfacher, eine der Verknüpfungsmethoden für benannte Diagrammgruppen zu verwenden, um eine bestimmte Diagrammgruppe zurückzukehren. Die Methode gibt die Auflistung von Kreisdiagrammgruppen in einem Diagramm zurück, die Methode gibt die Auflistung von Liniendiagrammgruppen zurück <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> und so weiter. Jede dieser Methoden kann mit einer Indexnummer verwendet werden, um ein einzelnes <b>ChartGroup -Objekt</b> zurückzukehren, oder ohne eine Indexnummer, um eine <b>ChartGroups -Auflistung zurückzukehren.</b> Die folgenden Diagrammgruppenmethoden sind verfügbar:</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />Methode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> -Methode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />Methode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> -Methode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />Methode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> -Methode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />Methode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> -Methode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />Methode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> -Methode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />Methode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> -Methode</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -87,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt um die Anwendung dieses Objekts zurückzugeben).</summary>
+        <summary>Gibt ein Objekt zurück, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE Automation -Objekt verwenden, um die Anwendung <see cref="T:Microsoft.Office.Interop.Excel.Application" /> dieses Objekts zurückgibt).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,12 +108,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Gruppe für der angegebenen Diagrammgruppe oder Datenreihe zurück.</summary>
+        <summary>Gibt die Gruppe für die angegebene Diagrammgruppe oder Datenreihe zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für 3D-Diagramme ist nur <b>die Gruppe XlPrimary</b> gültig.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei 3D-Diagrammen ist <b>nur xlPrimary</b> gültig.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BubbleScale">
@@ -152,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Skalierungsfaktor für Blasen in der angegebenen Diagrammgruppe. Eine Ganzzahl zwischen 0 (null) und 300 entsprechend eines Prozentsatzes der Standardgröße gesetzt kann sein. Gilt nur für Blasendiagramme verwendet werden.</summary>
+        <summary>Gibt den Skalierungsfaktor für Blasen in der angegebenen Diagrammgruppe zurück oder legt ihn fest. Kann ein ganzzahliger Wert von 0 (null) bis 300 sein, der einem Prozentsatz der Standardgröße entspricht. Gibt nur für Blasendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,7 +168,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Der Name oder die Nummer der Kategorien.</param>
-        <summary>Gibt ein Objekt, das eine Auflistung aller der sichtbaren Kategorien darstellt (eine <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> Auflistung) in der Diagrammgruppe.</summary>
+        <summary>Gibt ein Objekt zurück, das eine Auflistung aller sichtbaren Kategorien (einer <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> Auflistung) in der Diagrammgruppe darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,12 +196,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -242,7 +228,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder die Größe der Lücke in eine Ringdiagrammgruppe festgelegt. Die Innenringgröße wird als Prozentwert der Diagrammgröße angegeben und kann zwischen 10 bis 90 Prozent liegen.</summary>
+        <summary>Gibt die Innenringgröße einer Ringdiagrammgruppe zurück oder legt sie fest. Die Innenringgröße wird als Prozentwert der Diagrammgröße angegeben und kann im Bereich von 10 bis 90 Prozent liegen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DownBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> -Objekt, das die negativen abweichungen in einem Liniendiagramm darstellt. Gilt nur für Liniendiagramme.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> Objekt zurück, das die Abwärtsbalken in einem Liniendiagramm darstellt. Gilt nur für Liniendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +284,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> -Objekt, das die Bezugslinien für eine Datenreihe eines Linien- oder Flächendiagramms darstellt. Gilt nur für Linien- oder Flächendiagramme.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> Objekt zurück, das die Abdrücklinien für eine Datenreihe in einem Linien- oder Flächendiagramm darstellt. Gilt nur für Liniendiagramme und Flächendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,7 +315,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Winkel des ersten Segments Kreis- oder Ringsegments in Grad (vertikal im Uhrzeigersinn). Gilt nur für Kreis-, 3-d Kreis- und Ringdiagrammen.</summary>
+        <summary>Gibt den Winkel des ersten Kreis- oder Ringdiagrammsegments in Grad (vertikal im Uhrzeigersinn) zurück oder legt den Winkel fest. Gilt nur für Kreis-, 3D-Kreis- und Ringdiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,7 +343,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Der Name oder die Nummer der Kategorien.</param>
-        <summary>Gibt ein Objekt, das eine Auflistung aller Kategorien sichtbaren und gefilterten darstellt (eine <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" />) in der Diagrammgruppe.</summary>
+        <summary>Gibt ein Objekt zurück, das eine Auflistung aller sichtbaren und gefilterten Kategorien (a <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> ) in der Diagrammgruppe darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,12 +374,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Häufig verwendete Hyperlinks und Spalte Diagramme: zurück oder legt den Abstand zwischen Balken- oder Cluster als Prozentsatz der Balken- oder Breite. Kreis aus Kreis und Balken-aus-Kreis-Diagramme: Gibt zurück oder legt den Abstand zwischen den primären und sekundären Abschnitten des Diagramms fest.</summary>
+        <summary>Balken- und Säulendiagramme: Gibt den Abstand zwischen Balken- oder Spaltenclustern als Prozentsatz der Balken- oder Spaltenbreite zurück oder legt diesen fest. Kreis-aus-Kreis- und Balken-aus-Kreis-Diagramme: Gibt den Abstand zwischen den primären und sekundären Abschnitten des Diagramms zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft muss zwischen 0 und 500 liegen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>The value of this property must be between 0 and 500.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -422,8 +406,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Diagrammgruppe eine 3D-Schattierung besitzt. Diese Eigenschaft gilt nur für Fläche Diagramme und gibt einen Laufzeitfehler zurück, wenn Sie versuchen, eine andere Diagramme festgelegt.</summary>
+        <summary><b>True</b>, falls die Diagrammgruppe eine 3D-Schattierung besitzt. Diese Eigenschaft gilt nur für Oberflächendiagramme und gibt einen Laufzeitfehler zurück, wenn Sie versuchen, sie auf ein Nicht-Oberflächendiagramm zu setzen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,8 +437,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Zeile oder Flächendiagramms Bezugslinien angezeigt. Gilt nur für Linien- und Flächendiagramme.</summary>
+        <summary><b>True</b>, wenn im Linien- oder Flächendiagramm Bezugslinien angezeigt werden. Nur gültig für Linien- oder Flächendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,8 +468,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Liniendiagramm Spannweitenlinien enthält. Gilt nur für Liniendiagramme.</summary>
+        <summary><b>True</b>, wenn das Liniendiagramm Spannweitenlinien enthält. Nur gültig für Liniendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -518,8 +499,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn ein Netzdiagramm Achse Beschriftungen besitzt. Gilt nur für Netzdiagramme.</summary>
+        <summary><b>True</b>, wenn ein Netzdiagramm Achsenbeschriftungen enthält. Nur gültig für Netzdiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,8 +530,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn eine Säulendiagramm oder ein Balkendiagramm hat Verbindungslinien oder wenn ein Kreis-aus-Kreis-Diagramm oder Balken-aus-Kreis-Diagramm Verbindungslinien zwischen den beiden Abschnitten hat. Gilt nur für gestapelte Diagramme, Balkendiagrammen, Kreis-aus-Kreis-Diagrammen oder Balken-aus-Kreis-Diagramme.</summary>
+        <summary><b>True</b>, wenn ein gestapeltes Säulendiagramm oder ein Balkendiagramm Verbindungslinien hat oder wenn ein Kreis-aus-Kreis-Diagramm oder ein Balken-aus-Kreis-Diagramm Verbindungslinien zwischen den beiden Abschnitten hat. Diese Eigenschaft kann nur auf gestapelte Säulendiagramme, Balkendiagramme, Kreis-aus-Kreis-Diagramme und Balken-aus-Kreis-Diagramme angewendet werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -610,7 +589,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HiLoLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> -Objekt, das die Spannweitenlinien für eine Datenreihe in einem Liniendiagramm darstellt. Gilt nur für Liniendiagramme.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> Objekt zurück, das die Höhenlinien für eine Datenreihe in einem Liniendiagramm darstellt. Gilt nur für Liniendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -669,12 +648,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, wie Balken und Spalten angeordnet sind. Ein Wert zwischen-100 und 100 kann sein. Gilt nur für 2D-Diagramme Balken und 2 2D-Säulendiagramme.</summary>
+        <summary>Gibt an, wie Balken und Spalten angeordnet sind. Dies kann ein Wert zwischen -100 und 100 sein. Gilt nur für 2D-Balken- und 2D-Säulendiagramme.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf – 100 festgelegt ist, werden die Balken positioniert, damit eine Balkenbreite dazwischen vorhanden ist. Wenn die Überlappung 0 (null) ist, besteht kein Abstand zwischen Balken (ein Balken startet unmittelbar nach der vorherigen Leiste). Beträgt der Überlappungswert 100, werden die Balken genau übereinander positioniert.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn diese Eigenschaft auf -100 festgelegt ist, werden die Balken so positioniert, dass eine Balkenbreite dazwischen liegt. Beträgt der Wert 0, so besteht kein Abstand zwischen den Balken (die Balken folgen direkt nacheinander). Beträgt der Wert 100, werden die Balken genau übereinander positioniert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -728,7 +705,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> -Objekt, das Netz Beschriftung der angegebenen Diagrammgruppe darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> Objekt zurück, das die Netzachsenbeschriftungen für die angegebene Diagrammgruppe darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -759,7 +736,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Größe des sekundären Abschnitts von einem-aus-Kreis-Kreisdiagramm oder einem Balken des Kreisdiagramm als Prozentsatz der Größe des primären Kreises. Ein Wert zwischen 5 und 200 kann sein.</summary>
+        <summary>Gibt die Größe des sekundären Abschnitts eines Kreis-aus-Kreis-Diagramms oder eines Balken-aus-Kreis-Diagramms als Prozentsatz der Größe des primären Kreises zurück oder legt sie fest. Dies kann ein Wert von 5 bis 200 sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -786,8 +763,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Der Name oder die Nummer der Datenreihe.</param>
-        <summary>Gibt ein Objekt, das entweder eine einzelne Datenreihe (ein <see cref="T:Microsoft.Office.Interop.Excel.Series" /> Objekt) oder eine Auflistung aller Datenreihen (eine <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> Auflistung) im Diagramm oder der Diagrammgruppe.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Der Name oder die Nummer der Datenreihe.</param>
+        <summary>Gibt ein Objekt zurück, das eine einzelne Datenreihe (ein Objekt) oder eine Auflistung aller Datenreihen (eine Auflistung) im Diagramm oder in der <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> Diagrammgruppe darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -815,7 +792,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> -Objekt, das die Verbindungslinien für ein gestapeltes Balkendiagramm oder Säulendiagramm darstellt. Gilt nur für gestapelte Balken und in einem gestapelten.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> Objekt zurück, das die Datenreihenlinien eines gestapelten Balkendiagramms oder eines gestapelten Säulendiagramms darstellt. Gilt nur für gestapelte Balken- und gestapelte Säulendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -846,8 +823,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn für die Diagrammgruppe negative Blasen angezeigt werden. Gilt nur für Blasendiagramme verwendet werden.</summary>
+        <summary><b>True</b>, wenn in der Diagrammgruppe negative Blasen angezeigt werden. Dies gilt nur für Blasendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -878,7 +854,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSizeRepresents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt sie fest, was die Blasengröße auf einem Blasendiagramm darstellt. Kann eine der folgenden <b>XlSizeRepresents</b> -Konstanten sein: <b>XlSizeIsArea</b> oder <b>XlSizeIsWidth</b>.</summary>
+        <summary>Gibt zurück oder legt sie fest, was die Blasengröße auf einem Blasendiagramm darstellt. Dies kann eine der folgenden <b>XlSizeRepresents</b>-Konstanten sein: <b>xlSizeIsArea</b> oder <b>xlSizeIsWidth</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -909,7 +885,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, die ein-aus-Kreis-Kreisdiagramm oder einem Balken Kreisdiagramm geteilt werden wie.</summary>
+        <summary>Gibt zurück oder legt fest, wie die beiden Abschnitte eines Kreis-aus-Kreis-Diagramms oder eines Balken-aus-Kreis-Diagramms geteilt werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -940,7 +916,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Schwellenwert für die zwei Abschnitte mit einem-aus-Kreis-Kreisdiagramm oder einem Balken Kreisdiagramm trennen.</summary>
+        <summary>Gibt den Schwellenwert zurück, der die beiden Abschnitte eines Kreis-aus-Kreis-Diagramms oder eines Balken-aus-Kreis-Diagramms trennt, oder legt den Schwellenwert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -977,7 +953,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1014,7 +990,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1042,7 +1018,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.UpBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> -Objekt, das die positive Abweichung in einem Liniendiagramm darstellt. Gilt nur für Liniendiagramme.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> Objekt zurück, das die up bars in einem Liniendiagramm darstellt. Gilt nur für Liniendiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1073,8 +1049,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Excel jeden Datenpunkt eine andere Farbe oder ein Muster zuweist. Das Diagramm darf nur eine Datenreihe enthalten.</summary>
+        <summary><b>True,</b> Wenn Microsoft Excel jeder Datenpunktmarkierung eine andere Farbe oder ein anderes Muster zu weist. Das Diagramm darf nur eine Datenreihe enthalten.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

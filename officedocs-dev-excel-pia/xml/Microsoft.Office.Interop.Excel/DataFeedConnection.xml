@@ -1,13 +1,5 @@
 <Type Name="DataFeedConnection" FullName="Microsoft.Office.Interop.Excel.DataFeedConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6e9ab9b71f15cad689d5836c7164a39d28a7e6fb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582838" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataFeedConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6e9ab9b71f15cad689d5836c7164a39d28a7e6fb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005698" /></Metadata><TypeSignature Language="C#" Value="public interface DataFeedConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataFeedConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataFeedConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataFeedConnection" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enthält die Daten und Funktionen zur Datenfeeds Verbindung erforderlich sind. Das gleiche Objekt wird für alle Typen von Daten verwendet.</summary>
+    <summary>Enthält die Daten und Funktionen, die zum Herstellen einer Verbindung mit Datenfeeds erforderlich sind. Dasselbe Objekt wird für alle Datenfeedtypen verwendet.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,8 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Verbindungsdatei immer zum Herstellen der Verbindung mit der Datenquelle verwendet wird. <b>Boolean</b> (<b>Bool</b> in c#). Lesen/Schreiben</summary>
+        <summary><b>True,</b> Wenn die Verbindungsdatei immer zum Herstellen einer Verbindung mit der Datenquelle verwendet wird. <b>Boolean</b> (<b>bool</b> in C#). Lesen/Schreiben</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Einen Aktualisierungsvorgang auf einem Datenfeed Verbindung abbricht.</summary>
+        <summary>Bricht einen Aktualisierungsvorgang für eine Datenfeedverbindung ab.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +135,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Befehlszeichenfolge für die angegebene Datenquelle. <b>Objekt</b> (in c#-<b>Objekt</b> ) Lese-/Schreibzugriff</summary>
+        <summary>Gibt die Befehlszeichenfolge für die angegebene Datenquelle zurück oder legt diese fest. <b>Objekt</b> (<b>Objekt</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Befehlszeichenfolge für die angegebene Datenquelle. <b>Objekt</b> (in c#-<b>Objekt</b> ) Lese-/Schreibzugriff</summary>
+        <summary>Gibt die Befehlszeichenfolge für die angegebene Datenquelle zurück oder legt diese fest. <b>Objekt</b> (<b>Objekt</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +197,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen eine Zeichenfolge, die Servicevertrag Einstellungen enthält, mit die Excel eine Verbindung mit einer Datenquelle-Datenfeed herstellen können. <b>Objekt</b> (in c#-<b>Objekt</b> ) Lese-/Schreibzugriff</summary>
+        <summary>Gibt eine Zeichenfolge zurück, die Dienstvertragseinstellungen enthält, mit denen Excel eine Verbindung mit einer Datenquelle des Datenfeeds herstellen kann, oder legt diese Zeichenfolge fest. <b>Objekt</b> (<b>Objekt</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,12 +225,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. <b>Ganze Zahl</b> (<b>Int</b> in c#) Schreibgeschützt</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. <b>Ganze</b> Zahl (<b>int</b> in C#) Schreibgeschützt</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C, Zeichenfolge "XCEL zurück".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -268,8 +257,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Verbindung vom Benutzer aktualisiert werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff</summary>
+        <summary><b>True</b>, wenn die Verbindung vom Benutzer aktualisiert werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +285,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> (C#-<b>Objekt</b> ), der das übergeordnete Objekt des angegebenen <b>DataFeedConnection</b> -Objekts darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <b>Object</b> (<b>Objekt</b> in C#) zurück, das das übergeordnete Objekt des angegebenen <b>DataFeedConnection -Objekts</b> darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,7 +311,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Die feed-Verbindung Daten aktualisiert.</summary>
+        <summary>Aktualisiert die Datenfeedverbindung.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,7 +338,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Datum, das letzten die OLE DB-Verbindung Aktualisierung, zurück. <b>DateTime</b>. Schreibgeschützt.</summary>
+        <summary>Gibt das Datum der letzten Aktualisierung der OLE DB-Verbindung zurück. <b>DateTime</b>. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,8 +366,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn eine OLE DB-Abfrage für die Verbindung der angegebenen-Datenquelle ausgeführt wird. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff</summary>
+        <summary><b>True,</b> Wenn eine OLE DB-Abfrage für die angegebene Datenquellenverbindung ausgeführt wird. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -410,8 +397,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Verbindung bei jedem Öffnen die Arbeitsmappe immer automatisch aktualisiert wird. Der Standardwert lautet <b>False</b>.</summary>
+        <summary><b>True</b>, wenn die Verbindung jedes Mal automatisch aktualisiert wird, wenn die Arbeitsmappe geöffnet wird. Der Standardwert ist <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -442,7 +428,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Anzahl der Minuten zwischen aktualisiert. <b>Ganze Zahl</b> (<b>Int</b> in c#) Lese-/Schreibzugriff</summary>
+        <summary>Gibt die Anzahl der Minuten zwischen Aktualisierungen zurück oder legt sie fest. <b>Ganze</b> Zahl (<b>int</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,7 +460,7 @@
         <param name="ODCFileName">Ort, an dem die Datei gespeichert wird.</param>
         <param name="Description">Beschreibung, die in der Datei gespeichert wird.</param>
         <param name="Keywords">Durch Leerzeichen getrennte Schlüsselwörter, die für die Suche nach dieser Datei verwendet werden können.</param>
-        <summary>Speichert die Daten feed-Verbindung als ODC-Datei.</summary>
+        <summary>Speichert die Datenfeedverbindung als Office Data Connection-Datei.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,8 +490,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Kennwortinformationen in einer Verbindungszeichenfolge feed wird in der Verbindungszeichenfolge gespeichert. <b>False,</b> Wenn das Kennwort gelöscht wird.</summary>
+        <summary><b>True,</b> wenn Kennwortinformationen in einer Datenfeedverbindungszeichenfolge in der Verbindungszeichenfolge gespeichert werden. <b>False</b>, wenn das Kennwort gelöscht wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,10 +521,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCredentialsMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Art der Anmeldeinformationen, die für die Serverauthentifizierung verwendet werden soll. <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />Lese-/Schreibzugriff</summary>
+        <summary>Gibt den Typ der Anmeldeinformationen zurück, die für die Serverauthentifizierung verwendet werden sollen, oder legt ihn fest. <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" /> Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Es folgen die Typen der Anmeldeinformationen, die verwendet werden können:</para>
+        <remarks><para>Es folgen die Typen von Anmeldeinformationen, die verwendet werden können:</para>
           <list type="bullet">
             <item>
               <description>
@@ -557,8 +541,7 @@
               </description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionFile">
@@ -587,7 +570,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ein String (<b>Zeichenfolge</b> in c#) zurückgegeben oder festgelegt, der angibt, die Office-Datenverbindungsdatei oder eine vergleichbare Datei, die zum Erstellen der Verbindung verwendet wurde. Lesen/Schreiben</summary>
+        <summary>Gibt eine Zeichenfolge<b>(</b> Zeichenfolge in C#) zurück, die die #A0 oder eine ähnliche Datei angibt, die zum Erstellen der Verbindung verwendet wurde, oder legt sie fest. Lesen/Schreiben</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -618,7 +601,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ein Pfad auf die Originaldatei verwendet, um die Verbindung zu erstellen. Im Fall einer OData-Verbindung ist dies der Speicherort der Datei *.atom oder *.atomsvc verwendet, um die Verbindung zu erstellen. <b>Zeichenfolge</b> (<b>Zeichenfolge</b> in c#) Lese-/Schreibzugriff</summary>
+        <summary>Ein Pfad zur ursprünglichen Datei, die zum Erstellen der Verbindung verwendet wurde. Bei einer #A0 ist dies der Speicherort der *.atom- oder *.atomsvc-Datei, die zum Erstellen der Verbindung verwendet wird. <b>Zeichenfolge</b> (<b>Zeichenfolge</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

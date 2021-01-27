@@ -1,13 +1,5 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Excel.Characters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582362" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Characters" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005992" /></Metadata><TypeSignature Language="C#" Value="public interface Characters" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Characters" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Characters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Characters" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt Zeichen in einem Objekt dar, das Text enthält. Das <b>Characters</b> -Objekt können Sie eine beliebige Abfolge von Zeichen in der vollständigen Textzeichenfolge ändern.</summary>
-    <remarks>
-      <para>Verwenden Sie <b>Characters</b>(<paramref name="start" />, <paramref name="length" />), wobei <paramref name="start" /> ist die Nummer des Zeichens Start und <paramref name="length" /> ist die Anzahl der Zeichen, um ein <b>Characters</b> -Objekt zurückzugeben.</para>
-      <para>Die <b>Characters</b> -Methode ist erforderlich, nur, wenn Sie Teil des Texts eines Objekts ohne den Rest (Sie können nicht die <b>Characters</b> -Methode verwenden, formatieren Sie einen Teil des Texts, wenn das Objekt rich-Text nicht unterstützt) ändern müssen. Um den gesamten Text gleichzeitig zu ändern, können Sie in der Regel die entsprechende Methode oder Eigenschaft direkt auf das Objekt anwenden.</para>
-      <para></para>
-    </remarks>
+    <summary>Stellt Zeichen in einem Objekt dar, das Text enthält. Mit dem <b>Characters</b>-Objekt können Sie eine beliebige Abfolge von Zeichen in der vollständigen Textzeichenfolge ändern.</summary>
+    <remarks><para>Verwenden <b>Sie Characters</b>( , ), wobei die Nummer des Startzeichens und die Anzahl der Zeichen <paramref name="start" /> <paramref name="length" /> <paramref name="start" /> <paramref name="length" /> ist, um ein Characters <b>-Objekt zurückzukehren.</b></para>
+      <para>Die <b>Characters</b>-Methode ist nur erforderlich, wenn Sie den Text eines Objekts teilweise formatieren müssen, ohne den Rest zu ändern (Sie können die <b>Characters</b>-Methode nicht verwenden, um einen Teil des Texts zu formatieren, wenn das Objekt das Rich Text-Format nicht unterstützt.) Um den gesamten Text gleichzeitig zu ändern, können Sie in der Regel die entsprechende Methode oder Eigenschaft direkt auf das Objekt anwenden.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,13 +137,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -205,7 +193,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,8 +220,7 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">
-          <b>String</b> erforderlich. Die einzufügende Zeichenfolge.</param>
+        <param name="String"><b>String</b> erforderlich. Die einzufügende Zeichenfolge.</param>
         <summary>Fügt eine Zeichenfolge ein, die den ausgewählten Zeichen vorangestellt wird.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -293,13 +280,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den phonetischen Text im angegebenen <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> Objekt.</summary>
+        <summary>Gibt den phonetischen Text im angegebenen Objekt zurück oder legt den Text <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie statt der Verwendung dieser Eigenschaft an, die <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> -Auflistung, um eine Zelle phonetischen Informationen hinzu, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> Objekt um die phonetischen Textzeichenfolgen in einer Zelle festzulegen oder zurückzugeben.</para>
-          <para>Sie können diese Eigenschaft nur bei <b>Characters</b> -Objekten, die auf einer einzelnen Zelle basieren.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Anstatt diese Eigenschaft zu verwenden, sollten Sie die Methode der Auflistung verwenden, um einer Zelle phonetische Informationen hinzuzufügen, und die Eigenschaft des Objekts verwenden, um die phonetischen Textzeichenfolgen in einer Zelle zurück oder <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> festlegen.</para>
+          <para>Sie können diese Eigenschaft nur mit <b>Characters-Objekten</b> verwenden, die auf einer einzelnen Zelle basieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
