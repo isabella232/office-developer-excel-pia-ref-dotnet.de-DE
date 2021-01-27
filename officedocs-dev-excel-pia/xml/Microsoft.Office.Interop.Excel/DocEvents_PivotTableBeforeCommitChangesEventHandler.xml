@@ -1,13 +1,5 @@
 <Type Name="DocEvents_PivotTableBeforeCommitChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeCommitChangesEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6686618a6a49df380d5d92722fd1d8bd84c6439c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573437" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeCommitChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6686618a6a49df380d5d92722fd1d8bd84c6439c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012397" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeCommitChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocEvents_PivotTableBeforeCommitChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeCommitChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocEvents_PivotTableBeforeCommitChangesEventHandler(TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
@@ -37,54 +29,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="TargetPivotTable">
-      <span data-ttu-id="43a06-101">Die PivotTable, die um einen commit für die Änderungen enthalten sind</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-101">The PivotTable that contains the changes to commit</span>
-      </span>
-    </param>
-    <param name="ValueChangeStart">
-      <span data-ttu-id="43a06-102">Der Index der ersten Änderung im zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Objekt.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-102">The index to the first change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span>
-      </span>
-      <span data-ttu-id="43a06-103">Der Index wird angegeben durch die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekts der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-103">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span>
-      </span>
-    </param>
-    <param name="ValueChangeEnd">
-      <span data-ttu-id="43a06-104">Der Index der letzten Änderung im zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Objekt.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-104">The index to the last change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span>
-      </span>
-      <span data-ttu-id="43a06-105">Der Index wird angegeben durch die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekts der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-105">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span>
-      </span>
-    </param>
-    <param name="Cancel">
-      <span data-ttu-id="43a06-106">
-        <b>false,</b> Wenn das Ereignis auftritt.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-106">
-          <b>false</b> when the event occurs.</span>
-      </span>
-      <span data-ttu-id="43a06-107">Wenn die Ereignisprozedur dieser Parameter auf <b>true</b>festgelegt wird, sind die Änderungen nicht für die OLAP-Datenquelle der PivotTable ein Commit ausgeführt.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-107">If the event procedure sets this parameter to <b>true</b>, the changes are not committed against the OLAP data source of the PivotTable.</span>
-      </span>
-    </param>
-    <summary>
-      <span data-ttu-id="43a06-108">Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> Ereignis.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-108">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> event.</span>
-      </span>
-      <span data-ttu-id="43a06-109">Das <b>PivotTableBeforeCommitChanges</b> -Ereignis tritt auf, bevor Änderungen für die OLAP-Datenquelle für eine PivotTable ein Commit ausgeführt werden.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="43a06-109">The <b>PivotTableBeforeCommitChanges</b> event occurs before changes are committed against the OLAP data source for a PivotTable.</span>
-      </span>
-    </summary>
+    <param name="TargetPivotTable"><span data-ttu-id="93bac-101">Die PivotTable, die die zu überf?nnlichen Änderungen enthält</span><span class="sxs-lookup"><span data-stu-id="93bac-101">The PivotTable that contains the changes to commit</span></span></param>
+    <param name="ValueChangeStart"><span data-ttu-id="93bac-102">Der Index für die erste Änderung im zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Objekt.</span><span class="sxs-lookup"><span data-stu-id="93bac-102">The index to the first change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span></span> <span data-ttu-id="93bac-103">Der Index wird durch die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> des Objekts in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> angegeben.</span><span class="sxs-lookup"><span data-stu-id="93bac-103">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span></span></param>
+    <param name="ValueChangeEnd"><span data-ttu-id="93bac-104">Der Index bis zur letzten Änderung im zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Objekt.</span><span class="sxs-lookup"><span data-stu-id="93bac-104">The index to the last change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span></span> <span data-ttu-id="93bac-105">Der Index wird durch die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> des Objekts in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> angegeben.</span><span class="sxs-lookup"><span data-stu-id="93bac-105">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span></span></param>
+    <param name="Cancel"><span data-ttu-id="93bac-106"><b>false,</b> wenn das Ereignis auftritt.</span><span class="sxs-lookup"><span data-stu-id="93bac-106"><b>false</b> when the event occurs.</span></span> <span data-ttu-id="93bac-107">Wenn die Ereignisprozedur diesen Parameter auf <b>"true"</b>setzt, werden die Änderungen nicht für die OlAP-Datenquelle der PivotTable festgelegt.</span><span class="sxs-lookup"><span data-stu-id="93bac-107">If the event procedure sets this parameter to <b>true</b>, the changes are not committed against the OLAP data source of the PivotTable.</span></span></param>
+    <summary><span data-ttu-id="93bac-108">Ein <b>Delegattyp,</b> der zum Hinzufügen eines Ereignishandlers für das Ereignis <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="93bac-108">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> event.</span></span> <span data-ttu-id="93bac-109">Das <b>PivotTableBeforeCommitChanges -Ereignis</b> tritt auf, bevor Änderungen an der OLAP-Datenquelle für eine PivotTable vorgenommen werden.</span><span class="sxs-lookup"><span data-stu-id="93bac-109">The <b>PivotTableBeforeCommitChanges</b> event occurs before changes are committed against the OLAP data source for a PivotTable.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
