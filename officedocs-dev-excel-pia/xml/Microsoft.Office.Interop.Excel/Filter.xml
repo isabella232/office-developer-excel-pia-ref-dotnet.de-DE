@@ -1,13 +1,5 @@
 <Type Name="Filter" FullName="Microsoft.Office.Interop.Excel.Filter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576328" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Filter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012243" /></Metadata><TypeSignature Language="C#" Value="public interface Filter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Filter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Filter" />
   <TypeSignature Language="VB.NET" Value="Public Interface Filter" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt einen Filter für eine einzelne Spalte dar. Das <b>Filter</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> Auflistung. Die <b>Filters</b> -Auflistung enthält alle Filter in einem automatisch gefilterten Bereich.</summary>
-    <remarks>
-      <para>Verwenden von <b>Filtern</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Filter-Titel oder eine Indexzahl darstellt, um ein einzelnes <b>Filter</b> -Objekt zurückzugeben.</para>
-      <para>Beachten Sie, dass alle Eigenschaften des <b>Filter</b> -Objekts schreibgeschützt sind. Klicken Sie zum Festlegen dieser Eigenschaften wenden Sie die automatische Filterung manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt.</para>
-      <para></para>
-    </remarks>
+    <summary>Stellt einen Filter für eine einzelne Spalte dar. Das <b>Filter</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> Auflistung. Die <b>Filters</b>-Auflistung enthält alle Filter in einem automatisch gefilterten Bereich.</summary>
+    <remarks><para>Verwenden <b>Sie Filter</b>( ), wobei der Filtertitel oder die Indexnummer, um ein <paramref name="index" /> <paramref name="index" /> einzelnes Filter <b>-Objekt zurück.</b></para>
+      <para>Beachten Sie, dass alle Eigenschaften des <b>Filter</b>-Objekts schreibgeschützt sind. Wenn Sie diese Eigenschaften festlegen möchten, wenden Sie die automatische Filterung manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> Methode des Objekts <see cref="T:Microsoft.Office.Interop.Excel.Range" /> an.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Operator">
@@ -91,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,10 +109,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,12 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator </b>-Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator </b>-Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Criteria1">
@@ -180,7 +166,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den ersten gefilterten Wert für die angegebene Spalte im gefilterten Bereich zurück.</summary>
+        <summary>Gibt den ersten gefilterten Wert für die angegebene Spalte in einem gefilterten Bereich zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,12 +194,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den zweiten gefilterten Wert für die angegebene Spalte im gefilterten Bereich zurück.</summary>
+        <summary>Gibt den zweiten gefilterten Wert für die angegebene Spalte in einem gefilterten Bereich zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn Sie versuchen, die <b>Criteria2</b> -Eigenschaft für einen Filter zugreifen, die nicht zwei Kriterien verwendet wird, tritt ein Fehler auf. Überprüfen der <see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" /> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> Objekt nicht gleich null (0) bevor Sie versuchen, die <b>Criteria2</b> -Eigenschaft zugreifen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Beim Versuch, auf die <b>Criteria2</b>-Eigenschaft eines Filters zuzugreifen, der nur ein Kriterium verwendet, tritt ein Fehler auf. Überprüfen Sie, ob die Eigenschaft eines Objekts nicht gleich Null (0) ist, bevor Sie versuchen, auf die <see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" /> <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> Eigenschaft <b>"Criteria2" zu</b> zugreifen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -239,8 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der angegebene Filter aktiviert ist.</summary>
+        <summary><b>True</b>, wenn der angegebene Filter aktiviert ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +254,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAutoFilterOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Operator an, der die beiden vom angegebenen Filter angewendeten Kriterien zuordnet.</summary>
+        <summary>Gibt den Operator zurück, der die beiden vom angegebenen Filter angewendeten Kriterien zu ordnet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576146" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012523" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode&#xA;Implements _IMsoDispObj" />
@@ -31,41 +23,39 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen Knoten in einem Diagramm dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> -Methode, um einen Knoten zu einem Diagramm oder einem Diagrammknoten hinzufügen.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> -Methode, um einen Knoten aus einem Diagramm oder Diagrammknoten entfernen.</para>
-      <para>Um ein <b>DiagramNode</b> -Objekt zurückzugeben, verwenden Sie eine der folgenden:</para>
+    <remarks><para>Verwenden Sie die Methode, um einem Diagramm oder einem <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> Diagrammknoten einen Knoten hinzuzufügen.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> die Methode, um einen Knoten aus einem Diagramm- oder Diagrammknoten zu entfernen.</para>
+      <para>Verwenden Sie eine der folgenden Optionen, um ein <b>DiagramNode</b> -Objekt zurückzukehren:</para>
       <list type="bullet">
         <item>
-          <description>Des <b>DiagramNode</b> -Objekts <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, oder <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> Methoden oder seine <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> -Eigenschaft</description>
+          <description>Methoden <b>oder eigenschaften des DiagramNode</b> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> -Objekts</description>
         </item>
         <item>
-          <description>Die <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> -Auflistung <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> Methoden oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> Eigenschaften</description>
+          <description>Die <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> Methoden oder Eigenschaften <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> Auflistung</description>
         </item>
         <item>
-          <description>Die <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> -Auflistung <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> Methode</description>
+          <description>Die <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> Methode der <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> Auflistung</description>
         </item>
         <item>
-          <description>Die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> des Objekts oder <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /><b>DiagramNode</b> -Eigenschaft der Auflistung</description>
+          <description>Die <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> <b>DiagramNode-Eigenschaft</b> des Objekts oder der Auflistung</description>
         </item>
       </list>
-      <para>Ein Diagrammknoten kann beenden, oder andere untergeordnete Diagramme, untergeordnete Diagrammknoten oder untergeordneten Formen enthalten. Verweisen Sie auf diese durch Folgendes:</para>
+      <para>Ein Diagrammknoten kann beendet werden oder andere untergeordnete Diagramme, untergeordnete Diagrammknoten oder untergeordnete Formen enthalten. Verweisen Sie auf diese mit den folgenden Informationen:</para>
       <list type="bullet">
         <item>
-          <description>Wenn Sie auf ein untergeordnetes Diagramm verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> Eigenschaft.</description>
+          <description>Verwenden Sie die Eigenschaft, um auf ein untergeordnetes Diagramm zu <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> verweisen.</description>
         </item>
         <item>
-          <description>Um auf einen einzelnen untergeordneten Diagrammknoten verweisen möchten, verwenden Sie die <b>AddNode</b>, <b><b>CloneNode</b>, <b>NextNode</b> -Methode</b> oder die <b>Stamm</b> -Eigenschaft.</description>
+          <description>Um auf einen einzelnen untergeordneten Diagrammknoten zu verweisen, verwenden Sie die <b>Methoden AddNode,</b> <b>CloneNode,</b> <b>NextNode</b> oder <b>PrevNode</b> oder <b>die Root-Eigenschaft.</b></description>
         </item>
         <item>
-          <description>Um auf eine Auflistung von untergeordneten Diagrammknoten verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> Eigenschaft.</description>
+          <description>Verwenden Sie die Eigenschaft, um auf eine Auflistung untergeordneter Diagrammknoten zu <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> verweisen.</description>
         </item>
         <item>
-          <description>Um auf eine Form verweisen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> oder <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> Eigenschaften.</description>
+          <description>Verwenden Sie die oder die Eigenschaften, um auf ein <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> Shape <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> zu verweisen.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -91,9 +81,9 @@
         <Parameter Name="nodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="pos">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />. An der Knoten, relativ zu einem anderen Knoten hinzugefügt wird. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode </b>Standard<b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></param>
-        <param name="nodeType">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />. Der Typ des Knotens. Kann eine der folgenden <b>MsoDiagramNodeType</b> -Konstanten sein:<b>MsoDiagramAssistant</b><b>MsoDiagramNode</b> Standard</param>
-        <summary>Erstellt einen Diagrammknoten. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den neuen Knoten darstellt.</summary>
+        <param name="pos">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> . Wo der Knoten hinzugefügt wird, relativ zu einem anderen Knoten. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>msoAfterLastSibling</b><b>msoAfterNode </b>Standard<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <param name="nodeType">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" /> . Der Knotentyp. Kann eine der folgenden <b>MsoDiagramNodeType</b> -Konstanten sein:<b>msoDiagramAssistant</b><b>msoDiagramNode</b> Default</param>
+        <summary>Erstellt einen Diagrammknoten. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> zurück, das den neuen Knoten darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +114,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +142,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNodeChildren</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> Objekt, das die Auflistung von untergeordneten Knoten für einen bestimmten Knoten darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> Objekt zurück, das die Auflistung der untergeordneten Knoten eines bestimmten Knotens darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,10 +171,10 @@
         <Parameter Name="pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="copyChildren">Erforderlicher <b>boolescher Wert</b>. <b>True,</b> um den Diagrammknoten untergeordneten Elemente sowie klonen.</param>
-        <param name="pTargetNode">Erforderliches <b>DiagramNode</b> -Objekt. Ein Ausdruck, der ein <b>DiagramNode</b> -Objekt zurückgibt, stellt den Knoten, in dem der neue Knoten eingefügt wird.</param>
-        <param name="pos">Optionale <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />. Wenn <paramref name="pTargetNode" /> angegeben ist, gibt an, an der Knoten relativ zum hinzugefügt wird <paramref name="pTargetNode" />. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode </b>Standard<b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></param>
-        <summary>Wird einen Diagrammknoten geklont. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den geklonten Knoten darstellt.</summary>
+        <param name="copyChildren">Erforderlicher <b>Boolean</b>-Wert. <b>"True",</b> wenn auch die kinder des Diagrammknotens geklont werden sollen.</param>
+        <param name="pTargetNode">Erforderliches <b>DiagramNode-Objekt.</b> Ein Ausdruck, der ein <b>DiagramNode -Objekt</b> zurückgibt, das den Knoten darstellt, in dem der neue Knoten platziert wird.</param>
+        <param name="pos">Optional <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> . Wenn <paramref name="pTargetNode" /> angegeben, gibt an, wo der Knoten relativ zu hinzugefügt <paramref name="pTargetNode" /> wird.<b> MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>msoAfterLastSibling</b><b>msoAfterNode </b>Standard<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <summary>Klont einen Diagrammknoten. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> zurück, das den geklonten Knoten darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,13 +205,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -272,7 +260,7 @@
         <ReturnType>Microsoft.Office.Core.IMsoDiagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> -Objekt, das ein Diagramm darstellt.</summary>
+        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> zurück, das ein Diagramm darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,25 +291,23 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen eine Konstanten zur Angabe der Formatierung der untergeordneten Knoten eines Organigramms.</summary>
+        <summary>Gibt eine Konstante zurück oder legt sie fest, um die Formatierung der untergeordneten Knoten eines Organigramms anzugeben.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MsoOrgChartLayoutType</b> kann einer der folgenden <b>MsoOrgChartLayoutType</b> -Konstanten entsprechen.</para>
+        <remarks><para>
+            <b>MsoOrgChartLayoutType kann</b> eine der folgenden <b>MsoOrgChartLayoutType -Konstanten</b> sein.</para>
           <para>
             <b>msoOrgChartLayoutAssistant</b> Platziert untergeordnete Knoten als Assistenten.</para>
           <para>
-            <b>msoOrgChartLayoutBothHanging</b> Platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der linken und rechten Rand.</para>
+            <b>msoOrgChartLayoutBothHanging</b> Platziert untergeordnete Knoten vertikal vom übergeordneten Knoten auf der linken und rechten Seite.</para>
           <para>
-            <b>msoOrgChartLayoutBothHanging</b> Platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der linken Seite.</para>
+            <b>msoOrgChartLayoutLeftHanging</b> Platziert untergeordnete Knoten vertikal vom übergeordneten Knoten auf der linken Seite.</para>
           <para>
-            <b>msoOrgChartLayoutMixed</b> Der Rückgabewert für einen übergeordneten Knoten, der untergeordnete Elemente mit mehr als einem <b>MsoOrgChartLayoutType</b>formatiert wurde.</para>
+            <b>msoOrgChartLayoutMixed</b> Rückgabewert für einen übergeordneten Knoten mit untergeordneten Knoten, die mit mehr als einem <b>MsoOrgChartLayoutType formatiert sind.</b></para>
           <para>
-            <b>msoOrgChartLayoutRightHanging</b> Platziert untergeordnete Knoten vertikal aus dem übergeordneten Knoten auf der rechten Seite.</para>
+            <b>msoOrgChartLayoutRightHanging</b> Platziert untergeordnete Knoten vertikal vom übergeordneten Knoten auf der rechten Seite.</para>
           <para>
             <b>msoOrgChartLayoutStandard</b> Platziert untergeordnete Knoten horizontal unter dem übergeordneten Knoten.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNode">
@@ -348,8 +334,8 @@
         <Parameter Name="pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der Diagrammknoten, in dem der angegebene Knoten verschoben werden sollen.</param>
-        <param name="pos">Erforderliche <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />. Die Position, an den Knoten relativ zum Verschieben <paramref name="TargetNode" />. <b>MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>MsoAfterLastSibling</b><b>MsoAfterNode</b><b>MsoBeforeFirstSibling</b><b>MsoBeforeNode</b></param>
+        <param name="pTargetNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der Diagrammknoten, in den der angegebene Knoten verschoben wird.</param>
+        <param name="pos"><see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />Erforderlich. Die Position, an der der Knoten verschoben werden soll, relativ zu <paramref name="TargetNode" /> .<b> MsoRelativeNodePosition</b> kann eine der folgenden Konstanten sein:<b>msoAfterLastSibling</b><b>msoAfterNode</b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
         <summary>Verschiebt einen Diagrammknoten und alle untergeordneten Knoten in einem Diagramm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +361,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt den nächsten Diagrammknoten in einer Reihe von Knoten. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den neu ausgewählten Knoten darstellt.</summary>
+        <summary>Wählt den nächsten Diagrammknoten in einer Reihe von Knoten aus. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> zurück, das den neu ausgewählten Knoten darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -429,7 +415,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> -Objekt, das den vorherigen Diagrammknoten in einer Auflistung von Diagrammknoten darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt zurück, das den vorherigen Diagrammknoten in einer Auflistung von Diagrammknoten darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -457,12 +443,10 @@
         <Parameter Name="pTargetNode" Type="Microsoft.Office.Interop.Excel.DiagramNode" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der Ziel-Diagrammknoten ersetzt werden.</param>
-        <summary>Einen Ziel-Diagrammknoten ersetzt mit der Quelldiagrammknoten.</summary>
-        <remarks>
-          <para>Der Ziel-Diagrammknoten wird gelöscht, und der Quellknoten einschließlich aller untergeordneten Knoten, an, bei denen der Zieldiagrammknoten war verschoben werden.</para>
-          <para></para>
-        </remarks>
+        <param name="pTargetNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der zu ersetzende Zieldiagrammknoten.</param>
+        <summary>Ersetzt einen Zieldiagrammknoten durch den Quelldiagrammknoten.</summary>
+        <remarks><para>Der Zieldiagrammknoten wird gelöscht, und der Quelldiagrammknoten, einschließlich seiner untergeordneten Knoten, wird an die Stelle verschoben, an der sich der Zieldiagrammknoten befindet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -488,7 +472,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Stammverzeichnis <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt, das der Stammknoten Diagramm gehört.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Stammobjekt zurück, zu dem der Stammdiagrammknoten gehört.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -516,7 +500,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die Form darstellt, der angegebenen Diagrammknoten zugeordnet ist</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die Form darstellt, die mit dem angegebenen Diagrammknoten verknüpft ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -544,8 +528,8 @@
         <Parameter Name="swapChildren" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der Ziel-Diagrammknoten ersetzt werden.</param>
-        <param name="swapChildren">Optionaler <b>Boolean</b>-Wert. Die untergeordneten Knoten der Quell- und Knoten ausgetauscht werden. Alle untergeordneten Diagrammknoten werden zusammen mit ihren entsprechenden Stammknoten verschoben. Der Standardwert ist <b>True</b>, der die untergeordneten Knoten vertauscht.</param>
+        <param name="pTargetNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der zu ersetzende Zieldiagrammknoten.</param>
+        <param name="swapChildren">Optionaler <b>Boolean</b>-Wert. Die untergeordneten Knoten der Ziel- und Quellknoten, die getauscht werden. Alle untergeordneten Diagrammknoten werden zusammen mit den entsprechenden Stammknoten verschoben. Der Standardwert ist <b>"True",</b>wodurch die untergeordneten Knoten ausgetauscht werden.</param>
         <summary>Vertauscht den Quelldiagrammknoten mit einem Zieldiagrammknoten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -573,7 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekts ein Diagrammknoten zugeordnet, die die Form des Textfelds darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die Form des Textfelds darstellt, das einem Diagrammknoten zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -601,8 +585,8 @@
         <Parameter Name="pReceivingNode" Type="Microsoft.Office.Interop.Excel.DiagramNode" />
       </Parameters>
       <Docs>
-        <param name="pReceivingNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der Diagrammknoten für die untergeordneten Knoten aus dem angegebenen Knoten übertragen wird.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekts ein Diagrammknoten zugeordnet, die die Form des Textfelds darstellt.</summary>
+        <param name="pReceivingNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> Objekt. Der Diagrammknoten, der die untergeordneten Knoten empfängt, die vom angegebenen Knoten übertragen werden.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die Form des Textfelds darstellt, das einem Diagrammknoten zugeordnet ist.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

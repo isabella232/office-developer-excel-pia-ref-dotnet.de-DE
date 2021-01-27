@@ -1,13 +1,5 @@
 <Type Name="XmlNamespaces" FullName="Microsoft.Office.Interop.Excel.XmlNamespaces">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574088" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012719" /></Metadata><TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlNamespaces&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Auflistung der <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> Objekte in einer Arbeitsmappe.</summary>
-    <remarks>
-      <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> -Eigenschaft auf ein bestimmtes <b>XmlNamespace</b> -Objekt zuzugreifen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> -Eigenschaft auf eine <b>Zeichenfolge</b> zurück, der die Namespaces aufführt, die einer Arbeitsmappe hinzugefügt wurden.</para>
-      <para></para>
-    </remarks>
+    <summary>Stellt die Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> Objekten in einer Arbeitsmappe dar.</summary>
+    <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> die Eigenschaft, um auf ein bestimmtes <b>XmlNamespace -Objekt zu</b> zugreifen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> die Eigenschaft, um eine <b>Zeichenfolge zurück,</b> die die Namespaces auflistet, die einer Arbeitsmappe hinzugefügt wurden.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +118,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,12 +146,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,15 +207,12 @@
         <Parameter Name="InstallForAllUsers" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b> erforderlich. Der Pfad und der Dateiname des XML-Erweiterungspakets.</param>
-        <param name="InstallForAllUsers">Optionaler <b>Boolean</b>-Wert. <b>True,</b> wird das XML-Erweiterungspaket installiert und für alle Benutzer auf einem Computer zur Verfügung. <b>False</b> steht das XML-Erweiterungspaket nur dem aktuellen Benutzer zur Verfügung. Standard ist <b>False</b>.</param>
+        <param name="Path"><b>String</b> erforderlich. Der Pfad und der Dateiname des XML-Erweiterungspakets.</param>
+        <param name="InstallForAllUsers">Optionaler <b>Boolean</b>-Wert. Beim Wert <b>True</b> wird das XML-Erweiterungspaket installiert und für alle Benutzer eines Computers verfügbar gemacht. Beim Wert <b>False</b> wird das XML-Erweiterungspaket nur für den aktuellen Benutzer verfügbar gemacht. Der Standardwert ist <b>False</b>.</param>
         <summary>Installiert das angegebene XML-Erweiterungspaket auf dem Computer des Benutzers und macht so eine XML-SmartDocument-Lösung für einen oder mehrere Benutzer verfügbar.</summary>
-        <remarks>
-          <para>XML-Features, außer das Speichern von Dateien im XML-Tabellenformat stehen nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003.</para>
+        <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
           <para>Aus Sicherheitsgründen können Sie kein unsigniertes Manifest installieren. Weitere Informationen zu Manifesten finden Sie im Smart Document Software Development Kit (SDK) auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -256,8 +241,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -314,12 +298,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge</b> , die die XML-Namespaces darstellt, die zur Arbeitsmappe hinzugefügt wurden.</summary>
+        <summary>Gibt eine <b>Zeichenfolge</b> , die die XML-Namespaces darstellt, die der Arbeitsmappe hinzugefügt wurden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die Arbeitsmappe mehrere Namespaces enthält, werden die Namespaces durch ein Leerzeichen in die durch die <b>Value</b> -Eigenschaft zurückgegebene Zeichenfolge getrennt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn die Arbeitsmappe mehrere Namespaces enthält, werden die Namespaces durch ein Leerzeichen in der Zeichenfolge getrennt, die von der Value -Eigenschaft <b>zurückgegeben</b> wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="CustomProperty" FullName="Microsoft.Office.Interop.Excel.CustomProperty">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="afd9b6d75b6603043ecdd7f87755c3b197664c26" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582425" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomProperty" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="afd9b6d75b6603043ecdd7f87755c3b197664c26" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012558" /></Metadata><TypeSignature Language="C#" Value="public interface CustomProperty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomProperty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CustomProperty" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomProperty" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt Bezeichnerinformationen dar. Diese Informationen können als Metadaten für XML verwendet werden.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> Methode oder die <see cref="P:Microsoft.Office.Interop.Excel.CustomProperties.Item(System.Object)" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> -Auflistung, um ein <b>CustomProperty</b> -Objekt zurückzugeben.</para>
-      <para>Nachdem ein <b>CustomProperty</b>-Objekt zurückgegeben wurde, können Sie Arbeitsblättern Metadaten hinzufügen, indem Sie die <b>CustomProperties</b>-Eigenschaft mit der <b>Add</b>-Methode verwenden.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> die Methode oder die Eigenschaft der <see cref="P:Microsoft.Office.Interop.Excel.CustomProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> Auflistung, um ein <b>CustomProperty -Objekt zurückzukehren.</b></para>
+      <para>Nachdem ein <b>CustomProperty</b> -Objekt zurückgegeben wurde, können Sie Metadaten zu Arbeitsblättern mithilfe der <b>CustomProperties</b> -Eigenschaft mit der <b>Add -Methode</b> hinzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -91,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,13 +109,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -150,10 +138,8 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <remarks>
-          <para>Sie können benutzerdefinierte Dokumenteigenschaften löschen, jedoch keine integrierte Dokumenteigenschaft.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Sie können benutzerdefinierte Dokumenteigenschaften löschen, jedoch keine integrierte Dokumenteigenschaft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -184,12 +170,11 @@
       <Docs>
         <summary>Gibt den Namen des Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die folgende Tabelle enthält Beispielwerte der <b>Name</b>-Eigenschaft und verwandter Eigenschaften. Dabei wird von einer OLAP-Datenquelle mit dem eindeutigen Namen "[Europa].[Frankreich].[Paris]" und einer Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris" ausgegangen.</para>
+        <remarks><para>Die folgende Tabelle enthält Beispielwerte der <b>Name</b>-Eigenschaft und verwandter Eigenschaften. Dabei wird von einer OLAP-Datenquelle mit dem eindeutigen Namen "[Europa].[Frankreich].[Paris]" und einer Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris" ausgegangen.</para>
           <list type="table">
             <item>
               <term>
-                <b>Beschriftung</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -216,22 +201,21 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Beim Angeben von als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
+          <para>Wenn Sie einen Index in der Auflistung angeben, können Sie <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
           <list type="table">
             <item>
-              <term>Ausdruck. PivotItems ("[Europa]. [ Frankreich]. [Paris] ")</term>
+              <term>Ausdruck. PivotItems("[Europe].[ Frankreich]. [Paris]")</term>
               <description>Ausdruck. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Bei Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> -Eigenschaft so verweisen Sie auf ein bestimmtes Element einer Auflistung, können Sie den Textindexnamen wie in der folgenden Tabelle gezeigt verwenden.</para>
+          <para>Wenn Sie die Eigenschaft verwenden, um auf ein bestimmtes Element einer Auflistung zu verweisen, können Sie den Textindexnamen wie in der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> folgenden Tabelle dargestellt verwenden.</para>
           <list type="table">
             <item>
               <term>[Europa]. [Frankreich]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -288,7 +272,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Wert der benutzerdefinierten Eigenschaft.</summary>
+        <summary>Gibt den Wert der benutzerdefinierten Eigenschaft zurück oder legt den Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

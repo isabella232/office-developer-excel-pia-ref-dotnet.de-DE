@@ -1,13 +1,5 @@
 <Type Name="ModelTable" FullName="Microsoft.Office.Interop.Excel.ModelTable">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9557a6eff1a014e63b48f6d99a6a411ac816710" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582873" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModelTable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c9557a6eff1a014e63b48f6d99a6a411ac816710" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011620" /></Metadata><TypeSignature Language="C#" Value="public interface ModelTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelTable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelTable" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelTable" />
@@ -84,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,12 +104,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Nur-Lese- <b>Ganzzahl</b> (<b>Int</b> in c#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>Ganze</b> Zahl (<b>int</b> in C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C, Zeichenfolge "XCEL zurück".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelTableColumns">
@@ -143,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableColumns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumns" /> -Objekten, die die ModelTable bilden. Schreibgeschützt.</summary>
+        <summary>Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumns" /> Objekten, aus der modelTable. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,7 +161,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>String</b> (<b>Zeichenfolge</b> in c#)-Wert, der den Namen des Objekts darstellt.</summary>
+        <summary>Gibt einen <b>String</b> (<b>Zeichenfolge</b> in C#) Wert, der den Namen des Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +189,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> (C#-<b>Objekt</b> ), der das übergeordnete Objekt des angegebenen repräsentiert <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> Objekt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <b>Object</b> (<b>Objekt</b> in C#) zurück, das das übergeordnete Objekt des angegebenen Objekts <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +217,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Ergebniszeile für die Tabelle Modell zurück. <b>Ganze Zahl</b> (<b>Int</b> in c#) Schreibgeschützt</summary>
+        <summary>Gibt die Gesamtzahl der Zeilen für die Modelltabelle zurück. <b>Ganze</b> Zahl (<b>int</b> in C#) Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -253,7 +243,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aktualisiert die Modell Tabelle Quelle Verbindungen.</summary>
+        <summary>Aktualisiert die Modelltabellen-Quellverbindungen.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,7 +270,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Name der Datenquelle für die Tabelle. Wenn die Tabelle keine Datenquelle hat, wird der Anruf ein Laufzeitfehler generiert. <b>Zeichenfolge</b> (<b>Zeichenfolge</b> in c#) Schreibgeschützt</summary>
+        <summary>Name der Datenquelle für die Tabelle. Wenn die Tabelle keine Datenquelle enthält, generiert der Aufruf einen Laufzeitfehler. <b>Zeichenfolge</b> (<b>Zeichenfolge</b> in C#) Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,7 +298,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Arbeitsmappenverbindung die Objektmodell-Tabelle stammt zurück. Schreibgeschützt.</summary>
+        <summary>Gibt die Arbeitsmappenverbindung zurück, von der die Modelltabelle stammt. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

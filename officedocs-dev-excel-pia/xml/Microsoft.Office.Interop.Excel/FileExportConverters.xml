@@ -1,13 +1,5 @@
 <Type Name="FileExportConverters" FullName="Microsoft.Office.Interop.Excel.FileExportConverters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572457" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012264" /></Metadata><TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileExportConverters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FileExportConverters" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileExportConverters&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> -Objekten, die alle zum Speichern von Dateien verfügbaren Dateikonverter darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Auflistung.</para>
-      <para>Die <b>Add</b> -Methode ist nicht verfügbar für die <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Auflistung. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />Objekte werden während der Installation von Microsoft Office oder durch Installieren von zusätzlichen Konvertern hinzugefügt.</para>
-      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> (Index), wobei Index eine ganze Zahl, um ein einzelnes FileExportConverter-Objekt zurückzugeben. Die Indexnummer stellt die Position des Dateikonverters in der FileExportConverters-Auflistung dar.</para>
-      <para></para>
-    </remarks>
+    <summary>Eine Auflistung von Objekten, die alle zum Speichern von Dateien <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> verfügbaren Dateikonverter darstellen.</summary>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" /> Eigenschaft, um die Auflistung <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> zurückzukehren.</para>
+      <para>Die <b>Add</b> -Methode ist für die Auflistung nicht <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> verfügbar. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> werden während der Installation von Microsoft Office oder durch die Installation von zusätzlichen Konvertern hinzugefügt.</para>
+      <para>Verwenden <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Sie (Index), wobei Index eine ganze Zahl ist, um ein einzelnes FileExportConverter -Objekt zurückgibt. Die Indexnummer stellt die Position des Dateikonverters in der FileExportConverters-Auflistung dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -73,9 +63,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>To be added.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,10 +90,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +118,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Anzahl der Dateikonverter in der Auflistung darstellt. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt einen <b>Wert vom Typ Integer</b> zurück, der die Anzahl der Dateikonverter in der Auflistung darstellt. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,14 +146,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> -Konstante, die die Anwendung angibt, in dem das angegebene Objekt erstellt wurde. Schreibgeschützter Long-Wert.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> Konstante zurück, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter Long-Wert.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt. Die Creator-Eigenschaft wurde für die Verwendung in Microsoft Excel für den Macintosh entwickelt, bei dem jede Anwendung einen aus vier Zeichen bestehenden Urhebercode besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -200,9 +180,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>
-          <see cref="T:System.Collections.IEnumerator" />
-        </returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,10 +211,8 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>Gibt eine einzelne <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> -Objekt aus einer Auflistung.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />
-        </value>
+        <summary>Gibt ein einzelnes <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> Objekt aus einer Auflistung zurück.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,10 +239,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> , das das übergeordnete Objekt des angegebenen repräsentiert <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt ein <b>Objekt</b> , das das übergeordnete Objekt der angegebenen Auflistung <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> darstellt. Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
