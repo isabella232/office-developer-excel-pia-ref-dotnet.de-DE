@@ -1,13 +1,5 @@
 <Type Name="Hyperlinks" FullName="Microsoft.Office.Interop.Excel.Hyperlinks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582705" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003430" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlinks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlinks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlinks&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Auflistung der Hyperlinks für ein Arbeitsblatt oder einen Bereich dar. Jeder Hyperlink wird dargestellt durch ein <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> Objekt.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Hyperlinks</b> -Eigenschaft um der <b>Hyperlinks</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> -Methode, um einen Hyperlink erstellen und der <b>Hyperlinks</b> -Auflistung hinzugefügt.</para>
-      <para></para>
-    </remarks>
+    <summary>Stellt die Auflistung der Hyperlinks für ein Arbeitsblatt oder einen Bereich dar. Jeder Hyperlink wird durch ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> dargestellt.</summary>
+    <remarks><para>Verwenden Sie die <b>Hyperlinks</b> -Eigenschaft um der <b>Hyperlinks</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> die Methode, um einen Hyperlink zu erstellen und der Hyperlinks <b>-Auflistung</b> hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,19 +92,15 @@
         <Parameter Name="TextToDisplay" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Anchor">
-          <b>Objekt</b>erforderlich. Der Anker für den Hyperlink. Kann entweder ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt.</param>
-        <param name="Address">
-          <b>String</b> erforderlich. Die Adresse des Hyperlinks.</param>
-        <param name="SubAddress">Optionales- <b>Objekt</b>. Die Unteradresse des Hyperlinks.</param>
-        <param name="ScreenTip">Optionales- <b>Objekt</b>. Der anzuzeigende Bildschirmhinweistext, wenn der Mauszeiger über dem Hyperlink positioniert wird.</param>
-        <param name="TextToDisplay">Optionales- <b>Objekt</b>. Der für den Hyperlink zurückzugebende Text.</param>
-        <summary>Fügt dem angegebenen Bereich oder der angegebenen Form einen Hyperlink hinzu. Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> Objekt.</summary>
+        <param name="Anchor">Required <b>-Objekt</b>. Anker für den Hyperlink. Dies kann ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Range" /> oder ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt sein.</param>
+        <param name="Address"><b>String</b> erforderlich. Adresse des Hyperlinks.</param>
+        <param name="SubAddress">Optionales <b>Objekt</b>. Unteradresse des Hyperlinks.</param>
+        <param name="ScreenTip">Optionales <b>Objekt</b>. Der Bildschirmtipp, der angezeigt wird, wenn der Mauszeiger über dem Hyperlink platziert wird.</param>
+        <param name="TextToDisplay">Optionales <b>Objekt</b>. Der Text, der für den Hyperlink angezeigt wird.</param>
+        <summary>Fügt dem angegebenen Bereich oder der Form einen Hyperlink hinzu. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Bei der Angabe der <paramref name="TextToDisplay" /> -Argument der Text muss eine Zeichenfolge sein.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn Sie das Argument <paramref name="TextToDisplay" /> angeben, muss der Text eine Zeichenfolge sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -140,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,13 +182,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -288,8 +272,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

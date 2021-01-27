@@ -1,13 +1,5 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578281" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ControlFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003920" /></Metadata><TypeSignature Language="C#" Value="public interface ControlFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ControlFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ControlFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ControlFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Enthält Eigenschaften von Microsoft Excel-Steuerelementen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> Eigenschaft, um ein <b>ControlFormat</b> -Objekt zurückzugeben.</para>
-      <para>Wenn die Form nicht um ein Steuerelement handelt, werden die <b>ControlFormat</b> -Eigenschaft ein Fehler auftritt, und wenn das Steuerelement ein Listenfeld wird nicht die <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> Eigenschaft zu einem Fehler.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> Eigenschaft, um ein <b>ControlFormat -Objekt zurück.</b></para>
+      <para>Wenn das Shape kein Steuerelement ist, schlägt die <b>ControlFormat</b> -Eigenschaft fehl, und wenn das Steuerelement kein Listenfeld ist, schlägt die <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> Eigenschaft fehl.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,14 +87,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>String</b> erforderlich. Der Text, der hinzugefügt werden soll</param>
-        <param name="Index">Optionales- <b>Objekt</b>. Die Position des neuen Eintrags. Wenn die Liste weniger Einträge als der angegebene Index hat, werden leere Elemente vom Ende der Liste der angegebenen Position hinzugefügt. Wenn dieses Argument ausgelassen wird, wird das Element an der vorhandenen Liste angefügt.</param>
+        <param name="Text"><b>String</b> erforderlich. Der Text, der hinzugefügt werden soll</param>
+        <param name="Index">Optionales <b>Objekt</b>. Die Position des neuen Eintrags. Falls die Liste weniger Einträge enthält als der angegebene Index, werden leere Elemente vom Ende der Liste an der angegebenen Position hinzugefügt. Wenn dieses Argument nicht angegeben wird, wird das Element an die bestehende Liste angehängt.</param>
         <summary>Fügt einem Listenfeld oder einem Kombinationsfeld ein Element hinzu.</summary>
-        <remarks>
-          <para>Mit dieser Methode werden alle festgelegten durch die <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei Verwendung dieser Methode wird jeder von der Eigenschaft angegebene Bereich <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> entfernt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -130,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,13 +145,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownLines">
@@ -193,7 +178,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Anzahl der Zeilen in der Dropdownteil des Kombinationsfelds angezeigt.</summary>
+        <summary>Gibt die Anzahl der Listenzeilen zurück, die im Dropdownbereich eines Kombinationsfelds angezeigt werden, oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,8 +209,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Objekt aktiviert ist.</summary>
+        <summary><b>True</b>, wenn das Objekt aktiviert ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +240,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Betrag, den die Bildlaufleiste Feld erhöht oder verringert für eine Seite einen Bildlauf (wenn der Benutzer in der Bildlaufleiste Textkörper Region klickt).</summary>
+        <summary>Gibt den Wert zurück, um den das Bildlauffeld für einen Bildlauf inkrementiert oder dekrementiert wird, oder legt diesen Wert fest (wenn der Benutzer auf den Textbereich der Bildlaufleiste klickt).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,13 +271,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Arbeitsblattbereich mit den Wert des Steuerelements verknüpft ist.</summary>
+        <summary>Gibt den mit dem Wert des Steuerelements verknüpften Arbeitsblattbereich zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn Sie einen Wert in der Zelle einfügen, nimmt das Steuerelement diesen Wert. Wenn Sie den Wert des Steuerelements ändern, wird dieser Wert dagegen auch in der Zelle eingefügt.</para>
+        <remarks><para>Wenn Sie in der Zelle einen Wert ablegen, nimmt das Steuerelement diesen Wert an. Ebenso wird, wenn Sie den Wert des Steuerelements ändern, dieser Wert auch in der Zelle abgelegt.</para>
           <para>Diese Eigenschaft kann in Listenfeldern mit Mehrfachmarkierung nicht verwendet werden.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -322,13 +304,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Die Indexnummer des einzelnen Texteintrag festgelegt oder zurückgegeben werden. Wenn dieses Argument ausgelassen wird, wird die gesamte Liste zurückgegebene oder festgelegte als ein Array von Zeichenfolgen.</param>
+        <param name="Index">Optionales <b>Objekt</b>. Die Indexnummer eines einzelnen festzulegenden oder zurückzugebenden Texteintrags. Wenn dieses Argument nicht angegeben wird, wird die gesamte Liste als Array mit Zeichenfolgen zurückgegeben oder festgelegt.</param>
         <summary>Gibt die Texteinträge des angegebenen Listenfelds oder des Kombinationsfelds als Matrix von Zeichenfolgen zurück oder legt die Einträge fest. Gibt auch einen einzelnen Texteintrag zurück oder legt ihn fest. Befinden sich keine Einträge in der Liste, so tritt ein Fehler auf.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Durch Festlegen dieser Eigenschaft werden alle festgelegten durch die <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Durch Festlegen dieser Eigenschaft werden alle von der Eigenschaft angegebenen Bereich <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> entfernt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListCount">
@@ -357,7 +337,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Einträge in einem Listenfeld oder Kombinationsfeld zurück. Gibt 0 (null) zurück, wenn es keine Einträge in der Liste sind.</summary>
+        <summary>Gibt die Anzahl der Einträge in einem Listenfeld oder Kombinationsfeld zurück. Gibt 0 (Null) zurück, wenn die Liste keine Einträge enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,14 +368,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Arbeitsblattbereich verwendet, um die angegebene Listenfeld ausgefüllt.</summary>
+        <summary>Gibt den Arbeitsblattbereich zurück, mit dem das angegebene Listenfeld ausgefüllt wird, oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Durch Festlegen dieser Eigenschaft löscht alle vorhandenen Liste im Listenfeld.</para>
+        <remarks><para>Ist diese Eigenschaft festgelegt, werden alle im Listenfeld bereits bestehenden Listen zerstört.</para>
           <para>Microsoft Excel liest den Inhalt jeder Zelle des Bereichs und fügt die Zellwerte in das Listenfeld ein. In der Liste werden Änderungen in den Zellen des Bereichs protokolliert.</para>
-          <para>Wenn die Liste im Listenfeld erstellt wurde, mit der <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> -Methode, gibt diese Eigenschaft eine leere Zeichenfolge zurück ("").</para>
-          <para></para>
-        </remarks>
+          <para>Wenn die Liste im Listenfeld mit der Methode erstellt wurde, gibt <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> diese Eigenschaft eine leere Zeichenfolge ("") zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndex">
@@ -424,7 +402,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt oder die Indexnummer des aktuell ausgewählten Elements in einem Listenfeld oder Kombinationsfeld festgelegt.</summary>
+        <summary>Gibt die Indexnummer des aktuell markierten Elements in einem Listenfeld oder einem Kombinationsfeld zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,8 +433,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text im angegebenen Objekt gesperrt wird, um die Änderungen zu verhindern, wenn die Arbeitsmappe geschützt ist.</summary>
+        <summary><b>True</b>, falls der Text im angegebenen Objekt gesperrt wird, um Änderungen zu vermeiden, wenn die Arbeitsmappe geschützt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,12 +464,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den maximalen Wert einer Bildlaufleiste oder eines Drehfelds Bereich. Die Bildlaufleiste oder das Drehfeld nehmen keine Werte, die größer als dieser Maximalwert.</summary>
+        <summary>Gibt den Maximalwert eines Bildlaufleisten- oder Drehfeldbereichs zurück oder legt ihn fest. Die Bildlaufleiste oder das Drehfeld nehmen keine Werte an, die diesen Maximalwert übersteigen.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Wert der <b>Max</b> -Eigenschaft muss größer als der Wert der <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Der Wert der Eigenschaft <b>"Max"</b> muss größer als der Wert der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" /> sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -521,12 +496,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den minimalen Wert einer Bildlaufleiste oder eines Drehfelds Bereich. Die Bildlaufleiste oder das Drehfeld nehmen keine Werte kleiner als dieser Mindestwert.</summary>
+        <summary>Gibt den Minimalwert eines Bildlaufleisten- oder Drehfeldbereichs zurück oder legt ihn fest. Die Bildlaufleiste oder das Drehfeld nehmen keine Werte an, die unter diesem Minimalwert liegen.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Wert der <b>Min</b> -Eigenschaft muss kleiner als der Wert der <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Der Wert der Eigenschaft <b>Min</b> muss kleiner als der Wert der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" /> sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiSelect">
@@ -555,16 +528,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Auswahlmodus des angegebenen Listenfelds. Kann eine der folgenden Konstanten sein: <b>XlNone</b>, <b>XlSimple</b>oder <b>XlExtended</b>.</summary>
+        <summary>Gibt den Auswahlmodus des angegebenen Listenfelds zurück oder legt ihn fest. Dies kann eine der folgenden Konstanten sein: <b>xlNone</b>, <b>xlSimple</b> oder <b>xlExtended</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Einfache Auswahl (<b>xlNone</b>) ermöglicht nur das Markieren jeweils eines Elements. Durch Drücken der LEERTASTE oder Klicken der Maustaste wird die Markierung des momentan markierten Elements aufgehoben und das Element markiert, auf das geklickt wurde.</para>
-          <para>Einfache Multiselect (<b>XlSimple</b>) Schaltet die Auswahl für ein Element in der Liste klicken sie mit der Maus oder drücken die LEERTASTE, wenn der Fokus auf das Element befindet. Dieser Modus eignet sich für Auswahllisten, in welche dort sind häufig ausgewählt mehrere Elemente.</para>
-          <para>Erweiterte Multiselect (<b>XlExtended</b>) verhält sich wie in der Regel ein Listenfeld mit einfacher Auswahl. Wenn Sie ein Element klicken, brechen Sie alle andere Auswahl. Wenn Sie beim Klicken mit der Maus oder Drücken einer Pfeiltaste Sie die UMSCHALTTASTE GEDRÜCKT halten, wählen Sie Elemente nacheinander aus dem aktuellen Element aus. Wenn Sie beim Klicken mit der Maus Sie STRG GEDRÜCKT halten, fügen Sie einzelne Elemente der Liste. In diesem Modus ist geeignet, wenn mehrere Elemente zulässig sind, aber nicht häufig verwendet.</para>
-          <para>Sie können die <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> oder <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> Eigenschaft zum Zurückgeben oder Festlegen des ausgewählten Elements in einem Listenfeld mit einfacher Auswahl.</para>
-          <para>Sie können nicht mit Listenfelder Verknüpfen der <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Einfache Auswahl (<b>xlNone</b>) ermöglicht nur das Markieren jeweils eines Elements. Durch Drücken der LEERTASTE oder Klicken der Maustaste wird die Markierung des momentan markierten Elements aufgehoben und das Element markiert, auf das geklickt wurde.</para>
+          <para>Einfache Mehrfachauswahl (<b>xlSimple</b>) schaltet die Auswahl für ein Element in der Liste um, auf das Sie mit der Maus klicken, oder drücken Sie die LEERTASTE, wenn sich der Fokus auf dem Element befindet. Dieser Modus ist bei Auswahllisten sinnvoll, in denen oft mehrere Elemente markiert werden.</para>
+          <para>Erweiterte Mehrfachauswahl (<b>xlExtended</b>) verhält sich in der Regel wie ein Listenfeld mit einer Auswahl. Wenn Sie auf ein Element klicken, brechen Sie alle anderen Auswahlen ab. Wird beim Klicken mit der Maus oder beim Drücken der Pfeiltasten die UMSCHALTTASTE gedrückt gehalten, so werden alle Elemente zwischen dem anfänglich markierten und dem danach markierten Element als Block markiert. Wird beim Klicken mit der Maus STRG gedrückt, können einzelne unzusammenhängende Elemente markiert werden. Dieser Modus bietet sich an, wenn Mehrfachmarkierungen zwar erlaubt sind, aber nicht oft verwendet werden.</para>
+          <para>Sie können die Eigenschaft oder die Eigenschaft verwenden, um das ausgewählte Element in einem Listenfeld mit einzelner <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> Auswahl zurück- und festlegen.</para>
+          <para>Sie können Listenfelder mit Mehrfachauswahl nicht mithilfe der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> verknüpfen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -621,8 +592,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Objekt gedruckt wird, wenn das Dokument gedruckt wird.</summary>
+        <summary><b>True</b>, wenn das Objekt zusammen mit dem Dokument gedruckt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -675,15 +645,12 @@
         <Parameter Name="Count" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Die Nummer des ersten Elements entfernt werden soll. Gültige Werte reichen von 1 auf die Anzahl der Elemente in der Liste (zurückgegebene der <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" /> -Eigenschaft).</param>
-        <param name="Count">Optionales- <b>Objekt</b>. Die Anzahl der Elemente, die entfernt werden soll, beginnend beim Element <paramref name="Index" />. Wenn dieses Argument ausgelassen wird, wird ein Element entfernt. Wenn <paramref name="Index" />  +  <paramref name="Count" /> übersteigt die Anzahl der Elemente in der Liste, die alle Elemente aus <paramref name="Index" /> bis zum Ende der Liste ohne Auftreten eines Fehlers entfernt.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Die Nummer des ersten elements, das entfernt werden soll. Gültige Werte liegen zwischen 1 und der Anzahl der Elemente in der Liste (die von der Eigenschaft zurückgegeben <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" /> werden).</param>
+        <param name="Count">Optionales <b>Objekt</b>. Die Anzahl der Elemente, die entfernt werden sollen, beginnend beim <paramref name="Index" /> Element. Wenn Sie dieses Argument nicht angeben, wird ein Element entfernt. Wenn die Anzahl der Elemente in der Liste überschreitet, werden alle Elemente vom Ende der Liste ohne <paramref name="Index" />  +  <paramref name="Count" /> <paramref name="Index" /> Fehler entfernt.</param>
         <summary>Entfernt ein oder mehrere Elemente aus einem Listenfeld oder Kombinationsfeld.</summary>
-        <remarks>
-          <para>Falls für das angegebene Objekt ein Füllbereich definiert ist, kann diese Methode nicht erfolgreich ausgeführt werden.</para>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> -Methode, um alle Einträge aus einem Microsoft Excel-Listenfeld oder Kombinationsfeld zu entfernen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Falls für das angegebene Objekt ein Füllbereich definiert ist, kann diese Methode nicht erfolgreich ausgeführt werden.</para>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> die Methode, um alle Einträge aus einem Microsoft Excel-Listen- oder Kombinationsfeld zu entfernen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallChange">
@@ -712,7 +679,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Betrag, um die Bildlaufleiste oder das Drehfeld erhöht oder verringert für eine Bildlaufleiste Zeile (wenn der Benutzer einen Pfeil klickt) ist.</summary>
+        <summary>Gibt den Wert zurück oder legt den Wert fest, um den die Bildlaufleiste oder das Drehfeld nach oben oder nach unten geändert wird (wenn der Benutzer auf einen Pfeil klickt).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -743,7 +710,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Name des angegeben Steuerelementformats.</summary>
+        <summary>Der Name des angegebenen Steuerelementformats.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
