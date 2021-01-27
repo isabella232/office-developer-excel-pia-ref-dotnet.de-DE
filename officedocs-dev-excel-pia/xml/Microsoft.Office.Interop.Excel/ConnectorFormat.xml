@@ -1,13 +1,5 @@
 <Type Name="ConnectorFormat" FullName="Microsoft.Office.Interop.Excel.ConnectorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6e2dfed647b41c630904642100343ae25d044efb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586114" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6e2dfed647b41c630904642100343ae25d044efb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003941" /></Metadata><TypeSignature Language="C#" Value="public interface ConnectorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ConnectorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ConnectorFormat" />
@@ -29,89 +21,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="697cd-101">Enthält Eigenschaften und Methoden, die für Verbindungen gelten.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="697cd-101">Contains properties and methods that apply to connectors.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="697cd-p101">Eine Verbindung ist eine Linie, die zwei andere Formen mit als "Verbindungsseiten" bezeichneten Punkten zusammenfügt. Wenn Sie die verbundenen Formen neu anordnen, wird die Geometrie der Verbindung automatisch angepasst, sodass die Formen verbunden bleiben.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-p101">A connector is a line that attaches two other shapes at points called connection sites. If you rearrange shapes that are connected, the geometry of the connector will be automatically adjusted so that the shapes remain connected.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="697cd-104">Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> Eigenschaft, um ein <b>ConnectorFormat</b> -Objekt zurückzugeben.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> property to return a <b>ConnectorFormat</b> object.</span>
-        </span>
-        <span data-ttu-id="697cd-105">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> und <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> Methoden verwenden, um den Enden einer Verbindung mit anderen Formen im Dokument verbinden.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> and <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> methods to attach the ends of the connector to other shapes in the document.</span>
-        </span>
-        <span data-ttu-id="697cd-106">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> -Methode, um automatisch den kürzesten Pfad zwischen den beiden Formen, die durch die Verbindung verbundenen suchen.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method to automatically find the shortest path between the two shapes connected by the connector.</span>
-        </span>
-        <span data-ttu-id="697cd-107">Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> Eigenschaft, um festzustellen, ob eine Form eine Verbindung ist.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-107">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> property to see whether a shape is a connector.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="697cd-108">Beachten Sie, dass Sie eine Größe und Position zuweisen, wenn Sie eine Verbindung zum Hinzufügen der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> -Auflistung, aber die Größe und Position werden automatisch angepasst, wenn der Anfang und Ende der Verbindung mit anderen Formen in der Auflistung angefügt.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-108">Note that you assign a size and a position when you add a connector to the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection, but the size and position are automatically adjusted when you attach the beginning and end of the connector to other shapes in the collection.</span>
-        </span>
-        <span data-ttu-id="697cd-109">Wenn Sie eine Verbindung mit anderen Formen verbinden möchten, sind die ursprüngliche Größe und Position die von Ihnen angegebenen nicht relevant.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-109">Therefore, if you intend to attach a connector to other shapes, the initial size and position you specify are irrelevant.</span>
-        </span>
-        <span data-ttu-id="697cd-110">Ebenso Sie festlegen, welche Verbindungsseiten einer Form mit der Verbindung, wenn Sie die Verbindung verbinden, aber die <b>RerouteConnections</b> -Methode verwenden, nachdem die Verbindung verbunden ist möglicherweise die Verbindungsseiten die Verbindung, und Ihre ursprüngliche Auswahl von Verbindungsseiten irrelevant machen ändern.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-110">Likewise, you specify which connection sites on a shape to attach the connector to when you attach the connector, but using the <b>RerouteConnections</b> method after the connector is attached may change which connection sites the connector attaches to, making your original choice of connection sites irrelevant.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="697cd-111">Verbindungsseiten werden nach den Regeln nummeriert, die in der folgenden Tabelle verzeichnet sind.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="697cd-111">Connection sites are generally numbered according to the rules presented in the following table.</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="80cb3-101">Enthält Eigenschaften und Methoden, die für Verbindungen gelten.</span><span class="sxs-lookup"><span data-stu-id="80cb3-101">Contains properties and methods that apply to connectors.</span></span></summary>
+    <remarks><para><span data-ttu-id="80cb3-p101">Eine Verbindung ist eine Linie, die zwei andere Formen mit als "Verbindungsseiten" bezeichneten Punkten zusammenfügt. Wenn Sie die verbundenen Formen neu anordnen, wird die Geometrie der Verbindung automatisch angepasst, sodass die Formen verbunden bleiben.</span><span class="sxs-lookup"><span data-stu-id="80cb3-p101">A connector is a line that attaches two other shapes at points called connection sites. If you rearrange shapes that are connected, the geometry of the connector will be automatically adjusted so that the shapes remain connected.</span></span></para>
+      <para><span data-ttu-id="80cb3-104">Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> Eigenschaft, um ein <b>ConnectorFormat -Objekt zurück.</b></span><span class="sxs-lookup"><span data-stu-id="80cb3-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> property to return a <b>ConnectorFormat</b> object.</span></span> <span data-ttu-id="80cb3-105">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> die <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> Und-Methoden, um die Enden der Verbindung an andere Formen im Dokument anfügen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> and <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> methods to attach the ends of the connector to other shapes in the document.</span></span> <span data-ttu-id="80cb3-106">Verwenden Sie die Methode, um automatisch den kürzesten Pfad zwischen den beiden Formen zu finden, die <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> durch die Verbindung verbunden sind.</span><span class="sxs-lookup"><span data-stu-id="80cb3-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method to automatically find the shortest path between the two shapes connected by the connector.</span></span> <span data-ttu-id="80cb3-107">Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> Eigenschaft, um festzustellen, ob es sich bei einer Form um eine Verbindung handelt.</span><span class="sxs-lookup"><span data-stu-id="80cb3-107">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> property to see whether a shape is a connector.</span></span></para>
+      <para><span data-ttu-id="80cb3-108">Beachten Sie, dass Sie eine Größe und eine Position zuweisen, wenn Sie der Auflistung eine Verbindung hinzufügen. Die Größe und Position werden jedoch automatisch angepasst, wenn Sie den Anfang und das Ende der Verbindung an andere Formen in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> anfügen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-108">Note that you assign a size and a position when you add a connector to the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection, but the size and position are automatically adjusted when you attach the beginning and end of the connector to other shapes in the collection.</span></span> <span data-ttu-id="80cb3-109">Wenn Sie eine Verbindung mit anderen Formen verbinden möchten, sind die ursprüngliche Größe und Position die von Ihnen angegebenen nicht relevant.</span><span class="sxs-lookup"><span data-stu-id="80cb3-109">Therefore, if you intend to attach a connector to other shapes, the initial size and position you specify are irrelevant.</span></span> <span data-ttu-id="80cb3-110">Ebenso Sie festlegen, welche Verbindungsseiten einer Form mit der Verbindung, wenn Sie die Verbindung verbinden, aber die <b>RerouteConnections</b> -Methode verwenden, nachdem die Verbindung verbunden ist möglicherweise die Verbindungsseiten die Verbindung, und Ihre ursprüngliche Auswahl von Verbindungsseiten irrelevant machen ändern.</span><span class="sxs-lookup"><span data-stu-id="80cb3-110">Likewise, you specify which connection sites on a shape to attach the connector to when you attach the connector, but using the <b>RerouteConnections</b> method after the connector is attached may change which connection sites the connector attaches to, making your original choice of connection sites irrelevant.</span></span></para>
+      <para><span data-ttu-id="80cb3-111">Verbindungsseiten werden nach den Regeln nummeriert, die in der folgenden Tabelle verzeichnet sind.</span><span class="sxs-lookup"><span data-stu-id="80cb3-111">Connection sites are generally numbered according to the rules presented in the following table.</span></span></para>
       <list type="table">
         <item>
-          <term>
-            <span data-ttu-id="697cd-112">AutoFormen, WordArt, Grafiken und OLE-Objekte</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-112">AutoShapes, WordArt, pictures, and OLE objects</span>
-            </span>
-          </term>
-          <description>
-            <span data-ttu-id="697cd-113">Die Verbindungsseiten werden von oben fortlaufend entgegen dem Uhrzeigersinn nummeriert.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-113">The connection sites are numbered starting at the top and proceeding counterclockwise.</span>
-            </span>
-          </description>
+          <term><span data-ttu-id="80cb3-112">AutoFormen, WordArt, Grafiken und OLE-Objekte</span><span class="sxs-lookup"><span data-stu-id="80cb3-112">AutoShapes, WordArt, pictures, and OLE objects</span></span></term>
+          <description><span data-ttu-id="80cb3-113">Die Verbindungsseiten werden von oben fortlaufend entgegen dem Uhrzeigersinn nummeriert.</span><span class="sxs-lookup"><span data-stu-id="80cb3-113">The connection sites are numbered starting at the top and proceeding counterclockwise.</span></span></description>
         </item>
         <item>
-          <term>
-            <span data-ttu-id="697cd-114">Freihandformen</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-114">Freeforms</span>
-            </span>
-          </term>
-          <description>
-            <span data-ttu-id="697cd-115">Die Verbindungsseiten sind die Scheitelpunkte, die den Nummern der Scheitelpunkte entsprechen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-115">The connection sites are the vertices, and they correspond to the vertex numbers.</span>
-            </span>
-          </description>
+          <term><span data-ttu-id="80cb3-114">Freihandformen</span><span class="sxs-lookup"><span data-stu-id="80cb3-114">Freeforms</span></span></term>
+          <description><span data-ttu-id="80cb3-115">Die Verbindungsseiten sind die Scheitelpunkte, die den Nummern der Scheitelpunkte entsprechen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-115">The connection sites are the vertices, and they correspond to the vertex numbers.</span></span></description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -137,12 +62,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-116">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-116">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="80cb3-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,68 +91,12 @@
         <Parameter Name="ConnectionSite" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ConnectedShape">
-          <span data-ttu-id="697cd-117">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-117">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
-          </span>
-          <span data-ttu-id="697cd-118">Die Form, der der Anfang der Verbindung zugeordnet werden soll.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-118">The shape to attach the beginning of the connector to.</span>
-          </span>
-          <span data-ttu-id="697cd-119">Das angegebene <b>Shape</b> -Objekt muss sich in derselben <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung wie die Verbindung.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-119">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
-          </span>
-        </param>
-        <param name="ConnectionSite">
-          <span data-ttu-id="697cd-120">
-            <b>Integer</b>erforderlich.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-120">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="697cd-121">Ein Verbindungspunkt auf das Shape durch angegebenen <paramref name="ConnectedShape" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-121">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
-          </span>
-          <span data-ttu-id="697cd-122">Muss eine ganze Zahl zwischen 1 und die ganze Zahl zurückgegeben, die durch die <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> -Eigenschaft der angegebenen Form.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-122">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
-          </span>
-          <span data-ttu-id="697cd-123">Wenn die Verbindung automatisch den kürzesten Pfad zwischen den beiden Formen eine Verbindung hergestellt werden soll, geben Sie eine gültige ganze Zahl für dieses Argument und Verwenden der <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> -Methode, nachdem die Verbindung mit beiden Formen an beiden Enden verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-123">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="697cd-124">Ordnet einer angegebenen Form den Anfang der angegebenen Verbindung zu.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-124">Attaches the beginning of the specified connector to a specified shape.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-125">Wenn bereits eine Verbindung zwischen den Anfang der Verbindung und eine andere Form vorhanden ist, wird diese Verbindung unterbrochen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-125">If there’s already a connection between the beginning of the connector and another shape, that connection is broken.</span>
-            </span>
-            <span data-ttu-id="697cd-126">Wenn der Anfang der Verbindung noch nicht an der angegebenen Verbindungsseite positioniert, wird diese Methode verschiebt den Anfang der Verbindung zu der Verbindungsseite und passt die Größe und Position der Verbindung.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-126">If the beginning of the connector isn’t already positioned at the specified connecting site, this method moves the beginning of the connector to the connecting site and adjusts the size and position of the connector.</span>
-            </span>
-            <span data-ttu-id="697cd-127">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> -Methode, um das Ende der Verbindung mit einer Form zu verbinden.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-127">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the end of the connector to a shape.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-128">Wenn Sie eine Verbindung mit einem Objekt verbinden, werden Größe und Position der Verbindung bei Bedarf automatisch angepasst.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-128">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="ConnectedShape"><span data-ttu-id="80cb3-117">Erforderliches <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt.</span><span class="sxs-lookup"><span data-stu-id="80cb3-117">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span></span> <span data-ttu-id="80cb3-118">Die Form, der der Anfang der Verbindung zugeordnet werden soll.</span><span class="sxs-lookup"><span data-stu-id="80cb3-118">The shape to attach the beginning of the connector to.</span></span> <span data-ttu-id="80cb3-119">Das angegebene <b>Shape -Objekt</b> muss sich in derselben <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung wie die Verbindung.</span><span class="sxs-lookup"><span data-stu-id="80cb3-119">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span></span></param>
+        <param name="ConnectionSite"><span data-ttu-id="80cb3-120">Erforderliche <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="80cb3-120">Required <b>Integer</b>.</span></span> <span data-ttu-id="80cb3-121">Eine Verbindungsseite für das durch . <paramref name="ConnectedShape" /></span><span class="sxs-lookup"><span data-stu-id="80cb3-121">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span></span> <span data-ttu-id="80cb3-122">Muss eine ganze Zahl zwischen 1 und der ganzen Zahl sein, die von der <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> Eigenschaft der angegebenen Form zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="80cb3-122">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span></span> <span data-ttu-id="80cb3-123">Wenn die Verbindung automatisch den kürzesten Pfad zwischen den beiden Formen finden soll, die sie verbindet, geben Sie eine gültige ganze Zahl für dieses Argument an, und verwenden Sie dann die Methode, nachdem die Verbindung an beiden Enden an Shapes angefügt <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> wurde.</span><span class="sxs-lookup"><span data-stu-id="80cb3-123">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span></span></param>
+        <summary><span data-ttu-id="80cb3-124">Ordnet einer angegebenen Form den Anfang der angegebenen Verbindung zu.</span><span class="sxs-lookup"><span data-stu-id="80cb3-124">Attaches the beginning of the specified connector to a specified shape.</span></span></summary>
+        <remarks><para><span data-ttu-id="80cb3-125">Ist der Anfang der Verbindung schon mit einer anderen Form verbunden, wird diese Verbindung unterbrochen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-125">If there’s already a connection between the beginning of the connector and another shape, that connection is broken.</span></span> <span data-ttu-id="80cb3-126">Liegt der Anfang der Verbindung noch nicht an dem angegebenen Verbindungspunkt, verschiebt ihn diese Methode dorthin, und Größe sowie Position der Verbindung werden angepasst.</span><span class="sxs-lookup"><span data-stu-id="80cb3-126">If the beginning of the connector isn’t already positioned at the specified connecting site, this method moves the beginning of the connector to the connecting site and adjusts the size and position of the connector.</span></span> <span data-ttu-id="80cb3-127">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> die Methode, um das Ende der Verbindung an eine Form anfügen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-127">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the end of the connector to a shape.</span></span></para>
+          <para><span data-ttu-id="80cb3-128">Wenn Sie eine Verbindung mit einem Objekt verbinden, werden Größe und Position der Verbindung bei Bedarf automatisch angepasst.</span><span class="sxs-lookup"><span data-stu-id="80cb3-128">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnected">
@@ -258,74 +122,35 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-129">
-            <b>True,</b> Wenn der Anfang der angegebenen Verbindung mit einer Form verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-129">
-              <b>True</b> if the beginning of the specified connector is connected to a shape.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-129"><b>True</b>, wenn der Anfang der angegebenen Verbindung mit einer Form verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-129"><b>True</b> if the beginning of the specified connector is connected to a shape.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-130">
-              <see cref="T:Microsoft.Office.Core.MsoTriState" />Dies kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-130">
-                <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-131">
-              <b>msoCTrue</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-131">
-                <b>msoCTrue</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-132">
-              <b>msoFalse</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-132">
-                <b>msoFalse</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-133">
-              <b>msoTriStateMixed</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-133">
-                <b>msoTriStateMixed</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-134">
-              <b>msoTriStateToggle</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-134">
-                <b>msoTriStateToggle</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-135">
-              <b>msoTrue</b> Der Anfang der angegebenen Verbindung ist mit einer Form verbunden.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-135">
-                <b>msoTrue</b> The beginning of the specified connector is connected to a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-130">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> kann eine der folgenden <b>MsoTriState -Konstanten</b> sein:</span><span class="sxs-lookup"><span data-stu-id="80cb3-130">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span></span></para>
+          <para><span data-ttu-id="80cb3-131">
+            <b>msoCTrue</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-131">
+            <b>msoCTrue</b>
+          </span></span></para>
+          <para><span data-ttu-id="80cb3-132">
+            <b>msoFalse</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-132">
+            <b>msoFalse</b>
+          </span></span></para>
+          <para><span data-ttu-id="80cb3-133">
+            <b>msoTriStateMixed</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-133">
+            <b>msoTriStateMixed</b>
+          </span></span></para>
+          <para><span data-ttu-id="80cb3-134">
+            <b>msoTriStateToggle</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-134">
+            <b>msoTriStateToggle</b>
+          </span></span></para>
+          <para><span data-ttu-id="80cb3-135">
+            <b>msoTrue</b> Der Anfang der angegebenen Verbindung ist mit einer Form verbunden.</span><span class="sxs-lookup"><span data-stu-id="80cb3-135">
+            <b>msoTrue</b> The beginning of the specified connector is connected to a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnectedShape">
@@ -351,22 +176,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-136">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die Form darstellt, der der Anfang der angegebenen Verbindung zugeordnet ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-136">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the beginning of the specified connector is attached to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-136">Gibt ein Objekt zurück, das die Form darstellt, an die der Anfang der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> angegebenen Verbindung angefügt ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-136">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the beginning of the specified connector is attached to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-137">Wenn der Anfang der angegebenen Verbindung nicht einer Form zugeordnet ist, generiert diese Eigenschaft einen Fehler.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-137">If the beginning of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-137">Wenn der Anfang der angegebenen Verbindung nicht einer Form zugeordnet ist, generiert diese Eigenschaft einen Fehler.</span><span class="sxs-lookup"><span data-stu-id="80cb3-137">If the beginning of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnectionSite">
@@ -392,22 +205,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-138">Gibt eine ganze Zahl zurück, die den Verbindungspunkt angibt, mit dem das Ende einer Verbindung verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-138">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-138">Gibt eine ganze Zahl zurück, die den Verbindungspunkt angibt, mit dem das Ende einer Verbindung verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-138">Returns an integer that specifies the connection site that the end of a connector is connected to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-139">Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-139">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-139">Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</span><span class="sxs-lookup"><span data-stu-id="80cb3-139">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginDisconnect">
@@ -431,30 +232,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-140">Trennt den Anfang der angegebenen Verbindung von der Form, die Sie verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-140">Detaches the beginning of the specified connector from the shape it’s attached to.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-141">
-              <b>BeginDisconnect</b> -Methode wird die Größe oder Position der Verbindung nicht geändert.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-141">The <b>BeginDisconnect</b> method doesn’t alter the size or position of the connector.</span>
-            </span>
-            <span data-ttu-id="697cd-142">Der Anfang der Verbindung bleibt an der Verbindungsseite positioniert, aber nicht mehr verbunden.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-142">The beginning of the connector remains positioned at a connection site but is no longer connected.</span>
-            </span>
-            <span data-ttu-id="697cd-143">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> -Methode, um das Ende der Verbindung von einer Form zu trennen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-143">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> method to detach the end of the connector from a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="80cb3-140">Löst den Anfang der angegebenen Verbindung von der Form, der er zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-140">Detaches the beginning of the specified connector from the shape it’s attached to.</span></span></summary>
+        <remarks><para><span data-ttu-id="80cb3-141">Die <b>BeginDisconnect -Methode</b> ändert nicht die Größe oder Position der Verbindung.</span><span class="sxs-lookup"><span data-stu-id="80cb3-141">The <b>BeginDisconnect</b> method doesn’t alter the size or position of the connector.</span></span> <span data-ttu-id="80cb3-142">Der Anfang der Verbindung bleibt an einer Verbindungsstelle positioniert, ist aber nicht mehr verbunden.</span><span class="sxs-lookup"><span data-stu-id="80cb3-142">The beginning of the connector remains positioned at a connection site but is no longer connected.</span></span> <span data-ttu-id="80cb3-143">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> die Methode, um das Ende der Verbindung von einer Form zu trennen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-143">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> method to detach the end of the connector from a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -480,32 +260,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-144">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-144">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-144">Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="80cb3-144">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-145">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-145">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-146">Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-146">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="697cd-147">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-147">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-145">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</span><span class="sxs-lookup"><span data-stu-id="80cb3-145">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="80cb3-146">Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat.</span><span class="sxs-lookup"><span data-stu-id="80cb3-146">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="80cb3-147">Der Urhebercode für Microsoft Excel lautet "XCEL".</span><span class="sxs-lookup"><span data-stu-id="80cb3-147">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
@@ -532,68 +291,12 @@
         <Parameter Name="ConnectionSite" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ConnectedShape">
-          <span data-ttu-id="697cd-148">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-148">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
-          </span>
-          <span data-ttu-id="697cd-149">Das Shape, das Ende der Verbindung zum Anfügen.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-149">The shape to attach the end of the connector to.</span>
-          </span>
-          <span data-ttu-id="697cd-150">Das angegebene <b>Shape</b> -Objekt muss sich in derselben <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung wie die Verbindung.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-150">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
-          </span>
-        </param>
-        <param name="ConnectionSite">
-          <span data-ttu-id="697cd-151">
-            <b>Integer</b>erforderlich.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-151">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="697cd-152">Ein Verbindungspunkt auf das Shape durch angegebenen <paramref name="ConnectedShape" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-152">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
-          </span>
-          <span data-ttu-id="697cd-153">Muss eine ganze Zahl zwischen 1 und die ganze Zahl zurückgegeben, die durch die <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> -Eigenschaft der angegebenen Form.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-153">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
-          </span>
-          <span data-ttu-id="697cd-154">Wenn die Verbindung automatisch den kürzesten Pfad zwischen den beiden Formen eine Verbindung hergestellt werden soll, geben Sie eine gültige ganze Zahl für dieses Argument und Verwenden der <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> -Methode, nachdem die Verbindung mit beiden Formen an beiden Enden verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-154">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="697cd-155">Verknüpft das Ende der angegebenen Verbindung mit einer angegebenen Form.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-155">Attaches the end of the specified connector to a specified shape.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-156">Wenn bereits eine Verbindung zwischen dem Ende der Verbindung und eine andere Form vorhanden ist, wird diese Verbindung unterbrochen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-156">If there’s already a connection between the end of the connector and another shape, that connection is broken.</span>
-            </span>
-            <span data-ttu-id="697cd-157">Wenn das Ende der Verbindung noch nicht an der angegebenen Verbindungsseite positioniert ist, wird diese Methode verschiebt das Ende der Verbindung zu der Verbindungsseite und passt die Größe und Position der Verbindung.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-157">If the end of the connector isn’t already positioned at the specified connecting site, this method moves the end of the connector to the connecting site and adjusts the size and position of the connector.</span>
-            </span>
-            <span data-ttu-id="697cd-158">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> -Methode, um den Anfang der Verbindung an eine Form anzufügen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-158">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the beginning of the connector to a shape.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-159">Wenn Sie eine Verbindung mit einem Objekt verbinden, werden Größe und Position der Verbindung bei Bedarf automatisch angepasst.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-159">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="ConnectedShape"><span data-ttu-id="80cb3-148">Erforderliches <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt.</span><span class="sxs-lookup"><span data-stu-id="80cb3-148">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span></span> <span data-ttu-id="80cb3-149">Das Shape, das Ende der Verbindung zum Anfügen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-149">The shape to attach the end of the connector to.</span></span> <span data-ttu-id="80cb3-150">Das angegebene <b>Shape -Objekt</b> muss sich in derselben <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung wie die Verbindung.</span><span class="sxs-lookup"><span data-stu-id="80cb3-150">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span></span></param>
+        <param name="ConnectionSite"><span data-ttu-id="80cb3-151">Erforderliche <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="80cb3-151">Required <b>Integer</b>.</span></span> <span data-ttu-id="80cb3-152">Eine Verbindungsseite für das durch . <paramref name="ConnectedShape" /></span><span class="sxs-lookup"><span data-stu-id="80cb3-152">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span></span> <span data-ttu-id="80cb3-153">Muss eine ganze Zahl zwischen 1 und der ganzen Zahl sein, die von der <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> Eigenschaft der angegebenen Form zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="80cb3-153">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span></span> <span data-ttu-id="80cb3-154">Wenn die Verbindung automatisch den kürzesten Pfad zwischen den beiden Formen finden soll, die sie verbindet, geben Sie eine gültige ganze Zahl für dieses Argument an, und verwenden Sie dann die Methode, nachdem die Verbindung an beiden Enden an Shapes angefügt <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> wurde.</span><span class="sxs-lookup"><span data-stu-id="80cb3-154">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span></span></param>
+        <summary><span data-ttu-id="80cb3-155">Ordnet einer angegebenen Form das Ende der angegebenen Verbindung zu.</span><span class="sxs-lookup"><span data-stu-id="80cb3-155">Attaches the end of the specified connector to a specified shape.</span></span></summary>
+        <remarks><para><span data-ttu-id="80cb3-156">Ist das Ende der Verbindung schon mit einer anderen Form verbunden, wird diese Verbindung unterbrochen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-156">If there’s already a connection between the end of the connector and another shape, that connection is broken.</span></span> <span data-ttu-id="80cb3-157">Liegt das Ende der Verbindung noch nicht an dem angegebenen Verbindungspunkt, verschiebt ihn diese Methode dorthin, und Größe sowie Position der Verbindung werden angepasst.</span><span class="sxs-lookup"><span data-stu-id="80cb3-157">If the end of the connector isn’t already positioned at the specified connecting site, this method moves the end of the connector to the connecting site and adjusts the size and position of the connector.</span></span> <span data-ttu-id="80cb3-158">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> die Methode, um den Anfang der Verbindung mit einer Form zu verbinden.</span><span class="sxs-lookup"><span data-stu-id="80cb3-158">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the beginning of the connector to a shape.</span></span></para>
+          <para><span data-ttu-id="80cb3-159">Wenn Sie eine Verbindung mit einem Objekt verbinden, werden Größe und Position der Verbindung bei Bedarf automatisch angepasst.</span><span class="sxs-lookup"><span data-stu-id="80cb3-159">When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnected">
@@ -619,42 +322,18 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-160">
-            <b>MsoTrue</b> , wenn das Ende der angegebenen Verbindung mit einer Form verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-160">
-              <b>msoTrue</b> if the end of the specified connector is connected to a shape.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-160"><b>msoTrue</b>, wenn das Ende der angegebenen Verbindung mit einer Form verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-160"><b>msoTrue</b> if the end of the specified connector is connected to a shape.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-161">
-              <see cref="T:Microsoft.Office.Core.MsoTriState" />Dies kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-161">
-                <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-162">
-              <b>msoFalse</b> Das Ende der angegebenen Verbindung ist nicht mit einer Form verbunden.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-162">
-                <b>msoFalse</b> The end of the specified connector is not connected to a shape.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-163">
-              <b>msoTrue</b> Das Ende der angegebenen Verbindung ist mit einer Form verbunden.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-163">
-                <b>msoTrue</b> The end of the specified connector is connected to a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-161">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> kann eine der folgenden <b>MsoTriState -Konstanten</b> sein:</span><span class="sxs-lookup"><span data-stu-id="80cb3-161">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</span></span></para>
+          <para><span data-ttu-id="80cb3-162">
+            <b>msoFalse</b> Das Ende der angegebenen Verbindung ist nicht mit einer Form verbunden.</span><span class="sxs-lookup"><span data-stu-id="80cb3-162">
+            <b>msoFalse</b> The end of the specified connector is not connected to a shape.</span></span></para>
+          <para><span data-ttu-id="80cb3-163">
+            <b>msoTrue</b> Das Ende der angegebenen Verbindung ist mit einer Form verbunden.</span><span class="sxs-lookup"><span data-stu-id="80cb3-163">
+            <b>msoTrue</b> The end of the specified connector is connected to a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnectedShape">
@@ -680,22 +359,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-164">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> -Objekt, das die Form darstellt, der das Ende der angegebenen Verbindung zugeordnet ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-164">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the end of the specified connector is attached to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-164">Gibt ein Objekt zurück, das die Form darstellt, an die das Ende der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> angegebenen Verbindung angefügt ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-164">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the end of the specified connector is attached to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-165">Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-165">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-165">Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</span><span class="sxs-lookup"><span data-stu-id="80cb3-165">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnectionSite">
@@ -721,22 +388,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-166">Gibt eine ganze Zahl zurück, die den Verbindungspunkt angibt, mit dem das Ende einer Verbindung verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-166">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-166">Gibt eine ganze Zahl zurück, die den Verbindungspunkt angibt, mit dem das Ende einer Verbindung verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-166">Returns an integer that specifies the connection site that the end of a connector is connected to.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-167">Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-167">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-167">Wenn das Ende der angegebenen Verbindung keiner Form angehängt ist, generiert diese Eigenschaft einen Fehler.</span><span class="sxs-lookup"><span data-stu-id="80cb3-167">If the end of the specified connector isn’t attached to a shape, this property generates an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDisconnect">
@@ -760,25 +415,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-168">Trennt das Ende der angegebenen Verbindung von der Form, die Sie verbunden ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-168">Detaches the end of the specified connector from the shape it’s attached to.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-169">Diese Methode wird die Größe oder Position der Verbindung nicht geändert; das Ende der Verbindung bleibt an der Verbindungsseite positioniert, aber nicht mehr verbunden.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-169">This method doesn’t alter the size or position of the connector; the end of the connector remains positioned at a connection site but is no longer connected.</span>
-            </span>
-            <span data-ttu-id="697cd-170">Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> -Methode, um den Anfang der Verbindung von einer Form zu trennen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-170">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> method to detach the beginning of the connector from a shape.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="80cb3-168">Löst das Ende der angegebenen Verbindung von der Form, der es zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="80cb3-168">Detaches the end of the specified connector from the shape it’s attached to.</span></span></summary>
+        <remarks><para><span data-ttu-id="80cb3-169">Diese Methode ändert nicht die Größe oder Position der Verbindung; Das Ende der Verbindung bleibt an einer Verbindungsstelle positioniert, ist aber nicht mehr verbunden.</span><span class="sxs-lookup"><span data-stu-id="80cb3-169">This method doesn’t alter the size or position of the connector; the end of the connector remains positioned at a connection site but is no longer connected.</span></span> <span data-ttu-id="80cb3-170">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> die Methode, um den Anfang der Verbindung von einer Form zu trennen.</span><span class="sxs-lookup"><span data-stu-id="80cb3-170">Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> method to detach the beginning of the connector from a shape.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -804,12 +443,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-171">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-171">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-171">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="80cb3-171">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -840,64 +474,32 @@
         <ReturnType>Microsoft.Office.Core.MsoConnectorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="697cd-172">Zurückgeben oder Festlegen der Connector Formattyp.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="697cd-172">Returns or sets the connector format type.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="80cb3-172">Gibt den Typ des Verbinderformats zurück oder legt diesen fest.</span><span class="sxs-lookup"><span data-stu-id="80cb3-172">Returns or sets the connector format type.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="697cd-173">
-              <see cref="T:Microsoft.Office.Core.MsoConnectorType" />Dies kann eine der folgenden <b>MsoConnectorType</b> -Konstanten sein:</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-173">
-                <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> can be one of the following <b>MsoConnectorType</b> constants:</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-174">
-              <b>msoConnectorCurve</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-174">
-                <b>msoConnectorCurve</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-175">
-              <b>msoConnectorElbow</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-175">
-                <b>msoConnectorElbow</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-176">
-              <b>msoConnectorStraight</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-176">
-                <b>msoConnectorStraight</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="697cd-177">
-              <b>msoConnectorTypeMixed</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="697cd-177">
-                <b>msoConnectorTypeMixed</b>
-              </span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="80cb3-173">
+            <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> kann eine der folgenden <b>MsoConnectorType -Konstanten</b> sein:</span><span class="sxs-lookup"><span data-stu-id="80cb3-173">
+            <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> can be one of the following <b>MsoConnectorType</b> constants:</span></span></para>
+          <para><span data-ttu-id="80cb3-174">
+            <b>msoConnectorCurve</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-174">
+            <b>msoConnectorCurve</b>
+          </span></span></para>
+          <para><span data-ttu-id="80cb3-175">
+            <b>msoConnectorElbow</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-175">
+            <b>msoConnectorElbow</b>
+          </span></span></para>
+          <para><span data-ttu-id="80cb3-176">
+            <b>msoConnectorStraight</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-176">
+            <b>msoConnectorStraight</b>
+          </span></span></para>
+          <para><span data-ttu-id="80cb3-177">
+            <b>msoConnectorTypeMixed</b>
+          </span><span class="sxs-lookup"><span data-stu-id="80cb3-177">
+            <b>msoConnectorTypeMixed</b>
+          </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
