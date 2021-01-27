@@ -1,13 +1,5 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587682" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Point" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997208" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Point" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Point" />
   <TypeSignature Language="VB.NET" Value="Public Interface Point" />
@@ -30,12 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen einzelnen Punkt einer Datenreihe in einem Diagramm dar.</summary>
-    <remarks>
-      <para>
-        <b>Point</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Points" /> Auflistung. Die <b>Points</b> -Auflistung enthält alle Datenpunkte in einer Datenreihe an.</para>
-      <para>Verwenden Sie <b>Punkt</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Datenpunkts zur Rückgabe eines einzelnen Objekt <b>verweisen</b> . Punkte werden von links nach rechts auf die Datenreihe nummeriert. Points(1) ist der am weitesten und Points(Points.Count) ist der äußersten rechten Punkt.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Das <b>Point -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Points" /> Auflistung. Die <b>Points</b> -Auflistung enthält alle Datenpunkte in einer Datenreihe an.</para>
+      <para>Verwenden <b>Sie Points</b>( ), wobei die <paramref name="index" /> <paramref name="index" /> Punktindexnummer ist, um ein einzelnes Point <b>-Objekt zurück.</b> Punkte werden von links nach rechts auf die Datenreihe nummeriert. Points(1) ist der am weitesten links gelegene Punkt, und Points(Points.Count) ist der am weitesten rechts gelegene Punkt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_ApplyDataLabels">
@@ -98,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,17 +123,17 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Optionale <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" />. Der anzuwendende Datenbeschriftungstyp. Kann eine der folgenden <b>XlDataLabelsType</b> -Konstanten sein:<b>XlDataLabelsShowBubbleSizes</b><b>XlDataLabelsShowLabelAndPercent</b> Prozentsatz der Summe und Kategorie für den Datenpunkt. Nur für Kreis- und Ringdiagrammen verfügbar. <b>xlDataLabelsShowPercent</b> Prozentsatz der Summe. Nur für Kreis- und Ringdiagrammen verfügbar. <b>xlDataLabelsShowLabel</b> Kategorie für den Datenpunkt. <b>xlDataLabelsShowNone</b> Keine datenbeschriftungen. <b>xlDataLabelsShowValue</b> Die standardmäßigen. Wert für den Punkt (wird angenommen, wenn dieses Argument nicht angegeben ist).</param>
-        <param name="LegendKey">Optionales- <b>Objekt</b>. <b>True</b>, wenn die Legende neben dem Datenpunkt anzeigt. Der Standardwert lautet <b>False</b>.</param>
-        <param name="AutoText">Optionales- <b>Objekt</b>. <b>True,</b> Wenn das Objekt automatisch basierend auf dem Inhalt angemessenen Text generiert.</param>
-        <param name="HasLeaderLines">Optionales- <b>Objekt</b>. Für die <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> und <see cref="T:Microsoft.Office.Interop.Excel.Series" /> Objekte, <b>true,</b> Wenn die Datenreihe Führungslinien aufweist.</param>
-        <param name="ShowSeriesName">Optionales- <b>Objekt</b>. Den Datenreihennamen für die Datenbeschriftung.</param>
-        <param name="ShowCategoryName">Optionales- <b>Objekt</b>. Der Kategoriename für die Datenbeschriftung.</param>
-        <param name="ShowValue">Optionales- <b>Objekt</b>. Der Wert für die Datenbeschriftung.</param>
-        <param name="ShowPercentage">Optionales- <b>Objekt</b>. Der Prozentsatz für die Datenbeschriftung.</param>
-        <param name="ShowBubbleSize">Optionales- <b>Objekt</b>. Die Blasengröße für die Datenbeschriftung.</param>
-        <param name="Separator">Optionales- <b>Objekt</b>. Das Trennzeichen für die Datenbeschriftung</param>
-        <summary>Wendet datenbeschriftungen auf einen Punkt in einem Diagramm.</summary>
+        <param name="Type">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" /> . Der anzuwendende Datenbeschriftungstyp. Dies kann eine der folgenden <b>XlDataLabelsType</b> -Konstanten sein:<b>xlDataLabelsShowBubbleSizes</b><b>xlDataLabelsShowLabelAndPercent</b> Percentage of the total and category for the point. Nur für Kreis- und Ringdiagramme verfügbar. <b>xlDataLabelsShowPercent</b> Prozentsatz der Summe. Nur für Kreis- und Ringdiagramme verfügbar. <b>xlDataLabelsShowLabel</b> Kategorie für den Punkt. <b>xlDataLabelsShowNone</b> Keine Datenbeschriftungen. <b>xlDataLabelsShowValue</b> Standard. Wert für den Datenpunkt (wird angenommen, wenn dieses Argument nicht angegeben wird).</param>
+        <param name="LegendKey">Optionales <b>Objekt</b>. Mit  <b>True</b> wird das Legendensymbol neben dem Datenpunkt angezeigt. Der Standardwert ist <b>False</b>.</param>
+        <param name="AutoText">Optionales <b>Objekt</b>. <b>True,</b> Wenn das Objekt automatisch basierend auf dem Inhalt angemessenen Text generiert.</param>
+        <param name="HasLeaderLines">Optionales <b>Objekt</b>. True für <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> die Und <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <b>-Objekte,</b> wenn die Datenreihe Führungslinien hat.</param>
+        <param name="ShowSeriesName">Optionales <b>Objekt</b>. Der Reihenname für die Datenbeschriftung.</param>
+        <param name="ShowCategoryName">Optionales <b>Objekt</b>. Der Kategorienname für die Datenbeschriftung.</param>
+        <param name="ShowValue">Optionales <b>Objekt</b>. Der Wert für die Datenbeschriftung.</param>
+        <param name="ShowPercentage">Optionales <b>Objekt</b>. Der Prozentwert für die Datenbeschriftung.</param>
+        <param name="ShowBubbleSize">Optionales <b>Objekt</b>. Die Blasengröße für die Datenbeschriftung.</param>
+        <param name="Separator">Optionales <b>Objekt</b>. Das Trennzeichen für die Datenbeschriftung</param>
+        <summary>Wendet Datenbeschriftungen auf einen Punkt in einem Diagramm an.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,13 +164,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn eine Grafik dem Ende des Punktes oder aller Punkte der Datenreihe zugeordnet wird.</summary>
+        <summary><b>True</b>, wenn eine Grafik dem Ende des Punktes oder aller Punkte der Datenreihe zugeordnet wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToFront">
@@ -210,13 +196,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn eine Grafik dem Anfang des Punkts oder allen Punkten der Datenreihe zugeordnet wird.</summary>
+        <summary><b>True</b>, wenn eine Grafik dem Anfang des Punkts oder allen Punkten der Datenreihe zugeordnet wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToSides">
@@ -245,13 +228,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn den Seiten des Punktes oder aller Punkte der Datenreihe eine Grafik zugeordnet wird.</summary>
+        <summary><b>True</b>, wenn den Seiten des Punktes oder aller Punkte der Datenreihe eine Grafik zugeordnet wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -280,7 +260,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekt zurück, das den Rahmen des Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,7 +312,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wenn der Punkt oder die Datenreihe eine bildausfüllung aufweist, kopiert das Bild in die Zwischenablage.</summary>
+        <summary>Wenn der Punkt oder die Datenreihe eine Bildfüllung hat, wird das Bild in die Zwischenablage kopiert.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -360,13 +340,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -392,12 +370,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> -Objekt, das die Beschriftung stellt Datenpunkts oder der Trendlinie zugeordnet.</summary>
+        <summary>Gibt ein Objekt zurück, das die dem Punkt oder der Trendlinie <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> zugeordnete Datenbeschriftung darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Datenbeschriftungen für eine Trendlinie aktivieren, Sie müssen, die <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> -Eigenschaft auf <b>True</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um Datenbeschriftungen für eine Trendlinie zu aktivieren, müssen Sie die Eigenschaft oder <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> die Eigenschaft auf True <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> <b>festlegen.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -423,10 +399,8 @@
       <Docs>
         <summary>Löscht das Objekt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Löschen einer <see cref="T:Microsoft.Office.Interop.Excel.Point" /> Objekt wird die gesamte Datenreihe gelöscht.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Beim Löschen <see cref="T:Microsoft.Office.Interop.Excel.Point" /> eines Objekts wird die gesamte Datenreihe gelöscht.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Explosion">
@@ -455,7 +429,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Explosionswert für Kreis- oder Ringsegments Segments. Gibt 0 (null) zurück, wenn keine Explosion vorhanden ist (die Spitze des Segments ist in der Mitte des Diagramms).</summary>
+        <summary>Gibt den Explosionswert für ein Kreisdiagramm- oder Ringdiagrammsegment zurück, oder legt diesen fest. Gibt 0 (null) zurück, wenn keine Explosion vorliegt (die Spitze des Segments befindet sich in der Mitte des Kreisdiagramms).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,7 +460,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> -Objekt für eine angegebene Form oder einem <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> -Objekt für ein angegebenes Diagramm, das Formateigenschaften für das Shape oder Diagramm der Füllung enthält.</summary>
+        <summary>Gibt ein Objekt für eine angegebene Form oder ein Objekt für ein angegebenes Diagramm zurück, das füllformatierungseigenschaften für die Form oder das <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> Diagramm enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -514,10 +488,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Gibt das Objekt <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -547,13 +519,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück und Festlegen eines Werts, das angibt, wenn ein Punkt dreidimensional dargestellt wird. Lese-/Schreibzugriff.</summary>
-        <value>Boolean</value>
-        <remarks>
-          <para>Gibt True zurück, wenn ein Punkt dreidimensional dargestellt wird. </para>
+        <summary>Gibt einen Wert zurück, der angibt, ob ein Punkt dreidimensional aussehen soll, und legt den Wert fest. Lese-/Schreibzugriff.</summary>
+        <value>Boolesch</value>
+        <remarks><para>Gibt True zurück, wenn ein Punkt dreidimensional aussehen soll. </para>
           <para>Diese Eigenschaft kann nur für Blasendiagramme verwendet werden.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataLabel">
@@ -582,8 +552,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn der Datenpunkt eine Datenbeschriftung enthält.</summary>
+        <summary><b>True</b>, wenn der Datenpunkt eine Datenbeschriftung enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,12 +580,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die Höhe des Objekts in Punkt.</summary>
+        <summary>Ruft die Höhe des Objekts in Punkt ab.</summary>
         <value>Die Höhe des Objekts in Punkten.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -645,7 +612,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> -Objekt, das den Innenbereich des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> Objekt zurück, das den Innenbereich des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -676,8 +643,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Excel das Muster im Element invertiert, wenn es eine negative Zahl entspricht.</summary>
+        <summary><b>True,</b> Wenn Microsoft Excel das Muster im Element invertiert, wenn es einer negativen Zahl entspricht.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -705,12 +671,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert, der den Abstand in Punkt vom linken Rand des Objekts zum linken Rand des Diagrammbereichs darstellt.</summary>
-        <value>Der Abstand in Punkt vom linken Rand des Objekts zum linken Rand des Diagrammbereichs.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para></para>
-        </remarks>
+        <summary>Ruft einen Wert ab, der den Abstand zwischen dem linken Rand des Objekts und dem linken Rand des Diagrammbereichs in Punkten darstellt.</summary>
+        <value>Der Abstand (in Punkt) vom linken Rand des Objekts zum linken Rand des Diagrammbereichs.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkerBackgroundColor">
@@ -739,7 +703,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt die Hintergrundfarbe der Markierung als RGB-Wert fest oder gibt den entsprechenden Farbe Index-Wert zurück. Gilt nur für Linien-, Punkt (XY) und Netzdiagramme.</summary>
+        <summary>Legt die Hintergrundfarbe für die Markierungen als RGB-Wert fest oder gibt den entsprechenden Farbindexwert zurück. Gilt nur für Linien-, Punkt- und Netzdiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -770,7 +734,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Hintergrundfarbe Markierung als Indexwert in der aktuellen Farbpalette oder als eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> Konstanten: <b><b>Tabelle verdeutlicht</b></b>. Gilt nur für Linien-, Punkt (XY) und Netzdiagramme.</summary>
+        <summary>Gibt die Hintergrundfarbe der Markierung als Index in der aktuellen Farbpalette oder als eine der folgenden Konstanten zurück oder legt sie <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> fest: <b>xlColorIndexAutomatic</b> oder <b>xlColorIndexNone</b>. Gilt nur für Linien-, Punkt- und Netzdiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -801,7 +765,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt die Hintergrundfarbe der Markierung als RGB-Wert fest oder gibt den entsprechenden Farbe Index-Wert zurück. Gilt nur für Linien-, Punkt (XY) und Netzdiagramme.</summary>
+        <summary>Legt die Hintergrundfarbe für die Markierungen als RGB-Wert fest oder gibt den entsprechenden Farbindexwert zurück. Gilt nur für Linien-, Punkt- und Netzdiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -832,7 +796,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Vordergrundfarbe von Datenpunkten als Indexwert in der aktuellen Farbpalette oder als eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> Konstanten: <b><b>Tabelle verdeutlicht</b></b>. Gilt nur für Linien-, Punkt (XY) und Netzdiagramme.</summary>
+        <summary>Gibt die Vordergrundfarbe der Markierung als Index in der aktuellen Farbpalette oder als eine der folgenden Konstanten zurück oder legt sie <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> fest: <b>xlColorIndexAutomatic</b> oder <b>xlColorIndexNone</b>. Gilt nur für Linien-, Punkt- und Netzdiagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -863,7 +827,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Größe der Daten in Punkt.</summary>
+        <summary>Gibt die Größe der Datenpunktmarkierung in Punkt zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -894,37 +858,35 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Art der Markierung für einen Datenpunkt oder für eine Datenreihe in einem Liniendiagramm, Punkt (XY)-Diagramm oder Netzdiagramm zurück oder legt sie fest.</summary>
+        <summary>Gibt die Art der Markierung für einen Datenpunkt oder für eine Datenreihe in einem Liniendiagramm, Punkt (XY)-Diagramm oder Netzdiagramm zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" /> kann eine der folgenden <b>XlMarkerStyle -Konstanten</b> sein:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />Dies kann eine der folgenden <b>XlMarkerStyle</b> -Konstanten sein:</para>
+            <b>xlMarkerStyleAutomatic</b>. Automatische Markierungen.</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
+            <b>xlMarkerStyleCircle</b>. Runde Markierungen.</para>
           <para>
-            <b>xlMarkerStyleCircle</b>. Circular markers</para>
+            <b>xlMarkerStyleDash</b>. Lange Balken als Markierungen.</para>
           <para>
-            <b>xlMarkerStyleDash</b>. Long bar markers</para>
+            <b>xlMarkerStyleDiamond</b>. Rautenförmige Markierungen.</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>. Diamond-shaped markers</para>
+            <b>xlMarkerStyleDot</b>. Kurze Balken als Markierungen.</para>
           <para>
-            <b>xlMarkerStyleDot</b>. Short bar markers</para>
+            <b>xlMarkerStyleNone</b>. Keine Markierung.</para>
           <para>
-            <b>xlMarkerStyleNone</b>. No markers</para>
+            <b>xlMarkerStylePicture</b>. Bildmarkierungen.</para>
           <para>
-            <b>xlMarkerStylePicture</b>. Picture markers</para>
+            <b>xlMarkerStylePlus</b>. Quadratische Markierungen mit einem Pluszeichen.</para>
           <para>
-            <b>xlMarkerStylePlus</b>. Square markers with a plus sign</para>
+            <b>xlMarkerStyleSquare</b>. Quadratische Markierungen.</para>
           <para>
-            <b>xlMarkerStyleSquare</b>. Square markers</para>
+            <b>xlMarkerStyleStar</b> Quadratische Markierungen mit einem Sternchen.</para>
           <para>
-            <b>xlMarkerStyleStar</b>. Square markers with an asterisk</para>
+            <b>xlMarkerStyleTriangle</b>. Dreieckige Markierungen.</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
-          <para>
-            <b>xlMarkerStyleX</b>. Square markers with an X</para>
-          <para></para>
-        </remarks>
+            <b>xlMarkerStyleX</b>. Quadratische Markierungen mit einem X.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -950,13 +912,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Namen des Objekts ab.</summary>
+        <summary>Ruft den Objektnamen ab.</summary>
         <value>Der Objektname.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para>Diese Eigenschaft entspricht den Namen eines Datenpunkts auf einem Diagramm. Der Name wird im folgenden Format dargestellt: S&lt;Nummer der Datenreihe&gt;P&lt;zeigen Anzahl&gt;.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Schreibgeschützt.</para>
+          <para>Diese Eigenschaft entspricht den Namen eines Datenpunkts auf einem Diagramm. Der Name wird im folgenden Format dargestellt: S &lt; series number P point number &gt; &lt; &gt; .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1010,10 +970,8 @@
       <Docs>
         <summary>Fügt ein Bild aus der Zwischenablage als Markierung für den ausgewählten Punkt ein.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Die <b>Paste</b> -Methode kann für die Spalte, Balken-, Zeile oder Netzdiagramme verwendet werden und legt die <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> -Eigenschaft auf <b>xlMarkerStylePicture fest</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Paste</b> -Methode kann für Säulen-, Balken-, Linien- oder Netzdiagramme verwendet werden und legt die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> <b>xlMarkerStylePicture fest.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -1042,11 +1000,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, die Bilder in einer Säulen- oder Balkendiagrammen sind wie.</summary>
+        <summary>Gibt zurück oder legt fest, wie Bilder in einem Säulen- oder Balkendiagramm angezeigt werden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />Dies kann eine der folgenden <b>XlChartPictureType</b> -Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" /> kann eine der folgenden <b>XlChartPictureType -Konstanten</b> sein:</para>
           <para>
             <b>xlStack</b>
           </para>
@@ -1056,8 +1013,7 @@
           <para>
             <b>xlStretch</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureUnit">
@@ -1092,7 +1048,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Einheit für jede Grafik im Diagramm, wenn die <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> -Eigenschaft auf <b>XlStackScale</b> festgelegt ist (wenn das nicht der Fall, wird diese Eigenschaft wird ignoriert).</summary>
+        <summary>Gibt die Einheit für jede Grafik im Diagramm zurück oder legt sie fest, wenn die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> festgelegt ist (wenn nicht, wird diese Eigenschaft ignoriert).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1123,10 +1079,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Einheit für jede Grafik im Diagramm, wenn die <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> -Eigenschaft auf <b>XlStackScale</b> festgelegt ist (wenn das nicht der Fall, wird diese Eigenschaft wird ignoriert). Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Gibt die Einheit für jede Grafik im Diagramm zurück oder legt sie fest, wenn die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> festgelegt ist (wenn nicht, wird diese Eigenschaft ignoriert). Lese-/Schreibzugriff.</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1154,13 +1108,11 @@
       </Parameters>
       <Docs>
         <param name="loc">Gibt eine horizontal oder vertikale Koordinate an.</param>
-        <param name="Index">Gibt an, welche Kreis Segments Position Koordinate zurückgegeben. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Excel.XlPieSliceIndex.xlOuterCenterPoint" />.</param>
+        <param name="Index">Gibt an, welche Kreis Segments Position Koordinate zurückgegeben. Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPieSliceIndex.xlOuterCenterPoint" />.</param>
         <summary>Gibt die vertikale oder horizontale Position eines Punkts auf einem Diagrammelement von der oberen oder linken Kante des Objekts bis zur oberen oder linken Kante der Diagrammfläche in Punkt an.</summary>
-        <returns>Die vertikale oder horizontale Position eines Punkts auf ein Diagrammelement zwischen der oberen oder linken Rand des Objekts zum oberen oder linken Rand des Diagrammbereichs in Punkt.</returns>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für Kreis- und Ringdiagrammtypen.</para>
-          <para></para>
-        </remarks>
+        <returns>Die vertikale oder horizontale Position eines Punkts auf einem Diagrammelement in Punkt, vom oberen oder linken Rand des Objekts bis zum oberen oder linken Rand des Diagrammbereichs.</returns>
+        <remarks><para>Diese Eigenschaft gilt nur für Kreis- und Ringdiagrammtypen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SecondaryPlot">
@@ -1189,8 +1141,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Punkt im sekundären Abschnitt eines Kreis-aus-Kreis oder Balken-aus-Kreis-Diagramms befindet. Gilt nur für Punkte in Kreis aus-Kreis-Diagramme oder Balken-aus-Kreis-Diagramme.</summary>
+        <summary><b>True</b>, wenn sich der Punkt im sekundären Abschnitt eines Kreis-aus-Kreis-Diagramms oder Balken-aus-Kreis-Diagramms befindet. Trifft nur auf Punkte zu, die sich auf Kreis-aus-Kreis-Diagrammen oder Balken-aus-Kreis-Diagrammen befinden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1247,8 +1198,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Schriftart Schatten aufweist oder ob das Objekt einen Schatten aufweist.</summary>
+        <summary><b>True,</b> Wenn die Schriftart eine Schattenschriftart ist oder das Objekt einen Schatten hat.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1276,12 +1226,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert, der den Abstand in Punkt vom oberen Rand des Objekts zum oberen Rand des Diagrammbereichs darstellt.</summary>
-        <value>Der Abstand in Punkt vom oberen Rand des Objekts zum oberen Rand des Diagrammbereichs.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para></para>
-        </remarks>
+        <summary>Ruft einen Wert ab, der den Abstand zwischen dem oberen Rand des Objekts und dem oberen Rand des Diagrammbereichs in Punkten darstellt.</summary>
+        <value>Der Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand des Diagrammbereichs.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1307,12 +1255,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die Breite des Objekts in Punkt.</summary>
+        <summary>Ruft die Breite des Objekts in Punkt ab.</summary>
         <value>Die Breite des Objekts in Punkten.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
