@@ -1,13 +1,5 @@
 <Type Name="ListColumns" FullName="Microsoft.Office.Interop.Excel.ListColumns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9878777ca72bbe0bad9be0800853eff332794ab" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575929" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListColumns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c9878777ca72bbe0bad9be0800853eff332794ab" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999952" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListColumns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListColumns" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListColumns&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Objekte des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt. Jedes <b>ListColumn</b> -Objekt stellt eine Spalte in der Liste dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> -Objekt die <b>ListColumns</b> -Auflistung zurückgegeben.</para>
-      <para></para>
-    </remarks>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> im angegebenen <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt. Jedes <b>ListColumn -Objekt</b> stellt eine Spalte in der Liste dar.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekts, um die <b>ListColumns -Auflistung zurückzukehren.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,13 +87,11 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Position">Optionales- <b>Objekt</b>. Gibt die relative Position der neuen Spalte, die mit 1 beginnt. Nach außen wird die vorherige Spalte an diese Position verschoben.</param>
-        <summary>Fügt dem Listenobjekt eine neue Spalte hinzu. Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Objekt.</summary>
+        <param name="Position">Optionales <b>Objekt</b>. Gibt die relative Position der neuen Spalte an, die bei 1 beginnt. Die Spalte, die sich zuvor an dieser Position befand, wird nach außen verschoben.</param>
+        <summary>Fügt dem Listenobjekt eine neue Spalte hinzu. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn <paramref name="Position" /> ist nicht angegeben, wird eine Spalte ganz rechts hinzugefügt. Ein Namen für die Spalte wird automatisch generiert. Der Name der neuen Spalte kann geändert werden, nachdem die Spalte hinzugefügt wird.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn <paramref name="Position" /> kein Wert angegeben wird, wird eine neue spalte ganz rechts hinzugefügt. Ein Name für die Spalte wird automatisch generiert. Der Name der Spalte kann geändert werden, nachdem die Spalte hinzugefügt wurde.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -129,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,12 +173,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -251,8 +237,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

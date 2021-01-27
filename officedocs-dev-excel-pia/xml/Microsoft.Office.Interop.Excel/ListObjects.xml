@@ -1,13 +1,5 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580941" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999924" /></Metadata><TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListObjects&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekte auf einem Arbeitsblatt. Jede <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt stellt eine Liste im Arbeitsblatt dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekts, um die <b>ListObjects</b> -Auflistung zurückzugeben.</para>
-      <para></para>
-    </remarks>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> in einem Arbeitsblatt. Jedes <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt stellt eine Liste im Arbeitsblatt dar.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekts, um die <b>ListObjects -Auflistung zurückzukehren.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,17 +94,15 @@
         <Parameter Name="Destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Optional <b>XlListObjectSourceType-Wert</b>. Gibt die Quellenart für die Abfrage an. Kann eine der folgenden <b>XlListObjectSourceType</b> -Konstanten sein: <b>XlSrcExternal</b> oder <b>XlSrcRange</b>. Wenn Length angegeben, die <paramref name="SourceType" /> Standardwert <b>XlSrcRange</b>.</param>
-        <param name="Source">Optional, wenn <paramref name="SourceType" /><b>XlSrcRange</b>ist. Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Datenquelle darstellt. Wenn Length angegeben, die <paramref name="Source" /> wird standardmäßig der Bereich mithilfe der Liste Bereich Erkennungscode zurückgegeben. Erforderlich, wenn <paramref name="SourceType" /><b>XlSrcExternal</b>ist. Ein Array mit <b>String</b> -Werten, die eine Verbindung mit der Datenquelle angibt. Element #Contents0URL zu SharePoint-Website 1ListName 2ViewGUID</param>
-        <param name="LinkSource">Optionaler <b>Boolean</b>-Wert. Gibt an, ob eine externe Datenquelle ist, das <b>ListObject</b> -Objekt verknüpft werden soll. Wenn <paramref name="SourceType" /><b>XlSrcExternal</b>, ist der Standardwert ist <b>True</b>. Ungültige If <paramref name="SourceType" /><b>XlSrcRange</b>ist, und gibt einen Fehler zurück, wenn nicht ausgelassen.</param>
-        <param name="XlListObjectHasHeaders">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> -Konstante, die angibt, ob die zu importierenden Daten Spaltenüberschriften verfügt. Wenn die Datenquelle keine Kopfzeilen enthält, generiert Excel automatisch Kopfzeilen.</param>
-        <param name="Destination">Optionales- <b>Objekt</b>. Ein <b>Range</b> -Objekt, Bezug auf eine einzelne Zelle als Ziel für die linke obere Ecke des neuen Listenobjekts angibt. Wenn das <b>Range</b> -Objekt auf mehrere Zellen bezieht, wird ein Fehler generiert. Die <paramref name="Destination" /> Argument muss angegebenen <paramref name="SourceType" /> auf <b>XlSrcExternal</b>festgelegt ist. Die <paramref name="Destination" /> Argument wird ignoriert, wenn <paramref name="SourceType" /><b>xlSrcRange</b>festgelegt ist. Der Zielbereich muss sich auf dem Arbeitsblatt, das das angegebene enthält <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> Auflistung. Neue Spalten werden eingefügt werden, an die <paramref name="Destination" /> auf die neue Liste passt. Aus diesem Grund werden vorhandene Daten nicht überschrieben.</param>
-        <summary>Erstellt ein neues Listenobjekt. Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt.</summary>
+        <param name="SourceType">Optionaler <b>XlListObjectSourceType -Wert.</b> Gibt die Quellenart für die Abfrage an. Dies kann eine der folgenden <b>XlListObjectSourceType</b> -Konstanten sein: <b>xlSrcExternal</b> oder <b>xlSrcRange</b>. Wenn sie nicht angegeben wird, <paramref name="SourceType" /> wird standardmäßig <b>xlSrcRange verwendet.</b></param>
+        <param name="Source">Optional, <paramref name="SourceType" /> wenn <b>xlSrcRange ist.</b> Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, das die Datenquelle darstellt. Wenn sie nicht angegeben wird, wird standardmäßig der Bereich verwendet, der <paramref name="Source" /> vom Listenbereichserkennungscode zurückgegeben wird. Erforderlich, <paramref name="SourceType" /> wenn <b>xlSrcExternal ist.</b> Ein Array von <b>Zeichenfolgenwerten,</b> die eine Verbindung mit der Quelle angeben. Element#Contents0URL zu #A0 1ListName 2ViewGUID</param>
+        <param name="LinkSource">Optionaler <b>Boolean</b>-Wert. Zeigt an, ob eine externe Datenquelle mit dem Objekt <b>ListObject</b> verknüpft werden soll. Wenn <paramref name="SourceType" /> <b>xlSrcExternal ist,</b>ist der Standardwert <b>True</b>. Invalid if <paramref name="SourceType" /> is <b>xlSrcRange</b>, and will return an error if not omitted.</param>
+        <param name="XlListObjectHasHeaders">Optionales <b>Objekt</b>. Eine <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> Konstante, die angibt, ob die importierten Daten Spaltenbeschriftungen enthalten. Wenn die Quelle nicht über Kopfzeilen verfügt, generiert Excel automatisch Kopfzeilen.</param>
+        <param name="Destination">Optionales <b>Objekt</b>. Ein <b>Range</b>-Objekt, das einen einzelnen Zellbezug als das Ziel für die obere linke Ecke des neuen Listenobjekts angibt. Wenn das <b>Range -Objekt</b> auf mehrere Zellen verweist, wird ein Fehler generiert. Das <paramref name="Destination" /> Argument muss angegeben werden, wenn es auf <paramref name="SourceType" /> <b>xlSrcExternal festgelegt ist.</b> Das <paramref name="Destination" /> Argument wird ignoriert, wenn es auf <paramref name="SourceType" /> <b>xlSrcRange festgelegt ist.</b> Der Zielbereich muss sich auf dem Arbeitsblatt befinden, das die angegebene Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> enthält. Neue Spalten werden an der neuen Liste <paramref name="Destination" /> eingefügt. Daher werden vorhandene Daten nicht überschrieben.</param>
+        <summary>Erstellt ein neues Listenobjekt. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn die Liste über Kopfzeilen verfügt, wird die erste Zeile mit Zellen werden in <b>Text</b>konvertiert, wenn nicht bereits auf Text festgelegt. Die Konvertierung basiert auf den angezeigten Text für die Zelle. Dies bedeutet, dass ist ein Date-Wert mit <b>einem Datumsformat, das mit dem Gebietsschema geändert wird</b> , der Konvertierung zu einer Liste abhängig vom aktuellen Gebietsschema Systems unterschiedliche Ergebnisse entstehen. Wenn die Kopfzeile zwei Zellen, die mit demselben sichtbaren Text enthält vorhanden sind, wird darüber hinaus eine inkrementelle <b>ganze Zahl</b> angefügt, um jede Spaltenüberschrift eindeutig ist.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn die Liste über Kopfzeilen verfügt, wird die erste Zellenzeile in <b>Text</b> umgewandelt, wenn sie nicht bereits auf Text festgelegt ist. Die Konvertierung basiert auf dem sichtbaren Text für die Zelle. Wenn ein Datumswert mit einem <b>Date</b>-Format vorliegt, dessen Gebietsschema sich ändert, hat die Konvertierung auf Grundlage des Gebietsschemas des aktuellen Systems zu einer Liste demzufolge möglicherweise unterschiedliche Ergebnisse zur Folge. Wenn sich darüber hinaus zwei Zellen in der Kopfzeile befinden, die denselben sichtbaren Text aufweisen, wird eine inkrementelle <b>Ganzzahl</b> angefügt, um jede Spaltenüberschrift eindeutig zu machen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -178,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +194,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,12 +222,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -300,8 +286,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

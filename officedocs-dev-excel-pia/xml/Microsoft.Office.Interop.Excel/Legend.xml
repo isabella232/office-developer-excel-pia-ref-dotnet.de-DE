@@ -1,13 +1,5 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Excel.Legend">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587619" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Legend" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000120" /></Metadata><TypeSignature Language="C#" Value="public interface Legend" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Legend" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Legend" />
   <TypeSignature Language="VB.NET" Value="Public Interface Legend" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Legende in einem Diagramm dar.</summary>
-    <remarks>
-      <para>Jedes Diagramm kann nur eine Legende aufweisen. Das <b>Legend</b> -Objekt enthält eine oder mehrere <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> Objekte. Jede <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> -Objekt enthält eine <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> Objekt.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> -Eigenschaft auf das <b>Legend</b> -Objekt zurückzugeben.</para>
-      <para>Die Diagrammlegende ist nicht sichtbar, wenn die <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> -Eigenschaft ist <b>True</b>. Wenn diese Eigenschaft auf <b>False</b> festgelegt ist, werden Eigenschaften und Methoden des <b>Legend</b> -Objekts ein Fehler auftritt.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Jedes Diagramm kann nur eine Legende aufweisen. Das <b>Legend</b> -Objekt enthält ein oder mehrere <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> Objekte; jedes Objekt enthält ein <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> Objekt.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> Eigenschaft, um das Legend <b>-Objekt zurück.</b></para>
+      <para>Die Diagrammlegende ist nur sichtbar, wenn die <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> Eigenschaft True <b>ist.</b> Wenn diese Eigenschaft auf <b>False</b> festgelegt ist, werden Eigenschaften und Methoden des <b>Legend</b> -Objekts ein Fehler auftritt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,8 +88,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text im Objekt Schriftgrad ändert, wenn die Größe des Objekts ändert. Der Standardwert ist <b>True</b>.</summary>
+        <summary><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird. Der Standardwert lautet <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekt zurück, das den Rahmen des Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,13 +173,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -245,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> -Objekt, das der Füllung Formateigenschaften der angegebenen Diagrammlegende enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> Objekt zurück, das Füllungsformatierungseigenschaften für die angegebene Diagrammlegende enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,7 +263,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,10 +291,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Gibt das Objekt <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,15 +353,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn eine Legende den Diagrammlayoutbereich einnimmt, während das Diagrammlayout bestimmt wird. Der Standardwert lautet <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft hat keine Auswirkungen darauf, ob sich ein Diagramm im Autolayout-Modus befindet oder nicht.  Wenn der Benutzer einen Titel mit dem Befehl über Diagramm hinzufügt, wird das Diagramm beträgt, wie in Microsoft Office Excel 2003 angepasst.  Wenn der Benutzer dann den Titel entfernt oder eine Option für Überlagerungstitel auswählt, wird das Diagramm größer angepasst, als wenn das Diagramm keinen Titel enthält.</para>
-          <para></para>
-        </remarks>
+        <summary><b>True,</b> wird Wenn eine Legende Layout Diagrammbereich beim eines Diagrammlayouts eingenommenen bestimmt wird. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkungen darauf, ob sich ein Diagramm im Autolayout-Modus befindet oder nicht.  Wenn ein Benutzer einen Titel mit dem Befehl Über Diagramm hinzufügt, wird das Diagramm kleiner angepasst als in Excel 2003.  Wenn der Benutzer dann den Titel entfernt oder eine Option für Überlagerungstitel auswählt, wird das Diagramm größer angepasst, als wenn das Diagramm keinen Titel enthält.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -405,7 +385,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Interior-Objekt, das den Innenbereich des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein Interior -Objekt zurück, das den Innenbereich des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,7 +416,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand in Punkt vom linken Rand des Objekts zum linken Rand des Diagrammbereichs.</summary>
+        <summary>Der Abstand (in Punkt) vom linken Rand des Objekts zum linken Rand des Diagrammbereichs.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -463,8 +443,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Die Nummer des Legendeneintrags.</param>
-        <summary>Gibt ein Objekt, das entweder stellt einen einzelnen Legendeneintrag (ein <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> Objekt) oder eine Auflistung von Legendeneinträgen (ein <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> Objekt) der Legende.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Die Nummer des Legendeneintrags.</param>
+        <summary>Gibt ein Objekt zurück, das einen einzelnen Legendeneintrag (ein Objekt) oder eine Auflistung von Legendeneinträgen <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> (ein Objekt) für <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> die Legende darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -494,12 +474,11 @@
       <Docs>
         <summary>Gibt den Namen des Objekts zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die folgende Tabelle zeigt Beispielwerte der <b>Name</b> -Eigenschaft und verwandter Eigenschaften eines <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
+        <remarks><para>In der folgenden Tabelle sind Beispielwerte der <b>Eigenschaft "Name"</b> und der zugehörigen Eigenschaften aufgeführt, die einem <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP gegeben sind.</a></para>
           <list type="table">
             <item>
               <term>
-                <b>Beschriftung</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -526,15 +505,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Beim Angeben von als Farbindex in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> -Auflistung verwenden Sie die Syntax in der folgenden Tabelle dargestellt.</para>
+          <para>Wenn Sie einen Index in der Auflistung angeben, können Sie <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
           <list type="table">
             <item>
-              <term>Ausdruck. PivotItems ("[Europa]. [ Frankreich]. [Paris] ")</term>
+              <term>Ausdruck. PivotItems("[Europe].[ Frankreich]. [Paris]")</term>
               <description>Ausdruck. PivotItems("Paris")</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -593,9 +571,8 @@
       <Docs>
         <summary>Gibt die Position der Legende im Diagramm zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" />Dies kann eine der folgenden <b>XlLegendPosition</b> -Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" /> kann eine der folgenden <b>XlLegendPosition -Konstanten</b> sein:</para>
           <para>
             <b>xlLegendPositionCorner</b>
           </para>
@@ -611,8 +588,7 @@
           <para>
             <b>xlLegendPositionLeft</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -667,8 +643,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Schriftart Schatten aufweist oder ob das Objekt einen Schatten aufweist.</summary>
+        <summary><b>True,</b> Wenn die Schriftart eine Schattenschriftart ist oder das Objekt einen Schatten hat.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -699,7 +674,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand in Punkt vom oberen Rand des Objekts an den Anfang des Diagrammbereichs.</summary>
+        <summary>Der Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand des Diagrammbereichs.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

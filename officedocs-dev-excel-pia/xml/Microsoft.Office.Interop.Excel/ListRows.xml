@@ -1,13 +1,5 @@
 <Type Name="ListRows" FullName="Microsoft.Office.Interop.Excel.ListRows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bcb7462c451d383da63cf1f64ce9cc9fb82f3c41" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575516" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListRows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bcb7462c451d383da63cf1f64ce9cc9fb82f3c41" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999903" /></Metadata><TypeSignature Language="C#" Value="public interface ListRows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListRows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListRows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListRows&#xA;Implements IEnumerable" />
@@ -33,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> Objekte des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt. Jedes <b>ListRow</b> -Objekt stellt eine Zeile in der Liste dar.</summary>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> im angegebenen <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt. Jedes <b>ListRow -Objekt</b> stellt eine Zeile in der Liste dar.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -97,13 +89,11 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Position">Optionaler <b>Integer</b>-Wert. Gibt die relative Position der neuen Zeile an.</param>
-        <summary>Fügt dem Listenobjekt eine neue Zeile hinzu. Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> Objekt.</summary>
+        <param name="Position">Optional <b>ganze Zahl</b>. Gibt die relative Position der neuen Zeile an.</param>
+        <summary>Fügt dem Listenobjekt eine neue Zeile hinzu. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn <paramref name="Position" /> ist nicht angegeben, wird eine neue Zeile unten hinzugefügt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn <paramref name="Position" /> nicht angegeben, wird eine neue untere Zeile hinzugefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -159,7 +149,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,7 +177,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,12 +205,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -281,8 +269,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

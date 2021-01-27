@@ -1,13 +1,5 @@
 <Type Name="LegendEntries" FullName="Microsoft.Office.Interop.Excel.LegendEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8e175f39321b99a7e8cc5297856cd4932c8371cc" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579338" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8e175f39321b99a7e8cc5297856cd4932c8371cc" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000099" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LegendEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntries&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> -Objekte in der angegebenen Diagrammlegende.</summary>
-    <remarks>
-      <para>Jeder Legendeneintrag besteht aus zwei Teilen: der Text des Eintrags, der den Namen der Datenreihe oder Trendlinie, die dem jeweiligen Legendeneintrag; zugeordnet ist. und der eintragsmarkierung, die mit der verknüpften Datenreihe oder Trendlinie im Diagramm den jeweiligen Legendeneintrag visuell verknüpft. Formateigenschaften der eingangsmarkierung und der zugeordneten Datenreihe oder Trendlinie sind im enthalten die <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> Objekt.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> -Methode, um die <b>LegendEntries</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden der <b>LegendEntries</b>(<paramref name="index" />), wobei <paramref name="index" /> die Legende Eintrag Indexzahl darstellt, um ein einzelnes <b>LegendEntry</b> -Objekt zurückzugeben. Sie können nicht namentlich Legendeneinträge zurückgeben.</para>
-      <para>Die Indexnummer stellt die Position des Eintrags innerhalb der Legende dar. LegendEntries(1) steht oben in der Legende; Wird am unteren Rand des Legendeneintrags.</para>
-      <para></para>
-    </remarks>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> in der angegebenen Diagrammlegende.</summary>
+    <remarks><para>Jeder Legendeneintrag besteht aus zwei Teilen: dem Text des Eintrags, bei dem es sich um den Namen der Datenreihe oder Trendlinie handelt, die dem Legendeneintrag zugeordnet ist; und die Eintragsmarkierung, die den Legendeneintrag visuell mit der zugeordneten Datenreihe oder Trendlinie im Diagramm verknüpft. Die Formatierungseigenschaften für die Eintragsmarkierung und die zugeordnete Datenreihe oder Trendlinie sind im Objekt <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> enthalten.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> die Methode, um die <b>LegendEntries -Auflistung zurück.</b></para>
+      <para>Verwenden <b>Sie LegendEntries</b>( ), wobei die Indexnummer des <paramref name="index" /> Legendeneintrags ist, um ein <paramref name="index" /> einzelnes <b>LegendEntry -Objekt zurückzukehren.</b> Sie können nicht namentlich Legendeneinträge zurückgeben.</para>
+      <para>Die Indexnummer stellt die Position des Eintrags innerhalb der Legende dar. LegendEntries(1) befindet sich oben in der Legende, LegendEntries(LegendEntries.Count) befindet sich unten.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,13 +144,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,8 +206,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
