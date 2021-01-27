@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Excel.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584140" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999742" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments&#xA;Implements _IMsoDispObj" />
@@ -30,103 +22,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="cc084-101">Enthält eine Auflistung von Korrekturwerten für die angegebene AutoForm, das WordArt-Objekt oder die Verbindung.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="cc084-101">Contains a collection of adjustment values for the specified AutoShape, WordArt object, or connector.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="cc084-p101">Jeder Wert stellt dabei eine Anpassungsmöglichkeit des Korrekturziehpunkts dar. Da manche Ziehpunkte auf zwei Arten angepasst werden können, z. B. sowohl horizontal als auch vertikal, kann eine Form mehr Anpassungswerte als Korrekturziehpunkte besitzen. Die maximale Anzahl der Anpassungen einer Form beträgt acht.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="cc084-p101">Each adjustment value represents one way an adjustment handle can be adjusted. Because some adjustment handles can be adjusted in two ways — for instance, some handles can be adjusted both horizontally and vertically — a shape can have more adjustment values than it has adjustment handles. A shape can have up to eight adjustments.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="cc084-105">Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> Eigenschaft, um ein <b>Adjustments</b> -Objekt zurückzugeben.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="cc084-105">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> property to return an <b>Adjustments</b> object.</span>
-        </span>
-        <span data-ttu-id="cc084-106">Verwenden Sie <b>Adjustments</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Anpassungswert Indexzahl darstellt, um einen einzelnen Wert zurück.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="cc084-106">Use <b>Adjustments</b>(<paramref name="index" />), where <paramref name="index" /> is the adjustment value’s index number, to return a single adjustment value.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="cc084-107">Verschiedene Formen haben verschieden viele Anpassungswerte, verschiedene Arten von Anpassungen ändern die Geometrie einer Form auf verschiedene Weisen, und verschiedene Arten von Anpassungen haben verschiedene Bereiche gültiger Werte.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="cc084-107">Different shapes have different numbers of adjustment values, different kinds of adjustments change the geometry of a shape in different ways, and different kinds of adjustments have different ranges of valid values.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="cc084-p103">In der folgenden Tabelle sind die Bereiche der gültigen Anpassungswerte für verschiedene Anpassungsarten zusammengefasst. Wenn Sie einen Wert angeben, der außerhalb des gültigen Bereichs liegt, wird der Anpassung in den meisten Fällen der am nächsten liegende gültige Wert zugewiesen.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="cc084-p103">The following table summarizes the ranges of valid adjustment values for different types of adjustments. In most cases, if you specify a value that’s beyond the range of valid values, the closest valid value will be assigned to the adjustment.</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="f7d75-101">Enthält eine Auflistung von Korrekturwerten für die angegebene AutoForm, das WordArt-Objekt oder die Verbindung.</span><span class="sxs-lookup"><span data-stu-id="f7d75-101">Contains a collection of adjustment values for the specified AutoShape, WordArt object, or connector.</span></span></summary>
+    <remarks><para><span data-ttu-id="f7d75-p101">Jeder Anpassungswert stellt eine Möglichkeit dar, einen Zeiger zum Anpassen anzupassen. Da manche Zeiger zum Anpassen auf zwei Arten angepasst werden können (z. B. können manche Zeiger sowohl horizontal als auch vertikal angepasst werden), kann eine Form mehr Anpassungswerte als Zeiger zum Anpassen aufweisen. Eine Form kann bis zu acht Anpassungen aufweisen.</span><span class="sxs-lookup"><span data-stu-id="f7d75-p101">Each adjustment value represents one way an adjustment handle can be adjusted. Because some adjustment handles can be adjusted in two ways — for instance, some handles can be adjusted both horizontally and vertically — a shape can have more adjustment values than it has adjustment handles. A shape can have up to eight adjustments.</span></span></para>
+      <para><span data-ttu-id="f7d75-105">Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> Eigenschaft, um ein <b>Adjustments -Objekt zurück.</b></span><span class="sxs-lookup"><span data-stu-id="f7d75-105">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> property to return an <b>Adjustments</b> object.</span></span> <span data-ttu-id="f7d75-106">Verwenden <b>Sie Adjustments</b>( ), wobei die Indexnummer des Anpassungswerts ist, um <paramref name="index" /> einen einzelnen <paramref name="index" /> Anpassungswert zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="f7d75-106">Use <b>Adjustments</b>(<paramref name="index" />), where <paramref name="index" /> is the adjustment value’s index number, to return a single adjustment value.</span></span></para>
+      <para><span data-ttu-id="f7d75-107">Verschiedene Formen können eine unterschiedliche Anzahl von Korrekturwerten haben, verschiedene Arten der Korrekturen ändern die Geometrie einer Form auf unterschiedliche Art und Weise und können unterschiedliche Bereiche von gültigen Werten besitzen.</span><span class="sxs-lookup"><span data-stu-id="f7d75-107">Different shapes have different numbers of adjustment values, different kinds of adjustments change the geometry of a shape in different ways, and different kinds of adjustments have different ranges of valid values.</span></span></para>
+      <para><span data-ttu-id="f7d75-p103">In der folgenden Tabelle sind die Bereiche der gültigen Anpassungswerte für verschiedene Anpassungsarten zusammengefasst. Wenn Sie einen Wert angeben, der außerhalb des gültigen Bereichs liegt, wird der Anpassung in den meisten Fällen der am nächsten liegende gültige Wert zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="f7d75-p103">The following table summarizes the ranges of valid adjustment values for different types of adjustments. In most cases, if you specify a value that’s beyond the range of valid values, the closest valid value will be assigned to the adjustment.</span></span></para>
       <list type="table">
         <item>
-          <term>
-            <span data-ttu-id="cc084-110">Linear (horizontal oder vertikal)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-110">Linear (horizontal or vertical)</span>
-            </span>
-          </term>
-          <description>
-            <span data-ttu-id="cc084-111">Im Allgemeinen stellt der Wert 0,0 den linken oder oberen Rand des Shapes, und der Wert 1,0 den rechten oder unteren Begrenzung der Form dar.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-111">Generally the value 0.0 represents the left or top edge of the shape, and the value 1.0 represents the right or bottom edge of the shape.</span>
-            </span>
-            <span data-ttu-id="cc084-112">Gültige Werte entsprechen gültigen Korrekturen, die Sie mit dem Shape manuell vornehmen können.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-112">Valid values correspond to valid adjustments you can make to the shape manually.</span>
-            </span>
-            <span data-ttu-id="cc084-113">Angenommen, wenn Sie nur eine Anpassung halb über die Form manuell ziehen können, sein der Höchstwert für die entsprechende Anpassung 0,5.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-113">For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5.</span>
-            </span>
-            <span data-ttu-id="cc084-114">Für Formen wie Verbinder und nicht ausgewählte Beschriftungen, bei denen die Werte 0,0 und 1,0 die Grenzen des Rechtecks definiert durch die Punkte Start- und Enddatum des Connectors oder Legendenlinie, negativen Zahlen darstellen und Zahlen größer als 1,0 gültige Werte.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-114">For shapes such as connectors and callouts, where the values 0.0 and 1.0 represent the limits of the rectangle defined by the starting and ending points of the connector or callout line, negative numbers and numbers greater than 1.0 are valid values.</span>
-            </span>
-          </description>
+          <term><span data-ttu-id="f7d75-110">Linear (horizontal oder vertikal)</span><span class="sxs-lookup"><span data-stu-id="f7d75-110">Linear (horizontal or vertical)</span></span></term>
+          <description><span data-ttu-id="f7d75-111">Im Allgemeinen stellt der Wert 0,0 den linken oder oberen Rand der Form dar, und der Wert 1,0 stellt den rechten oder unteren Rand der Form dar.</span><span class="sxs-lookup"><span data-stu-id="f7d75-111">Generally the value 0.0 represents the left or top edge of the shape, and the value 1.0 represents the right or bottom edge of the shape.</span></span> <span data-ttu-id="f7d75-112">Valid values correspond to valid adjustments you can make to the shape manually.</span><span class="sxs-lookup"><span data-stu-id="f7d75-112">Valid values correspond to valid adjustments you can make to the shape manually.</span></span> <span data-ttu-id="f7d75-113">For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5.</span><span class="sxs-lookup"><span data-stu-id="f7d75-113">For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5.</span></span> <span data-ttu-id="f7d75-114">Bei Shapes wie Verbindern und Callouts, bei denen die Werte 0,0 und 1,0 die Grenzen des Rechtecks darstellen, das durch die Start- und Endpunkte der Verbindung oder der Calloutlinie definiert wird, sind negative Zahlen und Zahlen größer als 1,0 gültige Werte.</span><span class="sxs-lookup"><span data-stu-id="f7d75-114">For shapes such as connectors and callouts, where the values 0.0 and 1.0 represent the limits of the rectangle defined by the starting and ending points of the connector or callout line, negative numbers and numbers greater than 1.0 are valid values.</span></span></description>
         </item>
         <item>
-          <term>
-            <span data-ttu-id="cc084-115">Radial</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-115">Radial</span>
-            </span>
-          </term>
-          <description>
-            <span data-ttu-id="cc084-p105">Ein Anpassungswert von 1,0 entspricht der Breite der Form. Der Maximalwert beträgt 0,5 oder die halbe Breite der Form.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-p105">An adjustment value of 1.0 corresponds to the width of the shape. The maximum value is 0.5, or half way across the shape.</span>
-            </span>
-          </description>
+          <term><span data-ttu-id="f7d75-115">Radial</span><span class="sxs-lookup"><span data-stu-id="f7d75-115">Radial</span></span></term>
+          <description><span data-ttu-id="f7d75-p105">Ein Anpassungswert von 1,0 entspricht der Breite der Form. Der Maximalwert beträgt 0,5 oder die halbe Breite der Form.</span><span class="sxs-lookup"><span data-stu-id="f7d75-p105">An adjustment value of 1.0 corresponds to the width of the shape. The maximum value is 0.5, or half way across the shape.</span></span></description>
         </item>
         <item>
-          <term>
-            <span data-ttu-id="cc084-118">Winkel</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-118">Angle</span>
-            </span>
-          </term>
-          <description>
-            <span data-ttu-id="cc084-119">Werte werden in Grad angegeben.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-119">Values are expressed in degrees.</span>
-            </span>
-            <span data-ttu-id="cc084-120">Wenn Sie einen Wert außerhalb des Bereichs –180 180 angeben, wird er normalisiert, um innerhalb dieses Bereichs liegen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-120">If you specify a value outside the range –180 to 180, it will be normalized to be within that range.</span>
-            </span>
-          </description>
+          <term><span data-ttu-id="f7d75-118">Winkel</span><span class="sxs-lookup"><span data-stu-id="f7d75-118">Angle</span></span></term>
+          <description><span data-ttu-id="f7d75-119">Werte werden in Grad angegeben.</span><span class="sxs-lookup"><span data-stu-id="f7d75-119">Values are expressed in degrees.</span></span> <span data-ttu-id="f7d75-120">Wenn Sie einen Wert außerhalb des Bereichs –180 bis 180 angeben, wird er normalisiert, damit er innerhalb dieses Bereichs liegt.</span><span class="sxs-lookup"><span data-stu-id="f7d75-120">If you specify a value outside the range –180 to 180, it will be normalized to be within that range.</span></span></description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -155,12 +70,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cc084-121">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cc084-121">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f7d75-121">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="f7d75-121">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,12 +98,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cc084-122">Gibt die Anzahl der Objekte in der Auflistung zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cc084-122">Returns the number of objects in the collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f7d75-122">Gibt die Anzahl der Objekte in der Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="f7d75-122">Returns the number of objects in the collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,32 +129,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cc084-123">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cc084-123">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f7d75-123">Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="f7d75-123">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="cc084-124">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-124">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="cc084-125">Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-125">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="cc084-126">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-126">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f7d75-124">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</span><span class="sxs-lookup"><span data-stu-id="f7d75-124">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="f7d75-125">Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat.</span><span class="sxs-lookup"><span data-stu-id="f7d75-125">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f7d75-126">Der Urhebercode für Microsoft Excel lautet "XCEL".</span><span class="sxs-lookup"><span data-stu-id="f7d75-126">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -281,39 +165,12 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="cc084-127">
-            <b>Integer</b>erforderlich.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cc084-127">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="cc084-128">Die Indexnummer der Anpassung.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cc084-128">The index number of the adjustment.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="cc084-129">Zurückgeben oder festlegen den angegebenen Wert.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cc084-129">Returns or sets the specified adjustment value.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="f7d75-127">Erforderliche <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="f7d75-127">Required <b>Integer</b>.</span></span> <span data-ttu-id="f7d75-128">Die Indexnummer der Anpassung.</span><span class="sxs-lookup"><span data-stu-id="f7d75-128">The index number of the adjustment.</span></span></param>
+        <summary><span data-ttu-id="f7d75-129">Gibt den angegebenen Anpassungswert zurück oder legt den wert fest.</span><span class="sxs-lookup"><span data-stu-id="f7d75-129">Returns or sets the specified adjustment value.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="cc084-p109">Bei linearen Korrekturen ein Wert von 0,0 entspricht im Allgemeinen den linken oder oberen Rand des Shapes, und ein Wert von 1.0 im Allgemeinen entspricht den rechten oder unteren Begrenzung der Form. Adjustments können jedoch über Shape Grenzen für einige Shapes übergeben. Bei radial Korrekturen bezieht sich ein Wert von 1.0 auf die Breite der Form. Für Winkel Anpassungen ist der Anpassungswert in Grad angegeben. Die <b>Item</b> -Eigenschaft gilt nur für Formen, die Anpassungen aufweisen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-p109">For linear adjustments, an adjustment value of 0.0 generally corresponds to the left or top edge of the shape, and a value of 1.0 generally corresponds to the right or bottom edge of the shape. However, adjustments can pass beyond shape boundaries for some shapes. For radial adjustments, an adjustment value of 1.0 corresponds to the width of the shape. For angular adjustments, the adjustment value is specified in degrees. The <b>Item</b> property applies only to shapes that have adjustments.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="cc084-135">AutoFormen, Verbindungen und WordArt-Objekte können bis zu acht Anpassungen haben.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cc084-135">AutoShapes, connectors, and WordArt objects can have up to eight adjustments.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f7d75-p109">Bei linearen Korrekturen ein Wert von 0,0 entspricht im Allgemeinen den linken oder oberen Rand des Shapes, und ein Wert von 1.0 im Allgemeinen entspricht den rechten oder unteren Begrenzung der Form. Adjustments können jedoch über Shape Grenzen für einige Shapes übergeben. Bei radial Korrekturen bezieht sich ein Wert von 1.0 auf die Breite der Form. Für Winkel Anpassungen ist der Anpassungswert in Grad angegeben. Die <b>Item</b> -Eigenschaft gilt nur für Formen, die Anpassungen aufweisen.</span><span class="sxs-lookup"><span data-stu-id="f7d75-p109">For linear adjustments, an adjustment value of 0.0 generally corresponds to the left or top edge of the shape, and a value of 1.0 generally corresponds to the right or bottom edge of the shape. However, adjustments can pass beyond shape boundaries for some shapes. For radial adjustments, an adjustment value of 1.0 corresponds to the width of the shape. For angular adjustments, the adjustment value is specified in degrees. The <b>Item</b> property applies only to shapes that have adjustments.</span></span></para>
+          <para><span data-ttu-id="f7d75-135">AutoFormen, Verbindungen und WordArt-Objekte können bis zu acht Anpassungen haben.</span><span class="sxs-lookup"><span data-stu-id="f7d75-135">AutoShapes, connectors, and WordArt objects can have up to eight adjustments.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -339,12 +196,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cc084-136">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cc084-136">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f7d75-136">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="f7d75-136">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

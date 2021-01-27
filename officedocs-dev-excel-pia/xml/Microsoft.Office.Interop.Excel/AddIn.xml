@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584147" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999763" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -29,93 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="ec567-101">Stellt ein einzelnes installiertes oder nicht installiertes Add-In dar.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ec567-101">Represents a single add-in, either installed or not installed.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="ec567-102">Das <b>AddIn</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> Auflistung.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection.</span>
-        </span>
-        <span data-ttu-id="ec567-103">Die <b>AddIns</b> -Auflistung enthält eine Liste aller Add-Ins in Microsoft Excel zur Verfügung, unabhängig davon, ob sie installiert sind.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-103">The <b>AddIns</b> collection contains a list of all the add-ins available to Microsoft Excel, regardless of whether they’re installed.</span>
-        </span>
-        <span data-ttu-id="ec567-104">Diese Liste entspricht der Liste der Add-Ins im Dialogfeld Add-Ins (Menü Extras) angezeigt.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-104">This list corresponds to the list of add-ins displayed in the Add-Ins dialog box (Tools menu).</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ec567-105">Verwenden Sie die <b>Add-Ins</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Add-in-Titel oder eine Indexzahl darstellt, um ein einzelnes <b>AddIn</b> -Objekt zurückzugeben.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in title or index number, to return a single <b>AddIn</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ec567-106">Verwechseln Sie nicht den-Add-in-Titel, der im Dialogfeld Add-Ins mit dem Namen-Add-in angezeigt wird, der Name des Add-Ins ist.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-106">Don’t confuse the add-in title, which appears in the Add-Ins dialog box, with the add-in name, which is the file name of the add-in.</span>
-        </span>
-        <span data-ttu-id="ec567-107">Sie müssen den Add-in-Titel Rechtschreibprüfung, genau wie Schreibweise im Dialogfeld Add-Ins, jedoch die Groß-/Kleinschreibung nicht übereinstimmen.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-107">You must spell the add-in title exactly as it’s spelled in the Add-Ins dialog box, but the capitalization doesn’t have to match.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ec567-108">Die Indexnummer stellt die Position des Add-Ins in das Feld-Add-ins zur Verfügung, klicken Sie im Dialogfeld Add-Ins.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-108">The index number represents the position of the add-in in the Add-ins available box in the Add-Ins dialog box.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ec567-109">Die <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> -Methode ein Add-in in die Liste der verfügbaren Add-Ins hinzugefügt, jedoch nicht das Add-in installieren.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-109">The <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> method adds an add-in to the list of available add-ins but doesn’t install the add-in.</span>
-        </span>
-        <span data-ttu-id="ec567-110">Legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> -Eigenschaft des Add-Ins auf <b>true fest,</b> um das Add-in zu installieren.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-110">Set the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> property of the add-in to <b>True</b> to install the add-in.</span>
-        </span>
-        <span data-ttu-id="ec567-111">Um ein Add-in, die angezeigt werden, nicht in der Liste der verfügbaren Add-Ins zu installieren, müssen Sie zunächst mithilfe der <b>Add</b> -Methode, und legen Sie die <b>Installed</b> -Eigenschaft.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-111">To install an add-in that doesn’t appear in the list of available add-ins, you must first use the <b>Add</b> method and then set the <b>Installed</b> property.</span>
-        </span>
-        <span data-ttu-id="ec567-112">Dies kann in einem einzigen Schritt erfolgen</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-112">This can be done in a single step</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ec567-113">Verwenden von <b>Arbeitsmappen</b>(<paramref name="index" />), in dem <paramref name="index" /> wird die Add-in-Filename (nicht Titel) um einen Verweis auf die Arbeitsmappe entsprechend der geladenen Add-in zurückzugeben.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-113">Use <b>Workbooks</b>(<paramref name="index" />) where <paramref name="index" /> is the add-in filename (not title) to return a reference to the workbook corresponding to a loaded add-in.</span>
-        </span>
-        <span data-ttu-id="ec567-114">Sie müssen den Dateinamen verwenden, da geladenen Add-Ins in normalerweise angezeigt werden, nicht die <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> Auflistung.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-114">You must use the file name because loaded add-ins don’t normally appear in the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ec567-115">Wenn die <b>Installed</b> -Eigenschaft gibt <b>True</b>zurück, aber Aufrufe von Funktionen in das Add-in nicht funktioniert, das Add-in möglicherweise nicht richtig geladen.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-115">If the <b>Installed</b> property returns <b>True</b>, but calls to functions in the add-in still fail, the add-in may not actually be loaded.</span>
-        </span>
-        <span data-ttu-id="ec567-116">Dies ist, da das <b>Addin</b> -Objekt, das Vorhandensein darstellt und Installationsstatus des Add-Ins jedoch nicht die tatsächlichen Inhalte der Add-in-Arbeitsmappe darstellen.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-116">This is because the <b>Addin</b> object represents the existence and installed state of the add-in but doesn't represent the actual contents of the add-in workbook.</span>
-        </span>
-        <span data-ttu-id="ec567-117">Um sicherzustellen, dass ein installiertes Add-In geladen wird, sollten Sie die Add-in Arbeitsmappe öffnen.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ec567-117">To guarantee that an installed add-in is loaded, you should open the add-in workbook.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="41880-101">Stellt ein einzelnes installiertes oder nicht installiertes Add-In dar.</span><span class="sxs-lookup"><span data-stu-id="41880-101">Represents a single add-in, either installed or not installed.</span></span></summary>
+    <remarks><para><span data-ttu-id="41880-102">Das <b>AddIn -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> Auflistung.</span><span class="sxs-lookup"><span data-stu-id="41880-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection.</span></span> <span data-ttu-id="41880-103">Die <b>AddIns</b>-Auflistung enthält eine Liste aller installierten und nicht installierten Add-Ins, die in Microsoft Excel zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="41880-103">The <b>AddIns</b> collection contains a list of all the add-ins available to Microsoft Excel, regardless of whether they’re installed.</span></span> <span data-ttu-id="41880-104">Diese Liste entspricht der Liste der Add-Ins, die im Dialogfeld Add-Ins (Menü Extras) angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="41880-104">This list corresponds to the list of add-ins displayed in the Add-Ins dialog box (Tools menu).</span></span></para>
+      <para><span data-ttu-id="41880-105">Verwenden <b>Sie AddIns</b>( <paramref name="index" /> ), wobei der Add-In-Titel oder die Indexnummer, um ein <paramref name="index" /> einzelnes <b>AddIn -Objekt zurück.</b></span><span class="sxs-lookup"><span data-stu-id="41880-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in title or index number, to return a single <b>AddIn</b> object.</span></span></para>
+      <para><span data-ttu-id="41880-106">Verwechseln Sie nicht den Add-In-Titel, der im Dialogfeld Add-Ins angezeigt wird, mit dem Add-In-Namen, bei dem es sich um den Dateinamen des Add-Ins handelt.</span><span class="sxs-lookup"><span data-stu-id="41880-106">Don’t confuse the add-in title, which appears in the Add-Ins dialog box, with the add-in name, which is the file name of the add-in.</span></span> <span data-ttu-id="41880-107">Sie müssen den Add-In-Titel genau so buchstabieren, wie er im Dialogfeld Add-Ins geschrieben ist, aber die Groß-/Schreibweise muss nicht übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="41880-107">You must spell the add-in title exactly as it’s spelled in the Add-Ins dialog box, but the capitalization doesn’t have to match.</span></span></para>
+      <para><span data-ttu-id="41880-108">Die Indexnummer stellt die Position des Add-Ins im Feld "Verfügbare Add-Ins" im Dialogfeld Add-Ins dar.</span><span class="sxs-lookup"><span data-stu-id="41880-108">The index number represents the position of the add-in in the Add-ins available box in the Add-Ins dialog box.</span></span></para>
+      <para><span data-ttu-id="41880-109">Die Methode fügt ein Add-In zur Liste der verfügbaren <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> Add-Ins hinzu, installiert das Add-In jedoch nicht.</span><span class="sxs-lookup"><span data-stu-id="41880-109">The <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> method adds an add-in to the list of available add-ins but doesn’t install the add-in.</span></span> <span data-ttu-id="41880-110">Legen Sie <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> die Eigenschaft des Add-Ins auf <b>"True" (True)</b> für die Installation des Add-Ins.</span><span class="sxs-lookup"><span data-stu-id="41880-110">Set the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> property of the add-in to <b>True</b> to install the add-in.</span></span> <span data-ttu-id="41880-111">Wenn Sie ein Add-In installieren möchten, das nicht in der Liste verfügbarer Add-Ins angezeigt wird, müssen Sie zuerst die <b>Add</b>-Methode verwenden und anschließend die <b>Installed</b>-Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="41880-111">To install an add-in that doesn’t appear in the list of available add-ins, you must first use the <b>Add</b> method and then set the <b>Installed</b> property.</span></span> <span data-ttu-id="41880-112">Dies kann in einem einzigen Schritt geschehen.</span><span class="sxs-lookup"><span data-stu-id="41880-112">This can be done in a single step</span></span></para>
+      <para><span data-ttu-id="41880-113">Verwenden <b>Sie Arbeitsmappen</b>( <paramref name="index" /> ), wobei der Add-In-Dateiname (kein Titel) ist, um einen Verweis auf die Arbeitsmappe zurückgibt, die einem geladenen <paramref name="index" /> Add-In entspricht.</span><span class="sxs-lookup"><span data-stu-id="41880-113">Use <b>Workbooks</b>(<paramref name="index" />) where <paramref name="index" /> is the add-in filename (not title) to return a reference to the workbook corresponding to a loaded add-in.</span></span> <span data-ttu-id="41880-114">Sie müssen den Dateinamen verwenden, da geladene Add-Ins normalerweise nicht in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="41880-114">You must use the file name because loaded add-ins don’t normally appear in the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</span></span></para>
+      <para><span data-ttu-id="41880-115">Wenn die <b>Installed -Eigenschaft</b> <b>True</b>zurückgibt, aber Aufrufe von Funktionen im Add-In weiterhin fehlschlagen, wird das Add-in möglicherweise nicht tatsächlich geladen.</span><span class="sxs-lookup"><span data-stu-id="41880-115">If the <b>Installed</b> property returns <b>True</b>, but calls to functions in the add-in still fail, the add-in may not actually be loaded.</span></span> <span data-ttu-id="41880-116">Dies liegt daran, dass das <b>Addin</b> -Objekt das Vorhandensein und den installierten Status des Add-Ins, aber nicht den tatsächlichen Inhalt der Add-In-Arbeitsmappe darstellt.</span><span class="sxs-lookup"><span data-stu-id="41880-116">This is because the <b>Addin</b> object represents the existence and installed state of the add-in but doesn't represent the actual contents of the add-in workbook.</span></span> <span data-ttu-id="41880-117">Um zu gewährleisten, dass ein installiertes Add-In geladen wird, sollten Sie die Add-In-Arbeitsmappe öffnen.</span><span class="sxs-lookup"><span data-stu-id="41880-117">To guarantee that an installed add-in is loaded, you should open the add-in workbook.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -141,12 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-118">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-118">Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="41880-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,12 +86,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-119">Für die interne Verwendung reserviert.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-119">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-119">Für die interne Verwendung reserviert.</span><span class="sxs-lookup"><span data-stu-id="41880-119">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,12 +114,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-120">Gibt einen schreibgeschützten eindeutigen Bezeichner oder eine CLSID (Class Identifier), der bzw. die ein Objekt kennzeichnet, als <b>String</b>-Wert zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-120">Returns a read-only unique identifier, or CLSID, identifying an object, as a <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-120">Gibt einen schreibgeschützten eindeutigen Bezeichner oder eine CLSID (Class Identifier), der bzw. die ein Objekt kennzeichnet, als <b>String</b>-Wert zurück.</span><span class="sxs-lookup"><span data-stu-id="41880-120">Returns a read-only unique identifier, or CLSID, identifying an object, as a <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,12 +145,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-121">Für die interne Verwendung reserviert.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-121">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-121">Für die interne Verwendung reserviert.</span><span class="sxs-lookup"><span data-stu-id="41880-121">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -279,32 +173,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-122">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-122">Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="41880-122">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ec567-123">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ec567-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ec567-124">Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ec567-124">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="ec567-125">Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ec567-125">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="41880-123">Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</span><span class="sxs-lookup"><span data-stu-id="41880-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="41880-124">Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat.</span><span class="sxs-lookup"><span data-stu-id="41880-124">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="41880-125">Der Urhebercode für Microsoft Excel lautet "XCEL".</span><span class="sxs-lookup"><span data-stu-id="41880-125">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -330,22 +203,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-126">Gibt den Namen des Objekts, einschließlich des Pfads auf dem Datenträger, als Zeichenfolge zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-126">Returns the name of the object, including its path on disk, as a string.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-126">Diese Eigenschaft gibt den Namen des Objekts einschließlich Pfadangabe als Zeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="41880-126">Returns the name of the object, including its path on disk, as a string.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ec567-127">Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> -Eigenschaft, gefolgt von der aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> Eigenschaft.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ec567-127">This property is equivalent to the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> property, followed by the current file system separator, followed by the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> property.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="41880-127">Diese Eigenschaft entspricht der Eigenschaft, gefolgt vom aktuellen Dateisystemtrennzeichen, <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="41880-127">This property is equivalent to the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> property, followed by the current file system separator, followed by the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> property.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Installed">
@@ -374,24 +235,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-128">
-            <b>True,</b> Wenn das Add-in installiert ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-128">
-              <b>True</b> if the add-in is installed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-128"><b>True,</b> Wenn das Add-in installiert ist.</span><span class="sxs-lookup"><span data-stu-id="41880-128"><b>True</b> if the add-in is installed.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ec567-p107">Wird diese Eigenschaft auf <b>True</b> festgelegt wird, so wird das Add-In installiert und seine Auto_installieren-Funktionen werden aufgerufen. Wird diese Eigenschaft hingegen auf <b>False</b> festgelegt, wird das Add-In entfernt und seine Auto_entfernen-Funktionen werden aufgerufen.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ec567-p107">Setting this property to <b>True</b> installs the add-in and calls its Auto_Add functions. Setting this property to <b>False</b> removes the add-in and calls its Auto_Remove functions.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="41880-129">Wird diese Eigenschaft auf <b>True</b> festgelegt wird, so wird das Add-In installiert und seine Auto_installieren-Funktionen werden aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="41880-129">Setting this property to <b>True</b> installs the add-in and calls its Auto_Add functions.</span></span> <span data-ttu-id="41880-130">Wird diese Eigenschaft hingegen auf <b>False</b> festgelegt, wird das Add-In entfernt und seine Auto_entfernen-Funktionen werden aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="41880-130">Setting this property to <b>False</b> removes the add-in and calls its Auto_Remove functions.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOpen">
@@ -417,31 +264,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-131">Ruft ab, ob das Add-in derzeit geöffnet ist.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-131">Gets whether the add-in is currently open.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="ec567-132">
-            <b>true,</b> Wenn das Add-in derzeit geöffnet ist. anderenfalls <b>false</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-132">
-              <b>true</b> if the add-in is currently open; otherwise, <b>false</b>.</span>
-          </span>
-        </value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ec567-133">
-              <b>Boolean</b> Schreibgeschützt.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ec567-133">
-                <b>boolean</b> Read-only.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="41880-131">Ruft ab, ob das Add-in derzeit geöffnet ist.</span><span class="sxs-lookup"><span data-stu-id="41880-131">Gets whether the add-in is currently open.</span></span></summary>
+        <value><span data-ttu-id="41880-132"><b>true,</b> wenn das #A0 derzeit geöffnet ist; andernfalls <b>false</b>.</span><span class="sxs-lookup"><span data-stu-id="41880-132"><b>true</b> if the add-in is currently open; otherwise, <b>false</b>.</span></span></value>
+        <remarks><para><span data-ttu-id="41880-133">
+            <b>boolean</b> Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="41880-133">
+            <b>boolean</b> Read-only.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
@@ -470,12 +298,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-134">Für die interne Verwendung reserviert.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-134">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-134">Für die interne Verwendung reserviert.</span><span class="sxs-lookup"><span data-stu-id="41880-134">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -503,12 +326,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-135">Gibt den Namen des Objekts zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-135">Returns the name of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-135">Gibt den Namen des Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="41880-135">Returns the name of the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,12 +354,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-136">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-136">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-136">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="41880-136">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,12 +382,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-137">Gibt den vollständigen Pfad zu der Anwendung, ohne das abschließende Trennzeichen und den Namen der Anwendung zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-137">Returns the complete path to the application, excluding the final separator and name of the application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-137">Gibt den vollständigen Pfad zur Anwendung ohne das endgültige Trennzeichen und den Namen der Anwendung zurück.</span><span class="sxs-lookup"><span data-stu-id="41880-137">Returns the complete path to the application, excluding the final separator and name of the application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -602,12 +410,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-138">Gibt den programmgesteuerten Bezeichner des Objekts zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-138">Returns the programmatic identifiers for the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-138">Gibt die programmatischen Bezeichner des Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="41880-138">Returns the programmatic identifiers for the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,12 +441,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-139">Für die interne Verwendung reserviert.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-139">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-139">Für interne Zwecke vorbehalten. </span><span class="sxs-lookup"><span data-stu-id="41880-139">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -674,12 +472,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ec567-140">Für die interne Verwendung reserviert.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ec567-140">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="41880-140">Für interne Zwecke vorbehalten.</span><span class="sxs-lookup"><span data-stu-id="41880-140">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
