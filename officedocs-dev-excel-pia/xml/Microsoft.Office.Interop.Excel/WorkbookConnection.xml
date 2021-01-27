@@ -1,13 +1,5 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581067" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009212" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
@@ -29,15 +21,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Reihe von Informationen zum Abrufen von Daten aus einer externen Datenquelle als eine 1st_Excel12-Arbeitsmappe ist eine Verbindung.</summary>
-    <remarks>
-      <para>Verbindungen können in einer Excel-Arbeitsmappe gespeichert werden. Beim Öffnen der Arbeitsmappe wird von Excel eine Kopie der Verbindung im Arbeitsspeicher erstellt, die als Verbindungsobjekt bezeichnet wird. Ein Verbindungsobjekt enthält Informationen wie den Namen des Servers und den Namen des Objekts, das auf diesem Server geöffnet werden soll. Das Verbindungsobjekt kann auch Anmeldeinformationen für die Authentifizierung und/oder einen Befehl enthalten, der an den Server übergeben und ausgeführt wird (z. B. eine SELECT-Anweisung, die von SQL Server ausgeführt wird).</para>
+    <summary>Bei einer Verbindung handelt es sich um eine Reihe von Informationen, die zum Abrufen von Daten aus einer anderen externen Datenquelle als einer 1st_Excel12 werden.</summary>
+    <remarks><para>Verbindungen können in einer Excel-Arbeitsmappe gespeichert werden. Beim Öffnen der Arbeitsmappe wird von Excel eine Kopie der Verbindung im Arbeitsspeicher erstellt, die als Verbindungsobjekt bezeichnet wird. Ein Verbindungsobjekt enthält Informationen wie den Namen des Servers und den Namen des Objekts, das auf diesem Server geöffnet werden soll. Das Verbindungsobjekt kann auch Anmeldeinformationen für die Authentifizierung und/oder einen Befehl enthalten, der an den Server übergeben und ausgeführt wird (z. B. eine SELECT-Anweisung, die von SQL Server ausgeführt wird).</para>
       <para>
-        <b>Hinweis</b>: die genaue Form der Verbindung hängt vom Mechanismus, die zum Abrufen von Daten – ODBC-Verbindungen, OLEDB-Verbindungen verwendet wird und Webabfragen werden unterschiedliche Informationen enthalten.</para>
+        <b>Hinweis:</b>Die genaue Form der Verbindung hängt vom Mechanismus ab, der zum Abrufen von Daten verwendet wird– ODBC-Verbindungen, OLEDB-Verbindungen und Webabfragen enthalten unterschiedliche Informationen.</para>
       <para>Eine Verbindung kann auch in einer separaten Verbindungsdatei gespeichert werden. Die meisten Verbindungen in einer Excel-Arbeitsmappe umfassen einen Zeiger auf eine externe Verbindungsdatei. Verbindungsdateien verfügen über Erweiterungen, die diese eindeutig als Verbindungsdateien kennzeichnen (*.ODC, *.IQY usw.), und können sich auf dem lokalen Computer des Benutzers befinden oder an anderen gut bekannten oder vertrauenswürdigen Speicherorten wie WSS (Datenverbindungsbibliothek) oder auf anderen Firmenservern gespeichert sein. Verbindungsdateien ermöglichen mehreren Benutzern innerhalb eines Unternehmens die Wiederverwendung von Verbindungen. Durch Änderung einer einzelnen Verbindungsdatei können die Netzwerkadministratoren die Art und Weise ändern, wie im gesamten Unternehmen Verbindungen zu den Backend-Datenquellen hergestellt werden. Beim Herstellen einer Verbindung zu einer externen Datenquelle ist jedoch nicht immer eine Verbindungsdatei erforderlich.</para>
       <para>Verbindungsnamen sind Zeichenfolgen, die Verbindungen innerhalb der Arbeitsmappe, in der sie verwendet werden, eindeutig kennzeichnen. Verbindungen verfügen aber auch über Eigenschaften, die nicht eindeutig sind. Wenn in einer Formel in Excel ein Argument verwendet wird, das eine Verbindung darstellt, ist es ausreichend, wenn entweder direkt (als Zeichenfolge) oder indirekt (durch Verweis auf eine Zelle, die den Verbindungsnamen als Zeichenfolge enthält) auf den Namen dieser Verbindung verwiesen wird.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,12 +90,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das die Microsoft Office Excel-Anwendung darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, das die Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel-Anwendung darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -131,12 +119,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.  Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -162,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>DataFeedConnection</b> -Objekt, das die benötigten Daten und Funktionen zur Datenfeeds Verbindung enthält. Schreibgeschützt.</summary>
+        <summary>Gibt ein <b>DataFeedConnection -Objekt</b> zurück, das die Daten und Funktionen enthält, die zum Herstellen einer Verbindung mit Datenfeeds erforderlich sind. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +175,12 @@
       <Parameters />
       <Docs>
         <summary>Löscht eine Arbeitsmappenverbindung.</summary>
-        <remarks>
-          <para>Verwenden Sie diese Methode, um eine externe Datenverbindung zu löschen. Diese Methode kann nicht auf Verknüpfungen zu anderen Arbeitsmappen angewendet werden. </para>
-          <para>Löschen einer Verbindung wird nicht löschen oder entfernen Sie alle Objekte, die diese Verbindung verwendet haben.
+        <remarks><para>Verwenden Sie diese Methode, um eine externe Datenverbindung zu löschen. Diese Methode kann nicht auf Verknüpfungen zu anderen Arbeitsmappen angewendet werden. </para>
+          <para>Durch das Löschen einer Verbindung werden keine Objekte gelöscht oder entfernt, die diese Verbindung verwendet haben.
 
-Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelöscht werden soll nicht verursacht.  Wenn Sie eines dieser Objekte mit einer anderen Verbindung bearbeiten, wird alles arbeiten erneut gestartet.</para>
+Das Löschen einer Verbindung führt nicht dazu, dass die Verbindungsdateien aus dem Dateisystem gelöscht werden.  Wenn Sie eines dieser Objekte so bearbeiten, dass eine andere Verbindung verwendet wird, treten keine Probleme mehr auf.</para>
           <para>Objekte, die eine gelöschte Verbindung verwenden, verhalten sich, als ob die Verbindung nicht hergestellt werden kann.  </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -225,13 +209,11 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt eine kurze Beschreibung für eine <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt. Lese-/Schreibzugriff <b>String</b>.</summary>
+        <summary>Gibt eine kurze Beschreibung für ein Objekt zurück oder legt sie <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> fest. <b>Zeichenfolge</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Im Dialogfeld Verbindungseigenschaften kann der Benutzer den Namen der Verbindung und/oder die Beschreibung bearbeiten. Bei Änderung des Namens und der Beschreibung in diesem Dialogfeld werden auch die entsprechenden Felder innerhalb des Excel-Verbindungsobjekts geändert.</para>
+        <remarks><para>Im Dialogfeld Verbindungseigenschaften kann der Benutzer den Namen der Verbindung und/oder die Beschreibung bearbeiten.  Bei Änderung des Namens und der Beschreibung in diesem Dialogfeld werden auch die entsprechenden Felder innerhalb des Excel-Verbindungsobjekts geändert.</para>
           <para>Die maximale Länge für Beschreibungen beträgt 255 Zeichen. Wenn der Benutzer eine Beschreibung in einer Verbindungsdatei angibt, die länger als 255 Zeichen ist, wird die Beschreibung an der 255-Zeichengrenze abgeschnitten.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -257,12 +239,10 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, ob das Modell <b>WorkbookConnection</b> -Objekt hinzugefügt wurde. <b>Boolean</b> (<b>Bool</b> in c#) Schreibgeschützt.</summary>
+        <summary>Gibt an, ob das <b>WorkbookConnection -Objekt</b> dem Modell hinzugefügt wurde. <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Muss für legacy-Verbindungen false sein.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Muss für Legacyverbindungen "false" sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelConnection">
@@ -288,7 +268,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das Informationen für den neuen Modell Verbindungstyp eingeführt in Excel 2013 für die Interaktion mit dem integrierte Datenmodell enthält. Schreibgeschützt.</summary>
+        <summary>Gibt ein Objekt zurück, das Informationen für den neuen Modellverbindungstyp enthält, der in Excel 2013 für die Interaktion mit dem integrierten Datenmodell eingeführt wurde. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +296,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> -Objekt der speziellen Verbindung zugeordnet. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> Objekt zurück, das der bestimmten Verbindung zugeordnet ist. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +327,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des Arbeitsmappen-Verbindungsobjekts zurück oder legt ihn fest. <b>String</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt den Namen des Arbeitsmappen-Verbindungsobjekts zurück oder legt ihn fest. <b>Zeichenfolge</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +355,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die ODBC-Verbindung für den angegebenen details <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt. Read-only <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</summary>
+        <summary>Gibt die Details der ODBC-Verbindung für das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> zurück. <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +383,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den OLE DB-Verbindung für den angegebenen details <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt. Read-only <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</summary>
+        <summary>Gibt die OLEDB-Verbindungsdetails für das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> zurück. <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -459,7 +439,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Bereich des Objekts für den angegebenen <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt. Read-only <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</summary>
+        <summary>Gibt den Objektbereich für das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> zurück. <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,12 +466,10 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
       <Parameters />
       <Docs>
         <summary>Aktualisiert eine Arbeitsmappenverbindung.</summary>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> -Eigenschaft <b>False</b>ist, werden keine Dialogfelder angezeigt, und die <b>Refresh</b> -Methode schlägt fehl, mit dem Ausnahmefehler "Ungenügende Informationen zur Verbindung" ab.</para>
+        <remarks><para>Wenn die Eigenschaft "False" ist, werden keine Dialogfelder angezeigt, und die Refresh -Methode schlägt mit der Ausnahme "Unzureichende <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> Verbindungsinformationen" <b></b>fehl. <b></b></para>
           <para>Ein Aktualisierungsfehler für eine Verbindung wirkt sich nicht auf die Aktualisierungsvorgänge für die anderen Verbindungen aus. 
 </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshWithRefreshAll">
@@ -520,7 +498,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die Verbindung aktualisiert werden sollen Wenn alle Aktualisierung ausgeführt wird. <b>Boolean</b> (<b>Bool</b> in c#). Lese-/Schreibzugriff.</summary>
+        <summary>Bestimmt, ob die Verbindung aktualisiert werden soll, wenn alle Aktualisierungen ausgeführt werden. <b>Boolean</b> (<b>bool</b> in C#). Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -548,7 +526,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> -Objekt, das die Informationen für eine Abfrage in einer Textdatei enthält. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> Objekt zurück, das die Informationen zu einer Abfrage in einer Textdatei enthält. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -576,7 +554,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ der Arbeitsmappe zurück. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</summary>
+        <summary>Gibt den Verbindungstyp der Arbeitsmappe zurück. <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -604,7 +582,7 @@ Löschen einer Verbindung wird die Verbindung Dateien aus dem Dateisystem gelös
         <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das Informationen für die Verbindung aus dem PowerPivot-Modell mit Daten in der Arbeitsmappe, wie ein Bereich, den benannten Bereich oder die Tabelle enthält. Schreibgeschützt.</summary>
+        <summary>Gibt ein Objekt zurück, das Informationen für eine Verbindung zwischen dem PowerPivot Modell und Daten innerhalb der Arbeitsmappe enthält, z. B. einem Bereich, einem benannten Bereich oder einer Tabelle. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

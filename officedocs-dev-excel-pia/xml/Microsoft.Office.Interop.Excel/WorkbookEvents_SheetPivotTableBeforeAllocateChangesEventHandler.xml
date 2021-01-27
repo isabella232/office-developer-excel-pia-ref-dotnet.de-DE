@@ -1,13 +1,5 @@
 <Type Name="WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2e0da9c4c3258228c829062ea9382c13546fe9b8" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581039" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2e0da9c4c3258228c829062ea9382c13546fe9b8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008771" /></Metadata><TypeSignature Language="C#" Value="public delegate void WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler(Sh As Object, TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
@@ -40,11 +32,10 @@
   <Docs>
     <param name="Sh">Die Arbeitsmappe, in der die PivotTable enthalten ist</param>
     <param name="TargetPivotTable">Die PivotTable, in der die anzuwendenden Änderungen enthalten sind.</param>
-    <param name="ValueChangeStart">Der Index der ersten Änderung im zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung. Der Index wird angegeben durch die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekts der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</param>
-    <param name="ValueChangeEnd">Der Index der letzten Änderung im zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung. Der Index wird angegeben durch die <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> -Objekts der <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung.</param>
-    <param name="Cancel">
-      <b>false,</b> Wenn das Ereignis auftritt. Wenn die Ereignisprozedur dieses Argument auf <b>true</b>festgelegt wird, wird die Änderungen werden nicht angewendet, die der PivotTable, und alle Bearbeitungen verloren.</param>
-    <summary>Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Ereignis. <b>SheetPivotTableBeforeAllocateChanges</b> -Ereignis tritt auf, bevor Änderungen auf eine PivotTable angewendet werden.</summary>
+    <param name="ValueChangeStart">Der Index für die erste Änderung in der zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung. Der Index wird durch die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> des Objekts in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> angegeben.</param>
+    <param name="ValueChangeEnd">Der Index bis zur letzten Änderung in der zugeordneten <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> Auflistung. Der Index wird durch die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> des Objekts in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> angegeben.</param>
+    <param name="Cancel"><b>false,</b> wenn das Ereignis auftritt. Wenn die Ereignisprozedur dieses Argument auf <b>"true"</b>setzt, werden die Änderungen nicht auf die PivotTable angewendet, und alle Bearbeitungen gehen verloren.</param>
+    <summary>Ein <b>Delegattyp,</b> der zum Hinzufügen eines Ereignishandlers für das Ereignis <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> verwendet wird. Das <b>SheetPivotTableBeforeAllocateChanges -Ereignis</b> tritt auf, bevor Änderungen auf eine PivotTable angewendet werden.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
