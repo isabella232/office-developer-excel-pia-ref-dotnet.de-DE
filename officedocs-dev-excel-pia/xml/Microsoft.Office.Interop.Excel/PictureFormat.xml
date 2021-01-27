@@ -1,13 +1,5 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Excel.PictureFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576230" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010997" /></Metadata><TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PictureFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PictureFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface PictureFormat&#xA;Implements _IMsoDispObj" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Enthält Eigenschaften und Methoden, die Grafiken und OLE-Objekten zugewiesen werden.</summary>
-    <remarks>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> -Objekt enthält Eigenschaften und Methoden, die nur verknüpfte OLE-Objekte gelten. Die <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> -Objekt enthält Eigenschaften und Methoden, die OLE-Objekte betreffen, ob diese verknüpft sind oder nicht.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> Eigenschaft, um ein <b>PictureFormat</b> -Objekt zurückzugeben.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> Objekt enthält Eigenschaften und Methoden, die nur für verknüpfte OLE-Objekte gelten. Das <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> Objekt enthält Eigenschaften und Methoden, die auf ole-Objekte angewendet werden, unabhängig davon, ob sie verknüpft sind oder nicht.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> Eigenschaft, um ein <b>PictureFormat -Objekt zurück.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +85,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Helligkeit des angegebenen Bilds oder OLE-Objekt fest. Der Wert für diese Eigenschaft muss eine Zahl zwischen 0,0 (am dunkelsten) und 1,0 (am hellsten).</summary>
+        <summary>Gibt die Helligkeit des angegebenen Bildes oder OLE-Objekts zurück oder legt sie fest. Der Wert für diese Eigenschaft muss eine Zahl zwischen 0,0 (am dunkelsten) und 1,0 (am hellsten).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +147,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Kontrast des angegebenen Bilds oder OLE-Objekts zurück oder legt ihn fest. Der Wert für diese Eigenschaft muss im Bereich von 0,0 (geringster Kontrast) bis 1,0 (höchster Kontrast) liegen.</summary>
+        <summary>Gibt den Kontrast des angegebenen Bildes oder OLE-Objekts zurück oder legt ihn fest. Der Wert dieser Eigenschaft muss eine Zahl zwischen 0,0 (geringster Kontrast) und 1,0 (höchster Kontrast) sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,13 +178,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crop">
@@ -220,12 +208,10 @@
         <ReturnType>Microsoft.Office.Core.Crop</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Core.Crop" /> -Objekt, das die Zuschneiden Einstellungen für den angegebenen stellt <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> Objekt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Core.Crop" /> -Objekt, das die Zuschneiden Einstellungen für den angegebenen stellt <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> Objekt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para></para>
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Core.Crop" /> Objekt ab, das die Zuschneideeinstellungen für das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Core.Crop" /> Objekt, das die Zuschneideeinstellungen für das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -256,10 +242,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der unteren Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt hohes Bild ein, skalieren es auf eine Höhe von 200 Punkt und legen danach für die <b>CropBottom</b>CropBottom-Eigenschaft den Wert 50 fest, dann wird das Bild an der unteren Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt hohes Bild ein, skalieren es auf eine Höhe von 200 Punkt und legen danach für die <b>CropBottom</b>CropBottom-Eigenschaft den Wert 50 fest, dann wird das Bild an der unteren Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropLeft">
@@ -290,10 +274,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der linken Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt breites Bild ein, skalieren es auf eine Breite von 200 Punkt und legen danach für die <b>CropLeft</b>CropLeft-Eigenschaft den Wert 50 fest, dann wird das Bild an der linken Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt breites Bild ein, skalieren es auf eine Breite von 200 Punkt und legen danach für die <b>CropLeft</b>CropLeft-Eigenschaft den Wert 50 fest, dann wird das Bild an der linken Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropRight">
@@ -324,10 +306,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der rechten Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt breites Bild ein, skalieren es auf eine Breite von 200 Punkt und legen danach für die <b>CropRight</b>CropRight-Eigenschaft den Wert 50 fest, dann wird das Bild an der rechten Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt breites Bild ein, skalieren es auf eine Breite von 200 Punkt und legen danach für die <b>CropRight</b>CropRight-Eigenschaft den Wert 50 fest, dann wird das Bild an der rechten Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropTop">
@@ -358,10 +338,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der oberen Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur Originalgröße des Bildes berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt hohes Bild ein, skalieren es auf eine Höhe von 200 Punkt und legen danach für die <b>CropTop</b>CropTop-Eigenschaft den Wert 50 fest, dann wird das Bild an der oberen Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Fügen Sie beispielsweise ein ursprünglich 100 Punkt hohes Bild ein, skalieren es auf eine Höhe von 200 Punkt und legen danach für die <b>CropTop</b>CropTop-Eigenschaft den Wert 50 fest, dann wird das Bild an der oberen Seite um 100 Punkt (und nicht um 50) zugeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementBrightness">
@@ -387,14 +365,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>erforderlich. Gibt an, wie viel zum Ändern des Werts, der die <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" /> -Eigenschaft für das Bild. Ein positiver Wert wird das Bild heller; ein negativer Wert macht es dunkler.</param>
+        <param name="Increment">Erforderlicher <b>Single</b>-Wert. Gibt an, wie viel der Wert der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" /> für das Bild geändert werden soll. Ein positiver Wert wird das Bild heller; ein negativer Wert macht es dunkler.</param>
         <summary>Ändert die Helligkeit des Bildes um den angegebenen Wert.</summary>
-        <remarks>
-          <para>Verwenden Sie die <b>Brightness</b> -Eigenschaft zum Festlegen der absoluten Helligkeit des Bilds.</para>
-          <para>Sie können die Helligkeit einer Grafik über der oberen oder unteren Begrenzung für die <b>Brightness</b> -Eigenschaft nicht anpassen. Wenn die <b>Brightness</b> -Eigenschaft anfangs auf 0,9 festgelegt ist, und geben Sie für 0,3 beispielsweise die <paramref name="Increment" /> -Argument werden die resultierenden Helligkeit Ebene 1.0, die obere Grenze für die <b>Brightness</b> -Eigenschaft nicht 1,2.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Verwenden Sie die <b>Brightness</b> -Eigenschaft zum Festlegen der absoluten Helligkeit des Bilds.</para>
+          <para>Sie können die Helligkeit einer Grafik über der oberen oder unteren Begrenzung für die <b>Brightness</b> -Eigenschaft nicht anpassen. Wenn die Eigenschaft <b>"Brightness"</b> z. B. anfänglich auf 0,9 festgelegt ist und Sie für das Argument 0,3 angeben, beträgt die resultierende Helligkeitsstufe 1,0, d. h. die Obergrenze für die <paramref name="Increment" /> Eigenschaft <b>"Brightness"</b> und nicht 1,2.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementContrast">
@@ -420,14 +395,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>erforderlich. Gibt an, wie viel zum Ändern des Werts, der die <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Contrast" /> -Eigenschaft für das Bild. Ein positiver Wert erhöht den Kontrast; ein negativer Wert verringert den Kontrast.</param>
+        <param name="Increment">Erforderlicher <b>Single</b>-Wert. Gibt an, wie viel der Wert der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Contrast" /> für das Bild geändert werden soll. Ein positiver Wert erhöht den Kontrast; ein negativer Wert verringert den Kontrast.</param>
         <summary>Ändert den Kontrast des Bildes um den angegebenen Wert.</summary>
-        <remarks>
-          <para>Verwenden Sie die <b>Contrast</b> -Eigenschaft, um den absoluten Kontrast des Bildes festzulegen.</para>
-          <para>Sie können den Kontrast des ein Bild über die oberen oder unteren Begrenzung für die <b>Contrast</b> -Eigenschaft nicht anpassen. Wenn Sie die <b>Contrast</b> -Eigenschaft anfangs auf 0,9 festgelegt ist, und geben Sie für 0,3 beispielsweise die <paramref name="Increment" /> -Argument werden Kontrastgrad 1.0, die obere Grenze für die <b>Contrast</b> -Eigenschaft nicht 1,2.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Verwenden Sie die <b>Contrast</b> -Eigenschaft, um den absoluten Kontrast des Bildes festzulegen.</para>
+          <para>Sie können den Kontrast des ein Bild über die oberen oder unteren Begrenzung für die <b>Contrast</b> -Eigenschaft nicht anpassen. Wenn die Contrast <b></b> -Eigenschaft z. B. anfänglich auf 0,9 festgelegt ist und Sie für das Argument 0,3 angeben, beträgt die resultierende Kontraststufe 1,0, was der oberen Grenze für die Contrast -Eigenschaft anstatt <paramref name="Increment" /> 1,2 ist. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -489,11 +461,9 @@
       <Docs>
         <summary>Gibt die transparente Farbe für die angegebene Grafik als Rot-Grün-Blau-Wert (RGB) zurück oder legt sie fest. Gilt nur für Bitmaps.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Damit diese Eigenschaft wirksam wird, die <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" /> -Eigenschaft muss auf <b>True</b>festgelegt werden.</para>
-          <para>Wenn durch die transparenten Teile der Grafik zu den Objekten hinter der Grafik angezeigt werden soll, müssen Sie festlegen der <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> -Eigenschaft des des Bilds <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> Objekts auf <b>false festgelegt</b>. Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b> festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter der Grafik sind jedoch verdeckt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Damit diese Eigenschaft wirksam wird, muss <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" /> die Eigenschaft auf True festgelegt <b>werden.</b></para>
+          <para>Wenn Sie in der Lage sein möchten, die transparenten Teile des Bilds bis zu den Objekten hinter dem Bild zu sehen, müssen Sie die Eigenschaft des Bildobjekts auf <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> False <b>festlegen.</b> Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b> festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter der Grafik sind jedoch verdeckt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TransparentBackground">
@@ -522,13 +492,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, ob das angegebene Grafik-Format einen transparenten Hintergrund verwendet wird.</summary>
+        <summary>Gibt zurück oder legt fest, ob das angegebene Bildformat einen transparenten Hintergrund verwendet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" /> Eigenschaft, um die transparente Farbe festzulegen. Gilt nur für Bitmaps.</para>
-          <para>Wenn durch die transparenten Teile der Grafik zu den Objekten hinter der Grafik angezeigt werden soll, müssen Sie festlegen der <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> -Eigenschaft des des Bilds <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> Objekts auf <b>false festgelegt</b>. Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b> festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter der Grafik sind jedoch verdeckt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" /> Eigenschaft, um die transparente Farbe festlegen. Gilt nur für Bitmaps.</para>
+          <para>Wenn Sie in der Lage sein möchten, die transparenten Teile des Bilds bis zu den Objekten hinter dem Bild zu sehen, müssen Sie die Eigenschaft des Bildobjekts auf <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> False <b>festlegen.</b> Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b> festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter der Grafik sind jedoch verdeckt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Tab" FullName="Microsoft.Office.Interop.Excel.Tab">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="71eb536a457812dc4d61b8e60fbc32743a3a5406" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585820" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Tab" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="71eb536a457812dc4d61b8e60fbc32743a3a5406" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009779" /></Metadata><TypeSignature Language="C#" Value="public interface Tab" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Tab" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Tab" />
   <TypeSignature Language="VB.NET" Value="Public Interface Tab" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Registerkarte in einem Diagramm oder Arbeitsblatt dar.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Tab</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekt oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekts, um ein <b>Tab</b> -Objekt zurückzugeben.</para>
-      <para>Nachdem ein <b>Tab</b> -Objekt zurückgegeben wurde, können Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.Tab.ColorIndex" /> -Eigenschaft auf die Einstellungen einer Registerkarte für ein Diagramm oder Arbeitsblatt zu ermitteln.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Verwenden Sie <b>die Tab -Eigenschaft</b> des <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekts oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Objekts, um ein Tab <b>-Objekt zurückzukehren.</b></para>
+      <para>Nachdem ein <b>Tab</b> -Objekt zurückgegeben wurde, können Sie die Eigenschaft verwenden, um die Einstellungen einer Registerkarte für ein Diagramm oder <see cref="P:Microsoft.Office.Interop.Excel.Tab.ColorIndex" /> Arbeitsblatt zu bestimmen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +81,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die primäre Textfarbe der Registerkarte.</summary>
+        <summary>Gibt die Primärfarbe der Registerkarte zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,12 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Farbe der Registerkarte angegebenen Diagramm.</summary>
+        <summary>Gibt die Farbe der angegebenen Diagrammregisterkarte zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Farbe wird angegeben, als eines der <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> Konstanten.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die Farbe wird als eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> angegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,13 +141,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -216,14 +202,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlThemeColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Designfarbe in die zugewiesenen Farbschemas an, die dem angegebenen Objekt zugeordnet ist. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" />
-        </value>
-        <remarks>
-          <para>Wenn Sie versuchen, auf eine Designfarbe für ein Objekt zuzugreifen, dessen Farbe aktuell nicht durch ein Design festgelegt ist, wird der Laufzeitfehler "Ungültige Anforderung" ausgegeben.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt die Designfarbe im angewendeten Farbschema zurück, das dem angegebenen Objekt zugeordnet ist, oder legt diese Farbe fest. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" /></value>
+        <remarks><para>Wenn Sie versuchen, auf eine Designfarbe für ein Objekt zuzugreifen, dessen Farbe aktuell nicht durch ein Design festgelegt ist, wird der Laufzeitfehler "Ungültige Anforderung" ausgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TintAndShade">
@@ -252,15 +234,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>einzelnen</b> , der eine Farbe aufhellt oder abdunkelt.</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>Sie können Geben Sie eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für die <see cref="P:Microsoft.Office.Interop.Excel.Tab.TintAndShade" /> Eigenschaft. 0 (null) ist neutral.</para>
+        <summary>Gibt einen <b>Single</b>-Wert zurück, der eine Farbe aufhellt oder abdunkelt, oder legt diesen Wert fest.</summary>
+        <value><b>Single</b></value>
+        <remarks><para>Sie können eine Zahl zwischen -1 (dunkelster) und 1 (hellster) für die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.Tab.TintAndShade" /> eingeben. Der Wert 0 (null) ist neutral.</para>
           <para>Wenn Sie versuchen, diese Eigenschaft auf einen Wert unter -1 oder über 1 festzulegen, wird der Laufzeitfehler "Der angegebene Wert ist außerhalb des zulässigen Bereichs" ausgegeben. Diese Eigenschaft gilt sowohl für Designfarben als auch für designfremde Farben.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

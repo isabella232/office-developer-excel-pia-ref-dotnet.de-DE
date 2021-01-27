@@ -1,13 +1,5 @@
 <Type Name="Top10" FullName="Microsoft.Office.Interop.Excel.Top10">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="474d68fa0fa867d70e67f0c483f206c92800d97e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586212" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Top10" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="474d68fa0fa867d70e67f0c483f206c92800d97e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009513" /></Metadata><TypeSignature Language="C#" Value="public interface Top10" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Top10" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Top10" />
   <TypeSignature Language="VB.NET" Value="Public Interface Top10" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Visualisierung der Top-10-Werte einer bedingten Formatierungsregel dar. Durch das Anwenden einer Farbe auf einen Bereich können Sie den Wert einer Zelle relativ zu anderen Zellen anzeigen.</summary>
-    <remarks>
-      <para>Alle Objekte für bedingte Formatierung enthaltenen ein <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> -Auflistungsobjekt, das ein untergeordnetes Element von einer <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Auflistung. Sie können eine Formatierungsregel Top 10 erstellen, verwenden Sie eine der <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> oder <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" /> -Methode der <b>FormatConditions</b> -Auflistung.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Alle Bedingten Formatierungsobjekte sind in einem <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistungsobjekt enthalten, das ein untergeordnetes Objekt einer Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ist. Sie können eine Oberste 10-Formatierungsregel erstellen, indem Sie entweder die oder die Methode <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" /> der <b>FormatConditions -Auflistung</b> verwenden.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,14 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das die Microsoft Office Excel-Anwendung darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
-        <value>
-          <b>Anwendung</b>
-        </value>
-        <remarks>
-          <para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
-          <para></para>
-        </remarks>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, das die Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel-Anwendung darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
+        <value><b>Anwendung</b></value>
+        <remarks><para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -92,10 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Zellbereich, auf den die Formatierungsregel angewendet wird.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>Gibt den Zellbereich zurück, auf den die Formatierungsregel angewendet wird.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,14 +106,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> -Auflistung, die gibt die Formatierung von Zellenrahmen, wenn die Regel zur bedingte Formatierung zu <b>True</b>ausgewertet wird. Schreibgeschützt.</summary>
-        <value>
-          <b>Borders</b>
-        </value>
-        <remarks>
-          <para>Bei einem bedingten Formatierungsobjekt können Sie die Eigenschaften nur für die oberen, unteren und seitlichen Rahmen der Zelle festlegen.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt eine Auflistung zurück, die die Formatierung von Zellenrändern angibt, wenn die Regel zur bedingten Formatierung <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> zu <b>True ausgewertet wird.</b> Schreibgeschützt.</summary>
+        <value><b>Borders</b></value>
+        <remarks><para>Bei einem bedingten Formatierungsobjekt können Sie die Eigenschaften nur für die oberen, unteren und seitlichen Rahmen der Zelle festlegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CalcFor">
@@ -158,15 +138,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalcFor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, wie die bedingte Formatierung in einem PivotTable-Bericht ausgewertet werden soll.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" />
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft kann nur angewendet werden, wenn die bedingte Formatierung auf Daten in einem PivotTable-Bericht angewendet wird.</para>
-          <para>Diese Eigenschaft kann festgelegt werden, um <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" />, <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" />, oder <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> nur, wenn die <see cref="P:Microsoft.Office.Interop.Excel.Top10.ScopeType" /> -Eigenschaft enthält <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" />. </para>
-          <para></para>
-        </remarks>
+        <summary>Gibt zurück oder legt fest, wie das bedingte Format in einem PivotTable-Bericht ausgewertet werden soll.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /></value>
+        <remarks><para>Diese Eigenschaft kann nur angewendet werden, wenn die bedingte Formatierung auf Daten in einem PivotTable-Bericht angewendet wird.</para>
+          <para>Diese Eigenschaft kann auf , oder nur festgelegt <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" /> werden, <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> wenn die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.Top10.ScopeType" /> festgelegt <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" /> ist. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -192,14 +168,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Returns a 32-bit integer that indicates the application in which this object was created. Read-only.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.  Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -250,14 +222,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> -Objekt, das gibt die Schriftart, die Formatierung, wenn die Regel zur bedingte Formatierung zu <b>True</b>ausgewertet wird. Schreibgeschützt.</summary>
-        <value>
-          <b>Font</b>
-        </value>
-        <remarks>
-          <para>Für ein bedingtes Formatierungsobjekt werden nicht alle Eigenschaften des <b>Font</b>-Objekt unterstützt. Sie können Attribute für den Schriftschnitt, Unterstreichungen, die Farbe und Durchstreichungen festlegen.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt zurück, das die Schriftartformatierung angibt, wenn die Regel für die bedingte Formatierung zu <b>True ausgewertet wird.</b> Schreibgeschützt.</summary>
+        <value><b>Font</b></value>
+        <remarks><para>Für ein bedingtes Formatierungsobjekt werden nicht alle Eigenschaften des <b>Font</b>-Objekt unterstützt. Sie können Attribute für den Schriftschnitt, Unterstreichungen, die Farbe und Durchstreichungen festlegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -283,10 +251,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> Objekt, das eine Zelle inneren Attribute für eine bedingte Formatierung Regel, die angibt, die auf <b>True</b>ausgewertet wird. Schreibgeschützt.</summary>
-        <value>
-          <b>Interior</b>
-        </value>
+        <summary>Gibt ein Objekt zurück, das die inneren Attribute einer Zelle für eine Regel zur bedingten Formatierung angibt, <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> die als True ausgewertet <b>wird.</b> Schreibgeschützt.</summary>
+        <value><b>Interior</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,11 +280,9 @@
       <Docs>
         <param name="Range">Der Bereich, für den diese Formatierungsregel gilt.</param>
         <summary>Legt den Zellbereich fest, für den diese Formatierungsregel gilt.</summary>
-        <remarks>
-          <para>Der Bereich muss in der A1-Bezugsart und werden vollständig in das Blatt, das das übergeordnete Objekt des ist enthalten die <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistung. Sie können den Bereichsoperator (Doppelpunkt), der Schnittmengenoperator (ein Leerzeichen) oder der union-Operator (Komma) enthalten. Dollarzeichen kann auch verwendet werden, aber sie werden ignoriert.</para>
+        <remarks><para>Der Bereich muss im Bezugsformat A1 enthalten sein und vollständig in dem Blatt enthalten sein, das das übergeordnete Element der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> ist. Er kann den Bereichsoperator (Doppelpunkt), den Schnittmengenoperator (Leerzeichen) oder den Vereinigungsoperator (Komma) enthalten. Dollarzeichen können auch verwendet werden, sie werden aber ignoriert.</para>
           <para>Sie können auch einen lokalen, definierten Namen in einem Teil des Bereichs verwenden, der Name muss aber in der Sprache des Makros angegeben sein.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -347,14 +311,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt das Zahlenformat auf eine Zelle angewendet wird, wenn die Regel zur bedingte Formatierung zu <b>True</b>ausgewertet wird. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Das Zahlenformat wird mit den gleichen Formatcodes angegeben, die auch auf der Registerkarte Zahlen im Dialogfeld Zellen formatieren angezeigt werden. Sie können ein integriertes Zahlenformat z. B. Standard verwenden oder ein benutzerdefiniertes Zahlenformat erstellen.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt das Zahlenformat zurück oder legt es fest, das auf eine Zelle angewendet wird, wenn die Regel zur bedingten Formatierung zu <b>True</b> ausgewertet wird. Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Das Zahlenformat wird mit den gleichen Formatcodes angegeben, die auch auf der Registerkarte Zahlen im Dialogfeld Zellen formatieren angezeigt werden. Sie können ein integriertes Zahlenformat z. B. Standard verwenden oder ein benutzerdefiniertes Zahlenformat erstellen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -381,9 +341,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Objekt für das angegebene Objekt zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,9 +372,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der angibt, ob der Rang von einem Prozentwert angegeben wird, oder legt ihn fest.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,13 +403,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt den Prioritätswert der Regel zur bedingten Formatierung zurück oder legt ihn fest. Durch die Priorität wird die Reihenfolge der Auswertung bestimmt, wenn für ein Arbeitsblatt mehrere Regeln zur bedingten Formatierung vorhanden sind.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Beim Festlegen der Priorität muss der Wert eine positive ganze Zahl zwischen 1 und der Gesamtanzahl von Regeln zur bedingten Formatierung auf dem Arbeitsblatt sein. Die Priorität muss ein eindeutiger Wert für alle Regeln des Arbeitsblatts sein. Das Ändern der Priorität für eine Regel zur bedingten Formatierung kann also dazu führen, dass sich die Prioritätswerte anderer Regeln des Arbeitsblatts ebenfalls ändern.</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Beim Festlegen der Priorität muss der Wert eine positive ganze Zahl zwischen 1 und der Gesamtanzahl von Regeln zur bedingten Formatierung auf dem Arbeitsblatt sein. Die Priorität muss ein eindeutiger Wert für alle Regeln des Arbeitsblatts sein. Das Ändern der Priorität für eine Regel zur bedingten Formatierung kann also dazu führen, dass sich die Prioritätswerte anderer Regeln des Arbeitsblatts ebenfalls ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -480,9 +432,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der angibt, ob ein bedingtes Format auf ein PivotTable-Diagramm angewendet wird. Schreibgeschützt.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,10 +462,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt, oder legt <b>einen Ganzzahlwert, der die Anzahl oder den Prozentsatz des Rangwerts für die Regel zur bedingten Formatierung angeben</b> .</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt einen <b>Ganzzahlwert zurück oder</b> legt einen wert fest, der entweder die Zahl oder den Prozentsatz des Rangwerts für die Regel für die bedingte Formatierung angibt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,14 +493,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Bereich der bedingten Formatierung fest, wenn sie auf ein PivotTable-Diagramm angewendet wird.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, der festlegt, den Bereich mit der <see cref="P:Microsoft.Office.Interop.Excel.Top10.AppliesTo" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt den Bereich des bedingten Formats zurück oder legt ihn fest, wenn es auf ein PivotTable-Diagramm angewendet wird.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> , der den Bereich mithilfe der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.Top10.AppliesTo" /> legt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -577,12 +521,10 @@
       <Parameters />
       <Docs>
         <summary>Legt den Prioritätswert für diese Regel zur bedingten Formatierung auf 1 fest, sodass die Regel vor allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
-        <remarks>
-          <para>Wenn Sie mehrere Regeln zur bedingte Formatierung in einem Arbeitsblatt vorhanden sind, wenn die Regel nicht zuvor Priorität "1" festgelegt wurde, bewirkt diese Methode die Priorität aller anderen vorhandenen Regeln auf dem Arbeitsblatt um 1 erhöht werden.</para>
+        <remarks><para>Wenn in einem Arbeitsblatt mehrere Regeln für die bedingte Formatierung vorhanden sind und die Regel zuvor nicht auf Priorität "1" festgelegt war, erhöht diese Methode die Priorität aller anderen vorhandenen Regeln auf dem Arbeitsblatt um eins.</para>
           <para>
-            <b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para>
-          <para></para>
-        </remarks>
+            <b>Hinweis:</b>Prioritätsstufen für Regeln zur bedingten Formatierung werden auf Arbeitsblattebene angewendet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -607,12 +549,10 @@
       <Parameters />
       <Docs>
         <summary>Legt die Auswertungsreihenfolge für diese Regel zur bedingten Formatierung fest, sodass sie nach allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
-        <remarks>
-          <para>Der tatsächliche Wert der Priorität entspricht der Gesamtanzahl von Regeln zur bedingten Formatierung im Arbeitsblatt. Wenn ein Arbeitsblatt mehrere Regeln zur bedingten Formatierung enthält, werden die Prioritäten von Regeln, die zuvor einen höheren Prioritätswert als diese Regel hatten, von dieser Methode um 1 reduziert.</para>
+        <remarks><para>Der tatsächliche Wert der Priorität entspricht der Gesamtanzahl von Regeln zur bedingten Formatierung im Arbeitsblatt. Wenn ein Arbeitsblatt mehrere Regeln zur bedingten Formatierung enthält, werden die Prioritäten von Regeln, die zuvor einen höheren Prioritätswert als diese Regel hatten, von dieser Methode um 1 reduziert.</para>
           <para>
-            <b>Hinweis</b>: Prioritätsebenen für Regeln zur bedingten Formatierung auf eine Arbeitsblattebene angewendet werden.</para>
-          <para></para>
-        </remarks>
+            <b>Hinweis:</b>Prioritätsstufen für Regeln zur bedingten Formatierung werden auf Arbeitsblattebene angewendet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -642,13 +582,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der bestimmt, ob zusätzliche Formatierungsregeln für die Zelle ausgewertet werden sollen, wenn die aktuelle Regel zu <b>True</b> ausgewertet wird, oder legt diesen Wert fest.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Zur Unterstützung der Abwärtskompatibilität lautet der Standardwert für diese Eigenschaft <b>True</b>, dies ist das Gegenteil des Verhaltens einer Formatierungsregel, die auf der Benutzeroberfläche erstellt wird.</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Zur Unterstützung der Abwärtskompatibilität lautet der Standardwert für diese Eigenschaft <b>True</b>, dies ist das Gegenteil des Verhaltens einer Formatierungsregel, die auf der Benutzeroberfläche erstellt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopBottom">
@@ -677,10 +613,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTopBottom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine der Konstanten der oder legt die <see cref="T:Microsoft.Office.Interop.Excel.XlTopBottom" /> -Enumeration zurück, wenn die Rangfolge von oben oder unten ausgewertet wird.</summary>
-        <value>
-          <b>XlTopBottom</b>
-        </value>
+        <summary>Gibt eine der Konstanten der Enumeration zurück oder legt sie fest, um festzustellen, ob die Rangfolge von oben oder <see cref="T:Microsoft.Office.Interop.Excel.XlTopBottom" /> unten ausgewertet wird.</summary>
+        <value><b>XlTopBottom</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -707,14 +641,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ der bedingten Formatierung zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gibt immer einen <b>Integer</b> -Wert "5", entspricht zurück <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTop10" />.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt den Typ des bedingten Formats zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /></value>
+        <remarks><para>Diese Eigenschaft gibt immer einen <b>ganzzahligen</b> Wert von "5" zurück, der gleichbedeutend mit <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTop10" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

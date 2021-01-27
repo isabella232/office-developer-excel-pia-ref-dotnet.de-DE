@@ -1,13 +1,5 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575635" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011207" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEObjects&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> Objekte des angegebenen Arbeitsblatts. Jedes  <b>OLEObject</b>-Objekt stellt ein ActiveX-Steuerelement oder ein verknüpftes bzw. eingebettetes OLE-Objekt dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> -Methode, um die <b>OLEObjects</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um ein neues OLE-Objekt erstellen und der <b>OLEObjects</b> -Auflistung hinzufügen.</para>
-      <para>Ein ActiveX-Steuerelement in einem Blatt verfügt über zwei Namen: der Name der Form, die das Steuerelement, die Sie in das Feld Name anzeigen können enthält, wenn Sie das Blatt und den Code für das Steuerelement, das Sie in der Zelle rechts neben (Name) im Fenster Eigenschaften finden Sie unter anzeigen. Wenn Sie zuerst ein Steuerelement zu einem Blatt hinzufügen, zuordnen Shape-Name und Codename. Jedoch wenn Sie Shapenamen oder der Codename ändern, wird die andere nicht automatisch entsprechend geändert.</para>
-      <para>Verwenden Sie den Code Namen eines Steuerelements in die Namen der entsprechenden Ereignisprozeduren. Wenn Sie jedoch ein Steuerelement aus Zurückgeben der <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> oder <b>OLEObjects</b> -Auflistung für ein Blatt, müssen Sie den Shapenamen nicht den Codenamen verwenden, um auf das Steuerelement nach Namen verweisen möchten. Nehmen wir beispielsweise an, dass Sie einem Blatt ein Kontrollkästchen hinzugefügt und der Name des Shapes und den Code Standardnamen "CheckBox1" lauten. Wenn Sie den Code Steuerelementnamen klicken Sie dann im Eigenschaftenfenster ChkFinished neben (Name) eingeben ändern, müssen Sie ChkFinished Ereignisprozeduren verwenden, jedoch weiterhin "CheckBox1" verwenden, um das Steuerelement aus der <b>Shapes-</b> oder der <b>OLEObjects</b> zurückzugeben Auflistung.</para>
-      <para></para>
-    </remarks>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> im angegebenen Arbeitsblatt. Jedes  <b>OLEObject</b>-Objekt stellt ein ActiveX-Steuerelement oder ein verknüpftes bzw. eingebettetes OLE-Objekt dar.</summary>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> Methode, um die <b>OLEObjects -Auflistung zurück.</b></para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> die Methode, um ein neues OLE -Objekt zu erstellen und der <b>OLEObjects -Auflistung hinzuzufügen.</b></para>
+      <para>Ein ActiveX-Steuerelement auf einem Blatt hat zwei Namen: den Namen des Shapes, das das Steuerelement enthält, das beim Anzeigen des Blatts im Feld "Name" angezeigt wird, und den Codenamen für das Steuerelement, der in der Zelle rechts neben (Name) im Eigenschaftenfenster angezeigt wird. Wenn Sie zum ersten Mal einem Blatt ein Steuerelement hinzufügen, stimmen Formname und Codename überein. Wenn Sie jedoch den Form- oder den Codenamen ändern, wird der andere nicht automatisch entsprechend geändert.</para>
+      <para>Sie verwenden den Codenamen eines Steuerelements in dem Namen seiner Ereignisprozeduren. Wenn Sie jedoch ein Steuerelement aus der oder der OLEObjects -Auflistung für ein Blatt zurückgeben, müssen Sie den Shapenamen und nicht den Codenamen verwenden, um auf das Steuerelement über seinen <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Namen zu verweisen. <b></b> Nehmen Sie beispielsweise an, dass Sie einem Blatt ein Kontrollkästchen hinzufügen, und dass der Standardformname und der Standardcodename "CheckBox1" lauten. Wenn Sie dann den Codenamen des Steuerelements ändern, indem Sie "chkFinished" neben (Name) im Eigenschaftenfenster eingeben, müssen Sie "chkFinished" in den Namen von Ereignisprozeduren verwenden, sie müssen jedoch trotzdem "CheckBox1" verwenden, um das Steuerelement aus der <b>Shapes-</b> oder <b>OLEObjects</b> -Auflistung zurückzukehren.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Dummy12">
@@ -67,7 +57,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +113,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +141,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +169,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +197,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,7 +225,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +253,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +281,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,7 +309,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +337,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,7 +365,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,7 +393,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,7 +421,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,18 +457,18 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">Optionales- <b>Objekt</b>. (Geben Sie entweder <paramref name="ClassType" /> oder <paramref name="FileName" />.) Eine Zeichenfolge mit dem programmgesteuerten Bezeichner für das Objekt erstellt werden soll. Wenn <paramref name="ClassType" /> angegeben ist, <paramref name="FileName" /> und <paramref name="Link" /> werden ignoriert.</param>
-        <param name="Filename">Optionales- <b>Objekt</b>. (Geben Sie entweder <paramref name="ClassType" /> oder <paramref name="FileName" />.) Eine Zeichenfolge, die angibt, die Datei verwendet werden, um das OLE-Objekt zu erstellen.</param>
-        <param name="Link">Optionales- <b>Objekt</b>. <b>True</b> , wenn das neue OLE-Objekt basierend auf <paramref name="FileName" /> mit der Datei verknüpft werden. Wenn das Objekt nicht verknüpft wird, wird das Objekt als eine Kopie der Datei erstellt. Der Standardwert lautet <b>False</b>.</param>
-        <param name="DisplayAsIcon">Optionales- <b>Objekt</b>. <b>True,</b> um das neue OLE-Objekt als Symbol oder als die regulären Bild anzuzeigen. Wenn dieses Argument <b>True</b>ist, <paramref name="IconFileName" /> und <paramref name="IconIndex" /> kann verwendet werden, um ein Symbol anzugeben.</param>
-        <param name="IconFileName">Optionales- <b>Objekt</b>. Eine Zeichenfolge, die die Datei, die das das angibt anzuzeigende Symbol enthält. Dieses Argument wird nur verwendet, wenn <paramref name="DisplayAsIcon" /> ist <b>True</b>. Wenn dieses Argument nicht angegeben oder die Datei keine Symbole enthält, wird das Standardsymbol für die OLE-Klasse verwendet.</param>
-        <param name="IconIndex">Optionales- <b>Objekt</b>. Die Nummer des Symbols in der Symboldatei. Dies wird nur verwendet, wenn <paramref name="DisplayAsIcon" /> ist <b>True</b> und <paramref name="IconFileName" /> verweist auf eine gültige Datei, die Symbole enthält. Wenn kein Symbol mit der angegebenen Indexnummer in der angegebenen Datei existiert <paramref name="IconFileName" />, wird das erste Symbol in der Datei verwendet.</param>
-        <param name="IconLabel">Optionales- <b>Objekt</b>. Eine Zeichenfolge, die angibt, eine Beschriftung unter dem Symbol angezeigt. Dies wird nur verwendet, wenn <paramref name="DisplayAsIcon" /> ist <b>True</b>. Wenn dieses Argument ausgelassen wird oder eine leere Zeichenfolge ist (""), keine Beschriftung angezeigt.</param>
-        <param name="Left">Optionales- <b>Objekt</b>. Die Anfangskoordinaten des neuen Objekts in Punkten, relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
-        <param name="Top">Optionales- <b>Objekt</b>. Die Anfangskoordinaten des neuen Objekts in Punkten, relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
-        <param name="Width">Optionales- <b>Objekt</b>. Die Anfangsgröße des neuen Objekts in Punkt.</param>
-        <param name="Height">Optionales- <b>Objekt</b>. Die Anfangsgröße des neuen Objekts in Punkt.</param>
-        <summary>Fügt einem Blatt ein neues OLE-Objekt hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> Objekt.</summary>
+        <param name="ClassType">Optionales <b>Objekt</b>. (Sie müssen entweder oder <paramref name="ClassType" /> <paramref name="FileName" /> angeben.) Eine Zeichenfolge, die den programmgesteuerten Bezeichner für das zu erstellende Objekt enthält. Wenn <paramref name="ClassType" /> angegeben und ignoriert <paramref name="FileName" /> <paramref name="Link" /> wird.</param>
+        <param name="Filename">Optionales <b>Objekt</b>. (Sie müssen entweder oder <paramref name="ClassType" /> <paramref name="FileName" /> angeben.) Eine Zeichenfolge, die die Datei angibt, die zum Erstellen des OLE-Objekts verwendet werden soll.</param>
+        <param name="Link">Optionales <b>Objekt</b>. <b>True,</b> wenn das neue OLE-Objekt basierend <paramref name="FileName" /> auf dieser Datei verknüpft werden soll. Wenn es nicht verknüpft wird, wird das Objekt als Kopie der Datei erstellt. Der Standardwert ist <b>False</b>.</param>
+        <param name="DisplayAsIcon">Optionales <b>Objekt</b>. Mit  <b>True</b> wird das neue OLE-Objekt als Symbol oder in seiner normalen Bilddarstellung angezeigt. Wenn dieses Argument <b>True ist</b>und zum Angeben eines Symbols verwendet <paramref name="IconFileName" /> werden <paramref name="IconIndex" /> kann.</param>
+        <param name="IconFileName">Optionales <b>Objekt</b>. Eine Zeichenfolge, mit der die Datei angegeben wird, die das anzuzeigende Symbol enthält. Dieses Argument wird nur verwendet, wenn <paramref name="DisplayAsIcon" /> true <b>ist.</b> Wenn dieses Argument nicht angegeben ist oder die Datei keine Symbole enthält, wird das Standardsymbol für die OLE-Klasse verwendet.</param>
+        <param name="IconIndex">Optionales <b>Objekt</b>. Die Nummer des Symbols in der Symboldatei. Dies wird nur verwendet, <paramref name="DisplayAsIcon" /> wenn <b>"True"</b> ist und auf eine gültige Datei mit <paramref name="IconFileName" /> Symbolen verweist. Wenn in der angegebenen Datei kein Symbol mit der angegebenen Indexnummer vorhanden ist, wird das erste Symbol in der <paramref name="IconFileName" /> Datei verwendet.</param>
+        <param name="IconLabel">Optionales <b>Objekt</b>. Eine Zeichenfolge, die eine unter dem Symbol anzuzeigende Beschriftung angibt. Dies wird nur verwendet, wenn <paramref name="DisplayAsIcon" /> <b>"True" ist.</b> Wenn dieses Argument nicht angegeben wird oder die Zeichenfolge leer ("") ist, wird keine Beschriftung angezeigt.</param>
+        <param name="Left">Optionales <b>Objekt</b>. Die Anfangskoordinaten des neuen Objekts in Punkten, relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
+        <param name="Top">Optionales <b>Objekt</b>. Die Anfangskoordinaten des neuen Objekts in Punkten, relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
+        <param name="Width">Optionales <b>Objekt</b>. Die Anfangsgröße des neuen Objekts in Punkt.</param>
+        <param name="Height">Optionales <b>Objekt</b>. Die Anfangsgröße des neuen Objekts in Punkt.</param>
+        <summary>Fügt einem Blatt ein neues OLE-Objekt hinzu. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -506,7 +496,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,14 +527,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das OLE-Objekt automatisch geladen wird, wenn die Arbeitsmappe, in der es enthalten wird geöffnet.</summary>
+        <summary><b>True</b>, wenn das OLE-Objekt beim Öffnen der Arbeitsmappe, in der es enthalten ist, automatisch geladen wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft wird von ActiveX-Steuerelementen ignoriert. ActiveX-Steuerelemente werden immer geladen, wenn eine Arbeitsmappe geöffnet wird.</para>
+        <remarks><para>Diese Eigenschaft wird von ActiveX-Steuerelementen ignoriert. ActiveX-Steuerelemente werden immer geladen, wenn eine Arbeitsmappe geöffnet wird.</para>
           <para>Bei den meisten OLE-Objektarten sollte diese Eigenschaft nicht auf <b>True</b>True gesetzt werden. Standardmäßig ist die <b>AutoLoad</b>AutoLoad-Eigenschaft bei neuen OLE-Objekten auf <b>False</b>False gesetzt; dies spart Zeit und Speicherplatz, wenn Microsoft Excel Arbeitsmappen lädt. Das automatische Laden von OLE-Objekten besitzt den Vorteil, dass bei Objekten, die veränderliche Daten darstellen, Verknüpfungen zu den Quelldaten sofort wiederhergestellt und die Objekte, falls notwendig, erneut aufgebaut werden können.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -570,7 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekt zurück, das den Rahmen des Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -650,8 +637,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">Optionale <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />. Gibt an, wie das Bild kopiert werden soll.</param>
-        <param name="Format">Optionale <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />. Das Format des Bilds.</param>
+        <param name="Appearance">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> . Gibt an, wie das Bild kopiert werden soll.</param>
+        <param name="Format">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> . Das Bildformat.</param>
         <summary>Kopiert das ausgewählte Objekt als Bild in die Zwischenablage.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -708,13 +695,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -740,11 +725,9 @@
       <Docs>
         <summary>Schneidet das Objekt aus, legt es in die Zwischenablage oder fügt es an einer angegebenen Stelle ein.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Der ausgeschnittene Bereich muss aus angrenzenden Zellen bestehen.</para>
+        <remarks><para>Der ausgeschnittene Bereich muss aus angrenzenden Zellen bestehen.</para>
           <para>Es können nur eingebettete Diagramme ausgeschnitten werden.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -825,8 +808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Objekt aktiviert ist.</summary>
+        <summary><b>True</b>, wenn das Objekt aktiviert ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -946,7 +928,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> -Objekt, das den Innenbereich des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> Objekt zurück, das den Innenbereich des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -974,8 +956,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1038,8 +1019,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Objekt gesperrt ist. <b>False,</b> Wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
+        <summary><b>True,</b> Wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1135,10 +1115,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt diesen fest wie, die das Objekt an die Zellen darunter angefügt ist.</summary>
+        <summary>Gibt die Art zurück, in der das Objekt an die zellen darunter stehenden Zellen angefügt wird, oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie eine der folgenden Konstanten sein:</para>
+        <remarks><para>Verwenden Sie eine der folgenden Konstanten:</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1148,8 +1127,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintObject">
@@ -1178,8 +1156,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Objekt gedruckt wird, wenn das Dokument gedruckt wird.</summary>
+        <summary><b>True</b>, wenn das Objekt zusammen mit dem Dokument gedruckt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1206,7 +1183,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Optionales- <b>Objekt</b>. <b>True</b>, wenn die aktuelle Auswahl mit dem angegebenen Objekt ersetzt. <b>False</b>, wenn die aktuelle Markierung erweitert bereits ausgewählte Objekte und das angegebene Objekt.</param>
+        <param name="Replace">Optionales <b>Objekt</b>. <b>True</b>, wenn die aktuelle Auswahl mit dem angegebenen Objekt ersetzt. <b>False</b>, wenn die aktuelle Markierung erweitert bereits ausgewählte Objekte und das angegebene Objekt.</param>
         <summary>Markiert das Objekt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1264,8 +1241,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Schriftart Schatten aufweist oder ob das Objekt einen Schatten aufweist.</summary>
+        <summary><b>True,</b> Wenn die Schriftart eine Schattenschriftart ist oder das Objekt einen Schatten hat.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1293,7 +1269,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> -Objekt, das das angegebene Objekt oder die Objekte darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Objekt zurück, das das angegebene Objekt oder die angegebenen Objekte darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1324,7 +1300,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Namen Verknüpfungsquelle des angegebenen Objekts.</summary>
+        <summary>Gibt den Linkquellennamen des angegebenen Objekts zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1355,7 +1331,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand in Punkt vom oberen Rand des Objekts an den Anfang der Zeile 1 (auf einem Arbeitsblatt) oder im oberen Bereich des Diagrammbereichs (in einem Diagramm).</summary>
+        <summary>Der Abstand (in Punkt) vom oberen Rand des Objekts zum Anfang von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1445,12 +1421,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Position der Z-Reihenfolge des Objekts zurück.</summary>
+        <summary>Gibt die Position des Objekts in der Z-Reihenfolge zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>In jeder Auflistung von Objekten, die das Objekt am Ende der Z-Reihenfolge ist <paramref name="collection" />(1), und das Objekt am Anfang der Z-Reihenfolge ist <paramref name="collection" />(<paramref name="collection" />.<b> Zählen</b>).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>In jeder Auflistung von Objekten ist das Objekt am Ende der Z-Reihenfolge (1), und das Objekt am Anfang der <paramref name="collection" /> Z-Reihenfolge <paramref name="collection" /> ist ( <paramref name="collection" /> .<b> Count</b>).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

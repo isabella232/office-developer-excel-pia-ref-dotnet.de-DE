@@ -1,13 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579569" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009618" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Teilstrich-Beschriftungsebenen für Mark Teilstrichen auf einer Diagrammachse zugeordnet.</summary>
-    <remarks>
-      <para>Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine Bezeichnung der einzelnen Teilstriche darstellt. Sie müssen alle Teilstrich Mark Etiketten als Einheit zurück. Abstand zwischen Mark Beschriftungstext der Rubrikenachse stammen aus den Namen der zugeordneten Kategorie im Diagramm. Der standardmäßigen Teilstrich Mark Beschriftungstext der Rubrikenachse ist die Zahl, die die Position der Kategorie relativ zum linken Ende der Achse angibt. Ohne Beschriftung so ändern Sie die Anzahl der Teilstrich markiert zwischen Teilstrich-Beschriftungsebenen für Mark, müssen Sie ändern die <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> -Eigenschaft für die Rubrikenachse. Abstand zwischen Mark Text im Bezeichnungsfeld wird für die Größenachse berechnet wird basierend auf den <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />, <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />, und <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> Eigenschaften der Größenachse. Um den Abstand zwischen Mark Beschriftungstext für die Größenachse zu ändern, müssen Sie die Werte dieser Eigenschaften ändern.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> Eigenschaft, um das <b>TickLabels</b> -Objekt zurückzugeben.</para>
-      <para></para>
-    </remarks>
+    <summary>Stellt die Teilstrichbeschriftungen dar, die Teilstrichen auf einer Diagrammachse zugeordnet sind.</summary>
+    <remarks><para>Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Teilstrichbeschriftung darstellt. Sie müssen alle Teilstrichbeschriftungen als Einheit zurückgeben. Der Text der Teilstrichbeschriftung für die Rubrikenachse stammt aus dem Namen der zugeordneten Kategorie im Diagramm. Der Standardmäßige Teilstrichbeschriftungstext für die Rubrikenachse ist die Zahl, die die Position der Kategorie relativ zum linken Ende dieser Achse angibt. Um die Anzahl der unbeschrifteten Teilstriche zwischen Teilstrichbeschriftungen zu ändern, müssen Sie die Eigenschaft für <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> die Rubrikenachse ändern. Der Text der Teilstrichbeschriftung für die Wertachse wird basierend auf den Eigenschaften und den Eigenschaften der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> Wertachse berechnet. Um den Text der Teilstrichbeschriftung für die Wertachse zu ändern, müssen Sie die Werte dieser Eigenschaften ändern.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> Eigenschaft, um das <b>TickLabels -Objekt zurück.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -63,10 +53,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Ausrichtung des angegebenen Teilstrich.</summary>
+        <summary>Gibt die Ausrichtung für die angegebene Teilstrichbeschriftung zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Alignment</b> -Eigenschaft kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> Konstanten:</para>
+        <remarks><para>Die <b>Alignment -Eigenschaft</b> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> Konstanten sein:</para>
           <para>
             <b>XlHAlignCenter</b>
           </para>
@@ -76,8 +65,7 @@
           <para>
             <b>XlHAlignRight</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -103,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,8 +128,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text im Objekt Schriftgrad ändert, wenn die Größe des Objekts ändert. Der Standardwert ist <b>True</b>.</summary>
+        <summary><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird. Der Standardwert lautet <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,13 +156,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -255,7 +240,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,10 +268,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Elementformat Diagramm zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Gibt das Diagrammelementformat zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,14 +299,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest, ob eine Achse mit mehreren Ebenen oder nicht ist.  Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Der Standardwert für diese Eigenschaft ist <b>True</b>.</para>
-          <para></para>
-        </remarks>
+        <summary>Legt fest, ob eine Achse über mehrere Ebenen verfügt oder nicht.  Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Der Standardwert für diese Eigenschaft ist <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -382,10 +361,8 @@
       <Docs>
         <summary>Zurückgeben oder festlegen den Formatierungscode für das Objekt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -414,8 +391,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Zahlenformat (so, dass das Zahlenformat in die Beschriftungen ändert, wenn es in den Zellen ändert) an die Zellen verknüpft ist.</summary>
+        <summary><b>True,</b> Wenn das Zahlenformat (so, dass das Zahlenformat in die Beschriftungen ändert, wenn es in den Zellen ändert) an die Zellen verknüpft ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -477,12 +453,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand zwischen den Beschriftungsebenen und den Abstand zwischen der ersten Ebene und der Achsenlinie.</summary>
+        <summary>Gibt den Abstand zwischen den Beschriftungsebenen und dem Abstand zwischen der ersten Ebene und der Achsenlinie zurück oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Standardabstand beträgt 100 Prozent und stellt den Standardabstand zwischen den Achsenbeschriftungen und der Achsenlinie dar. Der Wert kann eine ganze Prozentzahl zwischen 0 und 1000 darstellen, relativ zur Schriftgröße der Achsenbeschriftung.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Der Standardabstand beträgt 100 Prozent und stellt den Standardabstand zwischen den Achsenbeschriftungen und der Achsenlinie dar. Der Wert kann eine ganze Prozentzahl zwischen 0 und 1000 darstellen, relativ zur Schriftgröße der Achsenbeschriftung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -511,7 +485,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTickLabelOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Ausrichtung von Text. Kann eine Ganzzahl zwischen-90 und 90 Grad oder eine der entsprechen den <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> Konstanten.</summary>
+        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen –90 und 90 Grad oder eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -570,13 +544,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die leserichtung für das angegebene Objekt fest.</summary>
+        <summary>Gibt die Lesereihenfolge für das angegebene Objekt zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>ReadingOrder</b> -Eigenschaft kann eine der folgenden Konstanten sein: <b>XlRTL</b> (rechts-nach-links), <b>XlLTR</b> (von links nach rechts) oder <b>XlContext</b>.</para>
-          <para>[!HINWEIS] Einige dieser Konstanten stehen Ihnen, abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch), möglicherweise nicht zur Verfügung.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>ReadingOrder -Eigenschaft</b> kann eine der folgenden Konstanten sein: <b>xlRTL</b> (von rechts nach links), <b>xlLTR</b> (von links nach rechts) oder <b>xlContext</b>.</para>
+          <para>Einige dieser Konstanten stehen Ihnen möglicherweise abhängig von den von Ihnen ausgewählten oder installierten unterstützten Sprachen (z.B. Englisch (USA)) nicht zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">

@@ -1,13 +1,5 @@
 <Type Name="TimelineViewState" FullName="Microsoft.Office.Interop.Excel.TimelineViewState">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1eed8747852b033cf6188d2d19e37cea6b97d52e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581921" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TimelineViewState" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1eed8747852b033cf6188d2d19e37cea6b97d52e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009576" /></Metadata><TypeSignature Language="C#" Value="public interface TimelineViewState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TimelineViewState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TimelineViewState" />
   <TypeSignature Language="VB.NET" Value="Public Interface TimelineViewState" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Zeitachse-spezifische Member einer Ansicht Datenschnitt dar.</summary>
+    <summary>Stellt die zeitachsenspezifischen Elemente einer Datenschnittansicht dar.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Nur-Lese- <b>Ganzzahl</b> (<b>Int</b> in c#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>Ganze</b> Zahl (<b>int</b> in C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C, Zeichenfolge "XCEL zurück".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -118,7 +108,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTimelineLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abrufen oder Festlegen der angezeigten Ebene. <see cref="T:Microsoft.Office.Interop.Excel.XlTimelineLevel" />-Enumeration. Lese-/Schreibzugriff.</summary>
+        <summary>Get or set the displayed level. <see cref="T:Microsoft.Office.Interop.Excel.XlTimelineLevel" /> enumeration. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +136,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> (C#-<b>Objekt</b> ), der das übergeordnete Objekt des angegebenen <b>TimeLineViewState</b> -Objekts darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <b>Object</b> <b>(Objekt</b> in C#) zurück, das das übergeordnete Objekt des angegebenen <b>TimeLineViewState -Objekts</b> darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,7 +167,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abrufen Sie oder festlegen Sie, ob das Steuerelement Kopfzeile angezeigt wird. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff.</summary>
+        <summary>Get or set whether the control's header is displayed. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,7 +198,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abrufen Sie oder festlegen Sie, ob das Steuerelement horizontale Bildlaufleiste angezeigt wird. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff.</summary>
+        <summary>Get or set whether the control's horizontal scrollbar is displayed. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +229,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abrufen Sie oder festlegen Sie, ob die Beschriftung des Steuerelements Filter Auswahl angezeigt wird. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff.</summary>
+        <summary>Hier können Sie festlegen, ob die Filterauswahlbeschriftung des Steuerelements angezeigt wird. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,7 +260,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abrufen Sie oder festlegen Sie, ob das Steuerelement Zeitebene Dropdown-Liste angezeigt wird. <b>Boolean</b> (<b>Bool</b> in c#) Lese-/Schreibzugriff.</summary>
+        <summary>Get or set whether the control's time level drop-down is displayed. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

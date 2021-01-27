@@ -1,13 +1,5 @@
 <Type Name="Phonetics" FullName="Microsoft.Office.Interop.Excel.Phonetics">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6c42dca41bf5014c0c820b5e834fbd5c95c1c0b6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579415" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Phonetics : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6c42dca41bf5014c0c820b5e834fbd5c95c1c0b6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011011" /></Metadata><TypeSignature Language="C#" Value="public interface Phonetics : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Phonetics implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Phonetics" />
   <TypeSignature Language="VB.NET" Value="Public Interface Phonetics&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> -Objekte im angegebenen Bereich. Jedes <b>Phonetic</b>-Objekt enthält Informationen zu einer bestimmten phonetischen Textzeichenfolge.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetics" /> Eigenschaft, um die <b>Phonetics</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden Sie <b>Phonetics</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des phonetischen Texts ist, um ein einzelnes <b>Phonetic</b> -Objekt zurückzugeben.</para>
-      <para></para>
-    </remarks>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> im angegebenen Bereich. Jedes <b>Phonetic</b>-Objekt enthält Informationen zu einer bestimmten phonetischen Textzeichenfolge.</summary>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetics" /> Eigenschaft, um die <b>Phonetics -Auflistung zurück.</b></para>
+      <para>Verwenden <b>Sie Phonetics</b>( ), wobei die Indexnummer des phonetischen Texts ist, um <paramref name="index" /> ein <paramref name="index" /> <b>einzelnes phonetisches Objekt zurückzukehren.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,12 +91,9 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Start">
-          <b>Integer</b>erforderlich. Die Position, die das erste Zeichen in der angegebenen Zelle darstellt.</param>
-        <param name="Length">
-          <b>Integer</b>erforderlich. Die Anzahl von Zeichen aus der <paramref name="Start" /> Position bis zum Ende des Texts in der Zelle.</param>
-        <param name="Text">
-          <b>String</b> erforderlich. Die Zeichen, die den phonetischen Text in der Zelle darstellen, in zusammengefasster Form.</param>
+        <param name="Start">Erforderliche <b>ganze Zahl</b>. Die Position, die das erste Zeichen in der angegebenen Zelle darstellt.</param>
+        <param name="Length">Erforderliche <b>ganze Zahl</b>. Die Anzahl der Zeichen von der <paramref name="Start" /> Position bis zum Ende des Texts in der Zelle.</param>
+        <param name="Text"><b>String</b> erforderlich. Die Zeichen, die den phonetischen Text in der Zelle darstellen, in zusammengefasster Form.</param>
         <summary>Fügt der angegebenen Zelle phonetischen Text hinzu.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,10 +124,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Ausrichtung für den angegebenen phonetischen Text.</summary>
+        <summary>Gibt die Ausrichtung für den angegebenen phonetischen Text zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Alignment</b> -Eigenschaft kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" /> Konstanten:</para>
+        <remarks><para>Die <b>Alignment -Eigenschaft</b> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" /> Konstanten sein:</para>
           <para>
             <b>XlPhoneticAlignCenter</b>
           </para>
@@ -153,8 +139,7 @@
           <para>
             <b>XlPhoneticAlignNoControl</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -180,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +196,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Typ des phonetischen Texts in der angegebenen Zelle fest.</summary>
+        <summary>Gibt den Typ des phonetischen Texts in der angegebenen Zelle zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,13 +252,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -324,7 +307,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,8 +370,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Die Indexnummer des Objekts.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -417,12 +399,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Zeichen des phonetischen Texts an der Position, die Sie angegeben haben, mit der <see cref="P:Microsoft.Office.Interop.Excel.Phonetics.Start" /> Eigenschaft.</summary>
+        <summary>Gibt die Anzahl der Zeichen von phonetischem Text aus der Position zurück, die Sie mit der Eigenschaft angegeben <see cref="P:Microsoft.Office.Interop.Excel.Phonetics.Start" /> haben.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> -Methode, um den Wert dieser Eigenschaft für ein <b>CalloutFormat</b> -Objekt festzulegen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> die Methode, um den Wert dieser Eigenschaft für ein <b>CalloutFormat -Objekt festlegen.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -476,7 +456,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Position, die das erste Zeichen einer phonetischen Textzeichenfolge in der angegebenen Zelle darstellt.</summary>
+        <summary>Gibt die Position zurück, die das erste Zeichen einer phonetischen Textzeichenfolge in der angegebenen Zelle darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="PivotField" FullName="Microsoft.Office.Interop.Excel.PivotField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="680708caecb98e691d345621d9a0f7ee47fedab0" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577238" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="680708caecb98e691d345621d9a0f7ee47fedab0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010913" /></Metadata><TypeSignature Language="C#" Value="public interface PivotField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotField" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotField" />
@@ -29,38 +21,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein Feld in einem PivotTable-Bericht dar. Das <b>PivotField</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> Auflistung. Die <b>PivotFields</b> -Auflistung enthält alle Felder in einem PivotTable-Bericht, einschließlich der ausgeblendeten Felder.</summary>
-    <remarks>
-      <para>Verwenden des <b>PivotFields</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Felds oder die Indexzahl darstellt, um ein einzelnes <b>PivotField</b> -Objekt zurückzugeben.</para>
+    <summary>Stellt ein Feld in einem PivotTable-Bericht dar. Das <b>PivotField -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> Auflistung. Die <b>PivotFields</b> -Auflistung enthält alle Felder eines PivotTable-Berichts, einschließlich ausgeblendeter Felder.</summary>
+    <remarks><para>Verwenden <b>Sie PivotFields</b>( ), wobei der Feldname oder die <paramref name="index" /> Indexnummer, um ein <paramref name="index" /> einzelnes <b>PivotField -Objekt zurück.</b></para>
       <para>Gelegentlich ist es einfacher, eine Eigenschaft zu verwenden, die eine Untermenge der PivotTable-Felder zurückgibt. Folgende Eigenschaften stehen zur Verfügung:</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" />Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" />Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" />Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" />Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" />Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" />Eigenschaft</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" /> property</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -123,14 +113,11 @@
         <Parameter Name="ClearList" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Item">
-          <b>String</b> erforderlich. Der Quellname eine <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> entspricht dem bestimmten eindeutigen Namen mit (OLAP = Online Analytical Processing) Member-Objekt.</param>
-        <param name="ClearList">Optionales- <b>Objekt</b>. Wenn <b>False</b> (Standard), eine Seitenelement der vorhandenen Liste hinzugefügt. Wenn <b>True</b>, werden alle aktuellen Elemente gelöscht und fügt <paramref name="Item" />.</param>
+        <param name="Item"><b>String</b> erforderlich. Quellname eines Objekts, der dem eindeutigen Namen des <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> OlAP (Online Analytical Processing)-Mitglieds entspricht.</param>
+        <param name="ClearList">Optionales <b>Objekt</b>. Beim Wert <b>False</b> (Standard) wird der bestehenden Liste ein Seitenelement hinzugefügt. Wenn <b>True</b>, löscht alle aktuellen Elemente und fügt <paramref name="Item" /> .</param>
         <summary>Fügt einem Seitenfeld mit mehreren Elementen ein zusätzliches Element hinzu.</summary>
-        <remarks>
-          <para>Um Laufzeitfehler zu vermeiden, muss die Datenquelle einer OLAP-Datenquelle im Feld ausgewählte aktuell in der Seitenposition muss und die <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> -Eigenschaft muss auf <b>True</b>festgelegt werden.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um Laufzeitfehler zu vermeiden, muss die Datenquelle eine OLAP-Quelle sein, das ausgewählte Feld muss sich derzeit an der Seitenposition und die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> <b>True festlegen.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllItemsVisible">
@@ -156,19 +143,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert, der angibt, ob auf eine manuelle Filterung angewendet wird oder nicht die <see cref="T:Microsoft.Office.Interop.Excel.Pivotfield" />.
+        <summary>Ruft einen Wert ab, der angibt, ob eine manuelle Filterung auf das angewendet <see cref="T:Microsoft.Office.Interop.Excel.Pivotfield" /> wird.
 Schreibgeschützt.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft bietet eine einfache Möglichkeit, problemlos zu prüfen, ob manuelle Filterung auf ein <b>PivotField</b> angewendet wird oder <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.</para>
-          <para>Bei OLAP-PivotTables ist diese Eigenschaft nur für das <b>CubeField</b> -Objekt verfügbar. Versuch zum Abrufen oder Festlegen von es für das <b>PivotField</b> -Objekt in einer OLAP- <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> wird ein Laufzeitfehler zurückgegeben.</para>
-          <para>Bei <b>PivotTables</b>ist diese Eigenschaft für das <b>PivotField</b> -Objekt zur Verfügung.</para>
-          <para>Der Standardwert ist <b>True</b>.  Diese Eigenschaft wird automatisch auf <b>True</b> festgelegt, wenn keine manuelle Filterung angewendet wurde (unabhängig davon, ob die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> -Eigenschaft ist <b>True</b> oder <b>False</b>). Es wird automatisch auf <b>False</b> festgelegt, wenn eine manuelle Filterung angewendet wurde (unabhängig davon, ob die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> -Eigenschaft ist <b>True</b> oder <b>False</b>).</para>
-          <para>Diese Eigenschaft gibt direkt den Zustand des Kontrollkästchens Alle auswählen in der Dropdownliste Filter für das <b>PivotField</b> oder <b>CubeField</b>wieder.</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Diese Eigenschaft bietet eine einfache Möglichkeit, einfach zu überprüfen, ob eine manuelle Filterung auf ein <b>PivotField oder angewendet</b> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> wird.</para>
+          <para>Für OLAP PivotTables ist diese Eigenschaft nur für das <b>CubeField -Objekt</b> verfügbar. Beim Versuch, es für das <b>PivotField -Objekt</b> in einem OLAP zu erhalten oder festlegen, wird ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Laufzeitfehler zurückgegeben.</para>
+          <para>Für <b>PivotTables</b>ist diese Eigenschaft für das <b>PivotField -Objekt</b> verfügbar.</para>
+          <para>Der Standardwert ist <b>True</b>.  Diese Eigenschaft wird automatisch auf <b>"True"</b> festgelegt, wenn keine manuelle Filterung angewendet wird (unabhängig davon, ob die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> <b>"True"</b> oder <b>"False" ist).</b> Er wird automatisch auf <b>"False"</b> festgelegt, wenn eine manuelle Filterung angewendet wird (unabhängig davon, ob die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> <b>"True"</b> oder <b>"False" ist).</b></para>
+          <para>Diese Eigenschaft spiegelt den Status des Kontrollkästchens "Alle auswählen" in der Dropdownliste "Filter" für <b>Das PivotField</b> oder <b>CubeField direkt wider.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -194,10 +177,8 @@ Schreibgeschützt.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,14 +208,10 @@ Schreibgeschützt.</summary>
         <Parameter Name="Field" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <b>Integer</b>erforderlich. Verwenden Sie <b>XlAutomatic</b> in der angegebenen PivotTable-Bericht zum Anzeigen der Elemente, die die angegebenen Kriterien entsprechen. Verwenden Sie <b>XlManual</b> , um dieses Feature zu deaktivieren.</param>
-        <param name="Range">
-          <b>Integer</b>erforderlich. Der Speicherort, an dem Elemente angezeigt werden soll. Kann eine der folgenden Konstanten sein: <b>XlTop</b> oder <b>XlBottom</b>.</param>
-        <param name="Count">
-          <b>Integer</b>erforderlich. Die Anzahl von anzuzeigenden Elementen.</param>
-        <param name="Field">
-          <b>String</b> erforderlich. Der Name des Felds Basisdaten. Sie müssen den eindeutigen Namen angeben (wie er von zurückgegeben der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> -Eigenschaft) und nicht den angezeigten Namen.</param>
+        <param name="Type">Erforderliche <b>ganze Zahl</b>. Verwenden Sie <b>xlAutomatic</b>, wenn in dem angegebenen PivotTable-Bericht die Elemente angezeigt werden sollen, die die angegebenen Kriterien erfüllen. Verwenden Sie <b>xlManual</b>, um dieses Feature zu deaktivieren.</param>
+        <param name="Range">Erforderliche <b>ganze Zahl</b>. Die Position, ab der Elemente angezeigt werden sollen. Dies kann eine der folgenden Konstanten sein: <b>xlTop</b> oder <b>xlBottom</b>.</param>
+        <param name="Count">Erforderliche <b>ganze Zahl</b>. Die Anzahl von anzuzeigenden Elementen.</param>
+        <param name="Field"><b>String</b> erforderlich. Der Name des Basisdatenfelds. Sie müssen den eindeutigen Namen (wie von der Eigenschaft zurückgegeben) und nicht den <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> angezeigten Namen angeben.</param>
         <summary>Zeigt die Anzahl der oberen oder unteren Elemente für eine Zeile, eine Seite oder ein Spaltenfeld in dem angegebenen PivotTable-Bericht an.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,7 +239,7 @@ Schreibgeschützt.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der oberen oder unteren Elemente, die automatisch im angegebenen PivotTable-Feld angezeigt werden. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Anzahl der obersten oder untersten Elemente zurück, die im angegebenen PivotTable-Feld automatisch angezeigt werden. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,7 +267,7 @@ Schreibgeschützt.</summary>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des Datenfelds zurück, mit dem festgelegt wird, welche Kopf- oder Fußelemente automatisch in dem angegebenen PivotTable-Feld dargestellt werden. Schreibgeschützter <b>String</b>-Wert.</summary>
+        <summary>Gibt den Namen des Datenfelds zurück, mit dem festgelegt wird, welche Kopf- oder Fußelemente automatisch in dem angegebenen PivotTable-Feld dargestellt werden. Schreibgeschützte <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -318,7 +295,7 @@ Schreibgeschützt.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt <b>XlTop</b> Falls die oberen Elemente automatisch im angegebenen PivotTable-Feld; dargestellt werden Gibt <b>XlBottom</b> zurück, wenn die unteren Elemente angezeigt werden. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt <b>xlTop</b> zurück, falls die obersten Elemente automatisch im angegebenen PivotTable-Feld dargestellt werden; gibt <b>xlBottom</b> zurück, falls die untersten Elemente dargestellt werden. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -346,7 +323,7 @@ Schreibgeschützt.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt <b>XlAutomatic</b> zurück, wenn <see cref="M:Microsoft.Office.Interop.Excel.PivotField.AutoShow(System.Int32,System.Int32,System.Int32,System.String)" /> für die angegebene PivotTable-Feld; aktiviert ist Gibt <b>XlManual</b> zurück, falls <b>AutoShow</b> deaktiviert ist. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt <b>xlAutomatic zurück,</b> wenn für das angegebene #A0 aktiviert <see cref="M:Microsoft.Office.Interop.Excel.PivotField.AutoShow(System.Int32,System.Int32,System.Int32,System.String)" /> ist; <b>gibt xlManual</b> zurück, wenn <b>AutoShow</b> deaktiviert ist. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,9 +355,8 @@ Schreibgeschützt.</summary>
         <Parameter Name="Field" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Order">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" />. Die Sortierreihenfolge.</param>
-        <param name="Field">
-          <b>String</b> erforderlich. Der Name des Sortierschlüsselfelds. Sie müssen den eindeutigen Namen angeben (wie er von zurückgegeben der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> -Eigenschaft) und nicht den angezeigten Namen.</param>
+        <param name="Order"><see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" />Erforderlich. Die Sortierreihenfolge.</param>
+        <param name="Field"><b>String</b> erforderlich. Der Name des Sortierschlüsselfelds. Sie müssen den eindeutigen Namen (wie von der Eigenschaft zurückgegeben) und nicht den <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> angezeigten Namen angeben.</param>
         <summary>Legt automatische Regeln für die Sortierung von Feldern in PivotTable-Berichten fest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,21 +384,18 @@ Schreibgeschützt.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine ganze Zahl, die zum Sortieren der angegebenen benutzerdefinierten Teilergebnisses entspricht <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Feld automatisch. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Der Standardwert ist 1 (automatisch).
-Wenn die <b>AutoSortCustomSubtotal</b> -Eigenschaft auf 1 (automatisch) festgelegt ist, werden die Daten nach den normalen Teilergebnissen sortiert.
-Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der folgenden Tabelle aufgelistet werden.</para>
+        <summary>Gibt eine ganze Zahl zurück, die dem benutzerdefinierten Teilsumme entspricht, das zum automatischen Sortieren des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Felds verwendet wird. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Der Standardwert ist 1 (automatisch).
+Wenn die <b>AutoSortCustomSubtotal</b>-Eigenschaft auf 1 (automatisch) festgelegt ist, werden die Daten nach den normalen Teilergebnissen sortiert.
+Die <b>Eigenschaft "AutoSortCustomSubtotal"</b> kann einen der in der folgenden Tabelle aufgeführten Indexwerte enthalten.</para>
           <list type="table">
             <item>
-              <term>1</term>
+              <term>1 </term>
               <description>Automatisch</description>
             </item>
             <item>
-              <term>2</term>
+              <term>2 </term>
               <description>Summe</description>
             </item>
             <item>
@@ -430,47 +403,45 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
               <description>Anzahl</description>
             </item>
             <item>
-              <term>4</term>
+              <term>4 </term>
               <description>Mittelwert</description>
             </item>
             <item>
-              <term>5</term>
-              <description>Maximum</description>
+              <term>5 </term>
+              <description>Max</description>
             </item>
             <item>
-              <term>6</term>
-              <description>Minimum</description>
+              <term>6 </term>
+              <description>Min</description>
             </item>
             <item>
-              <term>7</term>
+              <term>7 </term>
               <description>Produkt</description>
             </item>
             <item>
-              <term>8</term>
+              <term>8 </term>
               <description>Anzahl Zahlen</description>
             </item>
             <item>
-              <term>9</term>
+              <term>9 </term>
               <description>StdDev</description>
             </item>
             <item>
-              <term>10</term>
+              <term>10 </term>
               <description>StdDevp</description>
             </item>
             <item>
-              <term>11</term>
+              <term>11 </term>
               <description>Varianz</description>
             </item>
             <item>
-              <term>12</term>
-              <description>Varianz (Grundgesamtheit)</description>
+              <term>12 </term>
+              <description>Varp</description>
             </item>
           </list>
           <para>Die Sortierung wird nur von benutzerdefinierten Teilergebnissen unterstützt, die tatsächlich in der PivotTable angezeigt werden. Das Festlegen von <b>AutoSortCustomSubtotal</b> auf einen Wert, der ein benutzerdefiniertes Teilergebnis darstellt, das sich nicht in der PivotTable-Ansicht befindet, gibt einen Laufzeitfehler zurück.</para>
-          <para>Wenn das Sortieren auf Grundlage eines benutzerdefinierten Teilergebnisses angewendet wird und dieses Teilergebnis aus der PivotTable entfernt wird, wird die <b>AutoSortCustomSubtotal</b>-Eigenschaft automatisch auf den Standardwert (1) festgelegt.
-</para>
-          <para></para>
-        </remarks>
+          <para>Wenn das Sortieren auf Grundlage eines benutzerdefinierten Teilergebnisses angewendet wird und dieses Teilergebnis aus der PivotTable entfernt wird, wird die <b>AutoSortCustomSubtotal</b>-Eigenschaft automatisch auf den Standardwert (1) festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSortEx">
@@ -529,7 +500,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des Datenfelds zurück, nach dem das angegebene PivotTable-Feld automatisch sortiert wird. Schreibgeschützter <b>String</b>-Wert.</summary>
+        <summary>Gibt den Namen des Datenfelds zurück, nach dem das angegebene PivotTable-Feld automatisch sortiert wird. Schreibgeschützte <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -557,7 +528,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Reihenfolge verwendet, um die angegebene PivotTable-Feld automatisch zu sortieren. Kann eine der der <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> Konstanten. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Reihenfolge zurück, nach der das angegebene PivotTable-Feld automatisch sortiert wird. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> Konstanten sein. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -585,10 +556,8 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> verwendet, um die angegebene sortieren <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Feld automatisch. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
-        </value>
+        <summary>Gibt den <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> Wert zurück, der zum automatischen Sortieren des <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> angegebenen Felds verwendet wird. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,12 +587,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen das Basisfeld für eine benutzerdefinierte Berechnung. Diese Eigenschaft ist nur für Datenfelder gültig. Lese-Schreib- <b>Objekt</b>.</summary>
+        <summary>Gibt das Basisfeld für eine benutzerdefinierte Berechnung zurück oder legt es fest. Diese Eigenschaft ist nur für Datenfelder gültig. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseItem">
@@ -652,7 +619,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt das Element im Basisfeld für eine benutzerdefinierte Berechnung. Nur für Datenfelder gültig. Lese-Schreib- <b>Objekt</b>.</summary>
+        <summary>Gibt das Element im Basisfeld für eine benutzerdefinierte Berechnung zurück oder legt es fest. Nur für Datenfelder gültig. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -678,12 +645,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.CalculatedItems" /> -Auflistung, die alle berechneten Elemente im angegebenen PivotTable-Bericht darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.CalculatedItems" /> Auflistung zurück, die alle berechneten Elemente im angegebenen PivotTable-Bericht darstellt. Schreibgeschützt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Für OLAP-Datenquellen gibt diese Methode eine leere Auflistung zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für OLAP-Datenquellen gibt diese Methode eine leere Auflistung zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Calculation">
@@ -712,12 +677,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFieldCalculation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Typ der durch das angegebene Feld ausgeführte Berechnung. Diese Eigenschaft ist nur für Datenfelder gültig. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldCalculation" />.</summary>
+        <summary>Gibt den Vom angegebenen Feld ausgeführten Berechnungstyp zurück oder legt diesen fest. Diese Eigenschaft ist nur für Datenfelder gültig. Lese-/Schreibzugriff. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldCalculation" /></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen ist diese Eigenschaft kann nur zurückgegeben oder <b>xlNormal</b>festgelegt werden.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für OLAP-Datenquellen kann diese Eigenschaft nur <b>xlNormal</b> zurückgeben oder darauf festgelegt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -746,7 +709,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Den Beschriftungstext für das Pivot-Feld. Schreibgeschützter <b>String</b>-Wert.</summary>
+        <summary>Der Beschriftungstext für das Pivotfeld. Schreibgeschützte <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -774,13 +737,11 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> -Objekt, das untergeordnete Feld für das angegebene Feld darstellt (wenn das Feld gehört einer Gruppe an und ein untergeordnetes Feld hat). Schreibgeschützt.</summary>
+        <summary>Gibt ein Objekt zurück, das das untergeordnete Feld für das angegebene Feld darstellt (wenn das Feld gruppierend ist und <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> über ein untergeordnetes Feld verfügt). Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Feld kein untergeordnetes Feld hat, führt diese Eigenschaft zu einem Fehler.</para>
+        <remarks><para>Wenn das angegebene Feld kein untergeordnetes Feld hat, führt diese Eigenschaft zu einem Fehler.</para>
           <para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildItems">
@@ -809,13 +770,11 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Der Name oder die Nummer des Elements (kann ein Array zur Angabe mehrerer Elemente darstellen).</param>
-        <summary>Gibt ein Objekt, das entweder stellt ein einzelnes PivotTable-Element (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Objekt) oder eine Auflistung aller Elemente (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Object), die sich untergeordnete Gruppenelemente im angegebenen Feld oder untergeordnete Elemente des angegebenen Elements. Schreibgeschützt.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Der Name oder die Nummer des Elements (kann ein Array zur Angabe mehrerer Elemente darstellen).</param>
+        <summary>Gibt ein Objekt zurück, das entweder ein einzelnes PivotTable-Element (ein Objekt) oder eine Auflistung aller Elemente <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> (ein Objekt) darstellt, die im angegebenen Feld als Gruppenelemente oder unter dem angegebenen Element enthalten <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> sind. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearAllFilters">
@@ -839,7 +798,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Durch Aufrufen dieser Methode löscht alle derzeit auf angewendeten Filter der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Dazu zählen das Löschen aller Filter in der <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> -Auflistung der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> und entfernen eine manuelle Filterung angewendet die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> sowie. Wenn die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> befindet sich im Bereich Berichtsfilter, das das ausgewählte Element auf das Standardelement festgelegt wird.</summary>
+        <summary>Durch Aufrufen dieser Methode werden alle Filter gelöscht, die derzeit auf die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> angewendet werden. Dies umfasst das Löschen aller Filter aus der Auflistung von und das Entfernen aller manuellen Filter, <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> die auch auf die Auflistung angewendet <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> wurden. Wenn sich <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> das Element im Bereich "Berichtsfilter" befindet, wird das ausgewählte Element auf das Standardelement festgelegt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -864,9 +823,8 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Diese Methode löscht alle Beschriftungsfilter oder alle Datumsfilter in der <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> -Auflistung der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</summary>
-        <remarks>
-          <para>In der folgenden Tabelle sind die unterschiedlichen Beschriftungsfiltertypen aufgeführt, die mit dieser Methode gelöscht werden.</para>
+        <summary>Diese Methode löscht alle Bezeichnungsfilter oder alle Datumsfilter in der <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> Auflistung der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> .</summary>
+        <remarks><para>In der folgenden Tabelle sind die unterschiedlichen Beschriftungsfiltertypen aufgeführt, die mit dieser Methode gelöscht werden.</para>
           <list type="table">
             <item>
               <term />
@@ -1034,7 +992,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
               <term>xlAllDatesInPeriodAugust</term>
             </item>
             <item>
-              <term>xlAllDatesInPeriodSeptember</term>
+              <term>xlAllDatesInPeriodEmber</term>
             </item>
             <item>
               <term>xlAllDatesInPeriodOctober</term>
@@ -1046,8 +1004,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
               <term>xlAllDatesInPeriodDecember</term>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearManualFilter">
@@ -1071,12 +1028,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Bietet eine einfache Möglichkeit, die <b>Visible</b> -Eigenschaft auf <b>True</b> festgelegt, für alle Elemente einer <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> in <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />, und die Auflistungen <b>HiddenItemsList</b> und <b>VisibleItemsList</b> in OLAP-leeren <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />.</summary>
-        <remarks>
-          <para>Diese Methode steht für die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />- <b>Objekts</b> in <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> und für die <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> -Objekts in der OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />. Aufruf für eine <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> in OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> gibt einen Laufzeitfehler zurück.</para>
-          <para>Nach dem Aufrufen dieser Methode sind die folgenden Auflistungen leer: <b>HiddenItemsList</b>, <b>HiddenItems</b>, <b>VisibleItemsList</b>und <b>VisibleItems</b>.</para>
-          <para></para>
-        </remarks>
+        <summary>Stellt eine einfache Möglichkeit zum Festlegen der <b>Visible</b> -Eigenschaft auf <b>"True"</b> für alle Elemente eines Ins und zum Leeren der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <b>HiddenItemsList-</b> und <b>VisibleItemsList</b> -Auflistungen in OLAP zur <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> Verfügung.</summary>
+        <remarks><para>Diese Methode ist für das <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <b>Objekt</b> in <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> und für das Objekt im <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> verfügbar. Beim Aufrufen für <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> einen in einem OLAP wird ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Laufzeitfehler zurückgegeben.</para>
+          <para>Nach dem Aufrufen dieser Methode sind die folgenden Auflistungen leer:  <b>HiddenItemsList</b>, <b>HiddenItems</b>, <b>VisibleItemsList</b>und <b>VisibleItems</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearValueFilters">
@@ -1100,9 +1055,8 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Durch Aufrufen dieser Methode löscht alle Wertefilter in der <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> -Auflistung der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</summary>
-        <remarks>
-          <para>In der folgenden Tabelle sind die unterschiedlichen Wertefiltertypen aufgeführt, die mit dieser Methode gelöscht werden.</para>
+        <summary>Durch Aufrufen dieser Methode werden alle Wertfilter in der <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> Auflistung der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> gelöscht.</summary>
+        <remarks><para>In der folgenden Tabelle sind die unterschiedlichen Wertefiltertypen aufgeführt, die mit dieser Methode gelöscht werden.</para>
           <list type="table">
             <item>
               <term />
@@ -1156,8 +1110,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
               <term />
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -1183,12 +1136,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeField">
@@ -1214,7 +1165,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> -Objekt aus der angegebene PivotTable-Feld Nachfolger ist. Schreibgeschützt.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> Objekt zurück, von dem das angegebene PivotTable-Feld absteigend ist. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1245,7 +1196,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die aktuelle Seite Page-Feld angezeigt wird (nur für Seitenfelder gültig). Lese-Schreib- <b>Objekt</b>.</summary>
+        <summary>Gibt die aktuelle Seite zurück, die im Seitenfeld angezeigt wird (nur gültig für Seitenfelder), oder legt diese Seite fest. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1276,12 +1227,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt ein Array von Zeichenfolgen, die die Liste der Elemente in einem Seitenfeld mit mehreren Elementen eines PivotTable-Berichts enthalten entspricht. Lese-Schreib- <b>Objekt</b>.</summary>
+        <summary>Gibt ein Array aus Zeichenfolgen zurück, das der Liste der Elemente entspricht, die in einem aus mehreren Elementen bestehenden Seitenfeld für einen PivotTable-Bericht enthalten sind, oder legt dieses fest. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um Laufzeitfehler zu vermeiden, muss die Datenquelle einer OLAP-Datenquelle im Feld ausgewählte aktuell in der Seitenposition muss und die <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> -Eigenschaft muss auf <b>True</b>festgelegt werden.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um Laufzeitfehler zu vermeiden, muss die Datenquelle eine OLAP-Quelle sein, das ausgewählte Feld muss sich derzeit in der Seitenposition und die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> <b>True festgelegt sein.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentPageName">
@@ -1310,12 +1259,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die aktuell angezeigte Seite des angegebenen PivotTable-Berichts zurück oder legt diese fest. Der Name der Seite wird im Seitenfeld angezeigt. Beachten Sie, dass diese Eigenschaft nur dann funktioniert, wenn die aktuell angezeigte Seite bereits existiert. <b>String</b>String-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die aktuell angezeigte Seite des angegebenen PivotTable-Berichts zurück oder legt sie fest. Der Name der Seite wird im Seitenfeld angezeigt. Beachten Sie, dass diese Eigenschaft nur funktioniert, wenn die aktuell angezeigte Seite bereits vorhanden ist. <b>Zeichenfolge</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft wird auf PivotTable-Objekte angewendet, die mit einer OLAP-Datenquelle verbunden sind. Beim Versuch, diese Eigenschaft mit einem PivotTable-Objekt zurückzugeben oder festzulegen, das nicht mit einer OLAP-Quelle verbunden ist, wird ein Laufzeitfehler zurückgegeben.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft wird auf PivotTable-Objekte angewendet, die mit einer OLAP-Datenquelle verbunden sind. Beim Versuch, diese Eigenschaft mit einem PivotTable-Objekt zurückzugeben oder festzulegen, das nicht mit einer OLAP-Quelle verbunden ist, wird ein Laufzeitfehler zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DatabaseSort">
@@ -1344,17 +1291,15 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bei Festlegung auf <b>"true"</b>, wird das manuelle Neupositionieren von Elementen in einem PivotTable-Feld zulässig. Gibt <b>True</b> zurück, wenn das Feld keine manuell positionierten Elemente besitzt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Bei <b>"True"</b>ist die manuelle Neupositionierung von Elementen in einem PivotTable-Feld zulässig. Gibt <b>True zurück,</b> wenn das Feld keine manuell positionierten Elemente enthält. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>DatabaseSort</b>-Eigenschaft gibt <b>False</b> zurück, wenn es sich bei der Datenquelle nicht um eine OLAP-Datenquelle (Online Analytical Processing) handelt.</para>
+        <remarks><para>Die <b>DatabaseSort</b>-Eigenschaft gibt <b>False</b> zurück, wenn es sich bei der Datenquelle nicht um eine OLAP-Datenquelle (Online Analytical Processing) handelt.</para>
           <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn es sich um eine OLAP-Datenquelle handelt und weder die benutzerdefinierte Anordnung noch die automatische Sortierung auf das Feld angewendet wurde.</para>
           <para>Wenn die <b>DatabaseSort</b>-Eigenschaft für ein OLAP PivotTable-Objekt auf den Wert <b>True</b>True festgelegt wird, werden alle auf das Feld angewendeten benutzerdefinierten Anordnungen und automatischen Sortierungen entfernt (mit anderen Worten, das PivotTable-Objekt kehrt zum Standardverhalten zurück, wenn die Verbindung hergestellt wurde).</para>
           <para>Wird für die <b>DatabaseSort</b>-Eigenschaft der Wert <b>False</b>False festgelegt, wird die aktuelle Reihenfolge der Elemente zur Sortierreihenfolge, wenn keine automatische Sortierung angewendet wurde.</para>
           <para>Wenn die <b>DatabaseSort</b>-Eigenschaft auf den Wert <b>True</b> oder <b>False</b> festgelegt wird, wird eine Aktualisierung vorgenommen.</para>
           <para>Wenn die <b>DatabaseSort</b>-Eigenschaft für eine Nicht-OLAP-Quelle oder ein OLAP-Datenfeld auf den Wert <b>True</b> festgelegt wird, führt dies zu einem Laufzeitfehler.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataRange">
@@ -1380,11 +1325,9 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt. Schreibgeschützt.</summary>
+        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Range" /> zurück. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DataRange</b> -Eigenschaft gibt je nach dem-Objekt zurück:</para>
+        <remarks><para>Die <b>DataRange -Eigenschaft</b> gibt Folgendes zurück, je nach Objekt:</para>
           <list type="table">
             <item>
               <term>Datenfeld</term>
@@ -1399,8 +1342,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
               <description>Durch das Element gekennzeichnete Daten</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -1426,7 +1368,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFieldDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Konstante, die den Typ der Daten im PivotTable-Feld beschreibt. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldDataType" />.</summary>
+        <summary>Gibt eine Konstante zurück, die den Datentyp im PivotTable-Feld beschreibt. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldDataType" />Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1479,14 +1421,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diese Eigenschaft dient zum Anzeigen von Elementeigenschaften <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s als Beschriftung. Schreibgeschützt.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn eine angegebene Elementeigenschaft als Beschriftung und <b>False,</b> Wenn eine Elementeigenschaft verwendet wird <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> wird nicht als Beschriftung verwendet. Bei dem Versuch, verwenden Sie diese Eigenschaft für <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s, die nicht Elementeigenschaften sind gibt einen Laufzeitfehler zurück.</para>
-          <para></para>
-        </remarks>
+        <summary>Diese Eigenschaft wird verwendet, um Elementeigenschaften <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> von s als Beschriftungen anzeigen. Schreibgeschützt.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Diese Eigenschaft gibt <b>True zurück,</b> wenn eine bestimmte Elementeigenschaft als Beschriftung verwendet wird, und <b>False,</b> wenn eine Elementeigenschaft <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> nicht als Beschriftung verwendet wird. Wenn Sie versuchen, diese Eigenschaft für s zu verwenden, die keine Elementeigenschaften sind, wird ein <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Laufzeitfehler zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAsTooltip">
@@ -1515,15 +1453,11 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diese Eigenschaft wird verwendet, unabhängig davon, ob ein bestimmtes Elementeigenschaft an <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> in QuickInfos angezeigt.  Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Versuch zum Abrufen oder Festlegen dieser Eigenschaften für <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s, die nicht Elementeigenschaften sind gibt einen Laufzeitfehler zurück.</para>
-          <para>Eine angegebene Elementeigenschaft wird in QuickInfos angezeigt, wenn die <b>DisplayAsTooltip</b>-Eigenschaft auf <b>True</b> festgelegt ist, und sie wird nicht angezeigt, wenn sie auf <b>False</b> festgelegt ist. Der Standardwert lautet <b>True</b>.</para>
-          <para></para>
-        </remarks>
+        <summary>Diese Eigenschaft wird verwendet, um anzugeben, ob eine bestimmte Elementeigenschaft <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> in QuickInfos angezeigt wird.  Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Wenn Sie versuchen, diese Eigenschaften für s zu erhalten oder festlegen, die keine Elementeigenschaften sind, wird ein <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Laufzeitfehler zurückgegeben.</para>
+          <para>Eine angegebene Elementeigenschaft wird in QuickInfos angezeigt, wenn die <b>DisplayAsTooltip</b>-Eigenschaft auf <b>True</b> festgelegt ist, und sie wird nicht angezeigt, wenn sie auf <b>False</b> festgelegt ist. Der Standardwert ist <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayInReport">
@@ -1552,10 +1486,8 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diese Eigenschaft wird verwendet, um anzugeben, ob die angegebene Elementeigenschaft <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> wird angezeigt, der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> oder nicht. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Diese Eigenschaft wird verwendet, um anzugeben, ob die angegebene Elementeigenschaft in der angezeigt <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> wird oder nicht. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1585,13 +1517,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn das angegebene Feld auf die Spaltenposition gezogen werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn das angegebene Feld auf die Spaltenposition gezogen werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToData">
@@ -1620,13 +1549,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Feld auf die Datenposition gezogen werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn das angegebene Feld an die Datenposition gezogen werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToHide">
@@ -1655,7 +1581,7 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>TrueTrue, wenn das Feld ausgeblendet werden kann, indem es aus dem PivotTable-Bericht gezogen wird. Der Standardwert ist TrueTrue. BooleanBoolean-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn das Feld ausgeblendet werden kann, indem es aus dem PivotTable-Bericht gezogen wird. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1686,12 +1612,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>TrueTrue, wenn das Feld auf die Seitenposition gezogen werden kann. Der Standardwert ist TrueTrue. BooleanBoolean-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn das Feld auf die Seitenposition gezogen werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToRow">
@@ -1720,12 +1644,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>TrueTrue, wenn das Feld auf die Zeilenposition gezogen werden kann. Der Standardwert ist TrueTrue. BooleanBoolean-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn das Feld auf die Zeilenposition gezogen werden kann. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für OLAP-Datenquellen ist der Wert für Datenfelder <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrilledDown">
@@ -1754,14 +1676,11 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn das Kennzeichen für das angegebene PivotTable-Feld oder PivotTable-Element auf "Drilled" (eingeblendet oder sichtbar) festgelegt wurde. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn das Kennzeichen für das angegebene PivotTable-Feld oder PivotTable-Element auf "Drilled" (eingeblendet oder sichtbar) festgelegt wurde. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft nur für OLAP-Datenquellen verwenden.</para>
+        <remarks><para>Sie können diese Eigenschaft nur für OLAP-Datenquellen verwenden.</para>
           <para>Sie können diese Eigenschaft nicht festlegen, wenn das Feld oder das Element ausgeblendet ist.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrillTo">
@@ -1787,12 +1706,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <Parameter Name="Field" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Field">Erforderlicher <b>String-Wert</b> der Name des der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> , um Drilldown erfolgen soll.</param>
-        <summary>Die <b>DrillTo</b> -Methode unterstützt den Drilldown zu einem angegebenen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> von einem anderen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</summary>
-        <remarks>
-          <para>Dieser Vorgang kann nur ausgeführt werden, auf Felder, die tatsächlich auf sind die <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Also entweder eine Hierarchie, die den angeforderten <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> muss in Zeilen oder Spalten des sein die <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />, oder das Attribut/relationale Feld muss sich in Zeilen oder Spalten des werden die <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> neben mindestens einen anderen Attributfeld/relationalen Feld platziert. Darüber hinaus muss das Feld Drilldown ausgeführt wird in der gleichen Hierarchie oder eines Attributs Kette sein. Wenn diese Bedingung nicht erfüllt sind, tritt ein Laufzeitfehler.</para>
-          <para></para>
-        </remarks>
+        <param name="Field">Erforderliche <b>Zeichenfolge</b> Der Name des <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Drilldowns.</param>
+        <summary>Die <b>DrillTo -Methode</b> unterstützt Drillthrough zu einem angegebenen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> von einem anderen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> .</summary>
+        <remarks><para>Dieser Vorgang kann nur für Felder ausgeführt werden, die sich tatsächlich in der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> befinden. Daher muss sich entweder eine Hierarchie, die die angeforderte enthält, in Zeilen oder Spalten des , oder das Attribut-/relationale Feld muss sich in Zeilen oder Spalten neben mindestens einem anderen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Attribut-/relationalen Feld befinden. Außerdem muss das Feld, zu dem der Drilldown erfolgt, zur selben Hierarchie oder Attributkette gehören. Wenn diese Bedingungen nicht erfüllt sind, tritt ein Laufzeitfehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableItemSelection">
@@ -1823,10 +1740,8 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
       <Docs>
         <summary>Wenn diese Eigenschaft auf <b>False</b> festgelegt ist, wird die Möglichkeit zur Verwendung der Dropdownliste für Felder der Benutzeroberfläche deaktiviert. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das OLAP-PivotTable-Feld nicht die höchste Ebene für die Hierarchie besitzt, tritt ein Laufzeitfehler auf.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das OLAP-PivotTable-Feld nicht die höchste Ebene für die Hierarchie besitzt, tritt ein Laufzeitfehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableMultiplePageItems">
@@ -1855,16 +1770,12 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zur Angabe, ob ein Kontrollkästchen in der Dropdownliste Filter für Felder im Seitenbereich vorhanden sind oder nicht verwendet. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Der vorhandene Eigenschaftswert wird für OLAP beibehalten.</para>
+        <summary>Mit dieser Eigenschaft wird angegeben, ob die Filter-Dropdownliste Kontrollkästchen für Felder im Seitenbereich enthält. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Der vorhandene Eigenschaftswert wird für OLAP beibehalten.</para>
           <para>
-            <b>Hinweis</b>: In short_Excel2007 bei der Erstellung von Pre-short_Excel2007 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s (PivotTable.Version &lt; 3) mit der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SubtotalHiddenPageItems" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekt und die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.EnableMultiplePageItems" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt festgelegt auf <b>True</b>, Ändern der Status der Kontrollkästchen im Filter Dropdown-Menü des Seitenbereichs haben keine Auswirkung.  In diesem Fall wird der Filter auf <b>Alle</b>, einschließlich der deaktivierten (ausgeblendeten) Elemente immer festgelegt.</para>
-          <para></para>
-        </remarks>
+            <b>Hinweis:</b>Wenn Sie in short_Excel2007 short_Excel2007 vorab installierte OLAP s (PivotTable.Version 3) mit der Eigenschaft des Objekts und der Eigenschaft des Objekts auf <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> &lt; <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SubtotalHiddenPageItems" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotField.EnableMultiplePageItems" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <b>"True"</b>erstellen, hat das Ändern des Status der Kontrollkästchen im Dropdownmenü "Filter" des Seitenbereichs keine Auswirkung.  In diesem Fall ist der Filter immer auf <b>All</b> festgelegt, einschließlich für die deaktivierten (ausgeblendeten) Elemente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -1893,16 +1804,14 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Formel des Objekts in der A1-Schreibweise Lese-Schreib- <b>Zeichenfolge</b>.</summary>
+        <summary>Gibt die Formel des Objekts in der Notation A1 zurück oder legt sie fest. Lese-/Schreibzugriff <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
-          <para>Wenn die Zelle eine Konstante enthält, gibt diese Eigenschaft eine Konstante zurück. Wenn die Zelle leer ist, gibt diese <b>Formula</b>-Eigenschaft eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge zurück, und zwar in dem gleichen Format, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
+        <remarks><para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
+          <para>Wenn die Zelle eine Konstante enthält, gibt die Eigenschaft die Konstante zurück. Wenn die Zelle leer ist, gibt diese <b>Formula</b>-Eigenschaft eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge in dem Format zurück, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
           <para>Wenn Sie den Wert oder die Formel einer Zelle in ein Datum umwandeln, überprüft Microsoft Excel, ob die Zelle bereits mit einem Datums- oder Zeitformat formatiert ist. Ist das nicht der Fall, so wird das Zahlenformat in das kurze Standard-Datumsformat geändert.</para>
           <para>Wenn der Bereich einen ein- oder zweidimensionalen Bereich darstellt, können Sie für die Formel eine Visual Basic-Matrix mit derselben Dimension festlegen. Ebenso können Sie die Formel auch in eine Visual Basic-Matrix einfügen.</para>
           <para>Beim Festlegen der Formel für einen Bereich mit mehreren Zellen wird die Formel in alle Zellen des Bereichs eingetragen.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -1931,12 +1840,10 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Funktion verwendet, um das PivotTable-Feld (nur Datenfelder) zusammenzufassen. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />.</summary>
+        <summary>Gibt die Funktion zum Summieren des PivotTable-Felds (nur Datenfelder) zurück oder legt diese fest. Lese-/Schreibzugriff. <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen ist diese Eigenschaft schreibgeschützt und gibt immer <b>xlUnknown</b>xlUnknown zurück. Bei anderen Datenquellen kann diese Eigenschaft nicht auf <b>xlUnknown</b>xlUnknown eingestellt werden.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei OLAP-Datenquellen ist diese Eigenschaft schreibgeschützt und gibt immer <b>xlUnknown</b>xlUnknown zurück. Bei anderen Datenquellen kann diese Eigenschaft nicht auf <b>xlUnknown</b>xlUnknown eingestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupLevel">
@@ -1964,11 +1871,9 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
       <Docs>
         <summary>Gibt die Position des angegebenen Felds innerhalb einer Gruppe von Feldern zurück (wenn das Feld zu einer aus Feldern bestehenden Gruppe gehört). Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
+        <remarks><para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
           <para>Das übergeordnete Feld auf der obersten Ebene (das am weitesten links liegende übergeordnete Feld) liegt auf Ebene 1, das untergeordnete Feld auf Ebene 2 usw.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -1997,21 +1902,14 @@ Die <b>AutoSortCustomSubtotal</b> -Eigenschaft kann einen der Indexwerte, in der
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diese Eigenschaft wird verwendet, um die einzelnen Ebenen einer OLAP-Hierarchie auszublenden. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Gibt <b>True</b> für ausgeblendete Ebenen und <b>False</b> für sichtbare (eingeblendete) Ebenen zurück.
-
- 
-</para>
+        <summary>Mit dieser Eigenschaft werden die einzelnen Ebenen einer OLAP-Hierararchie ausgeblendet. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Gibt <b>True</b> für ausgeblendete Ebenen und <b>False</b> für sichtbare (eingeblendete) Ebenen zurück.</para>
           <para>Diese Eigenschaft gilt nur für Ebenen von OLAP-Hierarchien.</para>
-          <para>Bei relationalen Datenquellen und OLAP-Attribute ist diese Eigenschaft immer <b>False</b>. Versuchen sie für ein Attribut auf <b>True</b> festgelegt oder ein relationales Feld gibt einen Laufzeitfehler zurück.
+          <para>Für relationale Datenquellen und OLAP-Attribute ist diese Eigenschaft immer <b>False</b>. Wenn Sie versuchen, sie für ein Attribut oder ein relationales Feld auf <b>"True"</b> zu setzen, wird ein Laufzeitfehler zurückgegeben.
 
-Es ist nicht möglich, diese Eigenschaft auf <b>True</b> für eine Ebene festgelegt, wenn alle anderen Ebenen derselben Hierarchie bereits diese Einstellung auf <b>True</b>festgelegt ist. Mindestens eine Ebene einer Hierarchie muss diese Eigenschaft auf <b>False</b>festgelegt ist. Dieser Versuch gibt einen Laufzeitfehler zurück.</para>
-          <para></para>
-        </remarks>
+Es ist nicht möglich, diese Eigenschaft für eine Ebene auf <b>"True"</b> zu setzen, wenn auf allen anderen Ebenen derselben Hierarchie diese Einstellung bereits auf <b>"True" festgelegt ist.</b> Mindestens auf einer Hierarchieebene muss diese Eigenschaft auf <b>"False" festgelegt sein.</b> Wenn Sie versuchen, dies zu tun, wird ein Laufzeitfehler zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HiddenItems">
@@ -2040,13 +1938,11 @@ Es ist nicht möglich, diese Eigenschaft auf <b>True</b> für eine Ebene festgel
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Die Nummer oder der Name des zurückzugebenden Elements (dies kann eine Matrix sein, um mehrere Elemente anzugeben).</param>
-        <summary>Gibt ein Objekt, das entweder stellt ein einzelnes ausgeblendetes PivotTable-Element (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Objekt) oder eine Auflistung aller ausgeblendeten Elemente (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Objekt) in das angegebene Feld. Schreibgeschützt.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Die Nummer oder der Name des zurückzugebenden Elements (dies kann eine Matrix sein, um mehrere Elemente anzugeben).</param>
+        <summary>Gibt ein Objekt zurück, das ein einzelnes ausgeblendetes PivotTable-Element (ein Objekt) oder eine Auflistung aller ausgeblendeten Elemente <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Objekt) im angegebenen Feld darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen gibt diese Eigenschaft immer eine leere Auflistung zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei OLAP-Datenquellen gibt diese Eigenschaft immer eine leere Auflistung zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HiddenItemsList">
@@ -2075,12 +1971,10 @@ Es ist nicht möglich, diese Eigenschaft auf <b>True</b> für eine Ebene festgel
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen eines <b>Objekts</b> ein Array von Zeichenfolgen, die ausgeblendeten Elemente für ein PivotTable-Feld angeben. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt ein Objekt zurück oder legt <b>es fest,</b> das ein Array von Zeichenfolgen angibt, die ausgeblendete Elemente für ein PivotTable-Feld sind. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>HiddenItemsList</b>-Eigenschaft ist nur für OLAP (Online Analytical Processing)-Datenquellen zulässig. Bei der Verwendung mit Nicht-OLAP-Datenquellen wird ein Laufzeitfehler zurückgegeben.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>HiddenItemsList</b>-Eigenschaft ist nur für OLAP (Online Analytical Processing)-Datenquellen zulässig. Bei der Verwendung mit Nicht-OLAP-Datenquellen wird ein Laufzeitfehler zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeNewItemsInFilter">
@@ -2109,24 +2003,20 @@ Es ist nicht möglich, diese Eigenschaft auf <b>True</b> für eine Ebene festgel
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ermöglicht es Entwicklern, die angeben, ob aus- oder eingeschlossene Elemente überwacht werden sollen, wenn auf manuelle Filterung angewendet wird die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Der Standardwert für diese Eigenschaft ist <b>False</b>.</para>
-          <para>Entwickler können festlegen, wenn manuelle Filterung angewendet wird, die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> -Eigenschaft auf <b>true fest,</b> um ausgeschlossene Artikel zu verfolgen. Sie können die Eigenschaft auf <b>False</b> zum Nachverfolgen eingeschlossene Elemente festgelegt.
+        <summary>Ermöglicht Entwicklern anzugeben, ob ausgeschlossene oder eingeschlossene Elemente nachverfolgt werden sollen, wenn die manuelle Filterung auf die angewendet <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> wird. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Der Standardwert für diese Eigenschaft ist <b>False</b>.</para>
+          <para>Wenn die manuelle Filterung angewendet wird, können Entwickler die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> <b>"True"</b> festlegen, um ausgeschlossene Elemente nachverfolgt zu werden. Sie können die Eigenschaft auf <b>"False" festlegen,</b> um enthaltene Elemente nachverfolgt zu werden.
 
-Wenn neue Elemente hinzugefügt werden, an den Quelldaten nach der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> -Eigenschaft auf <b>True</b>festgelegt ist, die neuen Elemente werden in der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> nach dem nächsten Aktualisierungsvorgang, da sie nicht in der Auflistung von Elementen sind, die Excel nachverfolgt wird.</para>
-          <para>Diese Einstellung ist für OLAP-Hierarchien für festgelegt der <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> -Objekts, und versuchen, legen Sie es auf <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s, die Teil einer Hierarchie sind (mit einem Laufzeitfehler) fehl. Sie erhalten diese Einstellung aus der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />zurückgegebenen s, die Teil einer Hierarchie, und es sind identisch mit den entsprechenden <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> Eigenschaft.</para>
-          <para>Das Umschalten dieser Einstellung werden die folgenden Auflistungen gelöscht: <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />, und <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />.
+Wenn den Quelldaten neue Elemente hinzugefügt werden, nachdem die Eigenschaft auf "True" festgelegt wurde, werden die neuen Elemente nach dem nächsten Aktualisierungsvorgang angezeigt, da sie sich nicht in der Sammlung von Elementen befinden, die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> Excel <b></b> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> verfolgt.</para>
+          <para>Bei OLAP-Hierarchien wird diese Einstellung für das Objekt festgelegt, und der Versuch, sie auf einer Ebene zu setzen, die Teil einer Hierarchie sind, verursacht einen Fehler (mit einem <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Laufzeitfehler). Sie können diese Einstellung von den S erhalten, die Teil einer Hierarchie sind, und sie wird dieselbe wie <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> die entsprechende Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> zurückgeben.</para>
+          <para>Durch Das Umggen dieser Einstellung werden die folgenden Auflistungen löschen: <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" /> , , und <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" /> .
 
-Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> auf <b>False</b>festgelegt ist die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" /> und <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" /> Auflistungen leer, und sie können keine Elemente hinzugefügt werden.  Beim Hinzufügen von Elementen, wird ein Laufzeitfehler zurückgegeben.
+Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> dieser Wert auf <b>"False"</b>festgelegt ist, sind die Auflistungen leer, und ihnen können keine <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" /> Elemente hinzugefügt werden.  Bei dem Versuch, Elemente hinzuzufügen, wird ein Laufzeitfehler zurückgegeben.
 
-Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> auf <b>True</b>festgelegt ist die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" /> und <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" /> Auflistungen leer, und sie können keine Elemente hinzugefügt werden.  Beim Hinzufügen von Elementen, wird ein Laufzeitfehler zurückgegeben.</para>
-          <para>In <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s, diese Einstellung wird festgelegt, die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt. Das Umschalten dieser Einstellung wird der Filterstatus nicht geändert.</para>
-          <para></para>
-        </remarks>
+Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> dieser Wert auf <b>"True"</b>festgelegt ist, sind <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" /> die Auflistungen leer, und ihnen können keine Elemente hinzugefügt <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" /> werden.  Bei dem Versuch, Elemente hinzuzufügen, wird ein Laufzeitfehler zurückgegeben.</para>
+          <para>In  <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> s wird diese Einstellung für das Objekt <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> festgelegt. Das Umschalten dieser Einstellung hat keinen Einfluss auf den Zustand des Filters.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCalculated">
@@ -2152,13 +2042,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das PivotTable-Feld oder PivotTable-Element ein berechnetes Feld oder Element ist. Schreibgeschützter <b>Boolean</b>-Wert.</summary>
+        <summary><b>True,</b> Wenn das PivotTable -Feld oder das PivotTable -Element ein berechnetes Feld oder Element ist. Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen gibt diese Eigenschaft immer <b>False</b> zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei OLAP-Datenquellen gibt diese Eigenschaft immer <b>False</b> zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMemberProperty">
@@ -2184,12 +2071,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt True zurück, wenn das PivotField-Objekt Elementeigenschaften enthält. Schreibgeschützter Boolean-Wert.</summary>
+        <summary>Gibt <b>True zurück,</b> wenn das PivotField Elementeigenschaften enthält. Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt einen Laufzeitfehler zurück, wenn keine OLAP-Datenquelle (Online Analytical Processing) verwendet wird.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt einen Laufzeitfehler zurück, wenn keine OLAP-Datenquelle (Online Analytical Processing) verwendet wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelRange">
@@ -2215,7 +2100,7 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Für eine <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> -Objekt; gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das die Zelle (oder Zellen) darstellt, die die Bezeichnung enthalten. Für eine <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> -Objekts, gibt ein <b>Range</b> -Objekt, das alle Zellen im PivotTable-Bericht darstellt, die das Element enthalten. Schreibgeschützt.</summary>
+        <summary>Gibt für ein Objekt ein Objekt zurück, das die Zelle (oder Zellen) darstellt, <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> die die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Feldbeschriftung enthalten. Gibt für ein Objekt ein Range -Objekt zurück, das alle Zellen <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> im PivotTable-Bericht darstellt, die das Element enthalten. <b></b> Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2246,14 +2131,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn hinter dem angegebenen Zeilenfeld in einem PivotTable-Bericht eine leere Zeile eingefügt wird. Der Standardwert ist <b>False</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn hinter dem angegebenen Zeilenfeld in einem PivotTable-Bericht eine leere Zeile eingefügt wird. Der Standardwert ist <b>False</b>. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft kann für jedes PivotTable-Feld festgelegt werden; die leere Zeile wird jedoch nur dann angezeigt, wenn es sich bei dem angegebenen Feld um ein Zeilenfeld handelt, das nicht das innerste Zeilenfeld (unterste Ebene) ist. Für Nicht-OLAP-Datenquellen ändert sich der Wert dieser Eigenschaft nicht, wenn das Feld anders angeordnet oder zu dem PivotTable-Bericht hinzugefügt wird.</para>
+        <remarks><para>Diese Eigenschaft kann für jedes PivotTable-Feld festgelegt werden; die leere Zeile wird jedoch nur dann angezeigt, wenn es sich bei dem angegebenen Feld um ein Zeilenfeld handelt, das nicht das innerste Zeilenfeld (unterste Ebene) ist. Für Nicht-OLAP-Datenquellen ändert sich der Wert dieser Eigenschaft nicht, wenn das Feld anders angeordnet oder zu dem PivotTable-Bericht hinzugefügt wird.</para>
           <para>Sie können im PivotTable-Bericht keine Daten in die leere Zeile eingeben.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutCompactRow">
@@ -2282,14 +2164,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, unabhängig davon, ob eine <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> wird komprimiert (Elemente mehrerer <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s werden in einer einzelnen Spalte angezeigt) Wenn Zeilen ausgewählt werden. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>True</b> (Standard) müssen optisch keine direkte Auswirkung der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Wenn das <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> -Eigenschaft enthält <see cref="F:Microsoft.Office.Interop.Excel.XlLayoutFormType.xlTabular" />, jedoch einzeln festgelegt werden können.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt an, ob ein Objekt komprimiert wird (Elemente mit mehreren Elementen werden in einer einzelnen Spalte angezeigt), wenn <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Zeilen ausgewählt werden. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Das Festlegen dieser Eigenschaft auf <b>"True"</b> (Standard) hat keine sofortige visuelle Auswirkung, wenn die Eigenschaft auf "True" festgelegt ist, sie kann jedoch <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> unabhängig voneinander festgelegt <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> <see cref="F:Microsoft.Office.Interop.Excel.XlLayoutFormType.xlTabular" /> werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutForm">
@@ -2318,12 +2196,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>Microsoft.Office.Interop.Excel.XlLayoutFormType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, wie die angegebene PivotTable-Elemente angezeigt werden – im Tabellenformat oder im Gliederungsformat. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />.</summary>
+        <summary>Gibt die Darstellung der angegebenen PivotTable-Elemente im Tabellenformat oder im Gliederungsformat zurück oder legt sie fest. Lese-/Schreibzugriff. <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" /></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft für jedes PivotTable-Feld festgelegt. Allerdings Formatierung wird angezeigt, die nur, wenn das angegebene Feld ein Zeilenfeld als innersten (unterste Ebene dar. Für nicht-OLAP-Datenquellen ändern nicht der Wert dieser Eigenschaft, wenn das Feld anders angeordnet ist oder wenn hinzugefügt oder aus dem PivotTable-Bericht entfernt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft für jedes #A0 festlegen. Die Formatierung wird jedoch nur angezeigt, wenn das angegebene Feld ein anderes Zeilenfeld als das innerste (Zeilenfeld der untersten Ebene) ist. Für Nicht-OLAP-Datenquellen ändert sich der Wert dieser Eigenschaft nicht, wenn das Feld anders angeordnet oder dem PivotTable-Bericht hinzugefügt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutPageBreak">
@@ -2352,13 +2228,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn hinter jedem Feld ein Seitenumbruch eingefügt wird. Der Standardwert ist <b>False</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn hinter jedem Feld ein Seitenumbruch eingefügt wird. Der Standardwert ist <b>False</b>. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Obwohl diese Eigenschaft für jedes PivotTable-Feld festgelegt werden kann, wird die Druckoption nur dann angezeigt, wenn es sich bei dem angegebenen Feld um ein Zeilenfeld handelt, das nicht das innerste Zeilenfeld (unterste Ebene) ist. Für Nicht-OLAP-Datenquellen ändert sich der Wert dieser Eigenschaft nicht, wenn das Feld anders angeordnet oder zu dem PivotTable-Bericht hinzugefügt wird.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Obwohl diese Eigenschaft für jedes PivotTable-Feld festgelegt werden kann, wird die Druckoption nur dann angezeigt, wenn es sich bei dem angegebenen Feld um ein Zeilenfeld handelt, das nicht das innerste Zeilenfeld (unterste Ebene) ist. Für Nicht-OLAP-Datenquellen ändert sich der Wert dieser Eigenschaft nicht, wenn das Feld anders angeordnet oder zu dem PivotTable-Bericht hinzugefügt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutSubtotalLocation">
@@ -2387,13 +2260,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>Microsoft.Office.Interop.Excel.XlSubtototalLocationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Position der Teilergebnisse des PivotTable-Felds in Bezug auf (entweder oberhalb oder unterhalb) das angegebene Feld. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" />.</summary>
+        <summary>Gibt die Position der Teilergebnisse des PivotTable-Felds in Bezug auf das angegebene Feld (darüber oder darunter) zurück oder legt diese fest. Lese-/Schreibzugriff. <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft für jedes PivotTable-Feld im Gliederungsformat festgelegt. die Formatierung wird jedoch nur, wenn das angegebene Feld nicht innersten (niedrigsten) Zeilenfeld ein Zeilenfeld ist. Für nicht-OLAP-Datenquellen ändern nicht der Wert dieser Eigenschaft, wenn das Feld anders angeordnet ist oder wenn hinzugefügt oder aus dem Bericht entfernt.</para>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> -Eigenschaft bestimmt, ob der Bericht im Tabellenformat oder im Gliederungsformat angezeigt wird.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft kann für jedes PivotTable-Feld im Gliederungsformat festgelegt werden; die Formatierung wird jedoch nur dann angezeigt, wenn es sich bei dem angegebenen Feld um ein Zeilenfeld handelt, das nicht das innerste Zeilenfeld (unterste Ebene) ist. Bei Nicht-OLAP-Datenquellen ändert sich der Wert dieser Eigenschaft nicht, wenn das Feld neu angeordnet wird oder wenn es dem Bericht hinzugefügt oder aus dem Bericht entfernt wird.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> Eigenschaft bestimmt, ob der Bericht im Tabellenformat oder im Gliederungsformat angezeigt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberPropertyCaption">
@@ -2422,16 +2293,12 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.MemberPropertyCaption" /> -Eigenschaft steuert, welche Elementeigenschaft als Beschriftung für eine bestimmte Ebene verwendet wird.  Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>
-            <b>Hinweis</b>: Diese Einstellung hat eine optische Auswirkung nur, wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> für auf <b>True</b> festgelegt ist die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</para>
-          <para>Wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotField.MemberPropertyCaption" /> festgelegt ist, wird die Einstellung beim Umschalten gespeichert ist die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> Eigenschaft.</para>
-          <para></para>
-        </remarks>
+        <summary>Durch Festlegen <see cref="P:Microsoft.Office.Interop.Excel.PivotField.MemberPropertyCaption" /> der Eigenschaft wird bestimmt, welche Elementeigenschaft als Beschriftung für eine bestimmte Ebene verwendet wird.  Lese-/Schreibzugriff.</summary>
+        <value><b>String</b></value>
+        <remarks><para>
+            <b>Hinweis:</b>Diese Einstellung hat nur dann einen visuellen Effekt, wenn für die Einstellung <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> <b>auf "True"</b> festgelegt <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> ist.</para>
+          <para>Wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotField.MemberPropertyCaption" /> die Einstellung festgelegt ist, wird sie beim Umggen der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> gespeichert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MemoryUsed">
@@ -2457,7 +2324,7 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Menge des Arbeitsspeichers in Bytes, die derzeit verwendet wird, durch das Objekt zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Speichermenge in Byte zurück, die derzeit vom Objekt verwendet wird. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2521,11 +2388,9 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
       <Docs>
         <summary>Zurückgeben oder festlegen den Formatierungscode für das Objekt. Lese-/Schreibzugriff <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> -Objekts, können Sie die <b>NumberFormat</b> -Eigenschaft nur für Datenfelder festgelegt.</para>
-          <para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <b>NumberFormat</b> und <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormatLocal" /> Eigenschaften.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für das <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt können Sie die Eigenschaft <b>"NumberFormat"</b> nur für ein Datenfeld festlegen.</para>
+          <para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Formatfunktion</b> verwendet andere Formatcodezeichenfolgen als <b>numberFormat und</b> <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormatLocal" /> Eigenschaften.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -2554,12 +2419,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFieldOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Position des Felds im angegebenen PivotTable-Bericht. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />.</summary>
+        <summary>Die Position des Felds im angegebenen PivotTable-Bericht. Lese-/Schreibzugriff. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen wird durch Festlegen dieser Eigenschaft für ein Feld in einer Hierarchie die Ausrichtung für die anderen Felder in der gleichen Hierarchie. Dimensionsfelder können nur in der Zeile, Spalte und Seite Feld Bereichen des PivotTable-Berichts angeordnet werden. Felder der Maßeinheiten können nur im Datenbereich angeordnet werden. Wird eine Hierarchie oder ein Datenfeld auf <b>xlHidden eingestellt</b> werden die Hierarchie oder das Feld aus dem PivotTable-Bericht entfernt.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn diese Eigenschaft bei OLAP-Datenquellen für ein Feld in einer Hierarchie festgelegt wird, wird ebenfalls die Ausrichtung der anderen Felder in derselben Hierarchie festgelegt. Dimensionsfelder können nur in Zeilen-, Spalten- und Seitenfeldbereichen des PivotTable-Berichts angeordnet sein. Measure-Felder dagegen können nur in im Datenbereich angeordnet sein. Wird eine Hierarchie oder ein Datenfeld auf <b>xlHidden</b>eingestellt, wird die Hierarchie oder das Feld aus dem PivotTable-Bericht entfernt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2613,12 +2476,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> -Objekt, das das PivotTable-Feld darstellt, das die übergeordnete Gruppe des angegebenen Objekts befindet. Das Feld muss gruppiert werden und muss ein übergeordnetes Feld haben. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt zurück, das das PivotTable-Feld darstellt, das das übergeordnete Gruppenobjekt des angegebenen Objekts ist. Das Feld muss in einer Gruppe enthalten sein und ein übergeordnetes Feld besitzen. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentItems">
@@ -2647,13 +2508,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Die Nummer oder der Name des zurückzugebenden Elements (dies kann eine Matrix sein, um mehrere Elemente anzugeben).</param>
-        <summary>Gibt ein Objekt, das entweder stellt ein einzelnes PivotTable-Element (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Objekt) oder eine Auflistung aller Elemente (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Object) im angegebenen Feld übergeordnet sind. Das angegebene Feld muss eine übergeordnete Gruppe eines anderen Felds. Schreibgeschützt.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Die Nummer oder der Name des zurückzugebenden Elements (dies kann eine Matrix sein, um mehrere Elemente anzugeben).</param>
+        <summary>Gibt ein Objekt zurück, das entweder ein einzelnes PivotTable-Element (ein Objekt) oder eine Auflistung aller Elemente (ein Objekt) darstellt, bei der es sich um gruppenerziehende Elemente <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> im angegebenen Feld handelt. Das angegebene Feld muss innerhalb einer Gruppe einem anderen Feld übergeordnet sein. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotFilters">
@@ -2679,10 +2538,8 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.PivotFilters" /> für den angegebenen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Objekt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotField.PivotFilters" />
-        </value>
+        <summary>Gibt den Wert für das <see cref="P:Microsoft.Office.Interop.Excel.PivotField.PivotFilters" /> angegebene Objekt zurück oder legt den Wert <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> fest. Schreibgeschützt.</summary>
+        <value><see cref="P:Microsoft.Office.Interop.Excel.PivotField.PivotFilters" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2708,13 +2565,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Der Name oder die Nummer des zurückzugebenden Elements.</param>
-        <summary>Gibt ein Objekt, das entweder stellt ein einzelnes PivotTable-Element (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Objekt) oder eine Auflistung aller ein- und ausgeblendeten Elemente (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Objekt) in das angegebene Feld. Schreibgeschützt.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Der Name oder die Nummer des zurückzugebenden Elements.</param>
+        <summary>Gibt ein Objekt zurück, das ein einzelnes PivotTable-Element (ein Objekt) oder eine Auflistung aller sichtbaren und ausgeblendeten Elemente <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Objekt) im angegebenen Feld darstellt. Schreibgeschützt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Bei OLAP-Datenquellen wird die Auflistung anhand des eindeutigen Namens indiziert (der zurückgegebene Name der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> -Eigenschaft) und nicht nach den Anzeigenamen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei OLAP-Datenquellen wird die Auflistung durch den eindeutigen Namen (den von der Eigenschaft zurückgegebenen Namen) indiziert, nicht durch <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> den Anzeigenamen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -2743,7 +2598,7 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Position des Felds (erste, zweite, dritte usw.) unter allen Feldern derselben Ausrichtung (Zeilen, Spalten, Seiten, Daten). Lese-Schreib- <b>Objekt</b>.</summary>
+        <summary>Position des Felds (erster, zweiter, dritter und so weiter) zwischen allen Feldern in seiner Ausrichtung (Zeilen, Spalten, Seiten, Daten). <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2774,13 +2629,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gilt nur für PivotTable-Felder, die Eigenschaftsfelder für ein Element sind. Gibt eine <b>ganze Zahl</b> zur Angabe der Anzeigeposition der Elementeigenschaft im Cubefeld zu dem es gehört. Lese-/Schreibzugriff.</summary>
+        <summary>Nur für PivotTable-Felder gültig, bei denen es sich um Eigenschaftsfelder für ein Element handelt. Gibt einen <b>Ganzzahlwert</b> zurück, der die Anzeigeposition der Elementeigenschaft innerhalb des Cubefelds angibt, zu dem sie gehört. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Durch die Einstellung dieser Eigenschaft wird die Reihenfolge der Eigenschaften für dieses Cubefeld neu angeordnet. Diese Eigenschaft basiert auf der Zahl 1. Der zulässige Bereich reicht von 1 bis zur maximalen Anzahl von Eigenschaftsfeldern für ein Element, die für die Hierarchie angezeigt werden.</para>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> -Eigenschaft <b>False</b>ist, die Verwendung der <b>PropertyOrder</b> -Eigenschaft erstellt einen Laufzeitfehler.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Durch die Einstellung dieser Eigenschaft wird die Reihenfolge der Eigenschaften für dieses Cubefeld neu angeordnet. Diese Eigenschaft basiert auf der Zahl 1. Der zulässige Bereich reicht von 1 bis zur maximalen Anzahl von Eigenschaftsfeldern für ein Element, die für die Hierarchie angezeigt werden.</para>
+          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> Eigenschaft <b>"False"</b>ist, wird bei Verwendung der <b>Eigenschaft "PropertyOrder"</b> ein Laufzeitfehler erstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyParentField">
@@ -2806,13 +2659,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> -Objekt, das das Feld, zu dem die Eigenschaften in diesem gehören Feld, darstellt.</summary>
+        <summary>Gibt ein Objekt zurück, das das Feld darstellt, zu dem <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> die Eigenschaften in diesem Feld gehören.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nur für Felder gültig, bei denen es sich um Eigenschaftsfelder für ein Element handelt.</para>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> -Eigenschaft <b>False</b>ist, mithilfe der <b>PropertyParentField</b> wird-Eigenschaft einen Laufzeitfehler zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Nur für Felder gültig, bei denen es sich um Eigenschaftsfelder für ein Element handelt.</para>
+          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> Eigenschaft <b>False ist,</b>gibt die <b>Eigenschaft PropertyParentField</b> einen Laufzeitfehler zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatLabels">
@@ -2841,15 +2692,12 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob Elementnamen für das angegebene PivotField in der PivotTable wiederholt werden.</summary>
-        <value>
-          <b>true,</b> Wenn elementbeschriftungen für das angegebene PivotField in der PivotTable wiederholt werden. andernfalls <b>false</b>.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff.</para>
+        <summary>Ruft ab oder legt fest, ob Elementbeschriftungen in der PivotTable für das angegebene PivotField wiederholt werden.</summary>
+        <value><b>true,</b> wenn Elementbeschriftungen in der PivotTable für das angegebene PivotField wiederholt werden; andernfalls <b>false</b>.</value>
+        <remarks><para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>true,</b> Wenn elementbeschriftungen für das angegebene PivotField wiederholt werden. andernfalls <b>false</b>. Die Einstellung der der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> Element Bezeichnungen das Kontrollkästchen Wiederholen im Layout-Eigenschaft entspricht &amp; Registerkarte Drucken im Dialogfeld Feld Einstellungen für ein Feld in einer PivotTable.To Gibt an, ob die Beschriftungen für alle PivotFields in einer PivotTable in einem einzelnen Element wiederholt werden sollen Vorgang, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> Methode.</para>
-          <para></para>
-        </remarks>
+            <b>true,</b> wenn Elementbeschriftungen für das angegebene PivotField wiederholt werden; andernfalls <b>false</b>. Die Einstellung der Eigenschaft entspricht dem Kontrollkästchen "Elementbeschriftungen wiederholen" auf der Registerkarte "Layout drucken" des Dialogfelds "Feldeinstellungen" für ein Feld in einem PivotTable.To geben Sie an, ob Elementbeschriftungen für alle PivotFields in einer PivotTable in einem einzigen Vorgang wiederholt werden. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> &amp; <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ServerBased">
@@ -2878,11 +2726,9 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn es sich bei der Datenquelle des angegebenen PivotTable-Berichts um eine externe Datenquelle handelt und nur die Elemente abgerufen werden, die dem markierten Seitenfeld entsprechen. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn es sich bei der Datenquelle des angegebenen PivotTable-Berichts um eine externe Datenquelle handelt und nur die Elemente abgerufen werden, die dem markierten Seitenfeld entsprechen. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nicht für OLAP-Datenquellen und ist immer <b>False</b>.</para>
+        <remarks><para>Diese Eigenschaft gilt nicht für OLAP-Datenquellen und ist immer <b>False</b>.</para>
           <para>Wenn diese Eigenschaft <b>True</b> ist, werden aus der Datenbank nur Datensätze abgerufen, die dem markierten Seitenfeldelement entsprechen. Sobald der Benutzer die Seitenfeldmarkierung ändert, wird von diesem Augenblick an das neu markierte Seitenfeldelement der Abfrage als Parameter übergeben und der Cache aktualisiert.</para>
           <para>Diese Eigenschaft kann nicht eingestellt werden, wenn eine der folgenden Bedingungen erfüllt ist:</para>
           <list type="bullet">
@@ -2899,8 +2745,7 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
               <description>Das Feld hat einen Datentyp, der nicht serverbasiert sein kann (ein Memo-Feld oder ein OLE-Objekt).</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAllItems">
@@ -2929,13 +2774,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, falls alle Elemente in einem PivotTable-Bericht angezeigt werden, auch wenn sie keine Zusammenfassungsdaten enthalten. Der Standardwert ist <b>False</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, falls alle Elemente in einem PivotTable-Bericht angezeigt werden, auch wenn sie keine Zusammenfassungsdaten enthalten. Der Standardwert ist <b>False</b>. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen ist der Wert immer <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei OLAP-Datenquellen ist der Wert immer <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDetail">
@@ -2964,10 +2806,8 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt diesen fest, ob das angegebene <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Details angezeigt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Ruft ab oder legt fest, ob das <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> angegebene Detail angezeigt wird. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2994,14 +2834,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, ob die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> ist derzeit in der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> oder nicht. Schreibgeschützt.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Die-Eigenschaft gibt <b>True</b> zurück, wenn die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> ist zurzeit sichtbar und gibt <b>False</b> zurück, wenn nicht aktuell sichtbar ist. Der Sichtbarkeit von der <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> abruft, ob die <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> Beschriftung wird angezeigt, in der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> in Tabellenform (nicht komprimierter).</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt an, ob der derzeit in der angezeigt <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> wird <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> oder nicht. Schreibgeschützt.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Die Eigenschaft gibt <b>True zurück,</b> wenn die derzeit sichtbar ist, und <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> gibt False <b>zurück,</b> wenn sie derzeit nicht sichtbar ist. Die Sichtbarkeit des Titels wird bestimmt, indem festgelegt wird, ob die Beschriftung <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> in <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> tabellarischer Form (nicht kompakt) angezeigt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceCaption">
@@ -3027,14 +2863,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceCaption" /> Eigenschaft gilt nur für OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s und gibt das Original caption aus dem OLAP-Server für eine <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Schreibgeschützt.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Sie können die <see cref="T:Microsoft.Office.Interop.Excel.PivotField.Name" /> oder die <see cref="T:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> für nicht-OLAP- <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s.</para>
-          <para></para>
-        </remarks>
+        <summary>Die Eigenschaft gilt nur für OLAP-Daten und gibt die ursprüngliche Beschriftung <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceCaption" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> vom OLAP-Server für eine <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> zurück. Schreibgeschützt.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Sie können die oder <see cref="T:Microsoft.Office.Interop.Excel.PivotField.Name" /> die für <see cref="T:Microsoft.Office.Interop.Excel.PivotField.SourceName" />  Nicht-OLAP-1 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> verwenden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -3060,7 +2892,7 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück, wie in den ursprünglichen Quelldaten für den angegebenen PivotTable-Bericht angezeigt. Dies möglicherweise unterschiedliche aus dem derzeitigen Elementnamen, wenn der Benutzer das Element nach dem Erstellen des PivotTable-Berichts umbenannt hat. Schreibgeschützter <b>String</b>-Wert.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts so zurück, wie er in den ursprünglichen Quelldaten für den angegebenen PivotTable-Bericht angezeigt wird. Dies kann sich vom aktuellen Elementnamen unterscheiden, wenn der Benutzer das Element nach dem Erstellen des PivotTable-Berichts umbenannt hat. Schreibgeschützte <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3093,11 +2925,9 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
       <Docs>
         <summary>Gibt einen <b>String</b>-Wert zurück oder legt diesen fest, der für Formeln das Standardformat "Englisch (USA)" angibt. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>StandardFormula</b>StandardFormula-Eigenschaft wirkt sich in erster Linie auf Elementnamen aus, die ein Datums- oder Zahlenformat besitzen. Sie bietet eine Möglichkeit, eine Formel für ein gegebenes berechnetes Element festzulegen oder abzufragen.</para>
-          <para>Die <b>StandardFormula</b> -Eigenschaft ist "International lesbar," während der <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Formula" /> -Eigenschaft ist nicht.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>StandardFormula</b>StandardFormula-Eigenschaft wirkt sich in erster Linie auf Elementnamen aus, die ein Datums- oder Zahlenformat besitzen. Sie bietet eine Möglichkeit, eine Formel für ein gegebenes berechnetes Element festzulegen oder abzufragen.</para>
+          <para>Die <b>StandardFormula -Eigenschaft</b> ist "international-friendly", während die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Formula" /> nicht.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubtotalName">
@@ -3126,7 +2956,7 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Textzeichenfolge der Beschriftung zurück oder legt sie fest, die in der Teilergebnisspalte oder Zeilenüberschrift des angegebenen PivotTable-Berichts angezeigt wird. Der Standardwert ist die Zeichenfolge "Teilergebnis". <b>String</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die Textzeichenfolge der Beschriftung zurück oder legt sie fest, die in der Teilergebnisspalte oder Zeilenüberschrift des angegebenen PivotTable-Berichts angezeigt wird. Der Standardwert ist die Zeichenfolge "Teilergebnis". <b>Zeichenfolge</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3160,13 +2990,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Ein Teilergebnis Index, wie in der folgenden Tabelle dargestellt. Wenn dieses Argument ausgelassen wird, gibt die <b>Subtotals</b> -Methode ein Array mit für jedes Teilergebnis einen <b>booleschen</b> Wert zurück. IndexMeaning1Automatic2Sum3Count4Average5Max6Min7Product8Count Nums9StdDev10StdDevp11Var12VarpIf ein Index ist <b>True</b>, in dem Feld wird dieses Teilergebnis. Wenn Index 1 (automatisch) <b>True</b>ist, werden alle anderen Werte auf <b>False</b>festgelegt.</param>
-        <summary>Zurückgeben oder Festlegen der Teilergebnisse mit dem angegebenen Feld angezeigt. Gilt nur für nicht-Datenfelder. Lese-Schreib- <b>Objekt</b>.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Ein Teilsummenindex, wie in der folgenden Tabelle dargestellt. Wenn dieses Argument nicht angegeben wird, gibt die <b>Subtotals</b> -Methode ein Array zurück, das einen <b>booleschen</b> Wert für jedes Teilsumme enthält. IndexMeaning1Automatic2Sum3Count4Average5Max6Min7Product8Count Nums9StdDev10StdDevp11Var12VarpIf ein Index <b>true</b>ist, zeigt das Feld dieses Teilsumme an. Ist Index 1 (Automatisch) <b>True</b>, werden alle anderen Werte auf <b>False</b> festgelegt.</param>
+        <summary>Gibt die mit dem angegebenen Feld angezeigten Teilergebnisse zurück oder legt diese fest. Nur für Nicht-Datenfelder gültig. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen <paramref name="Index" /> kann nur zurückgegeben oder festgelegt werden, auf 1 (automatisch). Das zurückgegebene Array enthält immer <b>True</b> oder <b>False</b> für das erste Arrayelement, und für alle anderen Elemente <b>False</b> enthält. Ein Array der Elementwerte, die alle <b>False</b> sind gibt an, dass es keine Teilergebnisse.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Für OLAP-Datenquellen kann nur 1 (automatisch) zurückgeben oder festgelegt <paramref name="Index" /> werden. Das zurückgegebene Array enthält immer <b>"True"</b> oder <b>"False"</b> für das erste Arrayelement und <b>"False"</b> für alle anderen Elemente. Ein Array von Elementwerten, die alle <b>"False"</b> sind, gibt an, dass keine Teilsummen enthalten sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TotalLevels">
@@ -3192,12 +3020,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Gesamtanzahl der Felder in der aktuellen Gruppe zurück. Wenn das Feld nicht gruppiert oder die Datenquelle OLAP-basierten ist, gibt <b>TotalLevels</b> den Wert 1 zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Gesamtanzahl der Felder in der aktuellen Feldgruppierung zurück. Wenn das Feld nicht gruppiert oder die Datenquelle OLAP-basiert ist, gibt <b>TotalLevels</b> den Wert 1 zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Alle Felder in einer Feldgruppierung haben den gleichen <b>TotalLevels</b>-Wert.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Alle Felder in einer Feldgruppierung haben den gleichen <b>TotalLevels</b>-Wert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseMemberPropertyAsCaption">
@@ -3226,16 +3052,12 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diese Eigenschaft wird verwendet, um Steuerelement, ob Member-Eigenschaft Beschriftungen für verwendeten <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Titel der <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> für auf <b>True</b> festgelegt ist ein <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />, klicken Sie dann <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> gibt an, welche Member-Eigenschaft die Beschriftung, angezeigt. Wenn keine angegeben ist, die erste Elementeigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> (in Reihenfolge der Datenquellen) angezeigt wird, die Beschriftung für Elemente, die <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />.</para>
-          <para>Wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> festgelegt ist, auf <b>"false"</b>, klicken Sie dann die reguläre <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Beschriftungen werden verwendet, für die <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />.</para>
-          <para>Wenn Sie versuchen, legen Sie <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> auf <b>"true"</b> für eine <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> ohne Elementeigenschaften wird ein Laufzeitfehler zurückgegeben. Für <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />s ohne Elementeigenschaften, die Eigenschaft wird immer auf <b>false festgelegt</b>sein.</para>
-          <para></para>
-        </remarks>
+        <summary>Diese Eigenschaft wird verwendet, um zu steuern, ob Elementeigenschaftsbeschriftungen für <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Beschriftungen der <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> verwendet werden. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> für ein Element auf <b>"True"</b> festgelegt ist, wird angegeben, <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> welche  <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> Elementeigenschaft angezeigt werden soll. Wenn keine angegeben wird, wird die erste Elementeigenschaft dieser Eigenschaft (in der Reihenfolge der Datenquelle) als Beschriftung für Elemente <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> dieses <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> angezeigt.</para>
+          <para>Wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> <b>"False"</b>festgelegt ist, werden die regulären <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Beschriftungen für die <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> verwendet.</para>
+          <para>Wenn Sie versuchen, für einen Wert ohne Elementeigenschaften <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> <b>auf "True"</b> zu setzen, wird ein <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> Laufzeitfehler zurückgegeben. For <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> s with no member properties, the property will always be <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3264,7 +3086,7 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Name des angegebenen Felds im PivotTable-Bericht. Lese-/Schreibzugriff <b>String</b>.</summary>
+        <summary>Der Name des angegebenen Felds im PivotTable-Bericht. <b>Zeichenfolge</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3295,13 +3117,11 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Die Nummer oder der Name des zurückzugebenden Elements (dies kann eine Matrix sein, um mehrere Elemente anzugeben).</param>
-        <summary>Gibt ein Objekt, das entweder stellt ein einzelnes sichtbar PivotTable-Element (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Objekt) oder eine Auflistung aller eingeblendeten Elemente (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Objekt) in das angegebene Feld. Schreibgeschützt.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Die Nummer oder der Name des zurückzugebenden Elements (dies kann eine Matrix sein, um mehrere Elemente anzugeben).</param>
+        <summary>Gibt ein Objekt zurück, das ein einzelnes sichtbares PivotTable-Element (ein Objekt) oder eine Auflistung aller sichtbaren Elemente <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Objekt) im angegebenen Feld darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei OLAP-Datenquellen ist diese Eigenschaft schreibgeschützt und gibt immer <b>True</b> zurück. Es gibt keine ausgeblendeten Elemente.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Bei OLAP-Datenquellen ist diese Eigenschaft schreibgeschützt und gibt immer <b>True</b> zurück. Es gibt keine ausgeblendeten Elemente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleItemsList">
@@ -3330,14 +3150,10 @@ Wenn <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilt
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt, oder legt ein <b>Objekt</b> , das ein Array von Zeichenfolgen, die in ein manueller Filter angewendet, eingeschlossene Elemente darstellen einer <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gilt für OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s nur.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt ein Objekt zurück oder legt <b>es fest,</b> das ein Array von Zeichenfolgen angibt, die enthaltene Elemente in einem manuellen Filter darstellen, der auf eine angewendet <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> wird. Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Diese Eigenschaft gilt nur für <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> OLAP-S.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

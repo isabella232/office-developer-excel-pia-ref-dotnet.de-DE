@@ -1,13 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572702" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010493" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt den Verteiler einer Arbeitsmappe dar. Der Verteiler wird zum Versenden einer Arbeitsmappe über das elektronische Mail-System verwendet.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> Eigenschaft, um das <b>RoutingSlip</b> -Objekt zurückzugeben.</para>
-      <para>Das <b>RoutingSlip</b> -Objekt ist nicht vorhanden und kann nicht zurückgegeben werden, es sei denn, die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> -Eigenschaft für die Arbeitsmappe ist <b>True</b>.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> Eigenschaft, um das <b>RoutingSlip -Objekt zurück.</b></para>
+      <para>Das <b>RoutingSlip</b> -Objekt ist nicht vorhanden und kann nur zurückgegeben werden, wenn die Eigenschaft für <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> die Arbeitsmappe True <b>ist.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,13 +78,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -123,12 +111,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Verteilerübermittlungsmethode. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> Konstanten: <b>XlOneAfterAnother</b> und <b>XlAllAtOnce</b>.</summary>
+        <summary>Gibt die Verteilungsart zurück, die beim Weiterleiten verwendet wird, oder legt sie fest. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> Konstanten sein: <b>xlOneAfterAnother oder</b> <b>xlAllAtOnce</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft nicht festlegen, wenn die Weiterleitung aktiv ist.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft nicht festlegen, wenn die Weiterleitung aktiv ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -157,7 +143,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Nachrichtentext für die Verteilerliste. Dieser Text wird als Textkörper der e-Mail-Nachrichten verwendet, mit denen die Arbeitsmappe weitergeleitet.</summary>
+        <summary>Gibt den Nachrichtentext des Verteilers zurück oder legt ihn fest. Dieser Text wird als Nachrichtentext des Verteilers verwendet, der zusammen mit der Arbeitsmappe weitergeleitet wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,14 +205,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Der Empfänger. Wenn dieses Argument nicht angegeben ist, gibt die <b>Recipients</b> -Eigenschaft (oder auf festgelegt werden kann) ein Array, das alle Empfänger enthält.</param>
+        <param name="Index">Optionales <b>Objekt</b>. Der Empfänger. Wenn dieses Argument nicht angegeben wird, gibt die Eigenschaft <b>Recipients</b> ein Array zurück (oder kann auf dieses festgelegt werden), das alle Empfänger enthält.</param>
         <summary>Gibt die Empfänger im Verteiler zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Reihenfolge der Empfängerliste definiert die Reihenfolge der Übermittlung, wenn die Übermittlungsoption für den Verteiler <b>xlOneAfterAnother</b> ist.</para>
+        <remarks><para>Die Reihenfolge der Empfängerliste definiert die Reihenfolge der Übermittlung, wenn die Übermittlungsoption für den Verteiler <b>xlOneAfterAnother</b> ist.</para>
           <para>Findet momentan eine Verteilung statt, werden nur die Empfänger, die das Dokument noch nicht erhalten und weitergeleitet haben, zurückgegeben oder festgelegt.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -250,12 +234,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Setzt den Verteiler zurück, sodass eine neue Weiterleitung mit dem gleichen Verteiler (mit der gleichen Listen- und Übermittlung Empfängerinformationen) initiiert werden kann.</summary>
+        <summary>Setzt den Verteiler zurück, sodass erneut Routing mit dem gleichen Verteiler (mit der gleichen Empfängerliste und den gleichen Übermittlungsinformationen) eingeleitet werden kann.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Das routing muss abgeschlossen sein, bevor Sie diese Methode verwenden. Mit dieser Methode in anderen Fällen verursacht einen Fehler.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Das Routing muss abgeschlossen sein, bevor Sie diese Methode verwenden. Die Anwendung dieser Methode unter anderen Voraussetzungen führt zu einem Fehler.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnWhenDone">
@@ -284,8 +266,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Arbeitsmappe an den Absender zurückgegeben wird, wenn routing abgeschlossen ist.</summary>
+        <summary><b>True</b>, wenn die Arbeitsmappe zum Absender zurückgeleitet wird, sobald das Weiterleiten abgeschlossen ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,7 +294,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Status des Verteilers an.</summary>
+        <summary>Gibt den Status des Verteilers zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -344,12 +325,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen des Betreffs für den Mailer oder Verteiler.</summary>
+        <summary>Gibt den Betreff für das Adressfeld oder die Verteiler zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Betreff für die <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> Objekt dient als Betreff für e-Mail-Nachrichten verwendet, um die Arbeitsmappe weiterzuleiten.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Der Betreff für das Objekt wird als Betreff für <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> E-Mail-Nachrichten verwendet, die zum Routen der Arbeitsmappe verwendet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackStatus">
@@ -378,13 +357,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Nachverfolgen der Status des Verteilers aktiviert ist.</summary>
+        <summary><b>True</b>, wenn der Status des Verteilers verfolgt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft nicht festlegen, wenn die Weiterleitung aktiv ist.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft nicht festlegen, wenn die Weiterleitung aktiv ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

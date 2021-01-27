@@ -1,13 +1,5 @@
 <Type Name="TimelineState" FullName="Microsoft.Office.Interop.Excel.TimelineState">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0335f3e0e135a9ce6c845d79bd25325307729e66" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580822" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TimelineState" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0335f3e0e135a9ce6c845d79bd25325307729e66" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009590" /></Metadata><TypeSignature Language="C#" Value="public interface TimelineState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TimelineState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TimelineState" />
   <TypeSignature Language="VB.NET" Value="Public Interface TimelineState" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Die Zeitachse Zustand des ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Objekt.</summary>
+    <summary>Der zeitachsenspezifische Zustand eines <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Objekts.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Nur-Lese- <b>Ganzzahl</b> (<b>Int</b> in c#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>Ganze</b> Zahl (<b>int</b> in C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C, Zeichenfolge "XCEL zurück".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDate">
@@ -115,7 +105,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Ende der Filterung Datumsbereich zurück (entspricht der <see cref="P:Microsoft.Office.Interop.Excel.TimelineState.StartDate" /> Bereich eines Tages ist). <b>Objekt</b> (in c#-<b>Objekt</b> ) Schreibgeschützt</summary>
+        <summary>Gibt das Ende des Filterdatumsbereichs zurück (entspricht dem Wert, wenn der Bereich <see cref="P:Microsoft.Office.Interop.Excel.TimelineState.StartDate" /> ein einzelner Tag ist). <b>Objekt</b> (<b>Objekt</b> in C#) Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Datumsfilters zurück. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" />Schreibgeschützt.</summary>
+        <summary>Gibt den Typ des Datumsfilters zurück. <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" /> Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,7 +161,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den ersten Wert der Datumsfilter (Semantik verschieden Filtertyp) zugeordnet. <b>Objekt</b> (in c#-<b>Objekt</b> ) Schreibgeschützt.</summary>
+        <summary>Gibt den ersten Wert zurück, der dem Datumsfilter zugeordnet ist (Semantik variiert je nach Filtertyp). <b>Objekt</b> (<b>Objekt</b> in C#) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +189,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den zweiten Wert der Datumsfilter (Semantik verschieden Filtertyp) zugeordnet. <b>Objekt</b> (in c#-<b>Objekt</b> ) Schreibgeschützt.</summary>
+        <summary>Gibt den zweiten Wert zurück, der dem Datumsfilter zugeordnet ist (Semantik variiert je nach Filtertyp). <b>Objekt</b> (<b>Objekt</b> in C#) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +217,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> (C#-<b>Objekt</b> ), der das übergeordnete Objekt des angegebenen <b>TimelineState</b> -Objekts darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <b>Object</b> (<b>Objekt</b> in C#) zurück, das das übergeordnete Objekt des angegebenen <b>TimelineState -Objekts</b> darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,9 +246,9 @@
         <Parameter Name="EndDate" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="StartDate">Der Anfang des Datumsbereichs filtern.</param>
-        <param name="EndDate">Das Ende des Datumsbereichs filtern.</param>
-        <summary>Legt den Zeitplan Filter.</summary>
+        <param name="StartDate">Der Anfang des Filterdatumsbereichs.</param>
+        <param name="EndDate">Das Ende des Filterdatumsbereichs.</param>
+        <summary>Legt den Filter der Zeitachse fest.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,8 +276,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Filterung Zustand einen zusammenhängenden Datumsbereich ist. <b>False</b> andernfalls. <b>Boolean</b> (<b>Bool</b> in c#) Schreibgeschützt.</summary>
+        <summary><b>True,</b> wenn der Filterstatus ein zusammenhängender Datumsbereich ist; <b>Andernfalls "False".</b> <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +304,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Startpunkt des Datumsbereichs filtern. <b>Objekt</b> (in c#-<b>Objekt</b> ) Schreibgeschützt.</summary>
+        <summary>Gibt den Anfang des Filterdatumsbereichs zurück. <b>Objekt</b> (<b>Objekt</b> in C#) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

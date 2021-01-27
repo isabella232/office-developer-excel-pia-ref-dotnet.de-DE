@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586905" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011088" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen Ausschnitt eines Fensters dar.</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />Objekte sind nur für Arbeitsblätter und Microsoft Excel 4.0-Makrovorlagen vorhanden. Die <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> -Auflistung enthält alle Bereiche in einem einzigen Fenster angezeigt.</para>
-      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> (<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer Bereich zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> Objekt.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> Objekte sind nur für Arbeitsblätter und Microsoft Excel 4.0-Makroblätter vorhanden. Das <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung enthält alle Bereiche, die in einem einzelnen Fenster angezeigt werden.</para>
+      <para>Verwenden <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Sie ( ), wobei die <paramref name="index" /> <paramref name="index" /> Indexnummer des Bereichs ist, um ein einzelnes Objekt <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> zurückzukehren.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -61,10 +51,8 @@
       <Docs>
         <summary>Aktiviert den Bereich.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Liegt der Ausschnitt nicht im aktiven Fenster, wird das Fenster, zu dem der Ausschnitt gehört, ebenfalls aktiviert. Fixierte Ausschnitte können nicht aktiviert werden.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Liegt der Ausschnitt nicht im aktiven Fenster, wird das Fenster, zu dem der Ausschnitt gehört, ebenfalls aktiviert. Fixierte Ausschnitte können nicht aktiviert werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -90,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,13 +106,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -180,18 +166,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach unten ausgeführt werden soll.</param>
-        <param name="Up">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach oben ausgeführt werden soll.</param>
-        <param name="ToRight">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
-        <param name="ToLeft">Optionales- <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach links ausgeführt werden soll.</param>
+        <param name="Down">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach unten ausgeführt werden soll.</param>
+        <param name="Up">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach oben ausgeführt werden soll.</param>
+        <param name="ToRight">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
+        <param name="ToLeft">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach links ausgeführt werden soll.</param>
         <summary>Führt seitenweise einen Bildlauf durch den Fensterinhalt aus.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Seiten nach oben.</para>
-          <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, der an die drei Seiten nach rechts durchgeführt werden.</para>
-          <para>Die Argumente können auch einen negativen Wert haben.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn <paramref name="Down" /> <paramref name="Up" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. 3 und 6 ist, wird der Bildlauf <paramref name="Down" /> um drei Seiten nach oben <paramref name="Up" /> durchgeführt.</para>
+          <para>Wenn <paramref name="ToLeft" /> <paramref name="ToRight" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. <paramref name="ToLeft" /> 3 und 6 ist, wird der Bildlauf zu den rechten drei <paramref name="ToRight" /> Seiten durchgeführt.</para>
+          <para>Jedes Argument kann eine negative Zahl enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -247,9 +231,7 @@
       <Docs>
         <param name="Points">Position des Pixels auf dem Bildschirm.</param>
         <summary>Gibt einen Pixelpunkt auf dem Bildschirm zurück oder legt diesen fest.</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,9 +260,7 @@
       <Docs>
         <param name="Points">Position des Ausgangspunkts.</param>
         <summary>Gibt die Position des Pixels auf dem Bildschirm zurück oder legt diese fest.</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +290,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Anzahl der am weitesten links stehende Spalte im Bereich.</summary>
+        <summary>Gibt die Nummer der spalte ganz links im Bereich zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,20 +321,14 @@
         <Parameter Name="Start" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Integer</b>erforderlich. Die horizontale Position des Rechtecks (in Punkt) vom linken Rand des Bereichs.</param>
-        <param name="Top">
-          <b>Integer</b>erforderlich. Die vertikale Position des Rechtecks (in Punkt) vom oberen Rand des Bereichs.</param>
-        <param name="Width">
-          <b>Integer</b>erforderlich. Die Breite des Rechtecks in Punkt.</param>
-        <param name="Height">
-          <b>Integer</b>erforderlich. Die Höhe des Rechtecks in Punkt.</param>
-        <param name="Start">Optionales- <b>Objekt</b>. <b>True</b> , wenn die linke obere Ecke des Rechtecks in der oberen linken Ecke des Bereichs angezeigt werden. <b>False</b> , wenn der unteren rechten Ecke des Rechtecks in der unteren rechten Ecke des Bereichs angezeigt werden. Der Standardwert ist <b>True</b>.</param>
-        <summary>Führt einen Bildlauf im Bereich, sodass der Inhalt eines angegebenen rechteckigen Bereichs in der linken oberen oder unteren rechten Ecke des Bereichs angezeigt wird.</summary>
-        <remarks>
-          <para>Die <paramref name="Start" /> Argument eignet sich zum Ausrichten der Bildschirmanzeige, wenn das Rechteck größer als der Bereich ist.</para>
-          <para></para>
-        </remarks>
+        <param name="Left">Erforderliche <b>ganze Zahl</b>. Die horizontale Position des Rechtecks (in Punkt) vom linken Rand des Bereichs.</param>
+        <param name="Top">Erforderliche <b>ganze Zahl</b>. Die vertikale Position des Rechtecks (in Punkt) vom oberen Rand des Bereichs.</param>
+        <param name="Width">Erforderliche <b>ganze Zahl</b>. Die Breite des Rechtecks in Punkt.</param>
+        <param name="Height">Erforderliche <b>ganze Zahl</b>. Die Höhe des Rechtecks in Punkt.</param>
+        <param name="Start">Optionales <b>Objekt</b>. <b>True,</b> wenn die obere linke Ecke des Rechtecks in der oberen linken Ecke des Bereichs angezeigt wird. <b>False,</b> wenn die untere rechte Ecke des Rechtecks in der unteren rechten Ecke des Bereichs angezeigt wird. Der Standardwert ist <b>True</b>.</param>
+        <summary>Führt einen Bildlauf durch den Bereich aus, sodass der Inhalt eines angegebenen rechteckigen Bereichs entweder in der oberen linken oder unteren rechten Ecke des Bereichs angezeigt wird.</summary>
+        <remarks><para>Das <paramref name="Start" /> Argument ist hilfreich, um die Bildschirmanzeige zu orientieren, wenn das Rechteck größer als der Bereich ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollRow">
@@ -383,7 +357,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Anzahl der Zeilen, die angezeigt wird am oberen Rand des Bereichs.</summary>
+        <summary>Gibt die Nummer der Zeile zurück, die oben im Bereich angezeigt wird, oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,18 +387,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach unten ausgeführt werden soll.</param>
-        <param name="Up">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach oben ausgeführt werden soll.</param>
-        <param name="ToRight">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
-        <param name="ToLeft">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach links ausgeführt werden soll.</param>
+        <param name="Down">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach unten ausgeführt werden soll.</param>
+        <param name="Up">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach oben ausgeführt werden soll.</param>
+        <param name="ToRight">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
+        <param name="ToLeft">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach links ausgeführt werden soll.</param>
         <summary>Führt einen zeilen- oder spaltenweisen Bildlauf für Fensterinhalte aus.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Bildlauf um drei Zeilen.</para>
-          <para>Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> angegeben werden, den Inhalt des Fensters werden durch den Unterschied der Argumente durchgeführt. Beispielsweise wenn <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> ist 6, Bildlauf zu den drei Spalten nach rechts.</para>
+        <remarks><para>Wenn <paramref name="Down" /> <paramref name="Up" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. 3 und 6 ist, wird der Bildlauf für den Inhalt <paramref name="Down" /> um drei Zeilen nach oben <paramref name="Up" /> durchgeführt.</para>
+          <para>Wenn <paramref name="ToLeft" /> <paramref name="ToRight" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. <paramref name="ToLeft" /> 3 und 6 ist, wird der Bildlauf nach rechts drei <paramref name="ToRight" /> Spalten durchgeführt.</para>
           <para>Für jedes dieser Argumente kann auch eine negative Zahl festgelegt werden.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleRange">
@@ -450,7 +422,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, das den Zellbereich darstellt, klicken Sie im Bereich sichtbar sind. Wenn eine Spalte oder Zeile teilweise angezeigt wird, ist es im Bereich enthalten.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den Zellbereich darstellt, der im Bereich sichtbar ist. Spalten oder Zeilen, die teilweise sichtbar sind, gehören diesem Bereich ebenfalls an.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

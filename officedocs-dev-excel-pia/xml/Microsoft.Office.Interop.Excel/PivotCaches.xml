@@ -1,13 +1,5 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586877" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010927" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCaches&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Auflistung der Cachespeicher der PivotTable-Berichte in einer Arbeitsmappe dar.</summary>
-    <remarks>
-      <para>Jeder Cachespeicher wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Objekt.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> -Methode, um die <b>PivotCaches</b> -Auflistung zurückzugeben.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Jeder Speichercache wird durch ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> dargestellt.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> die Methode, um die <b>PivotCaches -Auflistung zurück.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,14 +92,12 @@
         <Parameter Name="SourceData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Erforderliche <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />. Die Quelle der PivotTable-Cachedaten. Kann eine der folgenden <b>XlPivotTableSourceType</b> -Konstanten sein:<b>XlConsolidation</b><b>XlDatabase</b><b>XlExternal</b><b>XlPivotTable</b><b>XlScenario</b></param>
-        <param name="SourceData">Optionales- <b>Objekt</b>. Die Daten für den neuen PivotTable-Cache. Dieses Argument ist erforderlich, wenn <paramref name="SourceType" /><b>XlExternal</b>nicht zur Verfügung. Kann ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> -Objekt, ein Array von Bereichen oder eine Textkonstante, die den Namen eines vorhandenen PivotTable-Berichts darstellt. Bei einer externen Datenbank ist dies ein Array mit zwei Elementen. Das erste Element ist die Verbindungszeichenfolge, die den Datenanbieter angibt. Das zweite Element ist die SQL-Abfragezeichenfolge zum Abrufen der Daten verwendet. Wenn Sie dieses Argument angeben, müssen Sie auch angeben <paramref name="SourceType" />.</param>
-        <summary>Fügt eine neue PivotTable-Caches auf einen <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> Auflistung.</summary>
+        <param name="SourceType"><see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />Erforderlich. Die Quelle der PivotTable-Cachedaten. Dies kann eine der folgenden <b>XlPivotTableSourceType</b> -Konstanten sein:<b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></param>
+        <param name="SourceData">Optionales <b>Objekt</b>. Die Daten für den neuen PivotTable-Cache. Dieses Argument ist erforderlich, <paramref name="SourceType" /> wenn es sich nicht um <b>xlExternal handelt.</b> Dies kann ein Objekt, ein Array von Bereichen oder eine Textkonstante sein, die den Namen <see cref="T:Microsoft.Office.Interop.Excel.Range" /> eines vorhandenen PivotTable-Berichts darstellt. Bei einer externen Datenbank handelt es sich um ein Array mit zwei Elementen. Das erste Element ist die Verbindungszeichenfolge, die den Anbieter der Daten an gibt. Das zweite Element ist die SQL-Abfragezeichenfolge, die zum Abrufen der Daten verwendet wird. Wenn Sie dieses Argument angeben, müssen Sie auch <paramref name="SourceType" /> angeben.</param>
+        <summary>Fügt einer Auflistung einen neuen PivotTable-Cache <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> hinzu.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn der PivotTable-Cache kein Verweis von erfolgt eine <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> -Objekts, der PivotTable-Cache wird automatisch gelöscht werden, bevor die Arbeitsmappe gespeichert wird.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn nicht von einem Objekt auf den Cache von PivotTable verwiesen wird, wird der Cache der PivotTable automatisch gelöscht, bevor <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> die Arbeitsmappe gespeichert wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -135,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,19 +180,15 @@
         <Parameter Name="Version" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Erforderliche <paramref name="SourceType" /> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> -Konstanten sein: <b>XlConsolidation</b>, <b>XlDatabase</b>oder <b>XlExternal</b>.</param>
-        <param name="SourceData">Optionales <b>Objekt</b> die Daten für die neue <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Cache.</param>
-        <param name="Version">Optionales <b>Objekt</b> Version von der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.  Die Version kann eine der der <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> Konstanten.</param>
-        <summary>Erstellt ein neues <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />
-        </returns>
-        <remarks>
-          <para>Die folgenden beiden <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> Konstanten werden nicht unterstützt, wenn Sie diese Methode verwenden: <b>XlPivotTable</b> und <b>XlScenario</b>. Wenn eine der folgenden zwei Konstanten bereitgestellt wird, wird ein Laufzeitfehler zurückgegeben.</para>
-          <para>Die <paramref name="SourceData" /> Argument ist erforderlich, wenn <paramref name="SourceType" /> XlExternal nicht zur Verfügung. Kann eine <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt (beim <paramref name="SourceType" /> XlConsolidation oder XlDatabase ist) oder einer Excel- <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt (Wenn <paramref name="SourceType" /> XlExternal ist).</para>
-          <para>Wenn nicht angegeben, wird die Version der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12 werden.  Die Verwendung der Konstante <b>XlPivotTableVersionCurrent</b> ist nicht zulässig, und gibt einen Laufzeitfehler zurück, wenn es bereitgestellt wird.</para>
-          <para></para>
-        </remarks>
+        <param name="SourceType">Erforderlich kann eine der folgenden Konstanten <paramref name="SourceType" /> <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> sein: <b>xlConsolidation</b>, <b>xlDatabase</b>oder <b>xlExternal</b>.</param>
+        <param name="SourceData">Optionales <b>Objekt</b> Die Daten für den neuen <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Cache.</param>
+        <param name="Version">Optionale <b>Objektversion</b> des <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .  Die Version kann eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> sein.</param>
+        <summary>Erstellt ein neues <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> .</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /></returns>
+        <remarks><para>Die folgenden beiden Konstanten werden bei Verwendung dieser Methode nicht <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> unterstützt: <b>xlPivotTable</b> und <b>xlScenario</b>. Wenn eine dieser beiden Konstanten angegeben wird, wird ein Laufzeitfehler zurückgegeben.</para>
+          <para>Das <paramref name="SourceData" /> Argument ist erforderlich, wenn es sich nicht <paramref name="SourceType" /> um xlExternal handelt. Dabei kann es sich um ein Objekt (wenn es sich entweder um xlConsolidation oder xlDatabase handelt) oder um ein Excel-Objekt (wenn es sich um <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <paramref name="SourceType" /> <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> <paramref name="SourceType" /> xlExternal handelt) sein.</para>
+          <para>Wenn sie nicht angegeben wird, ist <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> die Version von xlPivotTableVersion12.  Das Angeben der <b>xlPivotTableVersionCurrent</b> -Konstante ist nicht zulässig, andernfalls wird ein Laufzeitfehler zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -230,13 +214,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -294,8 +276,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Die Indexnummer für das Objekt</param>
+        <param name="Index">Required <b>-Objekt</b>. Die Indexnummer für das Objekt</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

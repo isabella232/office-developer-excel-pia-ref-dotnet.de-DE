@@ -1,13 +1,5 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585148" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFormula" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010857" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFormula" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFormula" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFormula" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFormula" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Formel dar, die zur Berechnung von Ergebnissen in einem PivotTable-Bericht verwendet wird.</summary>
-    <remarks>
-      <para>Verwenden der <b>PivotFormulas</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Formel Zahl oder eine Zeichenfolge, die auf der linken Seite der Formel, um das <b>PivotFormula</b> -Objekt zurückzugeben.</para>
+    <remarks><para>Verwenden <b>Sie PivotFormulas</b>( ), wobei die Formelnummer oder Zeichenfolge auf der linken Seite der Formel ist, um das <paramref name="index" /> <paramref name="index" /> <b>PivotFormula -Objekt zurückzukehren.</b></para>
       <para>Dieses Objekt und die dazugehörigen Eigenschaften und Methoden stehen für OLAP-Datenquellen nicht zur Verfügung, da berechnete Felder und Elemente nicht unterstützt werden.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,13 +115,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -187,14 +175,12 @@
       <Docs>
         <summary>Gibt die Formel des Objekts im Format der A1-Schreibweise zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft für OLAP-Datenquellen nicht verfügbar.</para>
-          <para>Wenn die Zelle eine Konstante enthält, gibt diese Eigenschaft eine Konstante zurück. Wenn die Zelle leer ist, gibt diese <b>Formula</b>-Eigenschaft eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge zurück, und zwar in dem gleichen Format, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
+        <remarks><para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
+          <para>Wenn die Zelle eine Konstante enthält, gibt die Eigenschaft die Konstante zurück. Wenn die Zelle leer ist, gibt diese <b>Formula</b>-Eigenschaft eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge in dem Format zurück, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
           <para>Wenn Sie den Wert oder die Formel einer Zelle in ein Datum umwandeln, überprüft Microsoft Excel, ob die Zelle bereits mit einem Datums- oder Zeitformat formatiert ist. Ist das nicht der Fall, so wird das Zahlenformat in das kurze Standard-Datumsformat geändert.</para>
-          <para>Wenn der Bereich einen ein- oder zweidimensionalen Bereich handelt, können Sie die Formel in ein Array mit denselben Dimensionen festlegen. In ähnlicher Weise können Sie die Formel in ein Array einfügen.</para>
+          <para>Wenn es sich bei dem Bereich um einen ein- oder zweidimensionalen Bereich handelt, können Sie die Formel auf ein Array mit denselben Dimensionen festlegen. Auf ähnliche Weise können Sie die Formel in ein Array setzen.</para>
           <para>Beim Festlegen der Formel für einen Bereich mit mehreren Zellen wird die Formel in alle Zellen des Bereichs eingetragen.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -223,7 +209,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Indexnummer des Objekts innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> Auflistung.</summary>
+        <summary>Gibt die Indexnummer des Objekts innerhalb der Auflistung zurück oder legt sie <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -282,13 +268,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>Zeichenfolge</b> zur Angabe der Formeln Standards Englisch (Vereinigte Staaten) festlegt.</summary>
+        <summary>Gibt einen <b>String</b>-Wert zurück oder legt diesen fest, der für Formeln das Standardformat "Englisch (USA)" angibt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>StandardFormula</b>StandardFormula-Eigenschaft wirkt sich in erster Linie auf Elementnamen aus, die ein Datums- oder Zahlenformat besitzen. Sie bietet eine Möglichkeit, eine Formel für ein gegebenes berechnetes Element festzulegen oder abzufragen.</para>
-          <para>Die <b>StandardFormula</b> -Eigenschaft ist "International lesbar" während der <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> -Eigenschaft ist nicht.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Die <b>StandardFormula</b>StandardFormula-Eigenschaft wirkt sich in erster Linie auf Elementnamen aus, die ein Datums- oder Zahlenformat besitzen. Sie bietet eine Möglichkeit, eine Formel für ein gegebenes berechnetes Element festzulegen oder abzufragen.</para>
+          <para>Die <b>Eigenschaft "StandardFormula"</b> ist "international", die <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> Eigenschaft dagegen nicht.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

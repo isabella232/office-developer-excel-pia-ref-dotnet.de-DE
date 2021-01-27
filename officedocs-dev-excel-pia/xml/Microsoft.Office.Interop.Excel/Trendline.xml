@@ -1,13 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575733" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009478" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Trendlinie in einem Diagramm dar. Eine Trendlinie zeigt den Trend oder die Richtung der Daten in einer Datenreihe.</summary>
-    <remarks>
-      <para>Das <b>Trendline</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> Auflistung. Die <b>Trendlines</b> -Auflistung enthält alle <b>Trendline</b> -Objekte für eine einzelne Datenreihe.</para>
-      <para>Verwenden der <b>Trendlines</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer der Trendlinie, um ein einzelnes <b>Trendline</b> -Objekt zurückzugeben.</para>
+    <remarks><para>Das <b>Trendline</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> Auflistung. Die <b>Trendlines</b> -Auflistung enthält alle <b>Trendline</b> -Objekte für eine einzelne Datenreihe.</para>
+      <para>Verwenden <b>Sie Trendlinien</b>( ), wobei die Indexnummer der <paramref name="index" /> <paramref name="index" /> Trendlinie ist, um ein einzelnes <b>Trendlineobjekt zurückzukehren.</b></para>
       <para>Die Indexnummer stellt die Reihenfolge dar, in der die Trendlinien zur Datenreihe hinzugefügt wurden. Trendlines(1) stellt die erste zur Datenreihe hinzugefügte Trendlinie dar, und Trendlines(Trendlines.Count) ist die zuletzt hinzugefügte Trendlinie.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,9 +120,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), die die sich eine Trendlinie zurück erstreckt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +147,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekt zurück, das den Rahmen des Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,13 +201,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -245,12 +231,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> -Objekt, das die Beschriftung stellt Datenpunkts oder der Trendlinie zugeordnet.</summary>
+        <summary>Gibt ein Objekt zurück, das die dem Punkt oder der Trendlinie <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> zugeordnete Datenbeschriftung darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Datenbeschriftungen für eine Trendlinie aktivieren, Sie müssen, die <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> -Eigenschaft auf <b>True</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Um Datenbeschriftungen für eine Trendlinie zu aktivieren, müssen Sie die Eigenschaft oder <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> die Eigenschaft auf True <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> <b>festlegen.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -305,8 +289,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Formel für die sich eine Trendlinie im Diagramm (in demselben Beschriftungsfeld als R-quadrierten Wert) angezeigt wird. Wird diese Eigenschaft auf <b>true fest,</b> automatisch auch die datenbeschriftungen.</summary>
+        <summary><b>True</b>, wenn die Gleichung der Trendlinie im Diagramm angezeigt wird (in derselben Datenbeschriftung wie das Bestimmtheitsmaß). Wird diese Eigenschaft auf <b>True</b> festgelegt, so werden automatisch auch die Datenbeschriftungen angezeigt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,8 +320,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Wert der Trendlinie im Diagramm (in demselben Beschriftungsfeld wie die Gleichung) angezeigt wird. Wird diese Eigenschaft auf <b>true fest,</b> automatisch auch die datenbeschriftungen.</summary>
+        <summary><b>True</b>, wenn das Bestimmtheitsmaß der Trendlinie im Diagramm angezeigt wird (in derselben Datenbeschriftung wie die Gleichung). Wird diese Eigenschaft auf <b>True</b> festgelegt, so werden automatisch auch die Datenbeschriftungen angezeigt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -366,10 +348,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Format für Diagrammelemente. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Gibt das Format für Diagrammelemente zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,9 +417,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), die die sich eine Trendlinie vorwärts erstreckt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,10 +477,8 @@
       <Docs>
         <summary>Gibt den Punkt zurück, auf dem die Trendlinie die Größenachse schneidet, oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Durch Festlegen dieser Eigenschaft wird die <see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" /> -Eigenschaft auf <b>false festgelegt</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Durch Festlegen dieser Eigenschaft wird die <see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" /> Eigenschaft auf <b>False gesetzt.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -531,13 +507,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn der Schnittpunkt der Trendlinie mit der Größenachse automatisch von der Regression bestimmt wird.</summary>
+        <summary><b>True</b>, wenn der Schnittpunkt der Trendlinie mit der Größenachse automatisch von der Regression bestimmt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Durch Festlegen <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> der Eigenschaft wird diese Eigenschaft auf False <b>gesetzt.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -597,8 +570,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Excel den Namen der Trendlinie automatisch bestimmt.</summary>
+        <summary><b>True</b>, wenn Microsoft Excel den Namen der Trendlinie automatisch festlegt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -688,7 +660,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Zeitraum für die Trendlinie gleitenden Durchschnitt.</summary>
+        <summary>Gibt bei Trendlinien für gleitenden Durchschnitt die Perioden der Trendlinie zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

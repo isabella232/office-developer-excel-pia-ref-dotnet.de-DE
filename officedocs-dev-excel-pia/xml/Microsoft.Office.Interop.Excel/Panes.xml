@@ -1,13 +1,5 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Excel.Panes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7d60437390854068b5400256a6be386c545e5280" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578092" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Panes" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7d60437390854068b5400256a6be386c545e5280" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011074" /></Metadata><TypeSignature Language="C#" Value="public interface Panes" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Panes" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Panes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Panes" />
@@ -29,14 +21,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> -Objekte im angegebenen Fenster.</summary>
-    <remarks>
-      <para>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> Objekte, die im angegebenen Fenster angezeigt werden.</summary>
+    <remarks><para>
         <b>Pane</b>-Objekte sind nur für Arbeitsblätter und Microsoft Excel 4.0-Makrovorlagen verfügbar.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> Eigenschaft, um die <b>Panes</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden Sie <b>Panes</b>(<paramref name="index" />), wobei <paramref name="index" /> die Bereich Indexzahl darstellt, um ein einzelnes <b>Pane</b> -Objekt zurückzugeben.</para>
-      <para></para>
-    </remarks>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> Eigenschaft, um die <b>Panes -Auflistung zurück.</b></para>
+      <para>Verwenden <b>Sie Panes</b>( ), wobei die Indexnummer des Bereichs <paramref name="index" /> <paramref name="index" /> ist, um ein einzelnes <b>Pane -Objekt zurück.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,13 +143,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -188,8 +176,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Die Indexnummer des Objekts.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

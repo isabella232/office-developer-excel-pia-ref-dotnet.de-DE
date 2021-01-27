@@ -1,13 +1,5 @@
 <Type Name="Watches" FullName="Microsoft.Office.Interop.Excel.Watches">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a25459aa6b0f09a23aa12ace666f145c1a6dd16f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581074" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Watches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a25459aa6b0f09a23aa12ace666f145c1a6dd16f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009296" /></Metadata><TypeSignature Language="C#" Value="public interface Watches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Watches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Watches" />
   <TypeSignature Language="VB.NET" Value="Public Interface Watches&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Watch" /> -Objekte in einer angegebenen Anwendung.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.Watches" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekts, um eine <b>Watches</b> -Auflistung zurückzugeben.</para>
-      <para>Sie können angeben, dass einzelne Zellen mithilfe von Überwachungsfunktion entfernt die <see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /> -Methode der <b>Watches</b> -Auflistung.</para>
-      <para>Sie können auch angeben, um alle Zellen aus dem Überwachungsfenster mithilfe der <b>Löschen</b> -Methode der <b>Watches</b> -Auflistung zu entfernen.</para>
-      <para></para>
-    </remarks>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Watch" /> in einer angegebenen Anwendung.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel._Application.Watches" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekts, um eine <b>Watches -Auflistung zurück.</b></para>
+      <para>Sie können angeben, dass einzelne Zellen aus der Watch Facility entfernt werden, indem Sie die Methode <see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /> der <b>Watches -Auflistung</b> verwenden.</para>
+      <para>Sie können auch angeben, dass alle Zellen aus dem Überwachungsfenster entfernt werden, indem die <b>Delete</b>Delete-Methode der <b>Watches</b>-Auflistung verwendet wird.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,9 +90,8 @@
         <Parameter Name="Source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Objekt</b>erforderlich. Die Quelle für den Bereich.</param>
-        <summary>Fügt einen Bereich hinzu, der protokolliert wird, wenn das Arbeitsblatt neu berechnet wird. Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Watch" /> Objekt.</summary>
+        <param name="Source">Required <b>-Objekt</b>. Die Quelle für den Bereich.</param>
+        <summary>Fügt einen Bereich hinzu, der protokolliert wird, wenn das Arbeitsblatt neu berechnet wird. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Watch" /> zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,13 +175,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -278,8 +265,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

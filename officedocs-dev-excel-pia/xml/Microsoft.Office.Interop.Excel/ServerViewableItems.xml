@@ -1,13 +1,5 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579450" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010388" /></Metadata><TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ServerViewableItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface ServerViewableItems&#xA;Implements IEnumerable" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von Objekten, die für die Anzeige auf dem Server gekennzeichnet wurden.</summary>
-    <remarks>
-      <para>Dies ist eine Auflistung von Verweisen auf Objekte in der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Nur die Objekte in dieser Auflistung werden auf dem Server angezeigt werden.  Standardmäßig wird die gesamte Arbeitsmappe (einschließlich aller Arbeitsblätter) angezeigt.  </para>
-      <para>Nur ein <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Objekt kann pro vorhanden <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Diese Auflistung ist nicht nach Namen indiziert werden, da es nicht gewährleistet ist, dass die Namen der Objekte, die die Anzeige auf dem Server gekennzeichnet sind, eindeutig sind.</para>
-      <para>In der Excel-Benutzeroberfläche können Sie die Auflistung von Objekten anzeigen, die die Anzeige auf dem Server im Dialogfeld Optionen für Excel Services gekennzeichnet sind.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Dies ist eine Auflistung von Verweisen auf Objekte in der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> . Nur Objekte in dieser Auflistung werden auf dem Server angezeigt.  Die gesamte Arbeitsmappe, in der alle Arbeitsblätter enthalten sind, wird standardmäßig angezeigt.  </para>
+      <para>Pro Objekt <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> kann nur ein Objekt vorhanden <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> sein.  Diese Auflistung kann nicht über den Namen indiziert werden, da nicht garantiert werden kann, dass die Namen von Objekten, die auf dem Server als angezeigt gekennzeichnet sind, eindeutig sind.</para>
+      <para>Auf der Benutzeroberfläche von Excel können Sie die Auflistung von Objekten anzeigen, die auf dem Server im Dialogfeld Excel Services-Optionen als angezeigt gekennzeichnet sind.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,16 +90,11 @@
         <Parameter Name="Obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Obj">
-          <b>Objekt</b> erforderlich<paramref name="Obj" /> verweisen auf Arbeitsblätter oder benannte Elemente (beispielsweise mit dem Namen <see cref="T:Microsoft.Office.Interop.Excel.Range" />s, Diagramme, Tabellen, und <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s). Sie Arbeitsblätter und benannte Elemente in der gleichen Auflistung nicht möglich.</param>
-        <summary>Fügt einen Verweis auf die <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Auflistung.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
-        <remarks>
-          <para>Wenn Sie versuchen, eine Kombination von Arbeitsblätter und benannte Elemente hinzufügen der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung ein Fehler zurückgegeben.  Die <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung kann nur Verweise auf Arbeitsblätter oder nur Verweise auf benannte Elemente, jedoch nicht beide in demselben Aufruf enthalten.  </para>
-          <para></para>
-        </remarks>
+        <param name="Obj">"Required <b>Object"</b> kann ein Verweis auf Blätter oder benannte Elemente sein (z. B. benannte <paramref name="Obj" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Elemente, Diagramme, Tabellen und <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> s). Eine Auflistung kann nicht gleichzeitig Arbeitsblätter und benannte Elemente enthalten.</param>
+        <summary>Fügt einen Verweis auf die Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> hinzu.</summary>
+        <returns><b>Objekt</b></returns>
+        <remarks><para>Wenn Sie versuchen, der Auflistung eine Kombination aus Blättern und benannten Elementen hinzuzufügen, wird <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> ein Fehler zurückgegeben.  Die Auflistung kann nur Verweise auf Arbeitsblätter oder nur Verweise auf benannte Elemente enthalten, aber nicht <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> beide im gleichen Aufruf.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -135,14 +120,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Wenn Sie ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft die Microsoft Office Excel-Anwendung. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel._Application" /> zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt sie Microsoft Office Excel-Anwendung zurück. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -168,10 +149,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl von Objekten zurück, die es in der Auflistung gibt. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Objekte in der Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,14 +177,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Objekt erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Gibt einen ganzzahligen 32-Bitwert <b>zurück,</b> der die Anwendung angibt, in der dieses Objekt erstellt wurde. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.  Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -231,12 +206,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Erforderlich, <b>ganze Zahl</b> der Index des Objekts, den Sie löschen möchten.</param>
-        <summary>Löscht einen Verweis auf ein Objekt in der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung in der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
-        <remarks>
-          <para>Wenn es nicht möglich sein soll, ein bestimmtes Objekt in Excel Services anzuzeigen, verwenden Sie diese Methode zum Entfernen des Objekts.</para>
-          <para></para>
-        </remarks>
+        <param name="Index">Erforderliche <b>ganze</b> Zahl Der Index des Objekts, das Sie löschen möchten.</param>
+        <summary>Löscht einen Verweis auf ein Objekt in der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Auflistung in der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .</summary>
+        <remarks><para>Wenn es nicht möglich sein soll, ein bestimmtes Objekt in Excel Services anzuzeigen, verwenden Sie diese Methode zum Entfernen des Objekts.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAll">
@@ -260,13 +233,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Löscht Verweise auf alle Objekte in der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung in der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
-        <remarks>
-          <para>Wenn Sie nicht, dass die Objekte in möchten der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> -Auflistung, um die Anzeige auf dem Server werden mit dieser Methode können um sie alle gleichzeitig zu entfernen.</para>
+        <summary>Löscht Verweise auf alle Objekte in der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Auflistung in der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .</summary>
+        <remarks><para>Wenn keines der Objekte in der Auflistung auf dem Server angezeigt werden soll, verwenden Sie diese Methode, um alle Objekte <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> auf einmal zu entfernen.</para>
           <para>
-            <b>Hinweis</b>: Wenn die <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Auflistung nicht mindestens ein <b>Objekt</b>enthält, wird die Meldung "Kann nicht zum Anzeigen angegeben Namens oder Bereichselements" beim Anzeigen der <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> in Excel Services.</para>
-          <para></para>
-        </remarks>
+            <b>Hinweis:</b>Wenn die Auflistung nicht mindestens ein Objekt enthält, wird die Meldung "Angegebener benannter Bereich oder Element kann nicht angezeigt werden" angezeigt, wenn sie <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> in Excel Services angezeigt <b></b> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -324,12 +295,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Ganze Zahl</b> der Index des zurückzugebenden <b>Objekts</b> erforderlich.</param>
-        <summary>Gibt ein einzelnes <b>Objekt</b> aus der <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Auflistung.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Erforderliche <b>ganze</b> Zahl Der Index des <b>zurückgesenkten</b> Objekts.</param>
+        <summary>Gibt ein einzelnes <b>Objekt aus</b> der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> zurück.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,9 +325,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Excel.Trendlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581732" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009471" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> -Objekte für die angegebene Datenreihe. Jedes <b>Trendline</b> -Objekt stellt eine Trendlinie in einem Diagramm dar. Eine Trendlinie zeigt den Trend oder die Richtung der Daten in einer Datenreihe.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> -Methode, um die <b>Trendlines</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode, um eine neue Trendlinie zu erstellen, und fügen Sie sie auf die Datenreihe.</para>
-      <para>Verwenden der <b>Trendlines</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer der Trendlinie, um ein einzelnes <b>TrendLine</b> -Objekt zurückzugeben.</para>
+    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> für die angegebene Datenreihe. Jedes <b>Trendline</b> -Objekt stellt eine Trendlinie in einem Diagramm dar. Eine Trendlinie zeigt den Trend oder die Richtung der Daten in einer Datenreihe.</summary>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> Methode, um die <b>Trendlines -Auflistung zurück.</b></para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> die Methode, um eine neue Trendlinie zu erstellen und sie der Datenreihe hinzuzufügen.</para>
+      <para>Verwenden <b>Sie Trendlinien</b>( ), wobei die Indexnummer der <paramref name="index" /> <paramref name="index" /> Trendlinie ist, um ein einzelnes <b>TrendLine -Objekt zurück.</b></para>
       <para>Die Indexnummer stellt die Reihenfolge dar, in der die Trendlinien zur Datenreihe hinzugefügt wurden. Trendlines(1) stellt die erste zur Datenreihe hinzugefügte Trendlinie dar, und Trendlines(Trendlines.Count) ist die zuletzt hinzugefügte Trendlinie.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,16 +94,16 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Optionale <see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" />. Der Trendlinientyp.</param>
-        <param name="Order">Optionales- <b>Objekt</b>. Erforderlich, wenn <paramref name="Type" /><b>xlPolynomial festgelegt</b>ist. Die Ordnung der Trendlinien. Muss eine ganze Zahl zwischen 2 und 6 (einschließlich).</param>
-        <param name="Period">Optionales- <b>Objekt</b>. Erforderlich, wenn <paramref name="Type" /><b>den Wert XlMovingAvg</b>ist. Periode der Trendlinie. Eine ganze Zahl muss größer als 1 und kleiner als die Anzahl von Datenpunkten in der Datenreihe, denen Sie eine Trendlinie hinzufügen sein.</param>
-        <param name="Forward">Optionales- <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie vorwärts erstreckt.</param>
-        <param name="Backward">Optionales- <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie zurück erstreckt.</param>
-        <param name="Intercept">Optionales- <b>Objekt</b>. Der Schnittpunkt der Trendlinie. Wenn dieses Argument ausgelassen wird, wird der Schnittpunkt automatisch durch die Regressionsformel festgelegt.</param>
-        <param name="DisplayEquation">Optionales- <b>Objekt</b>. <b>True</b>, wenn die Formel der Trendlinie im Diagramm (in demselben Beschriftungsfeld als R-quadrierten Wert) anzeigen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="DisplayRSquared">Optionales- <b>Objekt</b>. <b>True</b>, wenn den Wert der Trendlinie im Diagramm (in demselben Beschriftungsfeld wie die Gleichung) anzeigen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="Name">Optionales- <b>Objekt</b>. Der Name der Trendlinie als Text. Wenn dieses Argument ausgelassen wird, erstellt Microsoft Excel einen Namen an.</param>
-        <summary>Erstellt eine neue Trendlinie. Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> Objekt.</summary>
+        <param name="Type">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" /> . Der Trendlinientyp.</param>
+        <param name="Order">Optionales <b>Objekt</b>. Erforderlich, <paramref name="Type" /> wenn <b>xlPolynomial ist.</b> Die Reihenfolge der Trendlinien. Dies muss eine ganze Zahl zwischen 2 und 6 (einschließlich) sein.</param>
+        <param name="Period">Optionales <b>Objekt</b>. Erforderlich, <paramref name="Type" /> wenn <b>xlMovingAvg ist.</b> Die Periode der Trendlinie. Muss eine ganze Zahl größer 1 und kleiner als die Anzahl der Datenpunkte der Datenreihe sein, der Sie eine Trendlinie hinzufügen.</param>
+        <param name="Forward">Optionales <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie vorwärts erstreckt.</param>
+        <param name="Backward">Optionales <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie zurück erstreckt.</param>
+        <param name="Intercept">Optionales <b>Objekt</b>. Der Schnittpunkt der Trendlinie. Wird dieses Argument nicht angegeben, wird der Schnittpunkt automatisch durch Regression festgelegt.</param>
+        <param name="DisplayEquation">Optionales <b>Objekt</b>. Mit  <b>True</b> wird die Formel der Trendlinie des Diagramms angezeigt (in derselben Datenbeschriftung wie das Bestimmtheitsmaß). Der Standardwert ist <b>False</b>.</param>
+        <param name="DisplayRSquared">Optionales <b>Objekt</b>. Mit  <b>True</b> wird der Wert für das Bestimmtheitsmaß der Trendlinie des Diagramms angezeigt (in derselben Datenbeschriftung wie die Formel). Der Standardwert ist <b>False</b>.</param>
+        <param name="Name">Optionales <b>Objekt</b>. Der Name der Trendlinie als Text. Wenn dieses Argument nicht angegeben wird, wird von Microsoft Excel ein Name erstellt.</param>
+        <summary>Erstellt eine neue Trendlinie. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Anwendung Microsoft Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,13 +187,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Objekt erstellt wurde.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, dies entspricht die hexadezimale Zahl 5843454 c ist.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist in Microsoft Excel für den Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Der Erstellercode von Microsoft Excel lautet beispielsweise XCEL zurück.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
+          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -260,8 +248,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
