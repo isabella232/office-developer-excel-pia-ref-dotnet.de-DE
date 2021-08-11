@@ -1,5 +1,5 @@
 <Type Name="Axes" FullName="Microsoft.Office.Interop.Excel.Axes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="16133b78fe6ef635f84e7e24582e31b62c79a469" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006188" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cf3d01496de9135526a5f8e9e2caa49d1b0ecd7f97371405cda3424d82709271" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506694" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Axes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axes&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> im angegebenen Diagramm.</summary>
-    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> Methode, um die <b>Axes -Auflistung zurück.</b></para>
-      <para>Verwenden <b>Sie Achsen</b>( , ), wobei der Achsentyp und die Achsengruppe ist, um ein <paramref name="type" /> <paramref name="group" /> <paramref name="type" /> <paramref name="group" /> einzelnes Axis <b>-Objekt zurück.</b> <paramref name="Type" /> kann eine der folgenden Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> sein: <b>xlCategory</b>, <b>xlSeries</b>oder <b>xlValue</b>. <paramref name="Group" /> kann eine der folgenden Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> sein: <b>xlPrimary</b> oder <b>xlSecondary</b>. Weitere Informationen finden Sie unter der <b>Axes</b> -Methode.</para>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> Objekte im angegebenen Diagramm.</summary>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> Methode, um die <b>Axes</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <b>Axes</b>( <paramref name="type" /> , ), wobei der <paramref name="group" /> <paramref name="type" /> Achsentyp und die <paramref name="group" /> Achsengruppe ist, um ein einzelnes <b>Axis -Objekt</b> zurückzugeben. <paramref name="Type" /> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> Konstanten sein: <b>xlCategory</b>, <b>xlSeries</b>oder <b>xlValue</b>. <paramref name="Group" /> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> Konstanten sein: <b>xlPrimary</b> oder <b>xlSecondary</b>. Weitere Informationen finden Sie unter der <b>Axes</b> -Methode.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +146,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -205,7 +205,7 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Excel.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type"><see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />Erforderlich. Der Achsentyp. <b>XlAxisType</b> kann eine der folgenden Konstanten sein:<b>xlCategory</b>. <b>xlSeriesAxis</b> Nur für 3D-Diagramme gültig. <b>xlValue</b>.</param>
+        <param name="Type"><see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />Erforderlich. Der Achsentyp. <b>XlAxisType</b> kann eine der folgenden Konstanten sein:<b>xlCategory</b>. <b>xlSeriesAxis</b> Nur gültig für 3D-Diagramme. <b>xlValue</b>.</param>
         <param name="AxisGroup">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> . Die Achse. <b>XlAxisGroup</b> kann eine der folgenden Konstanten sein:<b>xlPrimary</b> Default<b>xlSecondary</b></param>
         <summary>Gibt ein einzelnes <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> Objekt aus einer Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> zurück.</summary>
         <returns>To be added.</returns>

@@ -1,5 +1,5 @@
 <Type Name="TableStyle" FullName="Microsoft.Office.Interop.Excel.TableStyle">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4195e3f6ef14d553a26ff7dba570149f82c6b4a9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009765" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bd4eefe401f1eec485a0f029791e2808b924c4f624b74bddbcaae48ea7178a30" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517152" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableStyle" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyle" />
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, das die Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel-Anwendung darstellt. Bei Verwendung mit einem Objektbezeichner gibt diese Eigenschaft ein Objekt zurück, das den Ersteller <see cref="T:Microsoft.Office.Interop.Excel._Application" /> des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
+        <summary>Wenn diese Eigenschaft ohne Einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, <see cref="T:Microsoft.Office.Interop.Excel._Application" /> das die Microsoft Office Excel Anwendung darstellt. Bei Verwendung mit einem Objektbezeichner gibt diese Eigenschaft ein Objekt zurück, <see cref="T:Microsoft.Office.Interop.Excel._Application" /> das den Ersteller des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
         <remarks><para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
           <para> </para></remarks>
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn die Formatvorlage integriert ist. Schreibgeschützt.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +137,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a 32-bit integer that indicates the application in which this object was created. Read-only.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.  Die Eigenschaft wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen aus vier Zeichen großen <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" /> Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.  Die <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" /> Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh vorgesehen, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -193,7 +193,7 @@
         <param name="NewTableStyleName">Der Name des neuen Tabellenformats.</param>
         <summary>Dupliziert das <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> Objekt und gibt einen Verweis auf die neue Kopie zurück.</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /></returns>
-        <remarks><para>Wenn kein Name angegeben wird, verwendet <see cref="M:Microsoft.Office.Interop.Excel.TableStyle.Duplicate(System.Object)" /> die Methode denselben Standardnamen wie die Benutzeroberfläche.</para>
+        <remarks><para>Wenn kein Name angegeben ist, verwendet die <see cref="M:Microsoft.Office.Interop.Excel.TableStyle.Duplicate(System.Object)" /> Methode den gleichen Standardnamen wie die Benutzeroberfläche.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -309,10 +309,10 @@
       </ReturnValue>
       <Docs>
         <summary>Legt fest oder gibt zurück, ob ein Format im Katalog für PivotTable-Formate angezeigt wird oder nicht. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Die Eigenschaft gibt True zurück, wenn die Formatvorlage im Katalog für PivotTable-Formatvorlagen angezeigt wird.</para>
           <para>
-            <b>Hinweis:</b>Benutzer können die Eigenschaft auf "False" festlegen, auch wenn die Formatvorlage bereits auf eine Tabelle oder <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" /> PivotTable angewendet wurde.  In diesem Fall wird das Format nicht im Katalog angezeigt, und es wird kein Format als ausgewählt angezeigt, wenn sich die aktive Zelle in der Tabelle oder PivotTable befindet.</para>
+            <b>Hinweis:</b>Benutzer können die <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" /> Oder-Eigenschaften auf "False" festlegen, auch wenn die Formatvorlage bereits auf eine Tabelle oder PivotTable angewendet wurde.  In diesem Fall wird das Format nicht im Katalog angezeigt, und es wird kein Format als ausgewählt angezeigt, wenn sich die aktive Zelle in der Tabelle oder PivotTable befindet.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -375,9 +375,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt ein Tabellenformat, das im Tabellenformatkatalog als verfügbar angezeigt wird, zurück oder legt dieses fest. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Bei Verwendung von <b>True</b>, wird dieses Format im Tabellenformatkatalog angezeigt.</para>
-          <para>Sie können diese Eigenschaft auf <b>False</b> festlegen, selbst wenn das Format bereits auf eine Tabelle angewendet wurde.  In diesem Fall wird das Format nicht im Katalog angezeigt, und es wird kein Format als ausgewählt angezeigt, wenn sich die aktive Zelle in dieser Tabelle befindet.</para>
+          <para>Sie können diese Eigenschaft auf <b>False</b> festlegen, selbst wenn das Format bereits auf eine Tabelle angewendet wurde. In diesem Fall wird das Format nicht im Katalog angezeigt, und es wird kein Format als ausgewählt angezeigt, wenn sich die aktive Zelle in dieser Tabelle befindet.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -435,7 +435,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TableStyleElements</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Objekt <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" /> zurück. Schreibgeschützt.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" /> Objekt zurück. Schreibgeschützt.</summary>
         <value>Gibt <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" /> zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>

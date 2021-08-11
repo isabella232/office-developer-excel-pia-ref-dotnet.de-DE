@@ -1,5 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Excel.Hyperlink">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012075" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ddef5c28ce4220915cbb6915b0dba5b10e71c8d04c4f13e46c5888eb3931f62" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509151" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -22,9 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen Hyperlink dar.</summary>
-    <remarks><para>Das <b>Hyperlink</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" /> Auflistung.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> die Eigenschaft, um den Hyperlink für eine Form zurückzukehren (eine Form kann nur einen Hyperlink haben).</para>
-      <para>Ein Bereich oder Arbeitsblatt kann mehrere Hyperlinks enthalten. Verwenden <b>Sie Hyperlinks</b>( ), wobei die <paramref name="index" /> <paramref name="index" /> Hyperlinknummer ist, um ein einzelnes <b>Hyperlink -Objekt zurück.</b></para>
+    <remarks><para>Das <b>Hyperlink-Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" /> Auflistung.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> Eigenschaft, um den Hyperlink für eine Form zurückzugeben (eine Form kann nur einen Hyperlink haben).</para>
+      <para>Ein Bereich oder Arbeitsblatt kann mehrere Hyperlinks enthalten. Verwenden Sie <b>Hyperlinks</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Hyperlinknummer ist, um ein einzelnes <b>Hyperlink</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +139,7 @@
       <Docs>
         <param name="Filename"><b>String</b> erforderlich. Der Dateiname des angegebenen Dokuments.</param>
         <param name="EditNow">Erforderlicher <b>Boolean</b>-Wert. <b>True</b>, wenn das angegebene Dokument unmittelbar in der zugehörigen Bearbeitungsumgebung geöffnet werden soll. Der Standardwert lautet "True".</param>
-        <param name="Overwrite">Erforderlicher <b>Boolean</b>-Wert. <b>True</b>, wenn jede vorhandene Datei mit demselben Namen im gleichen Ordner überschrieben werden soll. <b>False,</b> Wenn eine vorhandene Datei mit demselben Namen beibehalten wird und <paramref name="Filename" /> das Argument einen neuen Dateinamen angibt. Der Standardwert ist <b>False</b>.</param>
+        <param name="Overwrite">Erforderlicher <b>Boolean</b>-Wert. <b>True</b>, wenn jede vorhandene Datei mit demselben Namen im gleichen Ordner überschrieben werden soll. <b></b> False , wenn eine vorhandene Datei mit demselben Namen beibehalten wird und das <paramref name="Filename" /> Argument einen neuen Dateinamen angibt. Der Standardwert ist <b>Falsch</b>.</param>
         <summary>Erstellt ein neues, mit dem angegebenen Hyperlink verknüpftes Dokument.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +170,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -228,7 +228,7 @@
         <summary>Gibt die Textzeichenfolge der E-Mail-Betreffzeile des angegebenen Hyperlinks zurück oder legt diese fest. Die Betreffzeile wird an die Adresse des Hyperlinks angehängt.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft wird normalerweise bei E-Mail-Hyperlinks verwendet.</para>
-          <para>Der Wert dieser Eigenschaft hat Vorrang vor jeder E-Mail-Betreffzeile, die Sie mithilfe der Eigenschaft desselben <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /> Hyperlink -Objekts <b>angegeben</b> haben.</para>
+          <para>Der Wert dieser Eigenschaft hat Vorrang vor jeder E-Mail-Betreffzeile, die Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /> Eigenschaft desselben <b>Hyperlink-Objekts</b> angegeben haben.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -258,11 +258,11 @@
         <Parameter Name="HeaderInfo" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="NewWindow">Optionales <b>Objekt</b>. Beim Wert  <b>True</b> wird die Zielanwendung in einem neuen Fenster angezeigt. Der Standardwert ist <b>False</b>.</param>
-        <param name="AddHistory">Optionales <b>Objekt</b>. Nicht verwendet. Reserviert für zukünftige Verwendung.</param>
-        <param name="ExtraInfo">Optionales <b>Objekt</b>. Ein <b>String</b>-Objekt oder ein Byte-Array, durch das Zusatzinformationen angegeben werden, die HTTP zur Wiederherstellung des Hyperlinks verwendet. Sie können z. B. die Koordinaten einer Bildzuordnung, den Inhalt eines Formulars oder <paramref name="ExtraInfo" /> einen FAT-Dateinamen angeben.</param>
-        <param name="Method">Optionales <b>Objekt</b>. Gibt an, wie <paramref name="ExtraInfo" /> angefügt wird. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> Konstanten sein.</param>
-        <param name="HeaderInfo">Optionales <b>Objekt</b>. Ein <b>String</b>-Objekt, das die Headerinformationen für die HTTP-Abfrage festlegt. Der Standardwert ist eine leere Zeichenfolge.</param>
+        <param name="NewWindow"><b>Optional-Objekt</b>. Beim Wert  <b>True</b> wird die Zielanwendung in einem neuen Fenster angezeigt. Der Standardwert ist <b>False</b>.</param>
+        <param name="AddHistory"><b>Optional-Objekt</b>. Nicht verwendet. Reserviert für zukünftige Verwendung.</param>
+        <param name="ExtraInfo"><b>Optional-Objekt</b>. Ein <b>String</b>-Objekt oder ein Byte-Array, durch das Zusatzinformationen angegeben werden, die HTTP zur Wiederherstellung des Hyperlinks verwendet. Beispielsweise können Sie <paramref name="ExtraInfo" /> die Koordinaten einer Bildzuordnung, den Inhalt eines Formulars oder einen FAT-Dateinamen angeben.</param>
+        <param name="Method"><b>Optional-Objekt</b>. Gibt die Art der <paramref name="ExtraInfo" /> Verknüpfung an. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> Konstanten sein:</param>
+        <param name="HeaderInfo"><b>Optional-Objekt</b>. Ein <b>String</b>-Objekt, das die Headerinformationen für die HTTP-Abfrage festlegt. Der Standardwert ist eine leere Zeichenfolge.</param>
         <summary>Zeigt ein zwischengespeichertes Dokument an, wenn es bereits heruntergeladen wurde. Andernfalls stellt diese Methode den Hyperlink wieder her, überträgt das Zieldokument und zeigt es in der entsprechenden Anwendung an.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,7 +406,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, das die Form darstellt, die mit dem angegebenen <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Kommentar, Diagrammknoten oder Hyperlink verknüpft ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die Form darstellt, die mit dem angegebenen Kommentar, Diagrammknoten oder Hyperlink verbunden ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -498,7 +498,7 @@
       <Docs>
         <summary>Gibt die Position des HTML-Frames zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Type -Eigenschaft</b> kann eine der folgenden Konstanten <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> sein: <b>msoHyperlinkInlineShape</b>, <b>msoHyperlinkRange</b>oder <b>msoHyperlinkShape</b>.</para>
+        <remarks><para>Die <b>Type -Eigenschaft</b> kann eine der folgenden <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> Konstanten sein: <b>msoHyperlinkInlineShape</b>, <b>MsoHyperlinkRange</b>oder <b>MsoHyperlinkShape</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

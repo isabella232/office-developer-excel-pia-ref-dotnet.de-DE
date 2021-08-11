@@ -1,5 +1,5 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Excel.Borders">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ac67cbe49f4367fa1e2be6aa391091c3d7ab6ce3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006132" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d8815aad86a3e9dcb3ed1cbcf17461a2a5d185cbdeec093ec22c53473f78a83f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506687" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Borders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Borders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Borders&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von vier <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekten, die die vier Rahmen eines oder <see cref="T:Microsoft.Office.Interop.Excel.Range" /> eines Objekts <see cref="T:Microsoft.Office.Interop.Excel.Style" /> darstellen.</summary>
-    <remarks><para>Verwenden Sie <b>die Borders -Eigenschaft</b> eines <b>Range-</b> oder <b>Style</b> -Objekts, um die <b>Borders -Auflistung</b> zurück, die alle vier Rahmen enthält.</para>
-      <para>Verwenden <b>Sie Borders</b>( ), wobei der Rahmen <paramref name="index" /> <paramref name="index" /> identifiziert, um ein einzelnes <b>Border -Objekt zurück.</b></para>
-      <para>Index kann eine der folgenden Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> sein: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>oder <b>xlInsideVertical</b>.</para>
+    <summary>Eine Auflistung von vier <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekten, die die vier Rahmen eines oder mehrerer <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> Objekte darstellen.</summary>
+    <remarks><para>Verwenden Sie die <b>Borders</b> -Eigenschaft eines <b>Range-</b> oder <b>Style</b> -Objekts, um die <b>Borders</b> -Auflistung zurückzugeben, die alle vier Rahmen enthält.</para>
+      <para>Verwenden Sie <b>Borders</b>( <paramref name="index" /> ), um ein <paramref name="index" /> einzelnes <b>Border</b> -Objekt zurückzugeben, wobei der Rahmen identifiziert wird.</para>
+      <para>Index kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> Konstanten sein: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>oder <b>xlInsideVertical</b>.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +121,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Primärfarbe aller vier Rahmen eines Bereichs zurück oder legt sie fest. Wenn sie nicht alle dieselbe Farbe haben, wird 0 (Null) zurückgegeben.</summary>
+        <summary>Gibt die Primärfarbe aller vier Rahmen eines Bereichs zurück oder legt sie fest. Wenn sie nicht alle die gleiche Farbe haben, wird 0 (null) zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +152,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Farbe aller vier Rahmen zurück oder legt sie fest. Gibt <b>Null</b> zurück, wenn alle vier Rahmen nicht dieselbe Farbe haben.</summary>
+        <summary>Gibt die Farbe aller vier Rahmen zurück oder legt sie fest. Gibt <b>Null zurück,</b> wenn alle vier Rahmen nicht die gleiche Farbe haben.</summary>
         <value>To be added.</value>
         <remarks><para>Die Farbe wird als Indexwert in der aktuellen Farbpalette oder als eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> Konstanten angegeben:</para>
           <para>
@@ -218,7 +218,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -280,8 +280,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Excel.XlBordersIndex" />
       </Parameters>
       <Docs>
-        <param name="Index"><see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" />Erforderlich. Kann eine der folgenden <b>XlBordersIndex</b> -Konstanten sein:<b>xlDiagonalDown</b><b>xlDiagonalUp</b><b>xlEdgeBottom</b><b>xlEdgeLeft</b><b>xlEdgeRight</b><b>xlEdgeTop</b><b>xlInsideHorizontal</b><b>xlInsideVertical</b></param>
-        <summary>Gibt ein Objekt zurück, das einen der Rahmen eines Zellbereichs oder einer <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Formatvorlage darstellt.</summary>
+        <param name="Index"><see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" />Erforderlich. Dies kann eine der folgenden <b>XlBordersIndex-Konstanten</b> sein:<b>xlDiagonalDown</b><b>xlDiagonalUp</b><b>xlEdgeBottom</b><b>xlEdgeLeft</b><b>xlEdgeRight</b><b>xlEdgeTop</b><b>xlInsideHorizontal</b><b>xlInsideVertical</b></param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Border" /> Objekt zurück, das einen der Rahmen eines Zellbereichs oder einer Formatvorlage darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +315,7 @@
         <summary>Gibt die Linienart für den Rahmen zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> kann eine der folgenden <b>XlLineStyle -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> kann eine der folgenden <b>XlLineStyle-Konstanten</b> sein:</para>
           <para>
             <b>xlContinuous</b>
           </para>
@@ -431,7 +431,7 @@
       <Docs>
         <summary>Gibt einen <b>Single</b>-Wert zurück, der eine Farbe aufhellt oder abdunkelt, oder legt diesen Wert fest.</summary>
         <value><b>Single</b></value>
-        <remarks><para>Sie können eine Zahl zwischen -1 (dunkelster) und 1 (hellster) für die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.Borders.TintAndShade" /> eingeben. Der Wert 0 (null) ist neutral.</para>
+        <remarks><para>Sie können eine Zahl zwischen -1 (dunkelster Wert) und 1 (hellster) für die <see cref="P:Microsoft.Office.Interop.Excel.Borders.TintAndShade" /> Eigenschaft eingeben. Der Wert 0 (null) ist neutral.</para>
           <para>Wenn Sie versuchen, diese Eigenschaft auf einen Wert unter -1 oder über 1 festzulegen, wird der Laufzeitfehler "Der angegebene Wert ist außerhalb des zulässigen Bereichs" ausgegeben. Diese Eigenschaft gilt sowohl für Designfarben als auch für designfremde Farben.</para>
           <para> </para></remarks>
       </Docs>
@@ -496,7 +496,7 @@
         <summary>Gibt die Stärke des Rahmens zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> kann eine der folgenden <b>XlBorderWeight -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> kann eine der folgenden <b>XlBorderWeight</b> -Konstanten sein:</para>
           <para>
             <b>xlHairline</b>
           </para>

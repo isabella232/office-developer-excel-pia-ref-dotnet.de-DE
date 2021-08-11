@@ -1,5 +1,5 @@
 <Type Name="PivotValueCell" FullName="Microsoft.Office.Interop.Excel.PivotValueCell">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a54dc53a361d17536e0f89e90248c89704782a9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997236" /></Metadata><TypeSignature Language="C#" Value="public interface PivotValueCell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3770d4cde42043844a8c5e786f172528f8290e8a89f572152c78eea3c5f0f67b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517159" /></Metadata><TypeSignature Language="C#" Value="public interface PivotValueCell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotValueCell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotValueCell" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotValueCell" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Bietet eine Möglichkeit, Werte von Zellen für den Fall verfügbar zu machen, dass tatsächliche Zellen (<b>Bereichsobjekte)</b> nicht verfügbar sind.</summary>
+    <summary>Bietet eine Möglichkeit, Werte von Zellen verfügbar zu machen, falls tatsächliche Zellen (<b>Range-Objekte)</b> nicht verfügbar sind.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Application <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt zurück, das die Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein Application <see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt, das die Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>Ganze</b> Zahl (<b>int</b> in C#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b> -Wert (<b>int</b> in C#).</summary>
         <value>To be added.</value>
         <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
           <para> </para></remarks>
@@ -105,7 +105,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Object</b> (<b>Objekt</b> in C#) zurück, das das übergeordnete Objekt des angegebenen Objekts <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <b>Objekt</b> (<b>Objekt</b> in C#), das das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> Objekts darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> Wert zurück, der die Position von <b>PivotValueCell angibt.</b> Schreibgeschützt</summary>
+        <summary>Gibt den <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> Wert zurück, der die Position der <b>PivotValueCell</b>angibt. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Auflistung von OLAP-Aktionsnamensobjekten zurück, die OLAP-definierte Aktionen darstellen, die ausgeführt werden können. Schreibgeschützt</summary>
+        <summary>Gibt eine Auflistung von OLAP-Aktionsnamenobjekten zurück, die OLAP-definierte Aktionen darstellen, die ausgeführt werden können. Schreibgeschützt</summary>
         <value>To be added.</value>
-        <remarks><para>Eine Serveraktion ist ein optionales Feature, das ein OLAP-Cubeadministrator auf einem Server definieren kann, der ein Cubemitglied oder eine Kennzahl als Parameter in einer Abfrage verwendet, um Details im Cube zu erhalten oder eine andere Anwendung zu starten.</para>
+        <remarks><para>Eine Serveraktion ist ein optionales Feature, das ein OLAP-Cubeadministrator auf einem Server definieren kann, der ein Cubeelement oder ein Measure als Parameter in einer Abfrage verwendet, um Details im Cube abzurufen oder eine andere Anwendung zu starten.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -188,7 +188,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Legt die einzelnen Zeilen einer OLAP-Datenquelle, die zu einem Aggregat beitragen, in ein eigenes Excel-Arbeitsblatt.</summary>
+        <summary>Fügt die einzelnen Zeilen einer OLAP-Datenquelle, die zu einem Aggregat beitragen, in ein eigenes Excel Arbeitsblatt ein.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +215,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Wert an der Position zurück. Der Wert ist der Wert, nachdem <b>ShowAs</b> und andere Berechnungen angewendet wurden. Variant kann <b>leer</b>, <b>Zahl</b>, <b>Datum</b>, <b>Zeichenfolge oder</b> <b>Fehlerwert</b> sein.</summary>
+        <summary>Gibt den Wert an der Position zurück. Der Wert ist der Wert, nachdem <b>ShowAs</b> und andere Berechnungen angewendet wurden. Variant can be <b>Empty</b>, <b>Number</b>, <b>Date</b>, <b>String</b>, or <b>Error</b> value.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft funktioniert unabhängig davon, ob sich die PivotTable in einem Arbeitsblatt befindet oder nicht.</para>
           <para> </para></remarks>

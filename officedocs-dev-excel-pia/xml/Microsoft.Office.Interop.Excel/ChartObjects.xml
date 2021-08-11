@@ -1,5 +1,5 @@
 <Type Name="ChartObjects" FullName="Microsoft.Office.Interop.Excel.ChartObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004018" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a900d6d073f43a6c95f5ed18210ecc4933cd2bd3247b286873e08d4945f0bc15" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508850" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartObjects&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Objekte im angegebenen <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> Diagrammblatt, Dialogblatt oder Arbeitsblatt.</summary>
-    <remarks><para>Jedes Objekt <b>ChartObject</b> repräsentiert ein eingebettetes Diagramm. Das <b>ChartObject -Objekt</b> dient als Container für ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekt. Die Eigenschaften und Methoden für das Objekt <b>ChartObject</b> bestimmen das Aussehen und die Größe des in das Blatt eingebetteten Diagramms.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> die Methode, um die <b>ChartObjects -Auflistung zurück.</b> Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> die Methode, um ein neues, leeres eingebettetes Diagramm zu erstellen und der Auflistung hinzuzufügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode, um Daten hinzuzufügen und das neue Diagramm zu formatieren.</para>
-      <para>Verwenden <b>Sie ChartObjects</b>( ), wobei die Indexnummer oder der Name des eingebetteten Diagramms ist, um <paramref name="index" /> ein <paramref name="index" /> einzelnes <b>ChartObject -Objekt zurückzukehren.</b></para>
+    <summary>Eine Auflistung aller Objekte auf <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> dem angegebenen Diagrammblatt, Dialogfeldblatt oder Arbeitsblatt.</summary>
+    <remarks><para>Jedes Objekt <b>ChartObject</b> repräsentiert ein eingebettetes Diagramm. Das <b>ChartObject-Objekt</b> fungiert als Container für ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekt. Die Eigenschaften und Methoden für das Objekt <b>ChartObject</b> bestimmen das Aussehen und die Größe des in das Blatt eingebetteten Diagramms.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> Methode, um die <b>ChartObjects -Auflistung</b> zurückzugeben. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> Methode, um ein neues, leeres eingebettetes Diagramm zu erstellen und der Auflistung hinzuzufügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode, um Daten hinzuzufügen und das neue Diagramm zu formatieren.</para>
+      <para>Verwenden Sie <b>ChartObjects</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer oder der Name des eingebetteten Diagramms ist, um ein einzelnes <b>ChartObject -Objekt</b> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -315,11 +315,11 @@
         <Parameter Name="Height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Left">Erforderlicher <b>Doppelter .</b> Die Anfangskoordinaten des neuen Objekts (in Punkt), relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
-        <param name="Top">Erforderlicher <b>Doppelter .</b> Die Anfangskoordinaten des neuen Objekts (in Punkt), relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
-        <param name="Width">Erforderlicher <b>Doppelter .</b> Die Anfangsgröße des neuen Objekts in Punkt.</param>
-        <param name="Height">Erforderlicher <b>Doppelter .</b> Die Anfangsgröße des neuen Objekts in Punkt.</param>
-        <summary>Erstellt ein neues eingebettetes Diagramm. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> zurück.</summary>
+        <param name="Left">Erforderlicher <b>Double -Wert.</b> Die Anfangskoordinaten des neuen Objekts (in Punkt), relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
+        <param name="Top">Erforderlicher <b>Double -Wert.</b> Die Anfangskoordinaten des neuen Objekts (in Punkt), relativ zur oberen linken Ecke der Zelle A1 oder zur oberen linken Ecke eines Diagramms.</param>
+        <param name="Width">Erforderlicher <b>Double -Wert.</b> Die anfängliche Größe des neuen Objekts in Punkt.</param>
+        <param name="Height">Erforderlicher <b>Double -Wert.</b> Die anfängliche Größe des neuen Objekts in Punkt.</param>
+        <summary>Erstellt ein neues eingebettetes Diagramm. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> Objekt zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +347,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -787,7 +787,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -821,7 +821,7 @@
       <Docs>
         <summary>Der Abstand zwischen dem linken Rand des Objekts und dem linken Rand von Spalte A (auf einem Arbeitsblatt) oder dem linken Rand des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft eine negative Zahl zurück, die je nach Breite des Fensterrahmens variiert. Wenn Sie diese Eigenschaft auf 0 (Null) festlegen, wird das Fenster etwas kleiner als bei maximiertem Anwendungsfenster. Mit anderen Worten: Wenn diese Eigenschaft 0 (Null) ist, wird der linke Rahmen des Microsoft Excel-Hauptfensters nur noch auf dem Bildschirm angezeigt.</para>
+        <remarks><para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft eine negative Zahl zurück, die je nach Breite des Fensterrahmens variiert. Wenn Sie diese Eigenschaft auf 0 (null) festlegen, wird das Fenster etwas kleiner als bei maximiertem Anwendungsfenster. Mit anderen Worten: Wenn diese Eigenschaft 0 (null) ist, wird der linke Rahmen des Hauptfensters Microsoft Excel nur auf dem Bildschirm sichtbar sein.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -851,7 +851,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
+        <summary><b>True,</b> wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -947,7 +947,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Art zurück, in der das Objekt an die zellen darunter stehenden Zellen angefügt wird, oder legt diese fest.</summary>
+        <summary>Gibt zurück oder legt fest, wie das Objekt mit den Zellen darunter verbunden ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1009,8 +1009,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn der Rahmen eines eingebetteten Diagramms nicht verschoben, gelöscht oder wenn seine Größe nicht geändert werden kann. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <summary><b>True</b>, wenn der Rahmen eines eingebetteten Diagramms nicht verschoben, gelöscht oder wenn seine Größe nicht geändert werden kann. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Durch Festlegen dieser Eigenschaft auf <b>True</b> wird der Rahmen des eingebetteten Diagramms nicht vor Änderungen durch das Objektmodell geschützt.</para>
           <para> </para></remarks>
       </Docs>
@@ -1074,7 +1074,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Optionales <b>Objekt</b>. <b>True</b>, wenn die aktuelle Auswahl mit dem angegebenen Objekt ersetzt. <b>False</b>, wenn die aktuelle Markierung erweitert bereits ausgewählte Objekte und das angegebene Objekt.</param>
+        <param name="Replace"><b>Optional-Objekt</b>. <b>True</b>, wenn die aktuelle Auswahl mit dem angegebenen Objekt ersetzt. <b>False</b>, wenn die aktuelle Markierung erweitert bereits ausgewählte Objekte und das angegebene Objekt.</param>
         <summary>Markiert das Objekt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1200,7 +1200,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand zwischen dem oberen Rand des Objekts und dem oberen Rand von Zeile 1 (auf einem Arbeitsblatt) oder dem oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
+        <summary>Der Abstand zwischen dem oberen Rand des Objekts und dem oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder dem oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1234,7 +1234,7 @@
         <summary>Bestimmt, ob das Objekt sichtbar ist.</summary>
         <value>To be added.</value>
         <remarks><para>Die <b>Visible</b>-Eigenschaft für ein PivotTable-Element ist <b>True</b>, wenn das Element zum betreffenden Zeitpunkt in der Tabelle angezeigt wird.</para>
-          <para>Wenn Sie die <b>Eigenschaft Visible</b> für einen Namen auf <b>"False"</b>festlegen, wird der Name nicht im Dialogfeld "Name definieren" angezeigt.</para>
+          <para>Wenn Sie die <b>Visible-Eigenschaft</b> für einen Namen auf <b>False</b>festlegen, wird der Name nicht im Dialogfeld Namen definieren angezeigt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

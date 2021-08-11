@@ -1,5 +1,5 @@
 <Type Name="Outline" FullName="Microsoft.Office.Interop.Excel.Outline">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ce084732f853490e51e0b2ae76bee9cab95e3b55" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011158" /></Metadata><TypeSignature Language="C#" Value="public interface Outline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="481d6a1996a81050ea1172dfc32155c3990a9aa7b1be3921cca69be7cb2e4690" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517166" /></Metadata><TypeSignature Language="C#" Value="public interface Outline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Outline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Outline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Outline" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Gliederung eines Arbeitsblatts dar.</summary>
-    <remarks><para>Mit der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Outline" /> Eigenschaft können Sie ein Outline <b>-Objekt</b> zurückgeben.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Outline" /> Eigenschaft, um ein <b>Outline</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +111,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -166,8 +166,8 @@
         <Parameter Name="ColumnLevels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="RowLevels">Optionales <b>Objekt</b>. Specifies the number of row levels of an outline to display. If the outline has fewer levels than the number specified, Microsoft Excel displays all the levels. If this argument is 0 (zero) or is omitted, no action is taken on rows.</param>
-        <param name="ColumnLevels">Optionales <b>Objekt</b>. Specifies the number of column levels of an outline to display. If the outline has fewer levels than the number specified, Microsoft Excel displays all the levels. If this argument is 0 (zero) or is omitted, no action is taken on columns.</param>
+        <param name="RowLevels"><b>Optional-Objekt</b>. Specifies the number of row levels of an outline to display. If the outline has fewer levels than the number specified, Microsoft Excel displays all the levels. If this argument is 0 (zero) or is omitted, no action is taken on rows.</param>
+        <param name="ColumnLevels"><b>Optional-Objekt</b>. Specifies the number of column levels of an outline to display. If the outline has fewer levels than the number specified, Microsoft Excel displays all the levels. If this argument is 0 (zero) or is omitted, no action is taken on columns.</param>
         <summary>Zeigt die angegebene Anzahl der Zeilen- und/oder Spaltenebenen einer Gliederung an.</summary>
         <returns>To be added.</returns>
         <remarks><para>Sie müssen mindestens ein Argument angeben.</para>
@@ -233,7 +233,7 @@
       <Docs>
         <summary>Gibt die Position der Hauptzeilen in der Gliederung zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Legen <b>Sie SummaryRow</b> auf <b>xlAbove für</b> Gliederungen im Microsoft Word-Format, wobei Kategorieüberschriften über den detaillierten Informationen befinden. Legen <b>Sie SummaryRow</b> auf <b>xlBelow</b> für Gliederungen im Buchhaltungsformat, wobei Sich Summen unter den detaillierten Informationen befinden.</para>
+        <remarks><para>Legen Sie <b> SummaryRow </b> für Microsoft Word Gliederungen auf <b> xlAbove </b> fest, wobei kategorieüberschriften über den detaillierten Informationen liegen. Legen Sie <b> SummaryRow </b> für Gliederungen im Buchhaltungsstil auf <b> xlBelow </b> fest, wobei sich Die Summen unterhalb der detaillierten Informationen befinden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

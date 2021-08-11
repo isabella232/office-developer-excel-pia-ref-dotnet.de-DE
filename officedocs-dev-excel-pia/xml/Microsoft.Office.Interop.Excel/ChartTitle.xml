@@ -1,5 +1,5 @@
 <Type Name="ChartTitle" FullName="Microsoft.Office.Interop.Excel.ChartTitle">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="afb7795a68830e3b601b5cd96bed04591a26e206" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005838" /></Metadata><TypeSignature Language="C#" Value="public interface ChartTitle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="da4f4fe6b14f48920310e0778070d3728ddd53dcf22346036aa7016e00417bb7" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508836" /></Metadata><TypeSignature Language="C#" Value="public interface ChartTitle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartTitle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartTitle" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartTitle" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt den Diagrammtitel dar.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartTitle" /> Eigenschaft, um das <b>ChartTitle -Objekt zurück.</b></para>
-      <para>Das <b>ChartTitle -Objekt</b> ist nicht vorhanden und kann nur verwendet werden, wenn die Eigenschaft für das Diagramm <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasTitle" /> True <b>ist.</b></para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartTitle" /> Eigenschaft, um das <b>ChartTitle -Objekt</b> zurückzugeben.</para>
+      <para>Das <b>ChartTitle</b> -Objekt ist nicht vorhanden und kann nur verwendet werden, wenn die <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasTitle" /> Eigenschaft für das Diagramm <b>True</b>ist.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,9 +181,9 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">Optionales <b>Objekt</b>. The first character to be returned. If this argument is either 1 or omitted, this property returns a range of characters starting with the first character.</param>
-        <param name="Length">Optionales <b>Objekt</b>. Die Anzahl der zurückzugebenden Zeichen. Wenn dieses Argument nicht angegeben wird, gibt diese Eigenschaft den Rest der Zeichenfolge zurück (alles nach dem <paramref name="Start" /> Zeichen).</param>
-        <summary>Gibt ein Objekt zurück, das einen Bereich von Zeichen innerhalb des <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> Objekttexts darstellt. Mit dem <b>Characters</b> -Objekt können Sie Zeichen innerhalb einer Zeichenfolge formatieren.</summary>
+        <param name="Start"><b>Optional-Objekt</b>. The first character to be returned. If this argument is either 1 or omitted, this property returns a range of characters starting with the first character.</param>
+        <param name="Length"><b>Optional-Objekt</b>. Die Anzahl der zurückzugebenden Zeichen. Wenn dieses Argument ausgelassen wird, gibt diese Eigenschaft den Rest der Zeichenfolge zurück (alles nach dem <paramref name="Start" /> Zeichen).</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> Objekt zurück, das einen Bereich von Zeichen innerhalb des Objekttexts darstellt. Mit dem <b>Characters</b> -Objekt können Sie Zeichen innerhalb einer Zeichenfolge formatieren.</summary>
         <value>To be added.</value>
         <remarks><para>Das <b>Characters</b>-Objekt ist keine Auflistung.</para>
           <para> </para></remarks>
@@ -214,7 +214,7 @@
       <Docs>
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+        <remarks><para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -270,7 +270,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt für eine angegebene Form oder ein Objekt für ein angegebenes Diagramm zurück, das füllformatierungseigenschaften für die Form oder das <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> Diagramm enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> Objekt für eine angegebene Form oder ein Objekt für ein <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> angegebenes Diagramm zurück, das Füllformatierungseigenschaften für die Form oder das Diagramm enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Objekt <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> zurück. Schreibgeschützt.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt zurück. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt enthält die Linien-, Füll-, Effekt- und Textformatierung für den Diagrammbereich.</para>
           <para> </para></remarks>
@@ -361,8 +361,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der A1-Notation in Englisch darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der A1-Notation in Englisch.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in englischer Sprache in der A1-Schreibweise darstellt.</summary>
+        <value>Die Formel des Objekts, die die A1-Schreibweise verwendet, in Englisch.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -393,8 +393,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der A1-Notation in der Sprache des Benutzers darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der A1-Notation in der Sprache des Benutzers.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in der A1-Schreibweise in der Sprache des Benutzers darstellt.</summary>
+        <value>Die Formel des Objekts in der A1-Schreibweise in der Sprache des Benutzers.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -425,8 +425,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der R1C1-Notation in Englisch darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der R1C1-Notation in Englisch.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in der R1C1-Schreibweise (englisch) darstellt.</summary>
+        <value>Die Formel des Objekts, die die Z1C1-Schreibweise verwendet, in Englisch.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -457,8 +457,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der R1C1-Notation in der Sprache des Benutzers darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der R1C1-Notation in der Sprache des Benutzers.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in der Z1C1-Schreibweise in der Sprache des Benutzers darstellt.</summary>
+        <value>Die Formel des Objekts mit der Z1C1-Schreibweise in der Sprache des Benutzers.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -566,9 +566,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> wird Wenn ein Diagrammtitel Layout Diagrammbereich beim eines Diagrammlayouts eingenommenen bestimmt wird. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
-        <remarks><para>Diese Eigenschaft hat keine Auswirkungen darauf, ob sich ein Diagramm im Autolayout-Modus befindet oder nicht.  Wenn ein Benutzer einen Titel mit dem Befehl Über Diagramm hinzufügt, wird das Diagramm kleiner angepasst als in Excel 2003.  Wenn der Benutzer dann den Titel entfernt oder eine Option für Überlagerungstitel auswählt, wird das Diagramm größer angepasst, als wenn das Diagramm keinen Titel enthält.</para>
+        <summary><b>True</b>, wenn ein Diagrammtitel den Diagrammlayoutbereich einnimmt, wenn das Diagrammlayout bestimmt wird. Der Standardwert lautet <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolescher Wert</b></value>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkungen darauf, ob sich ein Diagramm im Autolayout-Modus befindet oder nicht. Wenn ein Benutzer einen Titel mit dem Befehl Über Diagramm hinzufügt, wird das Diagramm kleiner angepasst als in Excel 2003. Wenn der Benutzer dann den Titel entfernt oder eine Option für Überlagerungstitel auswählt, wird das Diagramm größer angepasst, als wenn das Diagramm keinen Titel enthält.
+</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -631,7 +632,7 @@
       <Docs>
         <summary>Der Abstand (in Punkten) von der linken Seite des Objekts zur linken Seite von Spalte A (auf einem Arbeitsblatt) oder zur linken Seite des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft eine negative Zahl zurück, die je nach Breite des Fensterrahmens variiert. Wenn Sie diese Eigenschaft auf 0 (Null) festlegen, wird das Fenster etwas kleiner als bei maximiertem Anwendungsfenster. Mit anderen Worten: Wenn diese Eigenschaft 0 (Null) ist, wird der linke Rahmen des Microsoft Excel-Hauptfensters nur noch auf dem Bildschirm angezeigt.</para>
+        <remarks><para>Wenn das Fenster maximiert ist, gibt diese Eigenschaft eine negative Zahl zurück, die je nach Breite des Fensterrahmens variiert. Wenn Sie diese Eigenschaft auf 0 (null) festlegen, wird das Fenster etwas kleiner als bei maximiertem Anwendungsfenster. Mit anderen Worten: Wenn diese Eigenschaft 0 (null) ist, wird der linke Rahmen des Hauptfensters Microsoft Excel nur auf dem Bildschirm sichtbar sein.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -689,7 +690,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen –90 und 90 Grad sein.</summary>
+        <summary>Die Textausrichtung. Kann ein ganzzahliger Wert zwischen -90 und 90 Grad sein.</summary>
         <value>To be added.</value>
         <remarks><para>Die folgenden Konstanten können verwendet werden:</para>
           <para>
@@ -850,7 +851,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Objekt einen Schatten hat.</summary>
+        <summary><b></b> True , wenn das Objekt einen Schatten aufweist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -912,7 +913,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand (in Punkt) vom oberen Rand des Objekts zum Anfang von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
+        <summary>Der Abstand zwischen dem oberen Rand des Objekts und dem oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder dem oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

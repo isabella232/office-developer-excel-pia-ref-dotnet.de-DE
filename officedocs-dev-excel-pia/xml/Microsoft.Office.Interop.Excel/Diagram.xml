@@ -1,5 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005628" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8f23e88bc435fafb03c88a3768f511496656666559e1cc38d9b9bfaee6a4d380" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509480" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -22,11 +22,11 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein Diagramm dar.</summary>
-    <remarks><para>Verwenden Sie <b>die Diagram</b> -Eigenschaft des Objekts oder <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> der <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Auflistung, um ein Diagram <b>-Objekt zurückzukehren.</b></para>
+    <remarks><para>Verwenden Sie die <b>Diagram-Eigenschaft</b> des Objekts oder der <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Auflistung, um ein <b>Diagram-Objekt</b> zurückzugeben.</para>
       <para>Sie können das aktuelle Diagramm auch mithilfe der Methode in ein anderes Diagramm <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> konvertieren.</para>
       <para>
         <b>Hinweis</b>   Wenn das aktuelle Diagramm ein Organigramm (<b>msoDiagramOrgChart</b>) ist, tritt ein Laufzeitfehler auf.</para>
-      <para>Beim Arbeiten mit dem Diagram -Objekt stehen verschiedene Arten von Diagrammen <b>zur</b> Auswahl. In der Methode <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> finden Sie eine Liste der verfügbaren Diagrammtypen.</para>
+      <para>Beim Arbeiten mit dem <b>Diagram-Objekt</b> stehen verschiedene Diagrammtypen zur Auswahl. Eine Liste der verfügbaren Diagrammtypen finden Sie in <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> der Methode.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest oder gibt eine Konstante zurück, die den automatischen Formatierungszustand für ein Diagramm angibt.</summary>
+        <summary>Legt fest oder gibt eine Konstante zurück, die den automatischen Formatierungsstatus für ein Diagramm angibt.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn <b>Sie AutoFormat auf</b> <b>MsoFalse festlegen,</b> wird die automatische Formatierung für das Diagramm deaktiviert. Wenn <b>Sie AutoFormat auf</b> <b>MsoTrue festlegen,</b> wird die automatische Formatierung für das Diagramm aktiviert.</para>
-          <para>Die folgenden <b>MsoTriState</b> -Konstanten, die nicht auf diese Eigenschaft angewendet werden: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+        <remarks><para>Durch Festlegen von <b>AutoFormat</b> auf <b>MsoFalse</b> wird die automatische Formatierung für das Diagramm deaktiviert. Wenn <b>AutoFormat</b> auf <b>MsoTrue</b> festgelegt wird, wird die automatische Formatierung für das Diagramm aktiviert.</para>
+          <para>Die folgenden <b>MsoTriState</b> -Konstanten, die nicht auf diese Eigenschaft angewendet werden sollen: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,10 +117,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Konstante zurück, die die automatische Positionierung der Knoten und Verbinder in einem Diagramm bestimmt, oder legt diese Konstante fest.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen einer Konstante, die die automatische Positionierung der Knoten und Verbinder in einem Diagramm bestimmt.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn <b>Sie AutoLayout auf</b> <b>MsoFalse festlegen,</b> wird die automatische Formatierung für das Diagramm deaktiviert. Wenn <b>AutoLayout auf</b> <b>MsoTrue festlegen,</b> wird die automatische Formatierung für das Diagramm aktiviert.</para>
-          <para>Die folgenden <b>MsoTriState</b> -Konstanten, die nicht auf diese Eigenschaft angewendet werden: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+        <remarks><para>Durch Festlegen von <b>AutoLayout</b> auf <b>MsoFalse</b> wird die automatische Formatierung für das Diagramm deaktiviert. Wenn <b>Sie AutoLayout</b> auf <b>MsoTrue</b> festlegen, wird die automatische Formatierung für das Diagramm aktiviert.</para>
+          <para>Die folgenden <b>MsoTriState</b> -Konstanten, die nicht auf diese Eigenschaft angewendet werden sollen: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -147,7 +147,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoDiagramType" />Erforderlich. Der Typ des Diagramms, in das konvertiert werden soll. <b>MsoDiagramType</b> kann eine dieser Konstanten sein. <b>msoDiagramCycle</b> Ein Prozessdiagramm mit einem fortlaufenden Zyklusdiagrammtyp. <b>msoDiagramMixed</b> Ein gemischter Diagrammtyp. <b>msoDiagramOrgChart</b> Ein hierarchischer Beziehungsdiagrammtyp. <b>msoDiagramPyramid</b> Ein basisbasierter Beziehungsdiagrammtyp. <b>msoDiagramRadial</b> Ein Diagrammtyp, der die Beziehungen eines Kernelements zeigt. <b>msoDiagramTarget</b> Ein Diagrammtyp, der Schritte in Richtung eines Ziels zeigt. <b>msoDiagramVenn</b> Ein Diagrammtyp, der Überlappungsbereiche zwischen Elementen zeigt.</param>
+        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoDiagramType" />Erforderlich. Der Typ des Diagramms, in das konvertiert werden soll. <b>MsoDiagramType</b> kann eine dieser Konstanten sein. <b>msoDiagramCycle</b> Ein Prozessdiagramm mit einem Diagrammtyp für einen fortlaufenden Zyklus. <b>msoDiagramMixed</b> Ein gemischter Diagrammtyp. <b>msoDiagramOrgChart</b> Diagrammtyp einer hierarchischen Beziehung. <b>msoDiagramPyramid</b> Diagrammtyp für basisbasierte Beziehungen. <b>msoDiagramRadial</b> Ein Diagrammtyp, der die Beziehungen eines Kernelements zeigt. <b>msoDiagramTarget</b> Ein Diagrammtyp, der Die Schritte in Richtung eines Ziels zeigt. <b>msoDiagramVenn</b> Ein Diagrammtyp mit Überlappungsbereichen zwischen Elementen.</param>
         <summary>Konvertiert das aktuelle Diagramm in ein anderes Diagramm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +178,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -203,7 +203,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Passt die Größe des Texts in den Knoten in einem Diagramm an die Grenzen der Knoten an.</summary>
+        <summary>Passt die Größe des Texts in den Knoten in einem Diagramm so an, dass er in die Grenzen der Knoten passt.</summary>
         <remarks><para>Diese Methode funktioniert nur in Microsoft Office PowerPoint 2003.</para>
           <para> </para></remarks>
       </Docs>
@@ -231,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, das eine flache Liste aller Knoten <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> im angegebenen Diagramm enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> Objekt zurück, das eine flache Liste aller Knoten im angegebenen Diagramm enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,8 +292,8 @@
       <Docs>
         <summary>Kehrt die Knoten in einem Diagramm um.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn <b>Sie "Reverse"</b> <b>auf "msoFalse"</b> festlegen, bleiben die Diagrammknoten wie sie sind. Durch <b>Festlegen von "Reverse"</b> <b>auf "msoTrue"</b> werden die Knoten in einem Diagramm umgekehrt.</para>
-          <para>Die folgenden <b>MsoTriState</b> -Konstanten, die nicht auf diese Eigenschaft angewendet werden: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+        <remarks><para>Wenn <b>Sie "Reverse"</b> auf <b>"msoFalse"</b> festlegen, bleiben die Diagrammknoten wie sie sind. Wenn <b>Sie "Reverse"</b> auf <b>"msoTrue"</b> festlegen, werden die Knoten in einem Diagramm umgekehrt.</para>
+          <para>Die folgenden <b>MsoTriState</b> -Konstanten, die nicht auf diese Eigenschaft angewendet werden sollen: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -320,10 +320,10 @@
         <ReturnType>Microsoft.Office.Core.MsoDiagramType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Diagrammtyp zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Diagrammtyp zurück oder legt den Diagrammtyp fest.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> kann eine der folgenden <b>MsoDiagramType -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> kann eine der folgenden <b>MsoDiagramType</b> -Konstanten sein:</para>
           <para>
             <b>msoDiagramCycle</b>
           </para>

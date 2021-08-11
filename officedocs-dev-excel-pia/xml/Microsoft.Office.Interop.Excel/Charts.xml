@@ -1,5 +1,5 @@
 <Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005803" /></Metadata><TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1b72a7dfc57fde1986e1d9ad51b113cb4f8343aef2a3d6c8cfe4db005da92646" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508815" /></Metadata><TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Charts implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Charts" />
   <TypeSignature Language="VB.NET" Value="Public Interface Charts&#xA;Implements IEnumerable" />
@@ -25,11 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Diagrammblätter in der angegebenen oder aktiven Arbeitsmappe. Jedes Diagrammblatt wird durch ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> dargestellt. Dies umfasst keine Diagramme, die in Arbeitsblätter oder Dialogblätter eingebettet sind. Informationen zu eingebetteten Diagrammen finden Sie unter dem <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> Objekt.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> Eigenschaft, um die <b>Charts -Auflistung zurück.</b> Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> die Methode, um ein neues Diagrammblatt zu erstellen und der Arbeitsmappe hinzuzufügen.</para>
-      <para>Sie können die Methode mit der Methode kombinieren, um ein neues Diagramm <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> hinzuzufügen, das Daten aus einem Arbeitsblatt enthält.</para>
-      <para>Verwenden <b>Sie Diagramme</b>( ), wobei die Indexnummer oder der Name des Diagrammblatts <paramref name="index" /> <paramref name="index" /> ist, um ein einzelnes <b>Chart -Objekt zurückzukehren.</b></para>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter als auch Arbeitsblätter). Verwenden <b>Sie Blätter</b>( ), wobei der Name oder die Nummer des <paramref name="index" /> <paramref name="index" /> Blatts, um ein einzelnes Blatt zurück.</para>
+    <summary>Eine Auflistung aller Diagrammblätter in der angegebenen oder aktiven Arbeitsmappe. Jedes Diagrammblatt wird durch ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekt dargestellt. Dies schließt keine Diagramme ein, die in Arbeitsblätter oder Dialogfelder eingebettet sind. Informationen zu eingebetteten Diagrammen finden Sie unter dem <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> Objekt.</summary>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> Eigenschaft, um die <b>Charts-Auflistung</b> zurückzugeben. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> Methode, um ein neues Diagrammblatt zu erstellen und der Arbeitsmappe hinzuzufügen.</para>
+      <para>Sie können die <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> Methode mit der Methode <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> kombinieren, um ein neues Diagramm hinzuzufügen, das Daten aus einem Arbeitsblatt enthält.</para>
+      <para>Verwenden Sie <b>Diagramme</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer oder der Name des Diagrammblatts ist, um ein einzelnes <b>Chart -Objekt</b> zurückzugeben.</para>
+      <para>Die <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Auflistung enthält alle Blätter in der Arbeitsmappe (sowohl Diagrammblätter als auch Arbeitsblätter). Use <b>Sheets</b>( <paramref name="index" /> ), where is the sheet name or <paramref name="index" /> number, to return a single sheet.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -230,7 +230,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optionales <b>Objekt</b>. Das Blatt, vor dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie . <paramref name="After" /></param>
-        <param name="After">Optionales <b>Objekt</b>. Das Blatt, nach dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie . <paramref name="Before" /></param>
+        <param name="Before"><b>Optional-Objekt</b>. Das Blatt, vor dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie <paramref name="After" /> .</param>
+        <param name="After"><b>Optional-Objekt</b>. Das Blatt, nach dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie <paramref name="Before" /> .</param>
         <summary>Kopiert das Blatt an einen anderen Ort in der Arbeitsmappe.</summary>
-        <remarks><para>Wenn Sie keine oder keines angeben, erstellt Microsoft Excel eine <paramref name="Before" /> <paramref name="After" /> neue Arbeitsmappe, die das kopierte Blatt enthält.</para>
+        <remarks><para>Wenn Sie keines oder nicht <paramref name="Before" /> <paramref name="After" /> angeben, erstellt Microsoft Excel eine neue Arbeitsmappe, die das kopierte Blatt enthält.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -316,7 +316,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Schreibgeschützt. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></summary>
         <value>To be added.</value>
         <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
@@ -434,7 +434,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -463,10 +463,10 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optionales <b>Objekt</b>. Das Blatt, vor dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie . <paramref name="After" /></param>
-        <param name="After">Optionales <b>Objekt</b>. Das Blatt, hinter dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie . <paramref name="Before" /></param>
+        <param name="Before"><b>Optional-Objekt</b>. Das Blatt, vor dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie <paramref name="After" /> .</param>
+        <param name="After"><b>Optional-Objekt</b>. Das Blatt, hinter dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie <paramref name="Before" /> .</param>
         <summary>Verschiebt das Blatt an eine andere Position in der Arbeitsmappe.</summary>
-        <remarks><para>Wenn Sie keine oder keines angeben, erstellt Microsoft Excel eine <paramref name="Before" /> <paramref name="After" /> neue Arbeitsmappe, die das verschobene Blatt enthält.</para>
+        <remarks><para>Wenn Sie weder eine noch eine <paramref name="Before" /> <paramref name="After" /> angeben, erstellt Microsoft Excel eine neue Arbeitsmappe, die das verschobene Blatt enthält.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -530,16 +530,16 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Optionales <b>Objekt</b>. Die Nummer der ersten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird von der ersten Seite an gedruckt.</param>
-        <param name="To">Optionales <b>Objekt</b>. Die Nummer der letzten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird bis zur letzten Seite gedruckt.</param>
-        <param name="Copies">Optionales <b>Objekt</b>. Die Anzahl der zu druckenden Kopien. Wenn Sie dieses Argument nicht angeben, wird eine einzelne Kopie gedruckt.</param>
-        <param name="Preview">Optionales <b>Objekt</b>. <b>True</b>, damit Microsoft Excel die Druckvorschau aufruft, bevor das Objekt gedruckt wird. <b>False</b> (oder ausgelassen) zum unmittelbaren Drucken des Objekts.</param>
-        <param name="ActivePrinter">Optionales <b>Objekt</b>. Legt den Namen des aktiven Druckers fest.</param>
-        <param name="PrintToFile">Optionales <b>Objekt</b>. <b>True</b> zum Drucken einer Datei. Wenn dieser Parameter nicht angegeben ist, fordert Microsoft Excel den Benutzer auf, den Namen der <paramref name="PrToFileName" /> Ausgabedatei eingibt.</param>
-        <param name="Collate">Optionales <b>Objekt</b>. <b>True</b> zum Sortieren mehrerer Kopien.</param>
-        <param name="PrToFileName">Optionales <b>Objekt</b>. Wenn <paramref name="PrintToFile" /> dieser Wert auf <b>"True"</b>festgelegt ist, gibt dieses Argument den Namen der Datei an, in die gedruckt werden soll.</param>
+        <param name="From"><b>Optional-Objekt</b>. Die Nummer der ersten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird von der ersten Seite an gedruckt.</param>
+        <param name="To"><b>Optional-Objekt</b>. Die Nummer der letzten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird bis zur letzten Seite gedruckt.</param>
+        <param name="Copies"><b>Optional-Objekt</b>. Die Anzahl der zu druckenden Kopien. Wenn Sie dieses Argument nicht angeben, wird eine einzelne Kopie gedruckt.</param>
+        <param name="Preview"><b>Optional-Objekt</b>. <b>True</b>, damit Microsoft Excel die Druckvorschau aufruft, bevor das Objekt gedruckt wird. <b>False</b> (oder ausgelassen) zum unmittelbaren Drucken des Objekts.</param>
+        <param name="ActivePrinter"><b>Optional-Objekt</b>. Legt den Namen des aktiven Druckers fest.</param>
+        <param name="PrintToFile"><b>Optional-Objekt</b>. <b>True</b> zum Drucken einer Datei. Wenn <paramref name="PrToFileName" /> keine Angabe erfolgt, fordert Microsoft Excel den Benutzer auf, den Namen der Ausgabedatei einzugeben.</param>
+        <param name="Collate"><b>Optional-Objekt</b>. <b>True</b> zum Sortieren mehrerer Kopien.</param>
+        <param name="PrToFileName"><b>Optional-Objekt</b>. Wenn <paramref name="PrintToFile" /> True festgelegt ist, gibt dieses Argument den Namen der Datei an, in der Sie drucken möchten. <b></b></param>
         <summary>Druckt das Objekt.</summary>
-        <remarks><para>"Seiten" in den Beschreibungen von gedruckten Seiten und bezieht sich auf gedruckte Seiten, nicht auf allgemeine Seiten <paramref name="From" /> <paramref name="To" /> des Blatts oder der Arbeitsmappe.</para>
+        <remarks><para>"Seiten" in den Beschreibungen von <paramref name="From" /> <paramref name="To" /> und bezieht sich auf gedruckte Seiten, nicht auf allgemeine Seiten in dem Blatt oder der Arbeitsmappe.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -606,7 +606,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">Optionales <b>Objekt</b>. <b>True,</b> um Änderungen an den angegebenen Diagrammen zu aktivieren.</param>
+        <param name="EnableChanges"><b>Optional-Objekt</b>. <b>True,</b> um Änderungen an den angegebenen Diagrammen zu aktivieren.</param>
         <summary>Zeigt ein Objekt so an, wie es gedruckt wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -633,7 +633,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Optionales <b>Objekt</b>. Das zu ersetzende Objekt.</param>
+        <param name="Replace"><b>Optional-Objekt</b>. Das zu ersetzende Objekt.</param>
         <summary>Markiert das Objekt.</summary>
         <remarks>To be added.</remarks>
       </Docs>

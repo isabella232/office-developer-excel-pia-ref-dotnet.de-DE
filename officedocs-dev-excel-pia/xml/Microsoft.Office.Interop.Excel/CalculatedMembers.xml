@@ -1,5 +1,5 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006048" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fc245e92c85150517fd12e026c41809f81cc10e575c90e1dd6b0210fb3fef8b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506631" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedMembers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedMembers&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> in der angegebenen PivotTable.</summary>
-    <remarks><para>Jedes <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> Objekt stellt ein berechnetes Element oder ein berechnetes Measure dar.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekts, um eine Auflistung <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> zurückzukehren.</para>
+    <summary>Eine Auflistung aller Objekte in <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> der angegebenen PivotTable.</summary>
+    <remarks><para>Jedes <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> Objekt stellt ein berechnetes Element oder ein berechnetes Maß dar.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekts, um eine Auflistung <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -96,12 +96,12 @@
       <Docs>
         <param name="Name"><b>String</b> erforderlich. Der Name des berechneten Elements.</param>
         <param name="Formula"><b>String</b> erforderlich. Die Formel des berechneten Elements.</param>
-        <param name="SolveOrder">Optionales <b>Objekt</b>. Die Lösungsreihenfolge für das berechnete Element.</param>
-        <param name="Type">Optionales <b>Objekt</b>. Der Typ des berechneten Elements.</param>
+        <param name="SolveOrder"><b>Optional-Objekt</b>. Die Lösungsreihenfolge für das berechnete Element.</param>
+        <param name="Type"><b>Optional-Objekt</b>. Der Typ des berechneten Elements.</param>
         <summary>Fügt ein berechnetes Feld oder ein berechnetes Element zu PivotTable hinzu.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Das <paramref name="Formula" /> Argument muss eine gültige #A0 (multidimensionaler Ausdruck) haben. Das <paramref name="Name" /> Argument muss für den OlAP (Online Analytical Processing)-Anbieter akzeptabel sein, und das Argument muss definiert <paramref name="Type" /> werden.</para>
-          <para>Wenn Sie das Argument dieser Methode auf festlegen, müssen Sie die Methode aufrufen, um die neue <paramref name="Type" /> <paramref name="xlCalculatedSet" /> <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> Feldsatz in der PivotTable sichtbar zu machen.</para>
+        <remarks><para>Das <paramref name="Formula" /> Argument muss über eine gültige MDX-Syntax (multidimensionaler Ausdruck) verfügen. Das <paramref name="Name" /> Argument muss für den OLAP-Anbieter (Online Analytical Processing) akzeptabel sein, und das Argument muss definiert <paramref name="Type" /> werden.</para>
+          <para>Wenn Sie das <paramref name="Type" /> Argument dieser Methode auf <paramref name="xlCalculatedSet" /> festlegen, müssen Sie die Methode <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> aufrufen, damit der neue Feldsatz in der PivotTable sichtbar wird.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -179,26 +179,26 @@
         <param name="Formula">Die Formel des berechneten Elements.</param>
         <param name="SolveOrder">Die Lösungsreihenfolge für das berechnete Element.</param>
         <param name="Type">Der Typ des berechneten Elements.</param>
-        <param name="DisplayFolder">Ein Ordner, der zum Anzeigen berechneter Measures vorhanden ist.</param>
-        <param name="MeasureGroup">Die Gruppe, zu der das berechnete Gehört.</param>
-        <param name="ParentHierarchy">Der übergeordnete Pfad des <b>ParentMember -Elements.</b></param>
+        <param name="DisplayFolder">Ein Ordner, der vorhanden ist, um berechnete Kennzahlen anzuzeigen.</param>
+        <param name="MeasureGroup">Die Gruppe, zu der die berechnete Gruppe gehört.</param>
+        <param name="ParentHierarchy">Der übergeordnete Pfad des <b>ParentMember -Objekts.</b></param>
         <param name="ParentMember">Das übergeordnete Element des berechneten Elements.</param>
         <param name="NumberFormat">Das Format der Zahlen, die für berechnete Elemente verwendet werden.</param>
         <summary>Fügt ein berechnetes Feld oder ein berechnetes Element zu PivotTable hinzu.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Das <b>#A0</b> muss eine gültige #A1 (multidimensionaler Ausdruck) haben. Das <b>Argument "Name"</b> muss für den OlAP (Online Analytical Processing)-Anbieter akzeptabel sein.</para>
+        <remarks><para>Das <b>Formula-Argument</b> muss über eine gültige MDX-Syntax (multidimensionaler Ausdruck) verfügen. Das <b>Argument "Name"</b> muss für den OLAP-Anbieter (Online Analytical Processing) akzeptabel sein.</para>
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder</b>: Anzeigeordner sind nur für berechnete Measures gültig. Sie sind für berechnete Elemente nicht gültig. Die Zeichenfolge kann Semikolons enthalten; in sie ein. Semikolons kennzeichnen mehrere Anzeigeordner. Wenn Sie beispielsweise die Zeichenfolge "my folder1;myfolder2" verwenden, wird das berechnete Measure in zwei Anzeigeordnern mit dem Namen "myfolder1" und "myfolder2" angezeigt. Die Zeichenfolge kann umgekehrte Schrägstriche \haben. Dadurch wird ein hierarchischer Pfad für den Anzeigeordner bestimmt. Wenn Sie z. B. die Zeichenfolge "welcome\to\seattle" verwenden, gibt es einen Anzeigeordner namens "Welcome", der einen Anzeigeordner mit dem Namen "seattle" enthält. Anzeigeordner sind virtuelle Ordner.Sie sind nicht wirklich im Sinne von Systemordnern vorhanden. Sie sind nur zum Anzeigen der berechneten Measures vorhanden.</description>
+                <b>DisplayFolder:</b>Anzeigeordner sind nur für berechnete Kennzahlen gültig. Sie sind für berechnete Elemente ungültig. Die Zeichenfolge kann Semikolons haben; darin. Semikolons bestimmen mehrere Anzeigeordner. Wenn Sie beispielsweise die Zeichenfolge my folder1;myfolder2 verwenden, wird das berechnete Maß in zwei Anzeigeordnern mit dem Namen myfolder1 und myfolder2 angezeigt. Die Zeichenfolge kann umgekehrte Schrägstriche \aufweisen. Dadurch wird ein hierarchischer Pfad für den Anzeigeordner festgelegt. Wenn Sie z. B. die Zeichenfolge "welcome\to\seattle" verwenden, wird ein Anzeigeordner namens "Willkommen" angezeigt, der einen Anzeigeordner mit dem Namen Seattle enthält. Anzeigeordner sind virtuelle Ordner.Sie sind nicht wirklich in demselben Sinne vorhanden, wie wir systemordner denken. Sie dienen nur zum Anzeigen der berechneten Kennzahlen.</description>
             </item>
             <item>
               <description>
-                <b>NumberFormat:</b>Die Zahlenformate können nur durch Makros festgelegt werden. Es gibt keine Benutzeroberfläche zum Festlegen. Dies ist die einzige Eigenschaft, die nicht über die Benutzeroberfläche festgelegt werden kann. Der Typ ist immer <b>xlNumberFormatTypeDefault,</b> wenn ein berechnetes Element über die Benutzeroberfläche erstellt wird. Die Zahlenformate sind nur für berechnete Elemente gültig. Sie sind für berechnete Measures nicht gültig.</description>
+                <b>NumberFormat:</b>Die Zahlenformate können nur durch Makros festgelegt werden. Es gibt keine Benutzeroberfläche zum Festlegen dieser Elemente. Dies ist die einzige Eigenschaft, die nicht über die Benutzeroberfläche festgelegt werden kann. Der Typ ist immer <b>xlNumberFormatTypeDefault,</b> wenn ein berechnetes Element über die Benutzeroberfläche erstellt wird. Die Zahlenformate sind nur für berechnete Elemente gültig. Sie sind nicht gültig für berechnete Kennzahlen.</description>
             </item>
             <item>
               <description>
-                <b>ParentHierarchy:</b>Die übergeordnete Hierarchie kann eine beliebige gültige MDX-Hierarchie sein. Übergeordnete Hierarchien sind nur für berechnete Elemente gültig. Sie sind für berechnete Measures nicht gültig. Wenn ein übergeordnetes Element ausgewählt wird, das sich in einer anderen übergeordneten Hierarchie befindet, wird die übergeordnete Hierarchie automatisch so geändert, dass sie der übergeordneten Hierarchie des übergeordneten Elements entsprechen.</description>
+                <b>ParentHierarchy:</b>Die übergeordnete Hierarchie kann eine beliebige gültige MDX-Hierarchie sein. Übergeordnete Hierarchien sind nur für berechnete Elemente gültig. Sie sind nicht gültig für berechnete Kennzahlen. Wenn ein übergeordnetes Element ausgewählt wird, das sich in einer anderen übergeordneten Hierarchie befindet, wird die übergeordnete Hierarchie automatisch so geändert, dass sie der übergeordneten Hierarchie des übergeordneten Elements entspricht.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -227,7 +227,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,7 +286,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -348,7 +348,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

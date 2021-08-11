@@ -1,5 +1,5 @@
 <Type Name="SparklineGroup" FullName="Microsoft.Office.Interop.Excel.SparklineGroup">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ba984506dbd7cd1c005762dfefbca8ba4bc4260a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009898" /></Metadata><TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fcdd64382b050f01739bf0a1360548d39c9139fadf884f6096a31ec42ec993a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517075" /></Metadata><TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparklineGroup implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparklineGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparklineGroup&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Gruppe von Sparklines dar.</summary>
-    <remarks><para>Das Objekt kann mehrere Sparklines enthalten und enthält die Eigenschafteneinstellungen für die Gruppe, z. B. <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> Farb- und Achseneinstellungen. Jede Sparkline wird durch ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> dargestellt.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> die Methode zum Hinzufügen oder Entfernen von Sparklines aus der Sparklinegruppe. Verwenden Sie die Methode, um die Position der Sparkline zu ändern, und verwenden Sie die Methode, um den Bereich <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> der Quelldaten zu ändern.</para>
+    <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> Objekt kann mehrere Sparklines enthalten und enthält die Eigenschafteneinstellungen für die Gruppe, z. B. Farb- und Achseneinstellungen. Jede Sparkline wird durch ein <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> Objekt dargestellt.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> Methode, um Sparklines der Sparklinegruppe hinzuzufügen oder daraus zu entfernen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> Methode, um die Position der Sparkline zu ändern, und verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> Methode, um den Bereich der Quelldaten zu ändern.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -54,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, das <see cref="T:Microsoft.Office.Interop.Excel.Application" /> die Microsoft Excel-Anwendung darstellt. Bei Verwendung mit einem Objektbezeichner gibt diese Eigenschaft ein Objekt zurück, das den Ersteller <see cref="T:Microsoft.Office.Interop.Excel.Application" /> des angegebenen Objekts darstellt.</summary>
+        <summary>Wenn diese Eigenschaft ohne Einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, <see cref="T:Microsoft.Office.Interop.Excel.Application" /> das die Microsoft Excel Anwendung darstellt. Bei Verwendung mit einem Objektbezeichner gibt diese Eigenschaft ein Objekt zurück, <see cref="T:Microsoft.Office.Interop.Excel.Application" /> das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para> </para></remarks>
@@ -83,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkAxes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft das zugeordnete Objekt <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> ab.</summary>
+        <summary>Ruft das zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> Objekt ab.</summary>
         <value>Das zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> Objekt.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para> </para></remarks>
@@ -144,7 +144,7 @@
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der dieses Objekt erstellt wurde. <b></b></summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der dieses Objekt erstellt wurde. <b></b></value>
         <remarks><para>Read-only <b>lang</b>.</para>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Eigenschaft wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen aus vier Zeichen großen <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh vorgesehen, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -176,10 +176,10 @@
       <Docs>
         <summary>Dient zum Abrufen oder Festlegen des Datumsbereich der Sparklinegruppe.</summary>
         <value>Der Datumsbereich der Sparklinegruppe.</value>
-        <remarks><para>Raed/Write.</para>
+        <remarks><para>Raed/write.</para>
           <para>Legen Sie diese Eigenschaft zum Löschen des Datumsbereichs auf eine leere Zeichenfolge fest.</para>
           <para>Der Datumsbereich muss fortlaufend und eindimensional sein.</para>
-          <para>Der Datumsbereich kann sich auf einem anderen Blatt als dem Blatt und den <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> Eigenschaften <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> befinden.</para>
+          <para>Der Datumsbereich kann sich auf einem anderen Blatt als das und die <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> Eigenschaften befinden.</para>
           <para>Leere Zellen und Nichtdatumswerte im Datumsbereich werden nicht angezeigt.</para>
           <para> </para></remarks>
       </Docs>
@@ -235,9 +235,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDisplayBlanksAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, wie leere Zellen in einem Diagramm dargestellt werden.</summary>
-        <value>Gibt an, wie leere Zellen in einem Diagramm dargestellt werden.</value>
-        <remarks><para>Diese Eigenschaft kann eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> sein. Lese-/Schreibzugriff.</para>
+        <summary>Ruft ab oder legt fest, wie leere Zellen in einem Diagramm gezeichnet werden.</summary>
+        <value>Gibt an, wie leere Zellen in einem Diagramm gezeichnet werden.</value>
+        <remarks><para>Diese Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> Konstanten sein. Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -267,8 +267,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, ob ausgeblendete Zellen in der Sparklinegruppe formatiert werden.</summary>
-        <value><b>true,</b> wenn ausgeblendete Zellen in der Sparklinegruppe formatiert werden; andernfalls <b>false</b>.</value>
+        <summary>Gibt an, ob ausgeblendete Zellen in der Sparklinegruppe gezeichnet werden.</summary>
+        <value><b>true,</b> wenn ausgeblendete Zellen in der Sparklinegruppe gezeichnet werden; andernfalls <b>false</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>
             <b>true,</b> wenn ausgeblendete Zellen in der Sparklinegruppe angezeigt werden.</para>
@@ -334,7 +334,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Indexwert der Sparkline.</param>
-        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> zurück.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> Objekt zurück.</summary>
         <value>Gibt <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -397,14 +397,14 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft das Objekt ab, das die Position der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Sparklinegruppe darstellt, oder legt dieses fest.</summary>
+        <summary>Dient zum Abrufen oder Festlegen des <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekts, das die Position der Sparklinegruppe darstellt.</summary>
         <value>Das <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, das die Position der Sparklinegruppe darstellt.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Die Position aller Sparklines in einer Sparklinegruppe muss sich auf demselben Blatt befinden, aber die Quelldaten der Sparklinegruppe können sich auf einem anderen Blatt oder in einer anderen Arbeitsmappe befinden.</para>
-          <para>Die Größe des Bereichs, der die Eigenschaft darstellt, muss der Anzahl der Zeilen oder Spalten in der <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> Eigenschaft für das Objekt <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> entspricht.</para>
+          <para>Die Größe des Bereichs, der die Eigenschaft darstellt, <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> muss der Anzahl der Zeilen oder Spalten in der Eigenschaft für das Objekt <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> entsprechen.</para>
           <para>Ein zu einer Sparklinegruppe gehörender zusammenhängender Bereich kann nur eindimensional sein. Ist der Bereich nicht zusammenhängend, muss jede Zelle einzeln angegeben werden.</para>
           <para>
-            <b>Hinweis:</b>Verwenden Sie die Methode nicht, um einen nicht kontinuierlichen Bereich zu erstellen, da <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> die Methode einen einzelnen <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> Bereichsverweis zurückgibt.</para>
+            <b>Hinweis:</b>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> Methode nicht, um einen nicht kontinuierlichen Bereich zu erstellen, da die <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> Methode einen einzelnen Bereichsverweis zurückgibt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -489,8 +489,8 @@
         <Parameter Name="Location" Type="Microsoft.Office.Interop.Excel.Range" />
       </Parameters>
       <Docs>
-        <param name="Location">Der, <see cref="T:Microsoft.Office.Interop.Excel.Range" /> der die Position der Sparklinegruppe darstellt.</param>
-        <summary>Legt das zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt fest, um die Position der Sparklinegruppe zu ändern.</summary>
+        <param name="Location">Die, <see cref="T:Microsoft.Office.Interop.Excel.Range" /> die die Position der Sparklinegruppe darstellt.</param>
+        <summary>Legt fest, dass das zugeordnete <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt die Position der Sparklinegruppe ändert.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -577,11 +577,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSparklineRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, wie die Sparkline zu plotten, wenn sich die Daten, auf denen sie basiert, in einem quadratischen Bereich befindet.</summary>
+        <summary>Ruft ab oder legt fest, wie die Sparkline gezeichnet wird, wenn sich die Daten, auf denen sie basiert, in einem quadratischen Bereich befinden.</summary>
         <value>Gibt an, wie die Sparkline gezeichnet wird, wenn die Daten, auf denen sie basiert, in einem quadratischen Bereich liegen.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Diese Eigenschaft kann nur festgelegt werden, wenn die Daten, auf denen die Sparkline basiert, in einem Bereich mit quadratischer Form vorliegen, z. B. wenn die Daten im Bereich A1:B2 liegen.</para>
-          <para>Der Standardwert für sp-Daten in einem quadratischen Bereich ist, die Daten nach Zeilen ( ) zu <see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" /> plotten.</para>
+          <para>Der Standardwert für sp-Daten in einem quadratischen Bereich besteht darin, die Daten nach Zeilen ( ) zu <see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" /> zeichnen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -610,8 +610,8 @@
       <Docs>
         <summary>Ruft die Position des angegebenen Knotens als Koordinatenpaar ab. Die einzelnen Koordinaten werden in Punkt angegeben.</summary>
         <value>Die Position des angegebenen Knotens als Koordinatenpaar.</value>
-        <remarks><para>Ein Koordinatenpaar ist ein Wertepaar, das die X- und Y-Koordinaten eines Punkts darstellt, der in einem zweidimensionalen Array gespeichert ist, das Koordinaten für viele Punkte enthalten kann.</para>
-          <para>Diese Eigenschaft ist schreibgeschützt. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> die Methode, um den Wert dieser Eigenschaft festlegen.</para>
+        <remarks><para>Ein Koordinatenpaar ist ein Wertepaar, das die X- und Y-Koordinaten eines Punkts darstellt, die in einem zweidimensionalen Array gespeichert sind, das Koordinaten für viele Punkte enthalten kann.</para>
+          <para>Diese Eigenschaft ist schreibgeschützt. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> Methode, um den Wert dieser Eigenschaft festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -638,7 +638,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> Objekt ab, das die Hauptreihenfarbe für die Sparklinegruppe darstellt.</summary>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> Objekt ab, das die Farbe der Hauptreihe für die Sparklinegruppe darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> Objekt, das die Hauptreihenfarbe für die Sparklinegruppe darstellt.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para> </para></remarks>
@@ -670,10 +670,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Bereich ab, der die Quelldaten für die Sparklinegruppe enthält, oder legt den Bereich fest.</summary>
+        <summary>Ruft den Bereich ab, der die Quelldaten für die Sparklinegruppe enthält, oder legt diesen fest.</summary>
         <value>Der Bereich, der die Quelldaten für die Sparklinegruppe enthält.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Die Anzahl der Zeilen oder Spalten im Quelldatenbereich muss der Anzahl der Zellen im <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> Eigenschaftenbereich entspricht.</para>
+          <para>Die Anzahl der Zeilen oder Spalten im Quelldatenbereich muss der Anzahl der Zellen im <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> Eigenschaftenbereich entsprechen.</para>
           <para>Der Datenquellenbereich für eine einzelne Sparkline in der Sparklinegruppe muss zusammenhängend sein.</para>
           <para> </para></remarks>
       </Docs>
@@ -705,7 +705,7 @@
       </ReturnValue>
       <Docs>
         <summary>Dient zum Abrufen oder Festlegen Sparklinetyps der Gruppe.</summary>
-        <value>Der Typ der Sparkline für die Gruppe.</value>
+        <value>Der Sparklinetyp für die Gruppe.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>

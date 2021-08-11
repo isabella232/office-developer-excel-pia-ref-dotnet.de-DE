@@ -1,5 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006230" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35dcac565514a9ae9dedbb2922b0f6e42ecdc23a946d510190b6725ab509a1b5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506722" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Enthält Microsoft Excel AutoCorrect-Attribute (Großschreibung von Tagen, Korrektur von zwei groß geschriebenen Anfangsbuchstaben, automatische Korrekturliste usw.).</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> Eigenschaft, um das <b>AutoCorrect -Objekt zurück.</b></para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> Eigenschaft, um das <b>AutoCorrect-Objekt</b> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
       <Docs>
         <summary>Ein <b>boolescher</b> Wert, der angibt, ob die automatische Erweiterung für Listen aktiviert ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie eine Zelle einer leeren Zeile oder Spalte neben einer Liste eingeben, wird die Liste erweitert, um diese Zeile oder Spalte hinzuzufügen, wenn die automatische Erweiterung aktiviert ist.</para>
+        <remarks><para>Wenn Sie eine Zelle einer leeren Zeile oder Spalte neben einer Liste eingeben, wird die Liste erweitert, um diese Zeile oder Spalte einzuschließen, wenn die automatische Erweiterung aktiviert ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Betrifft die Erstellung von berechneten Spalten, die durch automatische Ausfülllisten erstellt werden. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <summary>Betrifft die Erstellung von berechneten Spalten, die durch automatische Ausfülllisten erstellt werden. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Die Eigenschaft wirkt sich nicht auf vorhandene berechnete Spalten oder auf berechnete Spalten, die ohne automatische Ausfülloption erstellt wurden, aus.</para>
           <para> </para></remarks>
       </Docs>
@@ -268,7 +268,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -329,7 +329,7 @@
       <Docs>
         <summary>Ermöglicht es Benutzern, die Schaltfläche AutoKorrektur-Optionen anzuzeigen oder auszublenden. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>DisplayAutoCorrectOptions</b>-Eigenschaft ist eine Einstellung, die für alle Microsoft Office-Komponenten gilt. Wenn Sie diese Eigenschaft in Microsoft Excel ändern, wirkt sich dies auch auf die anderen Office-Anwendungen aus.</para>
+        <remarks><para>Die <b>DisplayAutoCorrectOptions</b>-Eigenschaft gilt für das gesamte Microsoft Office. Wenn Sie diese Eigenschaft in Microsoft Excel ändern, wirkt sich dies auch auf die anderen Office-Anwendungen aus.</para>
           <para>In Excel wird die Schaltfläche AutoKorrektur-Optionen nur bei der automatischen Erstellung eines Hyperlinks angezeigt.</para>
           <para> </para></remarks>
       </Docs>
@@ -391,21 +391,21 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b>. Der Zeilenindex der Matrix der AutoKorrektur-Ersetzungen, die zurückgegeben werden sollen. Das erste Element ist der Text in Spalte 1, das zweite Element der Text in Spalte 2.</param>
+        <param name="Index"><b>Optional-Objekt</b>. Der Zeilenindex der Matrix der AutoKorrektur-Ersetzungen, die zurückgegeben werden sollen. Das erste Element ist der Text in Spalte 1, das zweite Element der Text in Spalte 2.</param>
         <summary>Gibt das Array von AutoKorrektur-Ersetzungen zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn <paramref name="Index" /> nicht angegeben, gibt diese Methode ein zweidimensionales Array zurück. Jede Zeile in der Matrix enthält eine Ersetzung, wie in der folgenden Tabelle dargestellt.</para>
+        <remarks><para>Wenn <paramref name="Index" /> keine Angabe erfolgt, gibt diese Methode ein zweidimensionales Array zurück. Jede Zeile in der Matrix enthält eine Ersetzung, wie in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
-              <term>1 </term>
+              <term>1</term>
               <description>Der zu ersetzende Text</description>
             </item>
             <item>
-              <term>2 </term>
+              <term>2</term>
               <description>Der Ersatztext</description>
             </item>
           </list>
-          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> die Methode, um der Ersetzungsliste einen Eintrag hinzuzufügen.</para>
+          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> Methode, um der Ersetzungsliste einen Eintrag hinzuzufügen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
