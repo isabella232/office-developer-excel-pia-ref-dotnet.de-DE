@@ -1,5 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999763" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7e8650ba6cb179a124139c37ac5fcf0524fd83bf176e8e6aa27ea8ab5c37af68" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506274" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -22,13 +22,13 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes installiertes oder nicht installiertes Add-In dar.</summary>
-    <remarks><para>Das <b>AddIn -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> Auflistung. Die <b>AddIns</b>-Auflistung enthält eine Liste aller installierten und nicht installierten Add-Ins, die in Microsoft Excel zur Verfügung stehen. Diese Liste entspricht der Liste der Add-Ins, die im Dialogfeld Add-Ins (Menü Extras) angezeigt werden.</para>
-      <para>Verwenden <b>Sie AddIns</b>( <paramref name="index" /> ), wobei der Add-In-Titel oder die Indexnummer, um ein <paramref name="index" /> einzelnes <b>AddIn -Objekt zurück.</b></para>
-      <para>Verwechseln Sie nicht den Add-In-Titel, der im Dialogfeld Add-Ins angezeigt wird, mit dem Add-In-Namen, bei dem es sich um den Dateinamen des Add-Ins handelt. Sie müssen den Add-In-Titel genau so buchstabieren, wie er im Dialogfeld Add-Ins geschrieben ist, aber die Groß-/Schreibweise muss nicht übereinstimmen.</para>
-      <para>Die Indexnummer stellt die Position des Add-Ins im Feld "Verfügbare Add-Ins" im Dialogfeld Add-Ins dar.</para>
-      <para>Die Methode fügt ein Add-In zur Liste der verfügbaren <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> Add-Ins hinzu, installiert das Add-In jedoch nicht. Legen Sie <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> die Eigenschaft des Add-Ins auf <b>"True" (True)</b> für die Installation des Add-Ins. Wenn Sie ein Add-In installieren möchten, das nicht in der Liste verfügbarer Add-Ins angezeigt wird, müssen Sie zuerst die <b>Add</b>-Methode verwenden und anschließend die <b>Installed</b>-Eigenschaft festlegen. Dies kann in einem einzigen Schritt geschehen.</para>
-      <para>Verwenden <b>Sie Arbeitsmappen</b>( <paramref name="index" /> ), wobei der Add-In-Dateiname (kein Titel) ist, um einen Verweis auf die Arbeitsmappe zurückgibt, die einem geladenen <paramref name="index" /> Add-In entspricht. Sie müssen den Dateinamen verwenden, da geladene Add-Ins normalerweise nicht in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> angezeigt werden.</para>
-      <para>Wenn die <b>Installed -Eigenschaft</b> <b>True</b>zurückgibt, aber Aufrufe von Funktionen im Add-In weiterhin fehlschlagen, wird das Add-in möglicherweise nicht tatsächlich geladen. Dies liegt daran, dass das <b>Addin</b> -Objekt das Vorhandensein und den installierten Status des Add-Ins, aber nicht den tatsächlichen Inhalt der Add-In-Arbeitsmappe darstellt. Um zu gewährleisten, dass ein installiertes Add-In geladen wird, sollten Sie die Add-In-Arbeitsmappe öffnen.</para>
+    <remarks><para>Das <b>AddIn-Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> Auflistung. Die <b>AddIns</b>-Auflistung enthält eine Liste aller installierten und nicht installierten Add-Ins, die in Microsoft Excel zur Verfügung stehen. Diese Liste entspricht der Liste der Add-Ins, die im Dialogfeld Add-Ins (Menü Extras) angezeigt werden.</para>
+      <para>Verwenden Sie <b>AddIns</b>( <paramref name="index" /> ), wobei der <paramref name="index" /> Add-In-Titel oder die Indexnummer ist, um ein einzelnes <b>AddIn-Objekt</b> zurückzugeben.</para>
+      <para>Verwechseln Sie den Add-In-Titel, der im Dialogfeld Add-Ins angezeigt wird, nicht mit dem Add-In-Namen, der den Dateinamen des Add-Ins darstellt. Sie müssen den Add-In-Titel genau so schreiben, wie er im Dialogfeld Add-Ins geschrieben ist, aber die Groß-/Kleinschreibung muss nicht übereinstimmen.</para>
+      <para>Die Indexnummer stellt die Position des Add-Ins im verfügbaren Feld "Add-Ins" im Dialogfeld Add-Ins dar.</para>
+      <para>Die <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> Methode fügt der Liste der verfügbaren Add-Ins ein Add-In hinzu, installiert das Add-In jedoch nicht. Legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> Eigenschaft des Add-Ins auf <b>"True"</b> fest, um das Add-In zu installieren. Wenn Sie ein Add-In installieren möchten, das nicht in der Liste verfügbarer Add-Ins angezeigt wird, müssen Sie zuerst die <b>Add</b>-Methode verwenden und anschließend die <b>Installed</b>-Eigenschaft festlegen. Dies kann in einem einzigen Schritt erfolgen.</para>
+      <para>Verwenden Sie <b>Arbeitsmappen</b>( <paramref name="index" /> ), wobei der <paramref name="index" /> Add-In-Dateiname (kein Titel) ist, um einen Verweis auf die Arbeitsmappe zurückzugeben, die einem geladenen Add-In entspricht. Sie müssen den Dateinamen verwenden, da geladene Add-Ins normalerweise nicht in der Auflistung angezeigt <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> werden.</para>
+      <para>Wenn die <b>Installed-Eigenschaft</b> <b>True</b>zurückgibt, Aufrufe von Funktionen im Add-In jedoch weiterhin fehlschlagen, wird das Add-In möglicherweise nicht tatsächlich geladen. Dies liegt daran, dass das <b>Addin-Objekt</b> das Vorhandensein und den Installationsstatus des Add-Ins darstellt, aber nicht den tatsächlichen Inhalt der Add-In-Arbeitsmappe darstellt. Um sicherzustellen, dass ein installiertes Add-In geladen wird, sollten Sie die Add-In-Arbeitsmappe öffnen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +176,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -205,7 +205,7 @@
       <Docs>
         <summary>Diese Eigenschaft gibt den Namen des Objekts einschließlich Pfadangabe als Zeichenfolge zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft entspricht der Eigenschaft, gefolgt vom aktuellen Dateisystemtrennzeichen, <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> Eigenschaft.</para>
+        <remarks><para>Diese Eigenschaft entspricht der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> Eigenschaft, gefolgt vom aktuellen Dateisystemtrennzeichen, gefolgt von der <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> Eigenschaft.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -235,7 +235,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Add-in installiert ist.</summary>
+        <summary><b>True,</b> wenn das Add-In installiert ist.</summary>
         <value>To be added.</value>
         <remarks><para>Wird diese Eigenschaft auf <b>True</b> festgelegt wird, so wird das Add-In installiert und seine Auto_installieren-Funktionen werden aufgerufen. Wird diese Eigenschaft hingegen auf <b>False</b> festgelegt, wird das Add-In entfernt und seine Auto_entfernen-Funktionen werden aufgerufen.</para>
           <para> </para></remarks>
@@ -264,10 +264,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab, ob das Add-in derzeit geöffnet ist.</summary>
-        <value><b>true,</b> wenn das #A0 derzeit geöffnet ist; andernfalls <b>false</b>.</value>
+        <summary>Ruft ab, ob das Add-In derzeit geöffnet ist.</summary>
+        <value><b>true,</b> wenn das Add-In derzeit geöffnet ist; andernfalls <b>false</b>.</value>
         <remarks><para>
-            <b>boolean</b> Schreibgeschützt.</para>
+            <b>Boolescher Wert</b> Schreibgeschützt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -381,7 +381,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den vollständigen Pfad zur Anwendung ohne das endgültige Trennzeichen und den Namen der Anwendung zurück.</summary>
+        <summary>Gibt den vollständigen Pfad zur Anwendung zurück, ohne das endgültige Trennzeichen und den Namen der Anwendung.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="ModelChanges" FullName="Microsoft.Office.Interop.Excel.ModelChanges">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9f59d830c9bcb2ca9333087af48cbeb26d3d390d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011760" /></Metadata><TypeSignature Language="C#" Value="public interface ModelChanges" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eee83a62542a83e8646f09d1092e0b4d17f70147a5595e69fb18280950ee1dfd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514996" /></Metadata><TypeSignature Language="C#" Value="public interface ModelChanges" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelChanges" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelChanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelChanges" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt Änderungen am Datenmodell dar.</summary>
-    <remarks><para>Das <b>ModelChanges -Objekt</b> enthält Informationen darüber, welche Änderungen am Datenmodell vorgenommen wurden, wenn das Ereignis nach einem <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> Modellvorgang auftritt. Wenn Excel Änderungen an dem Datenmodell vornimmt, können mehrere Änderungen in derselben Operation vorgenommen werden, und das  <b>ModelChanges</b>-Objekt enthält Informationen zu allen Änderungen, die in einem Modellvorgang vorgenommen wurden.</para>
+    <summary>Stellt Änderungen dar, die am Datenmodell vorgenommen wurden.</summary>
+    <remarks><para>Das <b>ModelChanges -Objekt</b> enthält Informationen darüber, welche Änderungen am Datenmodell vorgenommen wurden, wenn das <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> Ereignis nach einem Modellvorgang auftritt. Wenn Excel Änderungen an dem Datenmodell vornimmt, können mehrere Änderungen in derselben Operation vorgenommen werden, und das  <b>ModelChanges</b>-Objekt enthält Informationen zu allen Änderungen, die in einem Modellvorgang vorgenommen wurden.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Auflistung von Objekten zurück, die Tabellen- und Spaltennamen aller Tabellenspalten darstellen, für die der Datentyp im Rahmen eines Modellvorgangs geändert wurde (möglicherweise werden in Zukunft weitere Änderungstypen <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> hinzugefügt). Schreibgeschützt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> Objekten zurück, die Tabellennamen und Spaltennamen aller Tabellenspalten darstellen, für die der Datentyp geändert wurde (kann in Zukunft weitere Arten von Änderungen hier hinzufügen) als Teil eines Modellvorgangs. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> Auflistung von Objekten zurück, die alle Spalten darstellen, die im Rahmen eines Modellvorgangs <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> gelöscht wurden. Schreibgeschützt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> Objekten zurück, die alle Spalten darstellen, die als Teil eines Modellvorgangs gelöscht wurden. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>Ganze</b> Zahl (<b>int</b> in C#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b> -Wert (<b>int</b> in C#).</summary>
         <value>To be added.</value>
         <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
           <para> </para></remarks>
@@ -190,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelMeasureNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" /> Auflistung von Objekten zurück, die alle Spalten darstellen, die im Rahmen eines Modellvorgangs <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" /> gelöscht wurden. Schreibgeschützt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" /> Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" /> Objekten zurück, die alle Spalten darstellen, die als Teil eines Modellvorgangs gelöscht wurden. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,7 +218,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Wert vom Typ Object</b> zurück, der das übergeordnete Objekt des angegebenen <b>ModelChanges -Objekts</b> darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert vom Typ <b> Object </b> zurück, der das übergeordnete Objekt des <b>angegebenen ModelChanges-Objekts</b> darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bei <b>"True"</b>wurde eine oder mehrere Beziehungen im Modell im Rahmen eines Modellvorgangs geändert (hinzugefügt, gelöscht oder geändert). Bei <b>"False"</b>wurden während des Vorgangs keine Beziehungen geändert. <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt.</summary>
+        <summary>Wenn <b></b> True festgelegt wurde, wurden eine oder mehrere Beziehungen im Modell als Teil eines Modellvorgangs geändert (hinzugefügt, gelöscht oder geändert). Bei <b> False </b>wurden während des Vorgangs keine Beziehungen geändert. <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,7 +276,7 @@
       <Docs>
         <summary>Die Quelle des Datenmodells.</summary>
         <value>XlModelChangeSource</value>
-        <remarks><para>Die Quelle kann Entweder Excel oder ein PowerPivot-Add-In sein.</para>
+        <remarks><para>Die Quelle kann entweder Excel oder ein PowerPivot-Add-In sein.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNameChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Auflistung von Objekten zurück, die alte und neue Namen aller Tabellen darstellen, die im Modell im Rahmen eines Modellvorgangs <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> umbenannt wurden. Schreibgeschützt.</summary>
+        <summary>Gibt eine Auflistung von Objekten zurück, die <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> alte und neue Namen aller Tabellen <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> darstellen, die im Modell als Teil eines Modellvorgangs umbenannt wurden. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +331,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Auflistung von Tabellennamen als Zeichenfolgen zurück, die alle Tabellen darstellen, die dem Modell als Teil eines <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> Modellvorgangs hinzugefügt wurden. Schreibgeschützt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> Auflistung von Tabellennamen als Zeichenfolgen zurück, die alle Tabellen darstellen, die dem Modell als Teil eines Modellvorgangs hinzugefügt wurden. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +359,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Auflistung von Tabellennamen als Zeichenfolgen zurück, die alle Tabellen darstellen, die im Rahmen eines Modellvorgangs aus dem <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> Modell gelöscht wurden. Schreibgeschützt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> Auflistung von Tabellennamen als Zeichenfolgen zurück, die alle Tabellen darstellen, die im Rahmen eines Modellvorgangs aus dem Modell gelöscht wurden. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,7 +387,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Auflistung von Tabellennamen als Zeichenfolgen zurück, die alle Tabellen darstellen, die im Rahmen eines Modellvorgangs aktualisiert <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> oder neu berechnet wurden. Schreibgeschützt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> Auflistung von Tabellennamen als Zeichenfolgen zurück, die alle Tabellen darstellen, die im Rahmen eines Modellvorgangs aktualisiert oder neu berechnet wurden. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

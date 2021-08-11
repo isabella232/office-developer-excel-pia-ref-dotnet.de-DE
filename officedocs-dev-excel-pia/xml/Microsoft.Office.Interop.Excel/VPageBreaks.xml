@@ -1,5 +1,5 @@
 <Type Name="VPageBreaks" FullName="Microsoft.Office.Interop.Excel.VPageBreaks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009366" /></Metadata><TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ba444ad7e0c53de89b205c95068cfc62b58891c41ef35a0c70383b5a3b370e5a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515451" /></Metadata><TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VPageBreaks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.VPageBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface VPageBreaks&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung vertikaler Seitenumbrüche innerhalb des Druckbereichs. Jeder vertikale Seitenwechsel wird durch ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> dargestellt.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /> Eigenschaft, um die <b>VPageBreaks -Auflistung zurück.</b> Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> Methode, um einen vertikalen Seitenwechsel hinzuzufügen.</para>
+    <summary>Eine Auflistung vertikaler Seitenumbrüche innerhalb des Druckbereichs. Jeder vertikale Seitenwechsel wird durch ein <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> Objekt dargestellt.</summary>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /> Eigenschaft, um die <b>VPageBreaks -Auflistung</b> zurückzugeben. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> Methode, um einen vertikalen Seitenwechsel hinzuzufügen.</para>
       <para>Beim Hinzufügen eines Seitenwechsels, der den Druckbereich nicht überschneidet, wird das neu hinzugefügte <b>VPageBreak</b>-Objekt nicht in der <b>VPageBreaks</b>-Auflistung für den Druckbereich angezeigt. Der Inhalt der Auflistung kann sich ändern, wenn die Größe des Druckbereichs geändert oder der Druckbereich neu definiert wird.</para>
-      <para>Wenn die Eigenschaft, Eigenschaft, Eigenschaft, Eigenschaft, Eigenschaft oder Methode in Verbindung mit der <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> <b>VPageBreaks -Eigenschaft verwendet</b> wird:</para>
+      <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" /> Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" /> Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" /> Eigenschaft, Eigenschaft, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" /> Eigenschaft oder Methode in Verbindung mit der <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> <b>VPageBreaks-Eigenschaft</b> verwendet wird:</para>
       <para>Für einen automatischen Druckbereich wird die <b>VPageBreaks</b>-Eigenschaft nur auf die Seitenumbrüche im Druckbereich angewendet.</para>
       <para>Für einen benutzerdefinierten Druckbereich mit denselben Abmessungen wird die <b>VPageBreaks</b>-Eigenschaft auf alle Seitenumbrüche angewendet.</para>
       <para> </para></remarks>
@@ -92,8 +92,8 @@
         <Parameter Name="Before" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Required <b>-Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" />-Objekt. Der Bereich, an dessen linker Seite der neue Seitenumbruch hinzugefügt wird.</param>
-        <summary>Fügt einen vertikalen Seitenumbruch hinzu. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> zurück.</summary>
+        <param name="Before"><b>Required-Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" />-Objekt. Der Bereich, an dessen linker Seite der neue Seitenumbruch hinzugefügt wird.</param>
+        <summary>Fügt einen vertikalen Seitenumbruch hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> Objekt zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +121,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,7 +180,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -242,7 +242,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

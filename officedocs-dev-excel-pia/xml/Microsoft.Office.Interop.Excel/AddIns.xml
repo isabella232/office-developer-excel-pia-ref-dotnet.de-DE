@@ -1,5 +1,5 @@
 <Type Name="AddIns" FullName="Microsoft.Office.Interop.Excel.AddIns">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="08779fe0f93d595b31e4991956a1b4a5705a2268" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999756" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1224292c59888d95620f8f578cdf0fe379643b51bbee35bef7456d223b753c48" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505959" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIns" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIns&#xA;Implements IEnumerable" />
@@ -25,11 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von Objekten, die alle in Microsoft Excel verfügbaren Add-Ins darstellt, unabhängig davon, ob sie <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> installiert sind. Diese Liste entspricht der Liste der Add-Ins, die im Dialogfeld Add-Ins (Menü Extras) angezeigt werden.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" /> Eigenschaft, um die <b>AddIns -Auflistung zurück.</b></para>
-      <para>Verwenden Sie die Methode, um der Liste der verfügbaren <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> Add-Ins ein Add-In hinzuzufügen. Die <b>Methode</b> "Add" fügt der Liste ein Add-In hinzu, installiert das Add-In jedoch nicht. Legen Sie <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> die Eigenschaft des Add-Ins auf <b>"True" (True)</b> für die Installation des Add-Ins. Wenn Sie ein Add-In installieren möchten, das nicht in der Liste verfügbarer Add-Ins angezeigt wird, müssen Sie zuerst die <b>Add</b>-Methode verwenden und anschließend die <b>Installed</b>-Eigenschaft festlegen. Dies kann in einem einzigen Schritt geschehen.</para>
-      <para>Verwenden <b>Sie AddIns</b>( <paramref name="index" /> ), wobei der Add-In-Titel oder die Indexnummer, um ein <paramref name="index" /> einzelnes <b>AddIn -Objekt zurück.</b></para>
-      <para>Verwechseln Sie nicht den Add-In-Titel, der im Dialogfeld Add-Ins angezeigt wird, mit dem Add-In-Namen, bei dem es sich um den Dateinamen des Add-Ins handelt. Sie müssen den Add-In-Titel genau so buchstabieren, wie er im Dialogfeld Add-Ins geschrieben ist, aber die Groß-/Schreibweise muss nicht übereinstimmen.</para>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> Objekten, die alle Add-Ins darstellt, die für Microsoft Excel verfügbar sind, unabhängig davon, ob sie installiert sind. Diese Liste entspricht der Liste der Add-Ins, die im Dialogfeld Add-Ins (Menü Extras) angezeigt werden.</summary>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" /> Eigenschaft, um die <b>AddIns-Auflistung</b> zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> Methode, um der Liste der verfügbaren Add-Ins ein Add-In hinzuzufügen. Die <b>Add-Methode</b> fügt der Liste ein Add-In hinzu, installiert das Add-In jedoch nicht. Legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> Eigenschaft des Add-Ins auf <b>"True"</b> fest, um das Add-In zu installieren. Wenn Sie ein Add-In installieren möchten, das nicht in der Liste verfügbarer Add-Ins angezeigt wird, müssen Sie zuerst die <b>Add</b>-Methode verwenden und anschließend die <b>Installed</b>-Eigenschaft festlegen. Dies kann in einem einzigen Schritt erfolgen.</para>
+      <para>Verwenden Sie <b>AddIns</b>( <paramref name="index" /> ), wobei der <paramref name="index" /> Add-In-Titel oder die Indexnummer ist, um ein einzelnes <b>AddIn-Objekt</b> zurückzugeben.</para>
+      <para>Verwechseln Sie den Add-In-Titel, der im Dialogfeld Add-Ins angezeigt wird, nicht mit dem Add-In-Namen, der den Dateinamen des Add-Ins darstellt. Sie müssen den Add-In-Titel genau so schreiben, wie er im Dialogfeld Add-Ins geschrieben ist, aber die Groß-/Kleinschreibung muss nicht übereinstimmen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -92,10 +92,10 @@
       </Parameters>
       <Docs>
         <param name="Filename"><b>String</b> erforderlich. Der Name der Datei mit dem Add-In, das der Liste im Add-In-Manager hinzugefügt werden soll.</param>
-        <param name="CopyFile">Optionales <b>Objekt</b>. Wird ignoriert, wenn sich die Add-In-Datei auf einer Festplatte befindet. <b>True,</b> wenn das Add-in auf Ihre Festplatte kopiert werden soll, wenn sich das Add-in auf einem Wechselmedium (Diskette oder CD) befindet. Mit dem Wert <b>False</b> wird das Add-In nicht kopiert. Wird dieses Argument nicht angegeben, wird in Microsoft Excel ein Dialogfeld angezeigt, in dem Sie die entsprechende Option auswählen können.</param>
-        <summary>Fügt der Liste der Add-Ins eine neue Add-In-Datei hinzu. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> zurück.</summary>
+        <param name="CopyFile"><b>Optional-Objekt</b>. Wird ignoriert, wenn sich die Add-In-Datei auf einer Festplatte befindet. <b>"True",</b> wenn das Add-In auf die Festplatte kopiert werden soll, wenn sich das Add-In auf einem Wechselmedium (Diskette oder Cd) befindet. Mit dem Wert <b>False</b> wird das Add-In nicht kopiert. Wird dieses Argument nicht angegeben, wird in Microsoft Excel ein Dialogfeld angezeigt, in dem Sie die entsprechende Option auswählen können.</param>
+        <summary>Fügt der Liste der Add-Ins eine neue Add-In-Datei hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Mit dieser Methode wird das neue Add-in nicht installiert. Sie müssen die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> festlegen, um das Add-in zu installieren.</para>
+        <remarks><para>Mit dieser Methode wird das neue Add-In nicht installiert. Sie müssen die <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> Eigenschaft festlegen, um das Add-In zu installieren.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +181,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -243,7 +243,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

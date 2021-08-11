@@ -1,5 +1,5 @@
 <Type Name="XPath" FullName="Microsoft.Office.Interop.Excel.XPath">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d73d2c6682dfafc4ccfddfe3f9001a4e4768bd0e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008498" /></Metadata><TypeSignature Language="C#" Value="public interface XPath" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="66e884c7bb0832220f3dd03291781b350178fc82f18b65f0b71189ba466cc067" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506008" /></Metadata><TypeSignature Language="C#" Value="public interface XPath" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XPath" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XPath" />
   <TypeSignature Language="VB.NET" Value="Public Interface XPath" />
@@ -21,10 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt einen XPath dar, der einem oder mehreren <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekten zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> wurde.</summary>
+    <summary>Stellt einen XPath dar, der einem objekt zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> wurde.</summary>
     <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> die Methode, um einen XPath einem Bereich oder einer Listenspalte zu ordnen. Die <b>SetValue</b> -Methode wird auch zum Ändern der Eigenschaften eines vorhandenen XPaths verwendet.</para>
-      <para>Verwenden Sie die Methode, um einen XPath zu entfernen, der einem Bereich oder einer <see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" /> Listenspalte zugeordnet wurde.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> Methode, um einen XPath einem Bereich oder einer Listenspalte zuzuordnen. Die <b>SetValue</b> -Methode wird auch zum Ändern der Eigenschaften eines vorhandenen XPaths verwendet.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" /> Methode, um einen XPath zu entfernen, der einem Bereich oder einer Listenspalte zugeordnet wurde.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -82,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,8 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Entfernt die Schemazuordnung aus den Zellen, die dem angegebenen XPath zugeordnet sind.</summary>
-        <remarks><para>Diese Methode kann nicht verwendet werden, um die Daten aus den Zellen zu löschen, die dem angegebenen XPath zugeordnet sind. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" /> die Methode des <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekts, um die Daten aus den Zellen zu löschen.</para>
+        <summary>Löscht die Schemazuordnung aus den Zellen, die dem angegebenen XPath zugeordnet sind.</summary>
+        <remarks><para>Diese Methode kann nicht verwendet werden, um die Daten aus den Zellen zu löschen, die dem angegebenen XPath zugeordnet sind. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" /> Methode des <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekts, um die Daten aus den Zellen zu löschen.</para>
           <para>Falls der angegebene XPath in einer XML-Liste zugeordnet ist, wird die Schemazuordnung entfernt, die Liste wird jedoch nicht aus dem Arbeitsblatt entfernt.</para>
           <para> </para></remarks>
       </Docs>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Schreibgeschützt. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></summary>
         <value>To be added.</value>
         <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
@@ -166,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> Objekt zurück, das die Schemazuordnung darstellt, die das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> enthält. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> Objekt zurück, das die Schemazuordnung darstellt, die das angegebene <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> Objekt enthält. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
           <para> </para></remarks>
@@ -223,7 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt <b>True zurück,</b> wenn das angegebene Objekt einer #A0 zugeordnet ist; gibt False zurück, wenn das <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> <b>#A1</b> einer einzelnen Zelle <b></b> zugeordnet ist. Schreibgeschützter <b>boolescher</b> Wert.</summary>
+        <summary>Gibt <b>True</b> zurück, wenn das angegebene <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> Objekt einer XML-Liste zugeordnet ist. <b>Gibt False</b> zurück, wenn das <b>XPath-Objekt</b> einer einzelnen Zelle zugeordnet ist. Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
         <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
           <para> </para></remarks>
@@ -254,11 +254,11 @@
         <Parameter Name="Repeating" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Map"><see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />Erforderlich. Die Schemazuordnung, die Informationen zum <b>XPath -Objekt</b> enthält.</param>
+        <param name="Map"><see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />Erforderlich. Die Schemazuordnung, die Informationen zum <b>XPath-Objekt</b> enthält.</param>
         <param name="XPath"><b>String</b> erforderlich. Eine gültige XPath-Anweisung.</param>
-        <param name="SelectionNamespace">Optionales <b>Objekt</b>. Gibt alle Namespacepräfixe an, die im Argument verwendet <paramref name="XPath" /> werden. Dieses Argument kann ausgelassen werden, wenn das <b>XPath</b> -Objekt keine Präfixe enthält oder wenn das <b>XPath</b> -Objekt die Microsoft Excel-Präfixe verwendet.</param>
+        <param name="SelectionNamespace"><b>Optional-Objekt</b>. Gibt alle im Argument verwendeten Namespacepräfixe <paramref name="XPath" /> an. Dieses Argument kann weggelassen werden, wenn das <b>XPath-Objekt</b> keine Präfixe enthält oder wenn das <b>XPath-Objekt</b> die präfixe Microsoft Excel verwendet.</param>
         <param name="Repeating">Optionaler <b>Boolean</b>-Wert. Gibt an, ob das <b>XPath</b>-Objekt an eine Spalte in einer XML-Liste gebunden oder einer einzelnen Zelle zugeordnet werden soll. Legen Sie diesen Wert auf <b>True</b> fest, um das <b>XPath</b>-Objekt an eine Spalte in einer XML-Liste zu binden.</param>
-        <summary>Ordnet das angegebene <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> Objekt einem Objekt oder einer Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> zu. Wenn das <b>XPath</b>-Objekt zuvor dem <b>ListColumn</b>-Objekt oder der <b>Range</b>-Auflistung zugeordnet war, legt die <b>SetValue</b>-Methode die Eigenschaften des <b>XPath</b>-Objekts fest.</summary>
+        <summary>Karten das angegebene <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> Objekt einem Objekt oder einer <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Range" /> zu. Wenn das <b>XPath</b>-Objekt zuvor dem <b>ListColumn</b>-Objekt oder der <b>Range</b>-Auflistung zugeordnet war, legt die <b>SetValue</b>-Methode die Eigenschaften des <b>XPath</b>-Objekts fest.</summary>
         <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
           <para> </para></remarks>
       </Docs>
