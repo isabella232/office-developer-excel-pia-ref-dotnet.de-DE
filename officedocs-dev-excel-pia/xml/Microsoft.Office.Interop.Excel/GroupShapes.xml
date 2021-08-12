@@ -1,5 +1,5 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Excel.GroupShapes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ebe63e575d737f035f42220903f1e7f1ac5fd0cc" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003472" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f7fe960f3ef274dc5a3cc6fc0e7f41dbca7b99c48323744be0aa7a9f0c7cb70" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508346" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract GroupShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.GroupShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface GroupShapes&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt die einzelnen Formen innerhalb einer gruppierten Form dar.</summary>
-    <remarks><para>Jede Form wird durch ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> dargestellt. Wenn Sie die Methode mit diesem Objekt verwenden, können Sie mit einzelnen Formen innerhalb einer Gruppe arbeiten, ohne <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> die Gruppierung aufheben zu müssen.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> Eigenschaft, um die <b>GroupShapes -Auflistung zurück.</b> Verwenden <b>Sie GroupItems</b>( ), wobei die Nummer der einzelnen Form innerhalb der gruppierungsform ist, um eine einzelne Form aus der <paramref name="index" /> <paramref name="index" /> <b>GroupShapes -Auflistung zurückzukehren.</b></para>
+    <remarks><para>Jede Form wird durch ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt dargestellt. Mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> Methode mit diesem Objekt können Sie mit einzelnen Formen innerhalb einer Gruppe arbeiten, ohne die Gruppierung aufheben zu müssen.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> Eigenschaft, um die <b>GroupShapes -Auflistung</b> zurückzugeben. Use <b>GroupItems</b>( <paramref name="index" /> ), where is the number of the individual shape within the <paramref name="index" /> grouped shape, to return a single shape from the <b>GroupShapes</b> collection.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +145,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -204,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -264,11 +264,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Die einzelnen Formen für den Bereich. Kann eine Ganzzahl sein, die die Indexnummer der Form angibt, eine Zeichenfolge, die den Namen der Form angibt, oder ein Array, das entweder Ganzzahlen oder Zeichenfolgen enthält.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Objekt zurück, das eine Teilmenge der Formen in einer Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> darstellt.</summary>
+        <param name="Index"><b>Required-Objekt</b>. Die einzelnen Formen für den Bereich. Kann eine Ganzzahl sein, die die Indexnummer der Form angibt, eine Zeichenfolge, die den Namen der Form angibt, oder ein Array, das entweder Ganzzahlen oder Zeichenfolgen enthält.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Objekt zurück, das eine Teilmenge der Formen in einer <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung darstellt.</summary>
         <value>To be added.</value>
-        <remarks><para>Obwohl Sie mit der Eigenschaft eine beliebige Anzahl von Formen zurückgeben können, ist es einfacher, die Methode zu verwenden, wenn Sie nur ein einzelnes Element <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> der Auflistung zurückgeben möchten.</para>
-          <para>Um ein Array von ganzen Zahlen oder Zeichenfolgen für <paramref name="Index" /> anzugeben, können Sie die <b>Arrayfunktion</b> verwenden.</para>
+        <remarks><para>Obwohl Sie die Eigenschaft verwenden <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> können, um eine beliebige Anzahl von Formen zurückzugeben, ist es einfacher, die Methode zu <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> verwenden, wenn Sie nur ein einzelnes Element der Auflistung zurückgeben möchten.</para>
+          <para>Um ein Array von ganzzahligen Zahlen oder Zeichenfolgen für <paramref name="Index" /> anzugeben, können Sie die <b>Array-Funktion</b> verwenden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

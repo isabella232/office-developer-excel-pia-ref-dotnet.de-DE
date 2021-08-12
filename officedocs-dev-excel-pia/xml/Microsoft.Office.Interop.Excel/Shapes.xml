@@ -1,5 +1,5 @@
 <Type Name="Shapes" FullName="Microsoft.Office.Interop.Excel.Shapes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7d8f4259d10e89624f92628ba847b174395cf289" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010311" /></Metadata><TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="530f667e5dd841d8274e1c621bc1dc888d3f3f007a275d9f3403ddb97f9309ad" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516242" /></Metadata><TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Shapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> auf dem angegebenen Blatt.</summary>
-    <remarks><para>Jedes Objekt stellt ein Objekt auf der Zeichnungsebene dar, z. B. <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> eine AutoForm, Freihandform, ein OLE-Objekt oder ein Bild.</para>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekte auf dem angegebenen Blatt.</summary>
+    <remarks><para>Jedes <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt stellt ein Objekt in der Zeichnungsebene dar, z. B. eine AutoForm, eine Freihandform, ein OLE-Objekt oder ein Bild.</para>
       <para>
-        <b>Hinweis:</b>Wenn Sie mit einer Teilmenge der Formen in einem Dokument arbeiten möchten , um z. B. nur die AutoFormen im Dokument oder nur die ausgewählten Formen zu verwenden, müssen Sie eine Auflistung erstellen, die die Formen enthält, mit der Sie arbeiten <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> möchten.</para>
+        <b>Hinweis:</b>Wenn Sie mit einer Teilmenge der Formen in einem Dokument arbeiten möchten , z. B. um nur die AutoFormen im Dokument oder nur die ausgewählten Formen zu bearbeiten, müssen Sie eine <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Auflistung erstellen, die die Formen enthält, mit denen Sie arbeiten möchten.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -91,14 +91,14 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoCalloutType" />Erforderlich. Die Art der Legendenlinie. Dies kann eine der folgenden <b>MsoCalloutType -Konstanten</b> sein:<b>msoCalloutOne</b>. Eine Ein-Segment-Calloutlinie, die horizontal oder vertikal sein kann. <b>msoCalloutTwo</b>. Eine Ein-Segment-Calloutlinie, die frei gedreht wird. <b>msoCalloutMixed</b>. <b>msoCalloutThree</b>. Eine zwei segmentierte Linie. <b>msoCalloutFour</b>. Eine Drei-Segment-Linie.</param>
+        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoCalloutType" />Erforderlich. Die Art der Legendenlinie. Dies kann eine der folgenden <b>MsoCalloutType</b> -Konstanten sein:<b>MsoCalloutOne</b>. Eine legendenlinie mit einem Segment, die horizontal oder vertikal sein kann. <b>msoCalloutTwo</b>. Eine einzelne Legendenlinie, die sich frei dreht. <b>msoCalloutMixed</b>. <b>msoCalloutThree</b>. Eine Zwei-Segment-Linie. <b>msoCalloutFour</b>. Eine Drei-Segment-Linie.</param>
         <param name="Left">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Ecke des Begrenzungsrechtecks der Legende, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="Top">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Ecke des Begrenzungsrechtecks der Legende, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="Width">Erforderlicher <b>Single</b>-Wert. Breite (in Punkt) des Begrenzungsrechtecks der Legende.</param>
         <param name="Height">Erforderlicher <b>Single</b>-Wert. Höhe (in Punkt) des Begrenzungsrechtecks der Legende.</param>
-        <summary>Erstellt eine rahmenlose Legende mit Linie. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die neue Callout darstellt.</summary>
+        <summary>Erstellt eine rahmenlose Legende mit Linie. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die neue Legende darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Mit der Methode können Sie eine größere Anzahl von Callouts <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" /> einfügen.</para>
+        <remarks><para>Mithilfe der Methode können Sie eine größere Anzahl von Legenden <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" /> einfügen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -207,13 +207,13 @@
         <Parameter Name="NewLayout" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Style">Das Diagrammformat. Verwenden Sie -1, um die Standardformatvorlage für den in XlChartType angegebenen <b>Diagrammtyp zu erhalten.</b></param>
+        <param name="Style">Das Diagrammformat. Verwenden Sie -1, um die Standardformatvorlage für den in <b>XlChartType</b> angegebenen Diagrammtyp abzurufen.</param>
         <param name="XlChartType">Der Typ des Diagramms.</param>
         <param name="Left">Die Position (in Punkten) des linken Rands des Diagramms, relativ zur Verankerung.</param>
         <param name="Top">Die Position (in Punkten) des oberen Rands des Diagramms relativ zur Verankerung.</param>
         <param name="Width">Die Breite des Diagramms in Punkten.</param>
         <param name="Height">Die Höhe des Diagramms in Punkten.</param>
-        <param name="NewLayout">Wenn der Wert true ist, wird das Diagramm mithilfe der neuen dynamischen Formatierungsregeln eingefügt (Titel ist ein, und Legende ist nur dann ein, wenn mehrere Datenreihen <paramref name="NewLayout" /> vorhanden sind).</param>
+        <param name="NewLayout">Ist <paramref name="NewLayout" /> dies der Fall, wird das Diagramm mithilfe der neuen dynamischen Formatierungsregeln eingefügt (Titel ist aktiviert und Legende ist nur aktiviert, wenn mehrere Datenreihen vorhanden sind).</param>
         <summary>Fügt einem Dokument ein Diagramm hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das ein Diagramm darstellt, und fügt es der angegebenen Auflistung hinzu.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -246,15 +246,15 @@
         <Parameter Name="EndY" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoConnectorType" />Erforderlich. Der hinzuzufügende Verbindungstyp. Kann eine der folgenden <b>MsoConnectorType -Konstanten</b> sein:<b>msoConnectorElbow</b><b>msoConnectorTypeMixed</b><b>msoConnectorCurve</b><b>msoConnectorStraight</b></param>
+        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoConnectorType" />Erforderlich. Der hinzuzufügende Verbindungstyp. Dies kann eine der folgenden <b>MsoConnectorType-Konstanten</b> sein:<b>msoConnectorElbow</b><b>msoConnectorTypeMixed</b><b>msoConnectorCurve</b><b>msoConnectorStraight</b></param>
         <param name="BeginX">Erforderlicher <b>Single</b>-Wert. Die horizontale Position (in Punkt) des Anfangspunkts der Verbindung, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="BeginY">Erforderlicher <b>Single</b>-Wert. Die vertikale Position (in Punkt) des Anfangspunkts der Verbindung, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="EndX">Erforderlicher <b>Single</b>-Wert. Die horizontale Position (in Punkt) des Endpunkts der Verbindung, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="EndY">Erforderlicher <b>Single</b>-Wert. Die vertikale Position (in Punkt) des Endpunkts der Verbindung, relativ zur oberen linken Ecke des Dokuments.</param>
         <summary>Erstellt einen Connector. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die neue Verbindung darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Mit dem Hinzufügen einer Verbindung ist die Verbindung noch nicht hergestellt. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> die Und-Methoden, um den Anfang und das Ende einer Verbindung mit <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> anderen Formen im Dokument zu verbinden.</para>
-          <para>Wenn Sie eine Verbindung mit einer Form verbinden, werden die Größe und Position der Verbindung bei Bedarf automatisch angepasst. Wenn Sie also eine Verbindung mit anderen Formen verbinden möchten, sind die Position und Abmessungen, die Sie beim Hinzufügen der Verbindung angeben, irrelevant.</para>
+        <remarks><para>Mit dem Hinzufügen einer Verbindung ist die Verbindung noch nicht hergestellt. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> Methoden und <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> Methoden, um den Anfang und das Ende einer Verbindung an andere Formen im Dokument anzufügen.</para>
+          <para>Wenn Sie eine Verbindung mit einer Form verbinden, werden die Größe und Position der Verbindung bei Bedarf automatisch angepasst. Wenn Sie eine Verbindung an andere Formen anfügen möchten, spielen daher die Position und die Abmessungen, die Sie beim Hinzufügen der Verbindung angeben, keine Rolle.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,7 +281,7 @@
         <Parameter Name="SafeArrayOfPoints" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">Required <b>-Objekt</b>. Ein Array von Koordinatenpaaren, das Scheitelpunkte und Steuerpunkte der Kurve angibt. Der zuerst angegebene Punkt bildet den Scheitelpunkt, die beiden folgenden stellen Steuerpunkte für das erste Bézier-Segment dar. Geben Sie anschließend für jedes weitere Kurvensegment einen Scheitel und zwei Steuerpunkte an. Der zuletzt angegebene Punkt ist der Endscheitel der Kurve. Beachten Sie, dass immer 3n + 1 Punkte angegeben werden müssen, wobei n die Anzahl der Kurvensegmente ist.</param>
+        <param name="SafeArrayOfPoints"><b>Required-Objekt</b>. Ein Array von Koordinatenpaaren, das Scheitelpunkte und Steuerpunkte der Kurve angibt. Der zuerst angegebene Punkt bildet den Scheitelpunkt, die beiden folgenden stellen Steuerpunkte für das erste Bézier-Segment dar. Geben Sie anschließend für jedes weitere Kurvensegment einen Scheitel und zwei Steuerpunkte an. Der zuletzt angegebene Punkt ist der Endscheitel der Kurve. Beachten Sie, dass immer 3n + 1 Punkte angegeben werden müssen, wobei n die Anzahl der Kurvensegmente ist.</param>
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das eine Bézierkurve in einem Arbeitsblatt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -317,9 +317,9 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoDiagramType" />Erforderlich. Der Typ des Diagramms. Dies kann eine der folgenden <b>MsoDiagramType-Konstanten</b> sein:<b>MsoDiagramCycle</b> A-Prozessdiagramm mit einem fortlaufenden Zyklusdiagrammtyp. <b>msoDiagramMixed</b> Ein gemischter Diagrammtyp. <b>msoDiagramOrgChart</b> Ein hierarchischer Beziehungsdiagrammtyp. <b>msoDiagramPyramid</b> Ein basisbasierter Beziehungsdiagrammtyp. <b>msoDiagramRadial</b> Ein Diagrammtyp, der die Beziehungen eines Kernelements zeigt. <b>msoDiagramTarget</b> Ein Diagrammtyp, der Schritte in Richtung eines Ziels zeigt. <b>msoDiagramVenn</b> Ein Diagrammtyp, der Überlappungsbereiche zwischen Elementen zeigt.</param>
+        <param name="Type"><see cref="T:Microsoft.Office.Core.MsoDiagramType" />Erforderlich. Der Diagrammtyp. Dies kann eine der folgenden <b> MsoDiagramType -Konstanten</b> sein:<b> MsoDiagramCycle</b> A -Prozessdiagramm mit einem Fortlaufenden Zyklusdiagrammtyp. <b>msoDiagramMixed</b> Ein gemischter Diagrammtyp. <b>msoDiagramOrgChart</b> Diagrammtyp einer hierarchischen Beziehung. <b>msoDiagramPyramid</b> Diagrammtyp für basisbasierte Beziehungen. <b>msoDiagramRadial</b> Ein Diagrammtyp, der die Beziehungen eines Kernelements zeigt. <b>msoDiagramTarget</b> Ein Diagrammtyp, der Die Schritte in Richtung eines Ziels zeigt. <b>msoDiagramVenn</b> Ein Diagrammtyp mit Überlappungsbereichen zwischen Elementen.</param>
         <param name="Left">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Ecke des Diagramms relativ zur oberen linken Ecke des Arbeitsblatts.</param>
-        <param name="Top">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Oberen des Diagramms relativ zur oberen linken Ecke des Arbeitsblatts.</param>
+        <param name="Top">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) des oberen linken Oberen Des Diagramms relativ zur oberen linken Ecke des Arbeitsblatts.</param>
         <param name="Width">Erforderlicher <b>Single</b>-Wert. Die Breite des Diagramms in Punkt.</param>
         <param name="Height">Erforderlicher <b>Single</b>-Wert. Die Höhe des Diagramms in Punkt.</param>
         <summary>Erstellt ein Diagramm. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das das neue Diagramm darstellt.</summary>
@@ -354,14 +354,14 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Type"><see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />Erforderlich. Der Typ des Microsoft Excel-Steuerelements. In einem Arbeitsblatt kann kein Bearbeitungsfeld erstellt werden. Kann eine der folgenden <b>XlFormControl</b> -Konstanten sein:<b>xlButtonControl</b><b>xlCheckBox</b><b>xlDropDown</b><b>xlEditBox</b><b>xlGroupBox</b><b>xlLabel</b><b>xlListBox</b><b>xlOptionButton</b><b>xlScrollBar</b><b>xlSpinner</b></param>
+        <param name="Type"><see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />Erforderlich. Der Typ des Microsoft Excel-Steuerelements. In einem Arbeitsblatt kann kein Bearbeitungsfeld erstellt werden. Dies kann eine der folgenden <b>XlFormControl-Konstanten</b> sein:<b>xlButtonControl</b><b>xlCheckBox</b><b>xlDropDown</b><b>xlEditBox</b><b>xlGroupBox</b><b>xlLabel</b><b>xlListBox</b><b>xlOptionButton</b><b>xlScrollBar</b><b>xlSpinner</b></param>
         <param name="Left">Erforderliche <b>ganze Zahl</b>. Die Anfangskoordinaten des neuen Objekts (in Punkt), relativ zur oberen linken Ecke der Zelle A1 in einem Arbeitsblatt oder zur oberen linken Ecke eines Diagramms.</param>
         <param name="Top">Erforderliche <b>ganze Zahl</b>. Die Anfangskoordinaten des neuen Objekts (in Punkt), relativ zur oberen linken Ecke der Zelle A1 in einem Arbeitsblatt oder zur oberen linken Ecke eines Diagramms.</param>
         <param name="Width">Erforderliche <b>ganze Zahl</b>. Die Anfangsgröße des neuen Objekts in Punkt.</param>
         <param name="Height">Erforderliche <b>ganze Zahl</b>. Die Anfangsgröße des neuen Objekts in Punkt.</param>
         <summary>Erstellt ein Microsoft Excel-Steuerelement. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das das neue Steuerelement darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddOLEObject(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> die Methode oder die Methode der <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> OLEObjects -Auflistung, um ein ActiveX erstellen.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddOLEObject(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode oder die Methode der <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> OLEObjects-Auflistung, um ein ActiveX Steuerelement zu erstellen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -392,7 +392,7 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Orientation"><see cref="T:Microsoft.Office.Core.MsoTextOrientation" />Erforderlich. Die Ausrichtung des Texts innerhalb der Beschriftung. Kann eine der folgenden <b>MsoTextOrientation-Konstanten</b> sein:<b>msoTextOrientationDownward</b><b>msoTextOrientationHorizontal</b><b>msoTextOrientationHorizontalRotatedFarEast</b><b>msoTextOrientationMixed msoTextOrientationUpward</b><b>msoTextOrientationVertical</b><b>msoTextOrientationVerticalFarEast </b>Einige dieser Konstanten sind möglicherweise nicht verfügbar. abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch).<b></b></param>
+        <param name="Orientation"><see cref="T:Microsoft.Office.Core.MsoTextOrientation" />Erforderlich. Die Ausrichtung des Texts innerhalb der Beschriftung. Dies kann eine der folgenden <b>MsoTextOrientation-Konstanten</b> sein:<b>msoTextOrientationDownward</b><b>msoTextOrientationHorizontal</b><b>msoTextOrientationHorizontalRotatedFarEast</b><b>msoTextOrientationMixed</b><b>msoTextOrientationUpward</b><b>msoTextOrientationVertical</b><b>msoTextOrientationVerticalFarEast </b>Einige dieser Konstanten sind möglicherweise nicht verfügbar. abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch).</param>
         <param name="Left">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Ecke der Beschriftung, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="Top">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Ecke der Beschriftung, relativ zur oberen Ecke des Dokuments.</param>
         <param name="Width">Erforderlicher <b>Single</b>-Wert. Die Breite der Beschriftung in Punkt.</param>
@@ -469,18 +469,18 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">Optionales <b>Objekt</b>. (Sie müssen entweder einen oder <paramref name="ClassType" /> <paramref name="FileName" /> einen angeben). Eine Zeichenfolge mit dem programmtechnischen Bezeichner für das zu erstellende Objekt. Wenn <paramref name="ClassType" /> angegeben und ignoriert <paramref name="FileName" /> <paramref name="Link" /> wird.</param>
-        <param name="Filename">Optionales <b>Objekt</b>. Die Datei, aus der das Objekt erstellt werden soll. Ist kein Pfad angegeben, wird der aktuelle Arbeitsordner verwendet. Sie müssen entweder das Argument <paramref name="ClassType" /> oder das Argument für das Objekt <paramref name="FileName" /> angeben, jedoch nicht beides.</param>
-        <param name="Link">Optionales <b>Objekt</b>. <b>True</b>, wenn das OLE-Objekt mit der Datei verknüpft werden soll, aus der es erstellt wurde. <b>False</b>, wenn das OLE-Objekt als separate Kopie der Datei angelegt werden soll. Wenn Sie einen Wert für angegeben <paramref name="ClassType" /> haben, muss dieses Argument False <b>sein.</b> Der Standardwert ist <b>False</b>.</param>
-        <param name="DisplayAsIcon">Optionales <b>Objekt</b>. <b>True</b>, wenn das OLE-Objekt als Symbol angezeigt werden soll. Der Standardwert ist <b>False</b>.</param>
-        <param name="IconFileName">Optionales <b>Objekt</b>. Die Datei, die das anzuzeigende Symbol enthält.</param>
-        <param name="IconIndex">Optionales <b>Objekt</b>. Der Index des Symbols in <paramref name="IconFileName" /> . Die Reihenfolge der Symbole in der angegebenen Datei entspricht der Reihenfolge, in der die Symbole im Dialogfeld Symbol ändern angezeigt werden (über das Dialogfeld "Objekt" wird zugegriffen, wenn das Kontrollkästchen "Als Symbol anzeigen" aktiviert ist). Das erste Symbol in der Datei weist die Indexnummer 0 (Null) auf. Wenn kein Symbol mit der angegebenen Indexnummer vorhanden ist, wird das Symbol mit der Indexnummer 1 (das zweite Symbol in der <paramref name="IconFileName" /> Datei) verwendet. Der Standardwert ist 0 (Null).</param>
-        <param name="IconLabel">Optionales <b>Objekt</b>. Ein Bezeichnungsfeld (Beschriftung), das unter dem Symbol angezeigt wird.</param>
-        <param name="Left">Optionales <b>Objekt</b>. Die Position (in Punkt) der oberen linken Ecke des neuen Objekts, relativ zur oberen linken Ecke des Dokuments. Der Standardwert ist 0 (Null).</param>
-        <param name="Top">Optionales <b>Objekt</b>. Die Position (in Punkt) der oberen linken Ecke des neuen Objekts, relativ zur oberen linken Ecke des Dokuments. Der Standardwert ist 0 (Null).</param>
-        <param name="Width">Optionales <b>Objekt</b>. Die Anfangsabmessungen des OLE-Objekts in Punkt.</param>
-        <param name="Height">Optionales <b>Objekt</b>. Die Anfangsabmessungen des OLE-Objekts in Punkt.</param>
-        <summary>Erstellt ein OLE-Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das das neue OLE -Objekt darstellt.</summary>
+        <param name="ClassType"><b>Optional-Objekt</b>. (Sie müssen entweder <paramref name="ClassType" /> oder <paramref name="FileName" /> ) angeben. Eine Zeichenfolge mit dem programmtechnischen Bezeichner für das zu erstellende Objekt. Wenn <paramref name="ClassType" /> angegeben und ignoriert <paramref name="FileName" /> <paramref name="Link" /> wird.</param>
+        <param name="Filename"><b>Optional-Objekt</b>. Die Datei, aus der das Objekt erstellt werden soll. Ist kein Pfad angegeben, wird der aktuelle Arbeitsordner verwendet. Sie müssen entweder das <paramref name="ClassType" /> <paramref name="FileName" /> Oder-Argument für das Objekt angeben, aber nicht beides.</param>
+        <param name="Link"><b>Optional-Objekt</b>. <b>True</b>, wenn das OLE-Objekt mit der Datei verknüpft werden soll, aus der es erstellt wurde. <b>False</b>, wenn das OLE-Objekt als separate Kopie der Datei angelegt werden soll. Wenn Sie einen Wert für angegeben <paramref name="ClassType" /> haben, muss dieses Argument <b>False</b>sein. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="DisplayAsIcon"><b>Optional-Objekt</b>. <b>True</b>, wenn das OLE-Objekt als Symbol angezeigt werden soll. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="IconFileName"><b>Optional-Objekt</b>. Die Datei, die das anzuzeigende Symbol enthält.</param>
+        <param name="IconIndex"><b>Optional-Objekt</b>. Der Index des Symbols in <paramref name="IconFileName" /> . Die Reihenfolge der Symbole in der angegebenen Datei entspricht der Reihenfolge, in der die Symbole im Dialogfeld Symbol ändern angezeigt werden (der Zugriff erfolgt über das Dialogfeld "Objekt", wenn das Kontrollkästchen "Als Symbol anzeigen" aktiviert ist). Das erste Symbol in der Datei weist die Indexnummer 0 (Null) auf. Wenn kein Symbol mit der angegebenen Indexnummer vorhanden <paramref name="IconFileName" /> ist, wird das Symbol mit der Indexnummer 1 (das zweite Symbol in der Datei) verwendet. Der Standardwert ist 0 (Null).</param>
+        <param name="IconLabel"><b>Optional-Objekt</b>. Ein Bezeichnungsfeld (Beschriftung), das unter dem Symbol angezeigt wird.</param>
+        <param name="Left"><b>Optional-Objekt</b>. Die Position (in Punkt) der oberen linken Ecke des neuen Objekts, relativ zur oberen linken Ecke des Dokuments. Der Standardwert ist 0 (Null).</param>
+        <param name="Top"><b>Optional-Objekt</b>. Die Position (in Punkt) der oberen linken Ecke des neuen Objekts, relativ zur oberen linken Ecke des Dokuments. Der Standardwert ist 0 (Null).</param>
+        <param name="Width"><b>Optional-Objekt</b>. Die Anfangsabmessungen des OLE-Objekts in Punkt.</param>
+        <param name="Height"><b>Optional-Objekt</b>. Die Anfangsabmessungen des OLE-Objekts in Punkt.</param>
+        <summary>Erstellt ein OLE-Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das das neue OLE-Objekt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -515,8 +515,8 @@
       </Parameters>
       <Docs>
         <param name="Filename"><b>String</b> erforderlich. Die Datei, aus der das OLE-Objekt erstellt werden soll.</param>
-        <param name="LinkToFile"><see cref="T:Microsoft.Office.Core.MsoTriState" />Erforderlich. Die Datei, zu der eine Verknüpfung hergestellt werden soll. Dies kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:<b>msoCTrue</b><b>msoFalse Damit</b> das Bild eine unabhängige Kopie der Datei wird. <b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b> Zum Verknüpfen des Bilds mit der Datei, aus der es erstellt wurde.</param>
-        <param name="SaveWithDocument">Erforderlicher <b>MsoTriState .</b> Zum Speichern des Bilds mit dem Dokument.</param>
+        <param name="LinkToFile"><see cref="T:Microsoft.Office.Core.MsoTriState" />Erforderlich. Die Datei, zu der eine Verknüpfung hergestellt werden soll. Dies kann eine der folgenden <b>MsoTriState-Konstanten</b> sein:<b>msoCTrue</b><b>msoFalse</b> Um das Bild als unabhängige Kopie der Datei zu erstellen. <b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b> To link the picture to the file from which it was created.</param>
+        <param name="SaveWithDocument">Erforderlicher <b>MsoTriState -Wert.</b> Zum Speichern des Bilds mit dem Dokument.</param>
         <param name="Left">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkten) der oberen linken Ecke des Bilds relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="Top">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkten) der oberen linken Ecke des Bilds relativ zum oberen Rand des Dokuments.</param>
         <param name="Width">Erforderlicher <b>Single</b>-Wert. Die Breite des Bilds in Punkt.</param>
@@ -592,8 +592,8 @@
         <Parameter Name="SafeArrayOfPoints" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">Required <b>-Objekt</b>. Ein Array von Koordinatenpaaren, das die Scheitelpunkte der Polylinienzeichnung angibt.</param>
-        <summary>Erstellt eine offene Polylinie oder ein geschlossenes Vieleck. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die neue Polylinie oder das neue Polygon darstellt.</summary>
+        <param name="SafeArrayOfPoints"><b>Required-Objekt</b>. Ein Array von Koordinatenpaaren, das die Scheitelpunkte der Polylinienzeichnung angibt.</param>
+        <summary>Erstellt eine offene Polylinie oder ein geschlossenes Vieleck. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das die neue Polylinie oder das Polygon darstellt.</summary>
         <returns>To be added.</returns>
         <remarks><para>Weisen Sie dem ersten und letzten Scheitelpunkt in der Polylinienzeichnung dieselben Koordinaten zu, um ein geschlossenes Vieleck zu bilden.</para>
           <para> </para></remarks>
@@ -745,10 +745,10 @@
         <param name="FontName"><b>String</b> erforderlich. Der Name der Schriftart, die in der WordArt verwendet wird.</param>
         <param name="FontSize">Erforderlicher <b>Single</b>-Wert. Die Größe der in der WordArt verwendeten Schrift (in Punkten).</param>
         <param name="FontBold"><see cref="T:Microsoft.Office.Core.MsoTriState" />Erforderlich. Die Schriftart, die im WordArt-Objekt verwendet wird, um fett zu formatieren.</param>
-        <param name="FontItalic">Erforderlicher <b>MsoTriState .</b> Die Schriftart, die im WordArt-Objekt verwendet wird, um kursiv zu formatieren.</param>
+        <param name="FontItalic">Erforderlicher <b>MsoTriState -Wert.</b> Die Schriftart, die im WordArt-Objekt verwendet wird, um kursiv zu formatieren.</param>
         <param name="Left">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Ecke des WordArt-Begrenzungsrechtecks, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="Top">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) der oberen linken Ecke des WordArt-Begrenzungsrechtecks, relativ zum oberen Rand des Dokuments.</param>
-        <summary>Erstellt ein WordArt-Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das das neue WordArt -Objekt darstellt.</summary>
+        <summary>Erstellt ein WordArt-Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt zurück, das das neue WordArt-Objekt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks><para>Wenn Sie einem Dokument WordArt hinzufügen, werden die Höhe und Breite der WordArt automatisch anhand der Höhe und Menge des angegebenen Texts festgelegt.</para>
           <para> </para></remarks>
@@ -777,7 +777,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -810,9 +810,9 @@
         <param name="EditingType"><see cref="T:Microsoft.Office.Core.MsoEditingType" />Erforderlich. Die Bearbeitungseigenschaft des ersten Knotens.</param>
         <param name="X1">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) des ersten Knotens der Freihandzeichnung, relativ zur oberen linken Ecke des Dokuments.</param>
         <param name="Y1">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) des ersten Knotens der Freihandzeichnung, relativ zur oberen linken Ecke des Dokuments.</param>
-        <summary>Erstellt ein Freihandform-Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" /> Objekt zurück, das die Freihandform während des Erstellens darstellt.</summary>
+        <summary>Erstellt ein Freihandform-Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" /> Objekt zurück, das die Freihandform während der Erstellung darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> Methode, um der Freihandform Segmente hinzuzufügen. Nachdem Sie der Freihandform mindestens ein Segment hinzugefügt haben, können Sie die Methode verwenden, um das <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> <b>FreeformBuilder -Objekt</b> in ein Objekt zu konvertieren, das die geometrische Beschreibung enthält, die Sie <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> im <b>FreeformBuilder</b> -Objekt definiert haben.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> Methode, um der Freihandform Segmente hinzuzufügen. Nachdem Sie der Freihandform mindestens ein Segment hinzugefügt haben, können Sie die Methode verwenden, <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> um das <b>FreeformBuilder-Objekt</b> in ein Objekt zu <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> konvertieren, das die geometrische Beschreibung aufweist, die Sie im <b>FreeformBuilder-Objekt</b> definiert haben.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -870,7 +870,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -929,7 +929,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -989,8 +989,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Die einzelnen Formen für den Bereich. Kann eine Ganzzahl sein, die die Indexnummer der Form angibt, eine Zeichenfolge, die den Namen der Form angibt, oder ein Array, das entweder Ganzzahlen oder Zeichenfolgen enthält.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Objekt zurück, das eine Teilmenge der Formen in einer Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> darstellt.</summary>
+        <param name="Index"><b>Required-Objekt</b>. Die einzelnen Formen für den Bereich. Kann eine Ganzzahl sein, die die Indexnummer der Form angibt, eine Zeichenfolge, die den Namen der Form angibt, oder ein Array, das entweder Ganzzahlen oder Zeichenfolgen enthält.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> Objekt zurück, das eine Teilmenge der Formen in einer <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1016,7 +1016,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt alle Formen in der angegebenen Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> aus.</summary>
+        <summary>Wählt alle Formen in der angegebenen <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Auflistung aus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

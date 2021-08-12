@@ -1,5 +1,5 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindow">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ba924f04fb4c1accdb23e5bb8b2f1b404a2117ad" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997194" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d5b8f1f9232b7e5bbe5c5632e0e54f5e3d4661ee7456d27a9aa5c93f93a78c1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516522" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindow" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindow" />
@@ -21,14 +21,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein Geschütztes Ansichtsfenster dar.</summary>
+    <summary>Stellt ein Fenster mit geschützter Ansicht dar.</summary>
     <remarks><para>Ein Fenster Geschützte Ansicht wird verwendet, um eine Arbeitsmappe von einem potenziell unsicheren Speicherort anzuzeigen. Unsichere Speicherorte sind wie folgt definiert:</para>
       <list type="number">
         <item>
           <description>Aus dem Internet geöffnete Dateien.</description>
         </item>
         <item>
-          <description>Anlagen, die von einem Microsoft Outlook 2010.</description>
+          <description>Anlagen, die von Microsoft Outlook 2010 geöffnet werden.</description>
         </item>
         <item>
           <description>Durch eine Zugriffsschutz-Richtlinie gesperrte Dateien.</description>
@@ -41,8 +41,8 @@
         </item>
       </list>
       <para>In einem Fenster Geschützte Ansicht angezeigte Arbeitsmappen können nicht bearbeitet werden und können aktive Inhalte, wie etwa VBA-Makros (Visual Basic für Applikationen) und Datenverbindungen, nur eingeschränkt ausführen.</para>
-      <para>Wenn Sie ein einzelnes Objekt aus der Auflistung zurückgeben möchten, verwenden Sie <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> ProtectedViewWindows(Index), wobei Index die Indexnummer des Fensters ist, das <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> Sie öffnen möchten. Sie können auch auf das Objekt zugreifen, das das aktive Geschützte Ansichtsfenster <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> darstellt, indem Sie die <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> Eigenschaft des Objekts <see cref="T:Microsoft.Office.Interop.Excel.Application" /> verwenden.</para>
-      <para>Nachdem Sie auf ein Objekt zugegriffen haben, greifen Sie mithilfe der Eigenschaft auf das Objekt zu, das die Arbeitsmappendatei darstellt, die im Fenster "Geschützte <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Ansicht" geöffnet ist. Da ein Fenster mit geschützter Ansicht darauf ausgelegt ist, den Benutzer vor potenziell schädlichem Code zu schützen, sind die Vorgänge, die Sie mithilfe eines von einem Objekt zurückgegebenen Objekts ausführen können, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> eingeschränkt. Für die meisten unerlaubten Vorgänge wird "Laufzeitfehler 1004: Dieser Befehl ist nicht verfügbar, wenn Excel mit eingeschränkter Sicherheitsstufe ausgeführt wird" zurückgegeben.</para>
+      <para>Um ein einzelnes <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekt aus der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> zurückzugeben, verwenden Sie ProtectedViewWindows(Index), wobei Index die Indexnummer des Fensters ist, das Sie öffnen möchten. Sie können auch mithilfe der Eigenschaft des Objekts auf <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> das Objekt zugreifen, das das aktive Geschützte Ansicht-Fenster <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> darstellt.</para>
+      <para>Nachdem Sie auf ein Objekt zugegriffen haben, verwenden Sie <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> die <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> Eigenschaft, um auf das Objekt zuzugreifen, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> das die Arbeitsmappendatei darstellt, die im Fenster "Geschützte Ansicht" geöffnet ist. Da ein Fenster mit geschützter Ansicht darauf ausgelegt ist, den Benutzer vor potenziell schädlichem Code zu schützen, sind die Vorgänge, die Sie mithilfe eines von einem Objekt zurückgegebenen Objekts ausführen können, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> eingeschränkt. Für die meisten unerlaubten Vorgänge wird "Laufzeitfehler 1004: Dieser Befehl ist nicht verfügbar, wenn Excel mit eingeschränkter Sicherheitsstufe ausgeführt wird" zurückgegeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -128,8 +128,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der den Namen darstellt, der in der Titelleiste des Fensters "Geschützte Ansicht" angezeigt wird, oder legt den Wert fest.</summary>
-        <value>Der Name, der in der Titelleiste des Fensters "Geschützte Ansicht" angezeigt wird.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der den Namen darstellt, der in der Titelleiste des Fensters geschützte Ansicht angezeigt wird.</summary>
+        <value>Der Name, der in der Titelleiste des Fensters geschützte Ansicht angezeigt wird.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -155,7 +155,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Schließt das angegebene Geschützte Ansichtsfenster.</summary>
+        <summary>Schließt das angegebene Fenster "Geschützte Ansicht".</summary>
         <returns>Gibt <see cref="T:System.Boolean" /> zurück.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,13 +184,13 @@
       </Parameters>
       <Docs>
         <param name="WriteResPassword">Das das zum Schreiben in eine Arbeitsmappe mit Schreibschutz erforderliche Kennwort.</param>
-        <param name="UpdateLinks">Gibt an, wie externe Verweise (Verknüpfungen) in der Datei sind, z. B. der Verweis auf einen Bereich in der arbeitsmappe Budget.xls in der folgenden Formel =SUM([Budget.xls]Annual! C10:C25) aktualisiert werden.</param>
+        <param name="UpdateLinks">Gibt an, wie externe Verweise (Verknüpfungen) in der Datei, z. B. der Verweis auf einen Bereich in der Budget.xls Arbeitsmappe in der folgenden Formel =SUM([Budget.xls]Annual! C10:C25) aktualisiert werden.</param>
         <summary>Öffnet die Arbeitsmappe, die im angegebenen Fenster Geschützte Ansicht geöffnet ist, zum Bearbeiten.</summary>
-        <returns>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> zurück.</returns>
-        <remarks><para>Wenn der Parameter ausgelassen wird und für die Arbeitsmappe ein Kennwort erforderlich ist, wird der Benutzer zur <paramref name="WriteResPassword" /> Eingabe des Kennworts aufgefordert.</para>
-          <para>Wenn der Parameter nicht angegeben wird, wird der Benutzer aufgefordert anzugeben, <paramref name="UpdateLinks" /> wie Links aktualisiert werden sollen. Wenn Excel eine Datei im WKS-, WK1- oder #A0 öffnet und das Argument 0 ist, werden keine Diagramme erstellt. Andernfalls generiert Excel Diagramme aus den an die Datei angefügten <paramref name="UpdateLinks" /> Diagrammen.</para>
+        <returns>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Objekt zurück.</returns>
+        <remarks><para>Wenn der <paramref name="WriteResPassword" /> Parameter ausgelassen wird und die Arbeitsmappe ein Kennwort erfordert, wird der Benutzer zur Eingabe des Kennworts aufgefordert.</para>
+          <para>Wenn der <paramref name="UpdateLinks" /> Parameter nicht angegeben wird, wird der Benutzer aufgefordert anzugeben, wie Links aktualisiert werden sollen. If Excel is opening a file in the WKS, WK1, or WK3 format and the <paramref name="UpdateLinks" /> argument is 0, no charts are created; otherwise Excel generates charts from the graphs attached to the file.</para>
           <para>Vermeiden Sie das Verwenden von hartcodierten Kennwörtern in Anwendungen. Fordern Sie das Kennwort vom Benutzer an, speichern Sie es in einer Variablen, und verwenden Sie dann die Variable im Code, falls ein Kennwort in einer Prozedur benötigt wird.</para>
-          <para>Sie können einen der in der folgenden Tabelle aufgeführten Werte im Parameter angeben, um zu bestimmen, ob externe Verweise (Verknüpfungen) beim Öffnen der Arbeitsmappe <paramref name="UpdateLinks" /> aktualisiert werden.</para>
+          <para>Sie können einen der in der folgenden Tabelle aufgeführten Werte im Parameter angeben, <paramref name="UpdateLinks" /> um zu bestimmen, ob externe Verweise (Verknüpfungen) aktualisiert werden, wenn die Arbeitsmappe geöffnet wird.</para>
           <list type="table">
             <item>
               <term>0</term>
@@ -230,7 +230,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob die Größe des Fensters für die geschützte Ansicht geändert werden kann.</summary>
+        <summary>Ruft ab oder legt fest, ob die Größe des Fensters Geschützte Ansicht geändert werden kann.</summary>
         <value><b>true,</b> wenn die Größe des Fensters "Geschützte Ansicht" geändert werden kann; andernfalls <b>false</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
@@ -262,8 +262,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Höhe des Fensters "Geschützte Ansicht" in Punkten darstellt, oder legt den Wert fest.</summary>
-        <value>Die Höhe des Fensters "Geschützte Ansicht" in Punkt.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Höhe des Fensters geschützte Ansicht (in Punkt) darstellt.</summary>
+        <value>Die Höhe des Fensters "Geschützte Ansicht" in Punkten.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Sie können diese Eigenschaft nicht festlegen, wenn das Fenster Geschützte Ansicht maximiert oder minimiert ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> Eigenschaft, um den Fensterzustand zu bestimmen.</para>
           <para> </para></remarks>
@@ -295,8 +295,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der den Abstand zwischen dem linken Rand des Clientbereichs und dem linken Rand des Fensters der geschützten Ansicht in Punkten darstellt, oder legt den Wert fest.</summary>
-        <value>Der Abstand (in Punkt) vom linken Rand des Clientbereichs zum linken Rand des Fensters "Geschützte Ansicht".</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der den Abstand zwischen dem linken Rand des Clientbereichs und dem linken Rand des Fensters "Geschützte Ansicht" in Punkten darstellt.</summary>
+        <value>Der Abstand (in Punkt) vom linken Rand des Clientbereichs zum linken Rand des Fensters mit geschützter Ansicht.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -324,7 +324,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Namen der Quelldatei ab, die im angegebenen Fenster "Geschützte Ansicht" geöffnet ist.</summary>
+        <summary>Ruft den Namen der Quelldatei ab, die im angegebenen Fenster geschützte Ansicht geöffnet ist.</summary>
         <value>Der Name der Quelldatei, die im angegebenen Fenster "Geschützte Ansicht" geöffnet ist.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para> </para></remarks>
@@ -356,7 +356,7 @@
         <summary>Ruft den Pfad der Quelldatei ab, die im angegebenen Fenster "Geschützte Ansicht" geöffnet ist.</summary>
         <value>Der Pfad der Quelldatei, die im angegebenen Fenster "Geschützte Ansicht" geöffnet ist.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Der Pfad enthält kein schließendes Zeichen (z. B. "C:\MSOffice"). Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> die Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> das <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekt, um den Namen der Quelldatei ohne den Pfad zurückgibt.</para>
+          <para>Der Pfad enthält kein schließendes Zeichen (z. B. "C:\MSOffice"). Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> das <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> Objekt, um den Namen der Quelldatei ohne den Pfad zurückzugeben.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -386,10 +386,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der den Abstand zwischen dem oberen Rand des angegebenen Fensters für geschützte Ansicht und dem oberen Rand des verwendbaren Bereichs in Punkten darstellt, oder legt den Wert fest.</summary>
-        <value>Der Abstand (in Punkt) vom oberen Rand des angegebenen Geschützten Ansichtsfensters zum oberen Rand des verwendbaren Bereichs.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der den Abstand zwischen dem oberen Rand des angegebenen Geschützten Ansichtsfensters und dem oberen Rand des verwendbaren Bereichs in Punkt darstellt.</summary>
+        <value>Der Abstand zwischen dem oberen Rand des angegebenen Geschützten Ansichtsfensters und dem oberen Rand des verwendbaren Bereichs in Punkten.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Für maximierte Geschützte Ansicht-Fenster können Sie diese Eigenschaft nicht festlegen. Mit der <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> Eigenschaft können Sie den Zustand des Fensters zurückgeben oder festlegen.</para>
+          <para>Für maximierte Geschützte Ansicht-Fenster können Sie diese Eigenschaft nicht festlegen. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> Eigenschaft, um den Zustand des Fensters zurückzugeben oder festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -419,8 +419,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der bestimmt, ob das angegebene Geschützte Ansichtsfenster sichtbar ist, oder legt den Wert fest.</summary>
-        <value><b>true,</b> wenn das angegebene Geschützte Ansichtsfenster sichtbar ist; andernfalls <b>false</b>.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der bestimmt, ob das angegebene Geschützte Ansicht-Fenster sichtbar ist.</summary>
+        <value><b>true,</b> wenn das angegebene Geschützte Ansicht-Fenster sichtbar ist; andernfalls <b>false</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -451,8 +451,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Breite des angegebenen Fensters für die geschützte Ansicht in Punkten angibt, oder legt den Wert fest.</summary>
-        <value>Die Breite des angegebenen Fensters für die geschützte Ansicht in Punkt.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Breite des angegebenen Geschützten Ansichtsfensters in Punkten angibt.</summary>
+        <value>Die Breite des angegebenen Fensters "Geschützte Ansicht" in Punkten.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Sie können diese Eigenschaft nicht festlegen, wenn das Fenster Geschützte Ansicht maximiert oder minimiert ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> Eigenschaft, um den Fensterzustand zu bestimmen.</para>
           <para> </para></remarks>
@@ -484,8 +484,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlProtectedViewWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Status des angegebenen Geschützten Ansichtsfensters ab oder legt den Status fest.</summary>
-        <value>Der Status des angegebenen Fensters für die geschützte Ansicht.</value>
+        <summary>Dient zum Abrufen oder Festlegen des Status des angegebenen Fensters geschützte Ansicht.</summary>
+        <value>Der Status des angegebenen Fensters "Geschützte Ansicht".</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -516,7 +516,7 @@
         <summary>Ruft ein Objekt ab, das die Arbeitsmappe darstellt, die im angegebenen Fenster "Geschützte Ansicht" geöffnet ist.</summary>
         <value>Die Arbeitsmappe, die im angegebenen Fenster "Geschützte Ansicht" geöffnet ist.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Da ein Fenster mit geschützter Ansicht darauf ausgelegt ist, den Benutzer vor potenziell schädlichem Code zu schützen, sind die Vorgänge, die Sie mit einem von der Methode zurückgegebenen Objekt ausführen können, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> eingeschränkt. Jeder nicht zulässige Vorgang gibt "Laufzeitfehler 1004: Dieser Befehl ist nicht verfügbar, wenn Excel im Sandkasten ist" zurück.</para>
+          <para>Da ein Fenster mit geschützter Ansicht darauf ausgelegt ist, den Benutzer vor potenziell schädlichem Code zu schützen, sind die Vorgänge, die Sie mithilfe eines von der Methode zurückgegebenen Objekts ausführen können, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> eingeschränkt. Jeder nicht zulässige Vorgang gibt "Laufzeitfehler 1004: Dieser Befehl ist nicht verfügbar, wenn Excel sandkastenweise ausgeführt wird".</para>
           <para> </para></remarks>
       </Docs>
     </Member>

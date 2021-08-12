@@ -1,5 +1,5 @@
 <Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012173" /></Metadata><TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="222a1714f0ed05001eadedd4cd768926d5267853c85c5ad4c1dad0c098ce30de" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508430" /></Metadata><TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatConditions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatConditions" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormatConditions&#xA;Implements IEnumerable" />
@@ -26,10 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Auflistung der bedingten Formate in einem einzelnen Bereich dar.</summary>
-    <remarks><para>Die <b>FormatConditions -Auflistung</b> kann bis zu drei bedingte Formate enthalten. Jedes Format wird durch ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> dargestellt.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> Eigenschaft, um ein <b>FormatConditions -Objekt zurück.</b> Verwenden Sie die Methode, um ein neues bedingtes Format zu erstellen, und verwenden Sie die Methode, um <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> ein vorhandenes bedingtes Format zu ändern.</para>
-      <para>Wenn Sie versuchen, mehr als drei bedingte Formate für einen einzelnen Bereich zu erstellen, schlägt die <b>Add</b> -Methode fehl. Wenn ein Bereich drei Formate hat, können Sie die <b>Modify</b> -Methode verwenden, um eines der Formate zu ändern, oder Sie können die Methode verwenden, um ein Format zu löschen und dann mit der Add -Methode ein neues Format zu <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> erstellen. <b></b></para>
-      <para>Weitere Informationen zu bedingten Formaten finden Sie unter dem <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> Objekt.</para>
+    <remarks><para>Die <b>FormatConditions -Auflistung</b> kann bis zu drei bedingte Formate enthalten. Jedes Format wird durch ein <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> Objekt dargestellt.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> Eigenschaft, um ein <b>FormatConditions -Objekt</b> zurückzugeben. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> Methode, um ein neues bedingtes Format zu erstellen, und verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> Methode, um ein vorhandenes bedingtes Format zu ändern.</para>
+      <para>Wenn Sie versuchen, mehr als drei bedingte Formate für einen einzelnen Bereich zu erstellen, schlägt die <b>Add-Methode</b> fehl. Wenn ein Bereich drei Formate aufweist, können Sie die <b>Modify-Methode</b> verwenden, um eines der Formate zu ändern, oder Sie können die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> Methode verwenden, um ein Format zu löschen, und dann die <b>Add-Methode</b> verwenden, um ein neues Format zu erstellen.</para>
+      <para>Weitere Informationen zu bedingten Formaten finden Sie im <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> Objekt.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -98,16 +98,16 @@
       </Parameters>
       <Docs>
         <param name="Type">. (<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />. Gibt an, ob das bedingte Format auf einem Zellwert oder auf einem Ausdruck basiert.</param>
-        <param name="Operator">Der bedingte Formatoperator. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> Konstanten sein: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> , , , , , oder <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" /> . Wenn <paramref name="Type" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" /> dies der Fehler ist, <paramref name="Operator" /> wird das Argument ignoriert.</param>
-        <param name="Formula1">Der dem bedingten Format zugeordnete Wert oder Ausdruck. Dies kann ein konstanter Wert, ein <b>Zeichenfolgenwert,</b> ein Zellbezug oder eine Formel sein.</param>
-        <param name="Formula2">Der Wert oder Ausdruck, der dem zweiten Teil des bedingten Formats zugeordnet ist, wenn er ist oder (andernfalls wird dieses <paramref name="Operator" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> Argument <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> ignoriert). Kann ein konstanter Wert, ein Zeichenfolgenwert, ein Zellenbezug oder eine Formel sein.</param>
+        <param name="Operator">Der bedingte Formatoperator. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> Konstanten sein: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> , , , , , , oder <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" /> . Wenn <paramref name="Type" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" /> dies der Typ ist, wird das <paramref name="Operator" /> Argument ignoriert.</param>
+        <param name="Formula1">Der dem bedingten Format zugeordnete Wert oder Ausdruck. Dabei kann es sich um einen Konstantenwert, einen <b>String-Wert,</b> einen Zellbezug oder eine Formel handeln.</param>
+        <param name="Formula2">Der Wert oder Ausdruck, der dem zweiten Teil des bedingten Formats zugeordnet ist, wenn er <paramref name="Operator" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> oder <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (andernfalls wird dieses Argument ignoriert). Kann ein konstanter Wert, ein Zeichenfolgenwert, ein Zellenbezug oder eine Formel sein.</param>
         <param name="String">To be added.</param>
         <param name="TextOperator">To be added.</param>
         <param name="DateOperator">To be added.</param>
         <param name="ScopeType">To be added.</param>
         <summary>Fügt ein neues bedingtes Format hinzu.</summary>
         <returns>Ein <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> Objekt, das das neue bedingte Format darstellt.</returns>
-        <remarks><para>Sie können nicht mehr als drei bedingte Formate für einen Bereich definieren. Verwenden Sie die Methode, um ein vorhandenes bedingtes Format zu ändern, oder verwenden Sie die Methode, um ein vorhandenes Format zu löschen, <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> bevor Sie ein neues <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> hinzufügen.</para>
+        <remarks><para>Sie können nicht mehr als drei bedingte Formate für einen Bereich definieren. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> Methode, um ein vorhandenes bedingtes Format zu ändern, oder verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> Methode, um ein vorhandenes Format zu löschen, bevor Sie ein neues hinzufügen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -132,9 +132,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein neues Objekt <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> zurück, das eine Regel zur bedingten Formatierung für den angegebenen Bereich darstellt.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object</returns>
-        <remarks><para>Das Objekt wird verwendet, um Werte über oder unter einem Mittelwert oder einer <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> Standardabweichung in einem Zellbereich zu finden. Sie können beispielsweise überdurchschnittliche Leistungen in einer jährlichen Leistungsbeurteilung oder produzierte Materialien ermitteln, die bei einer Qualitätsbeurteilung unter zwei Standardabweichungen fallen.</para>
+        <summary>Gibt ein neues Objekt zurück, das <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> eine Regel zur bedingten Formatierung für den angegebenen Bereich darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> Objekt</returns>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> Objekt wird verwendet, um Werte oberhalb oder unterhalb einer durchschnittlichen oder Standardabweichung in einem Zellbereich zu finden. Sie können beispielsweise überdurchschnittliche Leistungen in einer jährlichen Leistungsbeurteilung oder produzierte Materialien ermitteln, die bei einer Qualitätsbeurteilung unter zwei Standardabweichungen fallen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -162,8 +162,8 @@
       </Parameters>
       <Docs>
         <param name="ColorScaleType">Der Typ der Farbskala.</param>
-        <summary>Gibt ein neues Objekt zurück, das eine Regel zur bedingten Formatierung darstellt, die Abstufungen in Zellfarben verwendet, um relative Unterschiede in den Werten von Zellen anzuzeigen, die in einem <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> markierten Bereich enthalten sind.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object</returns>
+        <summary>Gibt ein neues Objekt zurück, das <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> eine Regel zur bedingten Formatierung darstellt, die Abstufungen in Zellenfarben verwendet, um relative Unterschiede in den Werten der Zellen anzugeben, die in einem ausgewählten Bereich enthalten sind.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> Objekt</returns>
         <remarks><para>Bei Farbskalen handelt es sich um visuelle Hilfen, durch die Sie die Datenverteilung und -streuung leichter erkennen können. Mit einer Farbskala können Sie relative Differenzen in den Werten von Zellen in einem bestimmten Bereich anhand der Farbunterschiede erkennen. Unterschiedliche Farben und Farbabstufungen stellen Unterschiede der Zellwerte dar. In einer Skala mit drei Farben können Sie beispielsweise angeben, dass die Zellen mit den höchsten relativen Datenwerten grün, Zellen mit mittleren Werten gelb und Zellen mit den niedrigsten Werten rot angezeigt werden.</para>
           <para> </para></remarks>
       </Docs>
@@ -189,8 +189,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> Objekt zurück, das eine Regel zur bedingten Formatierung von Datenbalken für den angegebenen Bereich darstellt.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object</returns>
+        <summary>Gibt ein Objekt zurück, das <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> eine bedingte Formatierungsregel für datenbalken für den angegebenen Bereich darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.Databar" /> Objekt</returns>
         <remarks><para>Mit Datenbalken können Sie den Wert einer Zelle relativ zu anderen Zellen darstellen. Die Länge des Datenbalkens stellt den Wert in der Zelle dar. Ein längerer Balken kennzeichnet einen höheren Wert und ein kürzerer Balken einen niedrigeren Wert. Datenbalken sind hilfreich beim Suchen von höheren und niedrigeren Werten, insbesondere bei großen Datenmengen. Ein Beispiel sind die Spielzeuge mit den besten und schlechtesten Verkaufszahlen in einem Bericht zum Weihnachtsgeschäft.</para>
           <para> </para></remarks>
       </Docs>
@@ -216,8 +216,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein neues Objekt zurück, das eine Regel zur bedingten Formatierung von Symbolen <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> für den angegebenen Bereich darstellt.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object</returns>
+        <summary>Gibt ein neues <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Objekt zurück, das eine Regel zur bedingten Formatierung von Symbolgruppen für den angegebenen Bereich darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> Objekt</returns>
         <remarks><para>Mit einem Symbolsatz können Sie Daten kennzeichnen und in drei bis fünf Kategorien einteilen, die durch einen Schwellenwert getrennt werden. Jedes Symbol stellt einen Wertebereich dar. Im Symbolsatz "3 Pfeile" stellt der rote Pfeil nach oben beispielsweise höhere Werte dar, der gelbe Pfeil zur Seite mittlere Werte, und der grüne Pfeil nach unten stellt geringere Werte dar.</para>
           <para> </para></remarks>
       </Docs>
@@ -243,9 +243,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> zurück, das eine Regel zur bedingten Formatierung für den angegebenen Bereich darstellt.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object</returns>
-        <remarks><para>Mithilfe des Objekts können Sie die höchsten und niedrigsten Werte in einem Zellbereich basierend auf einem von Ihnen angegebenen <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> Abschneidenwert finden. Sie können so beispielsweise die fünf am besten verkauften Produkte in einem regionalen Bericht, die unteren 15 % der Produkte in einer Kundenumfrage oder die 25 höchsten Gehälter bei einer Analyse der Abteilungsmitarbeiter ermitteln.</para>
+        <summary>Gibt ein Objekt zurück, das <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> eine Regel zur bedingten Formatierung für den angegebenen Bereich darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.Top10" /> Objekt</returns>
+        <remarks><para>Mithilfe des <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> Objekts finden Sie die höchsten und niedrigsten Werte in einem Zellbereich basierend auf einem von Ihnen angegebenen Cutoff-Wert. Sie können so beispielsweise die fünf am besten verkauften Produkte in einem regionalen Bericht, die unteren 15 % der Produkte in einer Kundenumfrage oder die 25 höchsten Gehälter bei einer Analyse der Abteilungsmitarbeiter ermitteln.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -270,9 +270,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein neues Objekt <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> zurück, das eine Regel zur bedingten Formatierung für den angegebenen Bereich darstellt.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object</returns>
-        <remarks><para>Sie können das Objekt <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> verwenden, um Schnellansichten von Zellen zu erstellen, die eindeutige oder doppelte Werte enthalten.</para>
+        <summary>Gibt ein neues Objekt zurück, das <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> eine Regel zur bedingten Formatierung für den angegebenen Bereich darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> Objekt</returns>
+        <remarks><para>Sie können das <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> Objekt verwenden, um Schnellansichten von Zellen zu erstellen, die eindeutige oder doppelte Werte enthalten.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -299,7 +299,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -358,7 +358,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -442,7 +442,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Die Indexnummer für das Objekt</param>
+        <param name="Index"><b>Required-Objekt</b>. Die Indexnummer für das Objekt</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>

@@ -1,5 +1,5 @@
 <Type Name="ModelConnection" FullName="Microsoft.Office.Interop.Excel.ModelConnection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fd5c31aae4d45548f7153f5488725dde8ae8c9ee" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011683" /></Metadata><TypeSignature Language="C#" Value="public interface ModelConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="614daa5ac7b9c92307b86e26d9cee3909e81ccbd788f4a81ccbf87ec5647d56d" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516739" /></Metadata><TypeSignature Language="C#" Value="public interface ModelConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelConnection" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enthält Informationen für den neuen Modellverbindungstyp, der in Excel 2013 eingeführt wurde, um mit dem integrierten Datenmodell zu interagieren.</summary>
-    <remarks><para>Zur Verwendung für alle mit dem Modell verbundenen PivotTables gibt es eine neue "spezielle" Arbeitsmappenverbindung, die in Arbeitsmappen mit einem Datenmodell immer vorhanden ist (und nicht gelöscht werden kann). Sie wird erstellt, wenn das Modell zum ersten Mal in einer Arbeitsmappe erstellt wird. Alle Eigenschaften dieser speziellen Arbeitsmappenverbindung sind schreibgeschützt. Der Name ist: Arbeitsmappendatenmodell.</para>
+    <summary>Enthält Informationen für den neuen Modellverbindungstyp, der in Excel 2013 für die Interaktion mit dem integrierten Datenmodell eingeführt wurde.</summary>
+    <remarks><para>Für alle PivotTables, die mit dem Modell verbunden sind, gibt es eine neue "spezielle" Arbeitsmappenverbindung, die in Arbeitsmappen mit einem Datenmodell immer vorhanden ist (und nicht gelöscht werden kann). Er wird erstellt, wenn das Modell zum ersten Mal in einer Arbeitsmappe erstellt wird. Alle Eigenschaften für diese spezielle Arbeitsmappenverbindung sind schreibgeschützt. Der Name lautet: Arbeitsmappendatenmodell.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Das ADO Connection Object wird verwendet, um eine geöffnete Verbindung mit einer Datenquelle zu erstellen. Ermöglicht Add-Ins, z. B. Powerview, eine direkte Verbindung zum Modul und damit zum Datenmodell zu erstellen. <b>ADOConnection -Objekt</b> Schreibgeschützt.</summary>
+        <summary>Das ADO Connection-Objekt wird verwendet, um eine geöffnete Verbindung mit einer Datenquelle zu erstellen. Ermöglicht Add-Ins, z. B. Powerview, eine direkte Verbindung zum Modul und damit zum Datenmodell zu erstellen. <b>Schreibgeschütztes ADOConnection-Objekt.</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,7 +138,7 @@
       <Docs>
         <summary>Gibt die Befehlszeichenfolge für die angegebene Datenquelle zurück oder legt diese fest. <b>Objekt</b> (<b>Objekt</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
-        <remarks><para>Dies ist entweder ein Tabellenname (einer Modelltabelle) oder ein DAX-Ausdruck, der eine Tabelle auswerten soll.</para>
+        <remarks><para>Dies ist entweder ein Tabellenname (einer Modelltabelle) oder ein DAX-Ausdruck, der in einer Tabelle ausgewertet wird.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,9 +168,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine der Konstanten zurück oder legt <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> sie fest. Lesen/Schreiben</summary>
+        <summary>Gibt eine der Konstanten zurück oder legt sie <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> fest. Lesen/Schreiben</summary>
         <value>To be added.</value>
-        <remarks><para>Für ein <b>ModelConnection -Objekt</b> wird dieser Typ entweder <b>auf xlCmdTable</b> oder <b>xlCmdDAX festgelegt.</b> The isolated connection <b>ThisWorkbookDataModel</b> to the Data Model will be of type <b>xlCmdCube</b>.</para>
+        <remarks><para>Für ein <b>ModelConnection</b> -Objekt wird dieser Typ auf <b>xlCmdTable</b> oder <b>xlCmdDAX</b>festgelegt. The isolated connection <b>ThisWorkbookDataModel</b> to the Data Model will be of type <b>xlCmdCube</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>Ganze</b> Zahl (<b>int</b> in C#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b> -Wert (<b>int</b> in C#).</summary>
         <value>To be added.</value>
         <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
           <para> </para></remarks>
@@ -226,7 +226,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Wert vom Typ Object</b> zurück, der das übergeordnete Objekt des angegebenen <b>ModelConnection -Objekts</b> darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert vom Typ <b> Object </b> zurück, der das übergeordnete Objekt des angegebenen <b>ModelConnection-Objekts</b> darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

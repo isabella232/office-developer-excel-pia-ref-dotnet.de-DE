@@ -1,5 +1,5 @@
 <Type Name="ListColumn" FullName="Microsoft.Office.Interop.Excel.ListColumn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="08d4b05d05d4520afef5aa08e764c83df4bcd655" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999959" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b71df3550763bd1f7f5358b97663ac2d082d516fbb8ae024d73469a818652288" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516361" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListColumn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListColumn" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListColumn" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Spalte in einer Liste dar. Das <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> Auflistung enthält alle Spalten in einer Liste <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> (Objekt).</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekts, um eine Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> zurückzukehren.</para>
+    <summary>Stellt eine Spalte in einer Liste dar. Das <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> Auflistung enthält alle Spalten in einer Liste ( <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekt).</summary>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Objekts, um eine Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +108,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Schreibgeschützt. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die Größe des Datenteils einer Spalte angibt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das der Größe des Datenteils einer Spalte entspricht. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks><para>Das zurückgegebene Objekt schließt die Überschrift- und die Ergebniszelle aus.</para>
           <para> </para></remarks>
@@ -164,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Löscht die Spalte mit Daten aus der Liste. Entfernt die Spalte nicht aus dem Blatt. Wenn die Liste mit einer Microsoft Windows SharePoint Services verknüpft ist, kann die Spalte nicht vom Server entfernt werden, und es wird ein Fehler generiert.</summary>
+        <summary>Löscht die Spalte mit Daten aus der Liste. Entfernt die Spalte nicht aus dem Blatt. Wenn die Liste mit einer Microsoft Windows SharePoint Services Website verknüpft ist, kann die Spalte nicht vom Server entfernt werden, und es wird ein Fehler generiert.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Indexnummer des Objekts <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> innerhalb der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <summary>Gibt die Indexnummer des <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Objekts innerhalb der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -309,7 +309,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, das den Bereich darstellt, auf den das <see cref="T:Microsoft.Office.Interop.Excel.Range" /> angegebene Listenobjekt in der obigen Liste angewendet wird. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den Bereich darstellt, auf den das angegebene Listenobjekt in der obigen Liste angewendet wird. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,9 +340,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge ,</b> die die Formel in einer berechneten Spalte darstellt. Die Formel wird in #A0 ausgedrückt (US-englisches Locale, A1-Notation). Schreibgeschützte <b>Zeichenfolge</b>.</summary>
+        <summary>Gibt eine <b>Zeichenfolge</b> , die die Formel in einer berechneten Spalte darstellt. Die Formel wird in Excel Syntax ausgedrückt (Us English locale, A1 notation). Schreibgeschützte <b>Zeichenfolge</b>.</summary>
         <value><b>String</b></value>
-        <remarks><para>Wenn das Objekt nicht zu einer Liste gehört, die mit einer SharePoint-Website verknüpft ist, oder wenn es sich nicht um eine Spalte handelt, die als berechnete Spalte auf der SharePoint-Website angegeben ist, erhalten Sie einen <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Laufzeitfehler.</para>
+        <remarks><para>Wenn das <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Objekt nicht zu einer Liste gehört, die mit einer SharePoint Website verknüpft ist, oder wenn es sich nicht um eine Spalte handelt, die als berechnete Spalte auf der SharePoint Website angegeben ist, erhalten Sie einen Laufzeitfehler.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -369,7 +369,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Zeile "Total" für ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> zurück. Schreibgeschützt.</summary>
+        <summary>Gibt die Ergebniszeile für ein <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> Objekt zurück. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -400,9 +400,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTotalsCalculation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt den Berechnungstyp in der Zeile "Summen" der Listenspalte basierend auf dem Wert der <see cref="T:Microsoft.Office.Interop.Excel.XlTotalsCalculation" /> Enumeration. Lese-/Schreibzugriff.</summary>
+        <summary>Bestimmt den Berechnungstyp in der Ergebniszeile der Listenspalte basierend auf dem Wert der <see cref="T:Microsoft.Office.Interop.Excel.XlTotalsCalculation" /> Enumeration. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks><para>Die Zeile "Summen" muss nicht angezeigt werden, um diese Eigenschaft festlegen zu können. Es gibt keinen festen Standardwert für diese Eigenschaft. Excel kann den Status dieser Eigenschaft ändern, wenn andere Spalten hinzugefügt oder gelöscht werden.</para>
+        <remarks><para>Die Ergebniszeile muss nicht angezeigt werden, um diese Eigenschaft festzulegen. Es gibt keinen festen Standardwert für diese Eigenschaft. Excel kann den Status dieser Eigenschaft ändern, wenn andere Spalten hinzugefügt oder gelöscht werden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -429,7 +429,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> Objekt zurück, das den XPath des Elements darstellt, das dem angegebenen Objekt zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ist. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> Objekt zurück, das den Xpath des Elements darstellt, das dem angegebenen Objekt zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ist. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
           <para> </para></remarks>

@@ -1,5 +1,5 @@
 <Type Name="FileExportConverter" FullName="Microsoft.Office.Interop.Excel.FileExportConverter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4b27ac15b0b3e0b0e1c199c9745e73b9bbe348b0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003605" /></Metadata><TypeSignature Language="C#" Value="public interface FileExportConverter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d85d0953cb2a108687c37cc4ab832a532d2f5895ca9fa67fc29b6c7ed74d969d" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508479" /></Metadata><TypeSignature Language="C#" Value="public interface FileExportConverter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileExportConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FileExportConverter" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileExportConverter" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen Dateikonverter dar, der zum Speichern von Dateien verwendet wird.</summary>
-    <remarks><para>Sie können keinen neuen Dateikonverter erstellen oder der Auflistung einen <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> hinzufügen. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> objekte werden während der Installation von Microsoft Office oder durch die Installation von zusätzlichen Dateikonvertern hinzugefügt.</para>
+    <remarks><para>Sie können keinen neuen Dateikonverter erstellen oder der <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> Auflistung hinzufügen. <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />Objekte werden während der Installation von Microsoft Office oder durch Installieren zusätzlicher Dateikonverter hinzugefügt.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Application" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,9 +77,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</value>
-        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt. Die Creator-Eigenschaft wurde für die Verwendung in Microsoft Excel für den Macintosh entwickelt, bei dem jede Anwendung einen aus vier Zeichen bestehenden Urhebercode besitzt. Der Urhebercode für Microsoft Excel lautet XCEL.</para>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt. Die Creator-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -106,7 +106,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Beschreibung für den Dateikonverter zurück. Schreibgeschützte <b>Zeichenfolge</b>.</summary>
+        <summary>Gibt die Beschreibung für den Dateikonverter zurück. Schreibgeschützter <b>String</b>-Wert.</summary>
         <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,7 +162,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine ganze Zahl zurück, die das dateiformat identifiziert, das dem angegebenen Objekt zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> ist. Schreibgeschützt.</summary>
+        <summary>Gibt eine ganze Zahl zurück, die das dem angegebenen Objekt zugeordnete Dateiformat <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> identifiziert. Schreibgeschützt.</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,7 +190,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> , das das übergeordnete Objekt des angegebenen Objekts <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert vom Typ <b> Object </b> zurück, der das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> Objekts darstellt. Schreibgeschützt.</summary>
         <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>

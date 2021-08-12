@@ -1,5 +1,5 @@
 <Type Name="PublishObjects" FullName="Microsoft.Office.Interop.Excel.PublishObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010752" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6fe2cae33cf7bdeaa934dee8836349bfb3286b0661da03d1e1d77248b6b612d6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516606" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObjects&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> Objekte in der Arbeitsmappe. Jedes <b>PublishObject</b>-Objekt stellt ein Element in einer Arbeitsmappe dar, das in einer Webseite gespeichert wurde, und entsprechend den Werten, die durch die Eigenschaften und Methoden des Objekts angegeben wurden, aktualisiert werden kann.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> Eigenschaft, um die <b>PublishObjects -Auflistung zurück.</b></para>
-      <para>Verwenden <b>Sie PublishObjects</b>( ), wobei die Indexnummer des angegebenen Elements in der Arbeitsmappe ist, um <paramref name="index" /> ein <paramref name="index" /> einzelnes <b>PublishObject -Objekt zurück.</b></para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> Eigenschaft, um die <b>PublishObjects -Auflistung</b> zurückzugeben.</para>
+      <para>Verwenden Sie <b>PublishObjects</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer des angegebenen Elements in der Arbeitsmappe ist, um ein einzelnes <b>PublishObject</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -96,12 +96,12 @@
       <Docs>
         <param name="SourceType"><see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" />Erforderlich. Der Quelltyp.</param>
         <param name="Filename"><b>String</b> erforderlich. Die URL (im Intranet oder Internet) oder der Pfad (lokal oder im Netzwerk), unter der/dem das Quellobjekt gespeichert wurde.</param>
-        <param name="Sheet">Optionales <b>Objekt</b>. Der Name des Arbeitsblatts, das als Webseite gespeichert wurde.</param>
-        <param name="Source">Optionales <b>Objekt</b>. Ein eindeutiger Name, der verwendet wird, um Elemente mit einer der folgenden Konstanten als Argument zu <paramref name="SourceType" /> identifizieren: <b>xlSourceAutoFilter</b>, <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>oder <b>xlSourceRange</b>. Wenn <paramref name="SourceType" /> es sich um <b>xlSourceRange</b>handelt, gibt Source einen Bereich an, bei dem es sich um einen definierten Namen handelt. Wenn <paramref name="SourceType" /> <b>xlSourceChart,</b> <b>xlSourcePivotTable</b>oder <b>xlSourceQuery</b>ist, gibt dies den Namen eines Diagramms, eines PivotTable-Berichts oder einer <paramref name="Source" /> Abfragetabelle an.</param>
-        <param name="HtmlType">Optionales <b>Objekt</b>. Gibt an, ob das Element als Microsoft Office-Webkomponente interaktiv oder als statischer Text mit statischen Bildern gespeichert wird. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> Konstanten sein. ConstantDescription<b>xlHtmlCalc Item,</b>gespeichert als interaktive Microsoft Office Spreadsheet-Komponente. <b>xlHtmlChart</b> Element, das als interaktive Microsoft Office gespeichert wird. <b>xlHtmlList</b> Element, das als interaktives Element Microsoft Office PivotTable-Komponente gespeichert wird. <b>xlHtmlStatic</b> Als statischer Text und Bilder gespeichertes Element.</param>
-        <param name="DivID">Optionales <b>Objekt</b>. Der eindeutige Bezeichner, der in dem HTML DIV-Tag verwendet wird, um das Element auf der Webseite zu kennzeichnen.</param>
-        <param name="Title">Optionales <b>Objekt</b>. Der Titel der Webseite.</param>
-        <summary>Erstellt ein Objekt, das ein Element in einem Dokument darstellt, das auf einer Webseite gespeichert wurde. Solche Objekte erleichtern nachfolgende Aktualisierungen der Webseite, wenn in Microsoft Excel automatisierte Änderungen an dem Dokument vorgenommen werden. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> zurück.</summary>
+        <param name="Sheet"><b>Optional-Objekt</b>. Der Name des Arbeitsblatts, das als Webseite gespeichert wurde.</param>
+        <param name="Source"><b>Optional-Objekt</b>. Ein eindeutiger Name, der verwendet wird, um Elemente zu identifizieren, die eine der folgenden Konstanten als <paramref name="SourceType" /> Argument haben: <b>xlSourceAutoFilter</b>, <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>oder <b>xlSourceRange</b>. Ist <paramref name="SourceType" /> <b> xlSourceRange </b>festgelegt, gibt Source einen Bereich an, bei dem es sich um einen definierten Namen handeln kann. If <paramref name="SourceType" /> is <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, or <b>xlSourceQuery</b>, <paramref name="Source" /> specifies the name of a chart, PivotTable report, or query table.</param>
+        <param name="HtmlType"><b>Optional-Objekt</b>. Gibt an, ob das Element als Microsoft Office-Webkomponente interaktiv oder als statischer Text mit statischen Bildern gespeichert wird. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> Konstanten sein: ConstantDescription<b>xlHtmlCalc</b>Item, gespeichert als interaktive Microsoft Office Spreadsheet-Komponente. <b>xlHtmlChart</b> Als interaktive Microsoft Office Chart-Komponente gespeichertes Element. <b>xlHtmlList</b> Als interaktive Microsoft Office PivotTable-Komponente gespeichertes Element. <b>xlHtmlStatic</b> Element, das als statischer Text und Als-Bilder gespeichert wird.</param>
+        <param name="DivID"><b>Optional-Objekt</b>. Der eindeutige Bezeichner, der in dem HTML DIV-Tag verwendet wird, um das Element auf der Webseite zu kennzeichnen.</param>
+        <param name="Title"><b>Optional-Objekt</b>. Der Titel der Webseite.</param>
+        <summary>Erstellt ein Objekt, das ein Element in einem Dokument darstellt, das auf einer Webseite gespeichert wurde. Solche Objekte erleichtern nachfolgende Aktualisierungen der Webseite, wenn in Microsoft Excel automatisierte Änderungen an dem Dokument vorgenommen werden. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> Objekt zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +188,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -275,7 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

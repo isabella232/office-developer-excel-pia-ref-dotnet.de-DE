@@ -1,5 +1,5 @@
 <Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005761" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScale" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2aeb66e180fa2e271d2c57f0326460661d69d1370cbb140b719cd71d27668d5f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509662" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScale" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScale" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScale" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScale" />
@@ -22,9 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Regel zur bedingten Formatierung einer Farbskala dar.</summary>
-    <remarks><para>Alle Bedingten Formatierungsobjekte sind in einem <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistungsobjekt enthalten, das ein untergeordnetes Objekt einer Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ist. Sie können eine Formatierungsregel für Farbskalen mithilfe der oder der Methode <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> der <b>FormatConditions -Auflistung</b> erstellen.</para>
+    <remarks><para>Alle bedingten Formatierungsobjekte sind in einem <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistungsobjekt enthalten, das ein untergeordnetes Element einer <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Auflistung ist. Sie können eine Regel für die Formatierung von Farbskalen mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> <b>FormatConditions-Auflistung</b> oder der Methode erstellen.</para>
       <para>Bei Farbskalen handelt es sich um visuelle Hilfen, durch die Sie die Datenverteilung und -streuung leichter erkennen können. Sie können auf einen Datenbereich, Daten in einer Tabelle oder Daten in einem PivotTable-Bericht Skalen mit zwei oder drei Farben anwenden. Bei einer bedingten Formatierung mit zwei Farben weisen Sie den Wert, Typ und die Farbe den niedrigsten und höchsten Schwellenwerten eines Bereichs zu. Eine Farbskala mit drei Farben verfügt außerdem über eine mittlere Schwelle.</para>
-      <para>Jeder dieser Schwellenwerte wird durch Festlegen der Eigenschaften des Objekts <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> bestimmt. Das <b>ColorScaleCriteria -Objekt,</b> das ein untergeordnetes Objekt des <b>ColorScale -Objekts</b> ist, ist eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> für die Farbskala.</para>
+      <para>Jeder dieser Schwellenwerte wird durch Festlegen der Eigenschaften des <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> Objekts bestimmt. Das <b>ColorScaleCriteria</b> -Objekt, das ein untergeordnetes Element des <b>ColorScale</b> -Objekts ist, ist eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> Objekte für die Farbskala.</para>
       <para> </para></remarks>
     <example><para>Im folgenden Codebeispiel wird ein Zahlenbereich erstellt und dann eine Regel zur bedingten Formatierung von Farbskalen mit zwei Farben auf den Bereich angewendet. Die Farbe für den niedrigsten Schwellenwert wird dann auf Rot und die des maximalen Schwellenwerts auf Blau festgelegt.</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
@@ -311,7 +311,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, das die Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel-Anwendung darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
+        <summary>Wenn diese Eigenschaft ohne Einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, <see cref="T:Microsoft.Office.Interop.Excel._Application" /> das die Microsoft Office Excel Anwendung darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <b>Application</b> -Objekt, das den Ersteller des angegebenen Objekts darstellt. Schreibgeschützt.</summary>
         <value><b>Anwendung</b> (siehe oben)</value>
         <remarks><para>Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.</para>
           <para> </para></remarks>
@@ -368,7 +368,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorScaleCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> Objekt zurück, bei dem es sich um eine Auflistung einzelner Objekte <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> handelt. Das Objekt gibt den Typ, den Wert und die Farbe der Schwellenwertkriterien an, die im bedingten Format der <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> Farbskala verwendet werden. Schreibgeschützt.</summary>
+        <summary>Gibt ein   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> Objekt zurück, bei dem es sich um eine Auflistung einzelner <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> Objekte handelt. Das Objekt gibt den Typ, den Wert und die <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> Farbe von Schwellenwertkriterien an, die im bedingten Farbskalenformat verwendet werden. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -396,9 +396,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Konstante in der <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> Aufzählung zurück, die die Anwendung angibt, in der dieses Objekt erstellt wurde. Schreibgeschützt.</summary>
+        <summary>Gibt eine Konstante in der <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> Enumeration zurück, die die Anwendung angibt, in der dieses Objekt erstellt wurde. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.  Die Eigenschaft wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen aus vier Zeichen großen <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+        <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.  Die <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh vorgesehen, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -483,7 +483,7 @@
       <Docs>
         <param name="Range">Der Bereich, für den diese Formatierungsregel gilt.</param>
         <summary>Legt den Zellbereich fest, für den diese Formatierungsregel gilt.</summary>
-        <remarks><para>Der Bereich muss im Bezugsformat A1 enthalten sein und vollständig in dem Blatt enthalten sein, das das übergeordnete Element der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> ist. Er kann den Bereichsoperator (Doppelpunkt), den Schnittmengenoperator (Leerzeichen) oder den Vereinigungsoperator (Komma) enthalten. Dollarzeichen können auch verwendet werden, sie werden aber ignoriert.</para>
+        <remarks><para>Der Bereich muss in der A1-Bezugsart enthalten sein und vollständig in dem Blatt enthalten sein, das das übergeordnete Element der <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> Auflistung ist. Er kann den Bereichsoperator (Doppelpunkt), den Schnittmengenoperator (Leerzeichen) oder den Vereinigungsoperator (Komma) enthalten. Dollarzeichen können auch verwendet werden, sie werden aber ignoriert.</para>
           <para>Sie können auch einen lokalen, definierten Namen in einem Teil des Bereichs verwenden, der Name muss aber in der Sprache des Makros angegeben sein.</para>
           <para> </para></remarks>
       </Docs>
@@ -571,8 +571,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>booleschen Wert</b> zurück, der angibt, ob das bedingte Format auf ein Diagramm angewendet <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> wird. Schreibgeschützt.</summary>
-        <value><b>Boolean</b></value>
+        <summary>Gibt einen <b>booleschen</b> Wert zurück, der angibt, ob das bedingte Format auf ein Diagramm angewendet <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> wird. Schreibgeschützt.</summary>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -602,9 +602,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine der Konstanten der Enumeration zurück oder legt sie fest, die den Bereich des bedingten Formats bestimmt, wenn es auf ein <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> PivotTable-Diagramm angewendet wird.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen einer der Konstanten der <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> Enumeration, die den Bereich des bedingten Formats bestimmt, wenn es auf ein PivotTable-Diagramm angewendet wird.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
-        <remarks><para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> , der den Bereich mithilfe der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" /> legt.</para>
+        <remarks><para>Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> , der den Bereich mithilfe der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" /> festlegt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -632,7 +632,7 @@
         <summary>Legt den Prioritätswert für diese Regel zur bedingten Formatierung auf 1 fest, sodass die Regel vor allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
         <remarks><para>Wenn mehrere Regeln zur bedingten Formatierung vorhanden sind und wenn für diese Regel nicht zuvor die Priorität 1 festgelegt wurde, wird die Priorität aller anderen im Arbeitsblatt vorhandenen Regeln von dieser Methode um 1 erhöht.</para>
           <para>
-            <b>Hinweis:</b>Prioritätsstufen für Regeln zur bedingten Formatierung werden auf Arbeitsblattebene angewendet.</para>
+            <b>Hinweis:</b>Prioritätsebenen für Regeln für bedingte Formatierung werden auf Arbeitsblattebene angewendet.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -660,7 +660,7 @@
         <summary>Legt die Auswertungsreihenfolge für diese Regel zur bedingten Formatierung fest, sodass sie nach allen anderen Regeln im Arbeitsblatt ausgewertet wird.</summary>
         <remarks><para>Der tatsächliche Wert der Priorität entspricht der Gesamtanzahl von Regeln zur bedingten Formatierung im Arbeitsblatt. Wenn ein Arbeitsblatt mehrere Regeln zur bedingten Formatierung enthält, werden die Prioritäten von Regeln, die zuvor einen höheren Prioritätswert als diese Regel hatten, von dieser Methode um 1 reduziert.</para>
           <para>
-            <b>Hinweis:</b>Prioritätsstufen für Regeln zur bedingten Formatierung werden auf Arbeitsblattebene angewendet.</para>
+            <b>Hinweis:</b>Prioritätsebenen für Regeln für bedingte Formatierung werden auf Arbeitsblattebene angewendet.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -688,7 +688,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der bestimmt, ob zusätzliche Formatierungsregeln für die Zelle ausgewertet werden sollen, wenn die aktuelle Regel zu <b>True</b> ausgewertet wird, oder legt diesen Wert fest.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Zur Unterstützung der Abwärtskompatibilität lautet der Standardwert für diese Eigenschaft <b>True</b>, dies ist das Gegenteil des Verhaltens einer Formatierungsregel, die auf der Benutzeroberfläche erstellt wird.</para>
           <para> </para></remarks>
       </Docs>
@@ -716,9 +716,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine der Konstanten der Enumeration zurück, die <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> den Typ des bedingten Formats angibt. Schreibgeschützt.</summary>
+        <summary>Gibt eine der Konstanten der <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> Enumeration zurück, die den Typ des bedingten Formats angibt. Schreibgeschützt.</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Diese Eigenschaft gibt immer einen <b>ganzzahligen</b> Wert von "3" zurück, der gleichbedeutend mit <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" /> .</para>
+        <remarks><para>Diese Eigenschaft gibt immer den <b>ganzzahligen</b> Wert "3" zurück, der dem Wert <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" /> entspricht.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
