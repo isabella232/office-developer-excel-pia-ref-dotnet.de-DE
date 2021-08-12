@@ -1,5 +1,5 @@
 <Type Name="PivotTable" FullName="Microsoft.Office.Interop.Excel.PivotTable">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="16c5d5ee17ecfd05c6488cea8090233dcfb2c5a3" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53140691" /></Metadata><TypeSignature Language="C#" Value="public interface PivotTable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3adc582d805c6c63aa2301fb45e65416c52208390707a5ae643559dbbe4dfc4a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507814" /></Metadata><TypeSignature Language="C#" Value="public interface PivotTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotTable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotTable" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotTable" />
@@ -215,7 +215,7 @@
       <Parameters />
       <Docs>
         <summary>Führt einen Rückschreibvorgang für alle bearbeiteten Zellen in einem PivotTable-Bericht auf der Grundlage einer OLAP-Datenquelle aus.</summary>
-        <remarks><para>Die <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> Methode führt eine UPDATE CUBE-Anweisung für alle Änderungen aus, die im Wertebereich der PivotTable seit dem Letzten Übernehmen des Änderungsvorgangs oder seit dem Erstellen der PivotTable vorgenommen wurden, wenn noch nie ein Commit angewendeter Änderungen ausgeführt wurde. Diese Methode erzeugt einen Laufzeitfehler, wenn sie für eine PivotTable ausgeführt wird, die nicht auf einer OLAP-Datenquelle basiert.</para>
+        <remarks><para>Die <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> Methode führt eine UPDATE CUBE-Anweisung für alle Änderungen aus, die im Wertebereich der PivotTable seit dem Letzten Übernehmen des Änderungsvorgangs oder seit dem Erstellen der PivotTable vorgenommen wurden, wenn das Commit angewendeter Änderungen nie ausgeführt wurde. Diese Methode erzeugt einen Laufzeitfehler, wenn sie für eine PivotTable ausgeführt wird, die nicht auf einer OLAP-Datenquelle basiert.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -245,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob eine <b>UPDATE CUBE-Anweisung</b> für jede Zelle bearbeitet wird, oder nur, wenn der Benutzer änderungen berechnet, wenn eine Was-wäre-wäre-wenn-Analyse für eine PivotTable basierend auf einer OLAP-Datenquelle ausgeführt wird.</summary>
+        <summary>Ruft ab oder legt fest, ob eine <b>UPDATE CUBE-Anweisung</b> für jede Zelle bearbeitet wird, oder nur, wenn der Benutzer beim Ausführen einer Was-wäre-wäre-wenn-Analyse auf einer PivotTable basierend auf einer OLAP-Datenquelle Änderungen berechnet.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.XlAllocation" /> Objekt.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> Eigenschaft entspricht der Einstellung Berechnen mit Änderungen im Dialogfeld What-If Analyse Einstellungen. Die Standardeinstellung ist <see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" /> , die der Einstellung manuell (beim Auswählen von PivotTable mit Änderungen berechnen) entspricht.</para>
@@ -281,7 +281,7 @@
         <summary>Ruft ab oder legt fest, welche Methode zum Zuordnen von Werten beim Ausführen einer Was-wäre-wenn-Analyse für einen PivotTable-Bericht auf der Grundlage einer OLAP-Datenquelle verwendet werden soll.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationMethod" /> Objekt.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> Eigenschaft entspricht der Einstellung für die Zuordnungsmethode im Dialogfeld What-If Analyse Einstellungen. Die Standardeinstellung ist <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" /> , die der Einstellung "Zuordnung gleich" entspricht. Wenn die Eigenschaft auf festgelegt ist, was der Einstellung für <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> die <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> gewichtete Zuordnung entspricht, können Sie optional den zu verwendenden Gewichtungsausdruck angeben, indem Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> Eigenschaft festlegen. Wenn Sie keinen Gewichtungsausdruck angeben, wird ein Gewichtungsausdruck verwendet, der dem vorhandenen Wert der &lt; Blattzelle &gt;  /  &lt; &gt; entspricht.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> Eigenschaft entspricht der Einstellung Allocation Method im Dialogfeld What-If Analyse Einstellungen . Die Standardeinstellung ist <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" /> , die der Einstellung "Zuordnung gleich" entspricht. Wenn die Eigenschaft auf festgelegt ist, was der Einstellung für <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> die <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> gewichtete Zuordnung entspricht, können Sie optional den zu verwendenden Gewichtungsausdruck angeben, indem Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> Eigenschaft festlegen. Wenn Sie keinen Gewichtungsausdruck angeben, wird ein Gewichtungsausdruck verwendet, der dem vorhandenen Wert der &lt; Blattzelle &gt;  /  &lt; &gt; entspricht.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -347,7 +347,7 @@
         <summary>Ruft den MDX-Gewichtungsausdruck ab, der beim Ausführen einer Was-wäre-wenn-Analyse für einen PivotTable-Bericht auf der Grundlage einer OLAP-Datenquelle verwendet werden soll, oder legt diesen fest.</summary>
         <value>Der MDX-Gewichtungsausdruck, der beim Ausführen einer Was-wäre-wäre-wenn-Analyse für einen PivotTable-Bericht basierend auf einer OLAP-Datenquelle verwendet werden soll.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> Eigenschaft entspricht der Einstellung Gewichtungsausdruck im Dialogfeld What-If Analyse Einstellungen . Bevor die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> Eigenschaft festgelegt werden kann, müssen Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> .</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> Eigenschaft entspricht der Einstellung für den Gewichtungsausdruck im Dialogfeld What-If Analyse Einstellungen. Bevor die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> Eigenschaft festgelegt werden kann, müssen Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -381,7 +381,7 @@
 Lese-/Schreibzugriff.</summary>
         <value><b>Boolescher Wert</b></value>
         <remarks><para>Standardwert ist <b>False</b>.</para>
-          <para>Wenn diese Eigenschaft auf <b>"True"</b>festgelegt ist, können mehrere Filter auf eine einzelne angewendet <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> werden. Wenn der Wert auf <b>"False"</b>festgelegt ist, wird durch Anwenden eines Filters auf einen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> filter, der bereits gefiltert ist, der vorhandene Filter entfernt und der neue Filter angewendet.
+          <para>Wenn diese Eigenschaft auf <b>True</b>festgelegt ist, können mehrere Filter auf eine einzelne angewendet <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> werden. Wenn der Wert auf <b>"False"</b>festgelegt ist, wird durch Anwenden eines Filters auf einen <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> filter, der bereits gefiltert ist, der vorhandene Filter entfernt und der neue Filter angewendet.
 
 Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />  Felder mit mehr als einem Filter angewendet wurden, werden im Hintergrund alle Filter entfernt, ohne dass eine Warnung angezeigt <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />  wird. Beim Ausführen dieses Vorgangs über die Benutzeroberfläche wird jedoch eine Benachrichtigung angezeigt.</para>
           <para> </para></remarks>
@@ -852,7 +852,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Beschriftung an, die in der Spaltenüberschrift eines <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Kompaktzeilenlayoutformulars angezeigt wird. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die Beschriftung an, die in der Spaltenüberschrift eines <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Kompaktzeilenlayouts angezeigt wird. Lese-/Schreibzugriff.</summary>
         <value>Zeichenfolge</value>
         <remarks><para>Wenn der Benutzer diese Beschriftungen im Raster anpasst, spiegelt sich dies außerdem in diesen Eigenschaften wider.</para>
           <para> </para></remarks>
@@ -1182,7 +1182,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       <Parameters />
       <Docs>
         <summary>Verwirft alle Änderungen an den bearbeiteten Zellen eines PivotTable-Berichts basierend auf einer OLAP-Datenquelle.</summary>
-        <remarks><para>Bei einem PivotTable-Bericht, der auf einer OLAP-Datenquelle basiert, entfernt die Methode alle in Wertzellen eingegebenen Werte und Formeln und führt dann einen PivotTable-Aktualisierungsvorgang aus, um die neuesten Werte aus der Datenquelle abzurufen. Der Datenquellenwert wird für alle bearbeiteten Wertzellen auf einen Nullverweis (Nothing in Visual Basic) festgelegt und eine ROLLBACK TRANSACTION-Anweisung für den OLAP-Server ausgeführt.</para>
+        <remarks><para>Bei einem PivotTable-Bericht, der auf einer OLAP-Datenquelle basiert, entfernt die Methode alle in Wertzellen eingegebenen Werte und Formeln und führt dann einen PivotTable-Aktualisierungsvorgang aus, um die neuesten Werte aus der Datenquelle abzurufen. Der Datenquellenwert wird auf einen Nullverweis (Nothing in Visual Basic) für alle bearbeiteten Wertzellen festgelegt und eine ROLLBACK TRANSACTION-Anweisung für den OLAP-Server ausgeführt.</para>
           <para>Wenn Sie versuchen, diese Methode für einen PivotTable-Bericht basierend auf einer Nicht-OLAP-Datenquelle auszuführen, gibt die Methode einen Laufzeitfehler zurück.</para>
           <para> </para></remarks>
       </Docs>
@@ -1497,7 +1497,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
         <param name="PivotItem">Das Element, von dem aus der Drilldownvorgang ausgeführt wird.</param>
         <param name="CubeField">Die Zielhierarchie, auf die ein Drilldown ausgeführt wird.</param>
         <param name="PivotLine">Gibt die Zeile in der PivotTable an, in der sich das Startelement des Vorgangs befindet. In Fällen, in denen PivotLine nicht angegeben ist, wird standardmäßig die oberste PivotLine verwendet, in der das Element angezeigt wird.</param>
-        <summary>Ermöglicht das Ausführen eines Drilldowns zu einer Position innerhalb einer OLAP- oder PowerPivot-basierten Cubehierarchie.</summary>
+        <summary>Ermöglicht das Ausführen eines Drillthroughs zu einer Position innerhalb einer OLAP- oder PowerPivot basierenden Cubehierarchie.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1846,7 +1846,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
         <summary>Ruft ab oder legt fest, ob das Zurückschreiben in die Datenquelle für die angegebene PivotTable aktiviert ist.</summary>
         <value><b>true,</b> wenn das Zurückschreiben in die Datenquelle für die angegebene PivotTable aktiviert ist; andernfalls <b>false</b>. Der Standardwert ist <b>false</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Bei OLAP-Datenquellen wird durch Festlegen auf die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> Eigenschaft auf <b>"true"</b> das Rückschreiben aktiviert und die Warnung deaktiviert, wenn der Benutzer Werte im Datenbereich der PivotTable überschreibt. Bei Nicht-OLAP-Datenquellen ermöglicht das Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> Eigenschaft auf <b>"true"</b> das Zurückschreiben im Code und ermöglicht es dem Benutzer, Datenwerte zu ändern, die zuvor nicht geändert werden konnten.</para>
+          <para>Bei OLAP-Datenquellen aktiviert die Einstellung auf <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <b>"true"</b> das Zurückschreiben und deaktiviert die Warnung, wenn der Benutzer Werte im Datenbereich der PivotTable überschreibt. Bei Nicht-OLAP-Datenquellen ermöglicht das Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> Eigenschaft auf <b>"true"</b> das Zurückschreiben im Code und ermöglicht es dem Benutzer, Datenwerte zu ändern, die zuvor nicht geändert werden konnten.</para>
           <para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> Eigenschaften des Objekts können nicht gleichzeitig <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> auf <b>"true"</b> festgelegt werden.</para>
           <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> Eigenschaft auf <b>"true"</b> und dann <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> auf <b>"true"</b>festgelegt ist, wird die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> Eigenschaft automatisch auf <b>"false"</b> festgelegt, die PivotTable wird aktualisiert, und die Bearbeitung von Datenwerten geht verloren.</para>
           <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> Eigenschaft auf <b>"true"</b> und dann <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> auf <b>"true"</b>festgelegt ist, wird die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> Eigenschaft automatisch auf <b>"false"</b> festgelegt, die PivotTable wird nicht aktualisiert, und die Datenquellenwerte werden wiederhergestellt.</para>
@@ -2214,7 +2214,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       <Docs>
         <summary>Diese Eigenschaft wird verwendet, um In-Grid-Dropzonen für ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekt umzuschalten.  In einigen Fällen wirkt sich dies auch auf das Layout der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> . Lese-/Schreibzugriff.</summary>
         <value><b>Boolescher Wert</b></value>
-        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" /> Eigenschaft auf <b>"True"</b>festgelegt ist, entspricht die In-Grid-Darstellung der Eigenschaft der darstellung <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> in Excel 2003. Wird die Eigenschaft auf <b>False</b> festgelegt, gibt es diese Zonen nicht. Das <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Layout ändert sich auch mit dieser Eigenschaft.</para>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" /> Eigenschaft auf <b> True </b>festgelegt ist, entspricht die In-Grid-Darstellung der Eigenschaft der Darstellung in Excel <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 2003. Wird die Eigenschaft auf <b>False</b> festgelegt, gibt es diese Zonen nicht. Das <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Layout ändert sich auch mit dieser Eigenschaft.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3008,7 +3008,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       </Parameters>
       <Docs>
         <param name="SourceType">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> . Die Quelle der Berichtsdaten.</param>
-        <param name="SourceData"><b>Optional-Objekt</b>. Die Daten für den neuen Bericht. Dabei kann es sich um ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, ein Array von Bereichen oder eine Textkonstante handeln, die den Namen eines anderen Berichts darstellt. Ist für eine externe Datenbank <paramref name="SourceData" /> ein Array von Zeichenfolgen, die die SQL Abfragezeichenfolge enthalten, wobei jedes Element bis zu 255 Zeichen lang ist. Verwenden Sie das <paramref name="Connection" /> Argument, um die ODBC-Verbindungszeichenfolge anzugeben. Aus Gründen der Kompatibilität mit früheren Versionen von Excel kann es sich um ein Array mit <paramref name="SourceData" /> zwei Elementen sein. Das erste Element ist die Verbindungszeichenfolge zur Angabe der ODBC-Quelle der Daten. Das zweite Element ist die SQL-Abfragezeichenfolge, die zum Abrufen der Daten verwendet wird. Wenn Sie <paramref name="SourceData" /> angeben, müssen Sie auch <paramref name="SourceType" /> angeben. Wenn sich die aktive Zelle innerhalb des Bereichs befindet, müssen Sie dies <paramref name="SourceData" /> <paramref name="TableDestination" /> auch angeben.</param>
+        <param name="SourceData"><b>Optional-Objekt</b>. Die Daten für den neuen Bericht. Dabei kann es sich um ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, ein Array von Bereichen oder eine Textkonstante handeln, die den Namen eines anderen Berichts darstellt. Bei einer externen Datenbank handelt es sich <paramref name="SourceData" /> um ein Array von Zeichenfolgen, die die SQL Abfragezeichenfolge enthalten, wobei jedes Element bis zu 255 Zeichen lang ist. Verwenden Sie das <paramref name="Connection" /> Argument, um die ODBC-Verbindungszeichenfolge anzugeben. Aus Gründen der Kompatibilität mit früheren Versionen von Excel kann es sich um ein Array mit <paramref name="SourceData" /> zwei Elementen sein. Das erste Element ist die Verbindungszeichenfolge zur Angabe der ODBC-Quelle der Daten. Das zweite Element ist die SQL-Abfragezeichenfolge, die zum Abrufen der Daten verwendet wird. Wenn Sie <paramref name="SourceData" /> angeben, müssen Sie auch <paramref name="SourceType" /> angeben. Wenn sich die aktive Zelle innerhalb des Bereichs befindet, müssen Sie dies <paramref name="SourceData" /> <paramref name="TableDestination" /> auch angeben.</param>
         <param name="TableDestination"><b>Optional-Objekt</b>. Ein <b>Range</b>-Objekt, das die Position angibt, an der der Bericht auf dem Arbeitsblatt platziert werden soll. Wenn Sie dieses Argument nicht angeben, wird der Bericht an der Stelle der aktiven Zelle platziert.</param>
         <param name="TableName"><b>Optional-Objekt</b>. Eine Zeichenfolge, die den Namen des neuen Berichts angibt.</param>
         <param name="RowGrand"><b>Optional-Objekt</b>. <b>True</b>, wenn der Bericht Gesamtergebnisse für Zeilen enthalten soll.</param>
@@ -3670,7 +3670,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       </ReturnValue>
       <Docs>
         <summary>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleColumnHeaders" /> Eigenschaft wird auf True festgelegt, wenn die Spaltenüberschriften in der angezeigt werden <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> sollen. Lese-/Schreibzugriff.</summary>
-        <value>Boolescher Wert</value>
+        <value>Boolesch</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3701,7 +3701,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       </ReturnValue>
       <Docs>
         <summary>Die boolesche Eigenschaft zeigt gebänderte Spalten an, in denen gerade Spalten anders formatiert sind als ungerade Spalten. Dies erleichtert <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> das Lesen. Lese-/Schreibzugriff.</summary>
-        <value>Boolescher Wert</value>
+        <value>Boolesch</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3763,7 +3763,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       </ReturnValue>
       <Docs>
         <summary>The <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowHeaders" /> property is set to True if the row headers should be displayed in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> . Lese-/Schreibzugriff.</summary>
-        <value>Boolescher Wert</value>
+        <value>Boolesch</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3794,7 +3794,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       </ReturnValue>
       <Docs>
         <summary>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowStripes" /> Eigenschaft zeigt gebänderte Zeilen an, in denen gerade Zeilen anders formatiert sind als ungerade Zeilen. Dies erleichtert <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> das Lesen. Lese-/Schreibzugriff.</summary>
-        <value>Boolescher Wert</value>
+        <value>Boolesch</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4066,7 +4066,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
         <summary>Ruft die Beschreibung ab, die der alternativen Textzeichenfolge für die angegebene PivotTable zugeordnet ist, oder legt sie fest.</summary>
         <value>Die Beschreibung, die der alternativen Textzeichenfolge für die angegebene PivotTable zugeordnet ist.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> Eigenschaft entspricht dem Wert im Feld "Beschreibung" auf der Registerkarte "Alt-Text" des Dialogfelds "PivotTable-Optionen".</para>
+          <para>Der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> Eigenschaft entspricht dem Wert im Feld "Beschreibung" auf der Registerkarte "Alternativer Text" des Dialogfelds "PivotTable-Optionen".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4502,7 +4502,7 @@ Wird diese Eigenschaft auf <b>"False"</b> festgelegt, wenn <see cref="T:Microsof
       </ReturnValue>
       <Docs>
         <summary>Ruft ab oder legt fest, ob gefilterte Elemente in die Summen benannter Mengen für die angegebene PivotTable eingeschlossen werden sollen.</summary>
-        <value><b>true,</b> wenn gefilterte Elemente in den Summen der benannten Sätze für die angegebene PivotTable enthalten sind; andernfalls <b>false</b>. Der Standardwert ist <b>"false".</b></value>
+        <value><b>true,</b> wenn gefilterte Elemente in den Summen der benannten Mengen für die angegebene PivotTable enthalten sind; andernfalls <b>false</b>. Der Standardwert ist <b>"false".</b></value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>
             <b>true,</b> wenn gefilterte Elemente in den Summen für benannte Sätze enthalten sind; andernfalls <b>false</b>. Der Standardwert dieser Eigenschaft ist <b>"false".</b></para>

@@ -1,5 +1,5 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006146" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="40bc9efc8b01d37573c0b0c93ad2d175a6008a340dd3d9a2aaa04718cb214da5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507737" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
@@ -22,12 +22,12 @@
   </Attributes>
   <Docs>
     <summary>Stellt den Rahmen eines Objekts dar.</summary>
-    <remarks><para>Die meisten Umrandungsobjekte (mit Ausnahme von Objekten) haben einen Rahmen, der als einzelne Entität behandelt wird, unabhängig davon, wie viele Seiten <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> es hat. Der gesamte Rahmen muss als Einheit zurückgegeben werden. Verwenden Sie die <b>Border -Eigenschaft,</b> um das <b>Border -Objekt</b> für diese Art von Objekt zurück.</para>
+    <remarks><para>Die meisten Rahmenobjekte (alle mit Ausnahme der <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> Objekte) haben einen Rahmen, der als einzelne Entität behandelt wird, unabhängig davon, wie viele Seiten es hat. Der gesamte Rahmen muss als Einheit zurückgegeben werden. Verwenden Sie die <b>Border</b> -Eigenschaft, um das <b>Border</b> -Objekt für diese Art von Objekt zurückzugeben.</para>
       <para>
-        <b>Bereichs-</b> <b>und Stilobjekte</b> verfügen über vier einzelne Rahmen – links, rechts, oben und unten – die einzeln oder als Gruppe zurückgegeben werden können. Verwenden Sie <b>die Borders -Eigenschaft</b> eines <b>Range-</b> oder <b>Style</b> -Objekts, um die <b>Borders</b> -Auflistung zurück, die alle vier Rahmen enthält und die Rahmen als Einheit behandelt.</para>
-      <para>Verwenden <b>Sie Borders</b>( ), wobei der Rahmen <paramref name="index" /> <paramref name="index" /> identifiziert, um ein einzelnes <b>Border -Objekt zurück.</b></para>
+        <b>Range-</b> und <b>Style-Objekte</b> haben vier diskrete Rahmen – links, rechts, oben und unten –, die einzeln oder als Gruppe zurückgegeben werden können. Verwenden Sie die <b>Borders-Eigenschaft</b> eines <b>Range-</b> oder <b>Style-Objekts,</b> um die <b>Borders</b> -Auflistung zurückzugeben, die alle vier Rahmen enthält und die Rahmen als Einheit behandelt.</para>
+      <para>Verwenden Sie <b>Borders</b>( <paramref name="index" /> ), um ein <paramref name="index" /> einzelnes <b>Border</b> -Objekt zurückzugeben, wobei der Rahmen identifiziert wird.</para>
       <para>
-        <paramref name="Index" /> kann eine der folgenden Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> sein: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>oder <b>xlInsideVertical</b>.</para>
+        <paramref name="Index" /> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> Konstanten sein: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>oder <b>xlInsideVertical</b>.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -54,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +155,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -188,7 +188,7 @@
         <summary>Gibt die Linienart für den Rahmen zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> kann eine der folgenden <b>XlLineStyle -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> kann eine der folgenden <b>XlLineStyle-Konstanten</b> sein:</para>
           <para>
             <b>xlContinuous</b>
           </para>
@@ -304,7 +304,7 @@
       <Docs>
         <summary>Gibt einen <b>Single</b>-Wert zurück, der eine Farbe aufhellt oder abdunkelt, oder legt diesen Wert fest.</summary>
         <value><b>Single</b></value>
-        <remarks><para>Sie können eine Zahl zwischen -1 (dunkelster) und 1 (hellster) für die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> eingeben. Der Wert 0 (null) ist neutral.</para>
+        <remarks><para>Sie können eine Zahl zwischen -1 (dunkelster Wert) und 1 (hellster) für die <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> Eigenschaft eingeben. Der Wert 0 (null) ist neutral.</para>
           <para>Wenn Sie versuchen, diese Eigenschaft auf einen Wert unter -1 oder über 1 festzulegen, wird der Laufzeitfehler "Der angegebene Wert ist außerhalb des zulässigen Bereichs" ausgegeben. Diese Eigenschaft gilt sowohl für Designfarben als auch für designfremde Farben.</para>
           <para> </para></remarks>
       </Docs>
@@ -338,7 +338,7 @@
         <summary>Gibt die Stärke des Rahmens zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> kann eine der folgenden <b>XlBorderWeight -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> kann eine der folgenden <b>XlBorderWeight</b> -Konstanten sein:</para>
           <para>
             <b>xlHairline</b>
           </para>

@@ -1,5 +1,5 @@
 <Type Name="_Worksheet" FullName="Microsoft.Office.Interop.Excel._Worksheet">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7f0ab611aa4d579db9ac504ef7ee328ea8f5b52e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012670" /></Metadata><TypeSignature Language="C#" Value="public interface _Worksheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a0f00f4b29aa758fd1287f9ad3d689ee59d0831e2bcf643edcfed5c38a0a6bb" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507450" /></Metadata><TypeSignature Language="C#" Value="public interface _Worksheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Worksheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._Worksheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Worksheet" />
@@ -409,7 +409,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, das <see cref="T:Microsoft.Office.Interop.Excel.Application" /> die Microsoft Excel-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <summary>Wenn diese Eigenschaft ohne Einen Objektbezeichner verwendet wird, gibt sie ein Objekt zurück, <see cref="T:Microsoft.Office.Interop.Excel.Application" /> das die Microsoft Excel Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -471,9 +471,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AutoFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> zurück, wenn die Filterung ein ist. Gibt <b>Nothing zurück,</b> wenn die Filterung deaktiviert ist. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> Objekt zurück, wenn die Filterung aktiviert ist. Gibt <b>Nothing</b> zurück, wenn die Filterung deaktiviert ist. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks><para>Um ein <b>AutoFilter -Objekt</b> für ein Arbeitsblatt zu erstellen, müssen Sie die automatische Filterung für einen Bereich auf dem Arbeitsblatt manuell oder mithilfe der Methode <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> des Objekts <see cref="T:Microsoft.Office.Interop.Excel.Range" /> aktivieren.</para>
+        <remarks><para>Um ein <b>AutoFilter-Objekt</b> für ein Arbeitsblatt zu erstellen, müssen Sie die automatische Filterung für einen Bereich des Arbeitsblatts manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> Methode des Objekts <see cref="T:Microsoft.Office.Interop.Excel.Range" /> aktivieren.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -517,7 +517,7 @@
       <Docs>
         <summary><b>True</b>, wenn die Dropdownpfeile für AutoFilter momentan im Blatt angezeigt werden. Diese Eigenschaft ist unabhängig von der <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.FilterMode" /> Eigenschaft. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft hat den Wert <b>True</b>True, wenn die Dropdownpfeile momentan angezeigt werden. Sie können diese Eigenschaft auf <b>False</b>False festlegen, um die Pfeile zu entfernen, jedoch nicht auf <b>True</b>True, um sie einzublenden. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> die Methode, um eine Liste zu filtern und die Dropdownpfeile anzeigen.</para>
+        <remarks><para>Diese Eigenschaft hat den Wert <b>True</b>True, wenn die Dropdownpfeile momentan angezeigt werden. Sie können diese Eigenschaft auf <b>False</b>False festlegen, um die Pfeile zu entfernen, jedoch nicht auf <b>True</b>True, um sie einzublenden. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> Methode, um eine Liste zu filtern und die Dropdownpfeile anzuzeigen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -620,9 +620,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, das alle Zellen des Arbeitsblatts darstellt (nicht nur die zellen, die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> derzeit verwendet werden). Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das alle Zellen im Arbeitsblatt darstellt (nicht nur die zellen, die derzeit verwendet werden). Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks><para>Da die Eigenschaft die Standardeigenschaft für das Range -Objekt ist, können Sie den Zeilen- und Spaltenindex unmittelbar nach dem <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" /> Schlüsselwort <b>Cells</b> angeben. <b></b> Weitere Informationen finden Sie in der <b>Item-Eigenschaft.</b></para>
+        <remarks><para>Da es sich bei der Eigenschaft um <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" /> die Standardeigenschaft für das <b>Range-Objekt</b> handelt, können Sie den Zeilen- und Spaltenindex unmittelbar nach dem <b>Schlüsselwort Cells</b> angeben. Weitere Informationen finden Sie unter der <b>Item-Eigenschaft.</b></para>
           <para>Wenn Sie diese Eigenschaft ohne einen Objektbezeichner verwenden, wird ein <b>Range</b>-Objekt zurückgegeben, das alle Zellen im aktiven Arbeitsblatt darstellt.</para>
           <para> </para></remarks>
       </Docs>
@@ -653,9 +653,9 @@
       </Parameters>
       <Docs>
         <param name="Index">Optionaler <b>Variant</b>-Wert. Der Name oder die Nummer des Diagramms. Dieses Argument kann ein Array sein, um mehr als ein Diagramm anzugeben.</param>
-        <summary>Gibt ein Objekt zurück, das ein einzelnes eingebettetes Diagramm (ein Objekt) oder eine Auflistung aller eingebetteten Diagramme (ein Objekt) auf dem <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" /> Blatt darstellt.</summary>
+        <summary>Gibt ein Objekt zurück, das ein einzelnes eingebettetes Diagramm (ein <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> Objekt) oder eine Auflistung aller eingebetteten Diagramme (ein <see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" /> Objekt) auf dem Blatt darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Diese Methode entspricht nicht der <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> Eigenschaft. Diese Methode gibt eingebettete Diagramme zurück; die <b>Charts</b> -Eigenschaft gibt Diagrammblätter zurück. Verwenden Sie die <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Eigenschaft, um das <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekt für ein eingebettetes Diagramm zurückzukehren.</para>
+        <remarks><para>Diese Methode entspricht nicht der <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> Eigenschaft. Diese Methode gibt eingebettete Diagramme zurück; die <b>Charts</b> -Eigenschaft gibt Diagrammblätter zurück. Verwenden Sie die <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Eigenschaft, um das <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Objekt für ein eingebettetes Diagramm zurückzugeben.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -721,11 +721,11 @@
         <Parameter Name="SpellLang" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="CustomDictionary">Optionales <b>Objekt</b>. Eine Zeichenfolge, mit der der Dateiname des Benutzerwörterbuchs angegeben wird, in dem ein Wort gesucht werden soll, das nicht im Standardwörterbuch zu finden ist. Wenn Sie dieses Argument nicht angeben, wird das momentan angegebene Wörterbuch verwendet.</param>
-        <param name="IgnoreUppercase">Optionales <b>Objekt</b>. Mit <b>True</b> werden alle Wörter in Großbuchstaben von Microsoft Excel ignoriert. Lautet der Wert <b>False</b>, werden von Microsoft Excel auch alle Wörter in Großbuchstaben geprüft. Wenn Sie dieses Argument nicht angeben, wird die aktuelle Einstellung verwendet.</param>
-        <param name="AlwaysSuggest">Optionales <b>Objekt</b>. Mit <b>True</b> wird in Microsoft Excel eine Liste mit alternativen Schreibweisen angezeigt, wenn ein falsch geschriebenes Wort gefunden wird. Lautet der Wert <b>False</b>, wird in Microsoft Excel auf die Eingabe des richtig geschriebenen Worts gewartet. Wenn Sie dieses Argument nicht angeben, wird die aktuelle Einstellung verwendet.</param>
-        <param name="SpellLang">Optionales <b>Objekt</b>. Die Sprache des verwendeten Wörterbuchs. Dies kann einer der von der Eigenschaft <b>verwendeten MsoLanguageID-Werte</b> <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> sein.</param>
-        <summary>Prüft die Rechtschreibung eines Objekts. Dieses Formular hat keinen Rückgabewert; Microsoft Excel zeigt das Dialogfeld Rechtschreibung an.</summary>
+        <param name="CustomDictionary"><b>Optional-Objekt</b>. Eine Zeichenfolge, mit der der Dateiname des Benutzerwörterbuchs angegeben wird, in dem ein Wort gesucht werden soll, das nicht im Standardwörterbuch zu finden ist. Wenn Sie dieses Argument nicht angeben, wird das momentan angegebene Wörterbuch verwendet.</param>
+        <param name="IgnoreUppercase"><b>Optional-Objekt</b>. Mit <b>True</b> werden alle Wörter in Großbuchstaben von Microsoft Excel ignoriert. Lautet der Wert <b>False</b>, werden von Microsoft Excel auch alle Wörter in Großbuchstaben geprüft. Wenn Sie dieses Argument nicht angeben, wird die aktuelle Einstellung verwendet.</param>
+        <param name="AlwaysSuggest"><b>Optional-Objekt</b>. Mit <b>True</b> wird in Microsoft Excel eine Liste mit alternativen Schreibweisen angezeigt, wenn ein falsch geschriebenes Wort gefunden wird. Lautet der Wert <b>False</b>, wird in Microsoft Excel auf die Eingabe des richtig geschriebenen Worts gewartet. Wenn Sie dieses Argument nicht angeben, wird die aktuelle Einstellung verwendet.</param>
+        <param name="SpellLang"><b>Optional-Objekt</b>. Die Sprache des verwendeten Wörterbuchs. Dies kann einer der von der Eigenschaft verwendeten <b>MsoLanguageID-Werte</b> <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> sein.</param>
+        <summary>Prüft die Rechtschreibung eines Objekts. Dieses Formular hat keinen Rückgabewert; Microsoft Excel wird das Dialogfeld Rechtschreibung angezeigt.</summary>
         <remarks><para>Verwenden Sie diese Methode, um Kopfzeilen, Fußzeilen und Objekte in einem Arbeitsblatt zu überprüfen.</para>
           <para> </para></remarks>
       </Docs>
@@ -781,7 +781,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, das den Bereich darstellt, der den ersten Zirkelbezug auf dem Blatt enthält, oder nothing, wenn kein Zirkelbezug auf dem <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Blatt vorkommt. <b></b> Der Zirkelbezug muss entfernt werden, bevor die Berechnung fortgesetzt werden kann. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den Bereich darstellt, der den ersten Zirkelbezug auf dem Blatt enthält, oder gibt <b>Nothing</b> zurück, wenn kein Zirkelverweis auf dem Blatt vorhanden ist. Der Zirkelbezug muss entfernt werden, bevor die Berechnung fortgesetzt werden kann. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -810,7 +810,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Entfernt die Spurpfeile aus dem Arbeitsblatt. Spurpfeile werden mithilfe des Überwachungsfeatures hinzugefügt.</summary>
+        <summary>Entfernt die Spurpfeile auf dem Arbeitsblatt, die vom Detektiv hinzugefügt wurden.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -836,7 +836,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht Kreise von ungültigen Einträgen auf dem Arbeitsblatt.</summary>
-        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> Methode, um Zellen zu kreisen, die ungültige Daten enthalten.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> Methode, um Zellen einzukreisen, die ungültige Daten enthalten.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -867,7 +867,7 @@
         <value>To be added.</value>
         <remarks><para>Der Wert, der in der Zelle rechts neben <b>(Name)</b> im Eigenschaftenfenster angezeigt wird, ist der Codename des ausgewählten Objekts. Sie können den Codenamen eines Objekts während der Entwurfszeit ändern, indem Sie diesen Wert ändern. Eine programmgesteuerte Änderung dieser Eigenschaft während der Ausführung des Programms ist nicht möglich.</para>
           <para>Der Codename für ein Objekt kann anstelle eines Ausdrucks verwendet werden, der das Objekt zurückgibt.</para>
-          <para>Der Blattname kann sich vom Codenamen unterscheiden. Wenn Sie ein Blatt erstellen, sind der Blattname und der Codename identisch, aber durch ändern des Blattnamens wird der Codename nicht geändert, und das Ändern des Codenamens (mithilfe des Eigenschaftenfensters im Visual Basic-Editor) ändert den Blattnamen nicht.</para>
+          <para>Es ist möglich, dass sich der Blattname vom Codenamen unterscheidet. Wenn Sie ein Blatt erstellen, sind der Blattname und der Codename identisch, aber das Ändern des Blattnamens ändert den Codenamen nicht, und das Ändern des Codenamens (mithilfe des Eigenschaftenfensters im Visual Basic-Editor) ändert den Blattnamen nicht.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -897,7 +897,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das alle Spalten im angegebenen Arbeitsblatt darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das alle Spalten des angegebenen Arbeitsblatts darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -991,16 +991,16 @@
         <value>To be added.</value>
         <remarks><list type="table">
             <item>
-              <term>1 </term>
-              <description>Verwenden Sie Beschriftungen in der obersten Zeile.</description>
+              <term>1</term>
+              <description>Verwenden Sie Beschriftungen in der oberen Zeile.</description>
             </item>
             <item>
-              <term>2 </term>
+              <term>2</term>
               <description>Verwenden Sie Beschriftungen in der linken Spalte.</description>
             </item>
             <item>
               <term>3</term>
-              <description>Erstellen Sie Links zu Quelldaten.</description>
+              <description>Erstellen sie Links zu Quelldaten.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -1063,10 +1063,10 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optionales <b>Objekt</b>. Das Blatt, vor dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie . <paramref name="After" /></param>
-        <param name="After">Optionales <b>Objekt</b>. Das Blatt, nach dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie . <paramref name="Before" /></param>
+        <param name="Before"><b>Optional-Objekt</b>. Das Blatt, vor dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie <paramref name="After" /> .</param>
+        <param name="After"><b>Optional-Objekt</b>. Das Blatt, nach dem das kopierte Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie <paramref name="Before" /> .</param>
         <summary>Kopiert das Blatt an einen anderen Ort in der Arbeitsmappe.</summary>
-        <remarks><para>Wenn Sie keine oder keines angeben, erstellt Microsoft Excel eine <paramref name="Before" /> <paramref name="After" /> neue Arbeitsmappe, die das kopierte Blatt enthält.</para>
+        <remarks><para>Wenn Sie keines oder nicht <paramref name="Before" /> <paramref name="After" /> angeben, erstellt Microsoft Excel eine neue Arbeitsmappe, die das kopierte Blatt enthält.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1093,7 +1093,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Konstante in der <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> Aufzählung zurück, die die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. XlCreatorCode -Wert mit <b>Leseschutz.</b></summary>
+        <summary>Gibt eine Konstante in der <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> Enumeration zurück, die die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Read-only <b>xlCreatorCode</b>.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
@@ -1122,7 +1122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> zurück, das die einem Arbeitsblatt zugeordneten Bezeichnerinformationen darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> Objekt zurück, das die einem Arbeitsblatt zugeordneten Bezeichnerinformationen darstellt.</summary>
         <value>To be added.</value>
         <remarks><para>Für die <b>CustomProperties</b>-Eigenschaft können Bezeichnerinformationen für ein Arbeitsblatt Metadaten für XML darstellen.</para>
           <para> </para></remarks>
@@ -1153,7 +1153,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <remarks><para>Wenn Sie eine löschen, zeigt diese Methode ein Dialogfeld an, in dem der <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> Benutzer aufgefordert wird, den Löschvorgang zu bestätigen. Dieses Dialogfeld wird standardmäßig angezeigt. Die <b>Delete -Methode</b> gibt einen <b>booleschen</b> Wert, der <b>False</b> ist, wenn der Benutzer im Dialogfeld auf Abbrechen geklickt hat, oder <b>True,</b> wenn der Benutzer auf "Löschen" geklickt hat.</para>
+        <remarks><para>Wenn Sie eine <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> löschen, zeigt diese Methode ein Dialogfeld an, in dem der Benutzer aufgefordert wird, den Löschvorgang zu bestätigen. Dieses Dialogfeld wird standardmäßig angezeigt. Die <b>Delete</b> -Methode gibt einen <b>booleschen</b> Wert, <b>der False</b> ist, wenn der Benutzer im Dialogfeld auf Abbrechen geklickt oder <b>True,</b> wenn der Benutzer auf Löschen geklickt hat.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1226,7 +1226,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn Seitenumbrüche (automatische und manuelle) auf dem angegebenen Arbeitsblatt angezeigt werden. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn Seitenumbrüche (automatische und manuelle) auf dem angegebenen Arbeitsblatt angezeigt werden. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft kann nur festgelegt werden, wenn ein Drucker installiert ist.</para>
           <para> </para></remarks>
@@ -1264,7 +1264,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das angegebene Fenster, Arbeitsblatt oder <b>ListObject</b> von rechts nach links anstelle von links nach rechts angezeigt wird. <b>False</b>, wenn das Objekt von links nach rechts angezeigt wird. Schreibgeschützter <b>boolescher</b> Wert.</summary>
+        <summary><b></b> True , wenn das angegebene Fenster, Arbeitsblatt oder <b>ListObject</b> nicht von links nach rechts, sondern von rechts nach links angezeigt wird. <b>False</b>, wenn das Objekt von links nach rechts angezeigt wird. Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1403,7 +1403,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, falls AutoFilter-Pfeile aktiviert sind, wenn der Schutz „Nur-Benutzerschnittstelle“ eingeschaltet ist. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, falls AutoFilter-Pfeile aktiviert sind, wenn der Schutz „Nur-Benutzerschnittstelle“ eingeschaltet ist. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft gilt für jedes Arbeitsblatt und wird nicht mit dem Arbeitsblatt oder der Sitzung gespeichert.</para>
           <para> </para></remarks>
@@ -1468,9 +1468,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt fest, ob bedingte Formate bei Bedarf automatisch auftreten. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
-        <remarks><para>Bei <b>"True"</b> (Standard) erfolgt die Auswertung bedingter Formate bei Bedarf automatisch.  Bei <b>"False"</b>werden bedingte Formate nicht erneut ausgewertet.  Alle zuvor angewendeten bedingten Formatierungen sind weiterhin sichtbar, werden jedoch nicht aktualisiert, wenn Zellwerte oder <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> Bereiche geändert werden.  </para>
-          <para>Mit diesem Kennzeichen können Programmierer eine Regel vollständig konfigurieren, bevor sie ausgewertet wird.  Dies ist besonders hilfreich, wenn eine Bedingung auf einen großen Bereich angewendet wird, da in einem solchen Fall die Leistung beeinträchtigt werden kann.</para>
+        <value><b>Boolescher Wert</b></value>
+        <remarks><para>Bei Festlegung auf <b>"True"</b> (Standard) erfolgt die Auswertung bedingter Formate bei Bedarf automatisch.  Bei Festlegung auf <b>"False"</b>werden bedingte Formate nicht erneut ausgewertet.  Alle zuvor angewendeten bedingten Formatierungen sind weiterhin sichtbar, werden jedoch nicht aktualisiert, wenn Zellwerte oder <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> Bereiche geändert werden.  </para>
+          <para>Dieses Kennzeichen soll Es Programmierern ermöglichen, eine Regel vollständig zu konfigurieren, bevor sie ausgewertet wird.  Dies ist besonders hilfreich, wenn eine Bedingung auf einen großen Bereich angewendet wird, da in einem solchen Fall die Leistung beeinträchtigt werden kann.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1544,7 +1544,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn PivotTable-Steuerelemente und -Aktionen aktiviert sind, wenn der Schutz nur der Benutzeroberfläche aktiviert ist. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b></b> True , wenn PivotTable-Steuerelemente und -Aktionen aktiviert sind, wenn der Schutz nur für die Benutzeroberfläche aktiviert ist. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft gilt für jedes Arbeitsblatt und wird nicht mit dem Arbeitsblatt oder der Sitzung gespeichert.</para>
           <para>Es muss eine ausreichende Anzahl an ungesperrten Zellen unter und rechts dem PivotTable-Bericht vorliegen, damit Microsoft Excel den PivotTable-Bericht neu berechnen und anzeigen kann.</para>
@@ -1618,7 +1618,7 @@
               <description>Definierte Namen. Sie können einen beliebigen Namen angeben.</description>
             </item>
             <item>
-              <description>Externe Bezüge. Mithilfe des Operators "!" lassen sich Bezüge auf Zellen oder Namen in anderen Arbeitsmappen angeben (z. verwendet, um auf ein Arbeitsblatt zu verweisen, das in einer anderen Arbeitsmappe definiert ist.</description>
+              <description>Externe Bezüge. Mithilfe des Operators "!" lassen sich Bezüge auf Zellen oder Namen in anderen Arbeitsmappen angeben (z. um auf ein Arbeitsblatt zu verweisen, das in einer anderen Arbeitsmappe definiert ist.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -1655,7 +1655,7 @@
       </Parameters>
       <Docs>
         <param name="Type">Der Typ des Dateiformats, in das exportiert werden soll.</param>
-        <param name="Filename">Der Dateiname der zu speichernden Datei. Sie können einen vollständigen Pfad hinzufügen oder short_Excel2007 datei im aktuellen Ordner speichern.</param>
+        <param name="Filename">Der Dateiname der zu speichernden Datei. Sie können einen vollständigen Pfad angeben oder short_Excel2007 die Datei im aktuellen Ordner speichert.</param>
         <param name="Quality">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatQuality" /> . Gibt die Qualität der veröffentlichten Datei an.</param>
         <param name="IncludeDocProperties"><b>True</b>, um die Dokumenteigenschaften einzuschließen, andernfalls <b>False</b>.</param>
         <param name="IgnorePrintAreas"><b>True</b>, um alle festgelegten Druckbereiche beim Veröffentlichen zu ignorieren, andernfalls <b>False</b>.</param>
@@ -1694,7 +1694,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn sich das Arbeitsblatt im Filtermodus befindet. Schreibgeschützter <b>boolescher</b> Wert.</summary>
+        <summary><b></b> True , wenn sich das Arbeitsblatt im Filtermodus befindet. Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft ist <b>True,</b> wenn das Arbeitsblatt eine gefilterte Liste enthält, in der ausgeblendete Zeilen vorhanden sind.</para>
           <para> </para></remarks>
@@ -2040,10 +2040,10 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optionales <b>Objekt</b>. Das Blatt, vor dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie . <paramref name="After" /></param>
-        <param name="After">Optionales <b>Objekt</b>. Das Blatt, hinter dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie . <paramref name="Before" /></param>
+        <param name="Before"><b>Optional-Objekt</b>. Das Blatt, vor dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="Before" /> angeben, ob Sie <paramref name="After" /> .</param>
+        <param name="After"><b>Optional-Objekt</b>. Das Blatt, hinter dem das verschobene Blatt eingefügt wird. Sie können nicht <paramref name="After" /> angeben, ob Sie <paramref name="Before" /> .</param>
         <summary>Verschiebt das Blatt an eine andere Position in der Arbeitsmappe</summary>
-        <remarks><para>Wenn Sie keine oder keines angeben, erstellt Microsoft Excel eine <paramref name="Before" /> <paramref name="After" /> neue Arbeitsmappe, die das verschobene Blatt enthält.</para>
+        <remarks><para>Wenn Sie weder eine noch eine <paramref name="Before" /> <paramref name="After" /> angeben, erstellt Microsoft Excel eine neue Arbeitsmappe, die das verschobene Blatt enthält.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2129,7 +2129,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> , <see cref="T:Microsoft.Office.Interop.Excel.Range" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das nächste Blatt oder die nächste Zelle darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert oder ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das das nächste Blatt <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> oder die nächste Zelle darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt einen Bereich darstellt, emuliert diese Eigenschaft die TAB-TASTE. Allerdings gibt die Eigenschaft die nächste Zelle zurück, ohne sie zu markieren.</para>
           <para>In einem geschützten Blatt gibt diese Eigenschaft die nächste nicht gesperrte Zelle zurück. In einem ungeschützten Blatt wird immer die Zelle unmittelbar rechts von der angegebenen Zelle zurückgegeben.</para>
@@ -2161,8 +2161,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b>. Der Name oder die Nummer des OLE-Objekts.</param>
-        <summary>Gibt ein Objekt zurück, das ein einzelnes OLE-Objekt (ein ) oder eine Auflistung aller OLE-Objekte (eine Auflistung) im Diagramm oder <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> <see cref="T:Microsoft.Office.Interop.Excel.OLEObjects" /> Blatt darstellt. Schreibgeschützt.</summary>
+        <param name="Index"><b>Optional-Objekt</b>. Der Name oder die Nummer des OLE-Objekts.</param>
+        <summary>Gibt ein Objekt zurück, das ein einzelnes OLE-Objekt (ein <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> ) oder eine Auflistung aller OLE-Objekte (eine <see cref="T:Microsoft.Office.Interop.Excel.OLEObjects" /> Auflistung) im Diagramm oder Blatt darstellt. Schreibgeschützt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2603,10 +2603,10 @@
         <Parameter Name="Link" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Destination">Optionales <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, das angibt, wo der Inhalt der Zwischenablage eingefügt werden soll. Ohne Angabe dieses Arguments wird die aktuelle Auswahl verwendet. Dieses Argument kann nur angegeben werden, wenn der Inhalt der Zwischenablage in einem Bereich eingefügt werden kann. Wenn dieses Argument angegeben wird, kann das <paramref name="Link" /> Argument nicht verwendet werden.</param>
-        <param name="Link">Optionales <b>Objekt</b>. <b>True</b>, wenn eine Verknüpfung zur Quelle der eingefügten Daten hergestellt werden soll. Wenn dieses Argument angegeben wird, kann das <paramref name="Destination" /> Argument nicht verwendet werden. Der Standardwert ist <b>False</b>.</param>
+        <param name="Destination"><b>Optional-Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, das angibt, wo der Inhalt der Zwischenablage eingefügt werden soll. Ohne Angabe dieses Arguments wird die aktuelle Auswahl verwendet. Dieses Argument kann nur angegeben werden, wenn der Inhalt der Zwischenablage in einem Bereich eingefügt werden kann. Wenn dieses Argument angegeben ist, kann das <paramref name="Link" /> Argument nicht verwendet werden.</param>
+        <param name="Link"><b>Optional-Objekt</b>. <b>True</b>, wenn eine Verknüpfung zur Quelle der eingefügten Daten hergestellt werden soll. Wenn dieses Argument angegeben ist, kann das <paramref name="Destination" /> Argument nicht verwendet werden. Der Standardwert ist <b>Falsch</b>.</param>
         <summary>Fügt den Inhalt der Zwischenablage auf dem Blatt ein.</summary>
-        <remarks><para>Wenn Sie das Argument nicht angeben, müssen Sie den Zielbereich auswählen, <paramref name="Destination" /> bevor Sie diese Methode verwenden.</para>
+        <remarks><para>Wenn Sie das Argument nicht <paramref name="Destination" /> angeben, müssen Sie den Zielbereich auswählen, bevor Sie diese Methode verwenden.</para>
           <para>Diese Methode ändert gegebenenfalls in Abhängigkeit vom Inhalt der Zwischenablage die Markierung des Blatts.</para>
           <para> </para></remarks>
       </Docs>
@@ -2642,16 +2642,16 @@
         <Parameter Name="NoHTMLFormatting" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Format">Optionales <b>Objekt</b>. Eine Zeichenfolge, die das Zwischenablageformat für die Daten angibt.</param>
-        <param name="Link">Optionales <b>Objekt</b>. <b>True</b>, wenn eine Verknüpfung zur Quelle der eingefügten Daten hergestellt werden soll. Wenn die Quelldaten nicht zum Verknüpfen geeignet sind oder die Quellanwendung die Verknüpfung nicht unterstützt, wird dieser Parameter ignoriert. Der Standardwert ist <b>False</b>.</param>
-        <param name="DisplayAsIcon">Optionales <b>Objekt</b>. <b>True</b> , um die ein- und ausf?ierten Daten als Symbol zu sehen. Der Standardwert ist <b>False</b>.</param>
-        <param name="IconFileName">Optionales <b>Objekt</b>. Der Name der Datei, die das zu verwendende Symbol enthält, wenn <paramref name="DisplayAsIcon" /> <b>"True" ist.</b></param>
-        <param name="IconIndex">Optionales <b>Objekt</b>. Die Indexnummer des Symbols in der Symboldatei.</param>
-        <param name="IconLabel">Optionales <b>Objekt</b>. Die Beschriftung für das Symbol.</param>
-        <param name="NoHTMLFormatting">Optionales <b>Objekt</b>. <b>True</b>, um alle Formatierungen, Links und Bilder aus HTML zu entfernen. <b>Falsch</b>, um HTML unverändert einzufügen. Der Standardwert ist <b>False</b>.</param>
-        <summary>Fügt den Inhalt der Zwischenablage in einem angegebenen Format in das Blatt ein. Verwenden Sie diese Methode zum Einfügen von Daten aus anderen Anwendungen oder Daten in einem bestimmten Format.</summary>
+        <param name="Format"><b>Optional-Objekt</b>. Eine Zeichenfolge, die das Zwischenablageformat für die Daten angibt.</param>
+        <param name="Link"><b>Optional-Objekt</b>. <b>True</b>, wenn eine Verknüpfung zur Quelle der eingefügten Daten hergestellt werden soll. Wenn die Quelldaten nicht für die Verknüpfung geeignet sind oder die Quellanwendung das Verknüpfen nicht unterstützt, wird dieser Parameter ignoriert. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="DisplayAsIcon"><b>Optional-Objekt</b>. <b>True,</b> um die eingefügten Daten als Symbol anzuzeigen. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="IconFileName"><b>Optional-Objekt</b>. Der Name der Datei, die das zu verwendende Symbol enthält, wenn <paramref name="DisplayAsIcon" /> <b>true ist.</b></param>
+        <param name="IconIndex"><b>Optional-Objekt</b>. Die Indexnummer des Symbols in der Symboldatei.</param>
+        <param name="IconLabel"><b>Optional-Objekt</b>. Die Beschriftung für das Symbol.</param>
+        <param name="NoHTMLFormatting"><b>Optional-Objekt</b>. <b>True</b>, um alle Formatierungen, Links und Bilder aus HTML zu entfernen. <b>Falsch</b>, um HTML unverändert einzufügen. Der Standardwert ist <b>False</b>.</param>
+        <summary>Fügt den Inhalt der Zwischenablage mithilfe eines angegebenen Formats in das Blatt ein. Verwenden Sie diese Methode zum Einfügen von Daten aus anderen Anwendungen oder Daten in einem bestimmten Format.</summary>
         <remarks><para>
-            <paramref name="NoHTMLFormatting" /> ist nur wichtig, <paramref name="Format" /> wenn = "HTML" ist. In allen anderen Fällen <paramref name="NoHTMLFormatting" /> wird dies ignoriert.</para>
+            <paramref name="NoHTMLFormatting" /> spielt nur eine Rolle, wenn <paramref name="Format" /> = "HTML". In allen anderen Fällen <paramref name="NoHTMLFormatting" /> wird dies ignoriert.</para>
           <para>Sie müssen den Zielbereich markieren, bevor Sie diese Methode verwenden.</para>
           <para>Diese Methode ändert gegebenenfalls in Abhängigkeit vom Inhalt der Zwischenablage die Markierung des Blatts.</para>
           <para> </para></remarks>
@@ -2716,8 +2716,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b>. Der Name oder die Nummer des Berichts.</param>
-        <summary>Gibt ein Objekt zurück, das einen einzelnen PivotTable-Bericht (ein Objekt) oder eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> PivotTable-Berichte (ein Objekt) in einem <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> Arbeitsblatt darstellt. Schreibgeschützt.</summary>
+        <param name="Index"><b>Optional-Objekt</b>. Der Name oder die Nummer des Berichts.</param>
+        <summary>Gibt ein Objekt zurück, das einen einzelnen PivotTable-Bericht (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekt) oder eine Auflistung aller PivotTable-Berichte (ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> Objekt) in einem Arbeitsblatt darstellt. Schreibgeschützt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2762,23 +2762,23 @@
         <Parameter Name="Connection" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Optionales <b>Objekt</b>. Die Quelle der Berichtsdaten. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> .constants sein.</param>
-        <param name="SourceData">Optionales <b>Objekt</b>. Die Daten für den neuen Bericht. Dies kann ein Objekt, ein Array von Bereichen oder eine Textkonstante sein, die <see cref="T:Microsoft.Office.Interop.Excel.Range" /> den Namen eines anderen Berichts darstellt. Bei einer externen Datenbank handelt es sich um ein Array von Zeichenfolgen mit SQL Abfragezeichenfolge, wobei jedes Element bis zu <paramref name="SourceData" /> 255 Zeichen lang ist. Sie sollten das Argument <paramref name="Connection" /> verwenden, um die OdBC-Verbindungszeichenfolge anzugeben. Aus Kompatibilitätsgründen mit früheren Versionen von Excel kann dies ein Array <paramref name="SourceData" /> mit zwei Elementen sein. Das erste Element ist die Verbindungszeichenfolge zur Angabe der ODBC-Quelle der Daten. Das zweite Element ist die SQL-Abfragezeichenfolge, die zum Abrufen der Daten verwendet wird. Wenn Sie <paramref name="SourceData" /> angeben, müssen Sie auch <paramref name="SourceType" /> angeben. Wenn sich die aktive Zelle innerhalb des Bereichs <paramref name="SourceData" /> befindet, müssen Sie <paramref name="TableDestination" /> auch angeben.</param>
-        <param name="TableDestination">Optionales <b>Objekt</b>. Ein <b>Range</b>-Objekt, das die Position angibt, an der der Bericht auf dem Arbeitsblatt platziert werden soll. Wenn Sie dieses Argument nicht angeben, wird der Bericht an der Stelle der aktiven Zelle platziert.</param>
-        <param name="TableName">Optionales <b>Objekt</b>. Eine Zeichenfolge, die den Namen des neuen Berichts angibt.</param>
-        <param name="RowGrand">Optionales <b>Objekt</b>. <b>True</b>, wenn der Bericht Gesamtergebnisse für Zeilen enthalten soll.</param>
-        <param name="ColumnGrand">Optionales <b>Objekt</b>. <b>True</b>, wenn der Bericht Gesamtergebnisse für Spalten enthalten soll.</param>
-        <param name="SaveData">Optionales <b>Objekt</b>. <b>True</b>, wenn die Daten zusammen mit dem Bericht gespeichert werden sollen. <b>False</b>, wenn nur die Definition des Berichts gespeichert werden soll.</param>
-        <param name="HasAutoFormat">Optionales <b>Objekt</b>. <b>True</b>, wenn der Bericht nach einer Aktualisierung oder nach dem Verschieben von Feldern in Microsoft Excel automatisch formatiert werden soll.</param>
-        <param name="AutoPage">Optionales <b>Objekt</b>. Nur gültig, <paramref name="SourceType" /> wenn <b>xlConsolidation ist.</b> <b>True</b>, wenn von Microsoft Excel für die Konsolidierung ein Seitenfeld erstellt wird. Wenn <paramref name="AutoPage" /> <b>"False"</b>ist, müssen Sie das Seitenfeld oder die Felder erstellen.</param>
-        <param name="Reserved">Optionales <b>Objekt</b>. Von Microsoft Excel nicht verwendet.</param>
-        <param name="BackgroundQuery">Optionales <b>Objekt</b>. <b>True</b>, wenn Abfragen für den Bericht in Excel asynchron (im Hintergrund) ausgeführt werden sollen. Der Standardwert ist <b>False</b>.</param>
-        <param name="OptimizeCache">Optionales <b>Objekt</b>. <b>True</b>, wenn der PivotTable-Cache beim Erstellen optimiert werden soll. Der Standardwert ist <b>False</b>.</param>
-        <param name="PageFieldOrder">Optionales <b>Objekt</b>. Die Reihenfolge, in der Seitenfelder dem Layout des PivotTable-Berichts hinzugefügt werden. Dabei kann es sich um eine der folgenden <b>XlOrder</b>-Konstanten handeln: <b>xlDownThenOver</b> oder <b>xlOverThenDown</b>. Der Standardwert lautet <b>xlDownThenOver</b>.</param>
-        <param name="PageFieldWrapCount">Optionales <b>Objekt</b>. Die Anzahl von Seitenfeldern in jeder Spalte oder Zeile des PivotTable-Berichts. Der Standardwert ist 0 (Null).</param>
-        <param name="ReadData">Optionales <b>Objekt</b>. Mit <b>True</b> wird ein PivotTable-Cache erstellt, der alle Datensätze aus einer externen Datenbank enthält; dieser Cache kann sehr groß sein. Wenn <paramref name="ReadData" /> <b>"False"</b>festgelegt ist, können Sie einige der Felder als serverbasierte Seitenfelder festlegen, bevor die Daten tatsächlich gelesen werden.</param>
-        <param name="Connection">Optionales <b>Objekt</b>. Eine Zeichenfolge mit ODBC-Einstellungen, die eine Verbindung von Excel zu einer ODBC-Datenquelle ermöglicht. Die Verbindungszeichenfolge hat das Format "ODBC; &lt; Verbindungszeichenfolge &gt; ". Dieses Argument überschreibt alle vorherigen Einstellungen für <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> die Eigenschaft des <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Objekts.</param>
-        <summary>Erstellt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekt. Bei dieser Methode wird der PivotTable-Assistent nicht angezeigt. Diese Methode steht für OLE DB-Datenquellen nicht zur Verfügung. Verwenden Sie die Methode, um einen PivotTable-Cache hinzuzufügen, und erstellen Sie dann basierend auf dem Cache einen <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> PivotTable-Bericht. <b>PivotTable-Objekt.</b></summary>
+        <param name="SourceType"><b>Optional-Objekt</b>. Die Quelle der Berichtsdaten. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> KONSTANTEN sein.</param>
+        <param name="SourceData"><b>Optional-Objekt</b>. Die Daten für den neuen Bericht. Dabei kann es sich um ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, ein Array von Bereichen oder eine Textkonstante handeln, die den Namen eines anderen Berichts darstellt. Bei einer externen Datenbank handelt es sich <paramref name="SourceData" /> um ein Array von Zeichenfolgen, die die SQL Abfragezeichenfolge enthalten, wobei jedes Element bis zu 255 Zeichen lang ist. Verwenden Sie das <paramref name="Connection" /> Argument, um die ODBC-Verbindungszeichenfolge anzugeben. Aus Gründen der Kompatibilität mit früheren Versionen von Excel kann es sich um ein Array mit <paramref name="SourceData" /> zwei Elementen sein. Das erste Element ist die Verbindungszeichenfolge zur Angabe der ODBC-Quelle der Daten. Das zweite Element ist die SQL-Abfragezeichenfolge, die zum Abrufen der Daten verwendet wird. Wenn Sie <paramref name="SourceData" /> angeben, müssen Sie auch <paramref name="SourceType" /> angeben. Wenn sich die aktive Zelle innerhalb des Bereichs befindet, müssen Sie dies <paramref name="SourceData" /> <paramref name="TableDestination" /> auch angeben.</param>
+        <param name="TableDestination"><b>Optional-Objekt</b>. Ein <b>Range</b>-Objekt, das die Position angibt, an der der Bericht auf dem Arbeitsblatt platziert werden soll. Wenn Sie dieses Argument nicht angeben, wird der Bericht an der Stelle der aktiven Zelle platziert.</param>
+        <param name="TableName"><b>Optional-Objekt</b>. Eine Zeichenfolge, die den Namen des neuen Berichts angibt.</param>
+        <param name="RowGrand"><b>Optional-Objekt</b>. <b>True</b>, wenn der Bericht Gesamtergebnisse für Zeilen enthalten soll.</param>
+        <param name="ColumnGrand"><b>Optional-Objekt</b>. <b>True</b>, wenn der Bericht Gesamtergebnisse für Spalten enthalten soll.</param>
+        <param name="SaveData"><b>Optional-Objekt</b>. <b>True</b>, wenn die Daten zusammen mit dem Bericht gespeichert werden sollen. <b>False</b>, wenn nur die Definition des Berichts gespeichert werden soll.</param>
+        <param name="HasAutoFormat"><b>Optional-Objekt</b>. <b>True</b>, wenn der Bericht nach einer Aktualisierung oder nach dem Verschieben von Feldern in Microsoft Excel automatisch formatiert werden soll.</param>
+        <param name="AutoPage"><b>Optional-Objekt</b>. Nur gültig, wenn <paramref name="SourceType" /> <b>xlConsolidation</b>ist. <b>True</b>, wenn von Microsoft Excel für die Konsolidierung ein Seitenfeld erstellt wird. Wenn <paramref name="AutoPage" /> <b> False </b>ist, müssen Sie das Seitenfeld oder die Felder erstellen.</param>
+        <param name="Reserved"><b>Optional-Objekt</b>. Von Microsoft Excel nicht verwendet.</param>
+        <param name="BackgroundQuery"><b>Optional-Objekt</b>. <b>True</b>, wenn Abfragen für den Bericht in Excel asynchron (im Hintergrund) ausgeführt werden sollen. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="OptimizeCache"><b>Optional-Objekt</b>. <b>True</b>, wenn der PivotTable-Cache beim Erstellen optimiert werden soll. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="PageFieldOrder"><b>Optional-Objekt</b>. Die Reihenfolge, in der Seitenfelder dem Layout des PivotTable-Berichts hinzugefügt werden. Dabei kann es sich um eine der folgenden <b>XlOrder</b>-Konstanten handeln: <b>xlDownThenOver</b> oder <b>xlOverThenDown</b>. Der Standardwert lautet <b>xlDownThenOver</b>.</param>
+        <param name="PageFieldWrapCount"><b>Optional-Objekt</b>. Die Anzahl von Seitenfeldern in jeder Spalte oder Zeile des PivotTable-Berichts. Der Standardwert ist 0 (Null).</param>
+        <param name="ReadData"><b>Optional-Objekt</b>. Mit <b>True</b> wird ein PivotTable-Cache erstellt, der alle Datensätze aus einer externen Datenbank enthält; dieser Cache kann sehr groß sein. Wenn <paramref name="ReadData" /> <b> False </b>ist, können Sie einige der Felder als serverbasierte Seitenfelder festlegen, bevor die Daten tatsächlich gelesen werden.</param>
+        <param name="Connection"><b>Optional-Objekt</b>. Eine Zeichenfolge mit ODBC-Einstellungen, die eine Verbindung von Excel zu einer ODBC-Datenquelle ermöglicht. Die Verbindungszeichenfolge hat das Format "ODBC; &lt; Verbindungszeichenfolge &gt; ". Dieses Argument setzt alle vorherigen Einstellungen für die Eigenschaft des Objekts außer <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Kraft.</param>
+        <summary>Erstellt ein <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekt. Bei dieser Methode wird der PivotTable-Assistent nicht angezeigt. Diese Methode steht für OLE DB-Datenquellen nicht zur Verfügung. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> Methode, um einen PivotTable-Cache hinzuzufügen, und erstellen Sie dann einen PivotTable-Bericht basierend auf dem Cache. <b>PivotTable-Objekt.</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2806,7 +2806,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> , <see cref="T:Microsoft.Office.Interop.Excel.Range" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> -Objekt, das das vorherige Blatt oder die vorherige Zelle darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert oder ein <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das das vorherige Blatt <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> oder die vorherige Zelle darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks><para>Ist das Objekt ein Bereich, so emuliert diese Eigenschaft die Tastenkombination UMSCHALT+TAB. Im Gegensatz zur Tastenkombination wird jedoch die vorhergehende Zelle zurückgegeben, ohne sie zu markieren.</para>
           <para>In einem geschützten Blatt gibt diese Eigenschaft die vorhergehende nicht gesperrte Zelle zurück. In einem ungeschützten Blatt wird immer die Zelle links von der angegebenen Zelle zurückgegeben.</para>
@@ -2839,7 +2839,7 @@
         <summary>Ruft die Anzahl der Kommentarseiten ab, die für das aktuelle Arbeitsblatt gedruckt werden.</summary>
         <value>Die Anzahl der Kommentarseiten, die für das aktuelle Arbeitsblatt gedruckt werden.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Die Eigenschaft gibt nur dann eine Zahl größer 0 zurück, wenn die Einstellung "Kommentare" auf der Registerkarte "Blatt" des Dialogfelds "Seite einrichten" auf "Am Ende <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> des Blatts" festgelegt ist. Diese Eigenschaft gibt Null zurück, wenn das Blatt ein Diagrammblatt oder ein MS Excel 5.0 Dialog-Blatt ist.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> Eigenschaft gibt nur eine Zahl größer als Null zurück, wenn die Einstellung "Kommentare" auf der Registerkarte "Blatt" des Dialogfelds "Seite einrichten" auf "Am Ende des Blatts" festgelegt ist. Diese Eigenschaft gibt Null zurück, wenn das Blatt ein Diagrammblatt oder ein MS Excel 5.0 Dialog-Blatt ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2878,16 +2878,16 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Optionales <b>Objekt</b>. Die Nummer der ersten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird von der ersten Seite an gedruckt.</param>
-        <param name="To">Optionales <b>Objekt</b>. Die Nummer der letzten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird bis zur letzten Seite gedruckt.</param>
-        <param name="Copies">Optionales <b>Objekt</b>. Die Anzahl der zu druckenden Kopien. Wenn Sie dieses Argument nicht angeben, wird eine einzelne Kopie gedruckt.</param>
-        <param name="Preview">Optionales <b>Objekt</b>. <b>True</b>, damit Microsoft Excel die Druckvorschau aufruft, bevor das Objekt gedruckt wird. <b>False</b> (oder ausgelassen) zum unmittelbaren Drucken des Objekts.</param>
-        <param name="ActivePrinter">Optionales <b>Objekt</b>. Legt den Namen des aktiven Druckers fest.</param>
-        <param name="PrintToFile">Optionales <b>Objekt</b>. <b>True</b> zum Drucken einer Datei. Wenn dieser Parameter nicht angegeben ist, fordert Microsoft Excel den Benutzer auf, den Namen der <paramref name="PrToFileName" /> Ausgabedatei eingibt.</param>
-        <param name="Collate">Optionales <b>Objekt</b>. <b>True</b> zum Sortieren mehrerer Kopien.</param>
-        <param name="PrToFileName">Optionales <b>Objekt</b>. Wenn <paramref name="PrintToFile" /> dieser Wert auf <b>"True"</b>festgelegt ist, gibt dieses Argument den Namen der Datei an, in die gedruckt werden soll.</param>
+        <param name="From"><b>Optional-Objekt</b>. Die Nummer der ersten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird von der ersten Seite an gedruckt.</param>
+        <param name="To"><b>Optional-Objekt</b>. Die Nummer der letzten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird bis zur letzten Seite gedruckt.</param>
+        <param name="Copies"><b>Optional-Objekt</b>. Die Anzahl der zu druckenden Kopien. Wenn Sie dieses Argument nicht angeben, wird eine einzelne Kopie gedruckt.</param>
+        <param name="Preview"><b>Optional-Objekt</b>. <b>True</b>, damit Microsoft Excel die Druckvorschau aufruft, bevor das Objekt gedruckt wird. <b>False</b> (oder ausgelassen) zum unmittelbaren Drucken des Objekts.</param>
+        <param name="ActivePrinter"><b>Optional-Objekt</b>. Legt den Namen des aktiven Druckers fest.</param>
+        <param name="PrintToFile"><b>Optional-Objekt</b>. <b>True</b> zum Drucken einer Datei. Wenn <paramref name="PrToFileName" /> keine Angabe erfolgt, fordert Microsoft Excel den Benutzer auf, den Namen der Ausgabedatei einzugeben.</param>
+        <param name="Collate"><b>Optional-Objekt</b>. <b>True</b> zum Sortieren mehrerer Kopien.</param>
+        <param name="PrToFileName"><b>Optional-Objekt</b>. Wenn <paramref name="PrintToFile" /> True festgelegt ist, gibt dieses Argument den Namen der Datei an, in der Sie drucken möchten. <b></b></param>
         <summary>Druckt das Objekt.</summary>
-        <remarks><para>"Seiten" in den Beschreibungen von gedruckten Seiten und bezieht sich auf gedruckte Seiten, nicht auf allgemeine Seiten <paramref name="From" /> <paramref name="To" /> des Blatts oder der Arbeitsmappe.</para>
+        <remarks><para>"Seiten" in den Beschreibungen von <paramref name="From" /> <paramref name="To" /> und bezieht sich auf gedruckte Seiten, nicht auf allgemeine Seiten in dem Blatt oder der Arbeitsmappe.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2962,7 +2962,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">Optionales <b>Objekt</b>. <b>True,</b> um Änderungen am angegebenen Arbeitsblatt zu aktivieren.</param>
+        <param name="EnableChanges"><b>Optional-Objekt</b>. <b></b> True , um Änderungen am angegebenen Arbeitsblatt zu aktivieren.</param>
         <summary>Zeigt ein Objekt so an, wie es gedruckt wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3004,27 +3004,27 @@
         <Parameter Name="AllowUsingPivotTables" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">Optionales <b>Objekt</b>. Eine Zeichenfolge, mit der für das Arbeitsblatt oder die Arbeitsmappe ein Kennwort mit Unterscheidung der Groß-/Kleinschreibung festlegt wird. Wenn Sie dieses Argument weglassen, kann der Schutz des Arbeitsblatts oder der Arbeitsmappe ohne Angabe eines Kennworts aufgehoben werden. Wenn dies nicht möglich sein soll, müssen Sie ein Kennwort festlegen. Wenn Sie das Kennwort vergessen, können Sie den Schutz des Arbeitsblatts oder der Arbeitsmappe nicht wieder aufheben. Sie sollten daher eine Liste Ihrer Kennwörter und der zugehörigen Dateinamen an einem sicheren Ort aufbewahren.</param>
-        <param name="DrawingObjects">Optionales <b>Objekt</b>. <b>True</b>, um Formen zu schützen. Der Standardwert ist <b>False</b>.</param>
-        <param name="Contents">Optionales <b>Objekt</b>. <b>True</b>, um den Inhalt zu schützen. Bei einem Diagramm wird das gesamte Diagramm geschützt. Bei einem Arbeitsblatt werden die gesperrten Zellen geschützt. Der Standardwert ist <b>True</b>.</param>
-        <param name="Scenarios">Optionales <b>Objekt</b>. <b>True</b>, um Szenarios zu schützen. Das Argument ist nur für Arbeitsblätter gültig. Der Standardwert ist <b>True</b>.</param>
-        <param name="UserInterfaceOnly">Optionales <b>Objekt</b>. <b>True,</b> um die Benutzeroberfläche zu schützen, jedoch keine Makros. Ohne Angabe dieses Arguments wird der Schutz auf Makros und die Benutzeroberfläche angewendet.</param>
-        <param name="AllowFormattingCells">Optionales <b>Objekt</b>. Mit <b>True</b> können Benutzer jede Zelle eines geschützten Arbeitsblatts formatieren. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowFormattingColumns">Optionales <b>Objekt</b>. Mit <b>True</b>können Benutzer jede Spalte eines geschützten Arbeitsblatts formatieren. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowFormattingRows">Optionales <b>Objekt</b>. <b>Mit "True"</b> kann der Benutzer jede Zeile in einem geschützten Arbeitsblatt formatieren. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowInsertingColumns">Optionales <b>Objekt</b>. Mit <b>True</b> können Benutzer Spalten in ein geschütztes Arbeitsblatt einfügen. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowInsertingRows">Optionales <b>Objekt</b>. Mit <b>True</b> können Benutzer Zeilen in ein geschütztes Arbeitsblatt einfügen. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowInsertingHyperlinks">Optionales <b>Objekt</b>. Mit <b>True</b> können Benutzer Hyperlinks auf dem Arbeitsblatt einfügen. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowDeletingColumns">Optionales <b>Objekt</b>. Mit <b>True</b> können Benutzer Spalten im geschützten Arbeitsblatt löschen, wobei keine Zelle in der zu löschenden Spalte gesperrt ist. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowDeletingRows">Optionales <b>Objekt</b>. <b>"True"</b> ermöglicht es dem Benutzer, Zeilen im geschützten Arbeitsblatt zu löschen, in denen jede Zelle in der zu löschende Zeile entsperrt ist. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowSorting">Optionales <b>Objekt</b>. Mit <b>True</b> können Benutzer für das geschützte Arbeitsblatt eine Sortierung vornehmen. Für jede Zelle im Sortierbereich muss die Sperre oder der Schutz aufgehoben werden. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowFiltering">Optionales <b>Objekt</b>. Mit <b>True</b> Benutzer Filter für das geschützte Arbeitsblatt festlegen. Die Benutzer können Filterkriterien ändern, jedoch keinen AutoFilter aktivieren oder deaktivieren. Die Benutzer können Filter für einen vorhandenen AutoFilter festlegen. Der Standardwert ist <b>False</b>.</param>
-        <param name="AllowUsingPivotTables">Optionales <b>Objekt</b>. Mit <b>True</b> können Benutzer PivotTable-Berichte für das geschützte Arbeitsblatt verwenden. Der Standardwert ist <b>False</b>.</param>
+        <param name="Password"><b>Optional-Objekt</b>. Eine Zeichenfolge, mit der für das Arbeitsblatt oder die Arbeitsmappe ein Kennwort mit Unterscheidung der Groß-/Kleinschreibung festlegt wird. Wenn Sie dieses Argument weglassen, kann der Schutz des Arbeitsblatts oder der Arbeitsmappe ohne Angabe eines Kennworts aufgehoben werden. Wenn dies nicht möglich sein soll, müssen Sie ein Kennwort festlegen. Wenn Sie das Kennwort vergessen, können Sie den Schutz des Arbeitsblatts oder der Arbeitsmappe nicht wieder aufheben. Sie sollten daher eine Liste Ihrer Kennwörter und der zugehörigen Dateinamen an einem sicheren Ort aufbewahren.</param>
+        <param name="DrawingObjects"><b>Optional-Objekt</b>. <b>True</b>, um Formen zu schützen. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="Contents"><b>Optional-Objekt</b>. <b>True</b>, um den Inhalt zu schützen. Bei einem Diagramm wird das gesamte Diagramm geschützt. Bei einem Arbeitsblatt werden die gesperrten Zellen geschützt. Der Standardwert ist <b>True</b>.</param>
+        <param name="Scenarios"><b>Optional-Objekt</b>. <b>True</b>, um Szenarios zu schützen. Das Argument ist nur für Arbeitsblätter gültig. Der Standardwert ist <b>True</b>.</param>
+        <param name="UserInterfaceOnly"><b>Optional-Objekt</b>. <b>"True",</b> um die Benutzeroberfläche, aber keine Makros zu schützen. Ohne Angabe dieses Arguments wird der Schutz auf Makros und die Benutzeroberfläche angewendet.</param>
+        <param name="AllowFormattingCells"><b>Optional-Objekt</b>. Mit <b>True</b> können Benutzer jede Zelle eines geschützten Arbeitsblatts formatieren. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowFormattingColumns"><b>Optional-Objekt</b>. Mit <b>True</b>können Benutzer jede Spalte eines geschützten Arbeitsblatts formatieren. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowFormattingRows"><b>Optional-Objekt</b>. <b>Mit</b> True kann der Benutzer jede Zeile in einem geschützten Arbeitsblatt formatieren. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="AllowInsertingColumns"><b>Optional-Objekt</b>. Mit <b>True</b> können Benutzer Spalten in ein geschütztes Arbeitsblatt einfügen. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowInsertingRows"><b>Optional-Objekt</b>. Mit <b>True</b> können Benutzer Zeilen in ein geschütztes Arbeitsblatt einfügen. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowInsertingHyperlinks"><b>Optional-Objekt</b>. Mit <b>True</b> können Benutzer Hyperlinks auf dem Arbeitsblatt einfügen. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowDeletingColumns"><b>Optional-Objekt</b>. Mit <b>True</b> können Benutzer Spalten im geschützten Arbeitsblatt löschen, wobei keine Zelle in der zu löschenden Spalte gesperrt ist. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowDeletingRows"><b>Optional-Objekt</b>. <b>Mit "True"</b> kann der Benutzer Zeilen im geschützten Arbeitsblatt löschen, in denen jede Zelle in der zu löschenden Zeile entsperrt ist. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="AllowSorting"><b>Optional-Objekt</b>. Mit <b>True</b> können Benutzer für das geschützte Arbeitsblatt eine Sortierung vornehmen. Für jede Zelle im Sortierbereich muss die Sperre oder der Schutz aufgehoben werden. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowFiltering"><b>Optional-Objekt</b>. Mit <b>True</b> Benutzer Filter für das geschützte Arbeitsblatt festlegen. Die Benutzer können Filterkriterien ändern, jedoch keinen AutoFilter aktivieren oder deaktivieren. Die Benutzer können Filter für einen vorhandenen AutoFilter festlegen. Der Standardwert ist <b>False</b>.</param>
+        <param name="AllowUsingPivotTables"><b>Optional-Objekt</b>. Mit <b>True</b> können Benutzer PivotTable-Berichte für das geschützte Arbeitsblatt verwenden. Der Standardwert ist <b>False</b>.</param>
         <summary>Schützt ein Arbeitsblatt, damit es nicht geändert werden kann.</summary>
-        <remarks><para>Wenn Sie die <b>Protect</b> -Methode mit dem Argument true auf ein Arbeitsblatt anwenden und dann die Arbeitsmappe speichern, wird das gesamte Arbeitsblatt (nicht nur die Schnittstelle) vollständig geschützt, wenn Sie die Arbeitsmappe erneut <paramref name="UserInterfaceOnly" /> öffnen. <b></b> Um den Schutz der Benutzeroberfläche nach dem Öffnen der Arbeitsmappe erneut zu aktivieren, müssen Sie erneut die <b>Protect</b> -Methode mit dem Wert <paramref name="UserInterfaceOnly" /> True <b>anwenden.</b></para>
-          <para>Wenn Sie eine Änderung an einem geschützten Arbeitsblatt ändern möchten, ist es möglich, die <b>Protect</b> -Methode für ein geschütztes Arbeitsblatt zu verwenden, wenn das Kennwort angegeben wird. Eine weitere Methode besteht im Aufheben des Schutzes des Arbeitsblatts, dem Vornehmen der erforderlichen Änderungen und dem erneuten Schützen des Arbeitsblatts.</para>
+        <remarks><para>Wenn Sie die <b>Protect-Methode</b> mit dem <paramref name="UserInterfaceOnly" /> Argument <b>"True"</b> auf ein Arbeitsblatt anwenden und dann die Arbeitsmappe speichern, wird das gesamte Arbeitsblatt (nicht nur die Schnittstelle) vollständig geschützt, wenn Sie die Arbeitsmappe erneut öffnen. Um den Schutz der Benutzeroberfläche nach dem Öffnen der Arbeitsmappe erneut zu aktivieren, müssen Sie erneut die <b>Protect</b> -Methode anwenden, die <paramref name="UserInterfaceOnly" /> auf <b>"True"</b>festgelegt ist.</para>
+          <para>Wenn Sie eine Änderung an einem geschützten Arbeitsblatt vornehmen möchten, ist es möglich, die <b>Protect-Methode</b> für ein geschütztes Arbeitsblatt zu verwenden, wenn das Kennwort angegeben wird. Eine weitere Methode wäre, den Schutz des Arbeitsblatts aufzuheben, die erforderlichen Änderungen vorzunehmen und dann das Arbeitsblatt erneut zu schützen.</para>
           <para>
-            <b>Hinweis:</b>"Unprotected" bedeutet, dass die Zelle möglicherweise gesperrt (Dialogfeld "Zellen formatieren") ist, aber in einem Bereich enthalten ist, der im Dialogfeld "Benutzern das Bearbeiten von Bereichen erlauben" definiert ist, und der Benutzer hat den Schutz für den Bereich mit einem Kennwort aufheben oder über die Berechtigung NT überprüft.</para>
+            <b>Hinweis:</b>"Unprotected" bedeutet, dass die Zelle möglicherweise gesperrt ist (Dialogfeld "Zellen formatieren"), aber in einem Bereich enthalten ist, der im Dialogfeld "Benutzer zum Bearbeiten von Bereichen zulassen" definiert ist, und der Benutzer den Schutz des Bereichs mit einem Kennwort aufgehoben hat oder über NT-Berechtigungen überprüft wurde.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3144,7 +3144,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn der ausschließliche Schutz für die Benutzeroberfläche aktiviert ist. Um den Schutz der Benutzeroberfläche zu aktivieren, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Protect(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode, bei der <paramref name="UserInterfaceOnly" /> das Argument auf <b>"True" festgelegt ist.</b> Schreibgeschützter <b>boolescher</b> Wert.</summary>
+        <summary><b>True</b>, wenn der ausschließliche Schutz für die Benutzeroberfläche aktiviert ist. Um den Schutz der Benutzeroberfläche zu aktivieren, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Protect(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode, bei der das <paramref name="UserInterfaceOnly" /> Argument auf True festgelegt <b>ist.</b> Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3175,7 +3175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn die Arbeitsblatt-Szenarios geschützt sind. Schreibgeschützter <b>boolescher</b> Wert.</summary>
+        <summary><b>True</b>, wenn die Arbeitsblatt-Szenarios geschützt sind. Schreibgeschützter <b>Boolean</b>-Wert.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3235,8 +3235,8 @@
         <Parameter Name="Cell2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Cell1">Required <b>-Objekt</b>. Der Name des Bereichs. Dieser muss ein A1-Bezug in der Sprache des Makros sein. Es kann einen Bereichsoperator (ein Doppelpunkt), den Überschneidungsoperator (ein Leerzeichen) oder den Vereinigungsoperator (ein Komma) einschließen. Es kann auch Dollarzeichen einschließen, diese werden jedoch ignoriert. Sie können einen lokal definierten Namen in jedem Teil des Bereichs verwenden. Bei diesem Namen wird davon ausgegangen, dass er in der Sprache des Makros vorliegt.</param>
-        <param name="Cell2">Optionales <b>Objekt</b>. Die Zellen in der linken oberen und rechten unteren Ecke des Bereichs. Kann ein <b>Range</b>-Objekt sein, das eine einzelne Zelle (oder eine gesamte Spalte oder eine gesamte Zeile) enthält, oder kann eine Zeichenfolge sein, die eine einzelne Zelle in der Sprache des Makros bezeichnet.</param>
+        <param name="Cell1"><b>Required-Objekt</b>. Der Name des Bereichs. Dieser muss ein A1-Bezug in der Sprache des Makros sein. Es kann einen Bereichsoperator (ein Doppelpunkt), den Überschneidungsoperator (ein Leerzeichen) oder den Vereinigungsoperator (ein Komma) einschließen. Es kann auch Dollarzeichen einschließen, diese werden jedoch ignoriert. Sie können einen lokal definierten Namen in jedem Teil des Bereichs verwenden. Bei diesem Namen wird davon ausgegangen, dass er in der Sprache des Makros vorliegt.</param>
+        <param name="Cell2"><b>Optional-Objekt</b>. Die Zellen in der linken oberen und rechten unteren Ecke des Bereichs. Kann ein <b>Range</b>-Objekt sein, das eine einzelne Zelle (oder eine gesamte Spalte oder eine gesamte Zeile) enthält, oder kann eine Zeichenfolge sein, die eine einzelne Zelle in der Sprache des Makros bezeichnet.</param>
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das eine Zelle oder einen Zellbereich darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -3363,16 +3363,16 @@
         <Parameter Name="Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">Optionales <b>Objekt</b>. Eine Zeichenfolge, die den Namen der zu speichernden Datei angibt. Sie können einen vollständigen Pfad angeben; andernfalls wird die Datei von Microsoft Excel im aktuellen Ordner gespeichert.</param>
-        <param name="FileFormat">Optionales <b>Objekt</b>. Das beim Speichern der Datei zu verwendende Dateiformat. Eine Liste der gültigen Auswahlmöglichkeiten finden Sie in der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.FileFormat" /> Eigenschaft. Bei einer vorhandenen Datei ist das Standardformat das zuletzt angegebene Dateiformat, bei einer neuen Datei wird standardmäßig das Format der verwendeten Excel-Version verwendet.</param>
-        <param name="Password">Optionales <b>Objekt</b>. Eine Zeichenfolge unter Berücksichtigung der Groß-/Kleinschreibung (maximal 15 Zeichen), mit der das Schutzkennwort für die Datei angegeben wird.</param>
-        <param name="WriteResPassword">Optionales <b>Objekt</b>. Eine Zeichenfolge, mit der das Schreibschutzkennwort für die Datei angegeben wird. Wenn eine Datei mit einem Kennwort gespeichert wurde und das Kennwort beim Öffnen nicht angegeben wird, wird die Datei schreibgeschützt geöffnet.</param>
-        <param name="ReadOnlyRecommended">Optionales <b>Objekt</b>. <b>True,</b> wenn beim Öffnen der Datei eine Meldung mit der Empfehlung angezeigt wird, die Datei schreibgeschützt zu öffnen.</param>
-        <param name="CreateBackup">Optionales <b>Objekt</b>. Mit dem Wert  <b>True</b> wird eine Sicherungsdatei erstellt.</param>
-        <param name="AddToMru">Optionales <b>Objekt</b>. Mit  <b>True</b> wird diese Arbeitsmappe der Liste der zuletzt geöffneten Dateien hinzugefügt. Der Standardwert ist <b>False</b>.</param>
-        <param name="TextCodepage">Optionales <b>Objekt</b>. Wird in Microsoft Excel mit US-Englisch nicht verwendet.</param>
-        <param name="TextVisualLayout">Optionales <b>Objekt</b>. Wird in Microsoft Excel mit US-Englisch nicht verwendet.</param>
-        <param name="Local">Optionales <b>Objekt</b>. Mit  <b>True</b> werden Dateien in der Sprache von Microsoft Excel (einschließlich der Einstellungen der Systemsteuerung) gespeichert. <b>False</b> (Standard) speichert Dateien in der Sprache von Visual Basic for Applications (VBA) (in der Regel US-Englisch, es sei denn, das VBA-Projekt, in dem Workbooks.Open ausgeführt wird, ist ein altes internationalisiertes XL5/95 VBA-Projekt).</param>
+        <param name="Filename"><b>Optional-Objekt</b>. Eine Zeichenfolge, die den Namen der zu speichernden Datei angibt. Sie können einen vollständigen Pfad angeben; andernfalls wird die Datei von Microsoft Excel im aktuellen Ordner gespeichert.</param>
+        <param name="FileFormat"><b>Optional-Objekt</b>. Das beim Speichern der Datei zu verwendende Dateiformat. Eine Liste der gültigen Auswahlmöglichkeiten finden Sie in der <see cref="P:Microsoft.Office.Interop.Excel._Workbook.FileFormat" /> Eigenschaft. Bei einer vorhandenen Datei ist das Standardformat das zuletzt angegebene Dateiformat, bei einer neuen Datei wird standardmäßig das Format der verwendeten Excel-Version verwendet.</param>
+        <param name="Password"><b>Optional-Objekt</b>. Eine Zeichenfolge unter Berücksichtigung der Groß-/Kleinschreibung (maximal 15 Zeichen), mit der das Schutzkennwort für die Datei angegeben wird.</param>
+        <param name="WriteResPassword"><b>Optional-Objekt</b>. Eine Zeichenfolge, mit der das Schreibschutzkennwort für die Datei angegeben wird. Wenn eine Datei mit einem Kennwort gespeichert wurde und das Kennwort beim Öffnen nicht angegeben wird, wird die Datei schreibgeschützt geöffnet.</param>
+        <param name="ReadOnlyRecommended"><b>Optional-Objekt</b>. <b>True,</b> wenn eine Meldung angezeigt wird, wenn die Datei geöffnet wird und empfohlen wird, die Datei schreibgeschützt zu öffnen.</param>
+        <param name="CreateBackup"><b>Optional-Objekt</b>. Mit dem Wert  <b>True</b> wird eine Sicherungsdatei erstellt.</param>
+        <param name="AddToMru"><b>Optional-Objekt</b>. Mit  <b>True</b> wird diese Arbeitsmappe der Liste der zuletzt geöffneten Dateien hinzugefügt. Der Standardwert ist <b>False</b>.</param>
+        <param name="TextCodepage"><b>Optional-Objekt</b>. Wird in Microsoft Excel mit US-Englisch nicht verwendet.</param>
+        <param name="TextVisualLayout"><b>Optional-Objekt</b>. Wird in Microsoft Excel mit US-Englisch nicht verwendet.</param>
+        <param name="Local"><b>Optional-Objekt</b>. Mit  <b>True</b> werden Dateien in der Sprache von Microsoft Excel (einschließlich der Einstellungen der Systemsteuerung) gespeichert. <b>False</b> (Standard) speichert Dateien in der Sprache Visual Basic for Applications (VBA) (in der Regel Englisch (USA), es sei denn, das VBA-Projekt, aus dem Workbooks.Open ausgeführt wird, ist ein altes internationalisiertes XL5/95-VBA-Projekt).</param>
         <summary>Speichert Änderungen am Diagramm oder Arbeitsblatt in einer anderen Datei.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3402,8 +3402,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b>. Der Name oder die Nummer des Szenarios. Verwenden Sie eine Matrix, um mehr als ein Szenario anzugeben.</param>
-        <summary>Gibt ein Objekt zurück, das ein einzelnes Szenario (ein Objekt) oder eine Auflistung von Szenarien <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> (ein Objekt) auf dem <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> Arbeitsblatt darstellt.</summary>
+        <param name="Index"><b>Optional-Objekt</b>. Der Name oder die Nummer des Szenarios. Verwenden Sie eine Matrix, um mehr als ein Szenario anzugeben.</param>
+        <summary>Gibt ein Objekt zurück, das ein einzelnes Szenario (ein <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> Objekt) oder eine Auflistung von Szenarien (ein <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> Objekt) auf dem Arbeitsblatt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3434,7 +3434,7 @@
         <ReturnType>Microsoft.Office.Core.Scripts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Auflistung zurück, die Objekte enthält, die Skript- oder Codeblöcke im angegebenen Dokument darstellen, wenn es als Webseite <see cref="T:Microsoft.Office.Core.Scripts" /> <see cref="T:Microsoft.Office.Core.Script" /> gespeichert wird.</summary>
+        <summary>Gibt die <see cref="T:Microsoft.Office.Core.Scripts" /> Auflistung zurück, die Objekte enthält, <see cref="T:Microsoft.Office.Core.Script" /> die Skript- oder Codeblöcke im angegebenen Dokument darstellen, wenn es als Webseite gespeichert wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3465,7 +3465,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Bereich zurück, in dem der Bildlauf als Bereichsverweis im A1-Format zulässig ist, oder legt den Bereich fest. Zellen außerhalb des Bildlaufbereichs können nicht markiert werden. <b>String</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt den Bereich zurück, in dem der Bildlauf als A1-Bezug zulässig ist, oder legt den Bereich fest. Zellen außerhalb des Bildlaufbereichs können nicht markiert werden. <b>String</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks><para>Setzen Sie diese Eigenschaft auf eine leere Zeichenfolge (""), um die Zellmarkierung für das gesamte Blatt zu aktivieren.</para>
           <para> </para></remarks>
@@ -3530,9 +3530,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Optionales <b>Objekt</b>. Das zu ersetzende Objekt.</param>
+        <param name="Replace"><b>Optional-Objekt</b>. Das zu ersetzende Objekt.</param>
         <summary>Markiert das Objekt.</summary>
-        <remarks><para>Mithilfe der <b>Select</b>-Methode können Sie eine Zelle oder einen Zellbereich markieren. Verwenden Sie die Methode, um eine einzelne Zelle zur aktiven Zelle <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> zu machen.</para>
+        <remarks><para>Mithilfe der <b>Select</b>-Methode können Sie eine Zelle oder einen Zellbereich markieren. Verwenden Sie die Methode, um eine einzelne Zelle zur aktiven Zelle zu <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> machen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3587,7 +3587,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Objekt zurück, das alle Formen des Arbeitsblatts oder Diagrammblatts darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> Objekt zurück, das alle Formen auf dem Arbeitsblatt oder Diagrammblatt darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3645,7 +3645,7 @@
       <Parameters />
       <Docs>
         <summary>Zeigt das mit dem Arbeitsblatt verknüpfte Datenformular an.</summary>
-        <remarks><para>Die Ausführung wird angehalten, während Sie das Datenformular verwenden. Wenn Sie das Datenformular schließen, wird die Ausführung in der Zeile nach der <b>ShowDataForm -Methode</b> fortgesetzt.</para>
+        <remarks><para>Die Ausführung wird angehalten, während Sie das Datenformular verwenden. Wenn Sie das Datenformular schließen, wird die Ausführung in der Zeile nach der <b>ShowDataForm-Methode</b> fortgesetzt.</para>
           <para>Diese Methode führt das benutzerdefinierte Datenformular aus, falls eines vorhanden ist.</para>
           <para> </para></remarks>
       </Docs>
@@ -3676,7 +3676,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SmartTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> zurück, das den Bezeichner für die angegebene Zelle darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> Objekt zurück, das den Bezeichner für die angegebene Zelle darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3806,7 +3806,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Standardbreite (Standard) aller Spalten in der Arbeitsmappe zurück oder legt diese fest. <b>Doppelter</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die Standardbreite aller Spalten eines Arbeitsblatts zurück oder legt sie fest. <b>Double</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks><para>Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens 0 (Null) verwendet.</para>
           <para> </para></remarks>
@@ -3912,7 +3912,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn Microsoft Excel für dieses Arbeitsblatt die Lotus 1-2-3-Regeln zur Formelberechnung verwendet. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn Microsoft Excel für dieses Arbeitsblatt die Lotus 1-2-3-Regeln zur Formelberechnung verwendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3955,7 +3955,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn Microsoft Excel in diesem Arbeitsblatt die Lotus 1-2-3-Regeln zur Formeleingabe verwendet. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn Microsoft Excel in diesem Arbeitsblatt die Lotus 1-2-3-Regeln zur Formeleingabe verwendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3986,7 +3986,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSheetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Arbeitsblatttyp zurück oder legt diesen fest. <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" />Schreibgeschützt.</summary>
+        <summary>Gibt den Arbeitsblatttyp zurück oder legt den Arbeitsblatttyp fest. Schreibgeschützt. <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4016,7 +4016,7 @@
         <Parameter Name="Password" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">Optionales <b>Objekt</b>. Eine Zeichenfolge, die das Kennwort unter Berücksichtigung der Groß-/Kleinschreibung angibt, um den Schutz des Blatts oder der Arbeitsmappe aufzuheben. Wenn das Blatt oder die Arbeitsmappe nicht durch ein Kennwort geschützt ist, wird dieses Argument ignoriert. Wenn Sie dieses Argument bei einem durch ein Kennwort geschütztes Blatt auslassen, werden Sie zur Eingabe des Kennworts aufgefordert. Wenn Sie dieses Argument bei einer durch ein Kennwort geschützten Arbeitsmappe auslassen, löst die Methode einen Fehler aus.</param>
+        <param name="Password"><b>Optional-Objekt</b>. Eine Zeichenfolge, die das Kennwort unter Berücksichtigung der Groß-/Kleinschreibung angibt, um den Schutz des Blatts oder der Arbeitsmappe aufzuheben. Wenn das Blatt oder die Arbeitsmappe nicht durch ein Kennwort geschützt ist, wird dieses Argument ignoriert. Wenn Sie dieses Argument bei einem durch ein Kennwort geschütztes Blatt auslassen, werden Sie zur Eingabe des Kennworts aufgefordert. Wenn Sie dieses Argument bei einer durch ein Kennwort geschützten Arbeitsmappe auslassen, löst die Methode einen Fehler aus.</param>
         <summary>Hebt den Schutz eines Blatts oder einer Arbeitsmappe auf. Diese Methode hat keine Wirkung, wenn das Blatt oder die Arbeitsmappe nicht geschützt ist.</summary>
         <remarks><para>Wenn Sie das Kennwort vergessen, können Sie den Schutz des Blatts oder der Arbeitsmappe nicht wieder aufheben. Sie sollten daher eine Liste Ihrer Kennwörter und der zugehörigen Dateinamen an einem sicheren Ort aufbewahren.</para>
           <para> </para></remarks>
@@ -4048,7 +4048,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den verwendeten Bereich im angegebenen Arbeitsblatt darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den verwendeten Bereich des angegebenen Arbeitsblatts darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4088,7 +4088,7 @@
         <summary>Bestimmt, ob das Objekt sichtbar ist. Lese-/Schreibzugriff. <see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" /></summary>
         <value>To be added.</value>
         <remarks><para>Die <b>Visible</b>-Eigenschaft für ein PivotTable-Element ist <b>True</b>, wenn das Element zum betreffenden Zeitpunkt in der Tabelle angezeigt wird.</para>
-          <para>Wenn Sie die <b>Eigenschaft Visible</b> für einen Namen auf <b>"False"</b>festlegen, wird der Name nicht im Dialogfeld "Name definieren" angezeigt.</para>
+          <para>Wenn Sie die <b>Visible-Eigenschaft</b> für einen Namen auf <b>False</b>festlegen, wird der Name nicht im Dialogfeld Namen definieren angezeigt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4144,13 +4144,13 @@
         <Parameter Name="Map" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="XPath">Required <b>-Objekt</b>. Der abzufragende XPath.</param>
-        <param name="SelectionNamespaces">Optionales <b>Objekt</b>. Ein durch Leerzeichen getrennter <b>String</b>-Wert, der die Namespaces enthält, auf die im XPath-Parameter verwiesen wird. Wenn einer der angegebenen Namespaces nicht aufgelöst werden kann, wird ein Laufzeitfehler generiert.</param>
+        <param name="XPath"><b>Required-Objekt</b>. Der abzufragende XPath.</param>
+        <param name="SelectionNamespaces"><b>Optional-Objekt</b>. Ein durch Leerzeichen getrennter <b>String</b>-Wert, der die Namespaces enthält, auf die im XPath-Parameter verwiesen wird. Wenn einer der angegebenen Namespaces nicht aufgelöst werden kann, wird ein Laufzeitfehler generiert.</param>
         <param name="Map">Optional <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> . Geben Sie eine XML-Zuordnung an, wenn Sie innerhalb einer bestimmten Zuordnung den XPath abfragen möchten.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die Zellen darstellt, die einem bestimmten XPath zugeordnet sind. Gibt <b>Nothing zurück,</b> wenn der angegebene XPath nicht dem Arbeitsblatt zugeordnet wurde oder wenn der zugeordnete Bereich leer ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die Zellen darstellt, die einem bestimmten XPath zugeordnet sind. Gibt <b>Nothing</b> zurück, wenn der angegebene XPath dem Arbeitsblatt nicht zugeordnet wurde oder der zugeordnete Bereich leer ist.</summary>
         <returns>To be added.</returns>
         <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
-          <para>Wenn der XPath innerhalb einer Spalte in <b></b> einer XML-Liste vorhanden ist, enthält das zurückgegebene Range -Objekt nicht die Kopfzeile oder die Zeile Einfügen.</para>
+          <para>Wenn der XPath in einer Spalte in einer XML-Liste vorhanden ist, enthält das zurückgegebene <b>Range-Objekt</b> nicht die Kopfzeile oder die Zeile "Einfügen".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4178,13 +4178,13 @@
         <Parameter Name="Map" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="XPath">Required <b>-Objekt</b>. Der abzufragende XPath.</param>
-        <param name="SelectionNamespaces">Optionales <b>Objekt</b>. Ein durch Leerzeichen getrennter <b>String</b>-Wert, der die Namespaces enthält, auf die im XPath-Parameter verwiesen wird. Wenn einer der angegebenen Namespaces nicht aufgelöst werden kann, wird ein Laufzeitfehler generiert.</param>
+        <param name="XPath"><b>Required-Objekt</b>. Der abzufragende XPath.</param>
+        <param name="SelectionNamespaces"><b>Optional-Objekt</b>. Ein durch Leerzeichen getrennter <b>String</b>-Wert, der die Namespaces enthält, auf die im XPath-Parameter verwiesen wird. Wenn einer der angegebenen Namespaces nicht aufgelöst werden kann, wird ein Laufzeitfehler generiert.</param>
         <param name="Map">Optional <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> . Geben Sie eine XML-Zuordnung an, wenn Sie innerhalb einer bestimmten Zuordnung den XPath abfragen möchten.</param>
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die Zellen darstellt, die einem bestimmten XPath zugeordnet sind. Gibt <b>Nothing</b> zurück, wenn der angegebene XPath dem Arbeitsblatt nicht zugeordnet wurde.</summary>
         <returns>To be added.</returns>
         <remarks><para>XML-Features, mit Ausnahme des Speicherns von Dateien im XML-Tabellenkalkulationsformat, sind nur in Microsoft Office Professional Edition 2003 und Microsoft Office Excel 2003 verfügbar.</para>
-          <para>Im Gegensatz <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> zur Methode gibt die <b>XmlMapQuery -Methode</b> die gesamte Spalte einer XML-Liste zurück, einschließlich der Kopfzeile und der Insert-Zeile.</para>
+          <para>Im Gegensatz zur <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> Methode gibt die <b>XmlMapQuery-Methode</b> die gesamte Spalte einer XML-Liste zurück, einschließlich der Kopfzeile und der Zeile "Einfügen".</para>
           <para> </para></remarks>
       </Docs>
     </Member>

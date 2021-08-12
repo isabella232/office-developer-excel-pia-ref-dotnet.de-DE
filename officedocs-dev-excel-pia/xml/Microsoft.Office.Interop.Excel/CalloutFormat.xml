@@ -1,5 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Excel.CalloutFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="144c12a51fd945c3e61defd5702f0c40849afc21" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006027" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6233f9c3484fe7f0bc582770ce3c7a0f5a5300316b4270daaef13eed9b0f8926" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508122" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>Enthält Eigenschaften und Methoden, die Legenden mit Linien zugewiesen werden.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> Eigenschaft, um ein <b>CalloutFormat -Objekt zurück.</b></para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> Eigenschaft, um ein <b>CalloutFormat -Objekt</b> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -56,7 +56,7 @@
         <summary>Ermöglicht es Benutzern, den Legendentext und die Legendenlinie durch eine Markierungsleiste zu trennen.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState -Konstanten</b> sein:</para>
+            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -64,13 +64,13 @@
             <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed</b>
+            <b>MsoTriStateMixed</b>
           </para>
           <para>
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> Eine vertikale Akzentleiste trennt den Text der Callout von der Callout-Linie.</para>
+            <b>msoTrue</b> Eine vertikale Markierungsleiste trennt den Legendentext von der Legendenlinie.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -102,9 +102,9 @@
       <Docs>
         <summary>Gibt den Winkel der Legendenlinie zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn die Calloutlinie mehr als ein Liniensegment enthält, gibt die <b>Angle</b> -Eigenschaft den Winkel des Abschnitts zurück oder legt ihn fest, der am weitesten vom Textfeld der Callout entfernt ist.</para>
+        <remarks><para>Wenn die Legendenlinie mehrere Liniensegmente enthält, gibt die <b>Angle-Eigenschaft</b> den Winkel des Abschnitts zurück, der sich am weitesten vom Legendentextfeld entfernt befindet, oder legt ihn fest.</para>
           <para>
-            <b>MsoCalloutAngleType kann</b> eine der folgenden <b>MsoCalloutAngleType -Konstanten</b> sein:</para>
+            <b>MsoCalloutAngleType</b> kann eine der folgenden <b>MsoCalloutAngleType-Konstanten</b> sein:</para>
           <para>
             <b>msoCalloutAngle30</b>
           </para>
@@ -153,7 +153,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,7 +187,7 @@
         <summary><b>True</b>, wenn sich die Position, an der die Legendenlinie mit dem Legendentextfeld verbunden ist, in Abhängigkeit davon ändert, ob der Ursprung der Legendenlinie (wohin die Legende zeigt) links oder rechts vom Textfeld der Legende liegt.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState -Konstanten</b> sein:</para>
+            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -195,15 +195,15 @@
             <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed</b>
+            <b>MsoTriStateMixed</b>
           </para>
           <para>
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> Die Stelle, an der die Linie an das Textfeld der Callout anheftt, ändert sich abhängig davon, ob sich der Ursprung derOutoutlinie (wohin die Callout zeigt) links oder rechts vom Textfeld der Callout befindet.</para>
-          <para>Besitzt diese Eigenschaft den Wert <b>True</b>, wird der Ansatzwert (der vertikale Abstand zwischen dem Rand des Textfelds der Legende und dem Ort, an dem die Legende verbunden ist) von der Oberkante des Textfelds gemessen, wenn sich das Textfeld rechts vom Ursprung befindet, oder von der Unterkante des Textfelds, wenn das Textfeld links vom Ursprung liegt. Besitzt diese Eigenschaft den Wert <b>False</b>False, wird der Ansatzwert immer von der Oberkante des Textfelds gemessen, unabhängig davon wie Textfeld und Ursprung zueinander liegen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> die Methode, um den Dropwert festlegen, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> Eigenschaft, um den Dropwert zurück.</para>
-          <para>Das Festlegen dieser Eigenschaft wirkt sich nur dann auf eine Callout aus, wenn sie einen explizit festgelegten Ablagewert hat, d. h. wenn der Wert der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>MsoCalloutDropCustom ist.</b> Standardmäßig besitzen Legenden bei der Erstellung explizit festgelegte Ansatzwerte.</para>
+            <b>msoTrue</b> Die Stelle, an der die Legendenlinie mit dem Legendentextfeld verbunden ist, ändert sich je nachdem, ob sich der Ursprung der Legendenlinie (wohin die Legende zeigt) links oder rechts vom Legendentextfeld befindet.</para>
+          <para>Besitzt diese Eigenschaft den Wert <b>True</b>, wird der Ansatzwert (der vertikale Abstand zwischen dem Rand des Textfelds der Legende und dem Ort, an dem die Legende verbunden ist) von der Oberkante des Textfelds gemessen, wenn sich das Textfeld rechts vom Ursprung befindet, oder von der Unterkante des Textfelds, wenn das Textfeld links vom Ursprung liegt. Besitzt diese Eigenschaft den Wert <b>False</b>False, wird der Ansatzwert immer von der Oberkante des Textfelds gemessen, unabhängig davon wie Textfeld und Ursprung zueinander liegen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> Methode, um den Ansatzwert festzulegen, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> Eigenschaft, um den Ansatzwert zurückzugeben.</para>
+          <para>Das Festlegen dieser Eigenschaft wirkt sich nur dann auf eine Legende aus, wenn sie einen explizit festgelegten Bezugswert aufweist, d. h., wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> Eigenschaft <b>msoCalloutDropCustom</b>lautet. Standardmäßig besitzen Legenden bei der Erstellung explizit festgelegte Ansatzwerte.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -233,21 +233,21 @@
         <summary>Diese Eigenschaft kann nur für Legenden angewendet werden, deren Linien aus mehr als einem Segment bestehen (Linien der Typen <b>msoCalloutThree</b> und <b>msoCalloutFour</b>).</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState -Konstanten</b> sein:</para>
+            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> Das erste Segment der Callout behält die von der Eigenschaft angegebene feste Länge bei, wenn die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> Callout verschoben wird.</para>
+            <b>msoFalse</b> Das erste Segment der Legende behält die feste Länge bei, die von der Eigenschaft angegeben <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> wird, wenn die Legende verschoben wird.</para>
           <para>
-            <b>msoTriStateMixed</b>
+            <b>MsoTriStateMixed</b>
           </para>
           <para>
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> Das erste Segment der Calloutlinie (das segment, das mit dem Textbekoutfeld verbunden ist) wird automatisch skaliert, wenn die Callout verschoben wird.</para>
-          <para>Verwenden Sie die Methode, um diese Eigenschaft auf MsoTrue festgelegt, und verwenden Sie die Methode, um diese Eigenschaft auf <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> <b></b> <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <b>MsoFalse festlegen.</b></para>
+            <b>msoTrue</b> Das erste Segment der Legendenlinie (das Segment, das mit dem Textbeschriftungsfeld verbunden ist) wird automatisch skaliert, wenn die Legende verschoben wird.</para>
+          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> Methode, um diese Eigenschaft auf <b>MsoTrue</b>festzulegen, und verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> Methode, um diese Eigenschaft auf <b>MsoFalse</b>festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,9 +273,9 @@
       <Parameters />
       <Docs>
         <summary>Gibt an, dass das erste Segment der Legendenlinie (das Segment, das Text am Legendentextfeld ansetzt) automatisch skaliert wird, wenn die Legende verschoben wird.</summary>
-        <remarks><para>Die <b>AutomaticLength -Methode</b> gilt nur für Callouts, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
-          <para>Verwenden Sie die Methode, um anzugeben, dass das erste Segment der Calloutlinie die feste Länge beibe, die von der Eigenschaft zurückgegeben wird, wenn die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> Callout verschoben wird.</para>
-          <para>Durch Anwenden dieser Methode wird die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> Eigenschaft auf <b>True .</b></para>
+        <remarks><para>Die <b>AutomaticLength-Methode</b> gilt nur für Legenden, deren Linien aus mehr als einem Segment bestehen (typen <b>msoCalloutThree</b> und <b>msoCalloutFour).</b></para>
+          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> Methode, um anzugeben, dass das erste Segment der Legendenlinie die feste Länge beibehält, die von der Eigenschaft zurückgegeben <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> wird, wenn die Legende verschoben wird.</para>
+          <para>Durch Anwenden dieser Methode wird die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> Eigenschaft auf <b>True</b>festgelegt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -308,15 +308,15 @@
         <summary>Stellt die Sichtbarkeitsoptionen für den Rahmen des Objekts dar.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState -Konstanten</b> sein:</para>
+            <b>MsoTriState</b> kann eine der folgenden <b>MsoTriState</b> -Konstanten sein:</para>
           <para>
             <b>msoCTrue</b> Gilt nicht für dieses Objekt.</para>
           <para>
             <b>msoFalse</b> Legt den Rahmen unsichtbar fest.</para>
           <para>
-            <b>msoTriStateMixed</b> Gilt nicht für dieses Objekt.</para>
+            <b>MsoTriStateMixed</b> Gilt nicht für dieses Objekt.</para>
           <para>
-            <b>msoTriStateToggle</b> Ermöglicht dem Benutzer das Wechseln des Rahmens von "Sichtbar" in "Unsichtbar" und umgekehrt.</para>
+            <b>msoTriStateToggle</b> Ermöglicht es dem Benutzer, den Rahmen von sichtbar zu unsichtbar zu ändern und umgekehrt.</para>
           <para>
             <b>msoTrue</b> Standard. Legt fest, dass der Rahmen sichtbar ist.</para>
           <para> </para></remarks>
@@ -351,7 +351,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -380,7 +380,7 @@
       <Docs>
         <param name="Drop">Erforderlicher <b>Single</b>-Wert. Der Abstand in Punkten.</param>
         <summary>Legt den vertikalen Abstand (in Punkt) vom Rand des Textbereichs und der Stelle, an die Legendenlinie mit dem Textfeld verbunden.</summary>
-        <remarks><para>Dieser Abstand wird vom oberen Rand des Textfelds gemessen, es sei denn, die Eigenschaft ist auf "True" festgelegt, und das Textfeld befindet sich links vom Ursprung derOutoutlinie (der Stelle, auf die die Callout zeigt). In diesem Fall wird der Abstand vom unteren Rand des Textfelds <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> gemessen. <b></b></para>
+        <remarks><para>Dieser Abstand wird vom oberen Rand des Textfelds gemessen, es sei denn, die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> Eigenschaft ist auf <b>"True"</b> festgelegt, und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, auf die die Legende zeigt). In diesem Fall wird der Bezugsabstand vom unteren Rand des Textfelds gemessen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -407,11 +407,11 @@
         <Parameter Name="Length" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Length">Erforderlicher <b>Single</b>-Wert. Die Länge des ersten Abschnitts der Callout in Punkt.</param>
-        <summary>Gibt an, dass das erste Segment der Calloutlinie (das segment, das mit dem Textbezeichnerfeld verbunden ist) eine feste Länge beibehalte, wenn die Callout verschoben wird.</summary>
-        <remarks><para>Die <b>CustomLength -Methode</b> gilt nur für Callouts, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
-          <para>Verwenden Sie die Methode, um anzugeben, dass das erste Segment der Calloutlinie automatisch skaliert wird, wenn die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> Callout verschoben wird.</para>
-          <para>Durch Anwenden dieser Methode wird die Eigenschaft auf "False" und die Eigenschaft auf den <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> für das Argument Length <b></b> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> <b>angegebenen Wert</b> festgelegt.</para>
+        <param name="Length">Erforderlicher <b>Single</b>-Wert. Die Länge des ersten Abschnitts der Legende in Punkt.</param>
+        <summary>Gibt an, dass der erste Abschnitt der Legendenlinie (das segment, das mit dem Textbeschriftungsfeld verbunden ist) eine feste Länge beibehält, wenn die Legende verschoben wird.</summary>
+        <remarks><para>Die <b>CustomLength-Methode</b> gilt nur für Legenden, deren Linien aus mehreren Segmenten bestehen (Typen <b>msoCalloutThree</b> und <b>msoCalloutFour).</b></para>
+          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> Methode, um anzugeben, dass das erste Segment der Legendenlinie automatisch skaliert wird, wenn die Legende verschoben wird.</para>
+          <para>Durch Anwenden dieser Methode wird die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> Eigenschaft auf <b>False</b> und die Eigenschaft auf den für <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> das <b>Length-Argument</b> angegebenen Wert festgelegt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -438,11 +438,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt für Callouts mit einem explizit festgelegten Dropwert den vertikalen Abstand (in Punkt) vom Rand des umgebenden Textfelds an die Stelle zurück, an der die Calloutlinie mit dem Textfeld verbunden ist.</summary>
+        <summary>Gibt für Legenden mit einem explizit festgelegten Bezugswert den vertikalen Abstand (in Punkt) vom Rand des umgebenden Textfelds zu der Stelle zurück, an der die Legendenlinie mit dem Textfeld verbunden ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Der Abstand wird vom oberen Rand des Textfelds gemessen, es sei denn, die Eigenschaft ist auf "True" festgelegt, und das Textfeld befindet sich links vom Ursprung derOutoutlinie (der Stelle, auf die die Callout zeigt). In diesem Fall wird der Abstand vom unteren Rand des Textfelds <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> gemessen. <b></b></para>
-          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> die Methode, um den Wert dieser Eigenschaft festlegen.</para>
-          <para>Der Wert dieser Eigenschaft gibt nur dann genau die Position der Anlage der Calloutlinie an das Textfeld wieder, wenn die Callout einen explizit festgelegten Ansatzwert hat, d. h. wenn der Wert der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>MsoCalloutDropCustom</b>ist.</para>
+        <remarks><para>Der Abstand wird vom oberen Rand des Textfelds gemessen, es sei denn, die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> Eigenschaft ist auf <b>"True"</b> festgelegt, und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, auf die die Legende zeigt). In diesem Fall wird der Abstand vom unteren Rand des Textfelds gemessen.</para>
+          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> Methode, um den Wert dieser Eigenschaft festzulegen.</para>
+          <para>Der Wert dieser Eigenschaft gibt die Position der Legendenlinienanlage an das Textfeld nur dann genau wieder, wenn die Legende einen explizit festgelegten Ansatzwert aufweist, d. h., wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> Eigenschaft <b>msoCalloutDropCustom</b>lautet.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -472,7 +472,7 @@
         <summary>Gibt einen Wert zurück, der die Position angibt, an der die Legendenlinie mit dem Legendentextfeld verbunden ist.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoCalloutDropType kann</b> eine der folgenden <b>MsoCalloutDropType -Konstanten</b> sein:</para>
+            <b>MsoCalloutDropType</b> kann eine der folgenden <b>MsoCalloutDropType-Konstanten</b> sein:</para>
           <para>
             <b>msoCalloutDropCenter</b>
           </para>
@@ -488,8 +488,8 @@
           <para>
             <b>msoCalloutDropTop</b>
           </para>
-          <para>Wenn der Typ des Dropdowns der <b>Callout MsoCalloutDropCustom</b>ist, werden die Werte der und Eigenschaften und die relativen Positionen des Textfelds und des Ursprung der Calloutlinie (die Stelle, auf die die Callout zeigt) verwendet, um zu bestimmen, an welche Stelle die Calloutlinie an das Textfeld anknüpft. <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /></para>
-          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> die Methode, um den Wert dieser Eigenschaft festlegen.</para>
+          <para>Wenn der Legenden-Drop-Typ <b>MsoCalloutDropCustom</b>ist, werden die Werte und <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> Eigenschaften sowie die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> relativen Positionen des Legendentextfelds und des Legendenlinienursprungs (die Stelle, auf die die Legende zeigt) verwendet, um zu bestimmen, wo die Legendenlinie mit dem Textfeld verbunden ist.</para>
+          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> Methode, um den Wert dieser Eigenschaft festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -547,10 +547,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn die Eigenschaft der angegebenen Callout auf "False" festgelegt ist, wird die Länge (in Punkt) des ersten Abschnitts der Calloutlinie (das Segment, das mit dem Textbeschlagfeld verbunden <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> ist) zurückgegeben. <b></b></summary>
+        <summary>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> Eigenschaft der angegebenen Legende auf <b>False</b>festgelegt ist, wird die Länge (in Punkt) des ersten Abschnitts der Legendenlinie (das Segment, das mit dem Textbeschriftungsfeld verbunden ist) zurückgegeben.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Length -Eigenschaft</b> gilt nur für Callouts, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>msoCalloutFour</b>) bestehen.</para>
-          <para>Mit der <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> Methode können Sie den Wert dieser Eigenschaft für ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> festlegen.</para>
+        <remarks><para>Die <b>Length-Eigenschaft</b> gilt nur für Legenden, deren Linien aus mehreren Segmenten bestehen (Typen <b>msoCalloutThree</b> und <b>MsoCalloutFour).</b></para>
+          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> Methode, um den Wert dieser Eigenschaft für ein <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> Objekt festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -605,7 +605,7 @@
         <Parameter Name="DropType" Type="Microsoft.Office.Core.MsoCalloutDropType" />
       </Parameters>
       <Docs>
-        <param name="DropType"><see cref="T:Microsoft.Office.Interop.Office.MsoCalloutDropType" />Erforderlich. Die Anfangsposition der Legendenlinie relativ zu dem Begrenzungsfeld des Texts. Dies kann eine der folgenden <b>MsoCalloutDropType-Konstanten</b> sein:<b>msoCalloutDropBottom</b><b>msoCalloutDropCenter</b><b>msoCalloutDropCustom</b> Angeben von <b>msoCalloutDropCustom</b> für dieses Argument verursacht einen Fehler im Code. <b>msoCalloutDropMixed</b><b>msoCalloutDropTop</b></param>
+        <param name="DropType"><see cref="T:Microsoft.Office.Interop.Office.MsoCalloutDropType" />Erforderlich. Die Anfangsposition der Legendenlinie relativ zu dem Begrenzungsfeld des Texts. Dies kann eine der folgenden <b>MsoCalloutDropType-Konstanten</b> sein:<b>MsoCalloutDropBottom</b><b>msoCalloutDropCenter</b><b>msoCalloutDropCustom</b> Wenn Sie <b>msoCalloutDropCustom</b> für dieses Argument angeben, schlägt ihr Code fehl. <b>msoCalloutDropMixed</b><b>msoCalloutDropTop</b></param>
         <summary>Legt fest, ob die Legendenlinie am oberen Rand, am unteren Rand oder in der Mitte des Textfelds der Legende angefügt wird oder an einem Punkt, der in einem angegebenen Abstand vom oberen bzw. unteren Rand des Textfelds liegt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,10 +636,10 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Calloutformats zurück oder legt ihn fest.</summary>
+        <summary>Gibt den Legendenformattyp zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoCalloutType</b> kann eine der folgenden <b>MsoCalloutType -Konstanten</b> sein:</para>
+            <b>MsoCalloutType</b> kann eine der folgenden <b>MsoCalloutType</b> -Konstanten sein:</para>
           <para>
             <b>msoCalloutFour</b>
           </para>

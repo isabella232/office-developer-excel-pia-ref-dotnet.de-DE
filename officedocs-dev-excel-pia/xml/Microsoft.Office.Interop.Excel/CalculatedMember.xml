@@ -1,5 +1,5 @@
 <Type Name="CalculatedMember" FullName="Microsoft.Office.Interop.Excel.CalculatedMember">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7dbe58948b0a319d6163ef1a376e3134b0cce7cd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006055" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMember" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c86f7dc26610f37d139c110969b898dc8368015b8738a8147643578eabe1ba9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508129" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMember" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedMember" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedMember" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedMember" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt die berechneten Felder und Elemente für PivotTables mit OLAP (Online Analytical Processing)-Datenquellen dar.</summary>
-    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> die Methode oder die Eigenschaft der <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> Auflistung, um ein <b>CalculatedMember -Objekt zurückzukehren.</b></para>
-      <para>Mit einem <b>CalculatedMember -Objekt</b> können Sie die Gültigkeit eines berechneten Felds oder Elements in einer PivotTable mithilfe der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> überprüfen.</para>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> Methode oder die Eigenschaft der <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> Auflistung, um ein <b>CalculatedMember</b> -Objekt zurückzugeben.</para>
+      <para>Mit einem <b>CalculatedMember-Objekt</b> können Sie die Gültigkeit eines berechneten Felds oder Elements in einer PivotTable mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> Eigenschaft überprüfen.</para>
       <para>
-        <b>Hinweis</b>  Die <b>Eigenschaft "IsValid"</b> gibt <b>"True"</b> zurück, wenn die PivotTable derzeit nicht mit der Datenquelle verbunden ist. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" /> die Methode vor dem Testen der <b>IsValid-Eigenschaft.</b></para>
+        <b>Hinweis</b>  Die <b>IsValid-Eigenschaft</b> gibt <b>True</b> zurück, wenn die PivotTable derzeit nicht mit der Datenquelle verbunden ist. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" /> Methode, bevor Sie die <b>IsValid-Eigenschaft</b> testen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -83,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +114,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Excel erstellt wurde, gibt diese Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Excel verfügt beispielsweise über den Erstellercode XCEL.</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Beispielsweise verfügt Excel über den Erstellercode XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -167,11 +167,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Namen des Anzeigeordners für eine benannte Gruppe ab.</summary>
-        <value>Der Name des Anzeigeordners für eine benannte Gruppe.</value>
+        <summary>Ruft den Namen des Anzeigeordners für einen benannten Satz ab.</summary>
+        <value>Der Name des Anzeigeordners für einen benannten Satz.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Der Wert dieser Eigenschaft entspricht dem optionalen Wert, der beim Erstellen oder Bearbeiten eines benannten Kontrollkästchens in das Textfeld "Anzeigeordner" des Dialogfelds "Neu/Änderungssatz" eingegeben werden kann. Klicken Sie zum Erstellen einer neuen benannten Gruppe aus Daten in einer PivotTable basierend auf einer OLAP-Datenquelle auf die PivotTable, klicken Sie auf "Feld", "Elemente", "Festlegen" auf der Registerkarte "Optionen für PivotTable-Tools" im Menüband auf "Sätze verwalten", klicken Sie im Dialogfeld "Manager festlegen" auf "Neu", und klicken Sie dann auf "Set mithilfe von &amp; MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Textfeld Anzeigeordner enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
-          <para>Diese Eigenschaft kann zusammen mit den Und-Eigenschaften nur für benannte Sätze gelesen werden (die durch Objekte dargestellt werden, bei denen <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> die Eigenschaft gleich <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ist). Diese Eigenschaften können nicht für berechnete Elemente oder Measures gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> die Eigenschaft gleich <paramref name="xlCalculatedMember" /> ist). Wenn Sie versuchen, diese Eigenschaften für berechnete Elemente oder Measures zu lesen, wird ein Laufzeitfehler ausgelöst.</para>
+          <para>Der Wert dieser Eigenschaft entspricht dem optionalen Wert, der beim Erstellen oder Bearbeiten eines benannten Satzes in das Textfeld Anzeigeordner des Dialogfelds Neue/Ändernde Menge eingegeben werden kann. Klicken Sie zum Erstellen eines neuen benannten Satzes aus Daten in einer PivotTable, die auf einer OLAP-Datenquelle basiert, auf der Registerkarte "PivotTable-Tools" auf "Feld", "Elemente", &amp; "Festlegen" auf der Registerkarte "PivotTable-Tools", im Menüband auf "Sets verwalten", im Dialogfeld "Manager festlegen" auf "Neu" und dann auf "Set mit MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Textfeld Anzeigeordner enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
+          <para>Diese Eigenschaft kann zusammen mit den <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> eigenschaften nur für benannte <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> Sätze gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen die Eigenschaft gleich <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ist). Diese Eigenschaften können nicht für berechnete Elemente oder Kennzahlen gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen die <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> Eigenschaft gleich <paramref name="xlCalculatedMember" /> ist). Wenn Sie versuchen, diese Eigenschaften für berechnete Elemente oder Measures zu lesen, wird ein Laufzeitfehler ausgelöst.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,12 +199,12 @@
       </ReturnValue>
       <Docs>
         <summary>Ruft ab, ob der angegebene benannte Satz bei jeder Aktualisierung neu berechnet wird.</summary>
-        <value><b>true,</b> wenn die angegebene benannte Gruppe bei jeder Aktualisierung neu berechnet wird; andernfalls <b>false</b>.</value>
+        <value><b>true,</b> wenn der angegebene benannte Satz bei jeder Aktualisierung neu berechnet wird; andernfalls <b>false</b>.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para>
-            <b>true,</b> wenn die benannte Gruppe bei jeder Aktualisierung neu berechnet wird; andernfalls <b>false</b>.</para>
-          <para>Der Wert dieser Eigenschaft entspricht der Einstellung des Kontrollkästchens "Neu berechnen" mit jedem Aktualisierungskontrollkästchen im Dialogfeld "Neu/Satz ändern", das verfügbar ist, wenn eine benannte Gruppe erstellt oder bearbeitet wird. Klicken Sie zum Erstellen einer neuen benannten Gruppe aus Daten in einer PivotTable basierend auf einer OLAP-Datenquelle auf die PivotTable, klicken Sie auf "Feld", "Elemente", "Festlegen" auf der Registerkarte "Optionen für PivotTable-Tools" im Menüband auf "Sätze verwalten", klicken Sie im Dialogfeld "Manager festlegen" auf "Neu", und klicken Sie dann auf "Set mithilfe von &amp; MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Textfeld Set bei jeder Aktualisierung neu berechnen enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
-          <para>Diese Eigenschaft kann zusammen mit den Und-Eigenschaften nur für benannte Sätze gelesen werden (die durch Objekte dargestellt werden, bei denen <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> die Eigenschaft gleich <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ist). Diese Eigenschaften können nicht für berechnete Elemente oder Measures gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> die Eigenschaft gleich <paramref name="xlCalculatedMember" /> ist). Wenn Sie versuchen, diese Eigenschaften für berechnete Elemente oder Measures zu lesen, wird ein Laufzeitfehler ausgelöst.</para>
+            <b>true,</b> wenn der benannte Satz bei jeder Aktualisierung neu berechnet wird; andernfalls <b>false</b>.</para>
+          <para>Der Wert dieser Eigenschaft entspricht der Einstellung des Kontrollkästchens "Neu berechnen" mit jedem Update-Kontrollkästchen im Dialogfeld Neue/Änderungssatz, das verfügbar ist, wenn ein benannter Satz erstellt oder bearbeitet wird. Klicken Sie zum Erstellen eines neuen benannten Satzes aus Daten in einer PivotTable, die auf einer OLAP-Datenquelle basiert, auf der Registerkarte "PivotTable-Tools" auf "Feld", "Elemente", &amp; "Festlegen" auf der Registerkarte "PivotTable-Tools", im Menüband auf "Sets verwalten", im Dialogfeld "Manager festlegen" auf "Neu" und dann auf "Set mit MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Textfeld Set bei jeder Aktualisierung neu berechnen enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
+          <para>Diese Eigenschaft kann zusammen mit den <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> eigenschaften nur für benannte <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> Sätze gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen die Eigenschaft gleich <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ist). Diese Eigenschaften können nicht für berechnete Elemente oder Kennzahlen gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen die <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> Eigenschaft gleich <paramref name="xlCalculatedMember" /> ist). Wenn Sie versuchen, diese Eigenschaften für berechnete Elemente oder Measures zu lesen, wird ein Laufzeitfehler ausgelöst.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -234,12 +234,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob Elemente aus allen Ebenen der Hierarchie der angegebenen benannten Gruppe im gleichen Feld eines PivotTable-Berichts angezeigt werden, der auf einem OLAP-Cube basiert.</summary>
-        <value><b>true,</b> wenn Elemente aus allen Ebenen der Hierarchie der angegebenen benannten Gruppe im gleichen Feld eines #A0 angezeigt werden, der auf einem #A1 basiert; andernfalls <b>false</b>.</value>
+        <summary>Ruft ab oder legt fest, ob Elemente aus allen Ebenen der Hierarchie der angegebenen benannten Gruppe im selben Feld eines PivotTable-Berichts basierend auf einem OLAP-Cube angezeigt werden.</summary>
+        <value><b>true,</b> wenn Elemente aus allen Ebenen der Hierarchie der angegebenen benannten Gruppe im selben Feld eines PivotTable-Berichts basierend auf einem OLAP-Cube angezeigt werden; andernfalls <b>false</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>true,</b> wenn Elemente aus allen Ebenen der Hierarchie der benannten Gruppe im gleichen Feld angezeigt werden; andernfalls <b>false</b>.</para>
-          <para>Der Wert dieser Eigenschaft entspricht dem Festlegen des Kontrollkästchens Elemente aus verschiedenen Ebenen in separaten Feldern anzeigen im Dialogfeld Set ändern, das beim Erstellen oder Bearbeiten einer benannten Menge verfügbar ist. Klicken Sie zum Erstellen einer neuen benannten Gruppe aus Daten in einer PivotTable basierend auf einer OLAP-Datenquelle auf die PivotTable, klicken Sie auf "Feld", "Elemente", "Festlegen" auf der Registerkarte "Optionen für PivotTable-Tools" im Menüband auf "Sätze verwalten", klicken Sie im Dialogfeld "Manager festlegen" auf "Neu", und klicken Sie dann auf "Set mithilfe von &amp; MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Textfeld Elemente aus verschiedenen Ebenen in separaten Feldern anzeigen enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
+            <b>true,</b> wenn Elemente aus allen Ebenen der Hierarchie der benannten Gruppe im selben Feld angezeigt werden; andernfalls <b>false</b>.</para>
+          <para>Der Wert dieser Eigenschaft entspricht dem Festlegen des Kontrollkästchens Elemente aus verschiedenen Ebenen in separaten Feldern anzeigen im Dialogfeld Set ändern, das beim Erstellen oder Bearbeiten einer benannten Menge verfügbar ist. Klicken Sie zum Erstellen eines neuen benannten Satzes aus Daten in einer PivotTable, die auf einer OLAP-Datenquelle basiert, auf der Registerkarte "PivotTable-Tools" auf "Feld", "Elemente", &amp; "Festlegen" auf der Registerkarte "PivotTable-Tools", im Menüband auf "Sets verwalten", im Dialogfeld "Manager festlegen" auf "Neu" und dann auf "Set mit MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Textfeld Elemente aus verschiedenen Ebenen in separaten Feldern anzeigen enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -266,12 +266,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Formel des Mitglieds in der #A0 (multidimensional expressions) zurück.</summary>
+        <summary>Gibt die Formel des Elements in multidimensionaler Ausdrücke (MDX)-Syntax zurück.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft ist für OLAP-Datenquellen nicht verfügbar.</para>
-          <para>Wenn die Zelle eine Konstante enthält, gibt die Eigenschaft die Konstante zurück. Wenn die Zelle leer ist, gibt die <b>Formula</b> -Eigenschaft eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge in dem Format zurück, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
+          <para>Wenn die Zelle eine Konstante enthält, gibt die Eigenschaft die Konstante zurück. Wenn die Zelle leer ist, gibt die <b>Formula-Eigenschaft</b> eine leere Zeichenfolge zurück. Wenn die Zelle eine Formel enthält, gibt die <b>Formula</b>-Eigenschaft die Formel als Zeichenfolge in dem Format zurück, in dem sie in der Bearbeitungsleiste angezeigt werden würde (einschließlich des Gleichheitszeichens).</para>
           <para>Wenn Sie den Wert oder die Formel einer Zelle in ein Datum umwandeln, überprüft Microsoft Excel, ob die Zelle bereits mit einem Datums- oder Zeitformat formatiert ist. Ist das nicht der Fall, so wird das Zahlenformat in das kurze Standard-Datumsformat geändert.</para>
-          <para>Wenn es sich bei dem Bereich um einen ein- oder zweidimensionalen Bereich handelt, können Sie die Formel auf ein Array mit denselben Dimensionen festlegen. Auf ähnliche Weise können Sie die Formel in ein Array setzen.</para>
+          <para>Wenn es sich bei dem Bereich um einen ein- oder zweidimensionalen Bereich handelt, können Sie die Formel auf ein Array mit denselben Dimensionen festlegen. Auf ähnliche Weise können Sie die Formel in ein Array einfügen.</para>
           <para>Beim Festlegen der Formel für einen Bereich mit mehreren Zellen wird die Formel in alle Zellen des Bereichs eingetragen.</para>
           <para> </para></remarks>
       </Docs>
@@ -302,13 +302,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob Duplikate beim Anzeigen der Hierarchie der angegebenen benannten Gruppe in einem auf einem OLAP-Cube basierenden PivotTable-Bericht angeordnet und entfernt werden sollen.</summary>
-        <value><b>true,</b> wenn Duplikate geordnet und entfernt werden sollen, wenn die Hierarchie der angegebenen benannten Gruppe in einem auf einem #A0 basierenden #A1 angezeigt wird; andernfalls <b>false</b>.</value>
+        <summary>Ruft ab oder legt fest, ob Duplikate sortiert und entfernt werden sollen, wenn die Hierarchie des angegebenen benannten Satzes in einem auf einem OLAP-Cube basierenden PivotTable-Bericht angezeigt wird.</summary>
+        <value><b>true,</b> wenn Duplikate sortiert und entfernt werden sollen, wenn die Hierarchie des angegebenen benannten Satzes in einem PivotTable-Bericht basierend auf einem OLAP-Cube angezeigt wird; andernfalls <b>false</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>
-            <b>true,</b> wenn die Hierarchie der benannten Gruppe in der Reihenfolge angezeigt wird, in der Duplikate entfernt wurden; andernfalls <b>false</b>.</para>
-          <para>Der Wert dieser Eigenschaft entspricht dem Festlegen des Kontrollkästchens Automatisch sortieren und Duplikate aus der Menge entfernen im Dialogfeld Set ändern, das beim Erstellen oder Bearbeiten einer benannten Menge verfügbar ist. Klicken Sie zum Erstellen einer neuen benannten Gruppe aus Daten in einer PivotTable basierend auf einer OLAP-Datenquelle auf die PivotTable, klicken Sie auf "Feld", "Elemente", "Festlegen" auf der Registerkarte "Optionen für PivotTable-Tools" im Menüband auf "Sätze verwalten", klicken Sie im Dialogfeld "Manager festlegen" auf "Neu", und klicken Sie dann auf "Set mithilfe von &amp; MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Kontrollkästchen Automatisch sortieren und Duplikate aus der Menge entfernen enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
-          <para>Diese Eigenschaft kann zusammen mit den Und-Eigenschaften nur für benannte Sätze gelesen werden (die durch Objekte dargestellt werden, bei denen <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> die Eigenschaft gleich <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ist). Diese Eigenschaften können nicht für berechnete Elemente oder Measures gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> die Eigenschaft gleich <paramref name="xlCalculatedMember" /> ist). Wenn Sie versuchen, diese Eigenschaften für berechnete Elemente oder Measures zu lesen, wird ein Laufzeitfehler ausgelöst.</para>
+            <b>true,</b> wenn die Hierarchie des benannten Satzes sortiert mit entfernten Duplikaten angezeigt wird; andernfalls <b>false</b>.</para>
+          <para>Der Wert dieser Eigenschaft entspricht dem Festlegen des Kontrollkästchens Automatisch sortieren und Duplikate aus der Menge entfernen im Dialogfeld Set ändern, das beim Erstellen oder Bearbeiten einer benannten Menge verfügbar ist. Klicken Sie zum Erstellen eines neuen benannten Satzes aus Daten in einer PivotTable, die auf einer OLAP-Datenquelle basiert, auf der Registerkarte "PivotTable-Tools" auf "Feld", "Elemente", &amp; "Festlegen" auf der Registerkarte "PivotTable-Tools", im Menüband auf "Sets verwalten", im Dialogfeld "Manager festlegen" auf "Neu" und dann auf "Set mit MDX erstellen". Dadurch wird das Dialogfeld Neues Set angezeigt, das das Kontrollkästchen Automatisch sortieren und Duplikate aus der Menge entfernen enthält. In ähnlicher Weise wird das Dialogfeld Set ändern angezeigt, wenn Sie im Dialogfeld Set-Manager eine vorhandene benannte Menge auswählen und dann auf Bearbeiten klicken.</para>
+          <para>Diese Eigenschaft kann zusammen mit den <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> eigenschaften nur für benannte <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> Sätze gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen die Eigenschaft gleich <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ist). Diese Eigenschaften können nicht für berechnete Elemente oder Kennzahlen gelesen werden (die durch Objekte dargestellt <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> werden, bei denen die <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> Eigenschaft gleich <paramref name="xlCalculatedMember" /> ist). Wenn Sie versuchen, diese Eigenschaften für berechnete Elemente oder Measures zu lesen, wird ein Laufzeitfehler ausgelöst.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -335,9 +335,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Wert vom Typ Boolean</b> , der angibt, ob das angegebene berechnete Element erfolgreich mit dem OLAP-Anbieter während der aktuellen Sitzung instanziiert wurde.</summary>
+        <summary>Gibt einen Wert vom Typ <b>Boolean</b> , der angibt, ob das angegebene berechnete Element während der aktuellen Sitzung erfolgreich mit dem OLAP-Anbieter instanziiert wurde.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft gibt <b>"True"</b> zurück, auch wenn die PivotTable nicht mit der Datenquelle verbunden ist. Stellen Sie sicher, dass die PivotTable verbunden ist, bevor Sie den Wert der Eigenschaft <b>"IsValid"</b> abfragen.</para>
+        <remarks><para>Diese Eigenschaft gibt <b>True</b> zurück, auch wenn die PivotTable nicht mit ihrer Datenquelle verbunden ist. Stellen Sie sicher, dass die PivotTable verbunden ist, bevor Sie den Wert der <b>IsValid-Eigenschaft</b> abfragen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -420,7 +420,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalcMemNumberFormatType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Excel.XlCalcMemNumberFormatType" /> Wert zurück, der das Zahlenformat des berechneten Mitglieds darstellt. Der Standardwert ist <b>xlNumberFormatTypeDefault</b>. Schreibgeschützt.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Excel.XlCalcMemNumberFormatType" /> Wert zurück, der das Zahlenformat des berechneten Elements darstellt. Der Standardwert ist <b>xlNumberFormatTypeDefault</b>. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,7 +476,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen der aktuellen übergeordneten Hierarchie aus den Hierarchien zurück, die im Cube verfügbar sind. Schreibgeschützt.</summary>
+        <summary>Gibt den Namen der aktuellen übergeordneten Hierarchie aus den Hierarchien zurück, die auf dem Cube verfügbar sind. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -506,8 +506,8 @@
       <Docs>
         <summary>Gibt den Namen des übergeordneten Elements für die übergeordnete Hierarchie zurück. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks><para>Das übergeordnete Standardmitglied wird durch das bestimmt, was vom Cubedesigner oder von Analysis Services als Standardmitglied der ausgewählten Hierarchie definiert wurde. Wenn beispielsweise ein Element "Alle" für die ausgewählte Hierarchie vorhanden ist, ist dies in der Regel das übergeordnete Standardmitglied im Cube.</para>
-          <para>Wenn die ausgewählte übergeordnete Hierarchie kein übergeordnetes Element "Alle" hat, wird ein anderes übergeordnetes Standardmitglied definiert, entweder vom Cubedesigner oder programmgesteuert von Analysis Services. (Wenn vom Cubedesigner kein Standardmitglied angegeben wird, definiert das Analysis Services-Modul automatisch eines.)</para>
+        <remarks><para>Das übergeordnete Standardelement wird von dem bestimmt, was vom Cube-Designer oder Analysis Services als Standardelement der ausgewählten Hierarchie definiert wurde. Wenn z. B. ein "All"-Element für die ausgewählte Hierarchie vorhanden ist, ist dies in der Regel das standardmäßige übergeordnete Element auf dem Cube.</para>
+          <para>Wenn die ausgewählte übergeordnete Hierarchie nicht über ein übergeordnetes Element "Alle" verfügt, wird ein weiteres übergeordnetes Standardelement definiert, entweder vom Cube-Designer oder programmgesteuert von Analysis Services. (Wenn vom Cube-Designer kein Standardelement angegeben wird, definiert das Analysis Services-Modul automatisch ein Element.)</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -534,7 +534,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> zurück, die den Wert des Arguments für die Lösungsreihenfolge (MDX) des berechneten Mitglieds (multidimensionaler Ausdruck) angibt. Der Standardwert ist "0".</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die den Wert des MDX-Arguments (multidimensionaler Ausdruck) der Solvenzreihenfolge des berechneten Elements angibt. Der Standardwert ist "0".</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -562,28 +562,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts so zurück, wie er in den ursprünglichen Quelldaten für den angegebenen PivotTable-Bericht angezeigt wird.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück, wie er in den ursprünglichen Quelldaten für den angegebenen PivotTable-Bericht angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Eigenschaft "SourceName"</b> kann sich vom aktuellen Elementnamen unterscheiden, wenn der Benutzer das Element nach dem Erstellen des PivotTable-Berichts umbenannt hat.</para>
-          <para>In der folgenden Tabelle sind Beispielwerte der <b>Eigenschaft "SourceName"</b> und der zugehörigen Eigenschaften aufgeführt, wenn ein <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproSourceName1.htm">OLAP</a></para>
+        <remarks><para>Die <b>SourceName-Eigenschaft</b> unterscheidet sich möglicherweise vom aktuellen Elementnamen, wenn der Benutzer das Element nach dem Erstellen des PivotTable-Berichts umbenannt hat.</para>
+          <para>In der folgenden Tabelle sind Beispielwerte der <b>SourceName-Eigenschaft</b> und verwandter Eigenschaften aufgeführt, wenn ein <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproSourceName1.htm">OLAP</a> vorhanden ist.</para>
           <list type="table">
             <item>
               <term>
-                <b>Caption</b>
+                <b>Beschriftung</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>Name</b>
+                <b>Namen</b>
               </term>
               <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>SourceName</b>
+                <b>Sourcename</b>
               </term>
               <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>(identisch mit SQL-Eigenschaftenwert, schreibgeschützt)</description>
@@ -596,14 +596,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Wenn Sie einen Index in der Auflistung angeben, können Sie <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
+          <para>Wenn Sie einen Index in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Auflistung angeben, können Sie die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
           <list type="table">
             <item>
-              <term>Ausdruck. PivotItems("[Europe].[ Frankreich]. [Paris]")</term>
+              <term>Ausdruck. PivotItems("[Europa].[ Frankreich]. [Paris]")</term>
               <description>Ausdruck. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Wenn Sie die Eigenschaft verwenden, um auf ein bestimmtes Element einer Auflistung zu verweisen, können Sie die Textindexnamen verwenden, wie in der <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> folgenden Tabelle dargestellt.</para>
+          <para>Wenn Sie die <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> Eigenschaft verwenden, um auf ein bestimmtes Element einer Auflistung zu verweisen, können Sie die Textindexnamen verwenden, wie in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <term>[Europa]. [Frankreich]. [Paris]</term>
@@ -639,7 +639,7 @@
         <summary>Gibt den berechneten Elementtyp zurück.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlCalculatedMemberType" /> kann eine der folgenden <b>XlCalculatedMemberType -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlCalculatedMemberType" /> kann eine der folgenden <b>XlCalculatedMemberType</b> -Konstanten sein:</para>
           <para>
             <b>xlCalculatedMember</b>
           </para>

@@ -1,5 +1,5 @@
 <Type Name="CellFormat" FullName="Microsoft.Office.Interop.Excel.CellFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bb607767f33cbf4ea76bfc37821ee59c522eeb21" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006006" /></Metadata><TypeSignature Language="C#" Value="public interface CellFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5991e55d2396515cf87d7c1eb46b05678ec113101ece91c4dffb3df0bb2008bb" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508094" /></Metadata><TypeSignature Language="C#" Value="public interface CellFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CellFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CellFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CellFormat" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Suchkriterien für das Zellenformat dar.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> die Eigenschaften <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> des <see cref="P:Microsoft.Office.Interop.Excel._Application.Application" /> Objekts, um ein <b>CellFormat -Objekt zurückzukehren.</b></para>
-      <para>Sie können die <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" /> Eigenschaften des CellFormat -Objekts verwenden, um die Suchkriterien für <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Font" /> das <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" /> Zellenformat zu definieren. <b></b></para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> oder die Eigenschaften des <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> <see cref="P:Microsoft.Office.Interop.Excel._Application.Application" /> Objekts, um ein <b>CellFormat</b> -Objekt zurückzugeben.</para>
+      <para>Mit den <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" /> Eigenschaften <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Font" /> des <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" /> <b>CellFormat-Objekts</b> können Sie die Suchkriterien für das Zellenformat definieren.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,9 +53,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle horizontal oder vertikal auf gleiche Verteilung festgelegt ist.</summary>
+        <summary><b></b> True , wenn Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf eine horizontale oder vertikale Verteilung festgelegt ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Um die Textausrichtung auf die gleiche Verteilung zu setzen, können Sie die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> <b>xlVAlignDistributed</b> festlegen, wenn der Wert der Eigenschaft xlVertical ist, und Sie können die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /> <b>xlHAlignDistributed</b> <b></b> festlegen, wenn der Wert der Orientation -Eigenschaft <b>xlHorizontal</b>ist.</para>
+        <remarks><para>Um die Textausrichtung auf eine gleiche Verteilung festzulegen, können Sie die <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> Eigenschaft auf <b>xlVAlignDistributed</b> festlegen, wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> Eigenschaft <b>xlVertical</b>ist, und Sie können die <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /> Eigenschaft auf <b>xlHAlignDistributed</b> festlegen, wenn der Wert der <b>Orientation</b> -Eigenschaft <b>xlHorizontal</b>ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ermöglicht dem Benutzer das Festlegen oder Zurückgeben der Suchkriterien basierend auf dem Rahmenformat der Zelle.</summary>
+        <summary>Ermöglicht dem Benutzer, die Suchkriterien basierend auf dem Rahmenformat der Zelle festzulegen oder zurückzugeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +139,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the criteria set in the <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> and <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> properties.</summary>
+        <summary>Löscht die in den Eigenschaften festgelegten <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> Kriterien.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +169,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, mit dem der Benutzer die Suchkriterien basierend auf dem Schriftformat der Zelle festlegen <see cref="T:Microsoft.Office.Interop.Excel.Font" /> oder zurückgeben kann.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Font" /> Objekt zurück, sodass der Benutzer die Suchkriterien basierend auf dem Schriftformat der Zelle festlegen oder zurückgeben kann.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,9 +230,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die Formel ausgeblendet wird, wenn das Arbeitsblatt geschützt ist. Gibt <b>Null</b> zurück, wenn der angegebene Bereich einige Zellen mit <b>FormulaHidden</b> gleich <b>True</b> und einige Zellen mit <b>FormulaHidden</b> gleich <b>False enthält.</b></summary>
+        <summary><b>True,</b> Wenn die Formel ausgeblendet wird, wenn das Arbeitsblatt geschützt ist. Gibt <b>Null</b> zurück, wenn der angegebene Bereich einige Zellen mit <b>FormulaHidden</b> gleich <b>True</b> und einige Zellen mit <b>FormulaHidden</b> gleich <b>False</b>enthält.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwechseln Sie diese Eigenschaft nicht mit der <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> Eigenschaft. Die Formel wird nicht ausgeblendet, wenn die Arbeitsmappe geschützt ist und das Arbeitsblatt nicht; Sie wird nur ausgeblendet, wenn das Arbeitsblatt geschützt ist.</para>
+        <remarks><para>Verwechseln Sie diese Eigenschaft nicht mit der <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> Eigenschaft. Die Formel wird nicht ausgeblendet, wenn die Arbeitsmappe geschützt ist und das Arbeitsblatt nicht; Es wird nur ausgeblendet, wenn das Arbeitsblatt geschützt ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -342,7 +342,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, mit dem der Benutzer die Suchkriterien basierend auf dem Innenformat der Zelle festlegen oder <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> zurückgeben kann.</summary>
+        <summary>Gibt ein Objekt zurück, <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> mit dem der Benutzer die Suchkriterien basierend auf dem Innenformat der Zelle festlegen oder zurückgeben kann.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -373,7 +373,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist. Gibt <b>Null zurück,</b> wenn der angegebene Bereich gesperrte und nicht gesperrte Zellen enthält.</summary>
+        <summary><b>True,</b> wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist. Gibt <b>Null zurück,</b> wenn der angegebene Bereich gesperrte und nicht gesperrte Zellen enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,7 +406,7 @@
       <Docs>
         <summary><b>True</b>, wenn der Bereich oder die Formatvorlage zusammengeführte Zellen enthält.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie einen Bereich mit zusammengeführten Zellen markieren, kann sich die resultierende Markierung von der beabsichtigten Markierung unterscheiden. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> die Eigenschaft, um die Adresse des ausgewählten Bereichs zu überprüfen.</para>
+        <remarks><para>Wenn Sie einen Bereich mit zusammengeführten Zellen markieren, kann sich die resultierende Markierung von der beabsichtigten Markierung unterscheiden. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> Eigenschaft, um die Adresse des ausgewählten Bereichs zu überprüfen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -436,9 +436,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Formatierungscode für das Objekt. Gibt <b>Null</b> zurück, wenn alle Zellen im angegebenen Bereich nicht dasselbe Zahlenformat haben.</summary>
+        <summary>Zurückgeben oder festlegen den Formatierungscode für das Objekt. Gibt <b>Null zurück,</b> wenn alle Zellen im angegebenen Bereich nicht dasselbe Zahlenformat aufweisen.</summary>
         <value>To be added.</value>
-        <remarks><para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die Visual Basic <b>Format-Funktion</b> verwendet andere Formatcodezeichenfolgen als <b>numberFormat und</b> <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> Eigenschaften.</para>
+        <remarks><para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die Funktion Visual Basic <b>Format</b> verwendet andere Formatcodezeichenfolgen als <b>numberFormat</b> und <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> Eigenschaften.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -470,7 +470,7 @@
       <Docs>
         <summary>Zurückgeben oder festlegen den Formatierungscode des Objekts als Zeichenfolge in der Sprache des Benutzers.</summary>
         <value>To be added.</value>
-        <remarks><para>Die Visual Basic <b>Format-Funktion</b> verwendet andere Formatcodezeichenfolgen als die <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> Eigenschaften <b>"NumberFormatLocal".</b></para>
+        <remarks><para>Die funktion Visual Basic <b>Format</b> verwendet andere Formatcodezeichenfolgen als die <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> Eigenschaften <b>"NumberFormatLocal".</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -500,9 +500,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen –90 und 90 Grad sein.</summary>
+        <summary>Die Textausrichtung. Kann ein ganzzahliger Wert zwischen -90 und 90 Grad sein.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Orientation</b> -Eigenschaft kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>Die <b>Orientation-Eigenschaft</b> kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -573,7 +573,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> wenn Text automatisch verkleinert wird, um in die verfügbare Spaltenbreite zu passen. Gibt <b>Null</b> zurück, wenn diese Eigenschaft nicht auf denselben Wert für alle Zellen im angegebenen Bereich festgelegt ist.</summary>
+        <summary><b></b> True , wenn Text automatisch an die verfügbare Spaltenbreite angepasst wird. Gibt <b>Null zurück,</b> wenn diese Eigenschaft nicht für alle Zellen im angegebenen Bereich auf denselben Wert festgelegt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -606,7 +606,7 @@
       <Docs>
         <summary>Gibt zurück oder legt die vertikale Ausrichtung des angegebenen Objekts.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Eigenschaft VerticalAlignment</b> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>Die <b>VerticalAlignment-Eigenschaft</b> kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -651,7 +651,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn Microsoft Excel den Text im Objekt umschließt. Gibt <b>Null</b> zurück, wenn der angegebene Bereich einige Zellen enthält, die Text umschließen, und andere Zellen, die nicht enthalten sind.</summary>
+        <summary><b></b> True , wenn Microsoft Excel den Text im Objekt umschließt. Gibt <b>Null zurück,</b> wenn der angegebene Bereich einige Zellen enthält, die Text umbrechen, und andere Zellen, die dies nicht tun.</summary>
         <value>To be added.</value>
         <remarks><para>Falls erforderlich, wird die Zeilenhöhe im Bereich von Microsoft Excel an die Texthöhe angepasst.</para>
           <para> </para></remarks>
