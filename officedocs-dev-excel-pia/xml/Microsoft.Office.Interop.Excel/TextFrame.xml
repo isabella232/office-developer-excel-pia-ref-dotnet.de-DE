@@ -1,5 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Excel.TextFrame">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2d1bfd568b124e87a7cc39c702d6b945df65ab68" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009646" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5b4356dc4dd2d3b658f3600cb0230834afce20795d1430632fc3d0d156c66e64" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518034" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
       <Docs>
         <summary><b>True,</b> Wenn Microsoft Excel automatisch Textrahmenränder berechnet.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn diese Eigenschaft <b>true ist,</b>werden die <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" /> Eigenschaften , und die Eigenschaften <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> ignoriert.</para>
+        <remarks><para>Wenn diese Eigenschaft <b>true</b>ist, werden die <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" /> Eigenschaften , , und die Eigenschaften <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> ignoriert.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -139,9 +139,9 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">Optionales <b>Objekt</b>. Das erste zurückzugebende Zeichen. Wird dieses Argument auf 1 festgelegt oder nicht angegeben, gibt die <b>Characters</b>-Methode einen Bereich von Zeichen zurück, der mit dem ersten Zeichen beginnt.</param>
-        <param name="Length">Optionales <b>Objekt</b>. Die Anzahl der zurückzugebenden Zeichen. Wenn dieses Argument nicht angegeben wird, gibt die <b>Characters</b> -Methode den Rest der Zeichenfolge zurück (alles nach dem Zeichen, das als Argument festgelegt <paramref name="Start" /> wurde).</param>
-        <summary>Gibt ein Objekt zurück, das einen Bereich von Zeichen innerhalb des Textrahmens <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> einer Form darstellt.</summary>
+        <param name="Start"><b>Optional-Objekt</b>. Das erste zurückzugebende Zeichen. Wird dieses Argument auf 1 festgelegt oder nicht angegeben, gibt die <b>Characters</b>-Methode einen Bereich von Zeichen zurück, der mit dem ersten Zeichen beginnt.</param>
+        <param name="Length"><b>Optional-Objekt</b>. Die Anzahl der zurückzugebenden Zeichen. Wenn dieses Argument nicht angegeben wird, gibt die <b>Characters-Methode</b> den Rest der Zeichenfolge zurück (alles nach dem Zeichen, das als Argument festgelegt <paramref name="Start" /> wurde).</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> Objekt zurück, das einen Bereich von Zeichen innerhalb des Textrahmens einer Form darstellt.</summary>
         <returns>To be added.</returns>
         <remarks><para>Sie können mit dem <b>Characters</b> -Objekt Zeichen innerhalb des Textrahmens hinzufügen und formatieren.</para>
           <para>Das <b>Characters</b>-Objekt ist keine Auflistung.</para>
@@ -174,7 +174,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -206,7 +206,7 @@
       <Docs>
         <summary>Zurückgeben oder festlegen die horizontale Ausrichtung für das angegebene Objekt.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Eigenschaft "HorizontalAlignment"</b> kann eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> sein.</para>
+        <remarks><para>Die <b>HorizontalAlignment-Eigenschaft</b> kann eine der <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> Konstanten sein.</para>
           <para>Einige dieser Konstanten stehen Ihnen möglicherweise abhängig von den von Ihnen ausgewählten oder installierten unterstützten Sprachen (z.B. Englisch (USA)) nicht zur Verfügung.</para>
           <para> </para></remarks>
       </Docs>
@@ -240,7 +240,7 @@
         <summary>Ruft die Einstellung für den horizontalen Überlauf für das angegebene Objekt ab oder legt sie fest.</summary>
         <value>Die Einstellung für den horizontalen Überlauf für das angegebene Objekt.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Diese Eigenschaft hat nur Auswirkungen, wenn <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" /> die Eigenschaft <b>MsoFalse</b> (0) ist.</para>
+          <para>Diese Eigenschaft wirkt sich nur aus, wenn die <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" /> Eigenschaft <b>msoFalse</b> (0) ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -396,7 +396,7 @@
       <Docs>
         <summary>Die Ausrichtung des Textrahmens.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Orientation -Eigenschaft</b> kann ein ganzzahliger Wert zwischen -90 und 90 Grad oder eine der <b>MsoTextOrientation</b> -Konstanten sein.</para>
+        <remarks><para>Die <b>Orientation-Eigenschaft</b> kann ein ganzzahliger Wert zwischen -90 und 90 Grad oder eine der <b>MsoTextOrientation-Konstanten</b> sein.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -456,7 +456,7 @@
       <Docs>
         <summary>Gibt die Lesereihenfolge für das angegebene Objekt zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>ReadingOrder -Eigenschaft</b> kann eine der folgenden Konstanten sein: <b>xlRTL</b> (von rechts nach links), <b>xlLTR</b> (von links nach rechts) oder <b>xlContext</b>.</para>
+        <remarks><para>Die <b>ReadingOrder</b> -Eigenschaft kann eine der folgenden Konstanten sein: <b>xlRTL</b> (von rechts nach links), <b>xlLTR</b> (von links nach rechts) oder <b>xlContext</b>.</para>
           <para>Einige dieser Konstanten stehen Ihnen möglicherweise abhängig von den von Ihnen ausgewählten oder installierten unterstützten Sprachen (z.B. Englisch (USA)) nicht zur Verfügung.</para>
           <para> </para></remarks>
       </Docs>
@@ -489,7 +489,7 @@
       <Docs>
         <summary>Gibt zurück oder legt die vertikale Ausrichtung des angegebenen Objekts.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Eigenschaft VerticalAlignment</b> kann eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> sein.</para>
+        <remarks><para>Die <b>VerticalAlignment-Eigenschaft</b> kann eine der <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> Konstanten sein.</para>
           <para>Einige dieser Konstanten stehen Ihnen möglicherweise abhängig von den von Ihnen ausgewählten oder installierten unterstützten Sprachen (z.B. Englisch (USA)) nicht zur Verfügung.</para>
           <para> </para></remarks>
       </Docs>
@@ -523,7 +523,7 @@
         <summary>Ruft die Einstellung für den vertikalen Überlauf für das angegebene Objekt ab oder legt sie fest.</summary>
         <value>Die Einstellung für den vertikalen Überlauf für das angegebene Objekt.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Diese Eigenschaft hat nur Auswirkungen, wenn <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" /> die Eigenschaft auf <b>"false" gesetzt ist.</b></para>
+          <para>Diese Eigenschaft hat nur dann Eine Auswirkung, wenn die <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" /> Eigenschaft <b>false</b>ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="Dialogs" FullName="Microsoft.Office.Interop.Excel.Dialogs">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="65b059ad8c2b31f5ebb0e015a1b9611b6b82e3e3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003829" /></Metadata><TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="adbacf2e76c4e824eab3295684bdf254eb84d59d90d522526f6b5511bd60d806" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510145" /></Metadata><TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialogs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Dialogs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialogs&#xA;Implements IEnumerable" />
@@ -25,11 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Dialog" /> in Microsoft Excel.</summary>
-    <remarks><para>Jedes  <b>Dialog</b> -Objekt stellt ein integriertes Dialogfeld dar. Sie können kein neues integriertes Dialogfeld erstellen oder der Auflistung hinzufügen. Das einzige Nützliche, was Sie mit einem <b>Dialogobjekt</b> tun können, ist die Verwendung mit der Methode, um das <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> entsprechende Dialogfeld anzuzeigen.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.Dialogs" /> Eigenschaft, um die <b>Dialogs -Auflistung zurück.</b></para>
-      <para>Verwenden <b>Sie Dialogfelder</b>( ), wobei es sich um eine integrierte Konstante handelt, die das Dialogfeld <paramref name="index" /> <paramref name="index" /> identifiziert, um ein einzelnes <b>Dialogobjekt zurückzukehren.</b></para>
-      <para>Microsoft Excel enthält integrierte Konstanten für viele der integrierten Dialogfelder. Alle Konstanten werden aus dem Präfix "xlDialog" und dem englischen Namen des Dialogfelds gebildet. Die Konstante im Dialogfeld Namen übernehmen ist beispielsweise <b>xlDialogApplyNames,</b>und die Konstante des Dialogfelds Datei suchen ist <b>xlDialogFindFile</b>. Diese Konstanten sind Member des <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> Aufzähltyps.</para>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.Dialog" /> Objekte in Microsoft Excel.</summary>
+    <remarks><para>Jedes  <b>Dialog</b> -Objekt stellt ein integriertes Dialogfeld dar. Sie können kein neues integriertes Dialogfeld erstellen oder der Auflistung hinzufügen. Das einzige nützliche, was Sie mit einem <b>Dialog</b> -Objekt tun können, besteht darin, es mit der <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode zum Anzeigen des entsprechenden Dialogfelds zu verwenden.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Application.Dialogs" /> Eigenschaft, um die <b>Dialogs</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <b>Dialogfelder</b>( <paramref name="index" /> ), wobei es sich um eine integrierte Konstante <paramref name="index" /> handelt, die das Dialogfeld identifiziert, um ein einzelnes <b>Dialog -Objekt</b> zurückzugeben.</para>
+      <para>Microsoft Excel enthält integrierte Konstanten für viele der integrierten Dialogfelder. Alle Konstanten werden aus dem Präfix "xlDialog" und dem englischen Namen des Dialogfelds gebildet. Die Konstante des Dialogfelds "Namen anwenden" lautet z. B. <b>"xlDialogApplyNames",</b>und die Konstante des Dialogfelds "Datei suchen" lautet <b>"xlDialogFindFile".</b> Diese Konstanten sind Elemente des <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> Aufzählungstyps.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +150,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -212,7 +212,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Excel.XlBuiltInDialog" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

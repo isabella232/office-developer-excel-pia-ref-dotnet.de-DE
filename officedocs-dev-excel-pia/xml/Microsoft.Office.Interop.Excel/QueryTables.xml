@@ -1,5 +1,5 @@
 <Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="243a843ba48be5881f9e62bc2223ea6860624c17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010724" /></Metadata><TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="08856de45c9a11a824b0a2f0ead2cbfcb1ec704fb136bd26ebe494b58f8afa0e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517705" /></Metadata><TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract QueryTables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.QueryTables" />
   <TypeSignature Language="VB.NET" Value="Public Interface QueryTables&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> Objekten. Jedes <b>QueryTable</b>-Objekt stellt eine Tabelle eines Arbeitsblatts dar, deren Daten aus einer externen Datenquelle zurückgegeben werden.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> Eigenschaft, um die <b>QueryTables -Auflistung zurück.</b></para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> die Methode, um eine neue Abfragetabelle zu erstellen und sie der <b>QueryTables -Auflistung</b> hinzuzufügen.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> Eigenschaft, um die <b>QueryTables-Auflistung</b> zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> Methode, um eine neue Abfragetabelle zu erstellen und der <b>QueryTables-Auflistung</b> hinzuzufügen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,12 +90,12 @@
         <Parameter Name="Sql" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Connection">Required <b>-Objekt</b>. Die Datenquelle für die Abfragetabelle. Dies kann eine der folgenden Sein: Eine Zeichenfolge mit einer OLE DB- oder ODBC-Verbindungszeichenfolge. Die #A0 hat das Format "ODBC; &lt; Verbindungszeichenfolge &gt; ". Ein <b>QueryTable-Objekt,</b> aus dem die Abfrageinformationen zunächst kopiert werden, einschließlich der Verbindungszeichenfolge und des SQL Textes, jedoch ohne den <paramref name="Destination" /> Bereich. Wenn Sie ein <b>QueryTable -Objekt</b> angeben, wird das <paramref name="Sql" /> Argument ignoriert. Ein ADO- oder <b>DAO-Recordset-Objekt.</b> Daten werden aus dem ADO- oder DAO-Recordset gelesen. Microsoft Excel behält das Recordset bei, bis die Abfragetabelle gelöscht oder die Verbindung geändert wird. Die resultierende Abfragetabelle kann nicht bearbeitet werden. Eine Webabfrage. Eine Zeichenfolge im Format "URL; &lt; url &gt; ", where "URL;" is required but not localized and the rest of the string is used for the URL of the Web query. Daten-Finder. Eine Zeichenfolge im Format "FINDER; &lt; Daten-Finder-Dateipfad &gt; " wobei "FINDER;" erforderlich, aber nicht lokalisiert ist. Der Rest der Zeichenfolge ist der Pfad und Dateiname einer Daten-Finder-Datei (*.dqy oder *.iqy). Die Datei wird gelesen, wenn die <b>#A0</b> ausgeführt wird. Nachfolgende Aufrufe der Eigenschaft der Abfragetabelle geben Zeichenfolgen zurück, die mit <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> "ODBC;" oder "URL;" beginnen. Eine Textdatei. Eine Zeichenfolge im Format "TEXT; &lt; Pfad und Name der Textdatei, wobei &gt; TEXT erforderlich, aber nicht lokalisiert ist.</param>
-        <param name="Destination">Erforderlicher <b>Bereich</b>. Die Zelle in der oberen linken Ecke des Abfragetabelle-Zielbereichs (der Bereich, in dem die resultierende Abfragetabelle platziert wird). Der Zielbereich muss sich auf dem Arbeitsblatt befinden, das das Objekt <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> enthält.</param>
-        <param name="Sql">Optionales <b>Objekt</b>. Die SQL-Abfragezeichenfolge, die für die ODBC-Datenquelle ausgeführt werden soll. Dieses Argument ist optional, wenn Sie eine ODBC-Datenquelle verwenden. Sie können dieses Argument nicht verwenden, wenn ein <b>QueryTable-Objekt,</b> eine Textdatei oder ein ADO- oder DAO-Recordset-Objekt als Datenquelle angegeben wird. <b></b></param>
+        <param name="Connection"><b>Required-Objekt</b>. Die Datenquelle für die Abfragetabelle. Dies kann eine der folgenden Zeichenfolgen sein: Eine Zeichenfolge, die eine OLE DB- oder ODBC-Verbindungszeichenfolge enthält. Die ODBC-Verbindungszeichenfolge hat das Format "ODBC; &lt; Verbindungszeichenfolge &gt; ". Ein <b>QueryTable-Objekt,</b> aus dem die Abfrageinformationen zunächst kopiert werden, einschließlich der Verbindungszeichenfolge und des SQL Texts, jedoch ohne den <paramref name="Destination" /> Bereich. Wenn Sie ein <b>QueryTable-Objekt</b> angeben, wird das <paramref name="Sql" /> Argument ignoriert. Ein ADO- oder <b>DAO-Recordset-Objekt.</b> Daten werden aus dem ADO- oder DAO-Recordset gelesen. Microsoft Excel behält das Recordset bei, bis die Abfragetabelle gelöscht oder die Verbindung geändert wird. Die resultierende Abfragetabelle kann nicht bearbeitet werden. Eine Webabfrage. Eine Zeichenfolge im Format "URL; &lt; url &gt; ", wobei "URL;" erforderlich, aber nicht lokalisiert ist und der Rest der Zeichenfolge für die URL der Webabfrage verwendet wird. Datensuche. Eine Zeichenfolge im Format "FINDER; &lt; Dateipfad des &gt; Datensucher" wobei "FINDER;" erforderlich, aber nicht lokalisiert ist. Der Rest der Zeichenfolge ist der Pfad und der Dateiname einer Datensuche-Datei (*.dqy oder *.gify). Die Datei wird gelesen, wenn die <b>Add-Methode</b> ausgeführt wird. Nachfolgende Aufrufe der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> Eigenschaft der Abfragetabelle geben Zeichenfolgen zurück, die je nach Bedarf mit "ODBC;" oder "URL;" beginnen. Eine Textdatei. Eine Zeichenfolge im Format "TEXT; &lt; Pfad und Name &gt; der Textdatei", wobei TEXT erforderlich, aber nicht lokalisiert ist.</param>
+        <param name="Destination">Erforderlicher <b>Bereich.</b> Die Zelle in der oberen linken Ecke des Abfragetabelle-Zielbereichs (der Bereich, in dem die resultierende Abfragetabelle platziert wird). Der Zielbereich muss sich auf dem Arbeitsblatt befinden, das das <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> Objekt enthält.</param>
+        <param name="Sql"><b>Optional-Objekt</b>. Die SQL-Abfragezeichenfolge, die für die ODBC-Datenquelle ausgeführt werden soll. Dieses Argument ist optional, wenn Sie eine ODBC-Datenquelle verwenden. Dieses Argument kann nicht verwendet werden, wenn ein <b>QueryTable-Objekt,</b> eine Textdatei oder ein ADO- oder <b>DAO-Recordset-Objekt</b> als Datenquelle angegeben wird.</param>
         <summary>Erstellt eine neue Abfragetabelle. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> Objekt zurück, das die neue Abfragetabelle darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Eine von dieser Methode erstellte Abfrage wird erst ausgeführt, wenn <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> die Methode aufgerufen wird.</para>
+        <remarks><para>Eine von dieser Methode erstellte Abfrage wird erst ausgeführt, wenn die <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> Methode aufgerufen wird.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />Schreibgeschützt.</summary>
+        <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Schreibgeschützt. <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></summary>
         <value>To be added.</value>
         <remarks><para>Die <b>Creator</b>-Eigenschaft wurde speziell für den Einsatz in Microsoft Excel für den Macintosh geschaffen, wo jede Anwendung einen Urhebercode aus vier Zeichen besitzt. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
@@ -239,7 +239,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <returns>To be added.</returns>
         <remarks><para>Der Textname des Objekts ist der Wert der <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> Eigenschaft.</para>

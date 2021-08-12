@@ -1,5 +1,5 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Excel.Styles">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009786" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d370c08a5cf7ca530ed626f2b30fc797d92bb618700142d8b066bcb166fb968e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517838" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Styles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Styles" />
   <TypeSignature Language="VB.NET" Value="Public Interface Styles&#xA;Implements IEnumerable" />
@@ -25,11 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Style" /> in der angegebenen oder aktiven Arbeitsmappe.</summary>
-    <remarks><para>Jedes <b>Style -Objekt</b> stellt eine Formatbeschreibung für einen Bereich dar. Das <b>Style</b> -Objekt enthält alle Formatattribute (Schriftart, Zahlenformat, Ausrichtung und so weiter) als Eigenschaften. Es gibt mehrere integrierte Formatvorlagen, einschließlich Normal, Währung und Prozent, die im Formatnamenfeld im Dialogfeld Format (Menü Format) aufgeführt sind.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> Eigenschaft, um die <b>Styles -Auflistung zurück.</b></para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> die Methode, um eine neue Formatvorlage zu erstellen und sie der Auflistung hinzuzufügen.</para>
-      <para>Verwenden <b>Sie Formatvorlagen</b>( ), wobei die Indexnummer oder der Name der Formatvorlage ist, um ein einzelnes Style -Objekt aus <paramref name="index" /> der Arbeitsmappe Styles <paramref name="index" /> <b>-Auflistung zurück.</b> <b></b></para>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.Style" /> Objekte in der angegebenen oder aktiven Arbeitsmappe.</summary>
+    <remarks><para>Jedes <b>Style -Objekt</b> stellt eine Formatvorlagenbeschreibung für einen Bereich dar. Das <b>Style -Objekt</b> enthält alle Formatvorlagenattribute (Schriftart, Zahlenformat, Ausrichtung usw.) als Eigenschaften. Es gibt mehrere integrierte Formatvorlagen , einschließlich Normal, Währung und Prozent, die im Dialogfeld Format (Menü Format im Feld Formatname aufgeführt sind).</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> Eigenschaft, um die <b>Styles -Auflistung</b> zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> Methode, um eine neue Formatvorlage zu erstellen und der Auflistung hinzuzufügen.</para>
+      <para>Verwenden Sie <b>Styles</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer oder der Name der Formatvorlage ist, um ein einzelnes <b>Style</b> -Objekt aus der Arbeitsmappe <b>Styles</b> -Auflistung zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -92,7 +92,7 @@
       </Parameters>
       <Docs>
         <param name="Name"><b>String</b> erforderlich. Der neue Formatvorlagenname.</param>
-        <param name="BasedOn">Optionales <b>Objekt</b>. Ein Objekt, das auf eine Zelle verweist, die als Grundlage <see cref="T:Microsoft.Office.Interop.Excel.Range" /> für die neue Formatvorlage verwendet wird. Wenn dieses Argument nicht angegeben wird, basiert die neu erstellte Formatvorlage auf der Formatvorlage "Normal".</param>
+        <param name="BasedOn"><b>Optional-Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, das auf eine Zelle verweist, die als Grundlage für die neue Formatvorlage verwendet wird. Wird dieses Argument nicht angegeben, basiert die neu erstellte Formatvorlage auf der Formatvorlage Normal.</param>
         <summary>Erstellt eine neue Formatvorlage und fügt sie der Liste mit den für die aktuelle Arbeitsmappe verfügbaren Formatvorlagen hinzu.</summary>
         <returns>To be added.</returns>
         <remarks><para>Wenn bereits eine Formatvorlage mit dem angegebenen Namen vorhanden ist, definiert diese Methode die vorhandene Formatvorlage basierend auf der in angegebenen Zelle <paramref name="BasedOn" /> neu.</para>
@@ -122,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +181,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -243,7 +243,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -272,8 +272,8 @@
         <Parameter Name="Workbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Workbook">Required <b>-Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Objekt, das die Arbeitsmappe darstellt, die formatvorlagen enthält, die zusammengeführt werden sollen.</param>
-        <summary>Führt die Formatvorlagen aus einer anderen Arbeitsmappe in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> zusammen.</summary>
+        <param name="Workbook"><b>Required-Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Objekt, das die Arbeitsmappe darstellt, die formatvorlagen enthält, die zusammengeführt werden sollen.</param>
+        <summary>Führt die Formatvorlagen aus einer anderen Arbeitsmappe in der <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> Auflistung zusammen.</summary>
         <returns>To be added.</returns>
         <remarks><para>Der Wert eines zusammengeführten Bereichs wird in der Zelle in der oberen linken Ecke des Bereichs angegeben.</para>
           <para> </para></remarks>

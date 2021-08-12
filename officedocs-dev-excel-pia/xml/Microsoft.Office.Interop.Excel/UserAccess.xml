@@ -1,5 +1,5 @@
 <Type Name="UserAccess" FullName="Microsoft.Office.Interop.Excel.UserAccess">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009394" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccess" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e0fd6e8795f5aaa711cb5968cd2f40cd9979d3b9a4d15e6ec2b26021c5cca095" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512672" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccess" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserAccess" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UserAccess" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserAccess" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt den Benutzerzugriff für einen geschützten Bereich dar.</summary>
-    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" /> die Methode oder die Eigenschaft der <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> Auflistung, um ein <b>UserAccess -Objekt zurückzukehren.</b></para>
-      <para>Nachdem ein <b>UserAccess -Objekt</b> zurückgegeben wurde, können Sie mithilfe der Eigenschaft ermitteln, ob der Zugriff auf einen bestimmten Bereich in einem Arbeitsblatt zulässig <see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" /> ist.</para>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" /> Methode oder die Eigenschaft der <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> Auflistung, um ein <b>UserAccess</b> -Objekt zurückzugeben.</para>
+      <para>Nachdem ein <b>UserAccess-Objekt</b> zurückgegeben wurde, können Sie mithilfe der Eigenschaft ermitteln, ob zugriff für einen bestimmten Bereich in einem Arbeitsblatt zulässig <see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" /> ist.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn der Benutzer Zugriff auf den angegebenen Bereich in einem geschützten Arbeitsblatt hat.</summary>
+        <summary><b></b> True , wenn dem Benutzer der Zugriff auf den angegebenen Bereich in einem geschützten Arbeitsblatt gewährt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,25 +108,25 @@
       <Docs>
         <summary>Gibt den Namen des Objekts zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>In der folgenden Tabelle sind Beispielwerte der <b>Eigenschaft "Name"</b> und verwandter Eigenschaften aufgeführt, die einer Datenquelle mit dem eindeutigen Namen "[Europe] gegeben sind. [Frankreich]. [Paris]" und eine Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris".</para>
+        <remarks><para>In der folgenden Tabelle sind Beispielwerte der <b>Name-Eigenschaft</b> und verwandter Eigenschaften aufgeführt, die einer Datenquelle mit dem eindeutigen Namen "[Europe] zugeordnet sind. [Frankreich]. [Paris]" und eine Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris".</para>
           <list type="table">
             <item>
               <term>
-                <b>Caption</b>
+                <b>Beschriftung</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>Name</b>
+                <b>Namen</b>
               </term>
               <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>SourceName</b>
+                <b>Sourcename</b>
               </term>
               <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>(Identisch mit SQL-Eigenschaftenwert, schreibgeschützt)</description>
@@ -139,14 +139,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Wenn Sie einen Index in der Auflistung angeben, können Sie <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
+          <para>Wenn Sie einen Index in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Auflistung angeben, können Sie die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
           <list type="table">
             <item>
-              <term>Ausdruck. PivotItems("[Europe].[ Frankreich]. [Paris]")</term>
+              <term>Ausdruck. PivotItems("[Europa].[ Frankreich]. [Paris]")</term>
               <description>Ausdruck. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Wenn Sie die Eigenschaft verwenden, um auf ein bestimmtes Element einer Auflistung zu verweisen, können Sie den Textindexnamen wie in der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> folgenden Tabelle dargestellt verwenden.</para>
+          <para>Wenn Sie die <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> Eigenschaft verwenden, um auf ein bestimmtes Element einer Auflistung zu verweisen, können Sie den Textindexnamen wie in der folgenden Tabelle dargestellt verwenden.</para>
           <list type="table">
             <item>
               <term>[Europa]. [Frankreich]. [Paris]</term>

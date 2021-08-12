@@ -1,5 +1,5 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Excel.Style">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c4f738901e25e0863ca50d9f0bc3e164a839d737" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009807" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6bdad0711260c0fd4b78b45e6a065c057ef95a5627699c845d15a698807efc50" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517695" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Style" />
   <TypeSignature Language="VB.NET" Value="Public Interface Style" />
@@ -24,11 +24,11 @@
     <summary>Stellt eine Formatvorlagenbeschreibung für einen Bereich dar.</summary>
     <remarks><para>Das  <b>Style</b> -Objekt enthält alle Formatattribute (Schriftart, Zahlenformat, Ausrichtung usw.) als Eigenschaften. Es stehen eine Reihe integrierter Formatvorlagen, z. B. "Standard", "Währung" und "Prozent" zur Verfügung. Das <b>Style</b> -Objekt bietet eine schnelle und effiziente Möglichkeit, mehrere Formatierungseigenschaften für viele Zellen gleichzeitig zu ändern.</para>
       <para>Für das <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Objekt ist das Style <b>-Objekt</b> ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> Auflistung. Die <b>Styles</b> -Auflistung enthält alle definierten Formatvorlagen für die Arbeitsmappe.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Range.Style" /> Eigenschaft, um das <b>style -Objekt zurück,</b> das mit einem Objekt verwendet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> wird.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Range.Style" /> Eigenschaft, um das style -Objekt <b></b> zurückzugeben, das mit einem Objekt verwendet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> wird.</para>
       <para>Sie können das Erscheinungsbild einer Zelle ändern, indem Sie Eigenschaften der Formatvorlage ändern, die der Zelle zugewiesen wurden. Beachten Sie jedoch, dass durch die Änderung einer Formatvorlageneigenschaft alle bereits mit dieser Vorlage formatierten Zellen beeinflusst werden.</para>
-      <para>Verwenden <b>Sie Formatvorlagen</b>( ), wobei die Indexnummer oder der Name der Formatvorlage ist, um ein einzelnes Style -Objekt aus <paramref name="index" /> der Arbeitsmappe Styles <paramref name="index" /> <b>-Auflistung zurück.</b> <b></b></para>
+      <para>Verwenden Sie <b>Styles</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer oder der Name der Formatvorlage ist, um ein einzelnes <b>Style</b> -Objekt aus der Arbeitsmappe <b>Styles</b> -Auflistung zurückzugeben.</para>
       <para>Die Formatvorlagen sind alphabetisch nach dem Formatvorlagennamen sortiert. Die Indexnummer der Formatvorlagen bezieht sich auf die Position der angegebenen Formatvorlage in der sortierten Liste der Formatvorlagennamen. Styles(1) ist die erste Formatvorlage in der alphabetischen Liste, Styles(Styles.Count) die letzte.</para>
-      <para>Weitere Informationen zum Erstellen und Ändern einer Formatvorlage finden Sie unter dem <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> Objekt.</para>
+      <para>Weitere Informationen zum Erstellen und Ändern einer Formatvorlage finden Sie im <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> Objekt.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -89,9 +89,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle horizontal oder vertikal auf gleiche Verteilung festgelegt ist.</summary>
+        <summary><b></b> True , wenn Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf eine horizontale oder vertikale Verteilung festgelegt ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Um die Textausrichtung auf die gleiche Verteilung zu setzen, können Sie die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> <b>xlVAlignDistributed</b> festlegen, wenn der Wert der Eigenschaft xlVertical ist, und Sie können die Eigenschaft auf <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> <b>xlHAlignDistributed</b> <b></b> festlegen, wenn der Wert der Orientation -Eigenschaft <b>xlHorizontal</b>ist.</para>
+        <remarks><para>Um die Textausrichtung auf eine gleiche Verteilung festzulegen, können Sie die <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> Eigenschaft auf <b>xlVAlignDistributed</b> festlegen, wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> Eigenschaft <b>xlVertical</b>ist, und Sie können die <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> Eigenschaft auf <b>xlHAlignDistributed</b> festlegen, wenn der Wert der <b>Orientation</b> -Eigenschaft <b>xlHorizontal</b>ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -118,7 +118,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +205,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -324,7 +324,7 @@
         <summary>Zurückgeben oder festlegen die horizontale Ausrichtung für das angegebene Objekt.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> kann eine der folgenden <b>XlHAlign -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> kann eine der folgenden <b>XlHAlign-Konstanten</b> sein:</para>
           <para>
             <b>xlHAlignCenter</b>
           </para>
@@ -379,7 +379,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Style.AddIndent" /> , , und Eigenschaften <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> <see cref="P:Microsoft.Office.Interop.Excel.Style.WrapText" /> <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> enthält.</summary>
+        <summary><b></b> True , wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Style.AddIndent" /> Eigenschaften , , , und <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> <see cref="P:Microsoft.Office.Interop.Excel.Style.WrapText" /> <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> Properties enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -410,7 +410,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> Eigenschaften , , und Rahmen <see cref="P:Microsoft.Office.Interop.Excel.Border.ColorIndex" /> <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> enthält.</summary>
+        <summary><b></b> True , wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> Eigenschaften , , und die <see cref="P:Microsoft.Office.Interop.Excel.Border.ColorIndex" /> <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> Rahmeneigenschaften enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -441,7 +441,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Font.Background" /> Eigenschaften , <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" /> und <see cref="P:Microsoft.Office.Interop.Excel.Font.Color" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.ColorIndex" /> Schriftart <see cref="P:Microsoft.Office.Interop.Excel.Font.FontStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.OutlineFont" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Shadow" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Size" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Strikethrough" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Subscript" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Superscript" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Underline" /> enthält.</summary>
+        <summary><b>True,</b> Wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Font.Background" /> Eigenschaften , , , , , , , , <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" /> , , <see cref="P:Microsoft.Office.Interop.Excel.Font.Color" /> , <see cref="P:Microsoft.Office.Interop.Excel.Font.ColorIndex" /> und <see cref="P:Microsoft.Office.Interop.Excel.Font.FontStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.OutlineFont" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Shadow" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Size" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Strikethrough" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Subscript" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Superscript" /> <see cref="P:Microsoft.Office.Interop.Excel.Font.Underline" /> Schriftarteneigenschaften enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -472,7 +472,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True, Wenn die Formatvorlage die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> enthält.</summary>
+        <summary>True , wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> Eigenschaft enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -503,7 +503,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Interior.Color" /> Eigenschaften , und interior <see cref="P:Microsoft.Office.Interop.Excel.Interior.ColorIndex" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.InvertIfNegative" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColor" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColorIndex" /> enthält.</summary>
+        <summary><b></b> True , wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Interior.Color" /> Eigenschaften , , , , und <see cref="P:Microsoft.Office.Interop.Excel.Interior.ColorIndex" /> die <see cref="P:Microsoft.Office.Interop.Excel.Interior.InvertIfNegative" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColor" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColorIndex" /> inneren Eigenschaften enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -534,7 +534,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die Formatvorlage die und <see cref="P:Microsoft.Office.Interop.Excel.Style.FormulaHidden" /> Eigenschaften <see cref="P:Microsoft.Office.Interop.Excel.Style.Locked" /> enthält.</summary>
+        <summary><b> True ,</b> wenn die Formatvorlage die <see cref="P:Microsoft.Office.Interop.Excel.Style.FormulaHidden" /> <see cref="P:Microsoft.Office.Interop.Excel.Style.Locked" /> Eigenschaften enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -625,7 +625,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
+        <summary><b>True,</b> wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -658,7 +658,7 @@
       <Docs>
         <summary><b>True</b>, wenn die Formatvorlage zusammengeführte Zellen enthält.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie einen Bereich mit zusammengeführten Zellen markieren, kann sich die resultierende Markierung von der beabsichtigten Markierung unterscheiden. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> die Eigenschaft, um die Adresse des ausgewählten Bereichs zu überprüfen.</para>
+        <remarks><para>Wenn Sie einen Bereich mit zusammengeführten Zellen markieren, kann sich die resultierende Markierung von der beabsichtigten Markierung unterscheiden. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> Eigenschaft, um die Adresse des ausgewählten Bereichs zu überprüfen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -687,25 +687,25 @@
       <Docs>
         <summary>Gibt den Namen des Objekts zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>In der folgenden Tabelle sind Beispielwerte der <b>Eigenschaft "Name"</b> und verwandter Eigenschaften aufgeführt, die einer Datenquelle mit dem eindeutigen Namen "[Europe] gegeben sind. [Frankreich]. [Paris]" und eine Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris".</para>
+        <remarks><para>In der folgenden Tabelle sind Beispielwerte der <b>Name-Eigenschaft</b> und verwandter Eigenschaften aufgeführt, die einer Datenquelle mit dem eindeutigen Namen "[Europe] zugeordnet sind. [Frankreich]. [Paris]" und eine Nicht-OLAP-Datenquelle mit dem Elementnamen "Paris".</para>
           <list type="table">
             <item>
               <term>
-                <b>Caption</b>
+                <b>Beschriftung</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>Name</b>
+                <b>Namen</b>
               </term>
               <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>SourceName</b>
+                <b>Sourcename</b>
               </term>
               <description>[Europa].[Frankreich].[Paris] (schreibgeschützt)</description>
               <description>(Identisch mit SQL-Eigenschaftenwert, schreibgeschützt)</description>
@@ -718,14 +718,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Wenn Sie einen Index in der Auflistung angeben, können Sie <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
+          <para>Wenn Sie einen Index in der <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> Auflistung angeben, können Sie die in der folgenden Tabelle gezeigte Syntax verwenden.</para>
           <list type="table">
             <item>
-              <term>Ausdruck. PivotItems("[Europe].[ Frankreich]. [Paris]")</term>
+              <term>Ausdruck. PivotItems("[Europa].[ Frankreich]. [Paris]")</term>
               <description>Ausdruck. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Wenn Sie die Eigenschaft verwenden, um auf ein bestimmtes Element einer Auflistung zu verweisen, können Sie den Textindexnamen wie in der <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> folgenden Tabelle dargestellt verwenden.</para>
+          <para>Wenn Sie die <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> Eigenschaft verwenden, um auf ein bestimmtes Element einer Auflistung zu verweisen, können Sie den Textindexnamen wie in der folgenden Tabelle dargestellt verwenden.</para>
           <list type="table">
             <item>
               <term>[Europa]. [Frankreich]. [Paris]</term>
@@ -792,7 +792,7 @@
       <Docs>
         <summary>Zurückgeben oder festlegen den Formatierungscode für das Objekt.</summary>
         <value>To be added.</value>
-        <remarks><para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Formatfunktion</b> verwendet andere Formatcodezeichenfolgen als <b>numberFormat und</b> <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> Eigenschaften.</para>
+        <remarks><para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format-Funktion</b> verwendet andere Formatcodezeichenfolgen als <b>NumberFormat</b> und <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> Eigenschaften.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -824,7 +824,7 @@
       <Docs>
         <summary>Zurückgeben oder festlegen den Formatierungscode des Objekts als Zeichenfolge in der Sprache des Benutzers.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Formatfunktion</b> verwendet andere Formatcodezeichenfolgen als die <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> Eigenschaften <b>"NumberFormatLocal".</b></para>
+        <remarks><para>Die <b>Format-Funktion</b> verwendet andere Formatcodezeichenfolgen als die <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> Eigenschaften <b>"NumberFormatLocal".</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -854,7 +854,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen –90 und 90 Grad oder eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlOrientation" /> sein.</summary>
+        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen -90 und 90 Grad oder eine der <see cref="T:Microsoft.Office.Interop.Excel.XlOrientation" /> Konstanten sein.</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>XlOrientation</b> kann eine der folgenden Konstanten sein:</para>
@@ -929,7 +929,7 @@
       <Docs>
         <summary>Gibt die Lesereihenfolge für das angegebene Objekt zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>ReadingOrder -Eigenschaft</b> kann eine der folgenden Konstanten sein: <b>xlRTL</b> (von rechts nach links), <b>xlLTR</b> (von links nach rechts) oder <b>xlContext</b>.</para>
+        <remarks><para>Die <b>ReadingOrder</b> -Eigenschaft kann eine der folgenden Konstanten sein: <b>xlRTL</b> (von rechts nach links), <b>xlLTR</b> (von links nach rechts) oder <b>xlContext</b>.</para>
           <para>Einige dieser Konstanten stehen Ihnen möglicherweise abhängig von den von Ihnen ausgewählten oder installierten unterstützten Sprachen (z.B. Englisch (USA)) nicht zur Verfügung.</para>
           <para> </para></remarks>
       </Docs>
@@ -960,7 +960,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> wenn Text automatisch verkleinert wird, um in die verfügbare Spaltenbreite zu passen.</summary>
+        <summary><b></b> True , wenn Text automatisch an die verfügbare Spaltenbreite angepasst wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1022,7 +1022,7 @@
         <summary>Gibt zurück oder legt die vertikale Ausrichtung des angegebenen Objekts.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> kann eine der folgenden <b>XlVAlign -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> kann eine der folgenden <b>XlVAlign-Konstanten</b> sein:</para>
           <para>
             <b>xlVAlignCenter</b>
           </para>
@@ -1068,7 +1068,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn Microsoft Excel den Text im Objekt umschließt.</summary>
+        <summary><b></b> True , wenn Microsoft Excel den Text im Objekt umschließt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

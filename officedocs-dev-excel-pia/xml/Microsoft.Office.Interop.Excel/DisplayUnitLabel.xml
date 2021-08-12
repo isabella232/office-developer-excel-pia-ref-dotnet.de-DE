@@ -1,5 +1,5 @@
 <Type Name="DisplayUnitLabel" FullName="Microsoft.Office.Interop.Excel.DisplayUnitLabel">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="307ac8532d5ba9d3d696802a345173a9dece29b5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012460" /></Metadata><TypeSignature Language="C#" Value="public interface DisplayUnitLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16c4b96fccc8bab426df3ea2735e52ecdf5d76283e4ab0caadade89fb652d86e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510138" /></Metadata><TypeSignature Language="C#" Value="public interface DisplayUnitLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DisplayUnitLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface DisplayUnitLabel" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Einheitenbeschriftung auf einer Achse im angegebenen Diagramm dar.</summary>
-    <remarks><para>Einheitenbeschriftungen sind nützlich für die Diagrammierung großer Werte, z. B. in Millionen oder Milliarden. Sie können die Lesbarkeit des Diagramms verbessern, indem Sie eine einzelne Einheitenbeschriftung anstelle von großen Zahlen an jedem Teilstrich verwenden.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitLabel" /> Eigenschaft, um das Objekt <see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" /> zurückzukehren.</para>
+    <remarks><para>Einheitenbeschriftungen eignen sich für das Diagramm großer Werte , z. B. in Millionen oder Milliarden. Sie können die Lesbarkeit des Diagramms verbessern, indem Sie eine einzelne Einheitenbeschriftung anstelle von großen Zahlen an jedem Teilstrich verwenden.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitLabel" /> Eigenschaft, um das <see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" /> Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,12 +209,12 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">Optionales <b>Objekt</b>. The first character to be returned. If this argument is either 1 or omitted, this property returns a range of characters starting with the first character.</param>
-        <param name="Length">Optionales <b>Objekt</b>. Die Anzahl der zurückzugebenden Zeichen. Wenn dieses Argument nicht angegeben wird, gibt diese Eigenschaft den Rest der Zeichenfolge zurück (alles nach dem <paramref name="Start" /> Zeichen).</param>
-        <summary>Gibt ein Objekt zurück, das einen Bereich von Zeichen innerhalb des <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> Objekttexts darstellt. Mit dem <b>Characters</b> -Objekt können Sie Zeichen innerhalb einer Zeichenfolge formatieren.</summary>
+        <param name="Start"><b>Optional-Objekt</b>. The first character to be returned. If this argument is either 1 or omitted, this property returns a range of characters starting with the first character.</param>
+        <param name="Length"><b>Optional-Objekt</b>. Die Anzahl der zurückzugebenden Zeichen. Wenn dieses Argument ausgelassen wird, gibt diese Eigenschaft den Rest der Zeichenfolge zurück (alles nach dem <paramref name="Start" /> Zeichen).</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> Objekt zurück, das einen Bereich von Zeichen innerhalb des Objekttexts darstellt. Mit dem <b>Characters</b> -Objekt können Sie Zeichen innerhalb einer Zeichenfolge formatieren.</summary>
         <value>To be added.</value>
         <remarks><para>Das <b>Characters</b>-Objekt ist keine Auflistung.</para>
-          <para>Für das <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> Objekt ist <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> dies eine Methode.</para>
+          <para>Bei dem <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> Objekt handelt es sich um eine <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> Methode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -244,7 +244,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -300,7 +300,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt für eine angegebene Form oder ein Objekt für ein angegebenes Diagramm zurück, das füllformatierungseigenschaften für die Form oder das <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> Diagramm enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> Objekt für eine angegebene Form oder ein Objekt für ein <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> angegebenes Diagramm zurück, das Füllformatierungseigenschaften für die Form oder das Diagramm enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +359,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Objekt <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> zurück. Schreibgeschützt.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> Objekt zurück. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,8 +390,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der A1-Notation in Englisch darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der A1-Notation in Englisch.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in englischer Sprache in der A1-Schreibweise darstellt.</summary>
+        <value>Die Formel des Objekts, die die A1-Schreibweise verwendet, in Englisch.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -422,8 +422,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der A1-Notation in der Sprache des Benutzers darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der A1-Notation in der Sprache des Benutzers.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in der A1-Schreibweise in der Sprache des Benutzers darstellt.</summary>
+        <value>Die Formel des Objekts in der A1-Schreibweise in der Sprache des Benutzers.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -454,8 +454,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der R1C1-Notation in Englisch darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der R1C1-Notation in Englisch.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in der R1C1-Schreibweise (englisch) darstellt.</summary>
+        <value>Die Formel des Objekts, die die Z1C1-Schreibweise verwendet, in Englisch.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -486,8 +486,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert ab, der die Formel des Objekts in der R1C1-Notation in der Sprache des Benutzers darstellt, oder legt den Wert fest.</summary>
-        <value>Die Formel des Objekts in der R1C1-Notation in der Sprache des Benutzers.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der die Formel des Objekts in der Z1C1-Schreibweise in der Sprache des Benutzers darstellt.</summary>
+        <value>Die Formel des Objekts mit der Z1C1-Schreibweise in der Sprache des Benutzers.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
       </Docs>
@@ -685,9 +685,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen –90 und 90 Grad sein.</summary>
+        <summary>Die Textausrichtung. Kann ein ganzzahliger Wert zwischen -90 und 90 Grad sein.</summary>
         <value>To be added.</value>
-        <remarks><para>Die Orientation -Eigenschaft kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>Die Orientation-Eigenschaft kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -847,7 +847,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die Schriftart eine Schattenschriftart ist oder das Objekt einen Schatten hat.</summary>
+        <summary><b></b> True , wenn es sich bei der Schriftart um eine Schattenschriftart handelt oder das Objekt über einen Schatten verfügt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -909,7 +909,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand (in Punkt) vom oberen Rand des Objekts zum Anfang von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
+        <summary>Der Abstand zwischen dem oberen Rand des Objekts und dem oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder dem oberen Rand des Diagrammbereichs (in einem Diagramm).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -942,7 +942,7 @@
       <Docs>
         <summary>Gibt zurück oder legt die vertikale Ausrichtung des angegebenen Objekts.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Eigenschaft VerticalAlignment</b> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>Die <b>VerticalAlignment-Eigenschaft</b> kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>xlBottom</b>
           </para>
