@@ -1,5 +1,5 @@
 <Type Name="Scenario" FullName="Microsoft.Office.Interop.Excel.Scenario">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010479" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="942163ef79c471667dca1194a35577d8c25f3644b0ae61b52fa63454b55832ca" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514212" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenario" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenario" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenario" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein Szenario auf einem Arbeitsblatt dar. Ein Szenario ist eine Gruppe von Eingabewerten (so <paramref name="changing cells" /> genannte), die benannt und gespeichert werden.</summary>
-    <remarks><para>Das <b>Scenario -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> Auflistung. Die <b>Scenarios</b>-Auflistung enthält alle definierten Szenarios für ein Arbeitsblatt.</para>
-      <para>Verwenden <b>Sie Szenarien</b>( ), wobei der <paramref name="index" /> <paramref name="index" /> Szenarioname oder die Indexnummer, um ein einzelnes <b>Szenarioobjekt zurück.</b></para>
+    <summary>Stellt ein Szenario auf einem Arbeitsblatt dar. Bei einem Szenario handelt es sich um eine Gruppe von Eingabewerten <paramref name="changing cells" /> (genannt), die benannt und gespeichert werden.</summary>
+    <remarks><para>Das <b>Scenario-Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> Auflistung. Die <b>Scenarios</b>-Auflistung enthält alle definierten Szenarios für ein Arbeitsblatt.</para>
+      <para>Verwenden Sie <b>Szenarien</b>( <paramref name="index" /> ), wobei der Name oder die <paramref name="index" /> Indexnummer des Szenarios ist, um ein einzelnes <b>Scenario -Objekt</b> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,11 +78,11 @@
         <Parameter Name="Values" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChangingCells">Required <b>-Objekt</b>. Ein Objekt, das die neue Gruppe von <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ändernden Zellen für das Szenario angibt. Die veränderbaren Zellen müssen sich im gleichen Blatt wie das Szenario befinden.</param>
-        <param name="Values">Optionales <b>Objekt</b>. Ein Array, das die neuen Szenariowerte für die veränderbaren Zellen enthält. Wenn Sie dieses Argument nicht angeben, werden die aktuellen Szenariowerte in den veränderbaren Zellen verwendet.</param>
+        <param name="ChangingCells"><b>Required-Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt, das den neuen Satz von Veränderzellen für das Szenario angibt. Die veränderbaren Zellen müssen sich im gleichen Blatt wie das Szenario befinden.</param>
+        <param name="Values"><b>Optional-Objekt</b>. Ein Array, das die neuen Szenariowerte für die veränderbaren Zellen enthält. Wenn Sie dieses Argument nicht angeben, werden die aktuellen Szenariowerte in den veränderbaren Zellen verwendet.</param>
         <summary>Ändert das Szenario, sodass eine neue Gruppe von veränderbaren Zellen und (optional) Szenariowerten verwendet wird.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Wenn Sie v angeben, muss das Array ein Element für jede Zelle im Bereich enthalten; andernfalls generiert <paramref name="alues" /> <paramref name="ChangingCells" /> Microsoft Excel einen Fehler.</para>
+        <remarks><para>Wenn Sie "v" <paramref name="alues" /> angeben, muss das Array ein Element für jede Zelle im <paramref name="ChangingCells" /> Bereich enthalten. Andernfalls generiert Microsoft Excel einen Fehler.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die sich ändernden Zellen für ein Szenario darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die veränderbaren Zellen für ein Szenario darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,7 +140,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den dem Szenario zugeordneten Kommentar zurück oder legt diesen fest. Der Kommentartext kann bis zu 255 Zeichen lang sein.</summary>
+        <summary>Gibt den Kommentar zurück, der dem Szenario zugeordnet ist, oder legt den Kommentar fest. Der Kommentartext kann bis zu 255 Zeichen lang sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,7 +171,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -227,7 +227,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Szenario ausgeblendet ist. Der Standardwert ist <b>False</b>.</summary>
+        <summary><b>True,</b> wenn das Szenario ausgeblendet ist. Der Standardwert ist <b>Falsch</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Verwechseln Sie diese Eigenschaft nicht mit der <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> Eigenschaft.</para>
           <para> </para></remarks>
@@ -287,7 +287,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
+        <summary><b>True,</b> wenn das Objekt gesperrt ist; <b>False,</b> wenn das Objekt geändert werden kann, wenn das Blatt geschützt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,8 +403,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b>. Die Position des Werts.</param>
-        <summary>Gibt ein Array zurück, das die aktuellen Werte der sich ändernden Zellen für das Szenario enthält.</summary>
+        <param name="Index"><b>Optional-Objekt</b>. Die Position des Werts.</param>
+        <summary>Gibt ein Array zurück, das die aktuellen Werte der veränderbaren Zellen für das Szenario enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

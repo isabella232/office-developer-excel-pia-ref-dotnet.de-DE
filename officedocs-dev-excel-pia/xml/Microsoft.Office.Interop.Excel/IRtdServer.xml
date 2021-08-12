@@ -1,5 +1,5 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997656" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5913a9fd46bfb7d5f88e17acdfa800f3c9bcbcb95acd68db9963071ca4d3270b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514373" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
@@ -49,9 +49,9 @@
       </Parameters>
       <Docs>
         <param name="TopicID">Erforderliche <b>ganze Zahl</b>. Ein eindeutiger von Microsoft Excel zugeordneter Wert, der das Thema kennzeichnet.</param>
-        <param name="Strings">Required <b>-Objekt</b>. Ein eindimensionales Array aus Zeichenfolgen, das das Thema kennzeichnet.</param>
+        <param name="Strings"><b>Required-Objekt</b>. Ein eindimensionales Array aus Zeichenfolgen, das das Thema kennzeichnet.</param>
         <param name="GetNewValues">Erforderlicher <b>Boolean</b>-Wert. Beim Wert <b>True</b> wird ermittelt, ob neue Werte geholt werden müssen.</param>
-        <summary>Fügt neue Themen von einem Echtzeitdatenserver hinzu. Die <b>ConnectData -Methode</b> wird aufgerufen, wenn eine Datei geöffnet wird, die Echtzeitdatenfunktionen enthält, oder wenn ein Benutzer eine neue Formel eingibt, die die <b>RtD-Funktion</b> enthält.</summary>
+        <summary>Fügt neue Themen von einem Echtzeitdatenserver hinzu. Die <b>ConnectData-Methode</b> wird aufgerufen, wenn eine Datei geöffnet wird, die Echtzeitdatenfunktionen enthält, oder wenn ein Benutzer eine neue Formel eingibt, die die <b>RTD-Funktion</b> enthält.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
       <Docs>
         <summary>Bestimmt, ob der Echtzeitdatenserver noch aktiv ist. Null oder eine negative Zahl weist auf einen Fehler hin; Eine positive Zahl gibt an, dass der Server aktiv ist.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Die Heartbeat -Methode wird von Microsoft Excel aufgerufen, wenn die Eigenschaft seit dem letzten Mal, als Excel mit der <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> Methode aufgerufen wurde, abgelaufen <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> ist.</para>
+        <remarks><para>Die Heartbeat-Methode wird von Microsoft Excel aufgerufen, wenn die <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> Eigenschaft seit dem letzten Aufruf Excel mit der Methode verstrichen <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -134,7 +134,7 @@
         <Parameter Name="TopicCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicCount">Erforderliche <b>ganze Zahl</b>. Der RTD-Server muss den Wert der in die Anzahl der Elemente im zurückgegebenen <paramref name="TopicCount" /> Array ändern.</param>
+        <param name="TopicCount">Erforderliche <b>ganze Zahl</b>. Der RTD-Server muss den Wert der in <paramref name="TopicCount" /> die Anzahl der Elemente im zurückgegebenen Array ändern.</param>
         <summary>Diese Methode wird von Microsoft Excel zum Abrufen neuer Daten aufgerufen.</summary>
         <returns>To be added.</returns>
         <remarks><para>Die an Excel zurückgegebenen Daten sind ein <b>Objekt,</b> das ein zweidimensionales Array enthält. Die erste Dimension stellt die Liste der Themen-IDs dar. Die zweite Dimension stellt die Werte dar, die mit den Themen-IDs verbunden sind.</para>
@@ -165,7 +165,7 @@
       </Parameters>
       <Docs>
         <param name="CallbackObject">Erforderliches <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> Objekt. Das Callback-Objekt.</param>
-        <summary>Die <b>"ServerStart"-Methode</b> wird unmittelbar nach der Instanziierte eines Echtzeitdatenservers aufgerufen. Negativer Wert oder Null weist auf einen Fehler beim Starten des Servers hin. ein positiver Wert gibt an, dass der Wert erfolgreich war.</summary>
+        <summary>Die <b>ServerStart-Methode</b> wird unmittelbar nach der Instanziierung eines Echtzeitdatenservers aufgerufen. Negativer Wert oder Null gibt an, dass der Server nicht gestartet werden kann. ein positiver Wert gibt an, dass der Wert erfolgreich war.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

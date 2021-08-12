@@ -1,5 +1,5 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Excel.ShapeNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fa83a8cb318b1dacf1a4becb1cd2c657c30e27e3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010339" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fe8c04f3356229407188e309fd20a67a01f44b79d5d546b38bae97d31f37535b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54504832" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNode implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShapeNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNode&#xA;Implements _IMsoDispObj" />
@@ -24,7 +24,7 @@
   <Docs>
     <summary>Stellt die Geometrie- und Geometriebearbeitungseigenschaften der Knoten in einer benutzerdefinierten Freihandform dar.</summary>
     <remarks><para>Knoten schließen die Scheitelpunkte zwischen den Abschnitten der Freihandform und die Kontrollpunkte für Kurvensegmente. Das <b>ShapeNode -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> Auflistung. Die <b>ShapeNodes</b> -Auflistung enthält alle Knoten in einer Freihandform.</para>
-      <para>Verwenden <b>Sie Knoten</b>( ), wobei die <paramref name="index" /> <paramref name="index" /> Indexnummer des Knotens, um ein einzelnes <b>ShapeNode -Objekt zurück.</b></para>
+      <para>Verwenden Sie <b>Knoten</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer des Knotens ist, um ein einzelnes <b>ShapeNode</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -54,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +87,7 @@
       <Docs>
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde. Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+        <remarks><para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -116,7 +116,7 @@
       <Docs>
         <summary>Wenn es sich bei dem angegebenen Knoten um einen Scheitelpunkt handelt, gibt diese Eigenschaft einen Wert zurück, der angibt, wie sich am Knoten vorgenommene Änderungen auf die beiden mit dem Knoten verbundenen Abschnitte auswirken.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" /> die Methode, um den Wert dieser Eigenschaft festlegen.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" /> Methode, um den Wert dieser Eigenschaft festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -173,7 +173,7 @@
       <Docs>
         <summary>Gibt die Position des angegebenen Knotens als Koordinatenpaar zurück. Jede Koordinate wird in Punkt ausgedrückt.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> die Methode, um den Wert dieser Eigenschaft festlegen.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> Methode, um den Wert dieser Eigenschaft festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

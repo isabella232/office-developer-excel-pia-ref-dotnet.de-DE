@@ -1,5 +1,5 @@
 <Type Name="UserAccessList" FullName="Microsoft.Office.Interop.Excel.UserAccessList">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="71430eea5453407e668e836ef8751c08d9fe2160" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009401" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f434df02a7cf0967ca9351c1f450abc5c753cf76d22cb0e316a16304846e2c3e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514198" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserAccessList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UserAccessList" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserAccessList&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> Objekten, die den Benutzerzugriff für geschützte Bereiche darstellen.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> Objekts, um eine <b>UserAccessList -Auflistung zurückzukehren.</b></para>
-      <para>Nachdem eine <b>UserAccessList -Auflistung</b> zurückgegeben wurde, können Sie die Eigenschaft verwenden, um die Anzahl der Benutzer zu ermitteln, die Zugriff auf einen <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" /> geschützten Bereich haben.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> Objekts, um eine <b>UserAccessList</b> -Auflistung zurückzugeben.</para>
+      <para>Nachdem eine <b>UserAccessList-Auflistung</b> zurückgegeben wurde, können Sie die <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" /> Eigenschaft verwenden, um die Anzahl der Benutzer zu bestimmen, die Zugriff auf einen geschützten Bereich haben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -93,7 +93,7 @@
         <param name="Name"><b>String</b> erforderlich. Der Name der Benutzerzugriffsliste.</param>
         <param name="AllowEdit">Erforderlicher <b>Boolean</b>-Wert. 
 						Mit <b>True</b> können Benutzer, die in der Zugriffsliste enthalten sind, die bearbeitbaren Bereiche auf dem geschützten Arbeitsblatt bearbeiten.</param>
-        <summary>Fügt eine Benutzerzugriffsliste hinzu. Gibt ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> zurück.</summary>
+        <summary>Fügt eine Benutzerzugriffsliste hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> Objekt zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +147,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Entfernt alle Benutzer, die dem Zugriff auf einen geschützten Bereich auf einem Arbeitsblatt zugeordnet sind.</summary>
+        <summary>Entfernt alle Benutzer, die dem Zugriff auf einen geschützten Bereich in einem Arbeitsblatt zugeordnet sind.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +209,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

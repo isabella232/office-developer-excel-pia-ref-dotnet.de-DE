@@ -1,5 +1,5 @@
 <Type Name="IRTDUpdateEvent" FullName="Microsoft.Office.Interop.Excel.IRTDUpdateEvent">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d11bd9b734395c326ae11b307cdfec21f36a30a4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50001359" /></Metadata><TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a0819b294b6dd2fa6ed828a0ba7240cfad88d4e311b891a7942741c39e3002e1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514107" /></Metadata><TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRTDUpdateEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRTDUpdateEvent" />
@@ -44,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Der Echtzeitdatenserver (Real-Time Data Server, RTD) wird angewiesen, die Verbindung mit dem angegebenen Objekt zu <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> trennen.</summary>
+        <summary>Weist den Echtzeitdatenserver (Real-Time Data Server, RTD) an, die Verbindung mit dem angegebenen Objekt zu <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> trennen.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,11 +74,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Ganzzahlwert <b>für</b> das Intervall zwischen Aktualisierungen für Echtzeitdaten zurück oder legt diesen fest. Lese-/Schreibzugriff.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom</b> Typ Integer für das Intervall zwischen Aktualisierungen für Echtzeitdaten. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> die Eigenschaft auf -1 festlegen, wird <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> die Methode nicht aufgerufen.</para>
+        <remarks><para>Wenn Sie die Eigenschaft auf -1 festlegen, <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> wird die Methode nicht <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> aufgerufen.</para>
           <para>
-            <b>Hinweis</b>  Das Taktintervall kann aufgrund des standardmäßigen Zeitabstands von 15 Sekunden nicht unter 15.000 Millisekunden festgelegt werden.</para>
+            <b>Hinweis</b>  Das Taktintervall kann aufgrund des standardmäßigen Timeouts von 15 Sekunden nicht unter 15.000 Millisekunden festgelegt werden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
