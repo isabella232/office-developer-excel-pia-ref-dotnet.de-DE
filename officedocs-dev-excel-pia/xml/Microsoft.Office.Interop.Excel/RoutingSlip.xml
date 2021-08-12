@@ -1,5 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010493" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c8337de7ae1eba925d8da90043087f2d04736d8b1f57e9186ae9e83e872ce1f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518209" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt den Verteiler einer Arbeitsmappe dar. Der Verteiler wird zum Versenden einer Arbeitsmappe über das elektronische Mail-System verwendet.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> Eigenschaft, um das <b>RoutingSlip -Objekt zurück.</b></para>
-      <para>Das <b>RoutingSlip</b> -Objekt ist nicht vorhanden und kann nur zurückgegeben werden, wenn die Eigenschaft für <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> die Arbeitsmappe True <b>ist.</b></para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> Eigenschaft, um das <b>RoutingSlip</b> -Objekt zurückzugeben.</para>
+      <para>Das <b>RoutingSlip</b> -Objekt ist nicht vorhanden und kann nur zurückgegeben werden, wenn die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> Eigenschaft für die Arbeitsmappe <b>True</b>ist.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -111,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Verteilungsart zurück, die beim Weiterleiten verwendet wird, oder legt sie fest. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> Konstanten sein: <b>xlOneAfterAnother oder</b> <b>xlAllAtOnce</b>.</summary>
+        <summary>Gibt die Verteilungsart zurück, die beim Weiterleiten verwendet wird, oder legt sie fest. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> Konstanten sein: <b>xlOneAfterAnother</b> oder <b>xlAllAtOnce</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Sie können diese Eigenschaft nicht festlegen, wenn die Weiterleitung aktiv ist.</para>
           <para> </para></remarks>
@@ -205,7 +205,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b>. Der Empfänger. Wenn dieses Argument nicht angegeben wird, gibt die Eigenschaft <b>Recipients</b> ein Array zurück (oder kann auf dieses festgelegt werden), das alle Empfänger enthält.</param>
+        <param name="Index"><b>Optional-Objekt</b>. Der Empfänger. Wenn dieses Argument nicht angegeben ist, gibt die <b>Recipients-Eigenschaft</b> ein Array zurück, das alle Empfänger enthält (oder auf das festgelegt werden kann).</param>
         <summary>Gibt die Empfänger im Verteiler zurück oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks><para>Die Reihenfolge der Empfängerliste definiert die Reihenfolge der Übermittlung, wenn die Übermittlungsoption für den Verteiler <b>xlOneAfterAnother</b> ist.</para>
@@ -327,7 +327,7 @@
       <Docs>
         <summary>Gibt den Betreff für das Adressfeld oder die Verteiler zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Der Betreff für das Objekt wird als Betreff für <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> E-Mail-Nachrichten verwendet, die zum Routen der Arbeitsmappe verwendet werden.</para>
+        <remarks><para>Der Betreff für das <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> Objekt wird als Betreff für E-Mail-Nachrichten verwendet, die zum Weiterleiten der Arbeitsmappe verwendet werden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

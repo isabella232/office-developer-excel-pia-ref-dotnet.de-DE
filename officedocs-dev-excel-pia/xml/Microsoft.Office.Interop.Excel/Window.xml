@@ -1,5 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009261" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6d6ba8f19188d4685621e7b8eed25d1911d6d3118b218c2b5a4e0be4b045ca71" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518349" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein Fenster dar. Viele Arbeitsblattelemente, z. B. Bildlaufleisten und Gitternetzlinien, sind eigentlich Eigenschaften des Fensters.</summary>
-    <remarks><para>Das <b>Window -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> Auflistung. Die <b>von</b> der Eigenschaft des Objekts zurückgegebene Windows-Auflistung enthält alle Fenster in der Anwendung, während die von der Eigenschaft des Objekts zurückgegebene Windows-Auflistung nur die Fenster in der angegebenen <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> Arbeitsmappe <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> enthält.</para>
-      <para>Verwenden <b>Sie Windows</b>( ), wobei der Fenstername oder die <paramref name="index" /> <paramref name="index" /> Indexnummer, um ein einzelnes <b>Window -Objekt zurück.</b></para>
+    <remarks><para>Das <b>Window -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> Auflistung. Die <b>Windows</b> Auflistung, die von der Eigenschaft des Objekts zurückgegeben <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> wird, enthält alle Fenster in der Anwendung, während die von der Eigenschaft des Objekts zurückgegebene <b>Windows</b> Auflistung nur die Fenster in <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> der <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> angegebenen Arbeitsmappe enthält.</para>
+      <para>Verwenden Sie <b>Windows</b>( <paramref name="index" /> ), wobei der <paramref name="index" /> Fenstername oder die Indexnummer ist, um ein einzelnes <b>Window -Objekt</b> zurückzugeben.</para>
       <para>Beachten Sie, dass das aktive Fenster immer Windows(1) ist.</para>
-      <para>Die Fensterbeschriftung ist der Text, der in der Titelleiste oben im Fenster angezeigt wird, wenn das Fenster nicht maximiert ist. Die Beschriftung wird auch in der Liste der geöffneten Dateien unten im Menü Fenster angezeigt. Mit der <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> Eigenschaft können Sie die Fensterbeschriftung festlegen oder zurückgeben. Eine Änderung der Fensterbeschriftung hat keine Auswirkung auf den Namen der Arbeitsmappe.</para>
+      <para>Die Fensterbeschriftung ist der Text, der in der Titelleiste oben im Fenster angezeigt wird, wenn das Fenster nicht maximiert ist. Die Beschriftung wird auch in der Liste der geöffneten Dateien unten im Menü Fenster angezeigt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> Eigenschaft, um die Fensterbeschriftung festzulegen oder zurückzugeben. Eine Änderung der Fensterbeschriftung hat keine Auswirkung auf den Namen der Arbeitsmappe.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -134,7 +134,7 @@
       <Docs>
         <summary>Bringt das Fenster an den Beginn der Z-Reihenfolge.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Die <b>Activate</b> -Methode wird keine makros Auto_Activate oder Auto_Deactivate, die möglicherweise an die Arbeitsmappe angefügt sind. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> die Methode, um diese Makros ausführen.</para>
+        <remarks><para>Die <b>Activate-Methode</b> führt keine Auto_Activate oder Auto_Deactivate Makros aus, die möglicherweise an die Arbeitsmappe angefügt sind. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> Methode, um diese Makros auszuführen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aktiviert das angegebene Fenster und sendet es dann an die Rückseite der Z-Reihenfolge des Fensters.</summary>
+        <summary>Aktiviert das angegebene Fenster und sendet es dann an die Rückseite der Fenster-Z-Reihenfolge.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, das die aktive Zelle im aktiven Fenster <see cref="T:Microsoft.Office.Interop.Excel.Range" /> (das Fenster oben) oder im angegebenen Fenster darstellt. Wird im betreffenden Fenster kein Arbeitsblatt angezeigt, führt diese Eigenschaft zu einem Fehler.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die aktive Zelle im aktiven Fenster (das Fenster oben) oder im angegebenen Fenster darstellt. Wird im betreffenden Fenster kein Arbeitsblatt angezeigt, führt diese Eigenschaft zu einem Fehler.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn Sie keinen Objektbezeichner angeben, gibt diese Eigenschaft die aktive Zelle des aktiven Fensters zurück.</para>
           <para>Achten Sie darauf, dass Sie zwischen der aktiven Zelle und der Markierung unterscheiden. Unter einer aktiven Zelle versteht man eine einzelne Zelle innerhalb der aktuellen Markierung. Eine Markierung kann mehrere Zellen umfassen, von denen aber nur eine die aktive Zelle ist.</para>
@@ -272,10 +272,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> Objekt zurück, das den aktiven Fensterausschnitt darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> Objekt zurück, das den aktiven Bereich im Fenster darstellt.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft kann nur in Arbeitsblättern und Makroblättern verwendet werden.</para>
-          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> die Eigenschaft, um den Index des aktiven Bereichs zu erhalten.</para>
+          <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> Eigenschaft, um den Index des aktiven Bereichs abzurufen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -360,7 +360,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +392,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn der Autofilter für die Datumsgruppierung zurzeit im angegebenen Fester angezeigt wird. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,12 +451,12 @@
         <Parameter Name="RouteWorkbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Optionales <b>Objekt</b>. Wenn an der Arbeitsmappe keine Änderungen vorgenommen wurden, wird dieses Argument ignoriert. Wenn Änderungen an der Arbeitsmappe vorgenommen wurden und die Arbeitsmappe in anderen geöffneten Fenstern angezeigt wird, wird dieses Argument ignoriert. Wenn änderungen an der Arbeitsmappe vorgenommen werden, die Arbeitsmappe jedoch nicht in anderen geöffneten Fenstern angezeigt wird, gibt dieses Argument an, ob Änderungen gespeichert werden sollen, wie in der folgenden Tabelle dargestellt. ValueAction<b>True</b>Speichert die Änderungen in der Arbeitsmappe. Wenn der Arbeitsmappe noch kein Dateiname zugeordnet ist, wird <paramref name="FileName" /> dieser verwendet. Wenn sie nicht angegeben wird, wird <paramref name="FileName" /> der Benutzer aufgefordert, einen Dateinamen eingibt.<b> False</b>Die Änderungen an dieser Datei werden nicht gespeichert. OmittedDisplays a dialog box asking the user whether or not to save changes.</param>
-        <param name="Filename">Optionales <b>Objekt</b>. Speichern Sie Änderungen unter diesem Dateinamen.</param>
-        <param name="RouteWorkbook">Optionales <b>Objekt</b>. Wenn die Arbeitsmappe nicht an den nächsten Empfänger weitergeleitet werden muss (wenn sie keinen Verteiler aufweist oder bereits weitergeleitet wurde), wird dieses Argument ignoriert. Andernfalls leitet Microsoft Excel die Arbeitsmappe wie in der folgenden Tabelle dargestellt um. Wertmeaning<b>True</b>Sendet die Arbeitsmappe an den nächsten Empfänger. <b>False</b> Sendet die Arbeitsmappe nicht. OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
+        <param name="SaveChanges"><b>Optional-Objekt</b>. Wenn an der Arbeitsmappe keine Änderungen vorgenommen wurden, wird dieses Argument ignoriert. Wenn Änderungen an der Arbeitsmappe vorgenommen wurden und die Arbeitsmappe in anderen geöffneten Fenstern angezeigt wird, wird dieses Argument ignoriert. Wenn Änderungen an der Arbeitsmappe vorhanden sind, die Arbeitsmappe jedoch nicht in anderen geöffneten Fenstern angezeigt wird, gibt dieses Argument an, ob Änderungen gespeichert werden sollen, wie in der folgenden Tabelle dargestellt. ValueAction<b>True</b>Speichert die Änderungen an der Arbeitsmappe. Wenn der Arbeitsmappe noch kein Dateiname zugeordnet <paramref name="FileName" /> ist, wird dieser verwendet. Wenn <paramref name="FileName" /> dies nicht angegeben wird, wird der Benutzer aufgefordert, einen Dateinamen anzugeben.<b> False</b>Speichert die Änderungen an dieser Datei nicht. AusgelassenDisplays a dialog box asking the user whether or not to save changes.</param>
+        <param name="Filename"><b>Optional-Objekt</b>. Speichern Sie Änderungen unter diesem Dateinamen.</param>
+        <param name="RouteWorkbook"><b>Optional-Objekt</b>. Wenn die Arbeitsmappe nicht an den nächsten Empfänger weitergeleitet werden muss (wenn sie keinen Verteiler aufweist oder bereits weitergeleitet wurde), wird dieses Argument ignoriert. Andernfalls leitet Microsoft Excel die Arbeitsmappe wie in der folgenden Tabelle dargestellt weiter. ValueMeaning<b>True</b>Sendet die Arbeitsmappe an den nächsten Empfänger. <b>False</b> Die Arbeitsmappe wird nicht gesendet. AusgelassenDisplays a dialog box asking the user whether the workbook should be sent.</param>
         <summary>Schließt das Objekt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Mit <b>der Close</b> -Methode werden keine makros Auto_Close Arbeitsmappe ausgeführt. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> die Methode, um die Makros für das automatische Schließen ausführen.</para>
+        <remarks><para>Die <b>Close-Methode</b> führt keine Auto_Close Makros in der Arbeitsmappe aus. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> Methode, um die Makros zum automatischen Schließen auszuführen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -516,7 +516,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn das Fenster Formeln angezeigt wird; <b>False,</b> wenn im Fenster Werte angezeigt werden.</summary>
+        <summary><b></b> True , wenn im Fenster Formeln angezeigt werden. <b></b> False , wenn im Fenster Werte angezeigt werden.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makroblätter.</para>
           <para> </para></remarks>
@@ -581,7 +581,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn sowohl Zeilen- als auch Spaltenüberschriften angezeigt werden; <b>False,</b> wenn keine Überschriften angezeigt werden.</summary>
+        <summary><b></b> True , wenn Zeilen- und Spaltenüberschriften angezeigt werden; <b>False,</b> wenn keine Überschriften angezeigt werden.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makroblätter.</para>
           <para>Diese Eigenschaft bezieht sich nur auf die Bildschirmanzeige von Überschriften. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> Eigenschaft, um das Drucken von Überschriften zu steuern.</para>
@@ -709,7 +709,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn für das angegebene Fenster ein Lineal angezeigt wird. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,7 +771,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn Leerzeichen angezeigt werden. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,7 +961,7 @@
       <Docs>
         <summary>Gibt die Gitternetzlinienfarbe als Index in der aktuellen Farbpalette oder als Konstante zurück oder legt sie <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Legen Sie diese Eigenschaft auf <b>xlColorIndexAutomatic fest,</b> um die automatische Farbe anzugeben.</para>
+        <remarks><para>Legen Sie diese Eigenschaft auf <b>xlColorIndexAutomatic</b> fest, um die automatische Farbe anzugeben.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -993,7 +993,7 @@
       <Docs>
         <summary>Die Höhe des Fensters in Punkt.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> die Eigenschaft, um die maximale Größe für das Fenster zu bestimmen. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> Eigenschaft, um den Fensterzustand zu bestimmen.</para>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> Eigenschaft, um die maximale Größe für das Fenster zu bestimmen. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> Eigenschaft, um den Fensterzustand zu bestimmen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1078,14 +1078,14 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach unten ausgeführt werden soll.</param>
-        <param name="Up">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach oben ausgeführt werden soll.</param>
-        <param name="ToRight">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
-        <param name="ToLeft">Optionales <b>Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach links ausgeführt werden soll.</param>
+        <param name="Down"><b>Optional-Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach unten ausgeführt werden soll.</param>
+        <param name="Up"><b>Optional-Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach oben ausgeführt werden soll.</param>
+        <param name="ToRight"><b>Optional-Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
+        <param name="ToLeft"><b>Optional-Objekt</b>. Die Anzahl von Seiten, um die der Bildlauf nach links ausgeführt werden soll.</param>
         <summary>Führt seitenweise einen Bildlauf durch den Fensterinhalt aus.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Wenn <paramref name="Down" /> <paramref name="Up" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. 3 und 6 ist, wird der Bildlauf <paramref name="Down" /> um drei Seiten nach oben <paramref name="Up" /> durchgeführt.</para>
-          <para>Wenn <paramref name="ToLeft" /> <paramref name="ToRight" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. <paramref name="ToLeft" /> 3 und 6 ist, wird der Bildlauf zu den rechten drei <paramref name="ToRight" /> Seiten durchgeführt.</para>
+        <remarks><para>Wenn <paramref name="Down" /> <paramref name="Up" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente verschoben. Wenn z. B. <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, werden die Inhalte um drei Seiten nach oben verschoben.</para>
+          <para>Wenn <paramref name="ToLeft" /> <paramref name="ToRight" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente verschoben. Wenn z. B. <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> 6 ist, wird der Bildlauf nach rechts drei Seiten durchgeführt.</para>
           <para>Jedes Argument kann eine negative Zahl enthalten.</para>
           <para> </para></remarks>
       </Docs>
@@ -1116,7 +1116,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand in Punkt vom linken Rand des Clientbereichs zum linken Rand des Fensters.</summary>
+        <summary>Der Abstand zwischen dem linken Rand des Clientbereichs und dem linken Rand des Fensters in Punkten.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1175,8 +1175,8 @@
       <Docs>
         <summary>Gibt den Namen der Prozedur zurück, die ausgeführt wird, wenn ein Fenster aktiviert wird, oder legt den Namen fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die von dieser Eigenschaft angegebene Prozedur wird nicht ausgeführt, wenn andere Prozeduren zu diesem Fenster wechseln oder der Befehl zum Wechseln des Fensters über einen DDE-Kanal empfangen wird. Stattdessen reagiert die Prozedur auf die Aktionen des Benutzers, z. B. auf ein Fenster mit der Maus, auf "Gehe zu" im Menü "Bearbeiten" und so weiter.</para>
-          <para>Wenn für ein Arbeitsblatt oder Makroblatt ein Makro Auto_Activate oder Auto_Deactivate makros definiert ist, werden diese Makros nach der durch die <b>OnWindow</b> -Eigenschaft angegebenen Prozedur ausgeführt.</para>
+        <remarks><para>Die von dieser Eigenschaft angegebene Prozedur wird nicht ausgeführt, wenn andere Prozeduren zu diesem Fenster wechseln oder der Befehl zum Wechseln des Fensters über einen DDE-Kanal empfangen wird. Stattdessen reagiert die Prozedur auf die Aktionen des Benutzers, z. B. das Klicken auf ein Fenster mit der Maus, das Klicken auf "Gehe zu" im Menü "Bearbeiten" usw.</para>
+          <para>Wenn für ein Arbeitsblatt oder Makroblatt ein Auto_Activate oder Auto_Deactivate Makro definiert ist, werden diese Makros nach der durch die <b>OnWindow-Eigenschaft</b> angegebenen Prozedur ausgeführt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1203,9 +1203,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung zurück, die alle Fensterausschnitte im angegebenen Fenster darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> Auflistung zurück, die alle Bereiche im angegebenen Fenster darstellt.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft ist für ein Fenster nur verfügbar, wenn die Eigenschaft des Fensters <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> auf True festgelegt werden <b>kann.</b></para>
+        <remarks><para>Diese Eigenschaft ist nur für ein Fenster verfügbar, wenn die Eigenschaft des Fensters <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> auf <b>True</b>festgelegt werden kann.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1324,17 +1324,17 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Optionales <b>Objekt</b>. Die Nummer der ersten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird von der ersten Seite an gedruckt.</param>
-        <param name="To">Optionales <b>Objekt</b>. Die Nummer der letzten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird bis zur letzten Seite gedruckt.</param>
-        <param name="Copies">Optionales <b>Objekt</b>. Die Anzahl der zu druckenden Kopien. Wenn Sie dieses Argument nicht angeben, wird eine einzelne Kopie gedruckt.</param>
-        <param name="Preview">Optionales <b>Objekt</b>. <b>True</b>, damit Microsoft Excel die Druckvorschau aufruft, bevor das Objekt gedruckt wird. <b>False</b> (oder ausgelassen) zum unmittelbaren Drucken des Objekts.</param>
-        <param name="ActivePrinter">Optionales <b>Objekt</b>. Legt den Namen des aktiven Druckers fest.</param>
-        <param name="PrintToFile">Optionales <b>Objekt</b>. <b>True</b> zum Drucken einer Datei. Wenn dieser Parameter nicht angegeben ist, fordert Microsoft Excel den Benutzer auf, den Namen der <paramref name="PrToFileName" /> Ausgabedatei eingibt.</param>
-        <param name="Collate">Optionales <b>Objekt</b>. <b>True</b> zum Sortieren mehrerer Kopien.</param>
-        <param name="PrToFileName">Optionales <b>Objekt</b>. Wenn <paramref name="PrintToFile" /> dieser Wert auf <b>"True"</b>festgelegt ist, gibt dieses Argument den Namen der Datei an, in die gedruckt werden soll.</param>
+        <param name="From"><b>Optional-Objekt</b>. Die Nummer der ersten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird von der ersten Seite an gedruckt.</param>
+        <param name="To"><b>Optional-Objekt</b>. Die Nummer der letzten Seite, die gedruckt werden soll. Wenn Sie dieses Argument nicht angeben, wird bis zur letzten Seite gedruckt.</param>
+        <param name="Copies"><b>Optional-Objekt</b>. Die Anzahl der zu druckenden Kopien. Wenn Sie dieses Argument nicht angeben, wird eine einzelne Kopie gedruckt.</param>
+        <param name="Preview"><b>Optional-Objekt</b>. <b>True</b>, damit Microsoft Excel die Druckvorschau aufruft, bevor das Objekt gedruckt wird. <b>False</b> (oder ausgelassen) zum unmittelbaren Drucken des Objekts.</param>
+        <param name="ActivePrinter"><b>Optional-Objekt</b>. Legt den Namen des aktiven Druckers fest.</param>
+        <param name="PrintToFile"><b>Optional-Objekt</b>. <b>True</b> zum Drucken einer Datei. Wenn <paramref name="PrToFileName" /> keine Angabe erfolgt, fordert Microsoft Excel den Benutzer auf, den Namen der Ausgabedatei einzugeben.</param>
+        <param name="Collate"><b>Optional-Objekt</b>. <b>True</b> zum Sortieren mehrerer Kopien.</param>
+        <param name="PrToFileName"><b>Optional-Objekt</b>. Wenn <paramref name="PrintToFile" /> True festgelegt ist, gibt dieses Argument den Namen der Datei an, in der Sie drucken möchten. <b></b></param>
         <summary>Druckt das Objekt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>"Seiten" in den Beschreibungen von gedruckten Seiten und bezieht sich auf gedruckte Seiten, nicht auf allgemeine <paramref name="From" /> <paramref name="To" /> Seiten des Blatts oder der Arbeitsmappe.</para>
+        <remarks><para>"Seiten" in den Beschreibungen von <paramref name="From" /> <paramref name="To" /> und bezieht sich auf gedruckte Seiten , nicht auf allgemeine Seiten im Blatt oder in der Arbeitsmappe.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1392,7 +1392,7 @@
       <Docs>
         <param name="x">Erforderliche <b>ganze Zahl</b>. Der Wert (in Pixel), der die horizontale Entfernung vom linken Bildschirmrand darstellt (beginnend von oben).</param>
         <param name="y">Erforderliche <b>ganze Zahl</b>. Der Wert (in Pixel), der die vertikale Entfernung vom oberen Bildschirmrand darstellt (beginnend von links).</param>
-        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> oder <see cref="T:Microsoft.Office.Interop.Excel.Range" /> das Objekt zurück, das am angegebenen Bildschirmkoordinatenpaar positioniert ist. Wenn sich an den angegebenen Koordinaten keine Form befindet, gibt diese Methode <b>Nothing</b>Nothing zurück.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Oder-Objekt zurück, das an dem angegebenen Bildschirmkoordinatenpaar positioniert ist. Wenn sich an den angegebenen Koordinaten keine Form befindet, gibt diese Methode <b>Nothing</b>Nothing zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1420,9 +1420,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt zurück, das die markierten Zellen des Arbeitsblatts im angegebenen Fenster darstellt, auch wenn ein Grafikobjekt aktiv oder im <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Arbeitsblatt ausgewählt ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das die ausgewählten Zellen auf dem Arbeitsblatt im angegebenen Fenster darstellt, auch wenn ein Grafikobjekt aktiv oder auf dem Arbeitsblatt ausgewählt ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn ein Grafikobjekt auf einem Arbeitsblatt ausgewählt wird, gibt die Eigenschaft das Grafikobjekt anstelle eines #A0 zurück. Die #A1 gibt den Zellbereich zurück, der vor der Auswahl des Grafikobjekts ausgewählt <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> wurde. <b></b> <b></b></para>
+        <remarks><para>Wenn ein Grafikobjekt auf einem Arbeitsblatt ausgewählt wird, gibt die <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> Eigenschaft das Grafikobjekt anstelle eines <b>Range-Objekts</b> zurück. Die <b>RangeSelection-Eigenschaft</b> gibt den Zellbereich zurück, der vor dem Auswählen des Grafikobjekts ausgewählt wurde.</para>
           <para>Diese Eigenschaft und die Eigenschaft <b>Selection</b> geben identische Werte zurück, wenn auf dem Arbeitsblatt ein Bereich (also kein Grafikobjekt) markiert ist.</para>
           <para>Wenn es sich bei dem aktiven Blatt im angegebenen Fenster nicht um ein Arbeitsblatt handelt, erzeugt diese Eigenschaft eine Fehlermeldung.</para>
           <para> </para></remarks>
@@ -1456,7 +1456,7 @@
       <Docs>
         <summary>Gibt die Nummer der Spalte, die sich auf der linken Seite des Ausschnitts oder des Fensters befindet, zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn das Fenster geteilt ist, verweist die <b>ScrollColumn -Eigenschaft</b> des Objekts auf <see cref="T:Microsoft.Office.Interop.Excel.Window" /> den linken oberen Bereich. Sind die Ausschnitte fixiert, schließt die <b>ScrollColumn</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche aus.</para>
+        <remarks><para>Wenn das Fenster geteilt ist, verweist die <b>ScrollColumn-Eigenschaft</b> des <see cref="T:Microsoft.Office.Interop.Excel.Window" /> Objekts auf den oberen linken Bereich. Sind die Ausschnitte fixiert, schließt die <b>ScrollColumn</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche aus.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1490,9 +1490,9 @@
         <param name="Top">Erforderliche <b>ganze Zahl</b>. Die vertikale Entfernung des Rechtecks (in Punkt) vom oberen Rand des Dokumentfensters oder -fensterausschnitts.</param>
         <param name="Width">Erforderliche <b>ganze Zahl</b>. Die Breite des Rechtecks in Punkt.</param>
         <param name="Height">Erforderliche <b>ganze Zahl</b>. Die Höhe des Rechtecks in Punkt.</param>
-        <param name="Start">Optional <b>ganze Zahl</b>. <b>True</b>, um die linke obere Ecke des Rechtecks in der linken oberen Ecke des Dokumentfensters oder Fensterausschnitts anzuzeigen. <b>False</b>, um die rechte untere Ecke des Rechtecks in der rechten unteren Ecke des Dokumentfensters oder Fensterausschnitts anzuzeigen. Der Standardwert ist <b>True</b>.</param>
-        <summary>Führt einen Bildlauf im Dokumentfenster durch, sodass der Inhalt eines angegebenen rechteckigen Bereichs in der oberen linken oder unteren rechten Ecke des Dokumentfensters oder -bereichs angezeigt wird.</summary>
-        <remarks><para>Das Argument ist hilfreich, um die Bildschirmanzeige zu orientieren, wenn das Rechteck größer als das Dokumentfenster oder der <paramref name="Start" /> Dokumentbereich ist.</para>
+        <param name="Start">Optionaler <b>ganzzahliger Wert.</b> <b>True</b>, um die linke obere Ecke des Rechtecks in der linken oberen Ecke des Dokumentfensters oder Fensterausschnitts anzuzeigen. <b>False</b>, um die rechte untere Ecke des Rechtecks in der rechten unteren Ecke des Dokumentfensters oder Fensterausschnitts anzuzeigen. Der Standardwert ist <b>True</b>.</param>
+        <summary>Führt einen Bildlauf im Dokumentfenster durch, sodass der Inhalt eines angegebenen rechteckigen Bereichs entweder in der oberen linken oder unteren rechten Ecke des Dokumentfensters oder -bereichs angezeigt wird.</summary>
+        <remarks><para>Das <paramref name="Start" /> Argument eignet sich für die Ausrichtung der Bildschirmanzeige, wenn das Rechteck größer als das Dokumentfenster oder der Dokumentbereich ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1524,7 +1524,7 @@
       <Docs>
         <summary>Gibt die Nummer der Zeile, die sich auf der oberen Seite des Ausschnitts oder des Fensters befindet, zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn das Fenster geteilt ist, verweist <b>die ScrollRow -Eigenschaft</b> des Objekts auf <see cref="T:Microsoft.Office.Interop.Excel.Window" /> den linken oberen Bereich. Sind die Ausschnitte fixiert, schließt die <b>ScrollColumn</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche aus.</para>
+        <remarks><para>Wenn das Fenster geteilt ist, verweist die <b>ScrollRow-Eigenschaft</b> des <see cref="T:Microsoft.Office.Interop.Excel.Window" /> Objekts auf den oberen linken Bereich. Sind die Ausschnitte fixiert, schließt die <b>ScrollColumn</b> -Eigenschaft des <b>Window</b> -Objekts die fixierten Bereiche aus.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1551,11 +1551,11 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Sheets">Optionales <b>Objekt</b>. Die Anzahl der Blätter, um die der Bildlauf durchgeführt werden soll. Verwenden Sie eine positive Zahl, um den Bildlauf vorwärts, eine negative Zahl für den Bildlauf rückwärts oder 0 (null) zu verwenden, um überhaupt nicht zu scrollen. Sie müssen <paramref name="Sheets" /> angeben, ob Sie keine Angabe <paramref name="Position" /> machen.</param>
-        <param name="Position">Optionales <b>Objekt</b>. Mit <b>xlFirst</b> führen Sie einen Bildlauf zum ersten, mit <b>xlLast</b> zum letzten Blatt aus. Sie müssen <paramref name="Position" /> angeben, ob Sie keine Angabe <paramref name="Sheets" /> machen.</param>
+        <param name="Sheets"><b>Optional-Objekt</b>. Die Anzahl der Blätter, nach denen der Bildlauf durchgeführt werden soll. Verwenden Sie eine positive Zahl, um nach vorne zu scrollen, eine negative Zahl, um rückwärts zu scrollen, oder 0 (null), um überhaupt nicht zu scrollen. Sie müssen <paramref name="Sheets" /> angeben, wenn Sie nicht <paramref name="Position" /> angeben.</param>
+        <param name="Position"><b>Optional-Objekt</b>. Mit <b>xlFirst</b> führen Sie einen Bildlauf zum ersten, mit <b>xlLast</b> zum letzten Blatt aus. Sie müssen <paramref name="Position" /> angeben, wenn Sie nicht <paramref name="Sheets" /> angeben.</param>
         <summary>Blättert durch die Register der Arbeitsmappe am unteren Rand des Fensters.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Die <b>ScrollWorkbookTabs -Methode</b> wirkt sich nicht auf das aktive Blatt in der Arbeitsmappe aus.</para>
+        <remarks><para>Die <b>ScrollWorkbookTabs-Methode</b> wirkt sich nicht auf das aktive Blatt in der Arbeitsmappe aus.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1612,8 +1612,8 @@
       <Docs>
         <summary>Gibt das ausgewählte Objekt im angegebenen Fenster zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>Der zurückgegebene Objekttyp hängt von der aktuellen Auswahl ab (wenn z. B. eine Zelle ausgewählt ist, gibt diese Eigenschaft ein Objekt <see cref="T:Microsoft.Office.Interop.Excel.Range" /> zurück). Wenn nichts markiert wurde, gibt die <b>Selection</b>Selection-Eigenschaft <b>Nothing</b>Nothing zurück.</para>
-          <para>Die Verwendung dieser Eigenschaft ohne Objektqualifizierer entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekts.</para>
+        <remarks><para>Der zurückgegebene Objekttyp hängt von der aktuellen Auswahl ab (wenn z. B. eine Zelle ausgewählt ist, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück). Wenn nichts markiert wurde, gibt die <b>Selection</b>Selection-Eigenschaft <b>Nothing</b>Nothing zurück.</para>
+          <para>Die Verwendung dieser Eigenschaft ohne Objektbezeichner entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1670,14 +1670,14 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach unten ausgeführt werden soll.</param>
-        <param name="Up">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach oben ausgeführt werden soll.</param>
-        <param name="ToRight">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
-        <param name="ToLeft">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach links ausgeführt werden soll.</param>
+        <param name="Down"><b>Optional-Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach unten ausgeführt werden soll.</param>
+        <param name="Up"><b>Optional-Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach oben ausgeführt werden soll.</param>
+        <param name="ToRight"><b>Optional-Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach rechts ausgeführt werden soll.</param>
+        <param name="ToLeft"><b>Optional-Objekt</b>. Die Anzahl der Zeilen, um die der Bildlauf nach links ausgeführt werden soll.</param>
         <summary>Führt einen zeilen- oder spaltenweisen Bildlauf für Fensterinhalte aus.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Wenn <paramref name="Down" /> <paramref name="Up" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. 3 und 6 ist, wird der Bildlauf für den Inhalt <paramref name="Down" /> um drei Zeilen nach oben <paramref name="Up" /> durchgeführt.</para>
-          <para>Wenn <paramref name="ToLeft" /> <paramref name="ToRight" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente gescrollt. Wenn z. B. <paramref name="ToLeft" /> 3 und 6 ist, wird der Bildlauf nach rechts drei <paramref name="ToRight" /> Spalten durchgeführt.</para>
+        <remarks><para>Wenn <paramref name="Down" /> <paramref name="Up" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente verschoben. Wenn z. B. <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, werden die Inhalte um drei Zeilen nach oben verschoben.</para>
+          <para>Wenn <paramref name="ToLeft" /> <paramref name="ToRight" /> beides angegeben ist, wird der Fensterinhalt um die Differenz der Argumente verschoben. Wenn z. B. <paramref name="ToLeft" /> 3 und <paramref name="ToRight" /> 6 ist, wird der Bildlauf nach rechts drei Spalten durchgeführt.</para>
           <para>Für jedes dieser Argumente kann auch eine negative Zahl festgelegt werden.</para>
           <para> </para></remarks>
       </Docs>
@@ -1710,7 +1710,7 @@
       <Docs>
         <summary><b>True</b>, wenn das Fenster geteilt ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Es ist möglich, <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> <b>"True"</b> und <b>"Split"</b> auf <b>"False"</b>oder umgekehrt zu sein.</para>
+        <remarks><para>Es ist <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> möglich, <b>dass "True"</b> und <b>"Split"</b> <b>auf "False"</b>festgelegt ist oder umgekehrt.</para>
           <para>Diese Eigenschaft gilt nur für Arbeitsblätter und Makroblätter.</para>
           <para> </para></remarks>
       </Docs>
@@ -1865,9 +1865,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Verhältnis der Breite des Registerkartenbereichs der Arbeitsmappe zur Breite der horizontalen Bildlaufleiste des Fensters zurück (als Zahl zwischen 0 (null) und 1; der Standardwert ist 0,6).</summary>
+        <summary>Gibt das Verhältnis zwischen der Breite des Registerkartenbereichs der Arbeitsmappe und der Breite der horizontalen Bildlaufleiste des Fensters (als Zahl zwischen 0 (Null) und 1; der Standardwert ist 0,6) zurück oder legt es fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> sie auf <b>"False"</b> festgelegt ist (ihr Wert wird beibehalten, hat aber keine Auswirkung auf die Anzeige).</para>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> sie auf <b>"False"</b> festgelegt ist (ihr Wert wird beibehalten, hat jedoch keine Auswirkung auf die Anzeige).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1897,9 +1897,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der Abstand in Punkt zwischen dem oberen Rand des Fensters und dem oberen Rand des verwendbaren Bereichs (unter den Menüs, allen am oberen Rand verankerten Symbolleisten und der Formelleiste).</summary>
+        <summary>Der Abstand zwischen dem oberen Rand des Fensters und dem oberen Rand des verwendbaren Bereichs in Punkt (unterhalb der Menüs, aller oben angedockten Symbolleisten und der Bearbeitungsleiste).</summary>
         <value>To be added.</value>
-        <remarks><para>Für maximierte Fenster können Sie diese Eigenschaft nicht festlegen. Mit der <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> Eigenschaft können Sie den Zustand des Fensters zurückgeben oder festlegen.</para>
+        <remarks><para>Für maximierte Fenster können Sie diese Eigenschaft nicht festlegen. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> Eigenschaft, um den Zustand des Fensters zurückzugeben oder festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1926,7 +1926,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlWindowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Fenstertyp zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Fenstertyp zurück oder legt den Fenstertyp fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1954,7 +1954,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die maximale Höhe des Bereichs in Punkt zurück, den ein Fenster im Bereich des Anwendungsfensters belegen kann.</summary>
+        <summary>Gibt die maximale Höhe des Abstands in Punkt zurück, den ein Fenster im Anwendungsfensterbereich belegen kann.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1982,7 +1982,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die maximale Breite in Punkt des Bereichs zurück, den ein Fenster im Bereich des Anwendungsfensters belegen kann.</summary>
+        <summary>Gibt die maximale Breite des Abstands in Punkt zurück, den ein Fenster im Anwendungsfensterbereich belegen kann.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2072,7 +2072,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den Zellbereich darstellt, der im Fenster oder Ausschnitt sichtbar ist. Spalten oder Zeilen, die teilweise sichtbar sind, gehören diesem Bereich ebenfalls an.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den Zellbereich darstellt, der im Fenster oder Bereich sichtbar ist. Spalten oder Zeilen, die teilweise sichtbar sind, gehören diesem Bereich ebenfalls an.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2103,9 +2103,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Breite des Fensters in Punkt.</summary>
+        <summary>Die Breite des Fensters in Punkten.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> die Eigenschaft, um die maximale Größe für das Fenster zu bestimmen. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> Eigenschaft, um den Fensterzustand zu bestimmen.</para>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> Eigenschaft, um die maximale Größe für das Fenster zu bestimmen. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> Eigenschaft, um den Fensterzustand zu bestimmen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2134,7 +2134,7 @@
       <Docs>
         <summary>Gibt die Fensternummer zurück. Ein Fenster mit dem Titel "Mappe1.xls:2" hat z.B. die Fensternummer 2. Die meisten Fenster haben die Fensternummer 1.</summary>
         <value>To be added.</value>
-        <remarks><para>Die Fensternummer ist nicht identisch mit dem Fensterindex (dem Rückgabewert der Eigenschaft), bei dem es sich um die Position des Fensters <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> innerhalb der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> handelt.</para>
+        <remarks><para>Die Fensternummer ist nicht identisch mit dem Fensterindex (der Rückgabewert der <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> Eigenschaft), der die Position des Fensters innerhalb der <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> Auflistung darstellt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2195,7 +2195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzeigegröße des Fensters als Prozentsatz zurück oder legt sie fest (100 entspricht der normalen Größe, 200 gleich doppelter Größe und so weiter).</summary>
+        <summary>Gibt die Anzeigegröße des Fensters als Prozentsatz zurück oder legt sie fest (100 entspricht normaler Größe, 200 entspricht doppelter Größe usw.).</summary>
         <value>To be added.</value>
         <remarks><para>Für diese Eigenschaft kann auch der Wert <b>True</b> festgelegt werden. Damit wird die Fenstergröße an die aktuelle Markierung angepasst.</para>
           <para>Diese Funktion wirkt sich nur auf das Blatt aus, das im Fenster derzeit aktiv ist. Wenn Sie diese Eigenschaft auf andere Blätter anwenden möchten, müssen Sie diese zuerst aktivieren.</para>

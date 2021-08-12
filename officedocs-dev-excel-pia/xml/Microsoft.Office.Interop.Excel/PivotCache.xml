@@ -1,5 +1,5 @@
 <Type Name="PivotCache" FullName="Microsoft.Office.Interop.Excel.PivotCache">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7195435ce0a1b6444d578842bbbfb476577c6bb3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010948" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCache" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="246a36e943673e1aee4228f3ca60dbee79d2d5c4ec399664e0f1719713981799" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518370" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCache" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCache" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCache" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCache" />
@@ -22,9 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt den Speichercache eines PivotTable-Berichts dar.</summary>
-    <remarks><para>Das <b>PivotCache -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> Auflistung.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> die Methode, um ein <b>PivotCache -Objekt</b> für einen PivotTable-Bericht zurück (jeder Bericht hat nur einen Cache).</para>
-      <para>Verwenden <b>Sie PivotCaches</b>( ), wobei die Nummer des PivotTable-Caches ist, um ein <paramref name="index" /> <paramref name="index" /> einzelnes <b>PivotCache -Objekt</b> aus der <b>PivotCaches</b> -Auflistung für eine Arbeitsmappe zurück.</para>
+    <remarks><para>Das <b>PivotCache-Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> Auflistung.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> Methode, um ein <b>PivotCache-Objekt</b> für einen PivotTable-Bericht zurückzugeben (jeder Bericht hat nur einen Cache).</para>
+      <para>Verwenden Sie <b>PivotCaches</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> PivotTable-Cachenummer ist, um ein einzelnes <b>PivotCache</b> -Objekt aus der <b>PivotCaches -Auflistung</b> für eine Arbeitsmappe zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,9 +53,9 @@
       <Docs>
         <summary>Gibt ein ADO-Verbindungsobjekt zurück, wenn der PivotTable-Cache mit einer OLE DB-Datenquelle verbunden ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>ADOConnection -Eigenschaft</b> macht die Verbindung von Microsoft Excel mit dem Datenanbieter verfügbar, sodass der Benutzer Code im Kontext derselben Sitzung schreiben kann, die Excel mit ADO (relationale Quelle) oder ADOMD (OLAP-Quelle) verwendet.</para>
-          <para>Die <b>ADOConnection</b>-Eigenschaft steht nur für Sitzungen zur Verfügung, in denen eine OLE DB-Datenquelle verwendet wird. Wenn keine ADO-Sitzung auftritt, führt die Abfrage zu einem Laufzeitfehler.</para>
-          <para>Die <b>ADOConnection -Eigenschaft</b> kann für jeden OLEDB-basierten Cache mit ADO verwendet werden. Das ADO-Verbindungsobjekt kann zusammen mit ADOMD zum Suchen von Informationen zu OLAP-Cubes verwendet werden, auf denen der Cache basiert.</para>
+        <remarks><para>Die <b>ADOConnection-Eigenschaft</b> macht die Verbindung Microsoft Excel mit dem Datenanbieter verfügbar, sodass der Benutzer Code im Kontext derselben Sitzung schreiben kann, die Excel mit ADO (relationale Quelle) oder ADOMD (OLAP-Quelle) verwendet.</para>
+          <para>Die <b>ADOConnection</b>-Eigenschaft steht nur für Sitzungen zur Verfügung, in denen eine OLE DB-Datenquelle verwendet wird. Wenn keine ADO-Sitzung vorhanden ist, führt die Abfrage zu einem Laufzeitfehler.</para>
+          <para>Die <b>ADOConnection-Eigenschaft</b> kann für jeden OLEDB-basierten Cache mit ADO verwendet werden. Das ADO-Verbindungsobjekt kann mit ADOMD verwendet werden, um Informationen zu OLAP-Cubes zu finden, auf denen der Cache basiert.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn Abfragen für den PivotTable-Bericht oder die Abfragetabelle asynchron (im Hintergrund) ausgeführt werden.</summary>
+        <summary><b></b> True , wenn Abfragen für den PivotTable-Bericht oder die Abfragetabelle asynchron (im Hintergrund) ausgeführt werden.</summary>
         <value>To be added.</value>
         <remarks><para>Bei OLAP-Datenquellen ist diese Eigenschaft schreibgeschützt und gibt immer <b>False</b> zurück.</para>
           <para> </para></remarks>
@@ -147,7 +147,7 @@
       <Docs>
         <summary>Gibt die Befehlszeichenfolge für die angegebene Datenquelle zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Bei OLE DB-Quellen beschreibt <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" /> die Eigenschaft den Werttyp der <b>CommandText-Eigenschaft.</b></para>
+        <remarks><para>Für OLE DB-Quellen beschreibt die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" /> Eigenschaft den Werttyp der <b>CommandText-Eigenschaft.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -177,10 +177,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Konstante zurück, die den Werttyp der Eigenschaft beschreibt, oder legt sie <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" /> fest. Der Standardwert ist <b>xlCmdSQL</b>.</summary>
+        <summary>Zurückgeben oder Festlegen einer Konstanten, die den Werttyp der <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" /> Eigenschaft beschreibt. Der Standardwert ist <b>xlCmdSQL</b>.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> kann eine der folgenden <b>XlCmdType -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> kann eine der folgenden <b>XlCmdType-Konstanten</b> sein:</para>
           <para>
             <b>xlCmdCube</b>. Enthält einen Cubenamen für eine OLAP-Datenquelle.</para>
           <para>
@@ -189,7 +189,7 @@
             <b>xlCmdSql</b>. Enthält eine SQL Anweisung.</para>
           <para>
             <b>xlCmdTable</b>. Enthält einen Tabellennamen für den Zugriff auf OLE DB-Datenquellen.</para>
-          <para>Sie können die <b>CommandType -Eigenschaft</b> nur festlegen, wenn der Wert der Eigenschaft für die Abfragetabelle oder den <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> PivotTable-Cache <b>xlOLEDBQuery ist.</b></para>
+          <para>Sie können die <b>CommandType-Eigenschaft</b> nur festlegen, wenn der Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> Eigenschaft für die Abfragetabelle oder den PivotTable-Cache <b>xlOLEDBQuery</b>lautet.</para>
           <para>Wenn der Wert der <b>CommandType</b>-Eigenschaft <b>xlCmdCube</b> lautet, können Sie diesen Wert nicht ändern, falls der Abfragetabelle ein PivotTable-Bericht zugeordnet wurde.</para>
           <para> </para></remarks>
       </Docs>
@@ -220,12 +220,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt Verbindungsinformationen für einen PivotTable-Cache zurück oder legt sie fest.</summary>
+        <summary>Gibt Verbindungsinformationen für einen PivotTable-Cache zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die Eigenschaft <b>"Connection"</b> kann eine der folgenden Sein: OLE DB-Einstellungen, mit denen Microsoft Excel eine Verbindung mit einer OLE DB-Datenquelle herstellen kann, ODBC-Einstellungen, mit denen Microsoft Excel eine Verbindung mit einer ODBC-Datenquelle herstellen kann, eine URL, mit der Microsoft Excel eine Verbindung mit einer Webdatenquelle herstellen kann, der Pfad zu und der Dateiname einer Textdatei oder der Pfad zu und der Dateiname einer Datei, die eine Datenbank oder Webabfrage angibt.</para>
-          <para>Durch Festlegen der <b>Connection</b>-Eigenschaft wird die Verbindung mit der Datenquelle nicht sofort initiiert. Sie müssen die Methode <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> verwenden, um die Verbindung herzustellen und die Daten abzurufen.</para>
-          <para>Wenn Sie eine Offlinecubedatei verwenden, legen Sie die Eigenschaft auf "True" und verwenden Sie die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> anstelle der <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> <b>Connection-Eigenschaft.</b></para>
-          <para>Weitere Informationen zur Syntax der Verbindungszeichenfolge finden Sie in der <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> Methode der <b>PivotCaches-Auflistung.</b></para>
+        <remarks><para>Die <b>Connection-Eigenschaft</b> kann eine der folgenden Sein: OLE DB-Einstellungen, mit denen Microsoft Excel eine Verbindung mit einer OLE DB-Datenquelle herstellen können, ODBC-Einstellungen, mit denen Microsoft Excel eine Verbindung mit einer ODBC-Datenquelle herstellen können, eine URL, mit der Microsoft Excel eine Verbindung mit einer Webdatenquelle herstellen kann, der Pfad und Dateiname einer Textdatei oder der Pfad und Dateiname einer Datei, die eine Datenbank oder Webabfrage angibt.</para>
+          <para>Durch Festlegen der <b>Connection</b>-Eigenschaft wird die Verbindung mit der Datenquelle nicht sofort initiiert. Sie müssen die <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> Methode verwenden, um die Verbindung herzustellen und die Daten abzurufen.</para>
+          <para>Wenn Sie eine Offline-Cubedatei verwenden, legen Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> Eigenschaft auf <b>"True"</b> fest, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> Eigenschaft anstelle der <b>Connection-Eigenschaft.</b></para>
+          <para>Weitere Informationen zur Verbindungszeichenfolgensyntax finden Sie unter der <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> Methode der <b>PivotCaches-Auflistung.</b></para>
           <para>Alternativ können Sie stattdessen mithilfe der Microsoft ADO-Bibliothek (ActiveX Data Objects) direkt auf eine Datenquelle zugreifen.</para>
           <para> </para></remarks>
       </Docs>
@@ -257,27 +257,27 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChartDestination">Das Arbeitsblatt "Ziel"</param>
-        <param name="XlChartType">Der Typ des Diagramms</param>
+        <param name="ChartDestination">Das Zielarbeitsblatt</param>
+        <param name="XlChartType">Der Diagrammtyp</param>
         <param name="Left">Der Abstand (in Punkten) von der linken Seite des Objekts zur linken Seite von Spalte A (auf einem Arbeitsblatt) oder zur linken Seite des Diagrammbereichs (in einem Diagramm).</param>
         <param name="Top">Der Abstand (in Punkten) des oberen Rands der obersten Form im Formbereich zum oberen Rand des Arbeitsblatts.</param>
         <param name="Width">Die Breite des Objekts in Punkten.</param>
         <param name="Height">Die Breite des Objekts in Punkten.</param>
         <summary>Erstellt ein eigenständiges PivotChart aus einem <b>PivotCache-Objekt.</b> Ein <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekt wird zurückgegeben.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Wenn das <b>PivotCache-Objekt,</b> von dem die Methode aufgerufen wird, keine pivotTable angefügt ist:</para>
+        <remarks><para>Wenn das <b>PivotCache-Objekt,</b> aus dem die Methode aufgerufen wird, über keine angefügte PivotTable verfügt:</para>
           <list type="bullet">
             <item>
               <description>Eine PivotTable auf Arbeitsmappenebene wird aus dem vorhandenen PivotCache erstellt.</description>
             </item>
             <item>
-              <description>Ein eigenständiges PivotChart wird mit einem Verweis auf die neu erstellte PivotTable erstellt.</description>
+              <description>Eine eigenständige PivotChart wird mit einem Verweis auf die neu erstellte PivotTable erstellt.</description>
             </item>
           </list>
-          <para>Wenn der PivotCache bereits über eine zugeordnete PivotTable verfügt:</para>
+          <para>Wenn dem PivotCache bereits eine PivotTable zugeordnet ist:</para>
           <list type="bullet">
             <item>
-              <description>Der PivotCache wird geklont</description>
+              <description>PivotCache wird geklont</description>
             </item>
             <item>
               <description>Eine neue PivotTable auf Arbeitsmappenebene wird basierend auf dem geklonten PivotCache erstellt.</description>
@@ -314,13 +314,13 @@
         <Parameter Name="DefaultVersion" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="TableDestination">Required <b>-Objekt</b>. Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts (der Bereich auf dem Arbeitsblatt, in dem der resultierende PivotTable-Bericht platziert wird). Der Zielbereich muss sich auf einem Arbeitsblatt in der Arbeitsmappe befinden, das das durch den Ausdruck angegebene <b>PivotCache-Objekt</b> enthält.</param>
-        <param name="TableName">Optionales <b>Objekt</b>. Der Name des neuen PivotTable-Berichts.</param>
-        <param name="ReadData">Optionales <b>Objekt</b>. <b>True,</b> um einen #A0 zu erstellen, der alle Datensätze aus der externen Datenbank enthält; Dieser Cache kann sehr groß sein. Mit <b>False</b> werden einige Felder als serverbasierte Seitenfelder festgelegt, bevor die Daten gelesen werden.</param>
-        <param name="DefaultVersion">Optionales <b>Objekt</b>. Die Standardversion des PivotTable-Berichts.</param>
-        <summary>Erstellt einen PivotTable-Bericht, der auf einem Objekt <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> basiert.</summary>
+        <param name="TableDestination"><b>Required-Objekt</b>. Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts (der Bereich auf dem Arbeitsblatt, in dem der resultierende PivotTable-Bericht platziert wird). Der Zielbereich muss sich auf einem Arbeitsblatt in der Arbeitsmappe befinden, das das durch den Ausdruck angegebene <b>PivotCache-Objekt</b> enthält.</param>
+        <param name="TableName"><b>Optional-Objekt</b>. Der Name des neuen PivotTable-Berichts.</param>
+        <param name="ReadData"><b>Optional-Objekt</b>. <b>True,</b> um einen PivotTable-Cache zu erstellen, der alle Datensätze aus der externen Datenbank enthält; Dieser Cache kann sehr groß sein. Mit <b>False</b> werden einige Felder als serverbasierte Seitenfelder festgelegt, bevor die Daten gelesen werden.</param>
+        <param name="DefaultVersion"><b>Optional-Objekt</b>. Die Standardversion des PivotTable-Berichts.</param>
+        <summary>Erstellt einen PivotTable-Bericht basierend auf einem <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Objekt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Eine alternative Möglichkeit zum Erstellen eines PivotTable-Berichts basierend auf einem PivotTable-Cache finden Sie unter <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> der Methode des <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekts.</para>
+        <remarks><para>Eine alternative Möglichkeit zum Erstellen eines PivotTable-Berichts basierend auf einem PivotTable-Cache finden Sie unter der <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> Methode des <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -350,7 +350,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -382,7 +382,7 @@
       <Docs>
         <summary><b>True</b>, wenn der PivotTable-Cache oder die Abfragetabelle von der Benutzerin oder dem Benutzer aktualisiert werden kann. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> Eigenschaft wird ignoriert, wenn die Eigenschaft <b>"EnableRefresh"</b> auf <b>"False" festgelegt ist.</b></para>
+        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> Eigenschaft wird ignoriert, wenn die <b>EnableRefresh -Eigenschaft</b> auf <b>False</b>festgelegt ist.</para>
           <para>Bei OLAP-Datenquellen werden durch Festlegen dieser Eigenschaft auf <b>False</b> Aktualisierungen deaktiviert.</para>
           <para> </para></remarks>
       </Docs>
@@ -438,9 +438,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt <b>True</b> zurück, wenn die Eigenschaft "True" ist und der Cache der <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> PivotTable derzeit mit der Quelle verbunden ist. <b></b> Gibt <b>False</b> zurück, wenn momentan keine Verbindung zur Quelle besteht.</summary>
+        <summary>Gibt <b>True zurück,</b> wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> Eigenschaft <b>True</b> ist und der PivotTable-Cache derzeit mit seiner Quelle verbunden ist. Gibt <b>False</b> zurück, wenn momentan keine Verbindung zur Quelle besteht.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>IsConnected</b>-Eigenschaft prüft nicht, ob die Verbindung besteht. Selbst wenn diese Eigenschaft <b>True</b>zurückgibt, kann das Senden von Befehlen an den Anbieter zu einem Fehler führen, wenn die Verbindung nicht mehr gültig ist.</para>
+        <remarks><para>Die <b>IsConnected</b>-Eigenschaft prüft nicht, ob die Verbindung besteht. Auch wenn diese Eigenschaft <b>True</b>zurückgibt, kann das Senden von Befehlen an den Anbieter zu einem Fehler führen, wenn die Verbindung nicht mehr gültig ist.</para>
           <para>Erfordert, dass sich die Cacheressource extern befindet und dass es sich um eine OLE DB-Datenquelle handelt.</para>
           <para> </para></remarks>
       </Docs>
@@ -473,10 +473,10 @@
       <Docs>
         <summary>Gibt die Verbindungszeichenfolge zu einer Offline-Cubedatei zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Bei einer Nicht-OLAP-Datenquelle ist der Wert der <b>Eigenschaft LocalConnection</b> eine leere Zeichenfolge, und die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> wird auf False <b>festgelegt.</b></para>
-          <para>Durch Festlegen <b>der Eigenschaft "LocalConnection"</b> wird die Verbindung mit der Datenquelle nicht sofort initiiert. Sie müssen zuerst die Methode <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> verwenden, um die Verbindung herzustellen und die Daten abzurufen.</para>
-          <para>Der Wert der <b>Eigenschaft LocalConnection</b> wird verwendet, wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> die Eigenschaft auf True festgelegt <b>ist.</b> Wenn die <b>Eigenschaft "UseLocalConnection"</b> auf "False" festgelegt ist, gibt die Eigenschaft die Verbindungszeichenfolge für Abfragetabellen basierend auf anderen Quellen als lokalen <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Cubedateien an.</para>
-          <para>Weitere Informationen zur Syntax für Verbindungszeichenfolgen finden Sie im Hilfethema zur Methode der <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> <b>PivotTables-Auflistung.</b></para>
+        <remarks><para>Bei einer Nicht-OLAP-Datenquelle ist der Wert der <b>LocalConnection</b> -Eigenschaft eine leere Zeichenfolge, und die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> Eigenschaft ist auf <b>False</b>festgelegt.</para>
+          <para>Durch Festlegen der <b>LocalConnection-Eigenschaft</b> wird die Verbindung mit der Datenquelle nicht sofort initiiert. Sie müssen zuerst die <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> Methode verwenden, um die Verbindung herzustellen und die Daten abzurufen.</para>
+          <para>Der Wert der <b>LocalConnection</b> -Eigenschaft wird verwendet, wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> Eigenschaft auf <b>True</b>festgelegt ist. Wenn die <b>UseLocalConnection</b> -Eigenschaft auf False festgelegt ist, gibt die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Eigenschaft die Verbindungszeichenfolge für Abfragetabellen basierend auf anderen Quellen als lokalen Cubedateien an.</para>
+          <para>Weitere Informationen zur Syntax für Verbindungszeichenfolgen finden Sie im Hilfethema zur <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> Methode der <b>PivotTables-Auflistung.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -508,7 +508,7 @@
       <Docs>
         <summary><b>True</b>, wenn die Verbindung zu der angegebenen Datenquelle nach der Aktualisierung bis zum Schließen der Arbeitsmappe aufrechterhalten bleibt. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Sie können die <b>MaintainConnection -Eigenschaft</b> nur festlegen, wenn die Eigenschaft der Abfragetabelle oder des <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> PivotTable-Caches auf <b>xlOLEDBQuery festgelegt ist.</b></para>
+        <remarks><para>Sie können die <b>MaintainConnection</b> -Eigenschaft nur festlegen, wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> Eigenschaft der Abfragetabelle oder des PivotTable-Caches auf <b>xlOLEDBQuery</b>festgelegt ist.</para>
           <para>Wenn häufige Abfragen an einen Server erfolgen, kann die Festlegung dieser Eigenschaft auf <b>True</b>True unter Umständen die Leistung steigern, indem die Zeit für den erneuten Verbindungsaufbau reduziert wird. Wird die Eigenschaft auf <b>False</b>False eingestellt, wird eine geöffnete Verbindung geschlossen.</para>
           <para> </para></remarks>
       </Docs>
@@ -535,9 +535,9 @@
       <Parameters />
       <Docs>
         <summary>Richtet eine Verbindung für den angegebenen PivotTable-Cache ein.</summary>
-        <remarks><para>Die <b>MakeConnection -Methode</b> kann verwendet werden, nachdem der Cache eine Verbindung unterbindet und der Benutzer die Verbindung erneut herstellen möchte.</para>
+        <remarks><para>Die <b>MakeConnection-Methode</b> kann verwendet werden, nachdem der Cache eine Verbindung getrennt hat und der Benutzer die Verbindung erneut herstellen möchte.</para>
           <para>Verschiedene Objekte und Methoden können einen Laufzeitfehler zurückgeben, wenn der Cache nicht verbunden ist. Die Verwendung dieser Methode stellt sicher, dass eine Verbindung vorhanden ist, bevor weitere Objekte oder Methoden ausgeführt werden.</para>
-          <para>Diese Methode führt zu einem Laufzeitfehler, wenn die Eigenschaft des angegebenen PivotTable-Caches auf False festgelegt wurde, die Eigenschaft des angegebenen PivotTable-Caches nicht auf <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> <b>xlExternal</b>festgelegt wurde oder wenn die Verbindung nicht OLEDB ist.</para>
+          <para>Diese Methode führt zu einem Laufzeitfehler, wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> Eigenschaft des angegebenen PivotTable-Caches auf <b>False</b>festgelegt wurde, die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> des angegebenen PivotTable-Caches nicht auf <b>xlExternal</b>festgelegt wurde oder wenn die Verbindung nicht OLEDB ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -564,10 +564,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Speichermenge in Byte zurück, die derzeit vom Objekt verwendet wird.</summary>
+        <summary>Gibt die Größe des Arbeitsspeichers in Bytes zurück, die derzeit vom Objekt verwendet werden.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Eigenschaft "MemoryUsed"</b> gibt den vorübergehenden Zustand des Caches zum Zeitpunkt der Abfrage wieder.</para>
-          <para>Wenn dem <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Objekt kein PivotTable-Bericht angefügt ist, gibt diese Eigenschaft 0 (Null) zurück.</para>
+        <remarks><para>Die <b>MemoryUsed-Eigenschaft</b> gibt den vorübergehenden Status des Caches zum Zeitpunkt der Abfrage wieder.</para>
+          <para>Wenn dem <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Objekt kein PivotTable-Bericht zugeordnet ist, gibt diese Eigenschaft 0 (null) zurück.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -600,7 +600,7 @@
         <summary>Gibt die maximale Anzahl eindeutiger Elemente für ein PivotTable-Feld zurück oder legt diese fest, die auch dann erhalten bleiben, wenn in den Cachedatensätzen keine unterstützenden Daten enthalten sind.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" /> kann eine der folgenden <b>XlPivotTableMissingItems -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" /> kann eine der folgenden <b>XlPivotTableMissingItems-Konstanten</b> sein:</para>
           <para>
             <b>xlMissingItemsDefault</b> Die Standardanzahl zulässiger eindeutiger Elemente pro PivotField.</para>
           <para>
@@ -666,7 +666,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn der PivotTable-Cache beim Aufbau optimiert wird. Der Standardwert ist <b>False</b>.</summary>
+        <summary><b>True</b>, wenn der PivotTable-Cache beim Aufbau optimiert wird. Der Standardwert ist <b>Falsch</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Die Optimierung des Caches führt zu zusätzlichen Abfragen und vermindert die Anfangsleistung des PivotTable-Berichts.</para>
           <para>Bei OLE DB-Datenquellen ist diese Eigenschaft schreibgeschützt und gibt immer <b>False</b> zurück.</para>
@@ -727,7 +727,7 @@
         <summary>Gibt den Typ der von Microsoft Excel zum Auffüllen des PivotTable-Caches verwendeten Abfrage an.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> kann eine der folgenden <b>XlQueryType -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> kann eine der folgenden <b>XlQueryType</b> -Konstanten sein:</para>
           <para>
             <b>xlTextImport</b>. Basierend auf einer Textdatei; nur für Abfragetabellen.</para>
           <para>
@@ -740,7 +740,7 @@
             <b>xlDAORecordSet</b>. Basierend auf einer DAO-Recordset-Abfrage; nur für Abfragetabellen.</para>
           <para>
             <b>xlODBCQuery</b>. Basierend auf einer ODBC-Datenquelle.</para>
-          <para>Sie geben die Datenquelle im Präfix für den <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Wert der Eigenschaft an.</para>
+          <para>Sie geben die Datenquelle im Präfix für den Wert der <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Eigenschaft an.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -799,9 +799,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Recordset -Objekt</b> zurück, das als Datenquelle für die angegebene Abfragetabelle oder den angegebenen PivotTable-Cache verwendet wird, oder legt dieses Objekt fest.</summary>
+        <summary>Gibt ein <b>Recordset-Objekt</b> zurück, das als Datenquelle für die angegebene Abfragetabelle oder den PivotTable-Cache verwendet wird, oder legt dieses Objekt fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn diese Eigenschaft verwendet wird, um ein vorhandenes Recordset zu überschreiben, wird die Änderung wirksam, wenn <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> die Methode ausgeführt wird.</para>
+        <remarks><para>Wenn diese Eigenschaft verwendet wird, um ein vorhandenes Recordset zu überschreiben, wird die Änderung wirksam, wenn die <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> Methode ausgeführt wird.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -853,7 +853,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Datum zurück, an dem der Cache der PivotTable zuletzt aktualisiert wurde.</summary>
+        <summary>Gibt das Datum zurück, an dem der PivotTable-Cache zuletzt aktualisiert wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Dem Cache muss mindestens ein PivotTable-Bericht zugeordnet sein.</para>
           <para>Bei OLAP-Datenquellen wird diese Eigenschaft nach jeder Abfrage aktualisiert.</para>
@@ -914,9 +914,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b>, wenn der PivotTable-Cache jedes Mal automatisch aktualisiert wird, wenn die Arbeitsmappe geöffnet wird. Der Standardwert ist <b>False</b>.</summary>
+        <summary><b>True</b>, wenn der PivotTable-Cache jedes Mal automatisch aktualisiert wird, wenn die Arbeitsmappe geöffnet wird. Der Standardwert ist <b>Falsch</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>PivotTable-Berichte werden nicht automatisch aktualisiert. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> die Methode, um die Daten zu aktualisieren, nachdem die Arbeitsmappe geöffnet wurde.</para>
+        <remarks><para>PivotTable-Berichte werden nicht automatisch aktualisiert. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> Methode, um die Daten zu aktualisieren, nachdem die Arbeitsmappe geöffnet wurde.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -948,8 +948,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Minuten zwischen Aktualisierungen zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie den Zeitraum auf 0 (Null) festlegen, werden automatische zeitintervallierte Aktualisierungen deaktiviert, was dem Festlegen dieser Eigenschaft auf <b>Null entspricht.</b></para>
-          <para>Der Wert der <b>Eigenschaft RefreshPeriod</b> kann eine ganze Zahl zwischen 0 und 32.767 sein.</para>
+        <remarks><para>Wenn Sie den Zeitraum auf 0 (null) festlegen, werden die automatischen zeitierten Aktualisierungen deaktiviert und entspricht dem Festlegen dieser Eigenschaft auf <b>Null.</b></para>
+          <para>Der Wert der <b>RefreshPeriod-Eigenschaft</b> kann eine ganze Zahl zwischen 0 und 32.767 sein.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1007,13 +1007,13 @@
         <summary>Gibt die Art zurück, wie der PivotTable-Cache mit der zugehörigen Datenquelle verbunden wird, oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /> kann eine der folgenden <b>XlRobustConnect -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /> kann eine der folgenden <b>XlRobustConnect-Konstanten</b> sein:</para>
           <para>
-            <b>xlAlways</b> Der Cache verwendet immer externe Quellinformationen (wie durch die Eigenschaft definiert), um <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> die Verbindung wiederherzustellen.</para>
+            <b>xlAlways</b> Der Cache verwendet immer externe Quellinformationen (wie von der oder eigenschaft definiert), um die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> Verbindung <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> wiederherzustellen.</para>
           <para>
-            <b>xlAsRequired</b> Der Cache verwendet externe Quellinformationen, um mithilfe der Eigenschaft erneut eine Verbindung <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> herzustellen.</para>
+            <b>xlAsRequired</b> Der Cache verwendet externe Quellinformationen, um die Verbindung mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Eigenschaft wiederherzustellen.</para>
           <para>
-            <b>xlNever</b> Der Cache verwendet niemals Quellinformationen, um die Verbindung wiederherzustellen.</para>
+            <b>xlNever</b> Der Cache verwendet nie Quellinformationen, um die Verbindung wiederherzustellen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1042,8 +1042,8 @@
       </Parameters>
       <Docs>
         <param name="ODCFileName"><b>String</b> erforderlich. Ort, an dem die Datei gespeichert wird.</param>
-        <param name="Description">Optionales <b>Objekt</b>. Beschreibung, die in der Datei gespeichert wird.</param>
-        <param name="Keywords">Optionales <b>Objekt</b>. Durch Leerzeichen getrennte Schlüsselwörter, die für die Suche nach dieser Datei verwendet werden können.</param>
+        <param name="Description"><b>Optional-Objekt</b>. Beschreibung, die in der Datei gespeichert wird.</param>
+        <param name="Keywords"><b>Optional-Objekt</b>. Durch Leerzeichen getrennte Schlüsselwörter, die für die Suche nach dieser Datei verwendet werden können.</param>
         <summary>Speichert die PivotTable-Cachequelle als Microsoft Office Datenverbindungsdatei.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1139,7 +1139,7 @@
       <Docs>
         <summary>Gibt die Datenquelle für den PivotTable-Bericht zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>In der folgenden Tabelle sind die von der Eigenschaft <b>"SourceDate" zurückgegebenen Werte</b> aufgeführt:</para>
+        <remarks><para>In der folgenden Tabelle sind die von der <b>SourceDate-Eigenschaft</b> zurückgegebenen Werte aufgeführt:</para>
           <list type="table">
             <item>
               <term>Microsoft Excel-Liste oder Datenbank</term>
@@ -1147,7 +1147,7 @@
             </item>
             <item>
               <term>Externe Datenquelle</term>
-              <description>Ein Array. Jede Zeile besteht aus SQL verbindungszeichenfolge mit den verbleibenden Elementen als Abfragezeichenfolge, aufgeschlüsselt in Segmente mit 255 Zeichen.</description>
+              <description>Ein Array. Jede Zeile besteht aus einer SQL Verbindungszeichenfolge mit den verbleibenden Elementen als Abfragezeichenfolge, unterteilt in Segmente mit 255 Zeichen.</description>
             </item>
             <item>
               <term>Mehrere Konsolidierungsbereiche</term>
@@ -1185,9 +1185,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge zurück,</b> der die Quelldatendatei für den Cache der PivotTable angibt.</summary>
+        <summary>Gibt eine <b>Zeichenfolge</b> zurück, der die Quelldatendatei für den Cache der PivotTable angibt.</summary>
         <value>To be added.</value>
-        <remarks><para>Bei dateibasierten Datenquellen (z. B. Microsoft Access) enthält die <b>Eigenschaft "SourceDataFile"</b> einen vollqualifizierten Pfad zur Quelldatendatei. Er ist <b>null</b> für serverbasierte Datenquellen (z. B. SQL Server). Die <b>Eigenschaft "SourceDataFile"</b> wird auf <b>Null festgelegt,</b> wenn <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> die Eigenschaft programmgesteuert geändert wird.</para>
+        <remarks><para>Für dateibasierte Datenquellen (z. B. Microsoft Access) enthält die <b>SourceDataFile-Eigenschaft</b> einen vollqualifizierten Pfad zur Quelldatendatei. Er ist <b>Null</b> für serverbasierte Datenquellen (z. B. SQL Server). Die <b>SourceDataFile-Eigenschaft</b> wird auf <b>Null</b> festgelegt, wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Eigenschaft programmgesteuert geändert wird.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1214,10 +1214,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableSourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert zurück, der den Typ des zu veröffentlichende Elements angibt.</summary>
+        <summary>Gibt einen Wert zurück, der den Typ des zu veröffentlichenden Elements angibt.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> kann eine der folgenden <b>XlPivotTableSourceType -Konstanten</b> sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> kann eine der folgenden <b>XlPivotTableSourceType-Konstanten</b> sein:</para>
           <para>
             <b>xlConsolidation</b>
           </para>
@@ -1299,11 +1299,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enthält Informationen dazu, ob bei der nächsten Aktualisierung alle Verbundenen <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> aktualisiert werden. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
-        <remarks><para>Der Standardwert ist <b>False</b>. Wenn die Eigenschaft für einen <b>PivotCache</b>auf <b>"True"</b> festgelegt ist, werden der PivotCache und alle angefügten PivotTables im Rahmen der Aktualisierung auf Version <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 2007 (PivotTable.Version = 3) <b></b> aktualisiert. <b></b> <b></b></para>
-          <para>Wenn die Eigenschaft für einen <b>PivotCache</b>auf <b>"False"</b> festgelegt ist, ändert das Aktualisieren einer an den <b>PivotCache</b>angefügten <b>PivotTable</b> weder die Version von <b>PivotCache</b> noch die Version von angefügten <b>PivotTables.</b> Für alle Objekte wird die vor der Aktualisierung verwendete Version weiter verwendet.</para>
-          <para>Beim Speichern in short_Excel2007 Dateiformat wird diese Eigenschaft im Kompatibilitätsmodus für alle Arbeitsmappen auf <b>"True"</b> <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> festgelegt.</para>
+        <summary>Enthält Informationen dazu, ob die <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  und alle verbundenen Elemente bei der nächsten Aktualisierung aktualisiert <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> werden sollen. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolescher Wert</b></value>
+        <remarks><para>Der Standardwert ist <b>Falsch</b>. Wenn die Eigenschaft für einen <b>PivotCache</b>auf <b>"True"</b> festgelegt ist, werden beim Aktualisieren aller mit diesem <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <b>PivotCache</b> verbundenen Elemente der <b>PivotCache</b> und alle <b>angefügten PivotTables</b> im Rahmen der Aktualisierung auf Version 2007 (PivotTable.Version = 3) aktualisiert.</para>
+          <para>Wenn die Eigenschaft für einen <b>PivotCache</b>auf <b>"False"</b> festgelegt ist, ändert das Aktualisieren einer mit <b>diesem PivotCache</b> verbundenen <b>PivotTable</b> weder die Version des <b>PivotCache</b>noch die Version der <b>angefügten PivotTables.</b> Für alle Objekte wird die vor der Aktualisierung verwendete Version weiter verwendet.</para>
+          <para>Wenn Sie im Kompatibilitätsmodus in einem short_Excel2007 Dateiformat speichern, wird diese Eigenschaft für alle In der Arbeitsmappe auf <b>"True"</b> <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> festgelegt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1333,7 +1333,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> Eigenschaft verwendet wird, um die Zeichenfolge anzugeben, mit der Microsoft Excel eine Verbindung mit einer Datenquelle herstellen kann. <b>False,</b> wenn die von der Eigenschaft angegebene <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> Verbindungszeichenfolge verwendet wird.</summary>
+        <summary><b></b> True , wenn die <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> Eigenschaft verwendet wird, um die Zeichenfolge anzugeben, mit der Microsoft Excel eine Verbindung mit einer Datenquelle herstellen kann. <b>False,</b> wenn die durch die Eigenschaft angegebene Verbindungszeichenfolge <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> verwendet wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1361,9 +1361,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableVersionList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Version von Microsoft Excel zurück, in der die <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Datei erstellt wurde. Schreibgeschützt.</summary>
+        <summary>Gibt die Version von Microsoft Excel zurück, in der das <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Objekt erstellt wurde. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /></value>
-        <remarks><para>Diese Eigenschaft gibt die Version der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> zurück. Standardeinstellungen und -verhalten hängen von der Version ab, damit alter Code des <b>PivotTable-Objektmodells</b> in 1st_Excel12 mit demselben Verhalten ausgeführt werden kann, wenn die Version der <b>PivotTable</b> der Version von Excel entspricht, für die der Code geschrieben wurde.</para>
+        <remarks><para>Diese Eigenschaft gibt die Version der <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> zurück. Standardeinstellungen und -verhaltensweisen hängen von der Version ab, damit alter <b>PivotTable-Objektmodellcode</b> in 1st_Excel12 mit demselben Verhalten ausgeführt werden kann, wenn die Version der <b>PivotTable</b> der Version von Excel entspricht, für die der Code geschrieben wurde.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1390,7 +1390,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stellt eine Verbindung zwischen der aktuellen Arbeitsmappe und dem Objekt <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> fest. Schreibgeschützt.</summary>
+        <summary>Stellt eine Verbindung zwischen der aktuellen Arbeitsmappe und dem <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> Objekt her. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks><para>Das <b>WorkbookConnection</b>-Objekt stellt eine Verbindung mit einer externen Datenquelle dar.</para>
           <para> </para></remarks>

@@ -1,5 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009618" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="feff087dd9c876bc2c86572cfeb029f84fdbe2c75880cfcc6d9cfcc574bfeb82" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518216" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Teilstrichbeschriftungen dar, die Teilstrichen auf einer Diagrammachse zugeordnet sind.</summary>
-    <remarks><para>Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Teilstrichbeschriftung darstellt. Sie müssen alle Teilstrichbeschriftungen als Einheit zurückgeben. Der Text der Teilstrichbeschriftung für die Rubrikenachse stammt aus dem Namen der zugeordneten Kategorie im Diagramm. Der Standardmäßige Teilstrichbeschriftungstext für die Rubrikenachse ist die Zahl, die die Position der Kategorie relativ zum linken Ende dieser Achse angibt. Um die Anzahl der unbeschrifteten Teilstriche zwischen Teilstrichbeschriftungen zu ändern, müssen Sie die Eigenschaft für <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> die Rubrikenachse ändern. Der Text der Teilstrichbeschriftung für die Wertachse wird basierend auf den Eigenschaften und den Eigenschaften der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> Wertachse berechnet. Um den Text der Teilstrichbeschriftung für die Wertachse zu ändern, müssen Sie die Werte dieser Eigenschaften ändern.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> Eigenschaft, um das <b>TickLabels -Objekt zurück.</b></para>
+    <remarks><para>Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Teilstrichbeschriftung darstellt; Sie müssen alle Teilstrichbeschriftungen als Einheit zurückgeben. Der Text der Teilstrichbeschriftung für die Rubrikenachse stammt aus dem Namen der zugeordneten Kategorie im Diagramm. Der Standardmäßige Teilstrichbeschriftungstext für die Rubrikenachse ist die Zahl, die die Position der Kategorie relativ zum linken Ende dieser Achse angibt. Um die Anzahl der nicht beschrifteten Teilstriche zwischen Teilstrichbeschriftungen zu ändern, müssen Sie die <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> Eigenschaft für die Rubrikenachse ändern. Der Text der Teilstrichbeschriftung für die Größenachse wird basierend auf den <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> , und Eigenschaften der <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> Größenachse berechnet. Um den Teilstrichbeschriftungstext für die Größenachse zu ändern, müssen Sie die Werte dieser Eigenschaften ändern.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> Eigenschaft, um das <b>TickLabels-Objekt</b> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
       <Docs>
         <summary>Gibt die Ausrichtung für die angegebene Teilstrichbeschriftung zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Alignment -Eigenschaft</b> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> Konstanten sein:</para>
+        <remarks><para>Die <b>Alignment-Eigenschaft</b> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> Konstanten sein:</para>
           <para>
             <b>XlHAlignCenter</b>
           </para>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,7 +159,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -300,7 +300,7 @@
       </ReturnValue>
       <Docs>
         <summary>Legt fest, ob eine Achse über mehrere Ebenen verfügt oder nicht.  Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Der Standardwert für diese Eigenschaft ist <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
@@ -453,7 +453,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Abstand zwischen den Beschriftungsebenen und dem Abstand zwischen der ersten Ebene und der Achsenlinie zurück oder legt diesen Abstand fest.</summary>
+        <summary>Gibt den Abstand zwischen den Beschriftungsebenen und dem Abstand zwischen der ersten Ebene und der Achsenlinie zurück oder legt den Abstand fest.</summary>
         <value>To be added.</value>
         <remarks><para>Der Standardabstand beträgt 100 Prozent und stellt den Standardabstand zwischen den Achsenbeschriftungen und der Achsenlinie dar. Der Wert kann eine ganze Prozentzahl zwischen 0 und 1000 darstellen, relativ zur Schriftgröße der Achsenbeschriftung.</para>
           <para> </para></remarks>
@@ -485,7 +485,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTickLabelOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen –90 und 90 Grad oder eine der Konstanten <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> sein.</summary>
+        <summary>Die Textausrichtung. Dies kann ein ganzzahliger Wert zwischen -90 und 90 Grad oder eine der <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> Konstanten sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -546,7 +546,7 @@
       <Docs>
         <summary>Gibt die Lesereihenfolge für das angegebene Objekt zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>ReadingOrder -Eigenschaft</b> kann eine der folgenden Konstanten sein: <b>xlRTL</b> (von rechts nach links), <b>xlLTR</b> (von links nach rechts) oder <b>xlContext</b>.</para>
+        <remarks><para>Die <b>ReadingOrder</b> -Eigenschaft kann eine der folgenden Konstanten sein: <b>xlRTL</b> (von rechts nach links), <b>xlLTR</b> (von links nach rechts) oder <b>xlContext</b>.</para>
           <para>Einige dieser Konstanten stehen Ihnen möglicherweise abhängig von den von Ihnen ausgewählten oder installierten unterstützten Sprachen (z.B. Englisch (USA)) nicht zur Verfügung.</para>
           <para> </para></remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010780" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25a70522ac930fee202381605c46a4549fd8193cfe61b4d688bc30b71c9ed0c6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519084" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObject" />
@@ -19,8 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein Element in einer Arbeitsmappe dar, das auf einer Webseite gespeichert wurde, und entsprechend den Werten, die durch die Eigenschaften und Methoden des <b>PublishObject</b>-Objekts angegeben wurden, aktualisiert werden kann.</summary>
-    <remarks><para>Das <b>PublishObject -Objekt</b> ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> Auflistung.</para>
-      <para>Verwenden <b>Sie PublishObjects</b>( ), wobei die Indexnummer des angegebenen Elements in der Arbeitsmappe ist, um <paramref name="index" /> ein <paramref name="index" /> einzelnes <b>PublishObject -Objekt zurück.</b></para>
+    <remarks><para>Das <b>PublishObject</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> Auflistung.</para>
+      <para>Verwenden Sie <b>PublishObjects</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer des angegebenen Elements in der Arbeitsmappe ist, um ein einzelnes <b>PublishObject</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn eine Arbeitsmappe gespeichert wird, ermittelt Microsoft Excel, ob für ein Element in der Auflistung die Eigenschaft <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>"AutoRepublish"</b> auf <b>"True"</b> festgelegt ist, und veröffentlicht es dann erneut. Der Standardwert ist <b>False</b>.</summary>
+        <summary>Wenn eine Arbeitsmappe gespeichert wird, bestimmt Microsoft Excel, ob für ein Element in der <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> Auflistung die <b>AutoRepublish-Eigenschaft</b> auf <b>"True"</b> festgelegt ist, und veröffentlicht sie ggf. erneut. Der Standardwert ist <b>Falsch</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -161,7 +161,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den eindeutigen Bezeichner zurück, der zum Identifizieren eines HTML &lt; -DIV-Tags &gt; auf einer Webseite verwendet wird.</summary>
+        <summary>Gibt den eindeutigen Bezeichner zurück, der zum Identifizieren eines HTML DIV-Tags auf einer Webseite verwendet &lt; &gt; wird.</summary>
         <value>To be added.</value>
         <remarks><para>Das Tag wird einem Element in einem Dokument zugeordnet, das in einer Webseite gespeichert wurde. Bei einem Element kann es sich um eine vollständige Arbeitsmappe, ein Arbeitsblatt, einen ausgewählten Druckbereich, einen AutoFilter-Bereich, einen Zellbereich, ein Diagramm, einen PivotTable-Bericht oder eine Abfragetabelle handeln.</para>
           <para> </para></remarks>
@@ -195,7 +195,7 @@
       <Docs>
         <summary>Gibt die URL (im Intranet oder World Wide Web) oder Pfad (lokal oder Netzwerk) zu dem Speicherort, in dem das angegebene Quellobjekt gespeichert wurde, zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Eigenschaft "Filename"</b> generiert einen Fehler, wenn kein Ordner im angegebenen Pfad vorhanden ist.</para>
+        <remarks><para>Die <b>Filename-Eigenschaft</b> generiert einen Fehler, wenn kein Ordner im angegebenen Pfad vorhanden ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -227,7 +227,7 @@
       <Docs>
         <summary>Gibt den Typ des HTML-Codes zurück, der von Microsoft Excel beim Speichern des angegebenen Elements als Webseite generiert wird, oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>HtmlType -Eigenschaft</b> kann eine der Konstanten sein, die angeben, ob das Element statisch oder interaktiv auf der <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> Webseite ist. Der Standardwert ist <b>xlHtmlStatic</b>.</para>
+        <remarks><para>Die <b>HtmlType-Eigenschaft</b> kann eine der Konstanten sein, die <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> angibt, ob das Element statisch oder interaktiv auf der Webseite ist. Der Standardwert ist <b>xlHtmlStatic</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,9 +281,9 @@
         <Parameter Name="Create" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Create">Optionales <b>Objekt</b>. Ist eine HTML-Datei vorhanden, wird die Datei ersetzt, wenn dieses Argument auf <b>True</b> festgelegt wird; das Element oder die Elemente werden am Ende der Datei eingefügt, wenn dieses Argument auf <b>False</b> festgelegt wird. Wenn die Datei nicht vorhanden ist, wird die Datei unabhängig vom Wert des Arguments <paramref name="Create" /> erstellt.</param>
+        <param name="Create"><b>Optional-Objekt</b>. Ist eine HTML-Datei vorhanden, wird die Datei ersetzt, wenn dieses Argument auf <b>True</b> festgelegt wird; das Element oder die Elemente werden am Ende der Datei eingefügt, wenn dieses Argument auf <b>False</b> festgelegt wird. Wenn die Datei nicht vorhanden ist, wird die Datei unabhängig vom Wert des <paramref name="Create" /> Arguments erstellt.</param>
         <summary>Speichert ein Element oder eine Auflistung von Elementen in einem Dokument auf einer Webseite.</summary>
-        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> Eigenschaft gibt den Speicherort und Namen der HTML-Datei zurück oder legt sie fest.</para>
+        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> Eigenschaft gibt den Speicherort und den Namen der HTML-Datei zurück oder legt sie fest.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -310,7 +310,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Blattnamen für das angegebene Objekt <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> zurück.</summary>
+        <summary>Gibt den Blattnamen für das angegebene <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> Objekt zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,7 +338,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den eindeutigen Namen zurück, der Elemente identifiziert, deren Eigenschaftswert <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> <b>xlSourceRange</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>oder <b>xlSourceQuery</b>ist.</summary>
+        <summary>Gibt den eindeutigen Namen zurück, der Elemente mit dem <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> Eigenschaftswert <b>xlSourceRange</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>oder <b>XlSourceQuery</b>identifiziert.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn die <b>SourceType</b>-Eigenschaft auf <b>xlSourceRange</b> festgelegt ist, gibt diese Eigenschaft einen Bereich zurück, bei dem es sich um einen definierten Namen handeln kann. Wenn die <b>SourceType</b>-Eigenschaft auf <b>xlSourceChart</b>, <b>xlSourcePivotTable</b> oder <b>xlSourceQuery</b> festgelegt ist, gibt diese Eigenschaft den Namen des Objekts zurück, z. B. einen Diagrammnamen, einen PivotTable-Berichtsnamen oder einen Abfragetabellennamen.</para>
           <para> </para></remarks>
@@ -367,7 +367,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert zurück, der den Typ des zu veröffentlichende Elements angibt.</summary>
+        <summary>Gibt einen Wert zurück, der den Typ des zu veröffentlichenden Elements angibt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
