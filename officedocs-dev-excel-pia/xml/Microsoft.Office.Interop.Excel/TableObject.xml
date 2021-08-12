@@ -1,5 +1,5 @@
 <Type Name="TableObject" FullName="Microsoft.Office.Interop.Excel.TableObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0e083aa43c5aa4dac5d58ee3a90f965dfd50e41a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009772" /></Metadata><TypeSignature Language="C#" Value="public interface TableObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="91bbbc47c0f3c750610af0cee450904c0969bb56fe5f5ba5a79465755d6504a0" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519833" /></Metadata><TypeSignature Language="C#" Value="public interface TableObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableObject" />
@@ -51,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, ob die Spaltenbreiten bei jeder Aktualisierung der angegebenen Abfragetabelle automatisch so angepasst werden, dass sie optimal angepasst werden. Der Standardwert ist <b>True</b>. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
+        <summary>Gibt an, ob die Spaltenbreiten bei jeder Aktualisierung der angegebenen Abfragetabelle automatisch an die optimale Anpassung angepasst werden. Der Standardwert ist <b>True</b>. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Anwendung Excel darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Excel Anwendung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>Ganze</b> Zahl (<b>int</b> in C#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b> -Wert (<b>int</b> in C#).</summary>
         <value>To be added.</value>
         <remarks><para>Da das Objekt in Excel erstellt wurde, gibt diese Eigenschaft den Hexadezimalwert 5843454C zurück, der die Zeichenfolge "XCEL" darstellt.</para>
           <para> </para></remarks>
@@ -134,7 +134,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Löscht das <b>TableObject -Objekt.</b></summary>
+        <summary>Löscht das <b>TableObject-Objekt.</b></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Zelle in der oberen linken Ecke des Zielbereichs der Abfragetabelle (der Bereich, in dem die sich ergebende Abfragetabelle positioniert wird). Der Zielbereich muss sich auf dem Arbeitsblatt befinden, das das <b>TableObject -Objekt</b> enthält. <b>Bereich</b>. Schreibgeschützt</summary>
+        <summary>Die Zelle in der oberen linken Ecke des Zielbereichs der Abfragetabelle (der Bereich, in dem die sich ergebende Abfragetabelle positioniert wird). Der Zielbereich muss sich auf dem Arbeitsblatt befinden, das das <b>TableObject-Objekt</b> enthält. <b>Bereich</b>. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn der Benutzer die angegebene Abfragetabelle bearbeiten kann. <b>False,</b> wenn der Benutzer nur die Abfragetabelle aktualisieren kann. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
+        <summary><b>True,</b> wenn der Benutzer die angegebene Abfragetabelle bearbeiten kann. <b>False,</b> wenn der Benutzer nur die Abfragetabelle aktualisieren kann. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,7 +251,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, ob die Anzahl der Zeilen, die von der letzten Verwendung der Refresh -Methode zurückgegeben wird, größer ist als die Anzahl der auf dem Arbeitsblatt verfügbaren Zeilen. <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt</summary>
+        <summary>Gibt an, ob die Anzahl der Zeilen, die durch die letzte Verwendung der Refresh -Methode zurückgegeben wird, größer ist als die Anzahl der zeilen, die auf dem Arbeitsblatt verfügbar sind. <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +307,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Wert vom Typ Object</b> zurück, der das übergeordnete Objekt des angegebenen <b>TableObject -Objekts</b> darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert vom Typ <b> Object </b> zurück, der das übergeordnete Objekt des angegebenen <b>TableObject-Objekts</b> darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,7 +338,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, ob Spaltensortierungs-, Filter- und Layoutinformationen bei jeder Aktualisierung einer Abfragetabelle beibehalten werden. Der Standardwert ist <b>False</b>. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
+        <summary>Gibt an, ob Spaltensortierungs-, Filter- und Layoutinformationen beibehalten werden, wenn eine Abfragetabelle aktualisiert wird. Der Standardwert ist <b>Falsch</b>. <b>Boolean</b> (<b>bool</b> in C#) Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -395,7 +395,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Diese Methode aktualisiert das <b>TableObject -Objekt.</b></summary>
+        <summary>Diese Methode aktualisiert das <b>TableObject-Objekt.</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -426,7 +426,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCellInsertionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, wie Zeilen im angegebenen Arbeitsblatt hinzugefügt oder gelöscht werden, um die Anzahl der Zeilen in einem Datensatzsatz zu speichern, der von einer Abfrage zurückgegeben wird. <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" /> Lese-/Schreibzugriff</summary>
+        <summary>Gibt zurück oder legt fest, wie Zeilen im angegebenen Arbeitsblatt hinzugefügt oder gelöscht werden, um die Anzahl der Zeilen in einem Datensatz aufzunehmen, der von einer Abfrage zurückgegeben wird. <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" /> Lese-/Schreibzugriff</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,7 +454,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den Bereich des Arbeitsblatts darstellt, das von der angegebenen Abfragetabelle belegt wird. Schreibgeschützt</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Objekt zurück, das den Bereich des Arbeitsblatts darstellt, der von der angegebenen Abfragetabelle eingenommen wird. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -513,7 +513,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> vom <b>TableObject</b> zum Herstellen einer Verbindung mit dem Modell verwendete Objekt zurück. Die <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" /> Eigenschaft für das <b>WorkbookConnection -Objekt</b> kann dann zum Öffnen und Bearbeiten von DAX usw. verwendet werden. Schreibgeschützt</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> vom <b>TableObject</b> zum Herstellen einer Verbindung mit dem Modell verwendete Objekt zurück. Die <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" /> Eigenschaft für das <b>WorkbookConnection</b> -Objekt kann dann verwendet werden, um DAX abzurufen und zu bearbeiten usw. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

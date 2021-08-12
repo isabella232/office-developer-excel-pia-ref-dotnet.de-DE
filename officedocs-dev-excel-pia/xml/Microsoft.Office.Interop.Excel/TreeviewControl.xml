@@ -1,5 +1,5 @@
 <Type Name="TreeviewControl" FullName="Microsoft.Office.Interop.Excel.TreeviewControl">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009492" /></Metadata><TypeSignature Language="C#" Value="public interface TreeviewControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="240298a09f2e5c3b1d1cbbdd4ac7797406f59f87b6ed92c393ff18371df063fe" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519259" /></Metadata><TypeSignature Language="C#" Value="public interface TreeviewControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TreeviewControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TreeviewControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface TreeviewControl" />
@@ -19,7 +19,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt das hierarchische Steuerelement zur Auswahl von Elementen eines Cube-Felds dar. Sie verwenden dieses Objekt hauptsächlich zur Aufzeichnung von Makros; es dient keinem anderen Zweck.</summary>
-    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> Eigenschaft, um das <b>TreeviewControl -Objekt zurück.</b></para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> Eigenschaft, um das <b>TreeviewControl -Objekt</b> zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -46,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,7 +77,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -109,9 +109,9 @@
       <Docs>
         <summary>Legt den Drillstatus (erweitert oder sichtbar) der Elemente des Cube-Felds im Steuerelement für die hierarchische Elementauswahl eines Cube-Felds fest. Diese Eigenschaft wird hauptsächlich zur Makroaufzeichnung verwendet und ist nicht für andere Zwecke vorgesehen.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Drilled</b>-Eigenschaft akzeptiert ein Array. Jedes Element des Arrays entspricht einer Ebene des erweiterten Cube-Felds. Die maximale Anzahl der Elemente entspricht der Anzahl der Ebenen im Cube-Feld. Jedes Element des Arrays ist ein Array vom Typ <b>String</b>, das die eindeutigen Elementnamen enthält, die auf der entsprechenden Ebene des Steuerelements sichtbar (erweitert) sind. Sehen Sie sich die Eigenschaft des Objekts an, um zu bestimmen, wann Elemente in einer erweiterten <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> Ansicht explizit ausgeblendet sind.</para>
+        <remarks><para>Die <b>Drilled</b>-Eigenschaft akzeptiert ein Array. Jedes Element des Arrays entspricht einer Ebene des erweiterten Cube-Felds. Die maximale Anzahl der Elemente entspricht der Anzahl der Ebenen im Cube-Feld. Jedes Element des Arrays ist ein Array vom Typ <b>String</b>, das die eindeutigen Elementnamen enthält, die auf der entsprechenden Ebene des Steuerelements sichtbar (erweitert) sind. Sehen Sie sich die <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> Eigenschaft des Objekts <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> an, um zu bestimmen, wann Elemente in einer erweiterten Ansicht explizit ausgeblendet sind.</para>
           <para>
-            <b>Hinweis:</b>Diese Eigenschaft gibt kein Array zurück, das den Drilledstatus der Elemente des Cubefelds im hierarchischen Elementauswahlsteuerelement eines Cubefelds darstellt.</para>
+            <b>Hinweis:</b>Diese Eigenschaft gibt kein Array zurück, das den Drilled-Status der Cubefeldelemente im hierarchischen Elementauswahl-Steuerelement eines Cubefelds darstellt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -141,9 +141,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den ausgeblendeten Status der Elemente des Cubefelds im hierarchischen Elementauswahlsteuerelement eines Cubefelds zurück oder legt den Status fest.</summary>
+        <summary>Gibt den ausgeblendeten Status der Cubefeldelemente im Steuerelement für die Auswahl hierarchischer Elemente eines Cubefelds zurück oder legt den ausgeblendeten Status fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die <b>Hidden</b>-Eigenschaft gibt ein Array zurück oder legt es fest. Jedes Element des Arrays entspricht einer Ebene des ausgeblendeten Cubefelds. Die maximale Anzahl der Elemente entspricht der Anzahl der Ebenen im Cubefeld. Jedes Element des Arrays ist ein Array vom Typ <b>String</b>, das die eindeutigen Elementnamen enthält, die auf der entsprechenden Ebene des Steuerelements ausgeblendet sind. Sehen Sie sich die Eigenschaft des Objekts an, um zu bestimmen, wann Elemente im Steuerelement <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> sichtbar (erweitert) sind.</para>
+        <remarks><para>Die <b>Hidden</b>-Eigenschaft gibt ein Array zurück oder legt es fest. Jedes Element des Arrays entspricht einer Ebene des ausgeblendeten Cubefelds. Die maximale Anzahl der Elemente entspricht der Anzahl der Ebenen im Cubefeld. Jedes Element des Arrays ist ein Array vom Typ <b>String</b>, das die eindeutigen Elementnamen enthält, die auf der entsprechenden Ebene des Steuerelements ausgeblendet sind. Sehen Sie sich die <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> Objekts an, um zu bestimmen, wann Elemente im Steuerelement sichtbar (erweitert) sind.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

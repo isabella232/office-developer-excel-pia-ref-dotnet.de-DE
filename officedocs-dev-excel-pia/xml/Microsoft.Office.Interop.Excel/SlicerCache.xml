@@ -1,5 +1,5 @@
 <Type Name="SlicerCache" FullName="Microsoft.Office.Interop.Excel.SlicerCache">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a96b54b98889ea92252a13d6047f49b294863580" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010248" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCache" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="831f2fcf8da26c9b01889aa87c03caf5c63f6fe2aafabd505fe7786d4d15c8e3" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519609" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCache" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCache" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCache" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerCache" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt den aktuellen Filterstatus für einen Datenschnitt und Informationen dazu dar, mit welchem Datenschnitt oder mit <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> welchem Datenschnitt eine Verbindung besteht.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Objekts, um auf die Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Objekten in einer Arbeitsmappe zu zugreifen.</para>
-      <para>Jeder Datenschnitt verfügt über ein Basisobjekt, das die im Datenschnitt angezeigten Elemente und den aktuellen Benutzeroberflächenzustand der Kacheln darstellt, die mit den entsprechenden Elementbeschriftungen <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> angezeigt werden. Jedes Datenschnittsteuerelement, das dem Benutzer in Excel angezeigt wird, wird durch ein Objekt dargestellt, dem ein <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Objekt zugeordnet ist.</para>
+    <summary>Stellt den aktuellen Filterstatus für einen Datenschnitt und Informationen dazu dar, mit <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> welchem <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> datenschnitt verbunden ist.</summary>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Objekts, um auf die Auflistung von Objekten in einer Arbeitsmappe <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> zuzugreifen.</para>
+      <para>Jeder Datenschnitt verfügt über ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Basisobjekt, das die im Datenschnitt angezeigten Elemente und den aktuellen Benutzeroberflächenstatus der Kacheln darstellt, die mit den entsprechenden Elementbeschriftungen angezeigt werden. Jedes Datenschnittsteuerelement, das dem Benutzer in Excel angezeigt wird, wird durch ein <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekt dargestellt, dem ein <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Objekt zugeordnet ist.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, ruft sie ein Objekt ab, das <see cref="T:Microsoft.Office.Interop.Excel.Application" /> die Microsoft Excel-Anwendung darstellt. Bei Verwendung mit einem Objektbezeichner ruft diese Eigenschaft ein Objekt ab, das <see cref="T:Microsoft.Office.Interop.Excel.Application" /> den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Wenn diese Eigenschaft ohne Einen Objektbezeichner verwendet wird, ruft sie ein Objekt ab, <see cref="T:Microsoft.Office.Interop.Excel.Application" /> das die Microsoft Excel Anwendung darstellt. Bei Verwendung mit einem Objektbezeichner ruft diese Eigenschaft ein Objekt ab, <see cref="T:Microsoft.Office.Interop.Excel.Application" /> das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para> </para></remarks>
@@ -77,7 +77,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the filter for either slicer or timeline, depending on the slicer cache type.</summary>
+        <summary>Löscht den Filter für den Datenschnitt oder die Zeitachse, je nach Cachetyp des Datenschnitts.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the filter for a timeline (date filter).</summary>
+        <summary>Löscht den Filter für eine Zeitachse (Datumsfilter).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +128,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht die Filterung aller dem angegebenen Datenschnittcache zugeordneten Datenschnitte.</summary>
-        <remarks><para>Wenn Sie die Filterung aus einem Datenschnitt mithilfe der Methode löschen, aber ein oder mehrere Datenschnitte datenübergreifende Filter in diesem Datenschnitt sind, bleiben einige Elemente im ersten Datenschnitt <see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" /> ausgegraut. Wenn Sie z. B. einen Datenschnitt "Kunde" und "Land" haben, die quergefiltert sind, und Sie ActiveWorkbook.SlicerCaches("Slicer_Customer") ausführen. ClearManualFilter, all the items in the Customer slicer will not become available until you execute ActiveWorkbook.SlicerCaches("Slicer_Country"). ClearManualFilter. Weitere Informationen zur Kreuzfilterung finden Sie in der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Eigenschaft.</para>
+        <remarks><para>Wenn Sie die Filterung anhand eines Datenschnitts mithilfe der <see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" /> Methode deaktivieren, aber ein oder mehrere Datenschnitte Daten in diesem Datenschnitt kreuzen, bleiben einige Elemente im ersten Datenschnitt abgeblendet. Wenn Sie beispielsweise über einen Datenschnitt "Kunde" und "Land" verfügen, der kreuzgefiltert ist, und ActiveWorkbook.SlicerCaches("Slicer_Customer") ausführen. ClearManualFilter, all the items in the Customer slicer will not become available until you execute ActiveWorkbook.SlicerCaches("Slicer_Country"). ClearManualFilter. Weitere Informationen zur Kreuzfilterung finden Sie in der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Eigenschaft.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -158,7 +158,7 @@
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der dieses Objekt erstellt wurde. <b></b></summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der dieses Objekt erstellt wurde. <b></b></value>
         <remarks><para>Read-only <b>lang</b>.</para>
-          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen aus vier Zeichen großen <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" /> Erstellercode enthält. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" /> Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh vorgesehen, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -188,12 +188,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob ein Datenschnitt an der Kreuzfilterung mit anderen Datenschnitten beteiligt ist, die denselben Datenschnittcache verwenden, und wie die Kreuzfilterung angezeigt wird.</summary>
+        <summary>Ruft ab oder legt fest, ob ein Datenschnitt an der Kreuzfilterung mit anderen Datenschnitten teilnimmt, die denselben Datenschnittcache verwenden, und wie die Kreuzfilterung angezeigt wird.</summary>
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType" />-Objekt.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Wenn der gleichen PivotTable mehrere Datenschnitte zugeordnet sind, werden standardmäßig Elemente grau dargestellt, auf die in einem Datenschnitt gefiltert wird, denen jedoch in einem anderen Datenschnitt keine Daten entsprechen. Wenn Sie z. B. über einen Datenschnitt "Land" (Country) und einen Datenschnitt "Bundesland" (State) verfügen und Sie auf ein Land im Datenschnitt "Land" klicken, werden alle Bundesländer, die nicht in diesem Land liegen, grau dargestellt. Dieses Feature wird als "Kreuzfilterung" bezeichnet.</para>
-          <para>Die Einstellungen der Benutzeroberfläche, die der Einstellung der Eigenschaft entsprechen, sind die Kontrollkästchen "Elemente ohne Daten visuell anzeigen" und "Elemente ohne Daten zuletzt anzeigen" im Dialogfeld <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> "Datenschnitteinstellungen". Das Festlegen der Eigenschaft entspricht dem Auswählen der letzten Kontrollkästchen "Elemente ohne Daten visuell angeben" und "Elemente <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> ohne Daten anzeigen". Das Festlegen der Eigenschaft entspricht der Auswahl nur des Kontrollkästchens <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> "Elemente visuell angeben" ohne Daten. Das Löschen beider Kontrollkästchen entspricht dem Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" /> .</para>
-          <para>OLAP-Datenquellen ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) werden von der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> des Objekts nicht <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> unterstützt. Verwenden Sie für OLAP-Datenquellen stattdessen <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Eigenschaft des Objekts.</para>
+          <para>Die Einstellungen der Benutzeroberfläche, die der Einstellung der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Eigenschaft entsprechen, sind die Kontrollkästchen "Elemente ohne Daten visuell angeben" und "Elemente ohne Daten zuletzt anzeigen" im Dialogfeld "Datenschnitt Einstellungen". Das Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Eigenschaft <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> entspricht dem Auswählen der letzten Kontrollkästchen "Elemente ohne Daten visuell anzeigen" und "Elemente ohne Daten anzeigen". Durch Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Eigenschaft wird nur das Kontrollkästchen "Elemente ohne Daten anzeigen" <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> ausgewählt. Das Deaktivieren beider Kontrollkästchen entspricht dem Festlegen der <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" /> .</para>
+          <para>OLAP-Datenquellen ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) werden von der Eigenschaft des Objekts nicht <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> unterstützt. Verwenden Sie für OLAP-Datenquellen stattdessen die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -219,7 +219,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht den angegebenen Datenschnittcache und die ihm zugeordneten Datenschnitte.</summary>
-        <remarks><para>Um einen bestimmten Datenschnitt unabhängig vom Datenschnittcache zu löschen, verwenden Sie stattdessen die <see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Methode des Objekts.</para>
+        <remarks><para>Um einen bestimmten Datenschnitt unabhängig vom Datenschnittcache zu löschen, verwenden Sie <see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" /> stattdessen die Methode des <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -246,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, ob der Datenschnitt- oder Zeitachsenfilterstatus nicht mehr angezeigt wird. <b>Boolean</b> (<b>bool</b> in C#). Schreibgeschützt</summary>
+        <summary>Gibt zurück, ob der Datenschnitt- oder Zeitachsenfilterstatus gelöscht wird. <b>Boolean</b> (<b>bool</b> in C#). Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,7 +274,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Index des angegebenen <b>SlicerCache -Objekts</b> in der Auflistung <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> ab.</summary>
+        <summary>Ruft den Index des angegebenen <b>SlicerCache</b> -Objekts in der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> Auflistung ab.</summary>
         <value>Gibt <see cref="T:System.Int32" /> zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,7 +302,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True,</b> Wenn der Datenschnittcache für einen Datenschnitt in einer Tabelle ist. <b>Andernfalls "False".</b> <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt</summary>
+        <summary><b></b> True , wenn der Datenschnittcache für einen Datenschnitt in einer Tabelle gilt. <b>Andernfalls False.</b> <b>Boolean</b> (<b>bool</b> in C#) Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -330,7 +330,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>ListObject -Objekt</b> für das Objekt <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> zurück. Schreibgeschützt</summary>
+        <summary>Gibt ein <b>ListObject</b> -Objekt für das <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> Objekt zurück. Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,7 +363,7 @@
       <Docs>
         <summary>Ruft den Namen des Datenschnittcaches ab oder legt den Namen fest.</summary>
         <value>Der Name des Datenschnittcaches.</value>
-        <remarks><para>Der Name des Datenschnittcaches muss innerhalb des Namensraums der Arbeitsmappe eindeutig sein. Standardmäßig ist der einem Datenschnitt zugewiesene Name Slicer_, gefolgt vom Namen des PivotTable-Felds, dem der Datenschnittcache zugeordnet ist. Wenn beispielsweise der Datenschnitt dem Feld "Produktkategorie" (Product Category) in der PivotTable zugeordnet ist, ergibt sich als Standardname Slicer_Product_Category (alle Leerschritte im Feldnamen werden durch Unterstrichzeichen ersetzt). Wenn mehr als ein Feld "Produktkategorie" in derselben Arbeitsmappe vorhanden ist, der ein Datenschnitt zugeordnet ist, oder eine andere benannte Entität in der Arbeitsmappe mit dem Namen Slicer_Product_Category fügt Excel eine Zahl nach dem Namen an, um einen eindeutigen Namen wie z. B. Slicer_Product_Category1.</para>
+        <remarks><para>Der Name des Datenschnittcaches muss innerhalb des Namensraums der Arbeitsmappe eindeutig sein. Standardmäßig ist der einem Datenschnitt zugewiesene Name Slicer_, gefolgt vom Namen des PivotTable-Felds, dem der Datenschnittcache zugeordnet ist. Wenn beispielsweise der Datenschnitt dem Feld "Produktkategorie" (Product Category) in der PivotTable zugeordnet ist, ergibt sich als Standardname Slicer_Product_Category (alle Leerschritte im Feldnamen werden durch Unterstrichzeichen ersetzt). Wenn in derselben Arbeitsmappe mehr als ein Produktkategoriefeld mit einem ihm zugeordneten Datenschnitt oder eine andere benannte Entität in der Arbeitsmappe mit dem Namen Slicer_Product_Category vorhanden ist, fügt Excel eine Zahl nach dem Namen an, um einen eindeutigen Namen zu erzeugen, z. B. Slicer_Product_Category1.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -391,10 +391,10 @@
       </ReturnValue>
       <Docs>
         <summary>Ruft ab, ob der dem angegebenen Datenschnittcache zugeordnete Datenschnitt auf einer OLAP-Datenquelle basiert.</summary>
-        <value><b>true,</b> wenn der dem angegebenen Datenschnittcache zugeordnete Datenschnitt auf einer #A0 basiert; andernfalls <b>false</b>.</value>
+        <value><b>true,</b> wenn der dem angegebenen Datenschnittcache zugeordnete Datenschnitt auf einer OLAP-Datenquelle basiert; andernfalls <b>false</b>.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para>
-            <b>true</b>, wenn der Datenschnitt auf einer #A0 basiert; andernfalls <b>false</b>.</para>
+            <b>true</b>, wenn der Datenschnitt auf einer OLAP-Datenquelle basiert; andernfalls <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -450,10 +450,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerPivotTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft eine Auflistung ab, die Informationen zu den PivotTables enthält, die derzeit <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> vom Datenschnittcache gefiltert werden.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung, die Informationen zu den PivotTables enthält, die der Datenschnittcache gerade filtert.</value>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung ab, die Informationen zu den PivotTables enthält, die der Datenschnittcache derzeit filtert.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> Auflistung, die Informationen zu den PivotTables enthält, die der Datenschnittcache derzeit filtert.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Die von der Eigenschaft zurückgegebene Auflistung ist leer, wenn der dem angegebenen Datenschnitt zugeordnete Datenschnitt nicht mit <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> PivotTables verbunden ist.</para>
+          <para>Die <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> von der Eigenschaft zurückgegebene Auflistung ist <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> leer, wenn der mit dem angegebenen Datenschnitt verknüpfte Datenschnitt <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> nicht mit PivotTables verbunden ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -514,11 +514,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob mit dem angegebenen Datenschnittcache verbundene Datenschnitte Elemente anzeigen, die im entsprechenden PivotCache gelöscht wurden.</summary>
-        <value><b>true,</b> wenn mit dem angegebenen Datenschnittcache verbundene Datenschnitte Elemente anzeigen, die im entsprechenden PivotCache gelöscht wurden; andernfalls <b>false</b>. The default is <b>true</b>.</value>
+        <summary>Ruft ab oder legt fest, ob mit dem angegebenen Datenschnittcache verbundene Datenschnitte Elemente anzeigen, die aus dem entsprechenden PivotCache gelöscht wurden.</summary>
+        <value><b>true,</b> wenn mit dem angegebenen Datenschnittcache verbundene Datenschnitte Elemente anzeigen, die aus dem entsprechenden PivotCache gelöscht wurden; andernfalls <b>false</b>. The default is <b>true</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> Eigenschaft auf <b>"true"</b> (Standard) festgelegt ist, werden Elemente, die aus den Quelldaten gelöscht wurden, in den Datenschnitten angezeigt, die mit dem angegebenen Datenschnittcache verbunden sind. Die Eigenschaft entspricht der Einstellung des Kontrollkästchens "Elemente aus Datenquellen anzeigen" im <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> Dialogfeld "Datenschnitteinstellungen".</para>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> Eigenschaft gilt nur für Datenschnitte, die auf Arbeitsmappenbereichen oder Listen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), oder auf Datenschnitte, die auf relationalen Datenquellen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> und <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Es wird versucht, die Eigenschaft für Datenschnitte, die mit PivotTables verbunden sind, basierend <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> auf externen OLAP-Datenquellen ( ) zu <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> setzen.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler.</para>
+          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> Eigenschaft auf <b>"true"</b> (Standardeinstellung) festgelegt ist, werden Elemente, die aus den Quelldaten gelöscht wurden, in den Datenschnitten angezeigt, die mit dem angegebenen Datenschnittcache verbunden sind. Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> Eigenschaft entspricht der Einstellung des Kontrollkästchens Elemente anzeigen, die aus dem Datenquellen-Kontrollkästchen im Dialogfeld "Datenschnitt Einstellungen" gelöscht wurden.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> Eigenschaft gilt nur für Datenschnitte, die auf Arbeitsmappenbereichen oder Listen ( . <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /><see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) oder für Datenschnitte, die auf relationalen Datenquellen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> und <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Beim Versuch, die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> Eigenschaft für Datenschnitte festzulegen, die mit PivotTables basierend auf externen OLAP-Datenquellen verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -545,8 +545,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die Auflistung von Objekten ab, die die Ebenen einer OLAP-Hierarchie darstellen, auf der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> der angegebene Datenschnittcache basiert.</summary>
-        <value>Die Auflistung von Objekten, die die Ebenen einer OLAP-Hierarchie darstellen, auf der <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> der angegebene Datenschnittcache basiert.</value>
+        <summary>Ruft die Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekten ab, die die Ebenen einer OLAP-Hierarchie darstellen, auf der der angegebene Datenschnittcache basiert.</summary>
+        <value>Die Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekten, die die Ebenen einer OLAP-Hierarchie darstellen, auf der der angegebene Datenschnittcache basiert.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> Eigenschaft gilt nur für Datenschnitte, die OLAP-Datenquellen filtern ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>). Der Versuch, auf diese Eigenschaft von anderen als OLAP-Datenschnitten zuzugreifen, löst einen Laufzeitfehler aus.</para>
           <para> </para></remarks>
@@ -606,7 +606,7 @@
         <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> Auflistung ab, die die Auflistung aller Elemente im Datenschnittcache enthält.</summary>
         <value>Eine <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> Auflistung, die die Auflistung aller Elemente im Datenschnittcache enthält.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Die Eigenschaft des Objekts gilt nur für Datenschnitte, die auf PivotTables basieren, die auf <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Arbeitsmappenbereichen oder Listen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), oder für Datenschnitte, die auf PivotTables basieren, die auf relationalen Datenquellen ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> und <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Zugriff auf die Eigenschaft für Datenschnitte, die mit einer externen <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> OLAP-Datenquelle verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler. Verwenden Sie für OLAP-Datenquellen stattdessen <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Eigenschaft des Objekts.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> Eigenschaft des Objekts gilt nur für <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Datenschnitte, die auf PivotTables basieren, die auf Arbeitsmappenbereichen oder Listen ( . <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /><see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) oder für Datenschnitte, die auf PivotTables basieren, die auf relationalen Datenquellen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> und <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>). Beim Versuch, auf die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> Eigenschaft für Datenschnitte zuzugreifen, die mit einer externen OLAP-Datenquelle verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler. Verwenden Sie für OLAP-Datenquellen stattdessen die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -633,8 +633,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Slicers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung ab, die die Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekten enthält, die dem angegebenen zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> sind.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung, die die Auflistung von Objekten <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> enthält, die dem angegebenen zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> sind.</value>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung ab, die die Auflistung von Objekten enthält, <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> die dem angegebenen Objekt zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> sind.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> Auflistung, die die Auflistung von <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> Objekten enthält, die dem angegebenen Objekt zugeordnet <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> sind.</value>
         <remarks><para>Schreibgeschützt.</para>
           <para> </para></remarks>
       </Docs>
@@ -669,7 +669,7 @@
         <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.XlSlicerSort" />-Objekt.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Die Standardeinstellung dieser Eigenschaft ist <see cref="F:Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending" /> .</para>
-          <para>Die Eigenschaft des Objekts gilt nur für Datenschnitte, die auf PivotTables basieren, die mit Arbeitsmappenbereichen oder Listen <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Zugriff auf die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> für Datenschnitte, die mit einer OLAP-Datenquelle verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler. Verwenden Sie für OLAP-Datenquellen stattdessen <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" /> die <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Eigenschaft des Objekts.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> Eigenschaft des Objekts gilt nur für <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> Datenschnitte, die auf PivotTables basieren, die mit Arbeitsmappenbereichen oder Listen verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Beim Versuch, auf die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> Eigenschaft für Datenschnitte zuzugreifen, die mit einer OLAP-Datenquelle verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler. Verwenden Sie für OLAP-Datenquellen stattdessen die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -702,8 +702,8 @@
         <summary>Ruft ab oder legt fest, ob Elemente im angegebenen Datenschnittcache nach den benutzerdefinierten Listen sortiert werden.</summary>
         <value><b>true,</b> wenn Elemente im angegebenen Datenschnittcache nach den benutzerdefinierten Listen sortiert werden; andernfalls <b>false</b>.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Die Eigenschaft entspricht der Einstellung des Kontrollkästchens "Benutzerdefinierte Listen beim Sortieren verwenden" des Dialogfelds <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> "Datenschnitteinstellungen". Klicken Sie zum Zugreifen auf die benutzerdefinierten Listen, die der aktuellen Installation von Excel zugeordnet sind, auf die Registerkarte Datei, klicken Sie auf Optionen, dann auf Erweitert, und klicken sie dann unter der Kategorie Allgemein auf Benutzerdefinierte Listen bearbeiten.</para>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> Eigenschaft gilt nur für Datenschnitte, die Nicht-OLAP-Datenquellen filtern. Der Versuch, auf diese Eigenschaft über einen Datenschnittcache zu zugreifen, der eine OLAP-Datenquelle filtert ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> Eigenschaft entspricht der Einstellung des Kontrollkästchens "Benutzerdefinierte Listen beim Sortieren verwenden" des Dialogfelds "Slicer Einstellungen". Klicken Sie zum Zugreifen auf die benutzerdefinierten Listen, die der aktuellen Installation von Excel zugeordnet sind, auf die Registerkarte Datei, klicken Sie auf Optionen, dann auf Erweitert, und klicken sie dann unter der Kategorie Allgemein auf Benutzerdefinierte Listen bearbeiten.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> Eigenschaft gilt nur für Datenschnitte, die Nicht-OLAP-Datenquellen filtern. Beim Versuch, auf diese Eigenschaft aus einem Datenschnittcache zuzugreifen, der eine OLAP-Datenquelle filtert ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -733,8 +733,8 @@
         <summary>Ruft den Namen der Datenquelle ab, mit der der Datenschnitt verbunden ist.</summary>
         <value>Der Name der Datenquelle, mit der der Datenschnitt verbunden ist.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Für Datenschnitte basierend auf Daten in der Arbeitsmappe ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) oder Datenschnitte basierend auf externen Nicht-OLAP-Daten ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> und <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>), gibt den Namen der entsprechenden Spalte in den Quelldaten zurück.</para>
-          <para>Für OLAP-Datenschnitte ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>), gibt den eindeutigen Namen des MDX der Hierarchie zurück, auf der der Datenschnitt basiert.</para>
+          <para>Für Datenschnitte, die auf Daten in der Arbeitsmappe basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) oder Datenschnitte basierend auf externen Nicht-OLAP-Daten ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> und <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>), gibt den Namen der entsprechenden Spalte in den Quelldaten zurück.</para>
+          <para>Für OLAP-Datenschnitte ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>), gibt den eindeutigen MDX-Namen der Hierarchie zurück, auf der der Datenschnitt basiert.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -764,7 +764,7 @@
         <summary>Ruft die Art der Datenquelle ab, mit der der Datenschnitt verbunden ist.</summary>
         <value>Die Art der Datenquelle, mit der der Datenschnitt verbunden ist.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Nur die <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" /> <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> Datentypen und Datenquellentypen werden unterstützt.</para>
+          <para>Nur die <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" /> Datentypen und <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> Datenquellentypen werden unterstützt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -791,7 +791,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TimelineState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Der zeitachsenspezifische Status des <b>SlicerCache-Objekts.</b> Schreibgeschützt</summary>
+        <summary>Der zeitachsenspezifische Zustand des <b>SlicerCache-Objekts.</b> Schreibgeschützt</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -822,7 +822,7 @@
         <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> Auflistung ab, die die Auflistung aller sichtbaren Elemente im angegebenen Datenschnittcache enthält.</summary>
         <value>Eine <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> Auflistung, die die Auflistung aller sichtbaren Elemente im angegebenen Datenschnittcache enthält.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Die Eigenschaft gilt nur für Datenschnitte, die auf PivotTables basieren, die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> auf Arbeitsmappenbereichen oder Listen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Zugriff auf die Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> für Datenschnitte, die mit einer OLAP-Datenquelle verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> Eigenschaft gilt nur für Datenschnitte, die auf PivotTables basieren, die auf Arbeitsmappenbereichen oder Listen ( . <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /><see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Beim Versuch, auf die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> Eigenschaft für Datenschnitte zuzugreifen, die mit einer OLAP-Datenquelle verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>) generiert einen Laufzeitfehler.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -852,10 +852,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die Liste der eindeutigen Namen von MDX für Elemente auf allen Hierarchieebenen ab, auf denen die manuelle Filterung angewendet wird, oder legt diese fest.</summary>
-        <value>Die Liste der eindeutigen MDX-Namen für Elemente auf allen Hierarchieebenen, auf denen die manuelle Filterung angewendet wird.</value>
+        <summary>Dient zum Abrufen oder Festlegen der Liste der eindeutigen MDX-Namen für Elemente auf allen Ebenen der Hierarchie, auf die manuelle Filterung angewendet wird.</summary>
+        <value>Die Liste der eindeutigen MDX-Namen für Elemente auf allen Ebenen der Hierarchie, auf die manuelle Filterung angewendet wird.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" /> Eigenschaft gilt nur für Datenschnitte, die auf OLAP-Datenquellen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>).</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" /> Eigenschaft gilt nur für Datenschnitte, die auf OLAP-Datenquellen ( . <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /><see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>true</b>).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -882,10 +882,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein Objekt ab, das die vom angegebenen Datenschnitt verwendete <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Datenverbindung darstellt.</summary>
-        <value>Ein Objekt, das die vom angegebenen <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Datenschnitt verwendete Datenverbindung darstellt.</value>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt ab, das die Datenverbindung darstellt, die vom angegebenen Datenschnitt verwendet wird.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> Objekt, das die datenverbindung darstellt, die vom angegebenen Datenschnitt verwendet wird.</value>
         <remarks><para>Schreibgeschützt.</para>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> Eigenschaft gilt nur für Datenschnitte, die auf externen Datenquellen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />). Zugriff auf die Eigenschaft für Datenschnitte, die basierend auf Arbeitsmappenbereichen oder Listen <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> mit PivotTables verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) generiert einen Laufzeitfehler.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> Eigenschaft gilt nur für Datenschnitte, die auf externen Datenquellen basieren ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />). Beim Versuch, auf die <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> Eigenschaft für Datenschnitte zuzugreifen, die basierend auf Arbeitsmappenbereichen oder Listen mit PivotTables verbunden sind ( <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) generiert einen Laufzeitfehler.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

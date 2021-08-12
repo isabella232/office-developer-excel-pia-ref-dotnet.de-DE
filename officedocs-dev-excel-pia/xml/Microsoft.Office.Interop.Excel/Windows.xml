@@ -1,5 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009254" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0fc3d6836588d6c65260a54d7ffab3ff33453b20c06f49f682c883304d7e1ab9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519245" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller Objekte <see cref="T:Microsoft.Office.Interop.Excel.Window" /> in Microsoft Excel.</summary>
-    <remarks><para>Die <b>von</b> der Eigenschaft des Objekts zurückgegebene Windows-Auflistung enthält alle Fenster in der Anwendung, während die von der Eigenschaft des Objekts zurückgegebene Windows-Auflistung nur die Fenster in der angegebenen <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> Arbeitsmappe <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> enthält.</para>
-      <para>Verwenden Sie <b>die NewWindow -Methode</b> eines <b>Window-</b> oder <b>Workbook</b> -Objekts, um ein neues Fenster zu erstellen und der Auflistung hinzuzufügen.</para>
-      <para>Verwenden <b>Sie Windows</b>( ), wobei der Fenstername oder die <paramref name="index" /> <paramref name="index" /> Indexnummer, um ein einzelnes <b>Window -Objekt zurück.</b></para>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Excel.Window" /> Objekte in Microsoft Excel.</summary>
+    <remarks><para>Die <b>Windows</b> Auflistung, die von der Eigenschaft des Objekts zurückgegeben <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> wird, enthält alle Fenster in der Anwendung, während die von der Eigenschaft des Objekts zurückgegebene <b>Windows</b> Auflistung nur die Fenster in <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> der <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> angegebenen Arbeitsmappe enthält.</para>
+      <para>Verwenden Sie die <b>NewWindow-Methode</b> eines <b>Window-</b> oder <b>Workbook-Objekts,</b> um ein neues Fenster zu erstellen und der Auflistung hinzuzufügen.</para>
+      <para>Verwenden Sie <b>Windows</b>( <paramref name="index" /> ), wobei der <paramref name="index" /> Fenstername oder die Indexnummer ist, um ein einzelnes <b>Window -Objekt</b> zurückzugeben.</para>
       <para>Beachten Sie, dass das aktive Fenster immer Windows(1) ist.</para>
       <para> </para></remarks>
   </Docs>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +122,9 @@
       </Parameters>
       <Docs>
         <param name="ArrangeStyle">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" /> .</param>
-        <param name="ActiveWorkbook">Optionales <b>Objekt</b>. Beim Wert <b>True</b> werden nur die sichtbaren Fenster der aktiven Arbeitsmappe angeordnet. Beim Wert <b>False</b> werden alle Fenster angeordnet. Der Standardwert ist <b>False</b>.</param>
-        <param name="SyncHorizontal">Optionales <b>Objekt</b>. Wird ignoriert, <paramref name="ActiveWorkbook" /> wenn <b>"False"</b> oder "ausgelassen" ist. Beim Wert <b>True</b> werden die Fenster der aktiven Arbeitsmappe beim horizontalen Bildlauf synchronisiert. <b>False,</b> wenn die Fenster nicht synchronisiert werden sollen. Der Standardwert ist <b>False</b>.</param>
-        <param name="SyncVertical">Optionales <b>Objekt</b>. Wird ignoriert, <paramref name="ActiveWorkbook" /> wenn <b>"False"</b> oder "ausgelassen" ist. Beim Wert <b>True</b> werden die Fenster der aktiven Arbeitsmappe beim vertikalen Bildlauf synchronisiert. <b>False,</b> wenn die Fenster nicht synchronisiert werden sollen. Der Standardwert ist <b>False</b>.</param>
+        <param name="ActiveWorkbook"><b>Optional-Objekt</b>. Beim Wert <b>True</b> werden nur die sichtbaren Fenster der aktiven Arbeitsmappe angeordnet. Beim Wert <b>False</b> werden alle Fenster angeordnet. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="SyncHorizontal"><b>Optional-Objekt</b>. Wird ignoriert, wenn <paramref name="ActiveWorkbook" /> <b> False </b> ist oder ausgelassen wird. Beim Wert <b>True</b> werden die Fenster der aktiven Arbeitsmappe beim horizontalen Bildlauf synchronisiert. <b>Falsch,</b> wenn die Fenster nicht synchronisiert werden sollen. Der Standardwert ist <b>Falsch</b>.</param>
+        <param name="SyncVertical"><b>Optional-Objekt</b>. Wird ignoriert, wenn <paramref name="ActiveWorkbook" /> <b> False </b> ist oder ausgelassen wird. Beim Wert <b>True</b> werden die Fenster der aktiven Arbeitsmappe beim vertikalen Bildlauf synchronisiert. <b>Falsch,</b> wenn die Fenster nicht synchronisiert werden sollen. Der Standardwert ist <b>Falsch</b>.</param>
         <summary>Ordnet die Fenster auf dem Bildschirm an.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -179,10 +179,10 @@
         <Parameter Name="WindowName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="WindowName">Der Name eines zu öffnende Fensters.</param>
+        <param name="WindowName">Der Name eines zu öffnenden Fensters.</param>
         <summary>Öffnet zwei Fenster im Modus Boolean.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Sie können die <b>CompareSideBySideWith -Methode</b> nicht mit dem <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekt oder der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> verwenden.</para>
+        <remarks><para>Sie können die <b>CompareSideBySideWith-Methode</b> nicht mit dem <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Objekt oder der Eigenschaft <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> verwenden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -240,7 +240,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die <b>Creator</b> -Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh konzipiert, wobei jede Anwendung einen vier Zeichen großen Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
+          <para>Die <b>Creator-Eigenschaft</b> wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL".</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -302,7 +302,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
+        <param name="Index"><b>Required-Objekt</b>. Der Name oder die Indexnummer des Objekts.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -358,7 +358,7 @@
       <Parameters />
       <Docs>
         <summary>Setzt die Position von zwei Arbeitsblattfenstern, die nebeneinander verglichen werden, zurück.</summary>
-        <remarks><para>Verwenden Sie <b>die ResetPositionsSideBySide -Methode,</b> um die Position von zwei Arbeitsblättern zurückzusetzen, die nebeneinander verglichen werden. Wenn beispielsweise ein Benutzer eines der beiden zu vergleichenden Arbeitsblätter minimiert oder maximiert, setzt die <b>ResetPositionsSideBySide</b>-Methode die Anzeige zurück, sodass die beiden Fenster wieder nebeneinander angezeigt werden.</para>
+        <remarks><para>Verwenden Sie die <b>ResetPositionsSideBySide-Methode,</b> um die Position von zwei Arbeitsblättern zurückzusetzen, die nebeneinander verglichen werden. Wenn beispielsweise ein Benutzer eines der beiden zu vergleichenden Arbeitsblätter minimiert oder maximiert, setzt die <b>ResetPositionsSideBySide</b>-Methode die Anzeige zurück, sodass die beiden Fenster wieder nebeneinander angezeigt werden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

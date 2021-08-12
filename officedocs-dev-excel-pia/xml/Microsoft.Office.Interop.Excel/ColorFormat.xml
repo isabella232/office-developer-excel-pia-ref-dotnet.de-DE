@@ -1,5 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004011" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="282699bc22927817e416906a7a38027c41140f4ff1eef15b420cb7cd73d52efd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510229" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Farbe eines einfarbigen Objekts, die Vordergrund- bzw. Hintergrundfarbe eines Objekts mit Farbverlaufs- bzw. Musterfüllung oder die Farbe des Zeigers dar.</summary>
-    <remarks><para>Sie können Farben auf einen expliziten Rot-Grün-Blau-Wert (mithilfe der Eigenschaft) oder auf eine Farbe im Farbschema (mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> Eigenschaft) <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> festlegen.</para>
+    <remarks><para>Sie können Farben auf einen expliziten Rot-Grün-Blau-Wert (mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> Eigenschaft) oder auf eine Farbe im Farbschema (mithilfe der <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> Eigenschaft) festlegen.</para>
       <para>Verwenden Sie eine der in der folgenden Tabelle aufgeführten Eigenschaften, um ein <b>ColorFormat</b> -Objekt zurückzugeben.</para>
       <list type="table">
         <item>
@@ -110,7 +110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Excel.Application" /> Objekt zurück, das die Microsoft Excel Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,8 +141,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die Helligkeit des angegebenen Objekts ab oder legt sie fest.</summary>
-        <value>Die Helligkeit des angegebenen Objekts.</value>
+        <summary>Ruft die Leuchtdichte des angegebenen Objekts ab oder legt sie fest.</summary>
+        <value>Die Leuchtdichte des angegebenen Objekts.</value>
         <remarks><para>Lese-/Schreibzugriff.</para>
           <para>Der Wert für diese Eigenschaft muss im Bereich von 0,0 (stark abgetönt) bis 1,0 (sehr hell) liegen. Lese-/Schreibzugriff.</para>
           <para> </para></remarks>
@@ -177,7 +177,7 @@
         <summary>Gibt einen ganzzahligen 32-Bit-Wert zurück, der die Anwendung angibt, in der dieses Objekt erstellt wurde.</summary>
         <value><b>Integer</b></value>
         <remarks><para>Wenn das Objekt in Microsoft Excel erstellt wurde, gibt die Eigenschaft die Zeichenfolge XCEL zurück, die der Hexadezimalzahl 5843454C entspricht.</para>
-          <para>Die Eigenschaft wurde für die Verwendung in Microsoft Excel für Macintosh entwickelt, wobei jede Anwendung einen aus vier Zeichen großen <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> Erstellercode hat. Der Urhebercode für Microsoft Excel lautet "XCEL". Siehe auch <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> Eigenschaft ist für die Verwendung in Microsoft Excel für Macintosh vorgesehen, wobei jede Anwendung einen vierstelligen Erstellercode aufweist. Der Urhebercode für Microsoft Excel lautet "XCEL". Siehe auch <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -269,7 +269,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Rot-Grün-Blau-Wert der angegebenen Farbe zurück oder legt den Wert fest.</summary>
+        <summary>Gibt den Rot-Grün-Blau-Wert der angegebenen Farbe zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +331,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Einzelnen <b>zurück,</b> der die Farbe einer angegebenen Form aufleuchtet oder abdunkt, oder legt den Wert fest.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines Werts vom Typ <b>Single,</b> der die Farbe einer angegebenen Form aufhellt oder abdunkelt.</summary>
         <value>To be added.</value>
         <remarks><para>Sie können eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für die <b>TintAndShade</b> -Eigenschaft 0 (null) neutral eingeben.</para>
           <para> </para></remarks>
@@ -360,7 +360,7 @@
         <ReturnType>Microsoft.Office.Core.MsoColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Calloutformats zurück oder legt ihn fest.</summary>
+        <summary>Gibt den Legendenformattyp zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>MsoCalloutType</b> kann eine dieser <b>MsoCalloutType</b>-Konstanten sein:</para>
